@@ -2,7 +2,7 @@
 
 > **定理1** (矩阵乘积的秩)<br>设 $A=\left(a_{ij}\right)_{s\times n}$, $B=\left(b_{ij}\right)_{n\times m}$, 则: <br>$$\text{rank}\left(AB\right)\le\min\left\{\text{rank}\left(A\right),\text{rank}\left(B\right)\right\}.$$
 
-> **定理3** (乘积的行列式)<br>设 $A,B$ 都是 $n$ 级矩阵, 则 $|AB|=|A||B|$.
+> **定理3** (乘积的行列式)<br>设 $A,B$ 都是 $n$ 级矩阵, 则 $\left|AB\right|=\left|A\right|\left|B\right|$.
 
 ### 习题一
 
@@ -36,14 +36,14 @@
 
 ### 习题二
 
-(习题 4.3-6) 证明: 如果 $A$ 是数域 $K$ 上 $n$ 级矩阵, $n$ 是奇数, 且满足 $AA^{T}=I$, $|A|=1$, 则 $|I-A|=0$.
+(习题 4.3-6) 证明: 如果 $A$ 是数域 $K$ 上 $n$ 级矩阵, $n$ 是奇数, 且满足 $AA^{T}=I$, $\left|A\right|=1$, 则 $\left|I-A\right|=0$.
 
 ### 解答 习题二
 
-由**定理3** (乘积的行列式), $|AB|=|A||B|$. 要证明 $|I-A|=0$.
+由**定理3** (乘积的行列式), $\left|AB\right|=\left|A\right|\left|B\right|$. 要证明 $\left|I-A\right|=0$.
 
 $$
-|I-A|=\left|\left(I-A\right)^{T}\right|=\left|I-A^{T}\right|.
+\left|I-A\right|=\left|\left(I-A\right)^{T}\right|=\left|I-A^{T}\right|.
 $$
 
 因为 $AA^{T}=I$, 故 $A^{T}=A^{-1}$.
@@ -51,15 +51,15 @@ $$
 因此
 
 $$
-|I-A^{T}|=|I-A^{-1}|=|A^{-1}\left(A-I\right)|=|A^{-1}||A-I|.
+\left|I-A^{T}\right|=\left|I-A^{-1}\right|=\left|A^{-1}\left(A-I\right)\right|=\left|A^{-1}\right|\left|A-I\right|.
 $$
 
 $$
-|A^{-1}|=\frac{1}{|A|}=\frac{1}{1}=1.
+\left|A^{-1}\right|=\frac{1}{\left|A\right|}=\frac{1}{1}=1.
 $$
 
 $$
-|A-I|=|-\left(I-A\right)|=\left(-1\right)^{n}|I-A|.
+\left|A-I\right|=\left|-\left(I-A\right)\right|=\left(-1\right)^{n}\left|I-A\right|.
 $$
 
 因为 $n$ 是奇数, 故 $\left(-1\right)^{n}=-1$.
@@ -67,10 +67,10 @@ $$
 因此
 
 $$
-|I-A|=1\times\left(-1\right)\times|I-A|=-|I-A|.
+\left|I-A\right|=1\times\left(-1\right)\times\left|I-A\right|=-\left|I-A\right|.
 $$
 
-所以 $2|I-A|=0$, 即 $|I-A|=0$. $\blacksquare$
+所以 $2\left|I-A\right|=0$, 即 $\left|I-A\right|=0$. $\blacksquare$
 
 ### 习题三
 
@@ -84,11 +84,11 @@ s_{2} & s_{3} & s_{4}
 \end{array}\right].
 $$
 
-证明: $|A|=\left(x_{1}-x_{2}\right)^{2}\left(x_{1}-x_{3}\right)^{2}\left(x_{2}-x_{3}\right)^{2}$.
+证明: $\left|A\right|=\left(x_{1}-x_{2}\right)^{2}\left(x_{1}-x_{3}\right)^{2}\left(x_{2}-x_{3}\right)^{2}$.
 
 ### 解答 习题三
 
-由**定理3** (乘积的行列式), $|AB|=|A||B|$. 令
+由**定理3** (乘积的行列式), $\left|AB\right|=\left|A\right|\left|B\right|$. 令
 
 $$
 B=\left[\begin{array}{ccc}
@@ -119,19 +119,19 @@ $$
 由**定理3** (乘积的行列式),
 
 $$
-|A|=|BB^{T}|=|B||B^{T}|=|B|^{2}.
+\left|A\right|=\left|BB^{T}\right|=\left|B\right|\left|B^{T}\right|=\left|B\right|^{2}.
 $$
 
 $B$ 是范德蒙矩阵,
 
 $$
-|B|=\left(x_{2}-x_{1}\right)\left(x_{3}-x_{1}\right)\left(x_{3}-x_{2}\right).
+\left|B\right|=\left(x_{2}-x_{1}\right)\left(x_{3}-x_{1}\right)\left(x_{3}-x_{2}\right).
 $$
 
 因此
 
 $$
-|A|=|B|^{2}=\left(x_{1}-x_{2}\right)^{2}\left(x_{1}-x_{3}\right)^{2}\left(x_{2}-x_{3}\right)^{2}.
+\left|A\right|=\left|B\right|^{2}=\left(x_{1}-x_{2}\right)^{2}\left(x_{1}-x_{3}\right)^{2}\left(x_{2}-x_{3}\right)^{2}.
 $$
 
 $\blacksquare$

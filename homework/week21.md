@@ -4,7 +4,7 @@
 
 > **定义2** (逆矩阵)<br>如果 $A$ 是可逆矩阵, 则适合 $AB=BA=I$ 的矩阵 $B$ 称为 $A$ 的逆矩阵, 记作 $A^{-1}$.
 
-> **定理2** (可逆的充要条件)<br>数域 $K$ 上 $n$ 级矩阵 $A$ 可逆的充分必要条件为 $|A|\ne0$. 当 $A$ 可逆时: <br>$$A^{-1}=\frac{1}{|A|}A^{*}.$$
+> **定理2** (可逆的充要条件)<br>数域 $K$ 上 $n$ 级矩阵 $A$ 可逆的充分必要条件为 $\left|A\right|\ne0$. 当 $A$ 可逆时: <br>$$A^{-1}=\frac{1}{\left|A\right|}A^{*}.$$
 
 ### 习题一
 
@@ -12,30 +12,30 @@
 
 ### 解答 习题一
 
-由**定义1** (可逆矩阵)和**定义2** (逆矩阵), 因为 $A$ 可逆, 故 $|A|\ne 0$.
+由**定义1** (可逆矩阵)和**定义2** (逆矩阵), 因为 $A$ 可逆, 故 $\left|A\right|\ne 0$.
 
-已知 $AA^{*}=|A|I$.
+已知 $AA^{*}=\left|A\right|I$.
 
 两边取行列式:
 
 $$
-|A||A^{*}|=|A|^{n}.
+\left|A\right|\left|A^{*}\right|=\left|A\right|^{n}.
 $$
 
-因为 $|A|\ne 0$, 故 $|A^{*}|=|A|^{n-1}\ne 0$.
+因为 $\left|A\right|\ne 0$, 故 $\left|A^{*}\right|=\left|A\right|^{n-1}\ne 0$.
 
 由**定理2** (可逆的充要条件), 因此 $A^{*}$ 可逆.
 
-由 $AA^{*}=|A|I$, 得
+由 $AA^{*}=\left|A\right|I$, 得
 
 $$
-A^{*}=|A|A^{-1}.
+A^{*}=\left|A\right|A^{-1}.
 $$
 
 所以
 
 $$
-\left(A^{*}\right)^{-1}=\left(|A|A^{-1}\right)^{-1}=\frac{1}{|A|}A.
+\left(A^{*}\right)^{-1}=\left(\left|A\right|A^{-1}\right)^{-1}=\frac{1}{\left|A\right|}A.
 $$
 
 $\blacksquare$
@@ -136,7 +136,7 @@ $$
 先求 $A^{-1}$.
 
 $$
-|A|=1\times\left(-4+1\right)-\left(-2\right)\times\left(8-3\right)+0=-3+10=7.
+\left|A\right|=1\times\left(-4+1\right)-\left(-2\right)\times\left(8-3\right)+0=-3+10=7.
 $$
 
 伴随矩阵:
@@ -182,7 +182,7 @@ $$
 
 所以
 
-由**定理2** (可逆的充要条件), $A^{-1}=\frac{1}{|A|}A^{*}$, 故
+由**定理2** (可逆的充要条件), $A^{-1}=\frac{1}{\left|A\right|}A^{*}$, 故
 
 $$
 X=\frac{1}{7}\left[\begin{array}{rr}

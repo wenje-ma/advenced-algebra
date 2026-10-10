@@ -1,8 +1,8 @@
 ﻿# 作业 9
 
-> **定理1** (拉普拉斯定理)<br>在 $n$ 阶行列式 $|A|$ 中, 取定 $k$ 行, 则这 $k$ 行元素形成的所有 $k$ 阶子式与它们自己的代数余子式的乘积之和等于 $|A|$.
+> **定理1** (拉普拉斯定理)<br>在 $n$ 阶行列式 $\left|A\right|$ 中, 取定 $k$ 行, 则这 $k$ 行元素形成的所有 $k$ 阶子式与它们自己的代数余子式的乘积之和等于 $\left|A\right|$.
 
-> **基础知识1** (分块行列式)<br>其中 $A,B$ 都是方阵: <br>$$\left|\begin{array}{cc}A & 0\\C & B\end{array}\right|=|A||B|.$$
+> **基础知识1** (分块行列式)<br>其中 $A,B$ 都是方阵: <br>$$\left|\begin{array}{cc}A & 0\\C & B\end{array}\right|=\left|A\right|\left|B\right|.$$
 
 ### 习题一
 
@@ -30,23 +30,23 @@ $$
 代数余子式为
 
 $$
-\left(-1\right)^{\left(1+2+\cdots+k\right)+\left(r+1+r+2+\cdots+r+k\right)}\cdot|B|
-=\left(-1\right)^{\frac{k\left(k+1\right)}{2}+kr+\frac{k\left(k+1\right)}{2}}\cdot|B|
-=\left(-1\right)^{k\left(k+1+r\right)}\cdot|B|.
+\left(-1\right)^{\left(1+2+\cdots+k\right)+\left(r+1+r+2+\cdots+r+k\right)}\cdot\left|B\right|
+=\left(-1\right)^{\frac{k\left(k+1\right)}{2}+kr+\frac{k\left(k+1\right)}{2}}\cdot\left|B\right|
+=\left(-1\right)^{k\left(k+1+r\right)}\cdot\left|B\right|.
 $$
 
 故行列式值为
 
 $$
-|A|\cdot\left(-1\right)^{k\left(k+1+r\right)}\cdot|B|
-=\left(-1\right)^{k\left(r+k+1\right)}|A||B|.
+\left|A\right|\cdot\left(-1\right)^{k\left(k+1+r\right)}\cdot\left|B\right|
+=\left(-1\right)^{k\left(r+k+1\right)}\left|A\right|\left|B\right|.
 $$
 
 $\blacksquare$
 
 ### 习题二
 
-(习题 2.6-4(1)) 设 $|A|$ 是关于 $1,2,\cdots,n$ 这 $n$ 个数的范德蒙行列式. 计算:
+(习题 2.6-4(1)) 设 $\left|A\right|$ 是关于 $1,2,\cdots,n$ 这 $n$ 个数的范德蒙行列式. 计算:
 
 $$
 A\begin{bmatrix}1,2,\cdots,n-1\\2,3,\cdots,n\end{bmatrix}.
@@ -57,7 +57,7 @@ $$
 范德蒙行列式为
 
 $$
-|A|=\left|\begin{array}{cccc}
+\left|A\right|=\left|\begin{array}{cccc}
 1 & 1 & \cdots & 1\\
 a_{1} & a_{2} & \cdots & a_{n}\\
 a_{1}^{2} & a_{2}^{2} & \cdots & a_{n}^{2}\\

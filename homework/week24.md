@@ -28,7 +28,7 @@
 
 单射: $f\left(x_{1}\right)=f\left(x_{2}\right)\Rightarrow x_{1}^{3}=x_{2}^{3}\Rightarrow x_{1}=x_{2}$. 故是单射.
 
-满射: 对任意 $y\in\mathbb{R}$, 存在 $x=\sqrt[3]{y}$ 使得 $f\left(x\right)=y$. 故是满射.
+满射: 对任意 $y\in\mathbb{R}$, 存在 $x=\sqrt\left[3\right]{y}$ 使得 $f\left(x\right)=y$. 故是满射.
 
 因此既是单射又是满射 (双射).
 
@@ -66,9 +66,9 @@ $\blacksquare$
 
 由**定义1** (映射), 设 $S$ 有 $n$ 个元素.
 
-$f$ 是单射, 故 $S$ 中不同元素的象也不同. 因此 $f\left(S\right)$ 的元素个数等于 $|S|=n$.
+$f$ 是单射, 故 $S$ 中不同元素的象也不同. 因此 $f\left(S\right)$ 的元素个数等于 $\left|S\right|=n$.
 
-又因为 $f\left(S\right)\subseteq S$, 且 $|f\left(S\right)|=n=|S|$, 所以 $f\left(S\right)=S$.
+又因为 $f\left(S\right)\subseteq S$, 且 $\left|f\left(S\right)\right|=n=\left|S\right|$, 所以 $f\left(S\right)=S$.
 
 即 $f$ 是满射.
 

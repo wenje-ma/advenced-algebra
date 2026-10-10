@@ -24,13 +24,13 @@ $$
 1 & 2 & -a & 9\\
 2 & -1 & 3 & 6
 \end{array}\right]
-\xrightarrow{(2)-(1),(3)-2(1)}
+\xrightarrow{\left(2\right)-\left(1\right),\left(3\right)-2\left(1\right)}
 \left[\begin{array}{rrr|r}
 1 & 1 & 1 & 3\\
 0 & 1 & -a-1 & 6\\
 0 & -3 & 1 & 0
 \end{array}\right]
-\xrightarrow{(3)+3(2)}
+\xrightarrow{\left(3\right)+3\left(2\right)}
 \left[\begin{array}{rrr|r}
 1 & 1 & 1 & 3\\
 0 & 1 & -a-1 & 6\\
@@ -62,14 +62,14 @@ $$
 由**定理1** (线性方程组解的判别准则), 对增广矩阵施行初等行变换化为阶梯形:
 
 $$
-\left[\begin{array}{rrrrr|r}
+\left[\begin{array}{rrrrr\left|r}
 1 & 1 & 1 & 1 & 1 & 1\\
 3 & 2 & 1 & 1 & -3 & c\\
 0 & 1 & 2 & 2 & 6 & 3\\
 5 & 4 & 3 & 3 & -1 & d
 \end{array}\right]
-\xrightarrow{(2)-3(1),(4)-5(1)}
-\left[\begin{array}{rrrrr|r}
+\xrightarrow{\left(2\right)-3\left(1\right),\left(4\right)-5\left(1\right)}
+\left[\begin{array}{rrrrr\right|r}
 1 & 1 & 1 & 1 & 1 & 1\\
 0 & -1 & -2 & -2 & -6 & c-3\\
 0 & 1 & 2 & 2 & 6 & 3\\
@@ -77,17 +77,17 @@ $$
 \end{array}\right].
 $$
 
-由**定理1**, 继续作初等行变换: 作(2) $\times(-1)$, (4) $-$(2) 替换后的行:
+由**定理1**, 继续作初等行变换: 作(2) $\times\left(-1\right)$, (4) $-$(2) 替换后的行:
 
 $$
-\left[\begin{array}{rrrrr|r}
+\left[\begin{array}{rrrrr\left|r}
 1 & 1 & 1 & 1 & 1 & 1\\
 0 & 1 & 2 & 2 & 6 & 3-c\\
 0 & 1 & 2 & 2 & 6 & 3\\
 0 & -1 & -2 & -2 & -6 & d-5
 \end{array}\right]
-\xrightarrow{(3)-(2),(4)+(2)}
-\left[\begin{array}{rrrrr|r}
+\xrightarrow{\left(3\right)-\left(2\right),\left(4\right)+\left(2\right)}
+\left[\begin{array}{rrrrr\right|r}
 1 & 1 & 1 & 1 & 1 & 1\\
 0 & 1 & 2 & 2 & 6 & 3-c\\
 0 & 0 & 0 & 0 & 0 & c\\
@@ -119,11 +119,11 @@ $$
 
 ### 习题三
 
-(习题 1.2-6) 是否存在二次函数 $f(x)=ax^{2}+bx+c$, 其图像经过下述 $4$ 个点: $P(1,2),Q(-1,3),M(-4,5),N(0,2)$?
+(习题 1.2-6) 是否存在二次函数 $f\left(x\right)=ax^{2}+bx+c$, 其图像经过下述 $4$ 个点: $P\left(1,2\right),Q\left(-1,3\right),M\left(-4,5\right),N\left(0,2\right)$?
 
 ### 解答 习题三
 
-若二次函数 $f(x)=ax^{2}+bx+c$ 的图像经过这 $4$ 个点, 则 $a,b,c$ 应满足方程组:
+若二次函数 $f\left(x\right)=ax^{2}+bx+c$ 的图像经过这 $4$ 个点, 则 $a,b,c$ 应满足方程组:
 
 $$
 \begin{cases}

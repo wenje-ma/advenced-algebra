@@ -22,14 +22,14 @@ $$
 写出增广矩阵, 作初等行变换:
 
 $$
-\left[\begin{array}{rrr|r}
+\left[\begin{array}{rrr\left|r}
 -1 & 2 & -4 & 8\\
 3 & 0 & 1 & 3\\
 0 & 7 & -2 & -1\\
 -5 & -3 & 6 & -25
 \end{array}\right]
 \xrightarrow{\substack{②+①\times3\\④-①\times5}}
-\left[\begin{array}{rrr|r}
+\left[\begin{array}{rrr\right|r}
 -1 & 2 & -4 & 8\\
 0 & 6 & -11 & 27\\
 0 & 7 & -2 & -1\\
@@ -59,14 +59,14 @@ $$
 写出增广矩阵, 作初等行变换:
 
 $$
-\left[\begin{array}{rrr|r}
+\left[\begin{array}{rrr\left|r}
 3 & -1 & 3 & 2\\
 -5 & 7 & 11 & -30\\
 2 & -3 & -5 & 13\\
 -4 & 6 & 10 & -26
 \end{array}\right]
 \xrightarrow{\substack{②+①\times5/3\\③-①\times2/3\\④+①\times4/3}}
-\left[\begin{array}{rrr|r}
+\left[\begin{array}{rrr\right|r}
 3 & -1 & 3 & 2\\
 0 & 16/3 & 16 & -80/3\\
 0 & -7/3 & -7 & 35/3\\

@@ -434,7 +434,7 @@ $$
 A^{n}
 &=\lambda^{n}I+n\lambda^{n-1}N+\binom{n}{2}\lambda^{n-2}N^{2}\\
 &=\left[\begin{array}{ccc}
-\lambda^{n} & n\lambda^{n-1} & n(n-1)/2 \cdot \lambda^{n-2}\\
+\lambda^{n} & n\lambda^{n-1} & n\left(n-1\right)/2 \cdot \lambda^{n-2}\\
 0 & \lambda^{n} & n\lambda^{n-1}\\
 0 & 0 & \lambda^{n}
 \end{array}\right].

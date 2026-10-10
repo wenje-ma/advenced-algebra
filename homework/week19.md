@@ -46,21 +46,21 @@ $AE_{ij}$ 的第 $j$ 列等于 $A$ 的第 $i$ 列, 其余列为 $0$.
 
 $E_{ij}A$ 的第 $i$ 行等于 $A$ 的第 $j$ 行, 其余行为 $0$.
 
-比较两者的 $(i,j)$ 元:
+比较两者的 $\left(i,j\right)$ 元:
 
-$AE_{ij}$ 的 $(i,j)$ 元 $=a_{ii}$.
+$AE_{ij}$ 的 $\left(i,j\right)$ 元 $=a_{ii}$.
 
-$E_{ij}A$ 的 $(i,j)$ 元 $=a_{jj}$.
+$E_{ij}A$ 的 $\left(i,j\right)$ 元 $=a_{jj}$.
 
 因此 $a_{ii}=a_{jj}$.
 
 这对所有 $i,j$ 都成立, 故所有主对角元相等: $a_{11}=a_{22}=\cdots=a_{nn}=k$.
 
-再比较 $(k,j)$ 元 ( $k\ne i$ ):
+再比较 $\left(k,j\right)$ 元 ( $k\ne i$ ):
 
-$AE_{ij}$ 的 $(k,j)$ 元 $=a_{ki}$.
+$AE_{ij}$ 的 $\left(k,j\right)$ 元 $=a_{ki}$.
 
-$E_{ij}A$ 的 $(k,j)$ 元 $=0$ (因为 $k\ne i$).
+$E_{ij}A$ 的 $\left(k,j\right)$ 元 $=0$ (因为 $k\ne i$).
 
 因此 $a_{ki}=0$ (当 $k\ne i$).
 
@@ -152,15 +152,15 @@ $$
 则 $A^{T}=-A$.
 
 $$
-|A^{T}|=|-A|.
+\left|A^{T}\right|=\left|-A\right|.
 $$
 
-因为 $|A^{T}|=|A|$, 且 $|-A|=\left(-1\right)^{n}|A|$.
+因为 $\left|A^{T}\right|=\left|A\right|$, 且 $\left|-A\right|=\left(-1\right)^{n}\left|A\right|$.
 
 所以
 
 $$
-|A|=\left(-1\right)^{n}|A|.
+\left|A\right|=\left(-1\right)^{n}\left|A\right|.
 $$
 
 因为 $n$ 为奇数, 故 $\left(-1\right)^{n}=-1$.
@@ -168,7 +168,7 @@ $$
 因此
 
 $$
-|A|=-|A|\quad\Rightarrow\quad 2|A|=0\quad\Rightarrow\quad |A|=0.
+\left|A\right|=-\left|A\right|\quad\Rightarrow\quad 2\left|A\right|=0\quad\Rightarrow\quad \left|A\right|=0.
 $$
 
 $\blacksquare$

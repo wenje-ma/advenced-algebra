@@ -183,15 +183,15 @@ $$
 
 由**定理1** (矩阵乘积的秩), $\text{rank}\left(AB\right)\le\min\left\{\text{rank}\left(A\right),\text{rank}\left(B\right)\right\}$. 分三种情况讨论.
 
-**当 $\text{rank}\left(A\right)=n$ 时**: $|A|\ne0$.
+**当 $\text{rank}\left(A\right)=n$ 时**: $\left|A\right|\ne0$.
 
-由 $AA^{*}=|A|I$, 得 $|A||A^{*}|=|A|^{n}$.
+由 $AA^{*}=\left|A\right|I$, 得 $\left|A\right|\left|A^{*}\right|=\left|A\right|^{n}$.
 
-故 $|A^{*}|=|A|^{n-1}\ne0$, 因此 $\text{rank}\left(A^{*}\right)=n$.
+故 $\left|A^{*}\right|=\left|A\right|^{n-1}\ne0$, 因此 $\text{rank}\left(A^{*}\right)=n$.
 
-**当 $\text{rank}\left(A\right)=n-1$ 时**: $|A|=0$.
+**当 $\text{rank}\left(A\right)=n-1$ 时**: $\left|A\right|=0$.
 
-故 $AA^{*}=|A|I=0$.
+故 $AA^{*}=\left|A\right|I=0$.
 
 由习题 4.5 第 1 题, $\text{rank}\left(A\right)+\text{rank}\left(A^{*}\right)\le n$.
 
@@ -211,7 +211,7 @@ $\blacksquare$
 
 ### 习题六
 
-(习题 4.5-15) 设 $A,B,C,D$ 都是 $n$ 级矩阵, 并且 $|A|\ne0$, $AC=CA$. 证明:
+(习题 4.5-15) 设 $A,B,C,D$ 都是 $n$ 级矩阵, 并且 $\left|A\right|\ne0$, $AC=CA$. 证明:
 
 $$
 \left|\begin{array}{cc}A & B\\C & D\end{array}\right|=\left|AD-CB\right|.
@@ -219,7 +219,7 @@ $$
 
 ### 解答 习题六
 
-由**定理1** (矩阵乘积的秩)的思路, 因为 $|A|\ne0$, 所以 $A$ 可逆.
+由**定理1** (矩阵乘积的秩)的思路, 因为 $\left|A\right|\ne0$, 所以 $A$ 可逆.
 
 作分块矩阵的初等行变换: 用 $-CA^{-1}$ 左乘第 $1$ 块行, 加到第 $2$ 块行上.
 
@@ -232,7 +232,7 @@ $$
 这是分块上三角矩阵, 行列式等于主对角线上子矩阵行列式的乘积:
 
 $$
-=|A|\cdot\left|D-CA^{-1}B\right|.
+=\left|A\right|\cdot\left|D-CA^{-1}B\right|.
 $$
 
 因为 $AC=CA$, 所以 $CA^{-1}=A^{-1}C$.
@@ -250,14 +250,14 @@ $$
 =\left|D-A^{-1}CB\right|
 =\left|A^{-1}\left(AD-CB\right)\right|
 =\left|A^{-1}\right|\cdot\left|AD-CB\right|
-=\frac{1}{|A|}\cdot\left|AD-CB\right|.
+=\frac{1}{\left|A\right|}\cdot\left|AD-CB\right|.
 $$
 
 所以
 
 $$
-|A|\cdot\left|D-CA^{-1}B\right|
-=|A|\cdot\frac{1}{|A|}\cdot\left|AD-CB\right|
+\left|A\right|\cdot\left|D-CA^{-1}B\right|
+=\left|A\right|\cdot\frac{1}{\left|A\right|}\cdot\left|AD-CB\right|
 =\left|AD-CB\right|.
 $$
 

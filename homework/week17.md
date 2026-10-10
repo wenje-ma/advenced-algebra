@@ -20,14 +20,14 @@ $$
 由**定理1** (非齐次方程组的解集结构), 增广矩阵作初等行变换:
 
 $$
-\left[\begin{array}{rrrr|r}
+\left[\begin{array}{rrrr\left|r}
 1 & -5 & 2 & -3 & 11\\
 -3 & 1 & -4 & 2 & -5\\
 -1 & -9 & 0 & -4 & 17\\
 5 & 3 & 6 & -1 & -1
 \end{array}\right]
 \xrightarrow{\text{行变换}}
-\left[\begin{array}{rrrr|r}
+\left[\begin{array}{rrrr\right|r}
 1 & -5 & 2 & -3 & 11\\
 0 & -14 & 2 & -7 & 28\\
 0 & 0 & 0 & 0 & 0\\
@@ -80,7 +80,7 @@ $\blacksquare$
 
 **充分性**. 设导出组只有零解, 则 $\text{rank}\left(A\right)=n$.
 
-$A$ 是 $n\times n$ 矩阵且 $\text{rank}\left(A\right)=n$, 故 $|A|\ne0$.
+$A$ 是 $n\times n$ 矩阵且 $\text{rank}\left(A\right)=n$, 故 $\left|A\right|\ne0$.
 
 导出组只有零解意味着解空间 $W=\left\{0\right\}$, 故非齐次方程组的解集 $U=\gamma_{0}+W=\left\{\gamma_{0}\right\}$, 即有唯一解. $\blacksquare$
 

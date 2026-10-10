@@ -195,15 +195,15 @@ $$
 单位化:
 
 $$
-\eta_{1}=\frac{\beta_{1}}{|\beta_{1}|}=\left(\frac{1}{\sqrt{2}},\frac{1}{\sqrt{2}},0,0\right)^{T}.
+\eta_{1}=\frac{\beta_{1}}{\left|\beta_{1}\right|}=\left(\frac{1}{\sqrt{2}},\frac{1}{\sqrt{2}},0,0\right)^{T}.
 $$
 
 $$
-\eta_{2}=\frac{\beta_{2}}{|\beta_{2}|}=\left(\frac{1}{\sqrt{6}},-\frac{1}{\sqrt{6}},\frac{2}{\sqrt{6}},0\right)^{T}.
+\eta_{2}=\frac{\beta_{2}}{\left|\beta_{2}\right|}=\left(\frac{1}{\sqrt{6}},-\frac{1}{\sqrt{6}},\frac{2}{\sqrt{6}},0\right)^{T}.
 $$
 
 $$
-\eta_{3}=\frac{\beta_{3}}{|\beta_{3}|}=\left(\frac{1}{2\sqrt{3}},-\frac{1}{2\sqrt{3}},-\frac{1}{2\sqrt{3}},-\frac{\sqrt{3}}{2}\right)^{T}.
+\eta_{3}=\frac{\beta_{3}}{\left|\beta_{3}\right|}=\left(\frac{1}{2\sqrt{3}},-\frac{1}{2\sqrt{3}},-\frac{1}{2\sqrt{3}},-\frac{\sqrt{3}}{2}\right)^{T}.
 $$
 
 $\blacksquare$
@@ -232,7 +232,7 @@ $$
 
 因为 $\alpha_{i}$ 是 $\eta_{1},\cdots,\eta_{i}$ 的线性组合, 所以 $A=TB$, 其中 $B$ 是上三角矩阵.
 
-$B$ 的主对角元为 $|\beta_{1}|,|\beta_{2}|,\cdots,|\beta_{n}|$, 都是正数.
+$B$ 的主对角元为 $\left|\beta_{1}\right|,\left|\beta_{2}\right|,\cdots,\left|\beta_{n}\right|$, 都是正数.
 
 **唯一性**. 设 $A=T_{1}B_{1}=T_{2}B_{2}$, 其中 $T_{1},T_{2}$ 是正交矩阵, $B_{1},B_{2}$ 是主对角元为正数的上三角矩阵.
 

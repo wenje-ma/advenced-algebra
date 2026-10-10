@@ -1,8 +1,8 @@
 # 作业 7
 
-> **定义1** (余子式与代数余子式)<br>$n$ 阶行列式 $|A|$ 中, 划去第 $i$ 行和第 $j$ 列, 剩下的元素按原来次序组成的 $n-1$ 阶行列式称为 $A$ 的 $\left(i,j\right)$ 元的余子式, 记作 $M_{ij}$. 令 $A_{ij}=\left(-1\right)^{i+j}M_{ij}$, 称 $A_{ij}$ 是 $A$ 的 $\left(i,j\right)$ 元的代数余子式.
+> **定义1** (余子式与代数余子式)<br>$n$ 阶行列式 $\left|A\right|$ 中, 划去第 $i$ 行和第 $j$ 列, 剩下的元素按原来次序组成的 $n-1$ 阶行列式称为 $A$ 的 $\left(i,j\right)$ 元的余子式, 记作 $M_{ij}$. 令 $A_{ij}=\left(-1\right)^{i+j}M_{ij}$, 称 $A_{ij}$ 是 $A$ 的 $\left(i,j\right)$ 元的代数余子式.
 
-> **定理1** (按行展开)<br>$n$ 阶行列式 $|A|$ 等于它的第 $i$ 行元素与自己的代数余子式的乘积之和: <br>$$|A|=a_{i1}A_{i1}+a_{i2}A_{i2}+\cdots+a_{in}A_{in}.$$
+> **定理1** (按行展开)<br>$n$ 阶行列式 $\left|A\right|$ 等于它的第 $i$ 行元素与自己的代数余子式的乘积之和: <br>$$\left|A\right|=a_{i1}A_{i1}+a_{i2}A_{i2}+\cdots+a_{in}A_{in}.$$
 
 ### 习题一
 
@@ -31,10 +31,10 @@ $$
 由**定理1** (按行展开), 按第 $1$ 列展开. 第 $1$ 列只有第一个元素非零, 其余全为 $0$, 故
 
 $$
-|A|=\left(a_{1}+a_{2}+\cdots+a_{n}\right)\cdot A_{11}.
+\left|A\right|=\left(a_{1}+a_{2}+\cdots+a_{n}\right)\cdot A_{11}.
 $$
 
-由**定义1** (余子式与代数余子式), $A_{11}=\left(-1\right)^{1+1}M_{11}=M_{11}$, 其中 $M_{11}$ 是划去第 $1$ 行第 $1$ 列后的 $(n-1)$ 阶行列式:
+由**定义1** (余子式与代数余子式), $A_{11}=\left(-1\right)^{1+1}M_{11}=M_{11}$, 其中 $M_{11}$ 是划去第 $1$ 行第 $1$ 列后的 $\left(n-1\right)$ 阶行列式:
 
 $$
 M_{11}=\left|\begin{array}{cccc}
@@ -54,7 +54,7 @@ $$
 因此
 
 $$
-|A|=\left(\sum_{i=1}^{n}a_{i}\right)\times\left(-1\right)^{n-1}\left(n-1\right)!.
+\left|A\right|=\left(\sum_{i=1}^{n}a_{i}\right)\times\left(-1\right)^{n-1}\left(n-1\right)!.
 $$
 
 $\blacksquare$

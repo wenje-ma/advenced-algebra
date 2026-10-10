@@ -21,7 +21,7 @@ $$
 由**定义1** (特征值与特征向量), 求特征多项式:
 
 $$
-|\lambda I-A|=\left|\begin{array}{rrr}
+\left|\lambda I-A\right|=\left|\begin{array}{rrr}
 \lambda-2 & -3 & -2\\
 -1 & \lambda-8 & -2\\
 2 & 14 & \lambda+3
@@ -32,13 +32,13 @@ $$
 
 $$
 \begin{aligned}
-|\lambda I-A|
-&=(\lambda-2)\left[(\lambda-8)(\lambda+3)+28\right]+3\left[-(\lambda+3)+4\right]-2\left[-14-2(\lambda-8)\right]\\
-&=(\lambda-2)(\lambda^{2}-5\lambda+4)+3(-\lambda+1)-2(2-2\lambda)\\
-&=(\lambda-2)(\lambda-1)(\lambda-4)-3\lambda+3-4+4\lambda\\
-&=(\lambda-1)\left[(\lambda-2)(\lambda-4)+1\right]\\
-&=(\lambda-1)(\lambda^{2}-6\lambda+9)\\
-&=(\lambda-1)(\lambda-3)^{2}.
+\left|\lambda I-A\right|
+&=\left(\lambda-2\right)\left[\left(\lambda-8\right)\left(\lambda+3\right)+28\right]+3\left[-\left(\lambda+3\right)+4\right]-2\left[-14-2\left(\lambda-8\right)\right]\\
+&=\left(\lambda-2\right)\left(\lambda^{2}-5\lambda+4\right)+3\left(-\lambda+1\right)-2\left(2-2\lambda\right)\\
+&=\left(\lambda-2\right)\left(\lambda-1\right)\left(\lambda-4\right)-3\lambda+3-4+4\lambda\\
+&=\left(\lambda-1\right)\left[\left(\lambda-2\right)\left(\lambda-4\right)+1\right]\\
+&=\left(\lambda-1\right)\left(\lambda^{2}-6\lambda+9\right)\\
+&=\left(\lambda-1\right)\left(\lambda-3\right)^{2}.
 \end{aligned}
 $$
 
@@ -101,7 +101,7 @@ $$
 由**定义1** (特征值与特征向量), 求特征多项式:
 
 $$
-|\lambda I-A|=\left|\begin{array}{rrr}
+\left|\lambda I-A\right|=\left|\begin{array}{rrr}
 \lambda-3 & -7 & 3\\
 2 & \lambda+5 & -2\\
 4 & 10 & \lambda-3
@@ -112,12 +112,12 @@ $$
 
 $$
 \begin{aligned}
-|\lambda I-A|
-&=(\lambda-3)\left[(\lambda+5)(\lambda-3)+20\right]+7\left[2(\lambda-3)+8\right]+3\left[20-4(\lambda+5)\right]\\
-&=(\lambda-3)(\lambda^{2}+2\lambda+5)+7(2\lambda+2)+3(-4\lambda)\\
+\left|\lambda I-A\right|
+&=\left(\lambda-3\right)\left[\left(\lambda+5\right)\left(\lambda-3\right)+20\right]+7\left[2\left(\lambda-3\right)+8\right]+3\left[20-4\left(\lambda+5\right)\right]\\
+&=\left(\lambda-3\right)\left(\lambda^{2}+2\lambda+5\right)+7\left(2\lambda+2\right)+3\left(-4\lambda\right)\\
 &=\lambda^{3}-3\lambda^{2}+2\lambda^{2}-6\lambda+5\lambda-15+14\lambda+14-12\lambda\\
 &=\lambda^{3}-\lambda^{2}+\lambda-1\\
-&=(\lambda-1)(\lambda^{2}+1).
+&=\left(\lambda-1\right)\left(\lambda^{2}+1\right).
 \end{aligned}
 $$
 
@@ -133,9 +133,9 @@ $\blacksquare$
 
 (1) 如果 $A$ 有特征值, 则 $A$ 的特征值是 $1$ 或 $-1$;
 
-(2) 如果 $n$ 是奇数, 且 $|A|=1$, 则 $1$ 是 $A$ 的一个特征值;
+(2) 如果 $n$ 是奇数, 且 $\left|A\right|=1$, 则 $1$ 是 $A$ 的一个特征值;
 
-(3) 如果 $|A|=-1$, 则 $-1$ 是 $A$ 的一个特征值.
+(3) 如果 $\left|A\right|=-1$, 则 $-1$ 是 $A$ 的一个特征值.
 
 ### 解答 习题三
 
@@ -164,10 +164,10 @@ $$
 因此
 
 $$
-1=\bar{\lambda}\lambda=|\lambda|^{2}.
+1=\bar{\lambda}\lambda=\left|\lambda\right|^{2}.
 $$
 
-所以 $|\lambda|=1$.
+所以 $\left|\lambda\right|=1$.
 
 若 $\lambda$ 是实数特征值, 则 $\lambda=\pm1$.
 
@@ -182,20 +182,20 @@ $n$ 是奇数, 故实数特征值的个数是奇数.
 设 $A$ 有 $k$ 个 $1$, $m$ 个 $-1$, 以及一些复特征值.
 
 $$
-|A|=1^{k}\cdot(-1)^{m}\cdot(\text{复特征值的乘积}).
+\left|A\right|=1^{k}\cdot\left(-1\right)^{m}\cdot\left(\text{复特征值的乘积}\right).
 $$
 
-复特征值共轭成对, 每对的乘积是 $|\lambda|^{2}=1$.
+复特征值共轭成对, 每对的乘积是 $\left|\lambda\right|^{2}=1$.
 
-故 $|A|=(-1)^{m}$.
+故 $\left|A\right|=\left(-1\right)^{m}$.
 
-已知 $|A|=1$, 故 $(-1)^{m}=1$, 即 $m$ 是偶数.
+已知 $\left|A\right|=1$, 故 $\left(-1\right)^{m}=1$, 即 $m$ 是偶数.
 
 因为 $k+m$ 是奇数 (实数特征值个数), 且 $m$ 是偶数, 故 $k$ 是奇数, 即 $k\ge1$.
 
 因此 $1$ 是 $A$ 的一个特征值.
 
-** (3)** $|A|=(-1)^{m}=-1$, 故 $m$ 是奇数, 即 $m\ge1$.
+** (3)** $\left|A\right|=\left(-1\right)^{m}=-1$, 故 $m$ 是奇数, 即 $m\ge1$.
 
 因此 $-1$ 是 $A$ 的一个特征值.
 
@@ -218,7 +218,7 @@ $$
 求特征多项式:
 
 $$
-|\lambda I-P|=\left|\begin{array}{rrr}
+\left|\lambda I-P\right|=\left|\begin{array}{rrr}
 \lambda & -1 & 0\\
 0 & \lambda & -1\\
 -1 & 0 & \lambda

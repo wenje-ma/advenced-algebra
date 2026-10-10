@@ -21,11 +21,11 @@ $$
 由**定理3** (实对称矩阵可正交对角化), 一定存在正交矩阵 $T$, 使 $T^{T}AT$ 为对角矩阵. 求特征多项式:
 
 $$
-|\lambda I-A|=\left|\begin{array}{rrr}
+\left|\lambda I-A\right|=\left|\begin{array}{rrr}
 \lambda & 2 & -2\\
 2 & \lambda+3 & -4\\
 -2 & -4 & \lambda+3
-\end{array}\right|=(\lambda-1)^{2}(\lambda+8).
+\end{array}\right|=\left(\lambda-1\right)^{2}\left(\lambda+8\right).
 $$
 
 因此特征值为 $\lambda_{1}=\lambda_{2}=1$, $\lambda_{3}=-8$.
@@ -96,8 +96,8 @@ $$
 
 $$
 T=\left[\begin{array}{ccc}
--2/\sqrt{5} & 2/(3\sqrt{5}) & -1/\sqrt{21}\\
-1/\sqrt{5} & 4/(3\sqrt{5}) & 2/\sqrt{21}\\
+-2/\sqrt{5} & 2/\left(3\sqrt{5}\right) & -1/\sqrt{21}\\
+1/\sqrt{5} & 4/\left(3\sqrt{5}\right) & 2/\sqrt{21}\\
 0 & \sqrt{5}/3 & -4/\sqrt{21}
 \end{array}\right].
 $$
@@ -127,11 +127,11 @@ $$
 求特征多项式:
 
 $$
-|\lambda I-A|=\left|\begin{array}{rrr}
+\left|\lambda I-A\right|=\left|\begin{array}{rrr}
 \lambda-3 & 2 & 0\\
 2 & \lambda-2 & 2\\
 0 & 2 & \lambda-1
-\end{array}\right|=(\lambda+1)(\lambda-2)(\lambda-5).
+\end{array}\right|=\left(\lambda+1\right)\left(\lambda-2\right)\left(\lambda-5\right).
 $$
 
 因此特征值为 $\lambda_{1}=-1$, $\lambda_{2}=2$, $\lambda_{3}=5$.

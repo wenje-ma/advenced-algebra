@@ -177,7 +177,7 @@ $$
 
 $\ker\left(A\right)=\left\{x\mid Ax=0\right\}$ 是属于特征值 $0$ 的特征子空间.
 
-$\ker\left(I-A\right)=\left\{x\mid (I-A)x=0\right\}=\left\{x\mid Ax=x\right\}$ 是属于特征值 $1$ 的特征子空间.
+$\ker\left(I-A\right)=\left\{x\mid \left(I-A\right)x=0\right\}=\left\{x\mid Ax=x\right\}$ 是属于特征值 $1$ 的特征子空间.
 
 我们证明 $K^{n}=\ker\left(A\right)\oplus\ker\left(I-A\right)$.
 

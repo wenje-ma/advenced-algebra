@@ -66,7 +66,7 @@ $$
 x_{1}\alpha_{1}+x_{2}\alpha_{2}+\cdots+x_{n}\alpha_{n}=\beta
 $$
 
-对任何 $\beta\in K^{n}$ 都有解的充分必要条件是它的系数行列式 $|A|\ne0$.
+对任何 $\beta\in K^{n}$ 都有解的充分必要条件是它的系数行列式 $\left|A\right|\ne0$.
 
 ### 解答 习题三
 
@@ -78,9 +78,9 @@ $$
 
 由推论 $8$, $\text{rank}\left\{\alpha_{1},\cdots,\alpha_{n}\right\}=\text{rank}\left\{\varepsilon_{1},\cdots,\varepsilon_{n}\right\}=n$.
 
-$n$ 个 $n$ 维向量的秩为 $n$, 说明它们线性无关, 故它们组成的矩阵的行列式 $|A|\ne0$.
+$n$ 个 $n$ 维向量的秩为 $n$, 说明它们线性无关, 故它们组成的矩阵的行列式 $\left|A\right|\ne0$.
 
-**充分性**. 设 $|A|\ne0$, 则 $\alpha_{1},\cdots,\alpha_{n}$ 线性无关.
+**充分性**. 设 $\left|A\right|\ne0$, 则 $\alpha_{1},\cdots,\alpha_{n}$ 线性无关.
 
 在 $K^{n}$ 中, $n$ 个线性无关的向量构成 $K^{n}$ 的一个基.
 

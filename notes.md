@@ -110,7 +110,11 @@ $K^{n}$ 中向量组的一个部分组称为一个极大线性无关组, 如果�
 
 **定义 12** (向量组的秩)
 
-向量组的极大线性无关组所含向量的数目称为这个向量组的秩. 记作 $\text{rank}\left\{\alpha_{1},\alpha_{2},\cdots,\alpha_{s}\right\}$.
+向量组的极大线性无关组所含向量的数目称为这个向量组的秩. 记作
+
+$$
+\text{rank}\left\{\alpha_{1},\alpha_{2},\cdots,\alpha_{s}\right\}.
+$$
 
 **命题 4** (秩的比较)
 
@@ -134,7 +138,13 @@ $K^{n}$ 中向量组的一个部分组称为一个极大线性无关组, 如果�
 
 **定理 6** (线性方程组有解判别定理)
 
-线性方程组 $x_{1}\alpha_{1}+x_{2}\alpha_{2}+\cdots+x_{n}\alpha_{n}=\beta$ 有解的充分必要条件是: 它的系数矩阵与增广矩阵有相同的秩.
+线性方程组
+
+$$
+x_{1}\alpha_{1}+x_{2}\alpha_{2}+\cdots+x_{n}\alpha_{n}=\beta
+$$
+
+有解的充分必要条件是: 它的系数矩阵与增广矩阵有相同的秩.
 
 **定理 7** (解的个数判别)
 
@@ -170,7 +180,13 @@ $$
 
 **定义 18** (矩阵的乘法)
 
-设 $A=\left(a_{ij}\right)_{s\times n}$, $B=\left(b_{ij}\right)_{n\times m}$, 令 $C=\left(c_{ij}\right)_{s\times m}$, 其中 $c_{ij}=a_{i1}b_{1j}+a_{i2}b_{2j}+\cdots+a_{in}b_{nj}$, 则称 $C$ 是 $A$ 与 $B$ 的乘积, 记作 $C=AB$.
+设 $A=\left(a_{ij}\right)_{s\times n}$, $B=\left(b_{ij}\right)_{n\times m}$, 令 $C=\left(c_{ij}\right)_{s\times m}$, 其中
+
+$$
+c_{ij}=a_{i1}b_{1j}+a_{i2}b_{2j}+\cdots+a_{in}b_{nj},
+$$
+
+则称 $C$ 是 $A$ 与 $B$ 的乘积, 记作 $C=AB$.
 
 **定义 19** (上/下三角矩阵)
 
@@ -219,7 +235,13 @@ $$
 
 **定义 23** (内积)
 
-在 $\mathbb{R}^{n}$ 中, 任给 $\alpha=\left(a_{1},a_{2},\cdots,a_{n}\right)$, $\beta=\left(b_{1},b_{2},\cdots,b_{n}\right)$, 规定 $\left(\alpha,\beta\right)=a_{1}b_{1}+a_{2}b_{2}+\cdots+a_{n}b_{n}$, 称为 $\mathbb{R}^{n}$ 的标准内积.
+在 $\mathbb{R}^{n}$ 中, 任给 $\alpha=\left(a_{1},a_{2},\cdots,a_{n}\right)$, $\beta=\left(b_{1},b_{2},\cdots,b_{n}\right)$, 规定
+
+$$
+\left(\alpha,\beta\right)=a_{1}b_{1}+a_{2}b_{2}+\cdots+a_{n}b_{n},
+$$
+
+称为 $\mathbb{R}^{n}$ 的标准内积.
 
 **命题 6** (正交向量组线性无关)
 
@@ -425,7 +447,13 @@ $K\left[x\right]$ 中每一个次数大于零的多项式都能唯一地分解�
 
 **定义 44** (对称多项式)
 
-设 $f\left(x_{1},x_{2},\ldots,x_{n}\right)$ 是数域 $K$ 上的一个 $n$ 元多项式, 如果对于任意一个 $n$ 元排列 $j_{1}j_{2}\ldots j_{n}$, 都有 $f\left(x_{j_{1}},x_{j_{2}},\ldots,x_{j_{n}}\right)=f\left(x_{1},x_{2},\ldots,x_{n}\right)$, 那么称 $f\left(x_{1},x_{2},\ldots,x_{n}\right)$ 是数域 $K$ 上的一个 $n$ 元对称多项式.
+设 $f\left(x_{1},x_{2},\ldots,x_{n}\right)$ 是数域 $K$ 上的一个 $n$ 元多项式, 如果对于任意一个 $n$ 元排列 $j_{1}j_{2}\ldots j_{n}$, 都有
+
+$$
+f\left(x_{j_{1}},x_{j_{2}},\ldots,x_{j_{n}}\right)=f\left(x_{1},x_{2},\ldots,x_{n}\right),
+$$
+
+那么称 $f\left(x_{1},x_{2},\ldots,x_{n}\right)$ 是数域 $K$ 上的一个 $n$ 元对称多项式.
 
 **初等对称多项式**
 

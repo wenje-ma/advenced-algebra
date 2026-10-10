@@ -24,7 +24,7 @@ $$
 
 ### 解答 习题一
 
-由**定理1**(相抵标准形), 对 $A$ 作初等行变换:
+由**定理1** (相抵标准形), 对 $A$ 作初等行变换:
 
 $$
 A=\left[\begin{array}{rrr}
@@ -62,7 +62,7 @@ A\rightarrow\left[\begin{array}{rrr}
 \end{array}\right].
 $$
 
-因此由**定理1**(相抵标准形), 相抵标准形为 $\left[\begin{array}{cc}I_{2} & 0\\0 & 0\end{array}\right]$. $\blacksquare$
+因此由**定理1** (相抵标准形), 相抵标准形为 $\left[\begin{array}{cc}I_{2} & 0\\0 & 0\end{array}\right]$. $\blacksquare$
 
 ### 习题二
 
@@ -78,7 +78,7 @@ $$
 
 ### 解答 习题二
 
-由**定理1**(相抵标准形), 对 $A$ 作初等行变换:
+由**定理1** (相抵标准形), 对 $A$ 作初等行变换:
 
 $$
 A=\left[\begin{array}{rr}
@@ -106,7 +106,7 @@ A=\left[\begin{array}{rr}
 \end{array}\right].
 $$
 
-因此由**定理1**(相抵标准形), 相抵标准形为 $\left[\begin{array}{c}I_{2}\\0\end{array}\right]$. $\blacksquare$
+因此由**定理1** (相抵标准形), 相抵标准形为 $\left[\begin{array}{c}I_{2}\\0\end{array}\right]$. $\blacksquare$
 
 ### 习题三
 
@@ -114,7 +114,7 @@ $$
 
 ### 解答 习题三
 
-由**定理1**(相抵标准形), 设 $A$ 是 $s\times n$ 矩阵, $\operatorname{rank}\left(A\right)=r>0$.
+由**定理1** (相抵标准形), 设 $A$ 是 $s\times n$ 矩阵, $\operatorname{rank}\left(A\right)=r>0$.
 
 由相抵标准形定理, 存在 $s$ 级可逆矩阵 $P$ 和 $n$ 级可逆矩阵 $Q$, 使得
 
@@ -154,7 +154,7 @@ $$
 
 ### 解答 习题四
 
-由**定理1**(相抵标准形)的思路, 考虑分块矩阵
+由**定理1** (相抵标准形)的思路, 考虑分块矩阵
 
 $$
 M=\left[\begin{array}{cc}A & 0\\I_{n} & B\end{array}\right].
@@ -221,7 +221,7 @@ $$
 n+\operatorname{rank}\left(AB\right)\ge\operatorname{rank}\left(A\right)+\operatorname{rank}\left(B\right).
 $$
 
-由**定理1**(相抵标准形)的思路, 即
+由**定理1** (相抵标准形)的思路, 即
 
 $$
 \operatorname{rank}\left(AB\right)\ge\operatorname{rank}\left(A\right)+\operatorname{rank}\left(B\right)-n.

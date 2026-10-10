@@ -2,7 +2,7 @@
 
 > **定理1** (矩阵乘积的秩)<br>设 $A=\left(a_{ij}\right)_{s\times n}$, $B=\left(b_{ij}\right)_{n\times m}$, 则 $\text{rank}\left(AB\right)\le\min\left\{\text{rank}\left(A\right),\text{rank}\left(B\right)\right\}$.
 
-> **命题2** (实数域上秩的等式)<br>设 $A$ 是实数域上 $s\times n$ 矩阵, 则:<br>$$\text{rank}\left(A^{T}A\right)=\text{rank}\left(AA^{T}\right)=\text{rank}\left(A\right).$$
+> **命题2** (实数域上秩的等式)<br>设 $A$ 是实数域上 $s\times n$ 矩阵, 则: <br>$$\text{rank}\left(A^{T}A\right)=\text{rank}\left(AA^{T}\right)=\text{rank}\left(A\right).$$
 
 ### 习题一
 
@@ -10,7 +10,7 @@
 
 ### 解答 习题一
 
-由**定理1**(矩阵乘积的秩), $\text{rank}\left(AB\right)\le\min\left\{\text{rank}\left(A\right),\text{rank}\left(B\right)\right\}$. 设 $B$ 的列向量组为 $\beta_{1},\beta_{2},\cdots,\beta_{m}$.
+由**定理1** (矩阵乘积的秩), $\text{rank}\left(AB\right)\le\min\left\{\text{rank}\left(A\right),\text{rank}\left(B\right)\right\}$. 设 $B$ 的列向量组为 $\beta_{1},\beta_{2},\cdots,\beta_{m}$.
 
 $AB=0$ 意味着 $A\beta_{j}=0$ ( $j=1,2,\cdots,m$ ).
 
@@ -26,7 +26,7 @@ $$
 
 因此
 
-由**定理1**(矩阵乘积的秩),
+由**定理1** (矩阵乘积的秩),
 
 $$
 \text{rank}\left(A\right)+\text{rank}\left(B\right)\le n.
@@ -40,7 +40,7 @@ $\blacksquare$
 
 ### 解答 习题二
 
-由**定理1**(矩阵乘积的秩), 因为 $A^{2}=I$, 所以
+由**定理1** (矩阵乘积的秩), 因为 $A^{2}=I$, 所以
 
 $$
 \left(I+A\right)\left(I-A\right)=I-A^{2}=I-I=0.
@@ -72,7 +72,7 @@ $$
 
 因此
 
-由**定理1**(矩阵乘积的秩),
+由**定理1** (矩阵乘积的秩),
 
 $$
 \text{rank}\left(I+A\right)+\text{rank}\left(I-A\right)=n.
@@ -86,7 +86,7 @@ $\blacksquare$
 
 ### 解答 习题三
 
-由**定理1**(矩阵乘积的秩), 因为 $A^{2}=A$, 所以
+由**定理1** (矩阵乘积的秩), 因为 $A^{2}=A$, 所以
 
 $$
 A\left(I-A\right)=A-A^{2}=A-A=0.
@@ -118,7 +118,7 @@ $$
 
 因此
 
-由**定理1**(矩阵乘积的秩),
+由**定理1** (矩阵乘积的秩),
 
 $$
 \text{rank}\left(A\right)+\text{rank}\left(I-A\right)=n.
@@ -132,7 +132,7 @@ $\blacksquare$
 
 ### 解答 习题四
 
-由**命题2**(实数域上秩的等式), 对于实数域上的矩阵,
+由**命题2** (实数域上秩的等式), 对于实数域上的矩阵,
 
 $$
 \text{rank}\left(A^{T}A\right)=\text{rank}\left(A\right).
@@ -181,7 +181,7 @@ $$
 
 ### 解答 习题五
 
-由**定理1**(矩阵乘积的秩), $\text{rank}\left(AB\right)\le\min\left\{\text{rank}\left(A\right),\text{rank}\left(B\right)\right\}$. 分三种情况讨论.
+由**定理1** (矩阵乘积的秩), $\text{rank}\left(AB\right)\le\min\left\{\text{rank}\left(A\right),\text{rank}\left(B\right)\right\}$. 分三种情况讨论.
 
 **当 $\text{rank}\left(A\right)=n$ 时**: $|A|\ne0$.
 
@@ -219,7 +219,7 @@ $$
 
 ### 解答 习题六
 
-由**定理1**(矩阵乘积的秩)的思路, 因为 $|A|\ne0$, 所以 $A$ 可逆.
+由**定理1** (矩阵乘积的秩)的思路, 因为 $|A|\ne0$, 所以 $A$ 可逆.
 
 作分块矩阵的初等行变换: 用 $-CA^{-1}$ 左乘第 $1$ 块行, 加到第 $2$ 块行上.
 

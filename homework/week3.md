@@ -1,6 +1,6 @@
 # 作业 3
 
-> **定义1** (数域)<br>设 $K$ 是复数集的一个子集, 如果 $K$ 满足:<br>(1) $0,1\in K$;<br>(2) 对加、减、乘、除(除数不为 $0$) 四种运算封闭,<br>那么称 $K$ 是一个数域.
+> **定义1** (数域)<br>设 $K$ 是复数集的一个子集, 如果 $K$ 满足: <br>(1) $0,1\in K$; <br>(2) 对加, 减, 乘, 除(除数不为 $0$) 四种运算封闭, <br>那么称 $K$ 是一个数域.
 
 ### 习题一
 
@@ -8,7 +8,7 @@
 
 ### 解答 习题一
 
-由**定义1**(数域)的要求, 需验证 $\mathbb Q(i)$ 满足 $0,1\in K$ 且对加、减、乘、除四种运算封闭.
+由**定义1** (数域)的要求, 需验证 $\mathbb Q(i)$ 满足 $0,1\in K$ 且对加, 减, 乘, 除四种运算封闭.
 
 **验证 $0,1\in\mathbb Q(i)$**. 由**定义1**第(1)条, 显然 $0=0+0\cdot i\in\mathbb Q(i)$, $1=1+0\cdot i\in\mathbb Q(i)$.
 
@@ -30,7 +30,7 @@ $$
 \end{aligned}
 $$
 
-由于有理数对加、减、乘封闭, $ac-bd\in\mathbb Q$, $ad+bc\in\mathbb Q$, 故 $\alpha\beta\in\mathbb Q(i)$.
+由于有理数对加, 减, 乘封闭, $ac-bd\in\mathbb Q$, $ad+bc\in\mathbb Q$, 故 $\alpha\beta\in\mathbb Q(i)$.
 
 **验证对除法封闭**. 由**定义1**第(2)条, 设 $\beta=c+di\ne 0$, 则 $c^{2}+d^{2}\ne 0$, 且
 
@@ -41,6 +41,6 @@ $$
 \end{aligned}
 $$
 
-由于有理数对加、减、乘、除(除数不为 $0$) 封闭, $\frac{ac+bd}{c^{2}+d^{2}}\in\mathbb Q$, $\frac{bc-ad}{c^{2}+d^{2}}\in\mathbb Q$, 故 $\frac{\alpha}{\beta}\in\mathbb Q(i)$.
+由于有理数对加, 减, 乘, 除(除数不为 $0$) 封闭, $\frac{ac+bd}{c^{2}+d^{2}}\in\mathbb Q$, $\frac{bc-ad}{c^{2}+d^{2}}\in\mathbb Q$, 故 $\frac{\alpha}{\beta}\in\mathbb Q(i)$.
 
-综上, $\mathbb Q(i)$ 满足**定义1**(数域)的全部条件, 故 $\mathbb Q(i)$ 是一个数域. $\blacksquare$
+综上, $\mathbb Q(i)$ 满足**定义1** (数域)的全部条件, 故 $\mathbb Q(i)$ 是一个数域. $\blacksquare$

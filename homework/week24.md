@@ -20,7 +20,7 @@
 
 ### 解答 习题一
 
-由**定义1**(映射), 判别下列对应法则是否为 $\mathbb{R}$ 到自身的映射, 是否为单射, 是否为满射.
+由**定义1** (映射), 判别下列对应法则是否为 $\mathbb{R}$ 到自身的映射, 是否为单射, 是否为满射.
 
 **(1)** $f\left(x\right)=x^{3}$.
 
@@ -32,7 +32,7 @@
 
 因此既是单射又是满射 (双射).
 
-**(2)** $f\left(x\right)=x^{2}-x$.
+** (2)** $f\left(x\right)=x^{2}-x$.
 
 是映射.
 
@@ -42,7 +42,7 @@
 
 因此既不是单射也不是满射.
 
-**(3)** $f\left(x\right)=2^{x}$.
+** (3)** $f\left(x\right)=2^{x}$.
 
 是映射.
 
@@ -52,7 +52,7 @@
 
 因此是单射但不是满射.
 
-**(4)** $f\left(x\right)=\ln x$.
+** (4)** $f\left(x\right)=\ln x$.
 
 不是映射. 因为对 $x\le0$, $\ln x$ 没有定义, 不是对所有 $x\in\mathbb{R}$ 都有对应.
 
@@ -64,7 +64,7 @@ $\blacksquare$
 
 ### 解答 习题二
 
-由**定义1**(映射), 设 $S$ 有 $n$ 个元素.
+由**定义1** (映射), 设 $S$ 有 $n$ 个元素.
 
 $f$ 是单射, 故 $S$ 中不同元素的象也不同. 因此 $f\left(S\right)$ 的元素个数等于 $|S|=n$.
 
@@ -94,7 +94,7 @@ $$
 
 ### 解答 习题三
 
-由**定义5**(线性映射)和**定理**(核与象的维数公式), $\mathcal{A}\left(\alpha\right)=A\alpha$ 是线性映射.
+由**定义5** (线性映射)和**定理** (核与象的维数公式), $\mathcal{A}\left(\alpha\right)=A\alpha$ 是线性映射.
 
 **(1)** $\operatorname{Im}\mathcal{A}$ 等于 $A$ 的列空间.
 
@@ -130,7 +130,7 @@ $$
 
 $\dim\left(\operatorname{Im}\mathcal{A}\right)=\operatorname{rank}\left(A\right)=2$.
 
-**(2)** $\ker\mathcal{A}$ 是 $Ax=0$ 的解空间.
+** (2)** $\ker\mathcal{A}$ 是 $Ax=0$ 的解空间.
 
 由行阶梯形得同解方程组:
 
@@ -163,6 +163,6 @@ $$
 
 $\dim\left(\ker\mathcal{A}\right)=4-\operatorname{rank}\left(A\right)=2$.
 
-由**定理**(核与象的维数公式), 验证: $\dim\left(\ker\mathcal{A}\right)+\dim\left(\operatorname{Im}\mathcal{A}\right)=2+2=4=\dim\left(K^{4}\right)$.
+由**定理** (核与象的维数公式), 验证: $\dim\left(\ker\mathcal{A}\right)+\dim\left(\operatorname{Im}\mathcal{A}\right)=2+2=4=\dim\left(K^{4}\right)$.
 
 $\blacksquare$

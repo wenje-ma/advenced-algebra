@@ -18,7 +18,7 @@ $$
 
 ### 解答 习题一
 
-由**定义1**(线性相关)和**定义2**(线性无关), 考虑齐次线性方程组 $x_{1}\alpha_{1}+x_{2}\alpha_{2}+x_{3}\alpha_{3}=0$. 写出系数矩阵, 作初等行变换:
+由**定义1** (线性相关)和**定义2** (线性无关), 考虑齐次线性方程组 $x_{1}\alpha_{1}+x_{2}\alpha_{2}+x_{3}\alpha_{3}=0$. 写出系数矩阵, 作初等行变换:
 
 $$
 \left[\begin{array}{rrr}
@@ -53,7 +53,7 @@ $$
 
 ### 解答 习题二
 
-由**定义1**(线性相关)和**定义2**(线性无关), 考虑齐次线性方程组 $x_{1}\alpha_{1}+x_{2}\alpha_{2}+x_{3}\alpha_{3}+x_{4}\alpha_{4}=0$. 写出系数矩阵, 作初等行变换:
+由**定义1** (线性相关)和**定义2** (线性无关), 考虑齐次线性方程组 $x_{1}\alpha_{1}+x_{2}\alpha_{2}+x_{3}\alpha_{3}+x_{4}\alpha_{4}=0$. 写出系数矩阵, 作初等行变换:
 
 $$
 \left[\begin{array}{rrrr}
@@ -91,7 +91,7 @@ $$
 \alpha_{4}=\alpha_{1}+\alpha_{2}+\alpha_{3}.
 $$
 
-验证: $\alpha_{1}+\alpha_{2}+\alpha_{3}=\left(-2+1+3,1-3+0,0+2+2,3+4-1\right)^{T}=\left(2,-2,4,6\right)^{T}=\alpha_{4}$. 由**定义1**(线性相关), 齐次方程组有非零解, 故 $\alpha_{1},\alpha_{2},\alpha_{3},\alpha_{4}$ 线性相关. $\blacksquare$
+验证: $\alpha_{1}+\alpha_{2}+\alpha_{3}=\left(-2+1+3,1-3+0,0+2+2,3+4-1\right)^{T}=\left(2,-2,4,6\right)^{T}=\alpha_{4}$. 由**定义1** (线性相关), 齐次方程组有非零解, 故 $\alpha_{1},\alpha_{2},\alpha_{3},\alpha_{4}$ 线性相关. $\blacksquare$
 
 ### 习题三
 
@@ -99,7 +99,7 @@ $$
 
 ### 解答 习题三
 
-由**定义2**(线性无关), 判断向量组 $\alpha_{1}+\alpha_{2},\alpha_{2}+\alpha_{3},\alpha_{3}+\alpha_{4},\alpha_{4}+\alpha_{1}$ 是否线性无关, 即判断齐次线性方程组 $k_{1}\left(\alpha_{1}+\alpha_{2}\right)+k_{2}\left(\alpha_{2}+\alpha_{3}\right)+k_{3}\left(\alpha_{3}+\alpha_{4}\right)+k_{4}\left(\alpha_{4}+\alpha_{1}\right)=0$ 是否只有零解.
+由**定义2** (线性无关), 判断向量组 $\alpha_{1}+\alpha_{2},\alpha_{2}+\alpha_{3},\alpha_{3}+\alpha_{4},\alpha_{4}+\alpha_{1}$ 是否线性无关, 即判断齐次线性方程组 $k_{1}\left(\alpha_{1}+\alpha_{2}\right)+k_{2}\left(\alpha_{2}+\alpha_{3}\right)+k_{3}\left(\alpha_{3}+\alpha_{4}\right)+k_{4}\left(\alpha_{4}+\alpha_{1}\right)=0$ 是否只有零解.
 
 设
 
@@ -144,7 +144,7 @@ $$
 
 ### 解答 习题四
 
-由**定义2**(线性无关)和**定义1**(线性相关), 证明表出方式唯一的充分必要条件是 $\alpha_{1},\cdots,\alpha_{s}$ 线性无关.
+由**定义2** (线性无关)和**定义1** (线性相关), 证明表出方式唯一的充分必要条件是 $\alpha_{1},\cdots,\alpha_{s}$ 线性无关.
 
 **充分性**. 设 $\alpha_{1},\cdots,\alpha_{s}$ 线性无关. 假设有两种表出方式:
 
@@ -180,7 +180,7 @@ $$
 
 ### 解答 习题五
 
-由**定义2**(线性无关)和**定义1**(线性相关), 证明由非零向量组成的向量组 $\alpha_{1},\alpha_{2},\cdots,\alpha_{s}$ $\left(s\ge2\right)$ 线性无关的充分必要条件是: 每一个 $\alpha_{i}$ $\left(1<i\le s\right)$ 都不能用它前面的向量线性表出.
+由**定义2** (线性无关)和**定义1** (线性相关), 证明由非零向量组成的向量组 $\alpha_{1},\alpha_{2},\cdots,\alpha_{s}$ $\left(s\ge2\right)$ 线性无关的充分必要条件是: 每一个 $\alpha_{i}$ $\left(1<i\le s\right)$ 都不能用它前面的向量线性表出.
 
 **必要性**. 设 $\alpha_{1},\cdots,\alpha_{s}$ 线性无关. 反证: 假设某个 $\alpha_{i}$ $\left(i>1\right)$ 可以用前面的向量线性表出, 即 $\alpha_{i}=k_{1}\alpha_{1}+\cdots+k_{i-1}\alpha_{i-1}$.
 
@@ -224,7 +224,7 @@ $$
 
 ### 解答 习题六
 
-由**定义2**(线性无关), 要证明 $\alpha_{1},\alpha_{2},\cdots,\alpha_{r}$ 线性无关, 即证明齐次线性方程组 $k_{1}\alpha_{1}+k_{2}\alpha_{2}+\cdots+k_{r}\alpha_{r}=0$ 只有零解.
+由**定义2** (线性无关), 要证明 $\alpha_{1},\alpha_{2},\cdots,\alpha_{r}$ 线性无关, 即证明齐次线性方程组 $k_{1}\alpha_{1}+k_{2}\alpha_{2}+\cdots+k_{r}\alpha_{r}=0$ 只有零解.
 
 设 $k_{1}\alpha_{1}+k_{2}\alpha_{2}+\cdots+k_{r}\alpha_{r}=0$.
 

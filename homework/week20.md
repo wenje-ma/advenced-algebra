@@ -1,6 +1,6 @@
 # 作业 20
 
-> **定理1** (矩阵乘积的秩)<br>设 $A=\left(a_{ij}\right)_{s\times n}$, $B=\left(b_{ij}\right)_{n\times m}$, 则:<br>$$\text{rank}\left(AB\right)\le\min\left\{\text{rank}\left(A\right),\text{rank}\left(B\right)\right\}.$$
+> **定理1** (矩阵乘积的秩)<br>设 $A=\left(a_{ij}\right)_{s\times n}$, $B=\left(b_{ij}\right)_{n\times m}$, 则: <br>$$\text{rank}\left(AB\right)\le\min\left\{\text{rank}\left(A\right),\text{rank}\left(B\right)\right\}.$$
 
 > **定理3** (乘积的行列式)<br>设 $A,B$ 都是 $n$ 级矩阵, 则 $|AB|=|A||B|$.
 
@@ -10,7 +10,7 @@
 
 ### 解答 习题一
 
-由**定理1**(矩阵乘积的秩)的思路, 把 $A$ 经过初等行变换化成简化行阶梯形矩阵 $J$.
+由**定理1** (矩阵乘积的秩)的思路, 把 $A$ 经过初等行变换化成简化行阶梯形矩阵 $J$.
 
 因为 $\text{rank}\left(A\right)=r$, 所以 $J$ 有 $r$ 个非零行.
 
@@ -40,7 +40,7 @@
 
 ### 解答 习题二
 
-由**定理3**(乘积的行列式), $|AB|=|A||B|$. 要证明 $|I-A|=0$.
+由**定理3** (乘积的行列式), $|AB|=|A||B|$. 要证明 $|I-A|=0$.
 
 $$
 |I-A|=\left|\left(I-A\right)^{T}\right|=\left|I-A^{T}\right|.
@@ -88,7 +88,7 @@ $$
 
 ### 解答 习题三
 
-由**定理3**(乘积的行列式), $|AB|=|A||B|$. 令
+由**定理3** (乘积的行列式), $|AB|=|A||B|$. 令
 
 $$
 B=\left[\begin{array}{ccc}
@@ -116,7 +116,7 @@ $$
 
 所以
 
-由**定理3**(乘积的行列式),
+由**定理3** (乘积的行列式),
 
 $$
 |A|=|BB^{T}|=|B||B^{T}|=|B|^{2}.
@@ -142,7 +142,7 @@ $\blacksquare$
 
 ### 解答 习题四
 
-由**定理1**(矩阵乘积的秩), $\text{rank}\left(AB\right)\le\min\left\{\text{rank}\left(A\right),\text{rank}\left(B\right)\right\}$. 考虑齐次线性方程组 $\left(A^{T}AA^{T}\right)y=0$, 其中 $y$ 是 $s$ 维列向量.
+由**定理1** (矩阵乘积的秩), $\text{rank}\left(AB\right)\le\min\left\{\text{rank}\left(A\right),\text{rank}\left(B\right)\right\}$. 考虑齐次线性方程组 $\left(A^{T}AA^{T}\right)y=0$, 其中 $y$ 是 $s$ 维列向量.
 
 设 $y$ 是 $\left(A^{T}AA^{T}\right)y=0$ 的解, 则
 

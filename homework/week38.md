@@ -12,7 +12,7 @@
 
 ### 解答 习题一
 
-由**推论2**(因式定理), 在 $K\left[x\right]$ 中, $x-a$ 整除 $f\left(x\right)$ 当且仅当 $f\left(a\right)=0$. 计算 $f\left(-2\right)$:
+由**推论2** (因式定理), 在 $K\left[x\right]$ 中, $x-a$ 整除 $f\left(x\right)$ 当且仅当 $f\left(a\right)=0$. 计算 $f\left(-2\right)$:
 
 $$
 \begin{aligned}

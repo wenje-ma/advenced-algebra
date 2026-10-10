@@ -18,7 +18,7 @@ $$
 
 ### 解答 习题一
 
-由**定理1**(带余除法), 在 $K\left[x\right]$ 中, 对于任意两个多项式 $f\left(x\right),g\left(x\right)$, 其中 $g\left(x\right)\ne0$, 存在唯一的一对多项式 $h\left(x\right),r\left(x\right)$, 使得 $f\left(x\right)=h\left(x\right)g\left(x\right)+r\left(x\right)$. 作多项式除法:
+由**定理1** (带余除法), 在 $K\left[x\right]$ 中, 对于任意两个多项式 $f\left(x\right),g\left(x\right)$, 其中 $g\left(x\right)\ne0$, 存在唯一的一对多项式 $h\left(x\right),r\left(x\right)$, 使得 $f\left(x\right)=h\left(x\right)g\left(x\right)+r\left(x\right)$. 作多项式除法:
 
 $$
 f\left(x\right)=x^{4}+x^{3}+0x^{2}-2x+3.
@@ -62,7 +62,7 @@ $$
 
 因此
 
-由**定理1**(带余除法),
+由**定理1** (带余除法),
 
 $$
 \text{商式 }h\left(x\right)=\frac{1}{3}x^{2}+\frac{4}{9}x-\frac{2}{27}.
@@ -141,7 +141,7 @@ $$
 \text{余式 }r\left(x\right)=775.
 $$
 
-**(2)** 综合除法:
+** (2)** 综合除法:
 
 $$
 \begin{array}{r|rrrr}

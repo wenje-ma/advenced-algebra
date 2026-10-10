@@ -8,7 +8,7 @@
 
 ### 习题一
 
-(习题 7.4-2(2)) 分别在复数域、实数域和有理数域上分解下列多项式为不可约因式的乘积:
+(习题 7.4-2(2)) 分别在复数域, 实数域和有理数域上分解下列多项式为不可约因式的乘积:
 
 $$
 x^{4}+4.
@@ -16,7 +16,7 @@ $$
 
 ### 解答 习题一
 
-由**定理1**(唯一因式分解定理), $K\left[x\right]$ 中每一个次数大于零的多项式都能唯一地分解成数域 $K$ 上有限多个不可约多项式的乘积.
+由**定理1** (唯一因式分解定理), $K\left[x\right]$ 中每一个次数大于零的多项式都能唯一地分解成数域 $K$ 上有限多个不可约多项式的乘积.
 
 **复数域**.
 
@@ -80,7 +80,7 @@ $$
 
 ### 解答 习题二
 
-由**性质2**(不可约多项式的性质), 在 $K\left[x\right]$ 中, 如果 $p\left(x\right)$ 不可约, 且 $p\left(x\right)\mid f\left(x\right)g\left(x\right)$, 则 $p\left(x\right)\mid f\left(x\right)$ 或 $p\left(x\right)\mid g\left(x\right)$.
+由**性质2** (不可约多项式的性质), 在 $K\left[x\right]$ 中, 如果 $p\left(x\right)$ 不可约, 且 $p\left(x\right)\mid f\left(x\right)g\left(x\right)$, 则 $p\left(x\right)\mid f\left(x\right)$ 或 $p\left(x\right)\mid g\left(x\right)$.
 
 **必要性**. 若 $g^{2}\mid f^{2}$, 证明 $g\mid f$.
 

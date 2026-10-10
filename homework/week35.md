@@ -14,7 +14,7 @@
 
 ### 解答 习题一
 
-由**定理3**(最大公因式的存在性与倍式和), 存在最大公因式 $d\left(x\right)$, 并且 $d\left(x\right)$ 可以表示成 $f\left(x\right)$ 与 $g\left(x\right)$ 的倍式和. 用辗转相除法.
+由**定理3** (最大公因式的存在性与倍式和), 存在最大公因式 $d\left(x\right)$, 并且 $d\left(x\right)$ 可以表示成 $f\left(x\right)$ 与 $g\left(x\right)$ 的倍式和. 用辗转相除法.
 
 **第一步**: $f$ 除以 $g$.
 
@@ -76,7 +76,7 @@ $$
 
 因此
 
-由**定理3**(最大公因式的存在性与倍式和),
+由**定理3** (最大公因式的存在性与倍式和),
 
 $$
 \left(f,g\right)=\frac{9x-15}{5}\cdot f\left(x\right)+\frac{-3x^{2}+6x}{5}\cdot g\left(x\right).

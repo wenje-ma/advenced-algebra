@@ -51,8 +51,7 @@ $$
 所以
 
 $$
-\begin{aligned}
-S_{3}
+\begin{aligned}S_{3}
 &=\sigma_{1}S_{2}-\sigma_{2}S_{1}+3\sigma_{3}\\
 &=\sigma_{1}\left(\sigma_{1}^{2}-2\sigma_{2}\right)-\sigma_{2}\sigma_{1}+3\sigma_{3}\\
 &=\sigma_{1}^{3}-3\sigma_{1}\sigma_{2}+3\sigma_{3}.
@@ -70,8 +69,7 @@ $$
 所以
 
 $$
-\begin{aligned}
-S_{4}
+\begin{aligned}S_{4}
 &=\sigma_{1}S_{3}-\sigma_{2}S_{2}+\sigma_{3}S_{1}\\
 &=\sigma_{1}\left(\sigma_{1}^{3}-3\sigma_{1}\sigma_{2}+3\sigma_{3}\right)-\sigma_{2}\left(\sigma_{1}^{2}-2\sigma_{2}\right)+\sigma_{3}\sigma_{1}\\
 &=\sigma_{1}^{4}-3\sigma_{1}^{2}\sigma_{2}+3\sigma_{1}\sigma_{3}-\sigma_{1}^{2}\sigma_{2}+2\sigma_{2}^{2}+\sigma_{1}\sigma_{3}\\
@@ -116,8 +114,7 @@ $$
 因此
 
 $$
-\begin{aligned}
-D\left(g\right)
+\begin{aligned}D\left(g\right)
 &=\prod_{1\le i<j\le n}\left(r_{i}-r_{j}\right)^{2}\cdot\prod_{i=1}^{n}\left(a-r_{i}\right)^{2}\\
 &=D\left(f\right)\cdot\prod_{i=1}^{n}\left(a-r_{i}\right)^{2}.
 \end{aligned}

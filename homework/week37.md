@@ -37,8 +37,7 @@ $f\left(0\right)=b=0$.
 作多项式除法:
 
 $$
-\begin{aligned}
-f\left(x\right)&=x^{4}+2ax^{2}+b\\
+\begin{aligned}f\left(x\right)&=x^{4}+2ax^{2}+b\\
 &=\left(x^{2}+a\right)^{2}+\left(b-a^{2}\right).
 \end{aligned}
 $$
@@ -98,8 +97,7 @@ $$
 乘以 $-\frac{3}{16}$, 令
 
 $$
-\begin{aligned}
-r_{2}\left(x\right)&=x^{3}-3x^{2}+3x-1\\
+\begin{aligned}r_{2}\left(x\right)&=x^{3}-3x^{2}+3x-1\\
 &=\left(x-1\right)^{3}.
 \end{aligned}
 $$
@@ -109,8 +107,7 @@ $$
 商式首项: $x$.
 
 $$
-\begin{aligned}
-r_{1}-xr_{2}&=\frac{5}{3}x^{3}-5x^{2}+5x-\frac{5}{3}\\
+\begin{aligned}r_{1}-xr_{2}&=\frac{5}{3}x^{3}-5x^{2}+5x-\frac{5}{3}\\
 &=\frac{5}{3}\left(x-1\right)^{3}\\
 &=\frac{5}{3}r_{2}.
 \end{aligned}
@@ -125,8 +122,7 @@ $$
 因此
 
 $$
-\begin{aligned}
-\left(f,f'\right)&=r_{2}\\
+\begin{aligned}\left(f,f'\right)&=r_{2}\\
 &=\left(x-1\right)^{3}.
 \end{aligned}
 $$
@@ -134,8 +130,7 @@ $$
 没有重因式的多项式:
 
 $$
-\begin{aligned}
-g\left(x\right)&=\frac{f\left(x\right)}{\left(f\left(x\right),f'\left(x\right)\right)}\\
+\begin{aligned}g\left(x\right)&=\frac{f\left(x\right)}{\left(f\left(x\right),f'\left(x\right)\right)}\\
 &=\frac{f\left(x\right)}{\left(x-1\right)^{3}}.
 \end{aligned}
 $$
@@ -207,8 +202,7 @@ $$
 验证其余系数:
 
 $$
-\begin{aligned}
--4a+6&=-4+6=2,\\
+\begin{aligned}-4a+6&=-4+6=2,\\
 6a-4&=6-4=2,\\
 -4a+1&=-4+1=-3,\\
 a&=1.
@@ -226,8 +220,7 @@ $$
 没有重因式的多项式:
 
 $$
-\begin{aligned}
-g\left(x\right)&=\left(x-1\right)\left(x+1\right)\\
+\begin{aligned}g\left(x\right)&=\left(x-1\right)\left(x+1\right)\\
 &=x^{2}-1.
 \end{aligned}
 $$

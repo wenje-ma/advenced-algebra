@@ -61,7 +61,7 @@ P=\left[\begin{array}{rrr}
 1 & -2 & 2\\
 -2 & 1 & 0\\
 2 & 0 & 1
-\end{array}\right],\quad
+\end{array}\right],\ 
 P^{-1}AP=\left[\begin{array}{rrr}
 10 & 0 & 0\\
 0 & 1 & 0\\
@@ -156,7 +156,7 @@ $$
 因为 $\alpha,\beta$ 线性无关, 故
 
 $$
-\lambda_{1}-\lambda_{3}=0,\quad\lambda_{2}-\lambda_{3}=0.
+\lambda_{1}-\lambda_{3}=0,\ \lambda_{2}-\lambda_{3}=0.
 $$
 
 即 $\lambda_{1}=\lambda_{2}=\lambda_{3}$.

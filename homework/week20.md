@@ -24,7 +24,11 @@
 
 把 $P$ 按列分块: $P=\left(P_{1},P_{2}\right)$, 其中 $P_{1}$ 是 $s\times r$ 矩阵.
 
-则 $A=\left(P_{1},P_{2}\right)\left[\begin{array}{c}C\\0\end{array}\right]=P_{1}C$.
+则
+
+$$
+A=\left(P_{1},P_{2}\right)\left[\begin{array}{c}C\\0\end{array}\right]=P_{1}C
+$$
 
 令 $B=P_{1}$.
 

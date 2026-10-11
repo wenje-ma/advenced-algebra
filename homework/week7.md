@@ -228,7 +228,11 @@ $$
 \end{aligned}
 $$
 
-由 $\prod_{k=1}^{n-1}\left(1-\omega^{k}\right)=n$, 得 $\prod_{k=1}^{n-1}\left(\omega^{k}-1\right)=\left(-1\right)^{n-1}n$.
+由 $\prod_{k=1}^{n-1}\left(1-\omega^{k}\right)=n$, 得
+
+$$
+\prod_{k=1}^{n-1}\left(\omega^{k}-1\right)=\left(-1\right)^{n-1}n
+$$
 
 因此
 

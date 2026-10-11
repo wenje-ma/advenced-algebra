@@ -125,7 +125,7 @@ $$
 主元列为第 $1$ 列和第 $2$ 列, 故 $\operatorname{Im}\mathcal{A}$ 的一个基为
 
 $$
-\alpha_{1}=\left(1,-1,1\right)^{T},\quad\alpha_{2}=\left(0,2,2\right)^{T}.
+\alpha_{1}=\left(1,-1,1\right)^{T},\ \alpha_{2}=\left(0,2,2\right)^{T}.
 $$
 
 $\dim\left(\operatorname{Im}\mathcal{A}\right)=\operatorname{rank}\left(A\right)=2$.
@@ -144,7 +144,7 @@ $$
 自由未知量为 $x_{3},x_{4}$.
 
 $$
-x_{1}=-2x_{3}-x_{4},\quad x_{2}=-\frac{3}{2}x_{3}-2x_{4}.
+x_{1}=-2x_{3}-x_{4},\  x_{2}=-\frac{3}{2}x_{3}-2x_{4}.
 $$
 
 令 $x_{3}=1,\ x_{4}=0$:

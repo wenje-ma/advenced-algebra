@@ -11,8 +11,8 @@
 (习题 3.3-1) 设向量组
 
 $$
-\alpha_{1}=\begin{bmatrix}2\\0\\0\end{bmatrix},\quad
-\alpha_{2}=\begin{bmatrix}-1\\3\\0\end{bmatrix},\quad
+\alpha_{1}=\begin{bmatrix}2\\0\\0\end{bmatrix},\ 
+\alpha_{2}=\begin{bmatrix}-1\\3\\0\end{bmatrix},\ 
 \alpha_{3}=\begin{bmatrix}7\\-4\\0\end{bmatrix}.
 $$
 
@@ -34,7 +34,11 @@ $$
 
 由第 $2$ 式得 $k_{2}=-\frac{4}{3}$, 代入第 $1$ 式得 $k_{1}=\frac{17}{6}$.
 
-故 $\alpha_{3}=\frac{17}{6}\alpha_{1}-\frac{4}{3}\alpha_{2}$.
+故
+
+$$
+\alpha_{3}=\frac{17}{6}\alpha_{1}-\frac{4}{3}\alpha_{2}
+$$
 
 由**定义1**, 因此 $\alpha_{1},\alpha_{2}$ 是一个极大线性无关组. 由**定义3**, 秩为 $2$. $\blacksquare$
 

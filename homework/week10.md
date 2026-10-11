@@ -9,9 +9,9 @@
 (习题 3.1-3(1)) 在 $K^{4}$ 中, 判断向量 $\beta$ 能否由向量组 $\alpha_{1},\alpha_{2},\alpha_{3}$ 线性表出. 若能, 写出它的一种表示方式.
 
 $$
-\alpha_{1}=\begin{bmatrix}-1\\3\\0\\-5\end{bmatrix},\quad
-\alpha_{2}=\begin{bmatrix}2\\0\\7\\-3\end{bmatrix},\quad
-\alpha_{3}=\begin{bmatrix}-4\\1\\-2\\6\end{bmatrix},\quad
+\alpha_{1}=\begin{bmatrix}-1\\3\\0\\-5\end{bmatrix},\ 
+\alpha_{2}=\begin{bmatrix}2\\0\\7\\-3\end{bmatrix},\ 
+\alpha_{3}=\begin{bmatrix}-4\\1\\-2\\6\end{bmatrix},\ 
 \beta=\begin{bmatrix}8\\3\\-1\\-25\end{bmatrix}.
 $$
 
@@ -46,9 +46,9 @@ $$
 (习题 3.1-3(3)) 在 $K^{4}$ 中, 判断向量 $\beta$ 能否由向量组 $\alpha_{1},\alpha_{2},\alpha_{3}$ 线性表出. 若能, 写出它的一种表示方式.
 
 $$
-\alpha_{1}=\begin{bmatrix}3\\-5\\2\\-4\end{bmatrix},\quad
-\alpha_{2}=\begin{bmatrix}-1\\7\\-3\\6\end{bmatrix},\quad
-\alpha_{3}=\begin{bmatrix}3\\11\\-5\\10\end{bmatrix},\quad
+\alpha_{1}=\begin{bmatrix}3\\-5\\2\\-4\end{bmatrix},\ 
+\alpha_{2}=\begin{bmatrix}-1\\7\\-3\\6\end{bmatrix},\ 
+\alpha_{3}=\begin{bmatrix}3\\11\\-5\\10\end{bmatrix},\ 
 \beta=\begin{bmatrix}2\\-30\\13\\-26\end{bmatrix}.
 $$
 
@@ -102,9 +102,9 @@ $$
 (习题 3.1-5) 在 $K^{4}$ 中, 设
 
 $$
-\alpha_{1}=\begin{bmatrix}1\\0\\0\\0\end{bmatrix},\quad
-\alpha_{2}=\begin{bmatrix}1\\1\\0\\0\end{bmatrix},\quad
-\alpha_{3}=\begin{bmatrix}1\\1\\1\\0\end{bmatrix},\quad
+\alpha_{1}=\begin{bmatrix}1\\0\\0\\0\end{bmatrix},\ 
+\alpha_{2}=\begin{bmatrix}1\\1\\0\\0\end{bmatrix},\ 
+\alpha_{3}=\begin{bmatrix}1\\1\\1\\0\end{bmatrix},\ 
 \alpha_{4}=\begin{bmatrix}1\\1\\1\\1\end{bmatrix}.
 $$
 
@@ -149,7 +149,7 @@ $$
 **验证加法封闭**. 任取
 
 $$
-\alpha=\left(a_{1},\cdots,a_{r},0,\cdots,0\right),\quad
+\alpha=\left(a_{1},\cdots,a_{r},0,\cdots,0\right),\ 
 \beta=\left(b_{1},\cdots,b_{r},0,\cdots,0\right)\in W.
 $$
 

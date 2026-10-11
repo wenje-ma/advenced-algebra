@@ -15,7 +15,7 @@ A=\left[\begin{array}{ccc}
 \lambda & 0 & 0\\
 0 & \lambda & 0\\
 0 & 0 & \lambda
-\end{array}\right],\quad
+\end{array}\right],\ 
 B=\left[\begin{array}{ccc}
 0 & 1 & 0\\
 0 & 0 & 1\\

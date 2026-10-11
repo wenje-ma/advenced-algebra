@@ -5,7 +5,7 @@
 > **定理1** (带余除法)<br>在 $K\left[x\right]$ 中, 对于任意两个多项式 $f\left(x\right),g\left(x\right)$, 其中 $g\left(x\right)\ne0$, 存在唯一的一对多项式 $h\left(x\right),r\left(x\right)$, 使得
 
 $$
-f\left(x\right)=h\left(x\right)g\left(x\right)+r\left(x\right),\quad\deg r\left(x\right)<\deg g\left(x\right).
+f\left(x\right)=h\left(x\right)g\left(x\right)+r\left(x\right),\ \deg r\left(x\right)<\deg g\left(x\right).
 $$
 
 ### 习题一
@@ -13,7 +13,7 @@ $$
 (习题 7.2-3(2)) 用 $g\left(x\right)$ 除 $f\left(x\right)$, 求商式与余式:
 
 $$
-f\left(x\right)=x^{4}+x^{3}-2x+3,\quad g\left(x\right)=3x^{2}-x+2.
+f\left(x\right)=x^{4}+x^{3}-2x+3,\  g\left(x\right)=3x^{2}-x+2.
 $$
 
 ### 解答 习题一
@@ -105,7 +105,7 @@ $$
 这对所有 $x$ 成立当且仅当
 
 $$
-a-1=0,\quad a_{0}=0.
+a-1=0,\  a_{0}=0.
 $$
 
 所以充分必要条件是 $a=1$, $a_{0}=0$. $\blacksquare$

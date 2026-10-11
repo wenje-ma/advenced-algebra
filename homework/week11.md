@@ -11,8 +11,8 @@
 (习题 3.2-2(1)) 判断下列向量组是线性相关还是线性无关. 如果线性相关, 试找出其中一个向量, 使得它可以由其余向量线性表出, 并且写出它的一种表达式.
 
 $$
-\alpha_{1}=\begin{bmatrix}3\\1\\2\\-4\end{bmatrix},\quad
-\alpha_{2}=\begin{bmatrix}1\\0\\5\\2\end{bmatrix},\quad
+\alpha_{1}=\begin{bmatrix}3\\1\\2\\-4\end{bmatrix},\ 
+\alpha_{2}=\begin{bmatrix}1\\0\\5\\2\end{bmatrix},\ 
 \alpha_{3}=\begin{bmatrix}-1\\2\\0\\3\end{bmatrix}.
 $$
 
@@ -45,9 +45,9 @@ $$
 (习题 3.2-2(2)) 判断下列向量组是线性相关还是线性无关. 如果线性相关, 试找出其中一个向量, 使得它可以由其余向量线性表出, 并且写出它的一种表达式.
 
 $$
-\alpha_{1}=\begin{bmatrix}-2\\1\\0\\3\end{bmatrix},\quad
-\alpha_{2}=\begin{bmatrix}1\\-3\\2\\4\end{bmatrix},\quad
-\alpha_{3}=\begin{bmatrix}3\\0\\2\\-1\end{bmatrix},\quad
+\alpha_{1}=\begin{bmatrix}-2\\1\\0\\3\end{bmatrix},\ 
+\alpha_{2}=\begin{bmatrix}1\\-3\\2\\4\end{bmatrix},\ 
+\alpha_{3}=\begin{bmatrix}3\\0\\2\\-1\end{bmatrix},\ 
 \alpha_{4}=\begin{bmatrix}2\\-2\\4\\6\end{bmatrix}.
 $$
 
@@ -150,7 +150,6 @@ $$
 
 $$
 \beta=k_{1}\alpha_{1}+\cdots+k_{s}\alpha_{s},
-\quad
 \beta=l_{1}\alpha_{1}+\cdots+l_{s}\alpha_{s}.
 $$
 
@@ -215,8 +214,8 @@ $$
 (习题 3.2-11) 设 $a_{1},a_{2},\cdots,a_{r}$ 是两两不同的数, $r\le n$. 令
 
 $$
-\alpha_{1}=\begin{bmatrix}1\\a_{1}\\a_{1}^{2}\\\vdots\\a_{1}^{n-1}\end{bmatrix},\quad
-\alpha_{2}=\begin{bmatrix}1\\a_{2}\\a_{2}^{2}\\\vdots\\a_{2}^{n-1}\end{bmatrix},\quad\cdots,\quad
+\alpha_{1}=\begin{bmatrix}1\\a_{1}\\a_{1}^{2}\\\vdots\\a_{1}^{n-1}\end{bmatrix},\ 
+\alpha_{2}=\begin{bmatrix}1\\a_{2}\\a_{2}^{2}\\\vdots\\a_{2}^{n-1}\end{bmatrix},\ \cdots,\ 
 \alpha_{r}=\begin{bmatrix}1\\a_{r}\\a_{r}^{2}\\\vdots\\a_{r}^{n-1}\end{bmatrix}.
 $$
 

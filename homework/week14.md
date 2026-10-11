@@ -11,9 +11,9 @@
 (习题 3.5-2(1)) 求下列向量组的秩以及它的一个极大线性无关组:
 
 $$
-\alpha_{1}=\begin{bmatrix}-1\\5\\3\\-2\end{bmatrix},\quad
-\alpha_{2}=\begin{bmatrix}4\\1\\-2\\9\end{bmatrix},\quad
-\alpha_{3}=\begin{bmatrix}2\\0\\-1\\4\end{bmatrix},\quad
+\alpha_{1}=\begin{bmatrix}-1\\5\\3\\-2\end{bmatrix},\ 
+\alpha_{2}=\begin{bmatrix}4\\1\\-2\\9\end{bmatrix},\ 
+\alpha_{3}=\begin{bmatrix}2\\0\\-1\\4\end{bmatrix},\ 
 \alpha_{4}=\begin{bmatrix}0\\3\\4\\-5\end{bmatrix}.
 $$
 
@@ -81,8 +81,8 @@ $$
 由**推论5**, 主元在第 $1,2,3$ 列, 故原矩阵 $A$ 的第 $1,2,3$ 列构成列空间的一个基:
 
 $$
-\alpha_{1}=\begin{bmatrix}1\\0\\5\\1\end{bmatrix},\quad
-\alpha_{2}=\begin{bmatrix}3\\-1\\2\\4\end{bmatrix},\quad
+\alpha_{1}=\begin{bmatrix}1\\0\\5\\1\end{bmatrix},\ 
+\alpha_{2}=\begin{bmatrix}3\\-1\\2\\4\end{bmatrix},\ 
 \alpha_{3}=\begin{bmatrix}-2\\-3\\0\\1\end{bmatrix}.
 $$
 
@@ -191,7 +191,7 @@ $$
 考虑分块矩阵 $M=\left(\begin{array}{cc}A & C\\0 & B\end{array}\right)$ 的以下列向量:
 
 $$
-\begin{bmatrix}\alpha_{1}\\0\end{bmatrix},\ \cdots,\ \begin{bmatrix}\alpha_{r_{1}}\\0\end{bmatrix},\quad
+\begin{bmatrix}\alpha_{1}\\0\end{bmatrix},\ \cdots,\ \begin{bmatrix}\alpha_{r_{1}}\\0\end{bmatrix},\ 
 \begin{bmatrix}c_{1}\\\beta_{1}\end{bmatrix},\ \cdots,\ \begin{bmatrix}c_{r_{2}}\\\beta_{r_{2}}\end{bmatrix},
 $$
 

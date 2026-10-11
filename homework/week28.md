@@ -20,7 +20,11 @@ $$
 
 令 $P=\left[\begin{array}{cc}P_{1} & 0\\0 & P_{2}\end{array}\right]$.
 
-因为 $P_{1},P_{2}$ 可逆, 故 $P$ 可逆, 且 $P^{-1}=\left[\begin{array}{cc}P_{1}^{-1} & 0\\0 & P_{2}^{-1}\end{array}\right]$.
+因为 $P_{1},P_{2}$ 可逆, 故 $P$ 可逆, 且
+
+$$
+P^{-1}=\left[\begin{array}{cc}P_{1}^{-1} & 0\\0 & P_{2}^{-1}\end{array}\right]
+$$
 
 计算:
 

@@ -4,7 +4,7 @@
 
 > **初等对称多项式**<br>$$\begin{aligned}\sigma_{1}&=x_{1}+x_{2}+\ldots+x_{n}\\sigma_{2}&=x_{1}x_{2}+x_{1}x_{3}+\ldots+x_{n-1}x_{n}\\ldots&\\sigma_{n}&=x_{1}x_{2}\ldots x_{n}.\end{aligned}$$
 
-> **牛顿公式** (幂和与初等对称多项式的关系)<br>设 $S_{k}=x_{1}^{k}+x_{2}^{k}+\ldots+x_{n}^{k}$, 则: <br>$$\begin{aligned}S_{1}&=\sigma_{1}\\S_{k}-\sigma_{1}S_{k-1}+\sigma_{2}S_{k-2}-\ldots+\left(-1\right)^{k-1}\sigma_{k-1}S_{1}+\left(-1\right)^{k}k\sigma_{k}&=0,\quad 1\le k\le n\\S_{k}-\sigma_{1}S_{k-1}+\sigma_{2}S_{k-2}-\ldots+\left(-1\right)^{n}\sigma_{n}S_{k-n}&=0,\quad k>n.\end{aligned}$$
+> **牛顿公式** (幂和与初等对称多项式的关系)<br>设 $S_{k}=x_{1}^{k}+x_{2}^{k}+\ldots+x_{n}^{k}$, 则: <br>$$\begin{aligned}S_{1}&=\sigma_{1}\\S_{k}-\sigma_{1}S_{k-1}+\sigma_{2}S_{k-2}-\ldots+\left(-1\right)^{k-1}\sigma_{k-1}S_{1}+\left(-1\right)^{k}k\sigma_{k}&=0,\  1\le k\le n\\S_{k}-\sigma_{1}S_{k-1}+\sigma_{2}S_{k-2}-\ldots+\left(-1\right)^{n}\sigma_{n}S_{k-n}&=0,\  k>n.\end{aligned}$$
 
 ### 习题一
 

@@ -150,7 +150,7 @@ $$
 令
 
 $$
-u\left(x\right)=\frac{g\left(x\right)}{d\left(x\right)},\quad v\left(x\right)=\frac{f\left(x\right)}{d\left(x\right)}.
+u\left(x\right)=\frac{g\left(x\right)}{d\left(x\right)},\  v\left(x\right)=\frac{f\left(x\right)}{d\left(x\right)}.
 $$
 
 则
@@ -248,7 +248,7 @@ $\blacksquare$
 令
 
 $$
-X_{1}=v\left(A\right)f_{2}\left(A\right)X,\quad X_{2}=u\left(A\right)f_{1}\left(A\right)X.
+X_{1}=v\left(A\right)f_{2}\left(A\right)X,\  X_{2}=u\left(A\right)f_{1}\left(A\right)X.
 $$
 
 则

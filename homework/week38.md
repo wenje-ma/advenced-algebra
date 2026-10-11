@@ -101,7 +101,7 @@ $$
 令 $f\left(3\right)=0$:
 
 $$
-9a+3b=45\quad\Rightarrow\quad 3a+b=15. \tag{1}
+9a+3b=45\ \Rightarrow\  3a+b=15. \tag{1}
 $$
 
 求导数:
@@ -129,13 +129,13 @@ $$
 $\left(2\right)-\left(1\right)$ 得:
 
 $$
-3a=12\quad\Rightarrow\quad a=4.
+3a=12\ \Rightarrow\  a=4.
 $$
 
 代入 $\left(1\right)$:
 
 $$
-3\cdot4+b=15\quad\Rightarrow\quad b=3.
+3\cdot4+b=15\ \Rightarrow\  b=3.
 $$
 
 因此 $a=4$, $b=3$. $\blacksquare$
@@ -151,7 +151,7 @@ $x^{n}-1=0$ 的根是 $x^{n}=1$.
 $1$ 的 $n$ 次方根为:
 
 $$
-x_{k}=e^{2\pi i k/n}=\cos\frac{2\pi k}{n}+i\sin\frac{2\pi k}{n},\quad k=0,1,\ldots,n-1.
+x_{k}=e^{2\pi i k/n}=\cos\frac{2\pi k}{n}+i\sin\frac{2\pi k}{n},\  k=0,1,\ldots,n-1.
 $$
 
 因此标准分解式为:

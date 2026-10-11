@@ -125,7 +125,7 @@ $$
 令
 
 $$
-\gamma_{1}=\frac{\alpha+\beta}{2},\quad\gamma_{2}=\frac{\alpha-\beta}{2}.
+\gamma_{1}=\frac{\alpha+\beta}{2},\ \gamma_{2}=\frac{\alpha-\beta}{2}.
 $$
 
 则

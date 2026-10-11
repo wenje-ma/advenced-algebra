@@ -7,8 +7,8 @@
 (习题 3.4-2) 证明: $K^{n}$ 中的向量组
 
 $$
-\eta_{1}=\begin{bmatrix}1\\0\\0\\\vdots\\0\end{bmatrix},\quad
-\eta_{2}=\begin{bmatrix}1\\1\\0\\\vdots\\0\end{bmatrix},\quad\cdots,\quad
+\eta_{1}=\begin{bmatrix}1\\0\\0\\\vdots\\0\end{bmatrix},\ 
+\eta_{2}=\begin{bmatrix}1\\1\\0\\\vdots\\0\end{bmatrix},\ \cdots,\ 
 \eta_{n}=\begin{bmatrix}1\\1\\1\\\vdots\\1\end{bmatrix}
 $$
 
@@ -53,8 +53,8 @@ $$
 (习题 3.4-3(3)) 判断下述向量组是否为 $K^{3}$ 的一个基:
 
 $$
-\alpha_{1}=\begin{bmatrix}1\\0\\1\end{bmatrix},\quad
-\alpha_{2}=\begin{bmatrix}0\\4\\-1\end{bmatrix},\quad
+\alpha_{1}=\begin{bmatrix}1\\0\\1\end{bmatrix},\ 
+\alpha_{2}=\begin{bmatrix}0\\4\\-1\end{bmatrix},\ 
 \alpha_{3}=\begin{bmatrix}2\\-4\\3\end{bmatrix}.
 $$
 

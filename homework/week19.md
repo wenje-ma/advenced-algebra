@@ -10,7 +10,11 @@
 
 由**定义2** (上/下三角矩阵), 设 $A=\left(a_{ij}\right),B=\left(b_{ij}\right)$ 都是 $n$ 级下三角矩阵, 即当 $i<j$ 时, $a_{ij}=0,\ b_{ij}=0$.
 
-设 $C=AB=\left(c_{ij}\right)$, 则 $c_{ij}=\sum_{k=1}^{n}a_{ik}b_{kj}$.
+设 $C=AB=\left(c_{ij}\right)$, 则
+
+$$
+c_{ij}=\sum_{k=1}^{n}a_{ik}b_{kj}
+$$
 
 **下三角性**. 当 $i<j$ 时:
 
@@ -77,7 +81,7 @@ $E_{ij}A$ 的 $\left(k,j\right)$ 元 $=0$ (因为 $k\ne i$).
 设 $A$ 是任一 $n$ 级矩阵. 令
 
 $$
-S=\frac{1}{2}\left(A+A^{T}\right),\quad
+S=\frac{1}{2}\left(A+A^{T}\right),\ 
 K=\frac{1}{2}\left(A-A^{T}\right).
 $$
 
@@ -168,7 +172,7 @@ $$
 因此
 
 $$
-\left|A\right|=-\left|A\right|\quad\Rightarrow\quad 2\left|A\right|=0\quad\Rightarrow\quad \left|A\right|=0.
+\left|A\right|=-\left|A\right|\ \Rightarrow\  2\left|A\right|=0\ \Rightarrow\  \left|A\right|=0.
 $$
 
 $\blacksquare$

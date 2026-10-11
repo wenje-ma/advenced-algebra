@@ -149,8 +149,8 @@ $A^{T}A=I$, 得 $A_{ii}^{2}=1$, 故 $A_{ii}=\pm1$. $\blacksquare$
 (习题 4.6-12) 在欧几里得空间 $\mathbb{R}^{4}$ 中, 设向量组
 
 $$
-\alpha_{1}=\begin{bmatrix}1\\1\\0\\0\end{bmatrix},\quad
-\alpha_{2}=\begin{bmatrix}1\\0\\1\\0\end{bmatrix},\quad
+\alpha_{1}=\begin{bmatrix}1\\1\\0\\0\end{bmatrix},\ 
+\alpha_{2}=\begin{bmatrix}1\\0\\1\\0\end{bmatrix},\ 
 \alpha_{3}=\begin{bmatrix}1\\0\\0\\-1\end{bmatrix}.
 $$
 

@@ -2,7 +2,7 @@
 
 > **定义1** (二元关系)<br>设 $S$ 是一个非空集合, 我们把 $S\times S$ 的一个子集 $W$ 叫做 $S$ 上的一个二元关系. 如果 $\left(a,b\right)\in W$, 则称 $a$ 与 $b$ 有 $W$ 关系.
 
-> **定义2** (等价关系)<br>集合 $S$ 上的一个二元关系 $\sim$ 如果具有下述性质: $\forall a,b,c\in S$, 有 $1^{\circ}\ a\sim a$ (反身性); $2^{\circ}\ a\sim b\Rightarrow b\sim a$ (对称性); $3^{\circ}\ a\sim b$ 且 $b\sim c\Rightarrow a\sim c$ (传递性), 则称 $\sim$ 是 $S$ 上的一个等价关系.
+> **定义2** (等价关系)<br>集合 $S$ 上的一个二元关系 $\sim$ 如果具有下述性质: $\forall a,b,c\in S$, 有 $1^{\circ}a\sim a$ (反身性); $2^{\circ}a\sim b\Rightarrow b\sim a$ (对称性); $3^{\circ}a\sim b$ 且 $b\sim c\Rightarrow a\sim c$ (传递性), 则称 $\sim$ 是 $S$ 上的一个等价关系.
 
 > **定义4** (商集)<br>设 $\sim$ 是集合 $S$ 上的一个等价关系. 由所有等价类组成的集合称为 $S$ 对于关系 $\sim$ 的商集, 记作 $S/\sim$.
 

@@ -2,7 +2,11 @@
 
 > **定理1** (拉普拉斯定理)<br>在 $n$ 阶行列式 $\left|A\right|$ 中, 取定 $k$ 行, 则这 $k$ 行元素形成的所有 $k$ 阶子式与它们自己的代数余子式的乘积之和等于 $\left|A\right|$.
 
-> **基础知识1** (分块行列式)<br>其中 $A,B$ 都是方阵: <br>$$\left|\begin{array}{cc}A & 0\\C & B\end{array}\right|=\left|A\right|\left|B\right|.$$
+> **基础知识1** (分块行列式)<br>其中 $A,B$ 都是方阵:
+>
+> $$
+> \left|\begin{array}{cc}A & 0\\C & B\end{array}\right|=\left|A\right|\left|B\right|
+> $$
 
 ### 习题一
 

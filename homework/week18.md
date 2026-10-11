@@ -15,7 +15,7 @@ A=\left[\begin{array}{ccc}
 \lambda & 0 & 0\\
 0 & \lambda & 0\\
 0 & 0 & \lambda
-\end{array}\right],\ 
+\end{array}\right],
 B=\left[\begin{array}{ccc}
 0 & 1 & 0\\
 0 & 0 & 1\\
@@ -348,7 +348,7 @@ $$
 $$
 \left(x,y,1\right)M
 =
-\left(a_{11}x+a_{12}y+a_{1},\ a_{12}x+a_{22}y+a_{2},\ a_{1}x+a_{2}y+a_{0}\right).
+\left(a_{11}x+a_{12}y+a_{1},a_{12}x+a_{22}y+a_{2},a_{1}x+a_{2}y+a_{0}\right).
 $$
 
 再乘列向量:
@@ -371,12 +371,16 @@ $$
 0 & 1 & 0\\
 0 & 0 & 1\\
 0 & 0 & 0
-\end{array}\right]^{n},\ n\text{ 是正整数}.
+\end{array}\right]^{n},n\text{ 是正整数}.
 $$
 
 ### 解答 习题十一
 
-由**定义3** (矩阵的乘法), 记 $H=\left[\begin{array}{ccc}0 & 1 & 0\\0 & 0 & 1\\0 & 0 & 0\end{array}\right]$.
+由**定义3** (矩阵的乘法), 记
+
+$$
+H=\left[\begin{array}{ccc}0 & 1 & 0\\0 & 0 & 1\\0 & 0 & 0\end{array}\right]
+$$
 
 $$
 H^{2}=HH=\left[\begin{array}{ccc}
@@ -411,12 +415,16 @@ $$
 \lambda & 1 & 0\\
 0 & \lambda & 1\\
 0 & 0 & \lambda
-\end{array}\right]^{n},\ n\text{ 是正整数}.
+\end{array}\right]^{n},n\text{ 是正整数}.
 $$
 
 ### 解答 习题十二
 
-由**定义3** (矩阵的乘法), 记 $A=\lambda I+N$, 其中 $N=\left[\begin{array}{ccc}0 & 1 & 0\\0 & 0 & 1\\0 & 0 & 0\end{array}\right]$.
+由**定义3** (矩阵的乘法), 记 $A=\lambda I+N$, 其中
+
+$$
+N=\left[\begin{array}{ccc}0 & 1 & 0\\0 & 0 & 1\\0 & 0 & 0\end{array}\right]
+$$
 
 因为 $\lambda I$ 与 $N$ 可交换, 由二项式定理:
 

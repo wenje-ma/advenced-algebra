@@ -223,7 +223,11 @@ $$
 \end{array}\right|=\lambda^{3}-1.
 $$
 
-因此特征值为 $\lambda_{1}=1$, $\lambda_{2}=\omega$, $\lambda_{3}=\omega^{2}$, 其中 $\omega=e^{2\pi i/3}=-\frac{1}{2}+\frac{\sqrt{3}}{2}i$.
+因此特征值为 $\lambda_{1}=1$, $\lambda_{2}=\omega$, $\lambda_{3}=\omega^{2}$, 其中
+
+$$
+\omega=e^{2\pi i/3}=-\frac{1}{2}+\frac{\sqrt{3}}{2}i
+$$
 
 **求 $\lambda=1$ 的特征向量**.
 

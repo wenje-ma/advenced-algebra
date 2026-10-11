@@ -73,7 +73,11 @@ $$
 \left(n-2\right)+\left(n-3\right)+\cdots+1+0=\frac{\left(n-2\right)\left(n-1\right)}{2}.
 $$
 
-故 $\tau=\frac{\left(n-1\right)\left(n-2\right)}{2}$.
+故
+
+$$
+\tau=\frac{\left(n-1\right)\left(n-2\right)}{2}
+$$
 
 (2) 排列 $23\cdots\left(n-1\right)n1$ 中, 数 $1$ 排在最后, 前面的 $n-1$ 个数 $2,3,\cdots,n$ 都比 $1$ 大, 每个数都与 $1$ 构成一个逆序. 其余数之间均为自然序, 不产生逆序. 故
 

@@ -18,7 +18,11 @@ $$
 
 由**定义1** (相似), 因为 $A_{1}\sim B_{1}$, 故存在可逆矩阵 $P_{1}$, 使得 $P_{1}^{-1}A_{1}P_{1}=B_{1}$.
 
-令 $P=\left[\begin{array}{cc}P_{1} & 0\\0 & P_{2}\end{array}\right]$.
+令
+
+$$
+P=\left[\begin{array}{cc}P_{1} & 0\\0 & P_{2}\end{array}\right]
+$$
 
 因为 $P_{1},P_{2}$ 可逆, 故 $P$ 可逆, 且
 
@@ -36,7 +40,13 @@ $$
 \end{aligned}
 $$
 
-因此由**定义1** (相似), $\left[\begin{array}{cc}A_{1} & 0\\0 & A_{2}\end{array}\right]\sim\left[\begin{array}{cc}B_{1} & 0\\0 & B_{2}\end{array}\right]$. $\blacksquare$
+因此由**定义1** (相似),
+
+$$
+\left[\begin{array}{cc}A_{1} & 0\\0 & A_{2}\end{array}\right]\sim\left[\begin{array}{cc}B_{1} & 0\\0 & B_{2}\end{array}\right]
+$$
+
+$\blacksquare$
 
 ### 习题二
 

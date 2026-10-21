@@ -339,7 +339,6 @@ where all $a_{i}$ are integers.
 
 $f\left(0\right)=a_{0}$, so $a_{0}$ is odd.
 
-
 $$
 f\left(1\right)=1+a_{n-1}+\ldots+a_{1}+a_{0}
 $$

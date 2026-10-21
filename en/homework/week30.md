@@ -177,7 +177,6 @@ Since $A^{2}=A$, the eigenvalues of $A$ can only be $0$ or $1$.
 
 $\ker\left(A\right)=\left\{x\mid Ax=0\right\}$ is the eigenspace belonging to the eigenvalue $0$.
 
-
 $$
 \ker\left(I-A\right)=\left\{x\mid \left(I-A\right)x=0\right\}=\left\{x\mid Ax=x\right\}
 $$
@@ -228,11 +227,9 @@ Therefore $A$ has $n$ linearly independent eigenvectors, and is diagonalizable.
 
 **Find the similarity canonical form**.
 
-
 $$
 \dim\ker\left(A\right)=n-\operatorname{rank}\left(A\right).
 $$
-
 
 $$
 \dim\ker\left(I-A\right)=\operatorname{rank}\left(A\right)=r.

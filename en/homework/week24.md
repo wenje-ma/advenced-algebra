@@ -62,7 +62,8 @@ Surjective:
 
 $$
 f\left(x\right)=x^{2}-x=\left(x-\frac{1}{2}\right)^{2}-\frac{1}{4}\ge-\frac{1}{4}
-$$ For example, $-1$ has no preimage. Hence it is not surjective.
+$$
+For example, $-1$ has no preimage. Hence it is not surjective.
 
 Therefore it is neither injective nor surjective.
 
@@ -158,7 +159,6 @@ $$
 \alpha_{1}=\left(1,-1,1\right)^{T},\alpha_{2}=\left(0,2,2\right)^{T}.
 $$
 
-
 $$
 \dim\left(\operatorname{Im}\mathcal{A}\right)=\operatorname{rank}\left(A\right)=2.
 $$
@@ -193,7 +193,6 @@ $$
 $$
 
 Therefore a basis for $\ker\mathcal{A}$ is $\xi_{1},\xi_{2}$.
-
 
 $$
 \dim\left(\ker\mathcal{A}\right)=4-\operatorname{rank}\left(A\right)=2.

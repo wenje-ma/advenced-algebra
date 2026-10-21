@@ -241,7 +241,6 @@ $$
 
 Let $A,B$ both be $n$-th order matrices. Then $\left|AB\right|=\left|A\right|\left|B\right|$.
 
-
 **Definition 20** (Invertible Matrix)
 
 For a matrix $A$ over the number field $K$, if there exists a matrix $B$ over $K$ such that $AB=BA=I$, then $A$ is called an invertible matrix (or a nonsingular matrix).

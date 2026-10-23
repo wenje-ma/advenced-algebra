@@ -76,14 +76,14 @@ has a solution for every $\beta\in K^{n}$ if and only if its coefficient determi
 
 **Necessity**. Suppose there is a solution for every $\beta\in K^{n}$.
 
-Take $\beta=\epsilon_{1},\epsilon_{2},\cdots,\epsilon_{n}$ (the standard basis); then they can all be linearly spanned by $\alpha_{1},\cdots,\alpha_{n}$.
+Take $\beta=\varepsilon_{1},\varepsilon_{2},\cdots,\varepsilon_{n}$ (the standard basis); then they can all be linearly spanned by $\alpha_{1},\cdots,\alpha_{n}$.
 
-Hence $\alpha_{1},\cdots,\alpha_{n}$ and $\epsilon_{1},\cdots,\epsilon_{n}$ are equivalent (because $\alpha_{1},\cdots,\alpha_{n}$ can be linearly spanned by $\epsilon_{1},\cdots,\epsilon_{n}$, and conversely).
+Hence $\alpha_{1},\cdots,\alpha_{n}$ and $\varepsilon_{1},\cdots,\varepsilon_{n}$ are equivalent (because $\alpha_{1},\cdots,\alpha_{n}$ can be linearly spanned by $\varepsilon_{1},\cdots,\varepsilon_{n}$, and conversely).
 
 By Corollary $8$,
 
 $$
-\text{rank}\left\{\alpha_{1},\cdots,\alpha_{n}\right\}=\text{rank}\left\{\epsilon_{1},\cdots,\epsilon_{n}\right\}=n.
+\text{rank}\left\{\alpha_{1},\cdots,\alpha_{n}\right\}=\text{rank}\left\{\varepsilon_{1},\cdots,\varepsilon_{n}\right\}=n.
 $$
 
 The rank of $n$ vectors in $n$ dimensions being $n$ means that they are linearly independent, so the determinant they form satisfies $\left|A\right|\ne0$.

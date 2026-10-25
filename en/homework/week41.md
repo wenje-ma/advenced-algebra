@@ -95,7 +95,7 @@ The degree of the left-hand side $x-y$ is $1$.
 
 The degree of the right-hand side $g\left(x,y\right)h\left(x,y\right)$ is $\deg g+\deg h$.
 
-Since $\deg g>0$ and $\deg h>0$,
+Since $\deg g> 0$ and $\deg h> 0$,
 
 $$
 \deg g+\deg h\ge2.

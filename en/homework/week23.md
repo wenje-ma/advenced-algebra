@@ -142,21 +142,21 @@ $$
 \sum_{k=1}^{n}\left(A^{T}\right)_{1k}A_{k2}=\sum_{k=1}^{n}A_{k1}A_{k2}=0.
 $$
 
-Since $A$ is upper triangular, when $k>1$, $A_{k1}=0$. Thus the above reduces to $A_{11}A_{12}=0$.
+Since $A$ is upper triangular, when $k> 1$, $A_{k1}=0$. Thus the above reduces to $A_{11}A_{12}=0$.
 
 Since $A$ is invertible, $A_{11}\ne0$, hence $A_{12}=0$.
 
-Similarly, $A_{1j}=0$ ( $j>1$ ).
+Similarly, $A_{1j}=0$ ( $j> 1$ ).
 
 Assume the off-diagonal entries of rows $1,\cdots,i-1$ have already been proved to be zero.
 
-Consider the $\left(i,j\right)$-entry of $A^{T}A$ ( $i<j$ ):
+Consider the $\left(i,j\right)$-entry of $A^{T}A$ ( $i< j$ ):
 
 $$
 \sum_{k=1}^{i}A_{ki}A_{kj}=0.
 $$
 
-By the induction hypothesis, when $k<i$, $A_{ki}=0$. Thus the above reduces to $A_{ii}A_{ij}=0$.
+By the induction hypothesis, when $k< i$, $A_{ki}=0$. Thus the above reduces to $A_{ii}A_{ij}=0$.
 
 Since $A_{ii}\ne0$, $A_{ij}=0$.
 

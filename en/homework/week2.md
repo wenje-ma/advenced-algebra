@@ -2,8 +2,8 @@
 
 > **Theorem 1** (Criterion for the Solutions of a System of Linear Equations)<br>By applying elementary row operations to the augmented matrix of an $n$-variable system of linear equations and reducing it to a row echelon matrix:
 > (1) if the corresponding echelon system exhibits $0=d$($d\ne 0$), then the original system has no solution;
->
-> (2) if $0=d$ does not occur, then there is a solution, and when the number of nonzero rows of the echelon matrix equals the number $n$ of unknowns there is a unique solution, while when the number of nonzero rows is $r<n$ there are infinitely many solutions.
+> 
+> (2) if $0=d$ does not occur, then there is a solution, and when the number of nonzero rows of the echelon matrix equals the number $n$ of unknowns there is a unique solution, while when the number of nonzero rows is $r< n$ there are infinitely many solutions.
 
 ### Problem 1
 

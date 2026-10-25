@@ -3,7 +3,7 @@
 > **定理1** (拉普拉斯定理)<br>在 $n$ 阶行列式 $\left|A\right|$ 中, 取定 $k$ 行, 则这 $k$ 行元素形成的所有 $k$ 阶子式与它们自己的代数余子式的乘积之和等于 $\left|A\right|$.
 
 > **基础知识1** (分块行列式)<br>其中 $A,B$ 都是方阵:
->
+> 
 > $$
 > \left|\begin{array}{cc}A & 0\\C & B\end{array}\right|=\left|A\right|\left|B\right|
 > $$
@@ -88,7 +88,7 @@ $$
 这是关于 $a_{2},a_{3},\cdots,a_{n}$ 的 $n-1$ 阶范德蒙行列式, 其值为
 
 $$
-\prod_{2\le i<j\le n}\left(a_{j}-a_{i}\right)=\prod_{2\le i<j\le n}\left(j-i\right).
+\prod_{2\le i< j\le n}\left(a_{j}-a_{i}\right)=\prod_{2\le i< j\le n}\left(j-i\right).
 $$
 
 令 $d=j-i$, 则 $d=1,2,\cdots,n-2$, 对于每个 $d$, 有 $n-1-d$ 对 $\left(i,j\right)$ 满足 $j-i=d$.
@@ -96,7 +96,7 @@ $$
 故
 
 $$
-\prod_{2\le i<j\le n}\left(j-i\right)=\prod_{d=1}^{n-2}d^{n-1-d}
+\prod_{2\le i< j\le n}\left(j-i\right)=\prod_{d=1}^{n-2}d^{n-1-d}
 =1^{n-2}\cdot2^{n-3}\cdot\cdots\cdot\left(n-2\right)^{1}.
 $$
 

@@ -95,7 +95,7 @@ $$
 
 右边 $g\left(x,y\right)h\left(x,y\right)$ 的次数是 $\deg g+\deg h$.
 
-因为 $\deg g>0$, $\deg h>0$, 所以
+因为 $\deg g> 0$, $\deg h> 0$, 所以
 
 $$
 \deg g+\deg h\ge2.

@@ -75,7 +75,7 @@ Eigenvalues: $\lambda_{1}=1$, $\lambda_{2}=\lambda_{3}=3$.
 
 The eigenspace for $\lambda=3$ has dimension $1$ (geometric multiplicity), while the algebraic multiplicity is $2$.
 
-Since geometric multiplicity $<$ algebraic multiplicity, $A$ is not diagonalizable.
+Since geometric multiplicity $< $ algebraic multiplicity, $A$ is not diagonalizable.
 
 **Problem 5.5, Problem 1(3)**: $A=\left[\begin{array}{rrr}6 & 2 & 4\\2 & 3 & 2\\4 & 2 & 6\end{array}\right]$.
 
@@ -87,7 +87,7 @@ Eigenvalues: $\lambda_{1}=2$, $\lambda_{2}=11$.
 
 Eigenvalue: $\lambda=-1$ (triple root).
 
-Geometric multiplicity $<3$, so it is not diagonalizable.
+Geometric multiplicity $< 3$, so it is not diagonalizable.
 
 **Problem 5.5, Problem 1(5)**: $A=\left[\begin{array}{rrr}0 & 1/2 & 1/2\\1 & -1/2 & 1/2\\1 & -1/2 & 1/2\end{array}\right]$.
 
@@ -243,7 +243,7 @@ $\blacksquare$
 
 ### Problem 4
 
-(Problem 5.6-10) Let $A=\left(a_{ij}\right)$ be an upper triangular matrix of order $n$ over a number field $K$. Prove: if $a_{11}=a_{22}=\cdots=a_{nn}$ and at least one $a_{kl}\ne0$ ( $k<l$ ), then $A$ cannot be diagonalized.
+(Problem 5.6-10) Let $A=\left(a_{ij}\right)$ be an upper triangular matrix of order $n$ over a number field $K$. Prove: if $a_{11}=a_{22}=\cdots=a_{nn}$ and at least one $a_{kl}\ne0$ ( $k< l$ ), then $A$ cannot be diagonalized.
 
 ### Solution to Problem 4
 
@@ -268,7 +268,7 @@ $$
 \end{array}\right].
 $$
 
-Since at least one $a_{kl}\ne0$ ( $k<l$ ), $\lambda_{0}I-A$ is not the zero matrix.
+Since at least one $a_{kl}\ne0$ ( $k< l$ ), $\lambda_{0}I-A$ is not the zero matrix.
 
 Therefore $\operatorname{rank}\left(\lambda_{0}I-A\right)\ge1$.
 
@@ -278,6 +278,6 @@ $$
 n-\operatorname{rank}\left(\lambda_{0}I-A\right)\le n-1.
 $$
 
-That is, geometric multiplicity $\le n-1<n=$ algebraic multiplicity.
+That is, geometric multiplicity $\le n-1< n=$ algebraic multiplicity.
 
 Therefore $A$ cannot be diagonalized. $\blacksquare$

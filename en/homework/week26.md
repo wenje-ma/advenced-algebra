@@ -2,7 +2,7 @@
 
 > **Definition 1** (Equivalence of matrices)<br>A matrix $A$ over a field $K$ is said to be equivalent to matrix $B$ if $A$ can be transformed into $B$ by a series of elementary row and column operations, denoted $A\overset{\text{相抵}}{\sim}B$.
 
-> **Theorem 1** (Canonical form under equivalence)<br>Let $A$ be an $s\times n$ matrix over $K$ with rank $r$. If $r>0$, then $A$ is equivalent to a matrix of the form:
+> **Theorem 1** (Canonical form under equivalence)<br>Let $A$ be an $s\times n$ matrix over $K$ with rank $r$. If $r> 0$, then $A$ is equivalent to a matrix of the form:
 
 $$
 \left[\begin{array}{cc}I_{r} & 0\\0 & 0\end{array}\right].
@@ -122,11 +122,11 @@ $\blacksquare$
 
 ### Problem 3
 
-(Problem 5.2-4) Prove: any matrix of rank $r$ ( $r>0$ ) can be expressed as the sum of $r$ matrices of rank $1$.
+(Problem 5.2-4) Prove: any matrix of rank $r$ ( $r> 0$ ) can be expressed as the sum of $r$ matrices of rank $1$.
 
 ### Solution to Problem 3
 
-By **Theorem 1** (Canonical form under equivalence), let $A$ be an $s\times n$ matrix with $\operatorname{rank}\left(A\right)=r>0$.
+By **Theorem 1** (Canonical form under equivalence), let $A$ be an $s\times n$ matrix with $\operatorname{rank}\left(A\right)=r> 0$.
 
 By the canonical form theorem, there exist an invertible $s$-th order matrix $P$ and an invertible $n$-th order matrix $Q$ such that
 

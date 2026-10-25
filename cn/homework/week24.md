@@ -9,7 +9,7 @@
 > $\mathcal{A}\left(k\alpha\right)=k\mathcal{A}\left(\alpha\right)$, 则称 $\mathcal{A}$ 是 $K^{n}$ 到 $K^{s}$ 的一个线性映射.
 
 > **定理** (核与象的维数公式)<br>
->
+> 
 > $$
 > \dim\left(\ker\mathcal{A}\right)+\dim\left(\operatorname{Im}\mathcal{A}\right)=\dim\left(K^{n}\right)
 > $$
@@ -79,7 +79,7 @@ $$
 
 故是单射.
 
-满射: $2^{x}>0$. 例如 $-1$ 没有原象. 故不是满射.
+满射: $2^{x}> 0$. 例如 $-1$ 没有原象. 故不是满射.
 
 因此是单射但不是满射.
 

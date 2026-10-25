@@ -7,7 +7,7 @@
 > then $f\left(x_{1},x_{2},\ldots,x_{n}\right)$ is called a symmetric polynomial in $n$ variables over the number field $K$.
 
 > **Elementary Symmetric Polynomials**<br>
->
+> 
 > $$
 > \begin{aligned}
 > \sigma_{1}&=x_{1}+x_{2}+\ldots+x_{n},\\
@@ -18,12 +18,12 @@
 > $$
 
 > **Newton's Identities** (Relation Between Power Sums and Elementary Symmetric Polynomials)<br>Let $S_{k}=x_{1}^{k}+x_{2}^{k}+\ldots+x_{n}^{k}$. Then:
->
+> 
 > $$
 > \begin{aligned}
 > S_{1}&=\sigma_{1},\\
 > S_{k}-\sigma_{1}S_{k-1}+\sigma_{2}S_{k-2}-\ldots+\left(-1\right)^{k-1}\sigma_{k-1}S_{1}+\left(-1\right)^{k}k\sigma_{k}&=0, \ 1\le k\le n,\\
-> S_{k}-\sigma_{1}S_{k-1}+\sigma_{2}S_{k-2}-\ldots+\left(-1\right)^{n}\sigma_{n}S_{k-n}&=0, \ k>n
+> S_{k}-\sigma_{1}S_{k-1}+\sigma_{2}S_{k-2}-\ldots+\left(-1\right)^{n}\sigma_{n}S_{k-n}&=0, \ k> n
 > \end{aligned}
 > $$
 
@@ -81,7 +81,7 @@ $$
 
 **$S_{4}$**.
 
-By Newton's identities (since $n=3$ and $k=4>n$):
+By Newton's identities (since $n=3$ and $k=4> n$):
 
 $$
 S_{4}-\sigma_{1}S_{3}+\sigma_{2}S_{2}-\sigma_{3}S_{1}=0.
@@ -131,18 +131,18 @@ Write $s_{0}=a$, $s_{1}=r_{1}$, $\ldots$, $s_{n}=r_{n}$.
 The discriminant is defined as:
 
 $$
-D\left(f\right)=\prod_{1\le i<j\le n}\left(r_{i}-r_{j}\right)^{2}.
+D\left(f\right)=\prod_{1\le i< j\le n}\left(r_{i}-r_{j}\right)^{2}.
 $$
 
 $$
-D\left(g\right)=\prod_{0\le i<j\le n}\left(s_{i}-s_{j}\right)^{2}.
+D\left(g\right)=\prod_{0\le i< j\le n}\left(s_{i}-s_{j}\right)^{2}.
 $$
 
 Therefore
 
 $$
 \begin{aligned}D\left(g\right)
-&=\prod_{1\le i<j\le n}\left(r_{i}-r_{j}\right)^{2}\cdot\prod_{i=1}^{n}\left(a-r_{i}\right)^{2}\\
+&=\prod_{1\le i< j\le n}\left(r_{i}-r_{j}\right)^{2}\cdot\prod_{i=1}^{n}\left(a-r_{i}\right)^{2}\\
 &=D\left(f\right)\cdot\prod_{i=1}^{n}\left(a-r_{i}\right)^{2}.
 \end{aligned}
 $$

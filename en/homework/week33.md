@@ -50,7 +50,7 @@ All of the above normal forms are unique. $\blacksquare$
 
 ### Problem 2
 
-(Problem 6.2-4) Let $X^{T}AX$ be an $n$-ary real quadratic form. Prove: if there exist column vectors $\alpha_{1},\alpha_{2}$ in $\mathbb{R}^{n}$ such that $\alpha_{1}^{T}A\alpha_{1}>0$ and $\alpha_{2}^{T}A\alpha_{2}<0$, then there exists a nonzero column vector $\alpha$ in $\mathbb{R}^{n}$ such that $\alpha^{T}A\alpha=0$.
+(Problem 6.2-4) Let $X^{T}AX$ be an $n$-ary real quadratic form. Prove: if there exist column vectors $\alpha_{1},\alpha_{2}$ in $\mathbb{R}^{n}$ such that $\alpha_{1}^{T}A\alpha_{1}> 0$ and $\alpha_{2}^{T}A\alpha_{2}< 0$, then there exists a nonzero column vector $\alpha$ in $\mathbb{R}^{n}$ such that $\alpha^{T}A\alpha=0$.
 
 ### Solution to Problem 2
 
@@ -68,17 +68,17 @@ $$
 
 This is a quadratic function in $t$.
 
-We are given $g\left(0\right)=\alpha_{1}^{T}A\alpha_{1}>0$.
+We are given $g\left(0\right)=\alpha_{1}^{T}A\alpha_{1}> 0$.
 
-Since $\alpha_{2}^{T}A\alpha_{2}<0$, as $t\to\infty$, $g\left(t\right)\to-\infty$.
+Since $\alpha_{2}^{T}A\alpha_{2}< 0$, as $t\to\infty$, $g\left(t\right)\to-\infty$.
 
-Therefore there exists $t_{0}>0$ such that $g\left(t_{0}\right)<0$.
+Therefore there exists $t_{0}> 0$ such that $g\left(t_{0}\right)< 0$.
 
 By the intermediate value theorem for continuous functions, there exists $t_{1}\in\left(0,t_{0}\right)$ such that $g\left(t_{1}\right)=0$.
 
 Let $\alpha=\alpha_{1}+t_{1}\alpha_{2}$.
 
-Then $\alpha\ne0$ (because if $\alpha=0$, then $\alpha_{1}=-t_{1}\alpha_{2}$, and hence $\alpha_{1}^{T}A\alpha_{1}=t_{1}^{2}\alpha_{2}^{T}A\alpha_{2}<0$, a contradiction).
+Then $\alpha\ne0$ (because if $\alpha=0$, then $\alpha_{1}=-t_{1}\alpha_{2}$, and hence $\alpha_{1}^{T}A\alpha_{1}=t_{1}^{2}\alpha_{2}^{T}A\alpha_{2}< 0$, a contradiction).
 
 And $\alpha^{T}A\alpha=g\left(t_{1}\right)=0$.
 

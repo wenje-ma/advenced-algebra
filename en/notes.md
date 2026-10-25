@@ -323,7 +323,7 @@ If a matrix $A$ over the number field $K$ is transformed into a matrix $B$ throu
 
 **Theorem 13** (Canonical Form under Equivalence)
 
-Let the rank of an $s\times n$ matrix $A$ over the number field $K$ be $r$. If $r>0$, then $A$ is equivalent to a matrix of the following form:
+Let the rank of an $s\times n$ matrix $A$ over the number field $K$ be $r$. If $r> 0$, then $A$ is equivalent to a matrix of the following form:
 
 $$
 \left[\begin{array}{cc}I_{r} & 0\\0 & 0\end{array}\right].
@@ -417,7 +417,7 @@ Let $f\left(x\right),g\left(x\right)\in K\left[x\right]$. If there exists $h\lef
 
 **Theorem 22** (Division Algorithm)
 
-In $K\left[x\right]$, for any two polynomials $f\left(x\right),g\left(x\right)$ with $g\left(x\right)\ne0$, there exists a unique pair of polynomials $h\left(x\right),r\left(x\right)$ such that $f\left(x\right)=h\left(x\right)g\left(x\right)+r\left(x\right)$ and $\deg r\left(x\right)<\deg g\left(x\right)$.
+In $K\left[x\right]$, for any two polynomials $f\left(x\right),g\left(x\right)$ with $g\left(x\right)\ne0$, there exists a unique pair of polynomials $h\left(x\right),r\left(x\right)$ such that $f\left(x\right)=h\left(x\right)g\left(x\right)+r\left(x\right)$ and $\deg r\left(x\right)< \deg g\left(x\right)$.
 
 **Definition 37** (Greatest Common Divisor)
 
@@ -543,6 +543,6 @@ Let $S_{k}=x_{1}^{k}+x_{2}^{k}+\ldots+x_{n}^{k}$. Then:
 $$
 \begin{aligned}S_{1}&=\sigma_{1}\\
 S_{k}-\sigma_{1}S_{k-1}+\sigma_{2}S_{k-2}-\ldots+\left(-1\right)^{k-1}\sigma_{k-1}S_{1}+\left(-1\right)^{k}k\sigma_{k}&=0, 1\le k\le n\\
-S_{k}-\sigma_{1}S_{k-1}+\sigma_{2}S_{k-2}-\ldots+\left(-1\right)^{n}\sigma_{n}S_{k-n}&=0, k>n.
+S_{k}-\sigma_{1}S_{k-1}+\sigma_{2}S_{k-2}-\ldots+\left(-1\right)^{n}\sigma_{n}S_{k-n}&=0, k> n.
 \end{aligned}
 $$

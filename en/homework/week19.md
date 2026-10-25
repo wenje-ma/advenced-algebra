@@ -8,7 +8,7 @@
 
 ### Solution to Problem 1
 
-By **Definition 2** (Upper/lower triangular matrix), let $A=\left(a_{ij}\right),B=\left(b_{ij}\right)$ both be $n$-th order lower triangular matrices, i.e., when $i<j$, $a_{ij}=0,b_{ij}=0$.
+By **Definition 2** (Upper/lower triangular matrix), let $A=\left(a_{ij}\right),B=\left(b_{ij}\right)$ both be $n$-th order lower triangular matrices, i.e., when $i< j$, $a_{ij}=0,b_{ij}=0$.
 
 Let $C=AB=\left(c_{ij}\right)$. Then
 
@@ -16,17 +16,17 @@ $$
 c_{ij}=\sum_{k=1}^{n}a_{ik}b_{kj}
 $$
 
-**Lower triangular property.** When $i<j$:
+**Lower triangular property.** When $i< j$:
 
-- If $k\le i<j$, then $k<j$, so $b_{kj}=0$.
-- If $k>i$, then $a_{ik}=0$.
+- If $k\le i< j$, then $k< j$, so $b_{kj}=0$.
+- If $k> i$, then $a_{ik}=0$.
 
-Therefore all terms are $0$, so $c_{ij}=0$ (when $i<j$). By **Definition 2**, $C$ is a lower triangular matrix.
+Therefore all terms are $0$, so $c_{ij}=0$ (when $i< j$). By **Definition 2**, $C$ is a lower triangular matrix.
 
 **Diagonal entries.** When $i=j$:
 
-- If $k<i$, then $b_{ki}=0$.
-- If $k>i$, then $a_{ik}=0$.
+- If $k< i$, then $b_{ki}=0$.
+- If $k> i$, then $a_{ik}=0$.
 
 Thus only the term $k=i$ is nonzero:
 

@@ -216,13 +216,13 @@ The supposition is false, so $\alpha_{1},\cdots,\alpha_{s}$ is linearly independ
 
 ### Problem 5
 
-(Problem 3.2-9) Prove that a vector system $\alpha_{1},\alpha_{2},\cdots,\alpha_{s}$ $\left(s\ge2\right)$ consisting of nonzero vectors is linearly independent if and only if every $\alpha_{i}$ $\left(1<i\le s\right)$ cannot be linearly spanned by the vectors preceding it.
+(Problem 3.2-9) Prove that a vector system $\alpha_{1},\alpha_{2},\cdots,\alpha_{s}$ $\left(s\ge2\right)$ consisting of nonzero vectors is linearly independent if and only if every $\alpha_{i}$ $\left(1< i\le s\right)$ cannot be linearly spanned by the vectors preceding it.
 
 ### Solution to Problem 5
 
-By **Definition 2** (Linearly Independent) and **Definition 1** (Linearly Dependent), prove that a vector system $\alpha_{1},\alpha_{2},\cdots,\alpha_{s}$ $\left(s\ge2\right)$ consisting of nonzero vectors is linearly independent if and only if every $\alpha_{i}$ $\left(1<i\le s\right)$ cannot be linearly spanned by the vectors preceding it.
+By **Definition 2** (Linearly Independent) and **Definition 1** (Linearly Dependent), prove that a vector system $\alpha_{1},\alpha_{2},\cdots,\alpha_{s}$ $\left(s\ge2\right)$ consisting of nonzero vectors is linearly independent if and only if every $\alpha_{i}$ $\left(1< i\le s\right)$ cannot be linearly spanned by the vectors preceding it.
 
-**Necessity**. Let $\alpha_{1},\cdots,\alpha_{s}$ be linearly independent. By contradiction: suppose some $\alpha_{i}$ $\left(i>1\right)$ can be linearly spanned by the preceding vectors, i.e.
+**Necessity**. Let $\alpha_{1},\cdots,\alpha_{s}$ be linearly independent. By contradiction: suppose some $\alpha_{i}$ $\left(i> 1\right)$ can be linearly spanned by the preceding vectors, i.e.
 
 $$
 \alpha_{i}=k_{1}\alpha_{1}+\cdots+k_{i-1}\alpha_{i-1}.
@@ -236,9 +236,9 @@ $$
 
 Here the coefficient $-1\ne0$, so $\alpha_{1},\cdots,\alpha_{s}$ is linearly dependent, a contradiction.
 
-Therefore every $\alpha_{i}$ $\left(i>1\right)$ cannot be linearly spanned by the vectors preceding it.
+Therefore every $\alpha_{i}$ $\left(i> 1\right)$ cannot be linearly spanned by the vectors preceding it.
 
-**Sufficiency**. Let every $\alpha_{i}$ $\left(i>1\right)$ cannot be linearly spanned by the vectors preceding it. By contradiction: suppose $\alpha_{1},\cdots,\alpha_{s}$ is linearly dependent; then there exist scalars $c_{1},\cdots,c_{s}$, not all zero, such that $c_{1}\alpha_{1}+\cdots+c_{s}\alpha_{s}=0$.
+**Sufficiency**. Let every $\alpha_{i}$ $\left(i> 1\right)$ cannot be linearly spanned by the vectors preceding it. By contradiction: suppose $\alpha_{1},\cdots,\alpha_{s}$ is linearly dependent; then there exist scalars $c_{1},\cdots,c_{s}$, not all zero, such that $c_{1}\alpha_{1}+\cdots+c_{s}\alpha_{s}=0$.
 
 Let $c_{i}$ be the last nonzero coefficient
 
@@ -246,7 +246,7 @@ $$
 \left(c_{i}\ne0,c_{i+1}=\cdots=c_{s}=0\right).
 $$
 
-If $i=1$, then $c_{1}\alpha_{1}=0$. Since $\alpha_{1}\ne0$, we have $c_{1}=0$, a contradiction. Hence $i>1$.
+If $i=1$, then $c_{1}\alpha_{1}=0$. Since $\alpha_{1}\ne0$, we have $c_{1}=0$, a contradiction. Hence $i> 1$.
 
 From $c_{1}\alpha_{1}+\cdots+c_{i}\alpha_{i}=0$ we get
 
@@ -305,7 +305,7 @@ $$
 a_{1} & a_{2} & \cdots & a_{r}\\
 \vdots & \vdots & & \vdots\\
 a_{1}^{r-1} & a_{2}^{r-1} & \cdots & a_{r}^{r-1}
-\end{array}\right|=\prod_{1\le i<j\le r}\left(a_{j}-a_{i}\right).
+\end{array}\right|=\prod_{1\le i< j\le r}\left(a_{j}-a_{i}\right).
 $$
 
 Since $a_{1},a_{2},\cdots,a_{r}$ are pairwise distinct, the determinant is not equal to $0$.

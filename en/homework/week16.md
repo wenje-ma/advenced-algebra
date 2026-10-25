@@ -3,11 +3,11 @@
 > **Definition 1** (Fundamental system of solutions)<br>When a homogeneous linear system has nonzero solutions, a finite set of solutions $\eta_{1},\eta_{2},\cdots,\eta_{t}$ is called a **fundamental system of solutions** if: $1^{\circ}$ they are linearly independent; $2^{\circ}$ every solution of the system can be linearly represented by them.
 
 > **Theorem 1** (Dimension of solution space)<br>The dimension of the solution space $W$ of a homogeneous linear system of $n$ unknowns over the field $K$ is:
->
+> 
 > $$
 > \dim W=n-\text{rank}\left(A\right)
 > $$
->
+> 
 where $A$ is the coefficient matrix.
 
 ### Problem 1
@@ -134,7 +134,7 @@ $\blacksquare$
 
 ### Problem 3
 
-(Problem 3.7-4) Prove: let the rank of the coefficient matrix of a homogeneous system of $n$ unknowns be $r$ $\left(r<n\right)$, and let $\delta_{1},\delta_{2},\cdots,\delta_{m}$ be solution vectors of the system. Then
+(Problem 3.7-4) Prove: let the rank of the coefficient matrix of a homogeneous system of $n$ unknowns be $r$ $\left(r< n\right)$, and let $\delta_{1},\delta_{2},\cdots,\delta_{m}$ be solution vectors of the system. Then
 
 $$
 \text{rank}\left\{\delta_{1},\delta_{2},\cdots,\delta_{m}\right\}\le n-r.
@@ -188,7 +188,7 @@ Therefore for all $i$, the above equals $0$, i.e., $A\eta_{1}=0$.
 
 **Verify that $\eta_{1}\ne0$.** Since $A_{kl}\ne0$, the $l$-th component of $\eta_{1}$ is nonzero, so $\eta_{1}\ne0$.
 
-**Verify that the solution space has dimension $1$.** Since $\left|A\right|=0$, $\text{rank}\left(A\right)<n$.
+**Verify that the solution space has dimension $1$.** Since $\left|A\right|=0$, $\text{rank}\left(A\right)< n$.
 
 Also, since $A_{kl}\ne0$, this shows that $A$ has a nonzero minor of order $n-1$ (the minor after deleting row $k$ and column $l$), so $\text{rank}\left(A\right)\ge n-1$.
 

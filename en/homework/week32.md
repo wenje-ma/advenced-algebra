@@ -212,7 +212,7 @@ $$
 \lambda_{1}\alpha^{T}\alpha\ge\alpha^{T}A\alpha\ge\lambda_{n}\alpha^{T}\alpha.
 $$
 
-Since $\alpha\ne0$, we have $\alpha^{T}\alpha>0$.
+Since $\alpha\ne0$, we have $\alpha^{T}\alpha> 0$.
 
 Divide both sides by $\alpha^{T}\alpha$:
 

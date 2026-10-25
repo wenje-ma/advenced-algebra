@@ -62,9 +62,9 @@ $$
 
 **Over the rational number field**.
 
-The discriminant of $x^{2}-2x+2$ is $\Delta=4-8=-4<0$, so it is irreducible over the rational number field.
+The discriminant of $x^{2}-2x+2$ is $\Delta=4-8=-4< 0$, so it is irreducible over the rational number field.
 
-The discriminant of $x^{2}+2x+2$ is $\Delta=4-8=-4<0$, so it is irreducible over the rational number field.
+The discriminant of $x^{2}+2x+2$ is $\Delta=4-8=-4< 0$, so it is irreducible over the rational number field.
 
 Therefore over the rational number field,
 

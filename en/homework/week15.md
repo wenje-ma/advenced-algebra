@@ -21,7 +21,7 @@ x_{1}+a^{s}x_{2}+a^{2s}x_{3}+\cdots+a^{s\left(n-1\right)}x_{n}=b_{s},
 \end{cases}
 $$
 
-where $s<n$, $a\ne0$, and when $0<r<s$, $a^{r}\ne1$.
+where $s< n$, $a\ne0$, and when $0< r< s$, $a^{r}\ne1$.
 
 ### Solution to Problem 1
 
@@ -41,10 +41,10 @@ $$
 This is a Vandermonde determinant,
 
 $$
-D=\prod_{1\le i<j\le s}\left(a^{j}-a^{i}\right).
+D=\prod_{1\le i< j\le s}\left(a^{j}-a^{i}\right).
 $$
 
-Since $a\ne 0$ and when $0<r<s$, $a^{r}\ne 1$, the values $a,a^{2},\cdots,a^{s}$ are all distinct, so $D\ne 0$.
+Since $a\ne 0$ and when $0< r< s$, $a^{r}\ne 1$, the values $a,a^{2},\cdots,a^{s}$ are all distinct, so $D\ne 0$.
 
 Therefore $\text{rank}\left(A\right)\ge s$.
 
@@ -60,7 +60,7 @@ Hence $\text{rank}\left(\bar{A}\right)=s=\text{rank}\left(A\right)$.
 
 Therefore the system is solvable.
 
-Also, $\text{rank}\left(A\right)=s<n$ (number of unknowns), so the system has infinitely many solutions. $\blacksquare$
+Also, $\text{rank}\left(A\right)=s< n$ (number of unknowns), so the system has infinitely many solutions. $\blacksquare$
 
 ### Problem 2
 

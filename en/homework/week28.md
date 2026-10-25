@@ -154,7 +154,7 @@ Similar matrices have equal traces, so the supposition is false; namely, $A$ is 
 
 ### Solution to Problem 4
 
-Let $A$ be a nilpotent matrix with nilpotency index $l$, i.e. $A^{l}=0$ and $A^{k}\ne0$ ( $k<l$ ).
+Let $A$ be a nilpotent matrix with nilpotency index $l$, i.e. $A^{l}=0$ and $A^{k}\ne0$ ( $k< l$ ).
 
 Let $B\sim A$, i.e. there exists an invertible matrix $P$ such that $B=P^{-1}AP$.
 

@@ -171,11 +171,11 @@ Both have leading coefficient $1$, so $d_{1}=d_{2}$. $\blacksquare$
 
 ### Problem 4
 
-(Problem 7.3-9) Prove: two nonzero polynomials $f\left(x\right)$ and $g\left(x\right)$ in $K\left[x\right]$ are not coprime if and only if there exist two nonzero polynomials $u\left(x\right),v\left(x\right)$ such that $u\left(x\right)f\left(x\right)=v\left(x\right)g\left(x\right)$, $\deg u\left(x\right)<\deg g\left(x\right)$, and $\deg v\left(x\right)<\deg f\left(x\right)$.
+(Problem 7.3-9) Prove: two nonzero polynomials $f\left(x\right)$ and $g\left(x\right)$ in $K\left[x\right]$ are not coprime if and only if there exist two nonzero polynomials $u\left(x\right),v\left(x\right)$ such that $u\left(x\right)f\left(x\right)=v\left(x\right)g\left(x\right)$, $\deg u\left(x\right)< \deg g\left(x\right)$, and $\deg v\left(x\right)< \deg f\left(x\right)$.
 
 ### Solution to Problem 4
 
-**Necessity**. If $f$ and $g$ are not coprime, let $d\left(x\right)=\left(f,g\right)$ with $\deg d>0$.
+**Necessity**. If $f$ and $g$ are not coprime, let $d\left(x\right)=\left(f,g\right)$ with $\deg d> 0$.
 
 Let
 
@@ -192,14 +192,14 @@ $$
 And
 
 $$
-\deg u=\deg g-\deg d<\deg g.
+\deg u=\deg g-\deg d< \deg g.
 $$
 
 $$
-\deg v=\deg f-\deg d<\deg f.
+\deg v=\deg f-\deg d< \deg f.
 $$
 
-**Sufficiency**. Suppose there exist nonzero $u,v$ such that $uf=vg$, with $\deg u<\deg g$ and $\deg v<\deg f$.
+**Sufficiency**. Suppose there exist nonzero $u,v$ such that $uf=vg$, with $\deg u< \deg g$ and $\deg v< \deg f$.
 
 Suppose, for contradiction, that $f$ and $g$ are coprime, i.e. $\left(f,g\right)=1$.
 
@@ -207,7 +207,7 @@ From $uf=vg$, we get $g\mid uf$.
 
 Since $\left(f,g\right)=1$, we have $g\mid u$.
 
-But $\deg u<\deg g$, so this forces $u=0$, a contradiction.
+But $\deg u< \deg g$, so this forces $u=0$, a contradiction.
 
 Therefore $f$ and $g$ are not coprime. $\blacksquare$
 

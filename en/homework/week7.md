@@ -3,7 +3,7 @@
 > **Definition 1** (Minor and Cofactor)<br>In the $n$-th order determinant $\left|A\right|$, delete the $i$-th row and the $j$-th column; the $n-1$-th order determinant formed by the remaining elements in their original order is called the minor of the $\left(i,j\right)$ entry of $A$, denoted by $M_{ij}$. Set $A_{ij}=\left(-1\right)^{i+j}M_{ij}$; then $A_{ij}$ is called the cofactor of the $\left(i,j\right)$ entry of $A$.
 
 > **Theorem 1** (Expansion along a Row)<br>The $n$-th order determinant $\left|A\right|$ equals the sum of the products of the elements of its $i$-th row with their own cofactors:
->
+> 
 > $$
 > \left|A\right|=a_{i1}A_{i1}+a_{i2}A_{i2}+\cdots+a_{in}A_{in}
 > $$

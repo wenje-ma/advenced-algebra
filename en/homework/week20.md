@@ -1,7 +1,7 @@
 # Assignment 20
 
 > **Theorem 1** (Rank of matrix product)<br>Let $A=\left(a_{ij}\right)_{s\times n}$ and $B=\left(b_{ij}\right)_{n\times m}$. Then:
->
+> 
 > $$
 > \text{rank}\left(AB\right)\le\min\left\{\text{rank}\left(A\right),\text{rank}\left(B\right)\right\}
 > $$

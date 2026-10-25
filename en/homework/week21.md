@@ -5,7 +5,7 @@
 > **Definition 2** (Inverse matrix)<br>If $A$ is invertible, the matrix $B$ satisfying $AB=BA=I$ is called the inverse of $A$, denoted $A^{-1}$.
 
 > **Theorem 2** (Necessary and sufficient condition for invertibility)<br>An $n$-th order matrix $A$ over $K$ is invertible if and only if $\left|A\right|\ne0$. When $A$ is invertible:
->
+> 
 > $$
 > A^{-1}=\frac{1}{\left|A\right|}A^{*}
 > $$
@@ -229,31 +229,31 @@ $$
 \sum_{k=1}^{n}a_{ik}b_{kj}=\delta_{ij}.
 $$
 
-**Inductively prove $b_{ij}=0$ (when $i>j$).**
+**Inductively prove $b_{ij}=0$ (when $i> j$).**
 
 Induct on $i=n,n-1,\cdots,2$ from bottom to top.
 
-When $i=n$, for any $j<n$:
+When $i=n$, for any $j< n$:
 
 $$
 \sum_{k=1}^{n}a_{nk}b_{kj}=0.
 $$
 
-Since $A$ is upper triangular, $a_{nk}=0$ (when $k<n$).
+Since $A$ is upper triangular, $a_{nk}=0$ (when $k< n$).
 
 Thus the above reduces to $a_{nn}b_{nj}=0$.
 
-Since $A$ is invertible, $a_{nn}\ne0$, hence $b_{nj}=0$ (for all $j<n$).
+Since $A$ is invertible, $a_{nn}\ne0$, hence $b_{nj}=0$ (for all $j< n$).
 
-Assume the conclusion holds for all rows $i>m$ (i.e., $b_{ij}=0$ when $i>m$ and $i>j$).
+Assume the conclusion holds for all rows $i> m$ (i.e., $b_{ij}=0$ when $i> m$ and $i> j$).
 
-Consider row $m$, for any $j<m$:
+Consider row $m$, for any $j< m$:
 
 $$
 \sum_{k=1}^{n}a_{mk}b_{kj}=0.
 $$
 
-Since $A$ is upper triangular, $a_{mk}=0$ (when $k>m$).
+Since $A$ is upper triangular, $a_{mk}=0$ (when $k> m$).
 
 Thus the above is
 
@@ -267,7 +267,7 @@ $$
 a_{mm}b_{mj}+a_{m,m-1}b_{m-1,j}+\cdots+a_{m1}b_{1,j}=0.
 $$
 
-By the induction hypothesis, terms with $k>m$ are already proved to be $0$. For terms with $k<m$, $a_{mk}=0$ (since $m>k$, and $A$ is upper triangular).
+By the induction hypothesis, terms with $k> m$ are already proved to be $0$. For terms with $k< m$, $a_{mk}=0$ (since $m> k$, and $A$ is upper triangular).
 
 Thus only $a_{mm}b_{mj}=0$ remains.
 

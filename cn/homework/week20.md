@@ -1,7 +1,7 @@
 # 作业 20
 
 > **定理1** (矩阵乘积的秩)<br>设 $A=\left(a_{ij}\right)_{s\times n}$, $B=\left(b_{ij}\right)_{n\times m}$, 则:
->
+> 
 > $$
 > \text{rank}\left(AB\right)\le\min\left\{\text{rank}\left(A\right),\text{rank}\left(B\right)\right\}
 > $$

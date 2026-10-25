@@ -6,7 +6,7 @@
 > $$
 
 > **命题2** (实数域上秩的等式)<br>设 $A$ 是实数域上 $s\times n$ 矩阵, 则:
->
+> 
 > $$
 > \text{rank}\left(A^{T}A\right)=\text{rank}\left(AA^{T}\right)=\text{rank}\left(A\right)
 > $$
@@ -196,7 +196,7 @@ $$
 \begin{cases}
 n, & \text{当 }\text{rank}\left(A\right)=n;\\
 1, & \text{当 }\text{rank}\left(A\right)=n-1;\\
-0, & \text{当 }\text{rank}\left(A\right)<n-1.
+0, & \text{当 }\text{rank}\left(A\right)< n-1.
 \end{cases}
 $$
 
@@ -228,7 +228,7 @@ $$
 
 因此 $\text{rank}\left(A^{*}\right)=1$.
 
-**当 $\text{rank}\left(A\right)<n-1$ 时**: $A$ 的所有 $n-1$ 阶子式都为零.
+**当 $\text{rank}\left(A\right)< n-1$ 时**: $A$ 的所有 $n-1$ 阶子式都为零.
 
 故所有代数余子式都为零, 即 $A^{*}=0$.
 

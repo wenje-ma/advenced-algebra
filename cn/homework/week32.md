@@ -212,7 +212,7 @@ $$
 \lambda_{1}\alpha^{T}\alpha\ge\alpha^{T}A\alpha\ge\lambda_{n}\alpha^{T}\alpha.
 $$
 
-因为 $\alpha\ne0$, 故 $\alpha^{T}\alpha>0$.
+因为 $\alpha\ne0$, 故 $\alpha^{T}\alpha> 0$.
 
 两边除以 $\alpha^{T}\alpha$:
 

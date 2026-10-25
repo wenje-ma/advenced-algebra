@@ -6,7 +6,7 @@
 > $$
 
 > **Proposition 2** (Rank identity over the real field)<br>Let $A$ be an $s\times n$ matrix over the real field. Then:
->
+> 
 > $$
 > \text{rank}\left(A^{T}A\right)=\text{rank}\left(AA^{T}\right)=\text{rank}\left(A\right)
 > $$
@@ -196,7 +196,7 @@ $$
 \begin{cases}
 n, & \text{当 }\text{rank}\left(A\right)=n;\\
 1, & \text{当 }\text{rank}\left(A\right)=n-1;\\
-0, & \text{当 }\text{rank}\left(A\right)<n-1.
+0, & \text{当 }\text{rank}\left(A\right)< n-1.
 \end{cases}
 $$
 
@@ -228,7 +228,7 @@ Also, since $\text{rank}\left(A\right)=n-1$, $A$ has a nonzero minor of order $n
 
 Therefore $\text{rank}\left(A^{*}\right)=1$.
 
-**When $\text{rank}\left(A\right)<n-1$**: all minors of order $n-1$ of $A$ are zero.
+**When $\text{rank}\left(A\right)< n-1$**: all minors of order $n-1$ of $A$ are zero.
 
 Hence all cofactors are zero, i.e., $A^{*}=0$.
 

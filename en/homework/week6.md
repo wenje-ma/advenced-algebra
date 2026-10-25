@@ -2,15 +2,15 @@
 
 > **Basic Knowledge 1** (Properties of Determinants)<br>
 > (1) interchanging the rows and columns of a determinant (transposition) leaves its value unchanged;
->
+> 
 > (2) a common factor of a row (column) of a determinant can be pulled outside the determinant sign;
->
+> 
 > (3) if all elements of a row (column) of a determinant are sums of two terms, then the determinant can be split into the sum of two determinants;
->
+> 
 > (4) adding a multiple of one row (column) to another row (column) leaves the value of the determinant unchanged;
->
+> 
 > (5) interchanging two rows (columns) of a determinant changes its sign;
->
+> 
 > (6) if two rows (columns) of a determinant are identical or proportional, then the determinant is $0$.
 
 ### Problem 1
@@ -131,7 +131,7 @@ $$
 
 Expand along the last column. The elements of the last column are $\left(b,b,\cdots,b,a_{n}-b\right)$.
 
-For $j<n$, the cofactor is $A_{jn}=\left(-1\right)^{j+n}M_{jn}$, where $M_{jn}$ is the $\left(n-1\right)$-th order determinant obtained by deleting the $j$-th row and the $n$-th column. In that determinant, the $j$-th row (the original $j$-th row with the $n$-th column removed) has only the $1$st entry equal to $b_{j}$, with all the rest equal to $0$; expanding along this row, the minor is a diagonal determinant, giving $M_{jn}=\left(-1\right)^{j-1}a_{j}\left(-b\right)^{n-2}$.
+For $j< n$, the cofactor is $A_{jn}=\left(-1\right)^{j+n}M_{jn}$, where $M_{jn}$ is the $\left(n-1\right)$-th order determinant obtained by deleting the $j$-th row and the $n$-th column. In that determinant, the $j$-th row (the original $j$-th row with the $n$-th column removed) has only the $1$st entry equal to $b_{j}$, with all the rest equal to $0$; expanding along this row, the minor is a diagonal determinant, giving $M_{jn}=\left(-1\right)^{j-1}a_{j}\left(-b\right)^{n-2}$.
 
 Hence
 

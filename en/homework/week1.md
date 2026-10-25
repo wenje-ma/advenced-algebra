@@ -2,9 +2,9 @@
 
 > **Definition 1** (Elementary Operations on Systems of Linear Equations)<br>The following three operations are performed on a system of linear equations:
 > (1) add a multiple of one equation to another;
->
+> 
 > (2) interchange the positions of two equations;
->
+> 
 > (3) multiply an equation by a nonzero scalar. These three operations are collectively called the elementary operations on systems of linear equations. A system obtained by elementary operations has the same solution set as the original system.
 
 > **Definition 2** (Row Echelon Matrix)<br>In a matrix, rows whose elements are all $0$ (zero rows) lie below; in a row whose elements are not all $0$ (nonzero row), the first element not equal to $0$ counted from the left is called the pivot, and the column index of the pivot of each nonzero row strictly increases as the row index increases.
@@ -146,7 +146,7 @@ x_{1}&=-5000.
 \end{aligned}
 $$
 
-Then $x_{2}=10000$. Since an investment cannot be negative, $x_{1}=-5000<0$ has no practical meaning. Hence it is not possible to make the amount invested in $A_{3}$ equal to the sum of the amounts invested in $A_{1}$ and $A_{2}$. $\blacksquare$
+Then $x_{2}=10000$. Since an investment cannot be negative, $x_{1}=-5000< 0$ has no practical meaning. Hence it is not possible to make the amount invested in $A_{3}$ equal to the sum of the amounts invested in $A_{1}$ and $A_{2}$. $\blacksquare$
 
 ### Problem 3
 

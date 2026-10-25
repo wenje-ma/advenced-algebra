@@ -21,7 +21,7 @@ x_{1}+a^{s}x_{2}+a^{2s}x_{3}+\cdots+a^{s\left(n-1\right)}x_{n}=b_{s},
 \end{cases}
 $$
 
-其中 $s<n$, $a\ne0$ 且当 $0<r<s$ 时, $a^{r}\ne1$.
+其中 $s< n$, $a\ne0$ 且当 $0< r< s$ 时, $a^{r}\ne1$.
 
 ### 解答 习题一
 
@@ -41,10 +41,10 @@ $$
 这是范德蒙行列式,
 
 $$
-D=\prod_{1\le i<j\le s}\left(a^{j}-a^{i}\right).
+D=\prod_{1\le i< j\le s}\left(a^{j}-a^{i}\right).
 $$
 
-因为 $a\ne 0$ 且当 $0<r<s$ 时 $a^{r}\ne 1$, 所以 $a,a^{2},\cdots,a^{s}$ 两两不同, 故 $D\ne 0$.
+因为 $a\ne 0$ 且当 $0< r< s$ 时 $a^{r}\ne 1$, 所以 $a,a^{2},\cdots,a^{s}$ 两两不同, 故 $D\ne 0$.
 
 因此 $\text{rank}\left(A\right)\ge s$.
 
@@ -60,7 +60,7 @@ $$
 
 因此方程组有解.
 
-又 $\text{rank}\left(A\right)=s<n$ (未知量数目), 故方程组有无穷多个解. $\blacksquare$
+又 $\text{rank}\left(A\right)=s< n$ (未知量数目), 故方程组有无穷多个解. $\blacksquare$
 
 ### 习题二
 

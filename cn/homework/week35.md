@@ -171,11 +171,11 @@ $$
 
 ### 习题四
 
-(习题 7.3-9) 证明: $K\left[x\right]$ 中两个非零多项式 $f\left(x\right)$ 与 $g\left(x\right)$ 不互素的充分必要条件是, 存在两个非零多项式 $u\left(x\right),v\left(x\right)$, 使 $u\left(x\right)f\left(x\right)=v\left(x\right)g\left(x\right)$, $\deg u\left(x\right)<\deg g\left(x\right)$, $\deg v\left(x\right)<\deg f\left(x\right)$.
+(习题 7.3-9) 证明: $K\left[x\right]$ 中两个非零多项式 $f\left(x\right)$ 与 $g\left(x\right)$ 不互素的充分必要条件是, 存在两个非零多项式 $u\left(x\right),v\left(x\right)$, 使 $u\left(x\right)f\left(x\right)=v\left(x\right)g\left(x\right)$, $\deg u\left(x\right)< \deg g\left(x\right)$, $\deg v\left(x\right)< \deg f\left(x\right)$.
 
 ### 解答 习题四
 
-**必要性**. 若 $f$ 与 $g$ 不互素, 设 $d\left(x\right)=\left(f,g\right)$, $\deg d>0$.
+**必要性**. 若 $f$ 与 $g$ 不互素, 设 $d\left(x\right)=\left(f,g\right)$, $\deg d> 0$.
 
 令
 
@@ -192,14 +192,14 @@ $$
 且
 
 $$
-\deg u=\deg g-\deg d<\deg g.
+\deg u=\deg g-\deg d< \deg g.
 $$
 
 $$
-\deg v=\deg f-\deg d<\deg f.
+\deg v=\deg f-\deg d< \deg f.
 $$
 
-**充分性**. 若存在非零 $u,v$ 使得 $uf=vg$, 且 $\deg u<\deg g$, $\deg v<\deg f$.
+**充分性**. 若存在非零 $u,v$ 使得 $uf=vg$, 且 $\deg u< \deg g$, $\deg v< \deg f$.
 
 假设 $f$ 与 $g$ 互素, 即 $\left(f,g\right)=1$.
 
@@ -207,7 +207,7 @@ $$
 
 因为 $\left(f,g\right)=1$, 所以 $g\mid u$.
 
-但 $\deg u<\deg g$, 所以只能 $u=0$, 矛盾.
+但 $\deg u< \deg g$, 所以只能 $u=0$, 矛盾.
 
 因此 $f$ 与 $g$ 不互素. $\blacksquare$
 

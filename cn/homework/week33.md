@@ -50,7 +50,7 @@ $$
 
 ### 习题二
 
-(习题 6.2-4) 设 $X^{T}AX$ 是一个 $n$ 元实二次型, 证明: 如果 $\mathbb{R}^{n}$ 中有列向量 $\alpha_{1},\alpha_{2}$, 使得 $\alpha_{1}^{T}A\alpha_{1}>0$, $\alpha_{2}^{T}A\alpha_{2}<0$, 则 $\mathbb{R}^{n}$ 中有非零列向量 $\alpha$, 使得 $\alpha^{T}A\alpha=0$.
+(习题 6.2-4) 设 $X^{T}AX$ 是一个 $n$ 元实二次型, 证明: 如果 $\mathbb{R}^{n}$ 中有列向量 $\alpha_{1},\alpha_{2}$, 使得 $\alpha_{1}^{T}A\alpha_{1}> 0$, $\alpha_{2}^{T}A\alpha_{2}< 0$, 则 $\mathbb{R}^{n}$ 中有非零列向量 $\alpha$, 使得 $\alpha^{T}A\alpha=0$.
 
 ### 解答 习题二
 
@@ -68,17 +68,17 @@ $$
 
 这是关于 $t$ 的二次函数.
 
-已知 $g\left(0\right)=\alpha_{1}^{T}A\alpha_{1}>0$.
+已知 $g\left(0\right)=\alpha_{1}^{T}A\alpha_{1}> 0$.
 
-又因为 $\alpha_{2}^{T}A\alpha_{2}<0$, 所以当 $t\to\infty$ 时, $g\left(t\right)\to-\infty$.
+又因为 $\alpha_{2}^{T}A\alpha_{2}< 0$, 所以当 $t\to\infty$ 时, $g\left(t\right)\to-\infty$.
 
-因此存在 $t_{0}>0$, 使得 $g\left(t_{0}\right)<0$.
+因此存在 $t_{0}> 0$, 使得 $g\left(t_{0}\right)< 0$.
 
 由连续函数的介值定理, 存在 $t_{1}\in\left(0,t_{0}\right)$, 使得 $g\left(t_{1}\right)=0$.
 
 令 $\alpha=\alpha_{1}+t_{1}\alpha_{2}$.
 
-则 $\alpha\ne0$ (因为如果 $\alpha=0$, 则 $\alpha_{1}=-t_{1}\alpha_{2}$, 从而 $\alpha_{1}^{T}A\alpha_{1}=t_{1}^{2}\alpha_{2}^{T}A\alpha_{2}<0$, 矛盾).
+则 $\alpha\ne0$ (因为如果 $\alpha=0$, 则 $\alpha_{1}=-t_{1}\alpha_{2}$, 从而 $\alpha_{1}^{T}A\alpha_{1}=t_{1}^{2}\alpha_{2}^{T}A\alpha_{2}< 0$, 矛盾).
 
 且 $\alpha^{T}A\alpha=g\left(t_{1}\right)=0$.
 

@@ -2,7 +2,7 @@
 
 > **Definition 1** (Number Field)<br>Let $K$ be a subset of the set of complex numbers. If $K$ satisfies:
 > (1) $0,1\in K$;
->
+> 
 > (2) it is closed under the four operations of addition, subtraction, multiplication, and division (the divisor being not $0$),
 > then $K$ is called a number field.
 

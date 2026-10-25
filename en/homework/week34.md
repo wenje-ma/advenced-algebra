@@ -5,7 +5,7 @@
 > **Theorem 1** (Division Algorithm)<br>In $K\left[x\right]$, for any two polynomials $f\left(x\right),g\left(x\right)$ with $g\left(x\right)\ne0$, there exists a unique pair of polynomials $h\left(x\right),r\left(x\right)$ such that
 
 $$
-f\left(x\right)=h\left(x\right)g\left(x\right)+r\left(x\right),\deg r\left(x\right)<\deg g\left(x\right).
+f\left(x\right)=h\left(x\right)g\left(x\right)+r\left(x\right),\deg r\left(x\right)< \deg g\left(x\right).
 $$
 
 ### Problem 1
@@ -100,7 +100,7 @@ $$
 f-x\cdot g=\left(a-1\right)x+a_{0}.
 $$
 
-The degree of the remainder is $<2$, so stop.
+The degree of the remainder is $< 2$, so stop.
 
 Therefore $g\left(x\right)\mid f\left(x\right)$ if and only if the remainder is zero, i.e.
 

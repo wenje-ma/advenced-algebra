@@ -323,7 +323,7 @@ $$
 
 **定理 13** (相抵标准形)
 
-设数域 $K$ 上 $s\times n$ 矩阵 $A$ 的秩为 $r$. 如果 $r>0$, 则 $A$ 相抵于下述形式的矩阵:
+设数域 $K$ 上 $s\times n$ 矩阵 $A$ 的秩为 $r$. 如果 $r> 0$, 则 $A$ 相抵于下述形式的矩阵:
 
 $$
 \left[\begin{array}{cc}I_{r} & 0\\0 & 0\end{array}\right].
@@ -417,7 +417,7 @@ $n$ 元实二次型 $X^{T}AX$ 的规范形是唯一的.
 
 **定理 22** (带余除法)
 
-在 $K\left[x\right]$ 中, 对于任意两个多项式 $f\left(x\right),g\left(x\right)$, 其中 $g\left(x\right)\ne0$, 存在唯一的一对多项式 $h\left(x\right),r\left(x\right)$, 使得 $f\left(x\right)=h\left(x\right)g\left(x\right)+r\left(x\right)$, $\deg r\left(x\right)<\deg g\left(x\right)$.
+在 $K\left[x\right]$ 中, 对于任意两个多项式 $f\left(x\right),g\left(x\right)$, 其中 $g\left(x\right)\ne0$, 存在唯一的一对多项式 $h\left(x\right),r\left(x\right)$, 使得 $f\left(x\right)=h\left(x\right)g\left(x\right)+r\left(x\right)$, $\deg r\left(x\right)< \deg g\left(x\right)$.
 
 **定义 37** (最大公因式)
 
@@ -543,6 +543,6 @@ $$
 $$
 \begin{aligned}S_{1}&=\sigma_{1}\\
 S_{k}-\sigma_{1}S_{k-1}+\sigma_{2}S_{k-2}-\ldots+\left(-1\right)^{k-1}\sigma_{k-1}S_{1}+\left(-1\right)^{k}k\sigma_{k}&=0, 1\le k\le n\\
-S_{k}-\sigma_{1}S_{k-1}+\sigma_{2}S_{k-2}-\ldots+\left(-1\right)^{n}\sigma_{n}S_{k-n}&=0, k>n.
+S_{k}-\sigma_{1}S_{k-1}+\sigma_{2}S_{k-2}-\ldots+\left(-1\right)^{n}\sigma_{n}S_{k-n}&=0, k> n.
 \end{aligned}
 $$

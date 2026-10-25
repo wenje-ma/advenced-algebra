@@ -3,11 +3,11 @@
 > **定义1** (基础解系)<br>齐次线性方程组有非零解时, 如果它的有限多个解 $\eta_{1},\eta_{2},\cdots,\eta_{t}$ 满足: $1^{\circ}$ 线性无关; $2^{\circ}$ 方程组的每一个解都可以由它们线性表出, 则称它们是一个基础解系.
 
 > **定理1** (解空间的维数)<br>数域 $K$ 上 $n$ 元齐次线性方程组的解空间 $W$ 的维数为:
->
+> 
 > $$
 > \dim W=n-\text{rank}\left(A\right)
 > $$
->
+> 
 > 其中 $A$ 是系数矩阵.
 
 ### 习题一
@@ -134,7 +134,7 @@ $\blacksquare$
 
 ### 习题三
 
-(习题 3.7-4) 证明: 设 $n$ 元齐次线性方程组的系数矩阵的秩为 $r$ $\left(r<n\right)$, 设 $\delta_{1},\delta_{2},\cdots,\delta_{m}$ 是方程组的解向量, 则
+(习题 3.7-4) 证明: 设 $n$ 元齐次线性方程组的系数矩阵的秩为 $r$ $\left(r< n\right)$, 设 $\delta_{1},\delta_{2},\cdots,\delta_{m}$ 是方程组的解向量, 则
 
 $$
 \text{rank}\left\{\delta_{1},\delta_{2},\cdots,\delta_{m}\right\}\le n-r.
@@ -188,7 +188,7 @@ $$
 
 **验证 $\eta_{1}\ne0$**. 因为 $A_{kl}\ne0$, 所以 $\eta_{1}$ 的第 $l$ 个分量非零, 故 $\eta_{1}\ne0$.
 
-**验证解空间维数为 $1$**. 因为 $\left|A\right|=0$, 故 $\text{rank}\left(A\right)<n$.
+**验证解空间维数为 $1$**. 因为 $\left|A\right|=0$, 故 $\text{rank}\left(A\right)< n$.
 
 又因为 $A_{kl}\ne0$, 说明 $A$ 有一个 $n-1$ 阶子式非零 (划去第 $k$ 行第 $l$ 列后的子式), 故 $\text{rank}\left(A\right)\ge n-1$.
 

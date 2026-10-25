@@ -10,9 +10,9 @@
 > $$
 > be a polynomial with integer coefficients of degree $n$ greater than zero. If there exists a prime number $p$ such that
 > (1) $p\mid a_{i}$, $i=0,1,\ldots,n-1$;
->
+> 
 > (2) $p\nmid a_{n}$;
->
+> 
 > (3) $p^{2}\nmid a_{0}$.
 > then $f\left(x\right)$ is irreducible over the rational number field.
 
@@ -197,14 +197,14 @@ $$
 -a^{2}+2=p\Rightarrow a^{2}=2-p.
 $$
 
-Since $p$ is an odd prime, $p\ge3$, so $2-p\le-1<0$, no real roots.
+Since $p$ is an odd prime, $p\ge3$, so $2-p\le-1< 0$, no real roots.
 
 If $b=-1$, then $d=-1$.
 
 From $\left(2\right)$:
 
 $$
--a^{2}-2=p\Rightarrow a^{2}=-p-2<0,
+-a^{2}-2=p\Rightarrow a^{2}=-p-2< 0,
 $$
 
 no real roots.
@@ -345,7 +345,7 @@ $$
 
 is odd.
 
-Suppose, for contradiction, that $f\left(x\right)$ has a rational root $r=\frac{p}{q}$, where $p,q$ are coprime integers and $q>0$.
+Suppose, for contradiction, that $f\left(x\right)$ has a rational root $r=\frac{p}{q}$, where $p,q$ are coprime integers and $q> 0$.
 
 Since the leading coefficient is $1$, we have $q=1$, i.e. $r$ is an integer.
 

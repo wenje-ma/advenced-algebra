@@ -162,7 +162,7 @@ The system has a unique solution, so $\alpha$ can be uniquely linearly spanned b
 
 ### Problem 4
 
-(Problem 3.1-8) Let $r<n$. Prove that the following subset $W$ of $K^{n}$ is a subspace:
+(Problem 3.1-8) Let $r< n$. Prove that the following subset $W$ of $K^{n}$ is a subspace:
 
 $$
 W=\left\{\left(a_{1},a_{2},\cdots,a_{r},0,\cdots,0\right)\mid a_{i}\in K,i=1,2,\cdots,r\right\}.

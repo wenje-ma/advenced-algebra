@@ -3,7 +3,7 @@
 > **Theorem 1** (Laplace's Theorem)<br>In the $n$-th order determinant $\left|A\right|$, fix $k$ rows; then the sum of the products of all $k$-th order minors formed by the elements of these $k$ rows with their own cofactors equals $\left|A\right|$.
 
 > **Basic Knowledge 1** (Block Determinants)<br>where $A,B$ are both square matrices:
->
+> 
 > $$
 > \left|\begin{array}{cc}A & 0\\C & B\end{array}\right|=\left|A\right|\left|B\right|
 > $$
@@ -88,7 +88,7 @@ $$
 This is the $n-1$-th order Vandermonde determinant of $a_{2},a_{3},\cdots,a_{n}$, and its value is
 
 $$
-\prod_{2\le i<j\le n}\left(a_{j}-a_{i}\right)=\prod_{2\le i<j\le n}\left(j-i\right).
+\prod_{2\le i< j\le n}\left(a_{j}-a_{i}\right)=\prod_{2\le i< j\le n}\left(j-i\right).
 $$
 
 Let $d=j-i$; then $d=1,2,\cdots,n-2$, and for each $d$ there are $n-1-d$ pairs $\left(i,j\right)$ satisfying $j-i=d$.
@@ -96,7 +96,7 @@ Let $d=j-i$; then $d=1,2,\cdots,n-2$, and for each $d$ there are $n-1-d$ pairs $
 Hence
 
 $$
-\prod_{2\le i<j\le n}\left(j-i\right)=\prod_{d=1}^{n-2}d^{n-1-d}
+\prod_{2\le i< j\le n}\left(j-i\right)=\prod_{d=1}^{n-2}d^{n-1-d}
 =1^{n-2}\cdot2^{n-3}\cdot\cdots\cdot\left(n-2\right)^{1}.
 $$
 

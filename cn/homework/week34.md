@@ -5,7 +5,7 @@
 > **定理1** (带余除法)<br>在 $K\left[x\right]$ 中, 对于任意两个多项式 $f\left(x\right),g\left(x\right)$, 其中 $g\left(x\right)\ne0$, 存在唯一的一对多项式 $h\left(x\right),r\left(x\right)$, 使得
 
 $$
-f\left(x\right)=h\left(x\right)g\left(x\right)+r\left(x\right),\deg r\left(x\right)<\deg g\left(x\right).
+f\left(x\right)=h\left(x\right)g\left(x\right)+r\left(x\right),\deg r\left(x\right)< \deg g\left(x\right).
 $$
 
 ### 习题一
@@ -100,7 +100,7 @@ $$
 f-x\cdot g=\left(a-1\right)x+a_{0}.
 $$
 
-余式次数 $<2$, 停止.
+余式次数 $< 2$, 停止.
 
 因此 $g\left(x\right)\mid f\left(x\right)$ 当且仅当余式为零, 即
 

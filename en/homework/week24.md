@@ -9,7 +9,7 @@
 > $\mathcal{A}\left(k\alpha\right)=k\mathcal{A}\left(\alpha\right)$, then $\mathcal{A}$ is called a linear map from $K^{n}$ to $K^{s}$.
 
 > **Theorem** (Dimension formula for kernel and image)<br>
->
+> 
 > $$
 > \dim\left(\ker\mathcal{A}\right)+\dim\left(\operatorname{Im}\mathcal{A}\right)=\dim\left(K^{n}\right)
 > $$
@@ -79,7 +79,7 @@ $$
 
 Hence it is injective.
 
-Surjective: $2^{x}>0$. For example, $-1$ has no preimage. Hence it is not surjective.
+Surjective: $2^{x}> 0$. For example, $-1$ has no preimage. Hence it is not surjective.
 
 Therefore it is injective but not surjective.
 

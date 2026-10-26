@@ -128,22 +128,22 @@ $\blacksquare$
 
 **(1)** 设 $\lambda$ 是 $A$ 的一个特征值, $\alpha$ 是 $A$ 的属于 $\lambda$ 的特征向量, 即 $A\alpha=\lambda\alpha$.
 
-两边取共轭转置: $\alpha^{T}A^{T}=\bar{\lambda}\alpha^{T}$.
+两边取共轭转置: $\alpha^{T}A^{T}=\overline{\lambda}\alpha^{T}$.
 
 因为 $A$ 是正交矩阵, 故 $A^{T}=A^{-1}$.
 
-所以 $\alpha^{T}A^{-1}=\bar{\lambda}\alpha^{T}$.
+所以 $\alpha^{T}A^{-1}=\overline{\lambda}\alpha^{T}$.
 
 两边右乘 $A\alpha$:
 
 $$
-\alpha^{T}A^{-1}A\alpha=\bar{\lambda}\alpha^{T}A\alpha.
+\alpha^{T}A^{-1}A\alpha=\overline{\lambda}\alpha^{T}A\alpha.
 $$
 
 即
 
 $$
-\alpha^{T}\alpha=\bar{\lambda}\lambda\alpha^{T}\alpha.
+\alpha^{T}\alpha=\overline{\lambda}\lambda\alpha^{T}\alpha.
 $$
 
 因为 $\alpha\ne0$, 故 $\alpha^{T}\alpha\ne0$.
@@ -151,7 +151,7 @@ $$
 因此
 
 $$
-1=\bar{\lambda}\lambda=\left|\lambda\right|^{2}.
+1=\overline{\lambda}\lambda=\left|\lambda\right|^{2}.
 $$
 
 所以 $\left|\lambda\right|=1$.

@@ -128,22 +128,22 @@ $\blacksquare$
 
 **(1)** Let $\lambda$ be an eigenvalue of $A$, and let $\alpha$ be an eigenvector of $A$ belonging to $\lambda$, i.e. $A\alpha=\lambda\alpha$.
 
-Take the conjugate transpose of both sides: $\alpha^{T}A^{T}=\bar{\lambda}\alpha^{T}$.
+Take the conjugate transpose of both sides: $\alpha^{T}A^{T}=\overline{\lambda}\alpha^{T}$.
 
 Since $A$ is orthogonal, $A^{T}=A^{-1}$.
 
-Therefore $\alpha^{T}A^{-1}=\bar{\lambda}\alpha^{T}$.
+Therefore $\alpha^{T}A^{-1}=\overline{\lambda}\alpha^{T}$.
 
 Right-multiply both sides by $A\alpha$:
 
 $$
-\alpha^{T}A^{-1}A\alpha=\bar{\lambda}\alpha^{T}A\alpha.
+\alpha^{T}A^{-1}A\alpha=\overline{\lambda}\alpha^{T}A\alpha.
 $$
 
 That is,
 
 $$
-\alpha^{T}\alpha=\bar{\lambda}\lambda\alpha^{T}\alpha.
+\alpha^{T}\alpha=\overline{\lambda}\lambda\alpha^{T}\alpha.
 $$
 
 Since $\alpha\ne0$, we have $\alpha^{T}\alpha\ne0$.
@@ -151,7 +151,7 @@ Since $\alpha\ne0$, we have $\alpha^{T}\alpha\ne0$.
 Therefore
 
 $$
-1=\bar{\lambda}\lambda=\left|\lambda\right|^{2}.
+1=\overline{\lambda}\lambda=\left|\lambda\right|^{2}.
 $$
 
 Hence $\left|\lambda\right|=1$.

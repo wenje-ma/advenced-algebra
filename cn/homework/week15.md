@@ -52,11 +52,11 @@ $$
 
 所以 $\text{rank}\left(A\right)=s$.
 
-增广矩阵 $\bar{A}$ 是 $A$ 加了一列, 故 $\text{rank}\left(\bar{A}\right)\ge\text{rank}\left(A\right)=s$.
+增广矩阵 $\overline{A}$ 是 $A$ 加了一列, 故 $\text{rank}\left(\overline{A}\right)\ge\text{rank}\left(A\right)=s$.
 
-又 $\bar{A}$ 只有 $s$ 行, 故 $\text{rank}\left(\bar{A}\right)\le s$.
+又 $\overline{A}$ 只有 $s$ 行, 故 $\text{rank}\left(\overline{A}\right)\le s$.
 
-所以 $\text{rank}\left(\bar{A}\right)=s=\text{rank}\left(A\right)$.
+所以 $\text{rank}\left(\overline{A}\right)=s=\text{rank}\left(A\right)$.
 
 因此方程组有解.
 
@@ -91,22 +91,22 @@ $$
 
 ### 解答 习题二
 
-由**定理1** (线性方程组有解判别定理), 要证明线性方程组有解, 即证明系数矩阵 $A$ 与增广矩阵 $\bar{A}$ 有相同的秩.
+由**定理1** (线性方程组有解判别定理), 要证明线性方程组有解, 即证明系数矩阵 $A$ 与增广矩阵 $\overline{A}$ 有相同的秩.
 
-设增广矩阵为 $\bar{A}$, 即 $\bar{A}=\left[A,b\right]$, 其中 $b=\left(b_{1},b_{2},\cdots,b_{n}\right)^{T}$.
+设增广矩阵为 $\overline{A}$, 即 $\overline{A}=\left[A,b\right]$, 其中 $b=\left(b_{1},b_{2},\cdots,b_{n}\right)^{T}$.
 
-注意到 $\bar{A}$ 是 $B$ 的前 $n$ 行, 故 $\bar{A}$ 是 $B$ 的子矩阵.
+注意到 $\overline{A}$ 是 $B$ 的前 $n$ 行, 故 $\overline{A}$ 是 $B$ 的子矩阵.
 
-因此 $\text{rank}\left(\bar{A}\right)\le\text{rank}\left(B\right)$.
+因此 $\text{rank}\left(\overline{A}\right)\le\text{rank}\left(B\right)$.
 
-又 $A$ 是 $\bar{A}$ 的子矩阵, 故 $\text{rank}\left(A\right)\le\text{rank}\left(\bar{A}\right)$.
+又 $A$ 是 $\overline{A}$ 的子矩阵, 故 $\text{rank}\left(A\right)\le\text{rank}\left(\overline{A}\right)$.
 
 由题设 $\text{rank}\left(A\right)=\text{rank}\left(B\right)$, 故
 
 $$
-\text{rank}\left(A\right)\le\text{rank}\left(\bar{A}\right)\le\text{rank}\left(B\right)=\text{rank}\left(A\right).
+\text{rank}\left(A\right)\le\text{rank}\left(\overline{A}\right)\le\text{rank}\left(B\right)=\text{rank}\left(A\right).
 $$
 
-因此 $\text{rank}\left(\bar{A}\right)=\text{rank}\left(A\right)$.
+因此 $\text{rank}\left(\overline{A}\right)=\text{rank}\left(A\right)$.
 
 该方程组有解. $\blacksquare$

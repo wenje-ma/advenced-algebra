@@ -77,7 +77,7 @@ Let the inhomogeneous system be $Ax=\beta$, where $A$ is an $n\times n$ matrix; 
 **Necessity.** Suppose the inhomogeneous system has a unique solution. Then
 
 $$
-\text{rank}\left(A\right)=\text{rank}\left(\bar{A}\right)=n\ \text{\left(系数矩阵的秩等于未知量数目\right)}.
+\text{rank}\left(A\right)=\text{rank}\left(\overline{A}\right)=n\ \text{\left(系数矩阵的秩等于未知量数目\right)}.
 $$
 
 The coefficient matrix of the associated homogeneous system $Ax=0$ has rank $n$, and the number of unknowns is $n$, so it has only the zero solution.

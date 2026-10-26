@@ -52,11 +52,11 @@ Also, $A$ has only $s$ rows, so $\text{rank}\left(A\right)\le s$.
 
 Hence $\text{rank}\left(A\right)=s$.
 
-The augmented matrix $\bar{A}$ is $A$ with one additional column, so $\text{rank}\left(\bar{A}\right)\ge\text{rank}\left(A\right)=s$.
+The augmented matrix $\overline{A}$ is $A$ with one additional column, so $\text{rank}\left(\overline{A}\right)\ge\text{rank}\left(A\right)=s$.
 
-Also, $\bar{A}$ has only $s$ rows, so $\text{rank}\left(\bar{A}\right)\le s$.
+Also, $\overline{A}$ has only $s$ rows, so $\text{rank}\left(\overline{A}\right)\le s$.
 
-Hence $\text{rank}\left(\bar{A}\right)=s=\text{rank}\left(A\right)$.
+Hence $\text{rank}\left(\overline{A}\right)=s=\text{rank}\left(A\right)$.
 
 Therefore the system is solvable.
 
@@ -91,22 +91,22 @@ Prove that the above linear system is solvable.
 
 ### Solution to Problem 2
 
-By **Theorem 1** (Solvability criterion), to prove the system is solvable, we need to show that the coefficient matrix $A$ and the augmented matrix $\bar{A}$ have the same rank.
+By **Theorem 1** (Solvability criterion), to prove the system is solvable, we need to show that the coefficient matrix $A$ and the augmented matrix $\overline{A}$ have the same rank.
 
-Let the augmented matrix be $\bar{A}$, i.e., $\bar{A}=\left[A,b\right]$, where $b=\left(b_{1},b_{2},\cdots,b_{n}\right)^{T}$.
+Let the augmented matrix be $\overline{A}$, i.e., $\overline{A}=\left[A,b\right]$, where $b=\left(b_{1},b_{2},\cdots,b_{n}\right)^{T}$.
 
-Note that $\bar{A}$ is the first $n$ rows of $B$, so $\bar{A}$ is a submatrix of $B$.
+Note that $\overline{A}$ is the first $n$ rows of $B$, so $\overline{A}$ is a submatrix of $B$.
 
-Therefore $\text{rank}\left(\bar{A}\right)\le\text{rank}\left(B\right)$.
+Therefore $\text{rank}\left(\overline{A}\right)\le\text{rank}\left(B\right)$.
 
-Also, $A$ is a submatrix of $\bar{A}$, so $\text{rank}\left(A\right)\le\text{rank}\left(\bar{A}\right)$.
+Also, $A$ is a submatrix of $\overline{A}$, so $\text{rank}\left(A\right)\le\text{rank}\left(\overline{A}\right)$.
 
 By the hypothesis $\text{rank}\left(A\right)=\text{rank}\left(B\right)$, we have
 
 $$
-\text{rank}\left(A\right)\le\text{rank}\left(\bar{A}\right)\le\text{rank}\left(B\right)=\text{rank}\left(A\right).
+\text{rank}\left(A\right)\le\text{rank}\left(\overline{A}\right)\le\text{rank}\left(B\right)=\text{rank}\left(A\right).
 $$
 
-Therefore $\text{rank}\left(\bar{A}\right)=\text{rank}\left(A\right)$.
+Therefore $\text{rank}\left(\overline{A}\right)=\text{rank}\left(A\right)$.
 
 The system is solvable. $\blacksquare$

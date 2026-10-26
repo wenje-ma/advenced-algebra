@@ -203,10 +203,8 @@ $\left(\alpha_{3},\beta_{1}\right)=1$, $\left(\alpha_{3},\beta_{2}\right)=\frac{
 Thus
 
 $$
-\begin{aligned}\beta_{3}
-&=\left(1,0,0,-1\right)^{T}-\frac{1}{2}\left(1,1,0,0\right)^{T}-\frac{1}{3}\left(\frac{1}{2},-\frac{1}{2},1,0\right)^{T}\\
-&=\left(\frac{1}{3},-\frac{1}{3},-\frac{1}{3},-1\right)^{T}.
-\end{aligned}
+\beta_{3}
+=\left(1,0,0,-1\right)^{T}-\frac{1}{2}\left(1,1,0,0\right)^{T}-\frac{1}{3}\left(\frac{1}{2},-\frac{1}{2},1,0\right)^{T}=\left(\frac{1}{3},-\frac{1}{3},-\frac{1}{3},-1\right)^{T}.
 $$
 
 Verify orthogonality: $\left(\beta_{1},\beta_{2}\right)=0$, $\left(\beta_{1},\beta_{3}\right)=0$, $\left(\beta_{2},\beta_{3}\right)=0$.

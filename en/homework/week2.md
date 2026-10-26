@@ -183,19 +183,13 @@ $$
 The total profit
 
 $$
-\begin{aligned}l&=0.12x_{1}+0.15x_{2}+0.22x_{3}\\
-&=0.12\times5+0.15x_{2}+0.22x_{3}\\
-&=0.6+0.15x_{2}+0.22x_{3}.
-\end{aligned}
+l=0.12x_{1}+0.15x_{2}+0.22x_{3}=0.12\times5+0.15x_{2}+0.22x_{3}=0.6+0.15x_{2}+0.22x_{3}.
 $$
 
 From $x_{2}=5-x_{3}$, substituting:
 
 $$
-\begin{aligned}l&=0.6+0.15\left(5-x_{3}\right)+0.22x_{3}\\
-&=0.6+0.75-0.15x_{3}+0.22x_{3}\\
-&=1.35+0.07x_{3}.
-\end{aligned}
+l=0.6+0.15\left(5-x_{3}\right)+0.22x_{3}=0.6+0.75-0.15x_{3}+0.22x_{3}=1.35+0.07x_{3}.
 $$
 
 Since the investment amounts are nonnegative: $x_{2}\ge 0,x_{3}\ge 0$, hence $0\le x_{3}\le 5$.

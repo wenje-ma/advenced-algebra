@@ -23,14 +23,11 @@ $$
 系数行列式为
 
 $$
-\begin{aligned}\left|\begin{array}{ccc}
+\left|\begin{array}{ccc}
 a & 1 & 1\\
 1 & b & 1\\
 1 & 2b & 1
-\end{array}\right|&=a\left(b\cdot1-1\cdot2b\right)-1\left(1\cdot1-1\cdot1\right)+1\left(1\cdot2b-b\cdot1\right)\\
-&=a\left(-b\right)-0+b\\
-&=b\left(1-a\right).
-\end{aligned}
+\end{array}\right|=a\left(b\cdot1-1\cdot2b\right)-1\left(1\cdot1-1\cdot1\right)+1\left(1\cdot2b-b\cdot1\right)=a\left(-b\right)-0+b=b\left(1-a\right).
 $$
 
 令其等于 $0$, 得 $b\left(1-a\right)=0$, 即 $b=0$ 或 $a=1$.

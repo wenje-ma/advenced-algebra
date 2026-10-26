@@ -125,10 +125,7 @@ $$
 代入得
 
 $$
-\begin{aligned}D_{n}&=x\left(x^{n-1}+a_{n-1}x^{n-2}+\cdots+a_{2}x+a_{1}\right)+\left(-1\right)^{1+n}a_{0}\left(-1\right)^{n-1}\\
-&=x^{n}+a_{n-1}x^{n-1}+\cdots+a_{1}x+\left(-1\right)^{2n}a_{0}\\
-&=x^{n}+a_{n-1}x^{n-1}+\cdots+a_{1}x+a_{0}.
-\end{aligned}
+D_{n}=x\left(x^{n-1}+a_{n-1}x^{n-2}+\cdots+a_{2}x+a_{1}\right)+\left(-1\right)^{1+n}a_{0}\left(-1\right)^{n-1}=x^{n}+a_{n-1}x^{n-1}+\cdots+a_{1}x+\left(-1\right)^{2n}a_{0}=x^{n}+a_{n-1}x^{n-1}+\cdots+a_{1}x+a_{0}.
 $$
 
 由数学归纳法, 结论对一切 $n\ge 2$ 成立. $\blacksquare$
@@ -256,10 +253,7 @@ $$
 故
 
 $$
-\begin{aligned}D&=\prod_{k=0}^{n-1}\lambda_{k}\\
-&=\frac{n\left(n+1\right)}{2}\cdot\prod_{k=1}^{n-1}\frac{n}{\omega^{k}-1}\\
-&=\frac{n\left(n+1\right)}{2}\cdot\frac{n^{n-1}}{\prod_{k=1}^{n-1}\left(\omega^{k}-1\right)}.
-\end{aligned}
+D=\prod_{k=0}^{n-1}\lambda_{k}=\frac{n\left(n+1\right)}{2}\cdot\prod_{k=1}^{n-1}\frac{n}{\omega^{k}-1}=\frac{n\left(n+1\right)}{2}\cdot\frac{n^{n-1}}{\prod_{k=1}^{n-1}\left(\omega^{k}-1\right)}.
 $$
 
 由 $\prod_{k=1}^{n-1}\left(1-\omega^{k}\right)=n$, 得
@@ -370,10 +364,7 @@ $A$ 是两个秩 $1$ 矩阵之和, 故 $\text{rank}\left(A\right)\le2$.
 当 $n=2$ 时,
 
 $$
-\begin{aligned}\det\left(A\right)&=\left(1+x_{1}y_{1}\right)\left(1+x_{2}y_{2}\right)-\left(1+x_{1}y_{2}\right)\left(1+x_{2}y_{1}\right)\\
-&=x_{1}y_{1}+x_{2}y_{2}-x_{1}y_{2}-x_{2}y_{1}\\
-&=\left(x_{1}-x_{2}\right)\left(y_{1}-y_{2}\right).
-\end{aligned}
+\det\left(A\right)=\left(1+x_{1}y_{1}\right)\left(1+x_{2}y_{2}\right)-\left(1+x_{1}y_{2}\right)\left(1+x_{2}y_{1}\right)=x_{1}y_{1}+x_{2}y_{2}-x_{1}y_{2}-x_{2}y_{1}=\left(x_{1}-x_{2}\right)\left(y_{1}-y_{2}\right).
 $$
 
 ** (2)** 设 $A=\text{diag}\left(1,2,\cdots,n\right)$, 则所求行列式为 $\left|A\left(t\right)\right|$.

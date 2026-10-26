@@ -529,11 +529,7 @@ then $f\left(x_{1},x_{2},\ldots,x_{n}\right)$ is called a symmetric polynomial i
 **Elementary Symmetric Polynomials**
 
 $$
-\begin{aligned}\sigma_{1}&=x_{1}+x_{2}+\ldots+x_{n}\\
-\sigma_{2}&=x_{1}x_{2}+x_{1}x_{3}+\ldots+x_{n-1}x_{n}\\
-\ldots&\\
-\sigma_{n}&=x_{1}x_{2}\ldots x_{n}.
-\end{aligned}
+\sigma_{1}=x_{1}+x_{2}+\ldots+x_{n};\sigma_{2}=x_{1}x_{2}+x_{1}x_{3}+\ldots+x_{n-1}x_{n};\ldots;\sigma_{n}=x_{1}x_{2}\ldots x_{n}.
 $$
 
 **Newton's Formulas** (Relationship between Power Sums and Elementary Symmetric Polynomials)
@@ -541,8 +537,5 @@ $$
 Let $S_{k}=x_{1}^{k}+x_{2}^{k}+\ldots+x_{n}^{k}$. Then:
 
 $$
-\begin{aligned}S_{1}&=\sigma_{1}\\
-S_{k}-\sigma_{1}S_{k-1}+\sigma_{2}S_{k-2}-\ldots+\left(-1\right)^{k-1}\sigma_{k-1}S_{1}+\left(-1\right)^{k}k\sigma_{k}&=0, 1\le k\le n\\
-S_{k}-\sigma_{1}S_{k-1}+\sigma_{2}S_{k-2}-\ldots+\left(-1\right)^{n}\sigma_{n}S_{k-n}&=0, k> n.
-\end{aligned}
+S_{1}=\sigma_{1};S_{k}-\sigma_{1}S_{k-1}+\sigma_{2}S_{k-2}-\ldots+\left(-1\right)^{k-1}\sigma_{k-1}S_{1}+\left(-1\right)^{k}k\sigma_{k}=0, 1\le k\le n;S_{k}-\sigma_{1}S_{k-1}+\sigma_{2}S_{k-2}-\ldots+\left(-1\right)^{n}\sigma_{n}S_{k-n}=0, k> n.
 $$

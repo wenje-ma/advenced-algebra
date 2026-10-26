@@ -125,9 +125,7 @@ $$
 将 $\eta_{i}=\gamma_{i}-\gamma_{0}$ 代入:
 
 $$
-\begin{aligned}\gamma &=\gamma_{0}+k_{1}\left(\gamma_{1}-\gamma_{0}\right)+k_{2}\left(\gamma_{2}-\gamma_{0}\right)+\cdots+k_{t}\left(\gamma_{t}-\gamma_{0}\right)\\
-&=\left(1-k_{1}-k_{2}-\cdots-k_{t}\right)\gamma_{0}+k_{1}\gamma_{1}+k_{2}\gamma_{2}+\cdots+k_{t}\gamma_{t}.
-\end{aligned}
+\gamma =\gamma_{0}+k_{1}\left(\gamma_{1}-\gamma_{0}\right)+k_{2}\left(\gamma_{2}-\gamma_{0}\right)+\cdots+k_{t}\left(\gamma_{t}-\gamma_{0}\right)=\left(1-k_{1}-k_{2}-\cdots-k_{t}\right)\gamma_{0}+k_{1}\gamma_{1}+k_{2}\gamma_{2}+\cdots+k_{t}\gamma_{t}.
 $$
 
 令
@@ -147,10 +145,8 @@ $$
 非齐次方程组的任意一个解都可以表示成上述形式. 因此
 
 $$
-\begin{aligned}
-\gamma&=u_{0}\gamma_{0}+u_{1}\gamma_{1}+u_{2}\gamma_{2}+\cdots+u_{t}\gamma_{t},\
-u_{0}+u_{1}+u_{2}+\cdots+u_{t}&=1.
-\end{aligned}
+\gamma=u_{0}\gamma_{0}+u_{1}\gamma_{1}+u_{2}\gamma_{2}+\cdots+u_{t}\gamma_{t},\
+u_{0}+u_{1}+u_{2}+\cdots+u_{t}=1.
 $$
 
 $\blacksquare$

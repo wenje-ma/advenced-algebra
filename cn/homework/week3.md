@@ -47,9 +47,7 @@ $$
 **验证对乘法封闭**. 由**定义1**第(2)条,
 
 $$
-\begin{aligned}\alpha\beta&=\left(a+bi\right)\left(c+di\right)\\
-&=\left(ac-bd\right)+\left(ad+bc\right)i.
-\end{aligned}
+\alpha\beta=\left(a+bi\right)\left(c+di\right)=\left(ac-bd\right)+\left(ad+bc\right)i.
 $$
 
 由于有理数对加, 减, 乘封闭, $ac-bd\in\mathbb Q$, $ad+bc\in\mathbb Q$, 故 $\alpha\beta\in\mathbb Q\left(i\right)$.
@@ -57,10 +55,7 @@ $$
 **验证对除法封闭**. 由**定义1**第(2)条, 设 $\beta=c+di\ne 0$, 则 $c^{2}+d^{2}\ne 0$, 且
 
 $$
-\begin{aligned}\frac{\alpha}{\beta}&=\frac{a+bi}{c+di}\\
-&=\frac{\left(a+bi\right)\left(c-di\right)}{\left(c+di\right)\left(c-di\right)}\\
-&=\frac{ac+bd}{c^{2}+d^{2}}+\frac{bc-ad}{c^{2}+d^{2}}i.
-\end{aligned}
+\frac{\alpha}{\beta}=\frac{a+bi}{c+di}=\frac{\left(a+bi\right)\left(c-di\right)}{\left(c+di\right)\left(c-di\right)}=\frac{ac+bd}{c^{2}+d^{2}}+\frac{bc-ad}{c^{2}+d^{2}}i.
 $$
 
 由于有理数对加, 减, 乘, 除(除数不为 $0$) 封闭, $\frac{ac+bd}{c^{2}+d^{2}}\in\mathbb Q$, $\frac{bc-ad}{c^{2}+d^{2}}\in\mathbb Q$, 故 $\frac{\alpha}{\beta}\in\mathbb Q\left(i\right)$.

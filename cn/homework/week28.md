@@ -33,11 +33,8 @@ $$
 计算:
 
 $$
-\begin{aligned}P^{-1}\left[\begin{array}{cc}A_{1} & 0\\0 & A_{2}\end{array}\right]P
-&=\left[\begin{array}{cc}P_{1}^{-1} & 0\\0 & P_{2}^{-1}\end{array}\right]\left[\begin{array}{cc}A_{1} & 0\\0 & A_{2}\end{array}\right]\left[\begin{array}{cc}P_{1} & 0\\0 & P_{2}\end{array}\right]\\
-&=\left[\begin{array}{cc}P_{1}^{-1}A_{1}P_{1} & 0\\0 & P_{2}^{-1}A_{2}P_{2}\end{array}\right]\\
-&=\left[\begin{array}{cc}B_{1} & 0\\0 & B_{2}\end{array}\right].
-\end{aligned}
+P^{-1}\left[\begin{array}{cc}A_{1} & 0\\0 & A_{2}\end{array}\right]P
+=\left[\begin{array}{cc}P_{1}^{-1} & 0\\0 & P_{2}^{-1}\end{array}\right]\left[\begin{array}{cc}A_{1} & 0\\0 & A_{2}\end{array}\right]\left[\begin{array}{cc}P_{1} & 0\\0 & P_{2}\end{array}\right]=\left[\begin{array}{cc}P_{1}^{-1}A_{1}P_{1} & 0\\0 & P_{2}^{-1}A_{2}P_{2}\end{array}\right]=\left[\begin{array}{cc}B_{1} & 0\\0 & B_{2}\end{array}\right].
 $$
 
 因此由**定义1** (相似),

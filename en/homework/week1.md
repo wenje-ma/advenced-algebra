@@ -103,11 +103,7 @@ $$
 From the first equation $x_{3}=10000-3x_{2}$, substituting into the second equation:
 
 $$
-\begin{aligned}0.39x_{2}+0.22\left(10000-3x_{2}\right)&=2000\\
-0.39x_{2}+2200-0.66x_{2}&=2000\\
--0.27x_{2}&=-200\\
-x_{2}&=\frac{20000}{27}.
-\end{aligned}
+0.39x_{2}+0.22\left(10000-3x_{2}\right)=2000;0.39x_{2}+2200-0.66x_{2}=2000-0.27x_{2}=-200;x_{2}=\frac{20000}{27}.
 $$
 
 Hence
@@ -121,29 +117,19 @@ i.e. one should invest $\frac{40000}{27}$ yuan, $\frac{20000}{27}$ yuan, and $\f
 (2) From the condition $x_{3}=x_{1}+x_{2}$, substituting into the total-investment equation:
 
 $$
-\begin{aligned}x_{1}+x_{2}+\left(x_{1}+x_{2}\right)&=10000\\
-2\left(x_{1}+x_{2}\right)&=10000\\
-x_{1}+x_{2}&=5000.
-\end{aligned}
+x_{1}+x_{2}+\left(x_{1}+x_{2}\right)=10000;2\left(x_{1}+x_{2}\right)=10000;x_{1}+x_{2}=5000.
 $$
 
 Hence $x_{3}=5000$. Substituting into the total-profit equation:
 
 $$
-\begin{aligned}0.12x_{1}+0.15x_{2}+0.22\times5000&=2000\\
-0.12x_{1}+0.15x_{2}+1100&=2000\\
-0.12x_{1}+0.15x_{2}&=900.
-\end{aligned}
+0.12x_{1}+0.15x_{2}+0.22\times5000=2000;0.12x_{1}+0.15x_{2}+1100=2000;0.12x_{1}+0.15x_{2}=900.
 $$
 
 Also $x_{2}=5000-x_{1}$; substituting gives
 
 $$
-\begin{aligned}0.12x_{1}+0.15\left(5000-x_{1}\right)&=900\\
-0.12x_{1}+750-0.15x_{1}&=900\\
--0.03x_{1}&=150\\
-x_{1}&=-5000.
-\end{aligned}
+0.12x_{1}+0.15\left(5000-x_{1}\right)=900;0.12x_{1}+750-0.15x_{1}=900-0.03x_{1}=150;x_{1}=-5000.
 $$
 
 Then $x_{2}=10000$. Since an investment cannot be negative, $x_{1}=-5000< 0$ has no practical meaning. Hence it is not possible to make the amount invested in $A_{3}$ equal to the sum of the amounts invested in $A_{1}$ and $A_{2}$. $\blacksquare$
@@ -197,11 +183,7 @@ By **Definition 1**, elementary operations do not change the solutions of the sy
 Substituting into the $2$nd row:
 
 $$
-\begin{aligned}-5\left(x_{3}+x_{4}-4\right)-7x_{3}-7x_{4}&=-28\\
--5x_{3}-5x_{4}+20-7x_{3}-7x_{4}&=-28\\
--12x_{3}-12x_{4}&=-48\\
-x_{3}+x_{4}&=4.
-\end{aligned}
+-5\left(x_{3}+x_{4}-4\right)-7x_{3}-7x_{4}=-28-5x_{3}-5x_{4}+20-7x_{3}-7x_{4}=-28-12x_{3}-12x_{4}=-48;x_{3}+x_{4}=4.
 $$
 
 Let $x_{4}=c$ (a free unknown); then $x_{3}=4-c$. Hence
@@ -213,11 +195,7 @@ $$
 Substituting into the $1$st row:
 
 $$
-\begin{aligned}-x_{1}-2\times0+3\left(4-c\right)+c&=11\\
--x_{1}+12-3c+c&=11\\
--x_{1}&=-1+2c\\
-x_{1}&=1-2c.
-\end{aligned}
+-x_{1}-2\times0+3\left(4-c\right)+c=11-x_{1}+12-3c+c=11-x_{1}=-1+2c;x_{1}=1-2c.
 $$
 
 By **Basic Knowledge 1**, the original system therefore has infinitely many solutions, and the general solution is

@@ -142,10 +142,7 @@ $$
 By **Theorem 2** (Necessary and sufficient condition), first find $A^{-1}$. Let
 
 $$
-\begin{aligned}
-A&=\left[\begin{array}{rrr}1 & -2 & 0\\4 & -2 & -1\\-3 & 1 & 2\end{array}\right],\\
-B&=\left[\begin{array}{rr}-1 & 4\\2 & 5\\1 & -3\end{array}\right].
-\end{aligned}
+A=\left[\begin{array}{rrr}1 & -2 & 0\\4 & -2 & -1\\-3 & 1 & 2\end{array}\right],;B=\left[\begin{array}{rr}-1 & 4\\2 & 5\\1 & -3\end{array}\right].
 $$
 
 First find $A^{-1}$.

@@ -21,11 +21,8 @@ Determine whether $-2$ is a root of $f\left(x\right)$; if so, what is its multip
 By **Corollary 2** (Factor Theorem), in $K\left[x\right]$, $x-a$ divides $f\left(x\right)$ if and only if $f\left(a\right)=0$. Compute $f\left(-2\right)$:
 
 $$
-\begin{aligned}f\left(-2\right)
-&=\left(-2\right)^{5}+7\left(-2\right)^{4}+19\left(-2\right)^{3}+26\left(-2\right)^{2}+20\left(-2\right)+8\\
-&=-32+112-152+104-40+8\\
-&=0.
-\end{aligned}
+f\left(-2\right)
+=\left(-2\right)^{5}+7\left(-2\right)^{4}+19\left(-2\right)^{3}+26\left(-2\right)^{2}+20\left(-2\right)+8=-32+112-152+104-40+8=0.
 $$
 
 Therefore $-2$ is a root of $f\left(x\right)$.
@@ -103,11 +100,8 @@ If $3$ is a double root of $f\left(x\right)$, then $f\left(3\right)=0$ and $f'\l
 Compute $f\left(3\right)$:
 
 $$
-\begin{aligned}f\left(3\right)
-&=3^{4}-5\cdot3^{3}+a\cdot3^{2}+b\cdot3+9\\
-&=81-135+9a+3b+9\\
-&=-45+9a+3b.
-\end{aligned}
+f\left(3\right)
+=3^{4}-5\cdot3^{3}+a\cdot3^{2}+b\cdot3+9=81-135+9a+3b+9=-45+9a+3b.
 $$
 
 Set $f\left(3\right)=0$:
@@ -125,11 +119,8 @@ $$
 Compute $f'\left(3\right)$:
 
 $$
-\begin{aligned}f'\left(3\right)
-&=4\cdot3^{3}-15\cdot3^{2}+2a\cdot3+b\\
-&=108-135+6a+b\\
-&=-27+6a+b.
-\end{aligned}
+f'\left(3\right)
+=4\cdot3^{3}-15\cdot3^{2}+2a\cdot3+b=108-135+6a+b=-27+6a+b.
 $$
 
 Set $f'\left(3\right)=0$:

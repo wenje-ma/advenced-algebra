@@ -354,10 +354,7 @@ $$
 then multiply by the column vector:
 
 $$
-\begin{aligned}&=\left(a_{11}x+a_{12}y+a_{1}\right)x+\left(a_{12}x+a_{22}y+a_{2}\right)y+\left(a_{1}x+a_{2}y+a_{0}\right)\\
-&=a_{11}x^{2}+a_{12}xy+a_{1}x+a_{12}xy+a_{22}y^{2}+a_{2}y+a_{1}x+a_{2}y+a_{0}\\
-&=a_{11}x^{2}+2a_{12}xy+a_{22}y^{2}+2a_{1}x+2a_{2}y+a_{0}.
-\end{aligned}
+=\left(a_{11}x+a_{12}y+a_{1}\right)x+\left(a_{12}x+a_{22}y+a_{2}\right)y+\left(a_{1}x+a_{2}y+a_{0}\right)=a_{11}x^{2}+a_{12}xy+a_{1}x+a_{12}xy+a_{22}y^{2}+a_{2}y+a_{1}x+a_{2}y+a_{0}=a_{11}x^{2}+2a_{12}xy+a_{22}y^{2}+2a_{1}x+2a_{2}y+a_{0}.
 $$
 
 $\blacksquare$
@@ -437,14 +434,12 @@ Also $N^{0}=I$, $N^{1}=N$, $N^{2}=\left[\begin{array}{ccc}0 & 0 & 1\\0 & 0 & 0\\
 Thus when $n\ge2$,
 
 $$
-\begin{aligned}A^{n}
-&=\lambda^{n}I+n\lambda^{n-1}N+\binom{n}{2}\lambda^{n-2}N^{2}\\
-&=\left[\begin{array}{ccc}
+A^{n}
+=\lambda^{n}I+n\lambda^{n-1}N+\binom{n}{2}\lambda^{n-2}N^{2}=\left[\begin{array}{ccc}
 \lambda^{n} & n\lambda^{n-1} & n\left(n-1\right)/2 \cdot \lambda^{n-2}\\
 0 & \lambda^{n} & n\lambda^{n-1}\\
 0 & 0 & \lambda^{n}
 \end{array}\right].
-\end{aligned}
 $$
 
 When $n=1$, the above also holds (note $\lambda^{0}=1$, and the third term is $0$). $\blacksquare$

@@ -9,22 +9,15 @@
 > **初等对称多项式**<br>
 > 
 > $$
-> \begin{aligned}
-> \sigma_{1}&=x_{1}+x_{2}+\ldots+x_{n},\\
-> \sigma_{2}&=x_{1}x_{2}+x_{1}x_{3}+\ldots+x_{n-1}x_{n},\\
-> \ldots&\\
-> \sigma_{n}&=x_{1}x_{2}\ldots x_{n}
-> \end{aligned}
+> > \sigma_{1}=x_{1}+x_{2}+\ldots+x_{n},> \sigma_{2}=x_{1}x_{2}+x_{1}x_{3}+\ldots+x_{n-1}x_{n},> \ldots> \sigma_{n}=x_{1}x_{2}\ldots x_{n}
+>
 > $$
 
 > **牛顿公式** (幂和与初等对称多项式的关系)<br>设 $S_{k}=x_{1}^{k}+x_{2}^{k}+\ldots+x_{n}^{k}$, 则:
 > 
 > $$
-> \begin{aligned}
-> S_{1}&=\sigma_{1},\\
-> S_{k}-\sigma_{1}S_{k-1}+\sigma_{2}S_{k-2}-\ldots+\left(-1\right)^{k-1}\sigma_{k-1}S_{1}+\left(-1\right)^{k}k\sigma_{k}&=0, \ 1\le k\le n,\\
-> S_{k}-\sigma_{1}S_{k-1}+\sigma_{2}S_{k-2}-\ldots+\left(-1\right)^{n}\sigma_{n}S_{k-n}&=0, \ k> n
-> \end{aligned}
+> > S_{1}=\sigma_{1},> S_{k}-\sigma_{1}S_{k-1}+\sigma_{2}S_{k-2}-\ldots+\left(-1\right)^{k-1}\sigma_{k-1}S_{1}+\left(-1\right)^{k}k\sigma_{k}=0, \ 1\le k\le n,> S_{k}-\sigma_{1}S_{k-1}+\sigma_{2}S_{k-2}-\ldots+\left(-1\right)^{n}\sigma_{n}S_{k-n}=0, \ k> n
+>
 > $$
 
 ### 习题一
@@ -72,11 +65,8 @@ $$
 所以
 
 $$
-\begin{aligned}S_{3}
-&=\sigma_{1}S_{2}-\sigma_{2}S_{1}+3\sigma_{3}\\
-&=\sigma_{1}\left(\sigma_{1}^{2}-2\sigma_{2}\right)-\sigma_{2}\sigma_{1}+3\sigma_{3}\\
-&=\sigma_{1}^{3}-3\sigma_{1}\sigma_{2}+3\sigma_{3}.
-\end{aligned}
+S_{3}
+=\sigma_{1}S_{2}-\sigma_{2}S_{1}+3\sigma_{3}=\sigma_{1}\left(\sigma_{1}^{2}-2\sigma_{2}\right)-\sigma_{2}\sigma_{1}+3\sigma_{3}=\sigma_{1}^{3}-3\sigma_{1}\sigma_{2}+3\sigma_{3}.
 $$
 
 **$S_{4}$**.
@@ -90,12 +80,8 @@ $$
 所以
 
 $$
-\begin{aligned}S_{4}
-&=\sigma_{1}S_{3}-\sigma_{2}S_{2}+\sigma_{3}S_{1}\\
-&=\sigma_{1}\left(\sigma_{1}^{3}-3\sigma_{1}\sigma_{2}+3\sigma_{3}\right)-\sigma_{2}\left(\sigma_{1}^{2}-2\sigma_{2}\right)+\sigma_{3}\sigma_{1}\\
-&=\sigma_{1}^{4}-3\sigma_{1}^{2}\sigma_{2}+3\sigma_{1}\sigma_{3}-\sigma_{1}^{2}\sigma_{2}+2\sigma_{2}^{2}+\sigma_{1}\sigma_{3}\\
-&=\sigma_{1}^{4}-4\sigma_{1}^{2}\sigma_{2}+2\sigma_{2}^{2}+4\sigma_{1}\sigma_{3}.
-\end{aligned}
+S_{4}
+=\sigma_{1}S_{3}-\sigma_{2}S_{2}+\sigma_{3}S_{1}=\sigma_{1}\left(\sigma_{1}^{3}-3\sigma_{1}\sigma_{2}+3\sigma_{3}\right)-\sigma_{2}\left(\sigma_{1}^{2}-2\sigma_{2}\right)+\sigma_{3}\sigma_{1}=\sigma_{1}^{4}-3\sigma_{1}^{2}\sigma_{2}+3\sigma_{1}\sigma_{3}-\sigma_{1}^{2}\sigma_{2}+2\sigma_{2}^{2}+\sigma_{1}\sigma_{3}=\sigma_{1}^{4}-4\sigma_{1}^{2}\sigma_{2}+2\sigma_{2}^{2}+4\sigma_{1}\sigma_{3}.
 $$
 
 $S_{2}=\sigma_{1}^{2}-2\sigma_{2}$, $S_{3}=\sigma_{1}^{3}-3\sigma_{1}\sigma_{2}+3\sigma_{3}$,
@@ -141,10 +127,8 @@ $$
 因此
 
 $$
-\begin{aligned}D\left(g\right)
-&=\prod_{1\le i< j\le n}\left(r_{i}-r_{j}\right)^{2}\cdot\prod_{i=1}^{n}\left(a-r_{i}\right)^{2}\\
-&=D\left(f\right)\cdot\prod_{i=1}^{n}\left(a-r_{i}\right)^{2}.
-\end{aligned}
+D\left(g\right)
+=\prod_{1\le i< j\le n}\left(r_{i}-r_{j}\right)^{2}\cdot\prod_{i=1}^{n}\left(a-r_{i}\right)^{2}=D\left(f\right)\cdot\prod_{i=1}^{n}\left(a-r_{i}\right)^{2}.
 $$
 
 而

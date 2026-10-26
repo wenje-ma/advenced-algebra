@@ -31,14 +31,8 @@ $$
 按第 $1$ 行展开:
 
 $$
-\begin{aligned}\left|\lambda I-A\right|
-&=\left(\lambda-2\right)\left[\left(\lambda-8\right)\left(\lambda+3\right)+28\right]+3\left[-\left(\lambda+3\right)+4\right]-2\left[-14-2\left(\lambda-8\right)\right]\\
-&=\left(\lambda-2\right)\left(\lambda^{2}-5\lambda+4\right)+3\left(-\lambda+1\right)-2\left(2-2\lambda\right)\\
-&=\left(\lambda-2\right)\left(\lambda-1\right)\left(\lambda-4\right)-3\lambda+3-4+4\lambda\\
-&=\left(\lambda-1\right)\left[\left(\lambda-2\right)\left(\lambda-4\right)+1\right]\\
-&=\left(\lambda-1\right)\left(\lambda^{2}-6\lambda+9\right)\\
-&=\left(\lambda-1\right)\left(\lambda-3\right)^{2}.
-\end{aligned}
+\left|\lambda I-A\right|
+=\left(\lambda-2\right)\left[\left(\lambda-8\right)\left(\lambda+3\right)+28\right]+3\left[-\left(\lambda+3\right)+4\right]-2\left[-14-2\left(\lambda-8\right)\right]=\left(\lambda-2\right)\left(\lambda^{2}-5\lambda+4\right)+3\left(-\lambda+1\right)-2\left(2-2\lambda\right)=\left(\lambda-2\right)\left(\lambda-1\right)\left(\lambda-4\right)-3\lambda+3-4+4\lambda=\left(\lambda-1\right)\left[\left(\lambda-2\right)\left(\lambda-4\right)+1\right]=\left(\lambda-1\right)\left(\lambda^{2}-6\lambda+9\right)=\left(\lambda-1\right)\left(\lambda-3\right)^{2}.
 $$
 
 因此特征值为 $\lambda_{1}=1$, $\lambda_{2}=\lambda_{3}=3$.
@@ -110,13 +104,8 @@ $$
 按第 $1$ 行展开:
 
 $$
-\begin{aligned}\left|\lambda I-A\right|
-&=\left(\lambda-3\right)\left[\left(\lambda+5\right)\left(\lambda-3\right)+20\right]+7\left[2\left(\lambda-3\right)+8\right]+3\left[20-4\left(\lambda+5\right)\right]\\
-&=\left(\lambda-3\right)\left(\lambda^{2}+2\lambda+5\right)+7\left(2\lambda+2\right)+3\left(-4\lambda\right)\\
-&=\lambda^{3}-3\lambda^{2}+2\lambda^{2}-6\lambda+5\lambda-15+14\lambda+14-12\lambda\\
-&=\lambda^{3}-\lambda^{2}+\lambda-1\\
-&=\left(\lambda-1\right)\left(\lambda^{2}+1\right).
-\end{aligned}
+\left|\lambda I-A\right|
+=\left(\lambda-3\right)\left[\left(\lambda+5\right)\left(\lambda-3\right)+20\right]+7\left[2\left(\lambda-3\right)+8\right]+3\left[20-4\left(\lambda+5\right)\right]=\left(\lambda-3\right)\left(\lambda^{2}+2\lambda+5\right)+7\left(2\lambda+2\right)+3\left(-4\lambda\right)=\lambda^{3}-3\lambda^{2}+2\lambda^{2}-6\lambda+5\lambda-15+14\lambda+14-12\lambda=\lambda^{3}-\lambda^{2}+\lambda-1=\left(\lambda-1\right)\left(\lambda^{2}+1\right).
 $$
 
 因此特征值为 $\lambda_{1}=1$, $\lambda_{2}=i$, $\lambda_{3}=-i$.

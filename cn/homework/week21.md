@@ -142,10 +142,7 @@ $$
 由**定理2** (可逆的充要条件), 先求 $A^{-1}$. 记
 
 $$
-\begin{aligned}
-A&=\left[\begin{array}{rrr}1 & -2 & 0\\4 & -2 & -1\\-3 & 1 & 2\end{array}\right],\\
-B&=\left[\begin{array}{rr}-1 & 4\\2 & 5\\1 & -3\end{array}\right].
-\end{aligned}
+A=\left[\begin{array}{rrr}1 & -2 & 0\\4 & -2 & -1\\-3 & 1 & 2\end{array}\right],;B=\left[\begin{array}{rr}-1 & 4\\2 & 5\\1 & -3\end{array}\right].
 $$
 
 先求 $A^{-1}$.

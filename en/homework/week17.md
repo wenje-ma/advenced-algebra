@@ -125,9 +125,7 @@ $$
 Substituting $\eta_{i}=\gamma_{i}-\gamma_{0}$:
 
 $$
-\begin{aligned}\gamma &=\gamma_{0}+k_{1}\left(\gamma_{1}-\gamma_{0}\right)+k_{2}\left(\gamma_{2}-\gamma_{0}\right)+\cdots+k_{t}\left(\gamma_{t}-\gamma_{0}\right)\\
-&=\left(1-k_{1}-k_{2}-\cdots-k_{t}\right)\gamma_{0}+k_{1}\gamma_{1}+k_{2}\gamma_{2}+\cdots+k_{t}\gamma_{t}.
-\end{aligned}
+\gamma =\gamma_{0}+k_{1}\left(\gamma_{1}-\gamma_{0}\right)+k_{2}\left(\gamma_{2}-\gamma_{0}\right)+\cdots+k_{t}\left(\gamma_{t}-\gamma_{0}\right)=\left(1-k_{1}-k_{2}-\cdots-k_{t}\right)\gamma_{0}+k_{1}\gamma_{1}+k_{2}\gamma_{2}+\cdots+k_{t}\gamma_{t}.
 $$
 
 Let
@@ -147,10 +145,8 @@ $$
 Any solution of the inhomogeneous system can be expressed in the above form. Therefore
 
 $$
-\begin{aligned}
-\gamma&=u_{0}\gamma_{0}+u_{1}\gamma_{1}+u_{2}\gamma_{2}+\cdots+u_{t}\gamma_{t},\
-u_{0}+u_{1}+u_{2}+\cdots+u_{t}&=1.
-\end{aligned}
+\gamma=u_{0}\gamma_{0}+u_{1}\gamma_{1}+u_{2}\gamma_{2}+\cdots+u_{t}\gamma_{t},\
+u_{0}+u_{1}+u_{2}+\cdots+u_{t}=1.
 $$
 
 $\blacksquare$

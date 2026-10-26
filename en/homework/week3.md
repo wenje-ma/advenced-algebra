@@ -47,9 +47,7 @@ and $a-c\in\mathbb Q$, $b-d\in\mathbb Q$, hence $\alpha-\beta\in\mathbb Q\left(i
 **Verify closure under multiplication**. By item (2) of **Definition 1**,
 
 $$
-\begin{aligned}\alpha\beta&=\left(a+bi\right)\left(c+di\right)\\
-&=\left(ac-bd\right)+\left(ad+bc\right)i.
-\end{aligned}
+\alpha\beta=\left(a+bi\right)\left(c+di\right)=\left(ac-bd\right)+\left(ad+bc\right)i.
 $$
 
 Since the rational numbers are closed under addition, subtraction, and multiplication, $ac-bd\in\mathbb Q$ and $ad+bc\in\mathbb Q$, hence $\alpha\beta\in\mathbb Q\left(i\right)$.
@@ -57,10 +55,7 @@ Since the rational numbers are closed under addition, subtraction, and multiplic
 **Verify closure under division**. By item (2) of **Definition 1**, let $\beta=c+di\ne 0$; then $c^{2}+d^{2}\ne 0$, and
 
 $$
-\begin{aligned}\frac{\alpha}{\beta}&=\frac{a+bi}{c+di}\\
-&=\frac{\left(a+bi\right)\left(c-di\right)}{\left(c+di\right)\left(c-di\right)}\\
-&=\frac{ac+bd}{c^{2}+d^{2}}+\frac{bc-ad}{c^{2}+d^{2}}i.
-\end{aligned}
+\frac{\alpha}{\beta}=\frac{a+bi}{c+di}=\frac{\left(a+bi\right)\left(c-di\right)}{\left(c+di\right)\left(c-di\right)}=\frac{ac+bd}{c^{2}+d^{2}}+\frac{bc-ad}{c^{2}+d^{2}}i.
 $$
 
 Since the rational numbers are closed under addition, subtraction, multiplication, and division (the divisor being not $0$), $\frac{ac+bd}{c^{2}+d^{2}}\in\mathbb Q$ and $\frac{bc-ad}{c^{2}+d^{2}}\in\mathbb Q$, hence $\frac{\alpha}{\beta}\in\mathbb Q\left(i\right)$.

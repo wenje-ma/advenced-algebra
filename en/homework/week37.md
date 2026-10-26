@@ -37,9 +37,7 @@ In this case $f=x^{2}\left(x^{2}+2a\right)$, and $x$ is a $2$-fold factor of $f$
 Perform polynomial division:
 
 $$
-\begin{aligned}f\left(x\right)&=x^{4}+2ax^{2}+b\\
-&=\left(x^{2}+a\right)^{2}+\left(b-a^{2}\right).
-\end{aligned}
+f\left(x\right)=x^{4}+2ax^{2}+b=\left(x^{2}+a\right)^{2}+\left(b-a^{2}\right).
 $$
 
 Therefore $x^{2}+a\mid f$ if and only if $b-a^{2}=0$, i.e. $b=a^{2}$.
@@ -97,9 +95,7 @@ $$
 Multiply by $-\frac{3}{16}$, and let
 
 $$
-\begin{aligned}r_{2}\left(x\right)&=x^{3}-3x^{2}+3x-1\\
-&=\left(x-1\right)^{3}.
-\end{aligned}
+r_{2}\left(x\right)=x^{3}-3x^{2}+3x-1=\left(x-1\right)^{3}.
 $$
 
 **Step 3**: divide $r_{1}$ by $r_{2}$.
@@ -107,10 +103,7 @@ $$
 Leading term of the quotient: $x$.
 
 $$
-\begin{aligned}r_{1}-xr_{2}&=\frac{5}{3}x^{3}-5x^{2}+5x-\frac{5}{3}\\
-&=\frac{5}{3}\left(x-1\right)^{3}\\
-&=\frac{5}{3}r_{2}.
-\end{aligned}
+r_{1}-xr_{2}=\frac{5}{3}x^{3}-5x^{2}+5x-\frac{5}{3}=\frac{5}{3}\left(x-1\right)^{3}=\frac{5}{3}r_{2}.
 $$
 
 Therefore
@@ -122,17 +115,13 @@ $$
 Hence
 
 $$
-\begin{aligned}\left(f,f'\right)&=r_{2}\\
-&=\left(x-1\right)^{3}.
-\end{aligned}
+\left(f,f'\right)=r_{2}=\left(x-1\right)^{3}.
 $$
 
 The polynomial with no multiple factors:
 
 $$
-\begin{aligned}g\left(x\right)&=\frac{f\left(x\right)}{\left(f\left(x\right),f'\left(x\right)\right)}\\
-&=\frac{f\left(x\right)}{\left(x-1\right)^{3}}.
-\end{aligned}
+g\left(x\right)=\frac{f\left(x\right)}{\left(f\left(x\right),f'\left(x\right)\right)}=\frac{f\left(x\right)}{\left(x-1\right)^{3}}.
 $$
 
 **Find the standard factorization**.
@@ -208,11 +197,7 @@ $$
 Verify the remaining coefficients:
 
 $$
-\begin{aligned}-4a+6&=-4+6=2,\\
-6a-4&=6-4=2,\\
--4a+1&=-4+1=-3,\\
-a&=1.
-\end{aligned}
+-4a+6=-4+6=2,;6a-4=6-4=2,-4a+1=-4+1=-3,;a=1.
 $$
 
 All match.
@@ -226,9 +211,7 @@ $$
 The polynomial with no multiple factors:
 
 $$
-\begin{aligned}g\left(x\right)&=\left(x-1\right)\left(x+1\right)\\
-&=x^{2}-1.
-\end{aligned}
+g\left(x\right)=\left(x-1\right)\left(x+1\right)=x^{2}-1.
 $$
 
 $\blacksquare$

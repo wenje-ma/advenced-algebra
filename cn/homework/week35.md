@@ -16,10 +16,8 @@
 (1)
 
 $$
-\begin{aligned}
-f\left(x\right)&=x^{4}+3x^{3}-x^{2}-4x-3,\
-g\left(x\right)&=3x^{3}+10x^{2}+2x-3.
-\end{aligned}
+f\left(x\right)=x^{4}+3x^{3}-x^{2}-4x-3,\
+g\left(x\right)=3x^{3}+10x^{2}+2x-3.
 $$
 
 ### 解答 习题一
@@ -87,10 +85,8 @@ $$
 由 $x+3=r_{1}-xr_{2}$, 得
 
 $$
-\begin{aligned}x+3
-&=-3f+xg-x\left[-\frac{9}{5}f+\left(\frac{3x}{5}-\frac{1}{5}\right)g\right]\\
-&=\frac{9x-15}{5}f+\frac{-3x^{2}+6x}{5}g.
-\end{aligned}
+x+3
+=-3f+xg-x\left[-\frac{9}{5}f+\left(\frac{3x}{5}-\frac{1}{5}\right)g\right]=\frac{9x-15}{5}f+\frac{-3x^{2}+6x}{5}g.
 $$
 
 因此

@@ -23,14 +23,11 @@ By **Corollary 2** (Condition for a Homogeneous System to Have a Nontrivial Solu
 The coefficient determinant is
 
 $$
-\begin{aligned}\left|\begin{array}{ccc}
+\left|\begin{array}{ccc}
 a & 1 & 1\\
 1 & b & 1\\
 1 & 2b & 1
-\end{array}\right|&=a\left(b\cdot1-1\cdot2b\right)-1\left(1\cdot1-1\cdot1\right)+1\left(1\cdot2b-b\cdot1\right)\\
-&=a\left(-b\right)-0+b\\
-&=b\left(1-a\right).
-\end{aligned}
+\end{array}\right|=a\left(b\cdot1-1\cdot2b\right)-1\left(1\cdot1-1\cdot1\right)+1\left(1\cdot2b-b\cdot1\right)=a\left(-b\right)-0+b=b\left(1-a\right).
 $$
 
 Setting it equal to $0$, we get $b\left(1-a\right)=0$, i.e. $b=0$ or $a=1$.

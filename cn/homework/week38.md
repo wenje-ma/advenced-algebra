@@ -21,11 +21,8 @@ $$
 由**推论2** (因式定理), 在 $K\left[x\right]$ 中, $x-a$ 整除 $f\left(x\right)$ 当且仅当 $f\left(a\right)=0$. 计算 $f\left(-2\right)$:
 
 $$
-\begin{aligned}f\left(-2\right)
-&=\left(-2\right)^{5}+7\left(-2\right)^{4}+19\left(-2\right)^{3}+26\left(-2\right)^{2}+20\left(-2\right)+8\\
-&=-32+112-152+104-40+8\\
-&=0.
-\end{aligned}
+f\left(-2\right)
+=\left(-2\right)^{5}+7\left(-2\right)^{4}+19\left(-2\right)^{3}+26\left(-2\right)^{2}+20\left(-2\right)+8=-32+112-152+104-40+8=0.
 $$
 
 所以 $-2$ 是 $f\left(x\right)$ 的根.
@@ -103,11 +100,8 @@ $$
 计算 $f\left(3\right)$:
 
 $$
-\begin{aligned}f\left(3\right)
-&=3^{4}-5\cdot3^{3}+a\cdot3^{2}+b\cdot3+9\\
-&=81-135+9a+3b+9\\
-&=-45+9a+3b.
-\end{aligned}
+f\left(3\right)
+=3^{4}-5\cdot3^{3}+a\cdot3^{2}+b\cdot3+9=81-135+9a+3b+9=-45+9a+3b.
 $$
 
 令 $f\left(3\right)=0$:
@@ -125,11 +119,8 @@ $$
 计算 $f'\left(3\right)$:
 
 $$
-\begin{aligned}f'\left(3\right)
-&=4\cdot3^{3}-15\cdot3^{2}+2a\cdot3+b\\
-&=108-135+6a+b\\
-&=-27+6a+b.
-\end{aligned}
+f'\left(3\right)
+=4\cdot3^{3}-15\cdot3^{2}+2a\cdot3+b=108-135+6a+b=-27+6a+b.
 $$
 
 令 $f'\left(3\right)=0$:

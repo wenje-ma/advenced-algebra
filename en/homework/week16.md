@@ -56,9 +56,9 @@ $$
 
 where $x_{3},x_{4}$ are free variables.
 
-Setting $x_{3}=14,x_{4}=0$, we get $\eta_{1}=\left(-5,3,14,0\right)^{T}$.
+Setting $x_{3}=14,x_{4}=0$, we get $\eta_{1}=\left(-5,3,14,0\right)^{\top}$.
 
-Setting $x_{3}=0,x_{4}=14$, we get $\eta_{2}=\left(7,-7,0,14\right)^{T}$.
+Setting $x_{3}=0,x_{4}=14$, we get $\eta_{2}=\left(7,-7,0,14\right)^{\top}$.
 
 By **Definition 1** (Fundamental system), $\eta_{1},\eta_{2}$ are linearly independent, and every solution can be linearly represented by them, so they form a fundamental system of solutions.
 
@@ -120,7 +120,7 @@ $$
 
 where $x_{4}$ is a free variable.
 
-Setting $x_{4}=9$, we get $\eta_{1}=\left(-7,-2,5,9\right)^{T}$.
+Setting $x_{4}=9$, we get $\eta_{1}=\left(-7,-2,5,9\right)^{\top}$.
 
 By **Definition 1** (Fundamental system), $\eta_{1}$ is linearly independent, and every solution can be linearly represented by it, so it forms a fundamental system of solutions.
 

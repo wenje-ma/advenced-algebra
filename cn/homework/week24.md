@@ -156,7 +156,7 @@ $$
 主元列为第 $1$ 列和第 $2$ 列, 故 $\operatorname{Im}\mathcal{A}$ 的一个基为
 
 $$
-\alpha_{1}=\left(1,-1,1\right)^{T},\alpha_{2}=\left(0,2,2\right)^{T}.
+\alpha_{1}=\left(1,-1,1\right)^{\top},\alpha_{2}=\left(0,2,2\right)^{\top}.
 $$
 
 $$
@@ -183,13 +183,13 @@ $$
 令 $x_{3}=1,x_{4}=0$:
 
 $$
-\xi_{1}=\left(-2,-\frac{3}{2},1,0\right)^{T}.
+\xi_{1}=\left(-2,-\frac{3}{2},1,0\right)^{\top}.
 $$
 
 令 $x_{3}=0,x_{4}=1$:
 
 $$
-\xi_{2}=\left(-1,-2,0,1\right)^{T}.
+\xi_{2}=\left(-1,-2,0,1\right)^{\top}.
 $$
 
 因此 $\ker\mathcal{A}$ 的一个基为 $\xi_{1},\xi_{2}$.

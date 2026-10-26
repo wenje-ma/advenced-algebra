@@ -50,22 +50,22 @@ Therefore $A=BC$, where $B$ is an $s\times r$ column-full-rank matrix and $C$ is
 
 ### Problem 2
 
-(Problem 4.3-6) Prove: if $A$ is an $n$-th order matrix over $K$, $n$ is odd, and $AA^{T}=I$, $\left|A\right|=1$, then $\left|I-A\right|=0$.
+(Problem 4.3-6) Prove: if $A$ is an $n$-th order matrix over $K$, $n$ is odd, and $AA^{\top}=I$, $\left|A\right|=1$, then $\left|I-A\right|=0$.
 
 ### Solution to Problem 2
 
 By **Theorem 3** (Determinant of product), $\left|AB\right|=\left|A\right|\left|B\right|$. We prove $\left|I-A\right|=0$.
 
 $$
-\left|I-A\right|=\left|\left(I-A\right)^{T}\right|=\left|I-A^{T}\right|.
+\left|I-A\right|=\left|\left(I-A\right)^{\top}\right|=\left|I-A^{\top}\right|.
 $$
 
-Since $AA^{T}=I$, $A^{T}=A^{-1}$.
+Since $AA^{\top}=I$, $A^{\top}=A^{-1}$.
 
 Therefore
 
 $$
-\left|I-A^{T}\right|=\left|I-A^{-1}\right|=\left|A^{-1}\left(A-I\right)\right|=\left|A^{-1}\right|\left|A-I\right|.
+\left|I-A^{\top}\right|=\left|I-A^{-1}\right|=\left|A^{-1}\left(A-I\right)\right|=\left|A^{-1}\right|\left|A-I\right|.
 $$
 
 $$
@@ -116,16 +116,16 @@ x_{1}^{2} & x_{2}^{2} & x_{3}^{2}
 \end{array}\right].
 $$
 
-Compute the $\left(i,j\right)$-entry of $BB^{T}$:
+Compute the $\left(i,j\right)$-entry of $BB^{\top}$:
 
 $$
-\left(BB^{T}\right)_{ij}=\sum_{k=1}^{3}B_{ik}B_{jk}=\sum_{k=1}^{3}x_{k}^{i-1}x_{k}^{j-1}=\sum_{k=1}^{3}x_{k}^{i+j-2}=s_{i+j-2}.
+\left(BB^{\top}\right)_{ij}=\sum_{k=1}^{3}B_{ik}B_{jk}=\sum_{k=1}^{3}x_{k}^{i-1}x_{k}^{j-1}=\sum_{k=1}^{3}x_{k}^{i+j-2}=s_{i+j-2}.
 $$
 
 Therefore
 
 $$
-BB^{T}=\left[\begin{array}{ccc}
+BB^{\top}=\left[\begin{array}{ccc}
 s_{0} & s_{1} & s_{2}\\
 s_{1} & s_{2} & s_{3}\\
 s_{2} & s_{3} & s_{4}
@@ -137,7 +137,7 @@ Therefore
 By **Theorem 3** (Determinant of product),
 
 $$
-\left|A\right|=\left|BB^{T}\right|=\left|B\right|\left|B^{T}\right|=\left|B\right|^{2}.
+\left|A\right|=\left|BB^{\top}\right|=\left|B\right|\left|B^{\top}\right|=\left|B\right|^{2}.
 $$
 
 $B$ is a Vandermonde matrix,
@@ -159,7 +159,7 @@ $\blacksquare$
 (Problem 4.3-12) Prove: for any $s\times n$ matrix $A$ over the real field,
 
 $$
-\text{rank}\left(A^{T}AA^{T}\right)=\text{rank}\left(A\right).
+\text{rank}\left(A^{\top}AA^{\top}\right)=\text{rank}\left(A\right).
 $$
 
 ### Solution to Problem 4
@@ -170,38 +170,38 @@ $$
 \text{rank}\left(AB\right)\le\min\left\{\text{rank}\left(A\right),\text{rank}\left(B\right)\right\}.
 $$
 
-Consider the homogeneous system $\left(A^{T}AA^{T}\right)y=0$, where $y$ is an $s$-dimensional column vector.
+Consider the homogeneous system $\left(A^{\top}AA^{\top}\right)y=0$, where $y$ is an $s$-dimensional column vector.
 
-Let $y$ be a solution of $\left(A^{T}AA^{T}\right)y=0$. Then
-
-$$
-A^{T}A\left(A^{T}y\right)=0.
-$$
-
-Set $z=A^{T}y$; then $A^{T}Az=0$.
-
-By Proposition $2$, over the real field, $A^{T}Az=0$ and $z=0$ have the same solutions.
-
-Hence $z=0$, i.e., $A^{T}y=0$.
-
-Conversely, if $A^{T}y=0$, then
+Let $y$ be a solution of $\left(A^{\top}AA^{\top}\right)y=0$. Then
 
 $$
-A^{T}AA^{T}y=A^{T}A\left(A^{T}y\right)=A^{T}A\times0=0.
+A^{\top}A\left(A^{\top}y\right)=0.
 $$
 
-Therefore $\left(A^{T}AA^{T}\right)y=0$ and $A^{T}y=0$ have the same solutions.
+Set $z=A^{\top}y$; then $A^{\top}Az=0$.
+
+By Proposition $2$, over the real field, $A^{\top}Az=0$ and $z=0$ have the same solutions.
+
+Hence $z=0$, i.e., $A^{\top}y=0$.
+
+Conversely, if $A^{\top}y=0$, then
+
+$$
+A^{\top}AA^{\top}y=A^{\top}A\left(A^{\top}y\right)=A^{\top}A\times0=0.
+$$
+
+Therefore $\left(A^{\top}AA^{\top}\right)y=0$ and $A^{\top}y=0$ have the same solutions.
 
 Hence their solution spaces have the same dimension:
 
 $$
-s-\text{rank}\left(A^{T}AA^{T}\right)=s-\text{rank}\left(A^{T}\right).
+s-\text{rank}\left(A^{\top}AA^{\top}\right)=s-\text{rank}\left(A^{\top}\right).
 $$
 
 Therefore
 
 $$
-\text{rank}\left(A^{T}AA^{T}\right)=\text{rank}\left(A^{T}\right)=\text{rank}\left(A\right).
+\text{rank}\left(A^{\top}AA^{\top}\right)=\text{rank}\left(A^{\top}\right)=\text{rank}\left(A\right).
 $$
 
 $\blacksquare$

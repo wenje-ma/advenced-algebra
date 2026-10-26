@@ -156,7 +156,7 @@ Therefore $\operatorname{rank}\left(A\right)=2$.
 The pivot columns are column $1$ and column $2$, so a basis for $\operatorname{Im}\mathcal{A}$ is
 
 $$
-\alpha_{1}=\left(1,-1,1\right)^{T},\alpha_{2}=\left(0,2,2\right)^{T}.
+\alpha_{1}=\left(1,-1,1\right)^{\top},\alpha_{2}=\left(0,2,2\right)^{\top}.
 $$
 
 $$
@@ -183,13 +183,13 @@ $$
 Set $x_{3}=1,x_{4}=0$:
 
 $$
-\xi_{1}=\left(-2,-\frac{3}{2},1,0\right)^{T}.
+\xi_{1}=\left(-2,-\frac{3}{2},1,0\right)^{\top}.
 $$
 
 Set $x_{3}=0,x_{4}=1$:
 
 $$
-\xi_{2}=\left(-1,-2,0,1\right)^{T}.
+\xi_{2}=\left(-1,-2,0,1\right)^{\top}.
 $$
 
 Therefore a basis for $\ker\mathcal{A}$ is $\xi_{1},\xi_{2}$.

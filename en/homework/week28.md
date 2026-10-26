@@ -47,7 +47,7 @@ $\blacksquare$
 
 ### Problem 2
 
-(Problem 5.4-8) Prove: if $A$ is diagonalizable, then $A\sim A^{T}$.
+(Problem 5.4-8) Prove: if $A$ is diagonalizable, then $A\sim A^{\top}$.
 
 ### Solution to Problem 2
 
@@ -59,41 +59,41 @@ $$
 
 where $D$ is a diagonal matrix.
 
-The transpose of a diagonal matrix is still a diagonal matrix, i.e. $D^{T}=D$.
+The transpose of a diagonal matrix is still a diagonal matrix, i.e. $D^{\top}=D$.
 
 Take the transpose of both sides:
 
 $$
-\left(P^{-1}AP\right)^{T}=D^{T}=D.
+\left(P^{-1}AP\right)^{\top}=D^{\top}=D.
 $$
 
 That is,
 
 $$
-P^{T}A^{T}\left(P^{-1}\right)^{T}=D.
+P^{\top}A^{\top}\left(P^{-1}\right)^{\top}=D.
 $$
 
-Let $Q=\left(P^{T}\right)^{-1}$. Then $Q^{-1}=P^{T}$.
+Let $Q=\left(P^{\top}\right)^{-1}$. Then $Q^{-1}=P^{\top}$.
 
 The above becomes
 
 $$
-Q^{-1}A^{T}Q=D.
+Q^{-1}A^{\top}Q=D.
 $$
 
 Therefore
 
 $$
-A^{T}\sim D.
+A^{\top}\sim D.
 $$
 
 Since also $A\sim D$, by the symmetry and transitivity of similarity,
 
 $$
-A\sim A^{T}.
+A\sim A^{\top}.
 $$
 
-Thus $A\sim A^{T}$. $\blacksquare$
+Thus $A\sim A^{\top}$. $\blacksquare$
 
 ### Problem 3
 

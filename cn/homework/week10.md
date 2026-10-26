@@ -122,7 +122,7 @@ $$
 \alpha_{4}=\begin{bmatrix}1\\1\\1\\1\end{bmatrix}.
 $$
 
-证明: $K^{4}$ 中任一向量 $\alpha=\left(a_{1},a_{2},a_{3},a_{4}\right)^{T}$ 可以由向量组 $\alpha_{1},\alpha_{2},\alpha_{3},\alpha_{4}$ 线性表出, 并且表出方式唯一, 写出这种表出方式.
+证明: $K^{4}$ 中任一向量 $\alpha=\left(a_{1},a_{2},a_{3},a_{4}\right)^{\top}$ 可以由向量组 $\alpha_{1},\alpha_{2},\alpha_{3},\alpha_{4}$ 线性表出, 并且表出方式唯一, 写出这种表出方式.
 
 ### 解答 习题三
 

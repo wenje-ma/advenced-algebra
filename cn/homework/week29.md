@@ -54,7 +54,7 @@ $$
 
 解得 $x_{2}=0$, $x_{1}=-2x_{3}$.
 
-基础解系: $\alpha_{1}=\left(-2,0,1\right)^{T}$.
+基础解系: $\alpha_{1}=\left(-2,0,1\right)^{\top}$.
 
 **求 $\lambda=3$ 的特征向量**.
 
@@ -73,7 +73,7 @@ $$
 
 解得 $x_{2}=-\frac{1}{2}x_{3}$, $x_{1}=\frac{1}{2}x_{3}$.
 
-基础解系: $\alpha_{2}=\left(1,-1,2\right)^{T}$.
+基础解系: $\alpha_{2}=\left(1,-1,2\right)^{\top}$.
 
 $\lambda_{1}=1$ 的特征向量为 $k_{1}\alpha_{1}$ ( $k_{1}\ne0$ ), $\lambda_{2}=\lambda_{3}=3$ 的特征向量为 $k_{2}\alpha_{2}$ ( $k_{2}\ne0$ ). $\blacksquare$
 
@@ -128,25 +128,25 @@ $\blacksquare$
 
 **(1)** 设 $\lambda$ 是 $A$ 的一个特征值, $\alpha$ 是 $A$ 的属于 $\lambda$ 的特征向量, 即 $A\alpha=\lambda\alpha$.
 
-两边取共轭转置: $\alpha^{T}A^{T}=\overline{\lambda}\alpha^{T}$.
+两边取共轭转置: $\alpha^{\top}A^{\top}=\overline{\lambda}\alpha^{\top}$.
 
-因为 $A$ 是正交矩阵, 故 $A^{T}=A^{-1}$.
+因为 $A$ 是正交矩阵, 故 $A^{\top}=A^{-1}$.
 
-所以 $\alpha^{T}A^{-1}=\overline{\lambda}\alpha^{T}$.
+所以 $\alpha^{\top}A^{-1}=\overline{\lambda}\alpha^{\top}$.
 
 两边右乘 $A\alpha$:
 
 $$
-\alpha^{T}A^{-1}A\alpha=\overline{\lambda}\alpha^{T}A\alpha.
+\alpha^{\top}A^{-1}A\alpha=\overline{\lambda}\alpha^{\top}A\alpha.
 $$
 
 即
 
 $$
-\alpha^{T}\alpha=\overline{\lambda}\lambda\alpha^{T}\alpha.
+\alpha^{\top}\alpha=\overline{\lambda}\lambda\alpha^{\top}\alpha.
 $$
 
-因为 $\alpha\ne0$, 故 $\alpha^{T}\alpha\ne0$.
+因为 $\alpha\ne0$, 故 $\alpha^{\top}\alpha\ne0$.
 
 因此
 
@@ -235,7 +235,7 @@ $$
 
 解得 $x_{1}=x_{2}=x_{3}$.
 
-基础解系: $\alpha_{1}=\left(1,1,1\right)^{T}$.
+基础解系: $\alpha_{1}=\left(1,1,1\right)^{\top}$.
 
 **求 $\lambda=\omega$ 的特征向量**.
 
@@ -243,11 +243,11 @@ $$
 
 由第 $2$ 行: $\omega x_{2}-x_{3}=0$, 即 $x_{3}=\omega x_{2}=\omega^{2}x_{1}$.
 
-基础解系: $\alpha_{2}=\left(1,\omega,\omega^{2}\right)^{T}$.
+基础解系: $\alpha_{2}=\left(1,\omega,\omega^{2}\right)^{\top}$.
 
 **求 $\lambda=\omega^{2}$ 的特征向量**.
 
-同理, 基础解系: $\alpha_{3}=\left(1,\omega^{2},\omega\right)^{T}$.
+同理, 基础解系: $\alpha_{3}=\left(1,\omega^{2},\omega\right)^{\top}$.
 
 $\blacksquare$
 

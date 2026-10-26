@@ -290,7 +290,7 @@ $$
 Split the $1$st column of $A\left(t\right)$ into the sum of two columns: the $1$st column
 
 $$
-=\left(a_{11}+t,a_{21}+t,\cdots,a_{n1}+t\right)^{T}=\left(a_{11},a_{21},\cdots,a_{n1}\right)^{T}+\left(t,t,\cdots,t\right)^{T}.
+=\left(a_{11}+t,a_{21}+t,\cdots,a_{n1}+t\right)^{\top}=\left(a_{11},a_{21},\cdots,a_{n1}\right)^{\top}+\left(t,t,\cdots,t\right)^{\top}.
 $$
 
 By the multilinearity of the determinant in its columns,
@@ -353,7 +353,7 @@ $$
 
 ### Solution to Problem 6
 
-**(1)** Write the matrix as $A=J+xy^{T}$, where $J$ is the all-$1$ matrix, $x=\left(x_{1},\cdots,x_{n}\right)^{T}$, $y=\left(y_{1},\cdots,y_{n}\right)^{T}$.
+**(1)** Write the matrix as $A=J+xy^{\top}$, where $J$ is the all-$1$ matrix, $x=\left(x_{1},\cdots,x_{n}\right)^{\top}$, $y=\left(y_{1},\cdots,y_{n}\right)^{\top}$.
 
 $A$ is the sum of two rank-$1$ matrices, hence $\text{rank}\left(A\right)\le2$.
 

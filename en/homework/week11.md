@@ -100,7 +100,7 @@ $$
 Verification:
 
 $$
-\alpha_{1}+\alpha_{2}+\alpha_{3}=\left(-2+1+3,1-3+0,0+2+2,3+4-1\right)^{T}=\left(2,-2,4,6\right)^{T}=\alpha_{4}.
+\alpha_{1}+\alpha_{2}+\alpha_{3}=\left(-2+1+3,1-3+0,0+2+2,3+4-1\right)^{\top}=\left(2,-2,4,6\right)^{\top}=\alpha_{4}.
 $$
 
 By **Definition 1** (Linearly Dependent), the homogeneous system has a nontrivial solution, so $\alpha_{1},\alpha_{2},\alpha_{3},\alpha_{4}$ is linearly dependent. $\blacksquare$

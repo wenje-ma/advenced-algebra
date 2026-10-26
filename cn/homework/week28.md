@@ -47,7 +47,7 @@ $\blacksquare$
 
 ### 习题二
 
-(习题 5.4-8) 证明: 如果 $A$ 可对角化, 则 $A\sim A^{T}$.
+(习题 5.4-8) 证明: 如果 $A$ 可对角化, 则 $A\sim A^{\top}$.
 
 ### 解答 习题二
 
@@ -59,41 +59,41 @@ $$
 
 其中 $D$ 是对角矩阵.
 
-对角矩阵的转置仍是对角矩阵, 即 $D^{T}=D$.
+对角矩阵的转置仍是对角矩阵, 即 $D^{\top}=D$.
 
 两边取转置:
 
 $$
-\left(P^{-1}AP\right)^{T}=D^{T}=D.
+\left(P^{-1}AP\right)^{\top}=D^{\top}=D.
 $$
 
 即
 
 $$
-P^{T}A^{T}\left(P^{-1}\right)^{T}=D.
+P^{\top}A^{\top}\left(P^{-1}\right)^{\top}=D.
 $$
 
-令 $Q=\left(P^{T}\right)^{-1}$. 则 $Q^{-1}=P^{T}$.
+令 $Q=\left(P^{\top}\right)^{-1}$. 则 $Q^{-1}=P^{\top}$.
 
 上式化为
 
 $$
-Q^{-1}A^{T}Q=D.
+Q^{-1}A^{\top}Q=D.
 $$
 
 因此
 
 $$
-A^{T}\sim D.
+A^{\top}\sim D.
 $$
 
 又因为 $A\sim D$, 故由相似关系的对称性和传递性,
 
 $$
-A\sim A^{T}.
+A\sim A^{\top}.
 $$
 
-因此 $A\sim A^{T}$. $\blacksquare$
+因此 $A\sim A^{\top}$. $\blacksquare$
 
 ### 习题三
 

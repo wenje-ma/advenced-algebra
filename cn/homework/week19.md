@@ -85,20 +85,20 @@ $E_{ij}A$ 的 $\left(k,j\right)$ 元 $=0$ (因为 $k\ne i$).
 设 $A$ 是任一 $n$ 级矩阵. 令
 
 $$
-S=\frac{1}{2}\left(A+A^{T}\right),
-K=\frac{1}{2}\left(A-A^{T}\right).
+S=\frac{1}{2}\left(A+A^{\top}\right),
+K=\frac{1}{2}\left(A-A^{\top}\right).
 $$
 
 则 $A=S+K$.
 
 $$
-S^{T}=\frac{1}{2}\left(A^{T}+\left(A^{T}\right)^{T}\right)=\frac{1}{2}\left(A^{T}+A\right)=S.
+S^{\top}=\frac{1}{2}\left(A^{\top}+\left(A^{\top}\right)^{\top}\right)=\frac{1}{2}\left(A^{\top}+A\right)=S.
 $$
 
 故 $S$ 是对称矩阵.
 
 $$
-K^{T}=\frac{1}{2}\left(A^{T}-\left(A^{T}\right)^{T}\right)=\frac{1}{2}\left(A^{T}-A\right)=-K.
+K^{\top}=\frac{1}{2}\left(A^{\top}-\left(A^{\top}\right)^{\top}\right)=\frac{1}{2}\left(A^{\top}-A\right)=-K.
 $$
 
 故 $K$ 是斜对称矩阵.
@@ -107,12 +107,12 @@ $$
 
 则 $S_{1}-S_{2}=K_{2}-K_{1}$.
 
-左边 $\left(S_{1}-S_{2}\right)^{T}=S_{1}-S_{2}$, 是对称矩阵.
+左边 $\left(S_{1}-S_{2}\right)^{\top}=S_{1}-S_{2}$, 是对称矩阵.
 
 右边
 
 $$
-\left(K_{2}-K_{1}\right)^{T}=-K_{2}+K_{1}=-\left(K_{2}-K_{1}\right),
+\left(K_{2}-K_{1}\right)^{\top}=-K_{2}+K_{1}=-\left(K_{2}-K_{1}\right),
 $$
 
 是斜对称矩阵.
@@ -163,13 +163,13 @@ $$
 
 设 $A$ 是 $n$ 级斜对称矩阵, $n$ 为奇数.
 
-则 $A^{T}=-A$.
+则 $A^{\top}=-A$.
 
 $$
-\left|A^{T}\right|=\left|-A\right|.
+\left|A^{\top}\right|=\left|-A\right|.
 $$
 
-因为 $\left|A^{T}\right|=\left|A\right|$, 且 $\left|-A\right|=\left(-1\right)^{n}\left|A\right|$.
+因为 $\left|A^{\top}\right|=\left|A\right|$, 且 $\left|-A\right|=\left(-1\right)^{n}\left|A\right|$.
 
 所以
 

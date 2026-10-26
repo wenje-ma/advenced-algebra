@@ -1,6 +1,6 @@
 ﻿# 作业 23
 
-> **定义1** (正交矩阵)<br>实数域上的方阵 $A$ 如果满足 $A^{T}A=I$, 则称 $A$ 是正交矩阵.
+> **定义1** (正交矩阵)<br>实数域上的方阵 $A$ 如果满足 $A^{\top}A=I$, 则称 $A$ 是正交矩阵.
 
 > **定义2** (内积)<br>在 $\mathbb{R}^{n}$ 中, 任给 $\alpha=\left(a_{1},a_{2},\cdots,a_{n}\right)$, $\beta=\left(b_{1},b_{2},\cdots,b_{n}\right)$, 规定
 > $$
@@ -23,10 +23,10 @@ $$
 
 ### 解答 习题一
 
-由**定义1** (正交矩阵), 计算 $A^{T}A$:
+由**定义1** (正交矩阵), 计算 $A^{\top}A$:
 
 $$
-A^{T}A=\left[\begin{array}{rr}
+A^{\top}A=\left[\begin{array}{rr}
 \sqrt{3}/2 & 1/2\\
 1/2 & -\sqrt{3}/2
 \end{array}\right]\left[\begin{array}{rr}
@@ -59,7 +59,7 @@ $$
 \left(\frac{1}{2}\right)^{2}+\left(-\frac{\sqrt{3}}{2}\right)^{2}=\frac{1}{4}+\frac{3}{4}=1
 $$
 
-因此 $A^{T}A=I$, 由**定义1** (正交矩阵), 故 $A$ 是正交矩阵. $\blacksquare$
+因此 $A^{\top}A=I$, 由**定义1** (正交矩阵), 故 $A$ 是正交矩阵. $\blacksquare$
 
 ### 习题二
 
@@ -74,10 +74,10 @@ $$
 
 ### 解答 习题二
 
-由**定义1** (正交矩阵), 计算 $A^{T}A$:
+由**定义1** (正交矩阵), 计算 $A^{\top}A$:
 
 $$
-A^{T}A=\left[\begin{array}{rr}
+A^{\top}A=\left[\begin{array}{rr}
 1 & 1\\
 1 & -1
 \end{array}\right]\left[\begin{array}{rr}
@@ -90,7 +90,7 @@ A^{T}A=\left[\begin{array}{rr}
 \end{array}\right].
 $$
 
-显然 $A^{T}A\ne I$, 由**定义1** (正交矩阵), 故 $A$ 不是正交矩阵. $\blacksquare$
+显然 $A^{\top}A\ne I$, 由**定义1** (正交矩阵), 故 $A$ 不是正交矩阵. $\blacksquare$
 
 ### 习题三
 
@@ -98,26 +98,26 @@ $$
 
 ### 解答 习题三
 
-由**定义1** (正交矩阵), 因为 $T$ 是正交矩阵, 故 $T^{-1}=T^{T}$.
+由**定义1** (正交矩阵), 因为 $T$ 是正交矩阵, 故 $T^{-1}=T^{\top}$.
 
 $$
-\left(T^{-1}AT\right)^{T}=T^{T}A^{T}\left(T^{-1}\right)^{T}.
+\left(T^{-1}AT\right)^{\top}=T^{\top}A^{\top}\left(T^{-1}\right)^{\top}.
 $$
 
-因为 $T$ 是正交矩阵, 故 $T^{-1}=T^{T}$, 从而 $\left(T^{-1}\right)^{T}=\left(T^{T}\right)^{T}=T$.
+因为 $T$ 是正交矩阵, 故 $T^{-1}=T^{\top}$, 从而 $\left(T^{-1}\right)^{\top}=\left(T^{\top}\right)^{\top}=T$.
 
 因此
 
 $$
-\left(T^{-1}AT\right)^{T}=T^{T}A^{T}T.
+\left(T^{-1}AT\right)^{\top}=T^{\top}A^{\top}T.
 $$
 
-因为 $A$ 是对称矩阵, 故 $A^{T}=A$.
+因为 $A$ 是对称矩阵, 故 $A^{\top}=A$.
 
 所以
 
 $$
-\left(T^{-1}AT\right)^{T}=T^{T}AT=T^{-1}AT.
+\left(T^{-1}AT\right)^{\top}=T^{\top}AT=T^{-1}AT.
 $$
 
 因此 $T^{-1}AT$ 是对称矩阵. $\blacksquare$
@@ -128,18 +128,18 @@ $$
 
 ### 解答 习题四
 
-由**定义1** (正交矩阵), 设 $A$ 是 $n$ 级上三角矩阵, 且 $A^{T}A=I$.
+由**定义1** (正交矩阵), 设 $A$ 是 $n$ 级上三角矩阵, 且 $A^{\top}A=I$.
 
-因为 $A$ 是上三角矩阵, 故 $A^{T}$ 是下三角矩阵.
+因为 $A$ 是上三角矩阵, 故 $A^{\top}$ 是下三角矩阵.
 
-$A^{T}A=I$ 是对角矩阵.
+$A^{\top}A=I$ 是对角矩阵.
 
 **归纳证明 $A$ 的非对角元都为零**.
 
-当 $i=1,j=2$ 时, 考虑 $A^{T}A$ 的 $\left(1,2\right)$ 元:
+当 $i=1,j=2$ 时, 考虑 $A^{\top}A$ 的 $\left(1,2\right)$ 元:
 
 $$
-\sum_{k=1}^{n}\left(A^{T}\right)_{1k}A_{k2}=\sum_{k=1}^{n}A_{k1}A_{k2}=0.
+\sum_{k=1}^{n}\left(A^{\top}\right)_{1k}A_{k2}=\sum_{k=1}^{n}A_{k1}A_{k2}=0.
 $$
 
 因为 $A$ 是上三角矩阵, 所以当 $k> 1$ 时 $A_{k1}=0$. 故上式化为 $A_{11}A_{12}=0$.
@@ -150,7 +150,7 @@ $$
 
 假设第 $1,\cdots,i-1$ 行的非对角元都已证明为零.
 
-考虑 $A^{T}A$ 的 $\left(i,j\right)$ 元 ( $i< j$ ):
+考虑 $A^{\top}A$ 的 $\left(i,j\right)$ 元 ( $i< j$ ):
 
 $$
 \sum_{k=1}^{i}A_{ki}A_{kj}=0.
@@ -162,7 +162,7 @@ $$
 
 归纳完成. 因此 $A$ 是对角矩阵.
 
-$A^{T}A=I$, 得 $A_{ii}^{2}=1$, 故 $A_{ii}=\pm1$. $\blacksquare$
+$A^{\top}A=I$, 得 $A_{ii}^{2}=1$, 故 $A_{ii}=\pm1$. $\blacksquare$
 
 ### 习题五
 
@@ -180,7 +180,7 @@ $$
 
 用施密特正交化方法.
 
-令 $\beta_{1}=\alpha_{1}=\left(1,1,0,0\right)^{T}$.
+令 $\beta_{1}=\alpha_{1}=\left(1,1,0,0\right)^{\top}$.
 
 $$
 \beta_{2}=\alpha_{2}-\frac{\left(\alpha_{2},\beta_{1}\right)}{\left(\beta_{1},\beta_{1}\right)}\beta_{1}.
@@ -191,7 +191,7 @@ $\left(\alpha_{2},\beta_{1}\right)=1$, $\left(\beta_{1},\beta_{1}\right)=2$.
 故
 
 $$
-\beta_{2}=\left(1,0,1,0\right)^{T}-\frac{1}{2}\left(1,1,0,0\right)^{T}=\left(\frac{1}{2},-\frac{1}{2},1,0\right)^{T}.
+\beta_{2}=\left(1,0,1,0\right)^{\top}-\frac{1}{2}\left(1,1,0,0\right)^{\top}=\left(\frac{1}{2},-\frac{1}{2},1,0\right)^{\top}.
 $$
 
 $$
@@ -204,7 +204,7 @@ $\left(\alpha_{3},\beta_{1}\right)=1$, $\left(\alpha_{3},\beta_{2}\right)=\frac{
 
 $$
 \beta_{3}
-=\left(1,0,0,-1\right)^{T}-\frac{1}{2}\left(1,1,0,0\right)^{T}-\frac{1}{3}\left(\frac{1}{2},-\frac{1}{2},1,0\right)^{T}=\left(\frac{1}{3},-\frac{1}{3},-\frac{1}{3},-1\right)^{T}.
+=\left(1,0,0,-1\right)^{\top}-\frac{1}{2}\left(1,1,0,0\right)^{\top}-\frac{1}{3}\left(\frac{1}{2},-\frac{1}{2},1,0\right)^{\top}=\left(\frac{1}{3},-\frac{1}{3},-\frac{1}{3},-1\right)^{\top}.
 $$
 
 验证正交性: $\left(\beta_{1},\beta_{2}\right)=0$, $\left(\beta_{1},\beta_{3}\right)=0$, $\left(\beta_{2},\beta_{3}\right)=0$.
@@ -212,15 +212,15 @@ $$
 单位化:
 
 $$
-\eta_{1}=\frac{\beta_{1}}{\left|\beta_{1}\right|}=\left(\frac{1}{\sqrt{2}},\frac{1}{\sqrt{2}},0,0\right)^{T}.
+\eta_{1}=\frac{\beta_{1}}{\left|\beta_{1}\right|}=\left(\frac{1}{\sqrt{2}},\frac{1}{\sqrt{2}},0,0\right)^{\top}.
 $$
 
 $$
-\eta_{2}=\frac{\beta_{2}}{\left|\beta_{2}\right|}=\left(\frac{1}{\sqrt{6}},-\frac{1}{\sqrt{6}},\frac{2}{\sqrt{6}},0\right)^{T}.
+\eta_{2}=\frac{\beta_{2}}{\left|\beta_{2}\right|}=\left(\frac{1}{\sqrt{6}},-\frac{1}{\sqrt{6}},\frac{2}{\sqrt{6}},0\right)^{\top}.
 $$
 
 $$
-\eta_{3}=\frac{\beta_{3}}{\left|\beta_{3}\right|}=\left(\frac{1}{2\sqrt{3}},-\frac{1}{2\sqrt{3}},-\frac{1}{2\sqrt{3}},-\frac{\sqrt{3}}{2}\right)^{T}.
+\eta_{3}=\frac{\beta_{3}}{\left|\beta_{3}\right|}=\left(\frac{1}{2\sqrt{3}},-\frac{1}{2\sqrt{3}},-\frac{1}{2\sqrt{3}},-\frac{\sqrt{3}}{2}\right)^{\top}.
 $$
 
 $\blacksquare$

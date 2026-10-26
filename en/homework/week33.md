@@ -1,8 +1,8 @@
 # Assignment 33
 
-> **Theorem 1** (Law of Inertia)<br>The normal form of an $n$-ary real quadratic form $X^{T}AX$ is unique.
+> **Theorem 1** (Law of Inertia)<br>The normal form of an $n$-ary real quadratic form $X^{\top}AX$ is unique.
 
-> **Definition 1** (Positive Index of Inertia)<br>In the normal form of a real quadratic form $X^{T}AX$, the number $p$ of squared terms with coefficient $+1$ is called the positive index of inertia of $X^{T}AX$, and the number $r-p$ of squared terms with coefficient $-1$ is called the negative index of inertia of $X^{T}AX$.
+> **Definition 1** (Positive Index of Inertia)<br>In the normal form of a real quadratic form $X^{\top}AX$, the number $p$ of squared terms with coefficient $+1$ is called the positive index of inertia of $X^{\top}AX$, and the number $r-p$ of squared terms with coefficient $-1$ is called the negative index of inertia of $X^{\top}AX$.
 
 > **Corollary 4** (Necessary and Sufficient Condition for Congruence)<br>Two real symmetric matrices of order $n$ are congruent if and only if they have the same rank and the same positive index of inertia.
 
@@ -12,7 +12,7 @@
 
 ### Solution to Problem 1
 
-By **Theorem 1** (Law of Inertia), the normal form of an $n$-ary real quadratic form $X^{T}AX$ is unique.
+By **Theorem 1** (Law of Inertia), the normal form of an $n$-ary real quadratic form $X^{\top}AX$ is unique.
 
 **Problem 6.1, Problem 3(1)**:
 
@@ -50,27 +50,27 @@ All of the above normal forms are unique. $\blacksquare$
 
 ### Problem 2
 
-(Problem 6.2-4) Let $X^{T}AX$ be an $n$-ary real quadratic form. Prove: if there exist column vectors $\alpha_{1},\alpha_{2}$ in $\mathbb{R}^{n}$ such that $\alpha_{1}^{T}A\alpha_{1}> 0$ and $\alpha_{2}^{T}A\alpha_{2}< 0$, then there exists a nonzero column vector $\alpha$ in $\mathbb{R}^{n}$ such that $\alpha^{T}A\alpha=0$.
+(Problem 6.2-4) Let $X^{\top}AX$ be an $n$-ary real quadratic form. Prove: if there exist column vectors $\alpha_{1},\alpha_{2}$ in $\mathbb{R}^{n}$ such that $\alpha_{1}^{\top}A\alpha_{1}> 0$ and $\alpha_{2}^{\top}A\alpha_{2}< 0$, then there exists a nonzero column vector $\alpha$ in $\mathbb{R}^{n}$ such that $\alpha^{\top}A\alpha=0$.
 
 ### Solution to Problem 2
 
-By **Definition 1** (Positive Index of Inertia), let $X^{T}AX$ be an $n$-ary real quadratic form. Consider the function
+By **Definition 1** (Positive Index of Inertia), let $X^{\top}AX$ be an $n$-ary real quadratic form. Consider the function
 
 $$
-g\left(t\right)=\left(\alpha_{1}+t\alpha_{2}\right)^{T}A\left(\alpha_{1}+t\alpha_{2}\right).
+g\left(t\right)=\left(\alpha_{1}+t\alpha_{2}\right)^{\top}A\left(\alpha_{1}+t\alpha_{2}\right).
 $$
 
 Expand:
 
 $$
-g\left(t\right)=\alpha_{1}^{T}A\alpha_{1}+2t\alpha_{1}^{T}A\alpha_{2}+t^{2}\alpha_{2}^{T}A\alpha_{2}.
+g\left(t\right)=\alpha_{1}^{\top}A\alpha_{1}+2t\alpha_{1}^{\top}A\alpha_{2}+t^{2}\alpha_{2}^{\top}A\alpha_{2}.
 $$
 
 This is a quadratic function in $t$.
 
-We are given $g\left(0\right)=\alpha_{1}^{T}A\alpha_{1}> 0$.
+We are given $g\left(0\right)=\alpha_{1}^{\top}A\alpha_{1}> 0$.
 
-Since $\alpha_{2}^{T}A\alpha_{2}< 0$, as $t\to\infty$, $g\left(t\right)\to-\infty$.
+Since $\alpha_{2}^{\top}A\alpha_{2}< 0$, as $t\to\infty$, $g\left(t\right)\to-\infty$.
 
 Therefore there exists $t_{0}> 0$ such that $g\left(t_{0}\right)< 0$.
 
@@ -78,11 +78,11 @@ By the intermediate value theorem for continuous functions, there exists $t_{1}\
 
 Let $\alpha=\alpha_{1}+t_{1}\alpha_{2}$.
 
-Then $\alpha\ne0$ (because if $\alpha=0$, then $\alpha_{1}=-t_{1}\alpha_{2}$, and hence $\alpha_{1}^{T}A\alpha_{1}=t_{1}^{2}\alpha_{2}^{T}A\alpha_{2}< 0$, a contradiction).
+Then $\alpha\ne0$ (because if $\alpha=0$, then $\alpha_{1}=-t_{1}\alpha_{2}$, and hence $\alpha_{1}^{\top}A\alpha_{1}=t_{1}^{2}\alpha_{2}^{\top}A\alpha_{2}< 0$, a contradiction).
 
-And $\alpha^{T}A\alpha=g\left(t_{1}\right)=0$.
+And $\alpha^{\top}A\alpha=g\left(t_{1}\right)=0$.
 
-Therefore there exists a nonzero column vector $\alpha$ in $\mathbb{R}^{n}$ such that $\alpha^{T}A\alpha=0$. $\blacksquare$
+Therefore there exists a nonzero column vector $\alpha$ in $\mathbb{R}^{n}$ such that $\alpha^{\top}A\alpha=0$. $\blacksquare$
 
 ### Problem 3
 
@@ -109,21 +109,21 @@ This is also the product of two homogeneous polynomials of degree $1$.
 Suppose
 
 $$
-X^{T}AX=\left(a_{1}x_{1}+\cdots+a_{n}x_{n}\right)\left(b_{1}x_{1}+\cdots+b_{n}x_{n}\right).
+X^{\top}AX=\left(a_{1}x_{1}+\cdots+a_{n}x_{n}\right)\left(b_{1}x_{1}+\cdots+b_{n}x_{n}\right).
 $$
 
-Let $\alpha=\left(a_{1},\cdots,a_{n}\right)^{T}$, $\beta=\left(b_{1},\cdots,b_{n}\right)^{T}$.
+Let $\alpha=\left(a_{1},\cdots,a_{n}\right)^{\top}$, $\beta=\left(b_{1},\cdots,b_{n}\right)^{\top}$.
 
 Then
 
 $$
-X^{T}AX=\left(\alpha^{T}X\right)\left(\beta^{T}X\right)=X^{T}\left(\frac{\alpha\beta^{T}+\beta\alpha^{T}}{2}\right)X.
+X^{\top}AX=\left(\alpha^{\top}X\right)\left(\beta^{\top}X\right)=X^{\top}\left(\frac{\alpha\beta^{\top}+\beta\alpha^{\top}}{2}\right)X.
 $$
 
 Therefore
 
 $$
-A=\frac{\alpha\beta^{T}+\beta\alpha^{T}}{2}.
+A=\frac{\alpha\beta^{\top}+\beta\alpha^{\top}}{2}.
 $$
 
 **Case 1**: $\alpha$ and $\beta$ are linearly dependent.
@@ -131,7 +131,7 @@ $$
 Let $\beta=k\alpha$. Then
 
 $$
-A=\frac{\alpha\cdot k\alpha^{T}+k\alpha\cdot\alpha^{T}}{2}=k\alpha\alpha^{T}.
+A=\frac{\alpha\cdot k\alpha^{\top}+k\alpha\cdot\alpha^{\top}}{2}=k\alpha\alpha^{\top}.
 $$
 
 Therefore $\operatorname{rank}\left(A\right)=1$.
@@ -147,7 +147,7 @@ $$
 Then
 
 $$
-A=\gamma_{1}\gamma_{1}^{T}-\gamma_{2}\gamma_{2}^{T}.
+A=\gamma_{1}\gamma_{1}^{\top}-\gamma_{2}\gamma_{2}^{\top}.
 $$
 
 Since $\gamma_{1},\gamma_{2}$ are linearly independent, $\operatorname{rank}\left(A\right)=2$.
@@ -160,13 +160,13 @@ $\blacksquare$
 
 ### Problem 4
 
-(Problem 6.2-7) Prove: an $n$-ary quadratic form over the complex number field (abbreviated as complex quadratic form) $X^{T}AX$ can be reduced by a nonsingular linear substitution to the following canonical form:
+(Problem 6.2-7) Prove: an $n$-ary quadratic form over the complex number field (abbreviated as complex quadratic form) $X^{\top}AX$ can be reduced by a nonsingular linear substitution to the following canonical form:
 
 $$
 z_{1}^{2}+z_{2}^{2}+\cdots+z_{r}^{2},
 $$
 
-where $r$ is the rank of the quadratic form $X^{T}AX$. This form of canonical form is called the normal form of $X^{T}AX$; it contains only squared terms with coefficients $1$ or $0$.
+where $r$ is the rank of the quadratic form $X^{\top}AX$. This form of canonical form is called the normal form of $X^{\top}AX$; it contains only squared terms with coefficients $1$ or $0$.
 
 ### Solution to Problem 4
 
@@ -189,17 +189,17 @@ $$
 Then
 
 $$
-C^{T}DC=\operatorname{diag}\left\{1,1,\cdots,1,0,\cdots,0\right\}.
+C^{\top}DC=\operatorname{diag}\left\{1,1,\cdots,1,0,\cdots,0\right\}.
 $$
 
 Therefore $A$ is congruent to $\operatorname{diag}\left\{I_{r},0\right\}$.
 
-That is, there exists an invertible matrix $P$ such that $P^{T}AP=\operatorname{diag}\left\{I_{r},0\right\}$.
+That is, there exists an invertible matrix $P$ such that $P^{\top}AP=\operatorname{diag}\left\{I_{r},0\right\}$.
 
 Let $X=PZ$. Then
 
 $$
-X^{T}AX=Z^{T}P^{T}APZ=Z^{T}\operatorname{diag}\left\{I_{r},0\right\}Z=z_{1}^{2}+z_{2}^{2}+\cdots+z_{r}^{2}.
+X^{\top}AX=Z^{\top}P^{\top}APZ=Z^{\top}\operatorname{diag}\left\{I_{r},0\right\}Z=z_{1}^{2}+z_{2}^{2}+\cdots+z_{r}^{2}.
 $$
 
-Therefore the normal form of the complex quadratic form $X^{T}AX$ is $z_{1}^{2}+z_{2}^{2}+\cdots+z_{r}^{2}$, where $r$ is the rank of the quadratic form. $\blacksquare$
+Therefore the normal form of the complex quadratic form $X^{\top}AX$ is $z_{1}^{2}+z_{2}^{2}+\cdots+z_{r}^{2}$, where $r$ is the rank of the quadratic form. $\blacksquare$

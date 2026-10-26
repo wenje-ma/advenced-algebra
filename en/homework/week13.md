@@ -39,7 +39,7 @@ Thus $\eta_{1},\eta_{2},\cdots,\eta_{n}$ are linearly independent.
 **Verify linear representability.** Take any
 
 $$
-\alpha=\left(a_{1},a_{2},\cdots,a_{n}\right)^{T}\in K^{n},
+\alpha=\left(a_{1},a_{2},\cdots,a_{n}\right)^{\top}\in K^{n},
 $$
 and set
 

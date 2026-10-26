@@ -100,7 +100,7 @@ $$
 验证:
 
 $$
-\alpha_{1}+\alpha_{2}+\alpha_{3}=\left(-2+1+3,1-3+0,0+2+2,3+4-1\right)^{T}=\left(2,-2,4,6\right)^{T}=\alpha_{4}.
+\alpha_{1}+\alpha_{2}+\alpha_{3}=\left(-2+1+3,1-3+0,0+2+2,3+4-1\right)^{\top}=\left(2,-2,4,6\right)^{\top}=\alpha_{4}.
 $$
 
 由**定义1** (线性相关), 齐次方程组有非零解, 故 $\alpha_{1},\alpha_{2},\alpha_{3},\alpha_{4}$ 线性相关. $\blacksquare$

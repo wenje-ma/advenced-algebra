@@ -48,13 +48,13 @@ $$
 
 where $x_{3},x_{4}$ are free variables.
 
-Setting $x_{3}=x_{4}=0$, we get the particular solution $\gamma_{0}=\left(1,-2,0,0\right)^{T}$.
+Setting $x_{3}=x_{4}=0$, we get the particular solution $\gamma_{0}=\left(1,-2,0,0\right)^{\top}$.
 
 Fundamental system of the associated homogeneous system:
 
-Setting $x_{3}=7,x_{4}=0$, we get $\eta_{1}=\left(-9,1,7,0\right)^{T}$.
+Setting $x_{3}=7,x_{4}=0$, we get $\eta_{1}=\left(-9,1,7,0\right)^{\top}$.
 
-Setting $x_{3}=0,x_{4}=2$, we get $\eta_{2}=\left(1,-1,0,2\right)^{T}$.
+Setting $x_{3}=0,x_{4}=2$, we get $\eta_{2}=\left(1,-1,0,2\right)^{\top}$.
 
 By **Theorem 1** (Structure of solution set), the solution set is the particular solution $\gamma_{0}$ plus the solution space $W$ of the associated homogeneous system:
 

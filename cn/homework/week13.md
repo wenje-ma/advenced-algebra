@@ -39,7 +39,7 @@ $$
 **验证可线性表出**. 任取
 
 $$
-\alpha=\left(a_{1},a_{2},\cdots,a_{n}\right)^{T}\in K^{n},
+\alpha=\left(a_{1},a_{2},\cdots,a_{n}\right)^{\top}\in K^{n},
 $$
 设
 

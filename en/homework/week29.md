@@ -54,7 +54,7 @@ $$
 
 Solving gives $x_{2}=0$, $x_{1}=-2x_{3}$.
 
-A fundamental system of solutions: $\alpha_{1}=\left(-2,0,1\right)^{T}$.
+A fundamental system of solutions: $\alpha_{1}=\left(-2,0,1\right)^{\top}$.
 
 **Find eigenvectors for $\lambda=3$**.
 
@@ -73,7 +73,7 @@ $$
 
 Solving gives $x_{2}=-\frac{1}{2}x_{3}$, $x_{1}=\frac{1}{2}x_{3}$.
 
-A fundamental system of solutions: $\alpha_{2}=\left(1,-1,2\right)^{T}$.
+A fundamental system of solutions: $\alpha_{2}=\left(1,-1,2\right)^{\top}$.
 
 The eigenvectors for $\lambda_{1}=1$ are $k_{1}\alpha_{1}$ ( $k_{1}\ne0$ ); the eigenvectors for $\lambda_{2}=\lambda_{3}=3$ are $k_{2}\alpha_{2}$ ( $k_{2}\ne0$ ). $\blacksquare$
 
@@ -128,25 +128,25 @@ $\blacksquare$
 
 **(1)** Let $\lambda$ be an eigenvalue of $A$, and let $\alpha$ be an eigenvector of $A$ belonging to $\lambda$, i.e. $A\alpha=\lambda\alpha$.
 
-Take the conjugate transpose of both sides: $\alpha^{T}A^{T}=\overline{\lambda}\alpha^{T}$.
+Take the conjugate transpose of both sides: $\alpha^{\top}A^{\top}=\overline{\lambda}\alpha^{\top}$.
 
-Since $A$ is orthogonal, $A^{T}=A^{-1}$.
+Since $A$ is orthogonal, $A^{\top}=A^{-1}$.
 
-Therefore $\alpha^{T}A^{-1}=\overline{\lambda}\alpha^{T}$.
+Therefore $\alpha^{\top}A^{-1}=\overline{\lambda}\alpha^{\top}$.
 
 Right-multiply both sides by $A\alpha$:
 
 $$
-\alpha^{T}A^{-1}A\alpha=\overline{\lambda}\alpha^{T}A\alpha.
+\alpha^{\top}A^{-1}A\alpha=\overline{\lambda}\alpha^{\top}A\alpha.
 $$
 
 That is,
 
 $$
-\alpha^{T}\alpha=\overline{\lambda}\lambda\alpha^{T}\alpha.
+\alpha^{\top}\alpha=\overline{\lambda}\lambda\alpha^{\top}\alpha.
 $$
 
-Since $\alpha\ne0$, we have $\alpha^{T}\alpha\ne0$.
+Since $\alpha\ne0$, we have $\alpha^{\top}\alpha\ne0$.
 
 Therefore
 
@@ -235,7 +235,7 @@ $$
 
 Solving gives $x_{1}=x_{2}=x_{3}$.
 
-A fundamental system of solutions: $\alpha_{1}=\left(1,1,1\right)^{T}$.
+A fundamental system of solutions: $\alpha_{1}=\left(1,1,1\right)^{\top}$.
 
 **Find eigenvectors for $\lambda=\omega$**.
 
@@ -243,11 +243,11 @@ From row $1$: $\omega x_{1}-x_{2}=0$, i.e. $x_{2}=\omega x_{1}$.
 
 From row $2$: $\omega x_{2}-x_{3}=0$, i.e. $x_{3}=\omega x_{2}=\omega^{2}x_{1}$.
 
-A fundamental system of solutions: $\alpha_{2}=\left(1,\omega,\omega^{2}\right)^{T}$.
+A fundamental system of solutions: $\alpha_{2}=\left(1,\omega,\omega^{2}\right)^{\top}$.
 
 **Find eigenvectors for $\lambda=\omega^{2}$**.
 
-Similarly, a fundamental system of solutions: $\alpha_{3}=\left(1,\omega^{2},\omega\right)^{T}$.
+Similarly, a fundamental system of solutions: $\alpha_{3}=\left(1,\omega^{2},\omega\right)^{\top}$.
 
 $\blacksquare$
 

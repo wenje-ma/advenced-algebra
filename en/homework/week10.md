@@ -122,7 +122,7 @@ $$
 \alpha_{4}=\begin{bmatrix}1\\1\\1\\1\end{bmatrix}.
 $$
 
-Prove that any vector $\alpha=\left(a_{1},a_{2},a_{3},a_{4}\right)^{T}$ in $K^{4}$ can be linearly spanned by the vector system $\alpha_{1},\alpha_{2},\alpha_{3},\alpha_{4}$, and that the representation is unique; write down this representation.
+Prove that any vector $\alpha=\left(a_{1},a_{2},a_{3},a_{4}\right)^{\top}$ in $K^{4}$ can be linearly spanned by the vector system $\alpha_{1},\alpha_{2},\alpha_{3},\alpha_{4}$, and that the representation is unique; write down this representation.
 
 ### Solution to Problem 3
 

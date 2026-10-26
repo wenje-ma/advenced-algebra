@@ -33,7 +33,7 @@ $$
 
 Solving gives $x_{2}=-x_{3}$, $x_{1}=\frac{1}{2}x_{3}$.
 
-A fundamental system of solutions: $\alpha_{1}=\left(1,-2,2\right)^{T}$.
+A fundamental system of solutions: $\alpha_{1}=\left(1,-2,2\right)^{\top}$.
 
 Eigenvectors for $\lambda=1$:
 
@@ -52,7 +52,7 @@ $$
 
 Solving gives $x_{1}=-2x_{2}+2x_{3}$.
 
-A fundamental system of solutions: $\alpha_{2}=\left(-2,1,0\right)^{T}$, $\alpha_{3}=\left(2,0,1\right)^{T}$.
+A fundamental system of solutions: $\alpha_{2}=\left(-2,1,0\right)^{\top}$, $\alpha_{3}=\left(2,0,1\right)^{\top}$.
 
 The three eigenvectors are linearly independent, so $A$ is diagonalizable.
 

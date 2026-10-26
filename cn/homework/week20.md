@@ -50,22 +50,22 @@ $$
 
 ### 习题二
 
-(习题 4.3-6) 证明: 如果 $A$ 是数域 $K$ 上 $n$ 级矩阵, $n$ 是奇数, 且满足 $AA^{T}=I$, $\left|A\right|=1$, 则 $\left|I-A\right|=0$.
+(习题 4.3-6) 证明: 如果 $A$ 是数域 $K$ 上 $n$ 级矩阵, $n$ 是奇数, 且满足 $AA^{\top}=I$, $\left|A\right|=1$, 则 $\left|I-A\right|=0$.
 
 ### 解答 习题二
 
 由**定理3** (乘积的行列式), $\left|AB\right|=\left|A\right|\left|B\right|$. 要证明 $\left|I-A\right|=0$.
 
 $$
-\left|I-A\right|=\left|\left(I-A\right)^{T}\right|=\left|I-A^{T}\right|.
+\left|I-A\right|=\left|\left(I-A\right)^{\top}\right|=\left|I-A^{\top}\right|.
 $$
 
-因为 $AA^{T}=I$, 故 $A^{T}=A^{-1}$.
+因为 $AA^{\top}=I$, 故 $A^{\top}=A^{-1}$.
 
 因此
 
 $$
-\left|I-A^{T}\right|=\left|I-A^{-1}\right|=\left|A^{-1}\left(A-I\right)\right|=\left|A^{-1}\right|\left|A-I\right|.
+\left|I-A^{\top}\right|=\left|I-A^{-1}\right|=\left|A^{-1}\left(A-I\right)\right|=\left|A^{-1}\right|\left|A-I\right|.
 $$
 
 $$
@@ -116,16 +116,16 @@ x_{1}^{2} & x_{2}^{2} & x_{3}^{2}
 \end{array}\right].
 $$
 
-计算 $BB^{T}$ 的 $\left(i,j\right)$ 元:
+计算 $BB^{\top}$ 的 $\left(i,j\right)$ 元:
 
 $$
-\left(BB^{T}\right)_{ij}=\sum_{k=1}^{3}B_{ik}B_{jk}=\sum_{k=1}^{3}x_{k}^{i-1}x_{k}^{j-1}=\sum_{k=1}^{3}x_{k}^{i+j-2}=s_{i+j-2}.
+\left(BB^{\top}\right)_{ij}=\sum_{k=1}^{3}B_{ik}B_{jk}=\sum_{k=1}^{3}x_{k}^{i-1}x_{k}^{j-1}=\sum_{k=1}^{3}x_{k}^{i+j-2}=s_{i+j-2}.
 $$
 
 因此
 
 $$
-BB^{T}=\left[\begin{array}{ccc}
+BB^{\top}=\left[\begin{array}{ccc}
 s_{0} & s_{1} & s_{2}\\
 s_{1} & s_{2} & s_{3}\\
 s_{2} & s_{3} & s_{4}
@@ -137,7 +137,7 @@ $$
 由**定理3** (乘积的行列式),
 
 $$
-\left|A\right|=\left|BB^{T}\right|=\left|B\right|\left|B^{T}\right|=\left|B\right|^{2}.
+\left|A\right|=\left|BB^{\top}\right|=\left|B\right|\left|B^{\top}\right|=\left|B\right|^{2}.
 $$
 
 $B$ 是范德蒙矩阵,
@@ -159,7 +159,7 @@ $\blacksquare$
 (习题 4.3-12) 证明: 对于实数域上任一 $s\times n$ 矩阵 $A$, 都有
 
 $$
-\text{rank}\left(A^{T}AA^{T}\right)=\text{rank}\left(A\right).
+\text{rank}\left(A^{\top}AA^{\top}\right)=\text{rank}\left(A\right).
 $$
 
 ### 解答 习题四
@@ -170,38 +170,38 @@ $$
 \text{rank}\left(AB\right)\le\min\left\{\text{rank}\left(A\right),\text{rank}\left(B\right)\right\}.
 $$
 
-考虑齐次线性方程组 $\left(A^{T}AA^{T}\right)y=0$, 其中 $y$ 是 $s$ 维列向量.
+考虑齐次线性方程组 $\left(A^{\top}AA^{\top}\right)y=0$, 其中 $y$ 是 $s$ 维列向量.
 
-设 $y$ 是 $\left(A^{T}AA^{T}\right)y=0$ 的解, 则
-
-$$
-A^{T}A\left(A^{T}y\right)=0.
-$$
-
-令 $z=A^{T}y$, 则 $A^{T}Az=0$.
-
-由命题 $2$, 实数域上 $A^{T}Az=0$ 与 $z=0$ 同解.
-
-故 $z=0$, 即 $A^{T}y=0$.
-
-反之, 若 $A^{T}y=0$, 则
+设 $y$ 是 $\left(A^{\top}AA^{\top}\right)y=0$ 的解, 则
 
 $$
-A^{T}AA^{T}y=A^{T}A\left(A^{T}y\right)=A^{T}A\times0=0.
+A^{\top}A\left(A^{\top}y\right)=0.
 $$
 
-因此 $\left(A^{T}AA^{T}\right)y=0$ 与 $A^{T}y=0$ 同解.
+令 $z=A^{\top}y$, 则 $A^{\top}Az=0$.
+
+由命题 $2$, 实数域上 $A^{\top}Az=0$ 与 $z=0$ 同解.
+
+故 $z=0$, 即 $A^{\top}y=0$.
+
+反之, 若 $A^{\top}y=0$, 则
+
+$$
+A^{\top}AA^{\top}y=A^{\top}A\left(A^{\top}y\right)=A^{\top}A\times0=0.
+$$
+
+因此 $\left(A^{\top}AA^{\top}\right)y=0$ 与 $A^{\top}y=0$ 同解.
 
 故它们的解空间维数相同:
 
 $$
-s-\text{rank}\left(A^{T}AA^{T}\right)=s-\text{rank}\left(A^{T}\right).
+s-\text{rank}\left(A^{\top}AA^{\top}\right)=s-\text{rank}\left(A^{\top}\right).
 $$
 
 所以
 
 $$
-\text{rank}\left(A^{T}AA^{T}\right)=\text{rank}\left(A^{T}\right)=\text{rank}\left(A\right).
+\text{rank}\left(A^{\top}AA^{\top}\right)=\text{rank}\left(A^{\top}\right)=\text{rank}\left(A\right).
 $$
 
 $\blacksquare$

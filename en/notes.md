@@ -262,12 +262,12 @@ $$
 Let $A$ be an $s\times n$ matrix over the real field. Then:
 
 $$
-\text{rank}\left(A^{T}A\right)=\text{rank}\left(AA^{T}\right)=\text{rank}\left(A\right).
+\text{rank}\left(A^{\top}A\right)=\text{rank}\left(AA^{\top}\right)=\text{rank}\left(A\right).
 $$
 
 **Definition 22** (Orthogonal Matrix)
 
-A square matrix $A$ over the real field, if it satisfies $A^{T}A=I$, then $A$ is called an orthogonal matrix.
+A square matrix $A$ over the real field, if it satisfies $A^{\top}A=I$, then $A$ is called an orthogonal matrix.
 
 **Definition 23** (Inner Product)
 
@@ -389,7 +389,7 @@ Any quadratic form over a number field $K$ is equivalent to a quadratic form con
 
 **Definition 34** (Normal Form)
 
-The normal form of the real quadratic form $X^{T}AX$ is
+The normal form of the real quadratic form $X^{\top}AX$ is
 
 $$
 z_{1}^{2}+\cdots+z_{p}^{2}-z_{p+1}^{2}-\cdots-z_{r}^{2},
@@ -399,11 +399,11 @@ where $p$ is the positive index of inertia and $r$ is the rank of the quadratic 
 
 **Theorem 21** (Inertia Theorem)
 
-The normal form of an $n$-variable real quadratic form $X^{T}AX$ is unique.
+The normal form of an $n$-variable real quadratic form $X^{\top}AX$ is unique.
 
 **Definition 35** (Positive Index of Inertia)
 
-In the normal form of the real quadratic form $X^{T}AX$, the number $p$ of square terms with coefficient $+1$ is called the positive index of inertia of $X^{T}AX$, and the number $r-p$ of square terms with coefficient $-1$ is called the negative index of inertia of $X^{T}AX$.
+In the normal form of the real quadratic form $X^{\top}AX$, the number $p$ of square terms with coefficient $+1$ is called the positive index of inertia of $X^{\top}AX$, and the number $r-p$ of square terms with coefficient $-1$ is called the negative index of inertia of $X^{\top}AX$.
 
 **Corollary 4** (Necessary and Sufficient Condition for Congruence)
 

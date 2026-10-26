@@ -4,7 +4,7 @@
 
 > **定理3** (二次型的标准形)<br>数域 $K$ 上任意一个二次型都等价于一个只含平方项的二次型.
 
-> **定义1** (规范形)<br>实二次型 $X^{T}AX$ 的规范形为
+> **定义1** (规范形)<br>实二次型 $X^{\top}AX$ 的规范形为
 > $$
 > z_{1}^{2}+\cdots+z_{p}^{2}-z_{p+1}^{2}-\cdots-z_{r}^{2},
 > $$
@@ -67,49 +67,49 @@ $f=y_{1}^{2}+y_{2}^{2}-2y_{3}^{2}$ 是标准形. $\blacksquare$
 
 ### 习题二
 
-(习题 6.1-5) 设 $A$ 是数域 $K$ 上的 $n$ 级矩阵, 证明: $A$ 是斜对称矩阵当且仅当对于 $K^{n}$ 中任一列向量 $\alpha$, 有 $\alpha^{T}A\alpha=0$.
+(习题 6.1-5) 设 $A$ 是数域 $K$ 上的 $n$ 级矩阵, 证明: $A$ 是斜对称矩阵当且仅当对于 $K^{n}$ 中任一列向量 $\alpha$, 有 $\alpha^{\top}A\alpha=0$.
 
 ### 解答 习题二
 
 由**定义1** (二次型), $A$ 是数域 $K$ 上的 $n$ 级矩阵.
 
-**必要性**. 若 $A$ 是斜对称矩阵, 即 $A^{T}=-A$.
+**必要性**. 若 $A$ 是斜对称矩阵, 即 $A^{\top}=-A$.
 
-则 $\alpha^{T}A\alpha$ 是一个数, 其转置等于自身:
+则 $\alpha^{\top}A\alpha$ 是一个数, 其转置等于自身:
 
 $$
-\left(\alpha^{T}A\alpha\right)^{T}=\alpha^{T}A^{T}\alpha=\alpha^{T}\left(-A\right)\alpha=-\alpha^{T}A\alpha.
+\left(\alpha^{\top}A\alpha\right)^{\top}=\alpha^{\top}A^{\top}\alpha=\alpha^{\top}\left(-A\right)\alpha=-\alpha^{\top}A\alpha.
 $$
 
-但 $\left(\alpha^{T}A\alpha\right)^{T}=\alpha^{T}A\alpha$ (因为它是一个数).
+但 $\left(\alpha^{\top}A\alpha\right)^{\top}=\alpha^{\top}A\alpha$ (因为它是一个数).
 
 因此
 
 $$
-\alpha^{T}A\alpha=-\alpha^{T}A\alpha,
+\alpha^{\top}A\alpha=-\alpha^{\top}A\alpha,
 $$
 
-即 $2\alpha^{T}A\alpha=0$, 故 $\alpha^{T}A\alpha=0$.
+即 $2\alpha^{\top}A\alpha=0$, 故 $\alpha^{\top}A\alpha=0$.
 
-**充分性**. 若对于任一列向量 $\alpha$, $\alpha^{T}A\alpha=0$.
+**充分性**. 若对于任一列向量 $\alpha$, $\alpha^{\top}A\alpha=0$.
 
-要证明 $A$ 是斜对称矩阵, 即 $A^{T}=-A$, 即 $A+A^{T}=0$.
+要证明 $A$ 是斜对称矩阵, 即 $A^{\top}=-A$, 即 $A+A^{\top}=0$.
 
-因为 $\left(A+A^{T}\right)$ 是对称矩阵.
+因为 $\left(A+A^{\top}\right)$ 是对称矩阵.
 
 对于任一列向量 $\alpha$,
 
 $$
-\alpha^{T}\left(A+A^{T}\right)\alpha=\alpha^{T}A\alpha+\alpha^{T}A^{T}\alpha=0+\left(\alpha^{T}A\alpha\right)^{T}=0+0=0.
+\alpha^{\top}\left(A+A^{\top}\right)\alpha=\alpha^{\top}A\alpha+\alpha^{\top}A^{\top}\alpha=0+\left(\alpha^{\top}A\alpha\right)^{\top}=0+0=0.
 $$
 
-即对于任一列向量 $\alpha$, $\alpha^{T}\left(A+A^{T}\right)\alpha=0$.
+即对于任一列向量 $\alpha$, $\alpha^{\top}\left(A+A^{\top}\right)\alpha=0$.
 
-因为 $\left(A+A^{T}\right)$ 是对称矩阵, 且对于任一列向量 $\alpha$, $\alpha^{T}\left(A+A^{T}\right)\alpha=0$.
+因为 $\left(A+A^{\top}\right)$ 是对称矩阵, 且对于任一列向量 $\alpha$, $\alpha^{\top}\left(A+A^{\top}\right)\alpha=0$.
 
-由对称矩阵的性质 (对称矩阵如果对任意 $\alpha$ 都有 $\alpha^{T}A\alpha=0$, 则 $A=0$ ), 可知 $A+A^{T}=0$.
+由对称矩阵的性质 (对称矩阵如果对任意 $\alpha$ 都有 $\alpha^{\top}A\alpha=0$, 则 $A=0$ ), 可知 $A+A^{\top}=0$.
 
-因此 $A^{T}=-A$, 即 $A$ 是斜对称矩阵. $\blacksquare$
+因此 $A^{\top}=-A$, 即 $A$ 是斜对称矩阵. $\blacksquare$
 
 ### 习题三
 
@@ -171,7 +171,7 @@ $\blacksquare$
 (习题 6.1-11) 设 $n$ 级实对称矩阵 $A$ 的全部特征值按大小顺序排成: $\lambda_{1}\ge\lambda_{2}\ge\cdots\ge\lambda_{n}$. 证明: 对于 $\mathbb{R}^{n}$ 中任一列向量 $\alpha\ne0$, 都有
 
 $$
-\lambda_{1}\ge\frac{\alpha^{T}A\alpha}{\alpha^{T}\alpha}\ge\lambda_{n}.
+\lambda_{1}\ge\frac{\alpha^{\top}A\alpha}{\alpha^{\top}\alpha}\ge\lambda_{n}.
 $$
 
 ### 解答 习题四
@@ -179,17 +179,17 @@ $$
 因为 $A$ 是实对称矩阵, 故存在正交矩阵 $T$, 使得
 
 $$
-T^{T}AT=\operatorname{diag}\left\{\lambda_{1},\lambda_{2},\cdots,\lambda_{n}\right\}.
+T^{\top}AT=\operatorname{diag}\left\{\lambda_{1},\lambda_{2},\cdots,\lambda_{n}\right\}.
 $$
 
 令 $\alpha=T\beta$, 则
 
 $$
-\alpha^{T}\alpha=\beta^{T}T^{T}T\beta=\beta^{T}\beta.
+\alpha^{\top}\alpha=\beta^{\top}T^{\top}T\beta=\beta^{\top}\beta.
 $$
 
 $$
-\alpha^{T}A\alpha=\beta^{T}T^{T}AT\beta=\beta^{T}\operatorname{diag}\left\{\lambda_{1},\cdots,\lambda_{n}\right\}\beta=\lambda_{1}\beta_{1}^{2}+\lambda_{2}\beta_{2}^{2}+\cdots+\lambda_{n}\beta_{n}^{2}.
+\alpha^{\top}A\alpha=\beta^{\top}T^{\top}AT\beta=\beta^{\top}\operatorname{diag}\left\{\lambda_{1},\cdots,\lambda_{n}\right\}\beta=\lambda_{1}\beta_{1}^{2}+\lambda_{2}\beta_{2}^{2}+\cdots+\lambda_{n}\beta_{n}^{2}.
 $$
 
 因为 $\lambda_{1}\ge\lambda_{2}\ge\cdots\ge\lambda_{n}$, 所以
@@ -201,15 +201,15 @@ $$
 即
 
 $$
-\lambda_{1}\alpha^{T}\alpha\ge\alpha^{T}A\alpha\ge\lambda_{n}\alpha^{T}\alpha.
+\lambda_{1}\alpha^{\top}\alpha\ge\alpha^{\top}A\alpha\ge\lambda_{n}\alpha^{\top}\alpha.
 $$
 
-因为 $\alpha\ne0$, 故 $\alpha^{T}\alpha> 0$.
+因为 $\alpha\ne0$, 故 $\alpha^{\top}\alpha> 0$.
 
-两边除以 $\alpha^{T}\alpha$:
+两边除以 $\alpha^{\top}\alpha$:
 
 $$
-\lambda_{1}\ge\frac{\alpha^{T}A\alpha}{\alpha^{T}\alpha}\ge\lambda_{n}.
+\lambda_{1}\ge\frac{\alpha^{\top}A\alpha}{\alpha^{\top}\alpha}\ge\lambda_{n}.
 $$
 
 $\blacksquare$

@@ -1,6 +1,6 @@
 ﻿# Assignment 23
 
-> **Definition 1** (Orthogonal matrix)<br>A square matrix $A$ over the real field, if $A^{T}A=I$, then $A$ is called an orthogonal matrix.
+> **Definition 1** (Orthogonal matrix)<br>A square matrix $A$ over the real field, if $A^{\top}A=I$, then $A$ is called an orthogonal matrix.
 
 > **Definition 2** (Inner product)<br>In $\mathbb{R}^{n}$, for any $\alpha=\left(a_{1},a_{2},\cdots,a_{n}\right)$ and $\beta=\left(b_{1},b_{2},\cdots,b_{n}\right)$, define
 > $$
@@ -23,10 +23,10 @@ $$
 
 ### Solution to Problem 1
 
-By **Definition 1** (Orthogonal matrix), compute $A^{T}A$:
+By **Definition 1** (Orthogonal matrix), compute $A^{\top}A$:
 
 $$
-A^{T}A=\left[\begin{array}{rr}
+A^{\top}A=\left[\begin{array}{rr}
 \sqrt{3}/2 & 1/2\\
 1/2 & -\sqrt{3}/2
 \end{array}\right]\left[\begin{array}{rr}
@@ -59,7 +59,7 @@ $$
 \left(\frac{1}{2}\right)^{2}+\left(-\frac{\sqrt{3}}{2}\right)^{2}=\frac{1}{4}+\frac{3}{4}=1
 $$
 
-Therefore $A^{T}A=I$. By **Definition 1** (Orthogonal matrix), $A$ is orthogonal. $\blacksquare$
+Therefore $A^{\top}A=I$. By **Definition 1** (Orthogonal matrix), $A$ is orthogonal. $\blacksquare$
 
 ### Problem 2
 
@@ -74,10 +74,10 @@ $$
 
 ### Solution to Problem 2
 
-By **Definition 1** (Orthogonal matrix), compute $A^{T}A$:
+By **Definition 1** (Orthogonal matrix), compute $A^{\top}A$:
 
 $$
-A^{T}A=\left[\begin{array}{rr}
+A^{\top}A=\left[\begin{array}{rr}
 1 & 1\\
 1 & -1
 \end{array}\right]\left[\begin{array}{rr}
@@ -90,7 +90,7 @@ A^{T}A=\left[\begin{array}{rr}
 \end{array}\right].
 $$
 
-Clearly $A^{T}A\ne I$. By **Definition 1** (Orthogonal matrix), $A$ is not orthogonal. $\blacksquare$
+Clearly $A^{\top}A\ne I$. By **Definition 1** (Orthogonal matrix), $A$ is not orthogonal. $\blacksquare$
 
 ### Problem 3
 
@@ -98,26 +98,26 @@ Clearly $A^{T}A\ne I$. By **Definition 1** (Orthogonal matrix), $A$ is not ortho
 
 ### Solution to Problem 3
 
-By **Definition 1** (Orthogonal matrix), since $T$ is orthogonal, $T^{-1}=T^{T}$.
+By **Definition 1** (Orthogonal matrix), since $T$ is orthogonal, $T^{-1}=T^{\top}$.
 
 $$
-\left(T^{-1}AT\right)^{T}=T^{T}A^{T}\left(T^{-1}\right)^{T}.
+\left(T^{-1}AT\right)^{\top}=T^{\top}A^{\top}\left(T^{-1}\right)^{\top}.
 $$
 
-Since $T$ is orthogonal, $T^{-1}=T^{T}$, hence $\left(T^{-1}\right)^{T}=\left(T^{T}\right)^{T}=T$.
+Since $T$ is orthogonal, $T^{-1}=T^{\top}$, hence $\left(T^{-1}\right)^{\top}=\left(T^{\top}\right)^{\top}=T$.
 
 Therefore
 
 $$
-\left(T^{-1}AT\right)^{T}=T^{T}A^{T}T.
+\left(T^{-1}AT\right)^{\top}=T^{\top}A^{\top}T.
 $$
 
-Since $A$ is symmetric, $A^{T}=A$.
+Since $A$ is symmetric, $A^{\top}=A$.
 
 Thus
 
 $$
-\left(T^{-1}AT\right)^{T}=T^{T}AT=T^{-1}AT.
+\left(T^{-1}AT\right)^{\top}=T^{\top}AT=T^{-1}AT.
 $$
 
 Therefore $T^{-1}AT$ is symmetric. $\blacksquare$
@@ -128,18 +128,18 @@ Therefore $T^{-1}AT$ is symmetric. $\blacksquare$
 
 ### Solution to Problem 4
 
-By **Definition 1** (Orthogonal matrix), let $A$ be an $n$-th order upper triangular matrix with $A^{T}A=I$.
+By **Definition 1** (Orthogonal matrix), let $A$ be an $n$-th order upper triangular matrix with $A^{\top}A=I$.
 
-Since $A$ is upper triangular, $A^{T}$ is lower triangular.
+Since $A$ is upper triangular, $A^{\top}$ is lower triangular.
 
-$A^{T}A=I$ is a diagonal matrix.
+$A^{\top}A=I$ is a diagonal matrix.
 
 **Inductively prove that all off-diagonal entries of $A$ are zero.**
 
-When $i=1,j=2$, consider the $\left(1,2\right)$-entry of $A^{T}A$:
+When $i=1,j=2$, consider the $\left(1,2\right)$-entry of $A^{\top}A$:
 
 $$
-\sum_{k=1}^{n}\left(A^{T}\right)_{1k}A_{k2}=\sum_{k=1}^{n}A_{k1}A_{k2}=0.
+\sum_{k=1}^{n}\left(A^{\top}\right)_{1k}A_{k2}=\sum_{k=1}^{n}A_{k1}A_{k2}=0.
 $$
 
 Since $A$ is upper triangular, when $k> 1$, $A_{k1}=0$. Thus the above reduces to $A_{11}A_{12}=0$.
@@ -150,7 +150,7 @@ Similarly, $A_{1j}=0$ ( $j> 1$ ).
 
 Assume the off-diagonal entries of rows $1,\cdots,i-1$ have already been proved to be zero.
 
-Consider the $\left(i,j\right)$-entry of $A^{T}A$ ( $i< j$ ):
+Consider the $\left(i,j\right)$-entry of $A^{\top}A$ ( $i< j$ ):
 
 $$
 \sum_{k=1}^{i}A_{ki}A_{kj}=0.
@@ -162,7 +162,7 @@ Since $A_{ii}\ne0$, $A_{ij}=0$.
 
 Induction complete. Thus $A$ is diagonal.
 
-From $A^{T}A=I$, we get $A_{ii}^{2}=1$, hence $A_{ii}=\pm1$. $\blacksquare$
+From $A^{\top}A=I$, we get $A_{ii}^{2}=1$, hence $A_{ii}=\pm1$. $\blacksquare$
 
 ### Problem 5
 
@@ -180,7 +180,7 @@ Find an orthonormal set equivalent to $\alpha_{1},\alpha_{2},\alpha_{3}$.
 
 Use the Gram-Schmidt orthogonalization process.
 
-Set $\beta_{1}=\alpha_{1}=\left(1,1,0,0\right)^{T}$.
+Set $\beta_{1}=\alpha_{1}=\left(1,1,0,0\right)^{\top}$.
 
 $$
 \beta_{2}=\alpha_{2}-\frac{\left(\alpha_{2},\beta_{1}\right)}{\left(\beta_{1},\beta_{1}\right)}\beta_{1}.
@@ -191,7 +191,7 @@ $\left(\alpha_{2},\beta_{1}\right)=1$, $\left(\beta_{1},\beta_{1}\right)=2$.
 Thus
 
 $$
-\beta_{2}=\left(1,0,1,0\right)^{T}-\frac{1}{2}\left(1,1,0,0\right)^{T}=\left(\frac{1}{2},-\frac{1}{2},1,0\right)^{T}.
+\beta_{2}=\left(1,0,1,0\right)^{\top}-\frac{1}{2}\left(1,1,0,0\right)^{\top}=\left(\frac{1}{2},-\frac{1}{2},1,0\right)^{\top}.
 $$
 
 $$
@@ -204,7 +204,7 @@ Thus
 
 $$
 \beta_{3}
-=\left(1,0,0,-1\right)^{T}-\frac{1}{2}\left(1,1,0,0\right)^{T}-\frac{1}{3}\left(\frac{1}{2},-\frac{1}{2},1,0\right)^{T}=\left(\frac{1}{3},-\frac{1}{3},-\frac{1}{3},-1\right)^{T}.
+=\left(1,0,0,-1\right)^{\top}-\frac{1}{2}\left(1,1,0,0\right)^{\top}-\frac{1}{3}\left(\frac{1}{2},-\frac{1}{2},1,0\right)^{\top}=\left(\frac{1}{3},-\frac{1}{3},-\frac{1}{3},-1\right)^{\top}.
 $$
 
 Verify orthogonality: $\left(\beta_{1},\beta_{2}\right)=0$, $\left(\beta_{1},\beta_{3}\right)=0$, $\left(\beta_{2},\beta_{3}\right)=0$.
@@ -212,15 +212,15 @@ Verify orthogonality: $\left(\beta_{1},\beta_{2}\right)=0$, $\left(\beta_{1},\be
 Normalize:
 
 $$
-\eta_{1}=\frac{\beta_{1}}{\left|\beta_{1}\right|}=\left(\frac{1}{\sqrt{2}},\frac{1}{\sqrt{2}},0,0\right)^{T}.
+\eta_{1}=\frac{\beta_{1}}{\left|\beta_{1}\right|}=\left(\frac{1}{\sqrt{2}},\frac{1}{\sqrt{2}},0,0\right)^{\top}.
 $$
 
 $$
-\eta_{2}=\frac{\beta_{2}}{\left|\beta_{2}\right|}=\left(\frac{1}{\sqrt{6}},-\frac{1}{\sqrt{6}},\frac{2}{\sqrt{6}},0\right)^{T}.
+\eta_{2}=\frac{\beta_{2}}{\left|\beta_{2}\right|}=\left(\frac{1}{\sqrt{6}},-\frac{1}{\sqrt{6}},\frac{2}{\sqrt{6}},0\right)^{\top}.
 $$
 
 $$
-\eta_{3}=\frac{\beta_{3}}{\left|\beta_{3}\right|}=\left(\frac{1}{2\sqrt{3}},-\frac{1}{2\sqrt{3}},-\frac{1}{2\sqrt{3}},-\frac{\sqrt{3}}{2}\right)^{T}.
+\eta_{3}=\frac{\beta_{3}}{\left|\beta_{3}\right|}=\left(\frac{1}{2\sqrt{3}},-\frac{1}{2\sqrt{3}},-\frac{1}{2\sqrt{3}},-\frac{\sqrt{3}}{2}\right)^{\top}.
 $$
 
 $\blacksquare$

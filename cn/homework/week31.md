@@ -6,7 +6,7 @@
 
 ### 习题一
 
-(习题 5.7-1(1)) 对于下列实对称矩阵 $A$, 求正交矩阵 $T$, 使 $T^{T}AT$ 为对角矩阵:
+(习题 5.7-1(1)) 对于下列实对称矩阵 $A$, 求正交矩阵 $T$, 使 $T^{\top}AT$ 为对角矩阵:
 
 $$
 A=\left[\begin{array}{rrr}
@@ -18,7 +18,7 @@ $$
 
 ### 解答 习题一
 
-由**定理3** (实对称矩阵可正交对角化), 一定存在正交矩阵 $T$, 使 $T^{T}AT$ 为对角矩阵. 求特征多项式:
+由**定理3** (实对称矩阵可正交对角化), 一定存在正交矩阵 $T$, 使 $T^{\top}AT$ 为对角矩阵. 求特征多项式:
 
 $$
 \left|\lambda I-A\right|=\left|\begin{array}{rrr}
@@ -45,28 +45,28 @@ I-A=\left[\begin{array}{rrr}
 \end{array}\right].
 $$
 
-基础解系: $\alpha_{1}=\left(-2,1,0\right)^{T}$, $\alpha_{2}=\left(2,0,1\right)^{T}$.
+基础解系: $\alpha_{1}=\left(-2,1,0\right)^{\top}$, $\alpha_{2}=\left(2,0,1\right)^{\top}$.
 
 施密特正交化:
 
 $$
-\beta_{1}=\alpha_{1}=\left(-2,1,0\right)^{T}.
+\beta_{1}=\alpha_{1}=\left(-2,1,0\right)^{\top}.
 $$
 
 $$
 \beta_{2}=\alpha_{2}-\frac{\left(\alpha_{2},\beta_{1}\right)}{\left(\beta_{1},\beta_{1}\right)}\beta_{1}
-=\left(2,0,1\right)^{T}-\frac{-4}{5}\left(-2,1,0\right)^{T}
-=\left(\frac{2}{5},\frac{4}{5},1\right)^{T}.
+=\left(2,0,1\right)^{\top}-\frac{-4}{5}\left(-2,1,0\right)^{\top}
+=\left(\frac{2}{5},\frac{4}{5},1\right)^{\top}.
 $$
 
 单位化:
 
 $$
-\eta_{1}=\left(-\frac{2}{\sqrt{5}},\frac{1}{\sqrt{5}},0\right)^{T}.
+\eta_{1}=\left(-\frac{2}{\sqrt{5}},\frac{1}{\sqrt{5}},0\right)^{\top}.
 $$
 
 $$
-\eta_{2}=\left(\frac{2}{3\sqrt{5}},\frac{4}{3\sqrt{5}},\frac{\sqrt{5}}{3}\right)^{T}.
+\eta_{2}=\left(\frac{2}{3\sqrt{5}},\frac{4}{3\sqrt{5}},\frac{\sqrt{5}}{3}\right)^{\top}.
 $$
 
 **求 $\lambda=-8$ 的特征向量**.
@@ -84,12 +84,12 @@ $$
 \end{array}\right].
 $$
 
-基础解系: $\alpha_{3}=\left(-1,2,-4\right)^{T}$.
+基础解系: $\alpha_{3}=\left(-1,2,-4\right)^{\top}$.
 
 单位化:
 
 $$
-\eta_{3}=\left(-\frac{1}{\sqrt{21}},\frac{2}{\sqrt{21}},-\frac{4}{\sqrt{21}}\right)^{T}.
+\eta_{3}=\left(-\frac{1}{\sqrt{21}},\frac{2}{\sqrt{21}},-\frac{4}{\sqrt{21}}\right)^{\top}.
 $$
 
 因此正交矩阵为
@@ -105,14 +105,14 @@ $$
 由**定理3** (实对称矩阵可正交对角化),
 
 $$
-T^{T}AT=\operatorname{diag}\left\{1,1,-8\right\}.
+T^{\top}AT=\operatorname{diag}\left\{1,1,-8\right\}.
 $$
 
 $\blacksquare$
 
 ### 习题二
 
-(习题 5.7-1(3)) 对于下列实对称矩阵 $A$, 求正交矩阵 $T$, 使 $T^{T}AT$ 为对角矩阵:
+(习题 5.7-1(3)) 对于下列实对称矩阵 $A$, 求正交矩阵 $T$, 使 $T^{\top}AT$ 为对角矩阵:
 
 $$
 A=\left[\begin{array}{rrr}
@@ -138,30 +138,30 @@ $$
 
 **求 $\lambda=-1$ 的特征向量**.
 
-基础解系: $\alpha_{1}=\left(1,2,2\right)^{T}$.
+基础解系: $\alpha_{1}=\left(1,2,2\right)^{\top}$.
 
 **求 $\lambda=2$ 的特征向量**.
 
-基础解系: $\alpha_{2}=\left(2,1,-2\right)^{T}$.
+基础解系: $\alpha_{2}=\left(2,1,-2\right)^{\top}$.
 
 **求 $\lambda=5$ 的特征向量**.
 
-基础解系: $\alpha_{3}=\left(-2,2,-1\right)^{T}$.
+基础解系: $\alpha_{3}=\left(-2,2,-1\right)^{\top}$.
 
 验证正交性: $\left(\alpha_{1},\alpha_{2}\right)=0$, $\left(\alpha_{1},\alpha_{3}\right)=0$, $\left(\alpha_{2},\alpha_{3}\right)=0$.
 
 单位化:
 
 $$
-\eta_{1}=\left(\frac{1}{3},\frac{2}{3},\frac{2}{3}\right)^{T}.
+\eta_{1}=\left(\frac{1}{3},\frac{2}{3},\frac{2}{3}\right)^{\top}.
 $$
 
 $$
-\eta_{2}=\left(\frac{2}{3},\frac{1}{3},-\frac{2}{3}\right)^{T}.
+\eta_{2}=\left(\frac{2}{3},\frac{1}{3},-\frac{2}{3}\right)^{\top}.
 $$
 
 $$
-\eta_{3}=\left(-\frac{2}{3},\frac{2}{3},-\frac{1}{3}\right)^{T}.
+\eta_{3}=\left(-\frac{2}{3},\frac{2}{3},-\frac{1}{3}\right)^{\top}.
 $$
 
 因此正交矩阵为
@@ -175,7 +175,7 @@ T=\left[\begin{array}{rrr}
 $$
 
 $$
-T^{T}AT=\operatorname{diag}\left\{-1,2,5\right\}.
+T^{\top}AT=\operatorname{diag}\left\{-1,2,5\right\}.
 $$
 
 $\blacksquare$
@@ -196,7 +196,7 @@ $\blacksquare$
 
 通过交换 $D_{B}$ 的主对角元的次序, 可使 $D_{A}=D_{B}$.
 
-交换主对角元的次序相当于用一个正交矩阵 $Q$ 作相似变换: $Q^{T}D_{B}Q=D_{A}$.
+交换主对角元的次序相当于用一个正交矩阵 $Q$ 作相似变换: $Q^{\top}D_{B}Q=D_{A}$.
 
 因此
 
@@ -215,21 +215,21 @@ $$
 设 $A$ 正交相似于对角矩阵 $D$, 即存在正交矩阵 $T$, 使得
 
 $$
-T^{T}AT=D.
+T^{\top}AT=D.
 $$
 
 则
 
 $$
-A=TDT^{T}.
+A=TDT^{\top}.
 $$
 
-因为 $D$ 是对角矩阵, 故 $D^{T}=D$.
+因为 $D$ 是对角矩阵, 故 $D^{\top}=D$.
 
 因此
 
 $$
-A^{T}=\left(TDT^{T}\right)^{T}=TD^{T}T^{T}=TDT^{T}=A.
+A^{\top}=\left(TDT^{\top}\right)^{\top}=TD^{\top}T^{\top}=TDT^{\top}=A.
 $$
 
 所以 $A$ 是对称矩阵. $\blacksquare$

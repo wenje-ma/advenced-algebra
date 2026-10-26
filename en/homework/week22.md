@@ -8,7 +8,7 @@
 > **Proposition 2** (Rank identity over the real field)<br>Let $A$ be an $s\times n$ matrix over the real field. Then:
 > 
 > $$
-> \text{rank}\left(A^{T}A\right)=\text{rank}\left(AA^{T}\right)=\text{rank}\left(A\right)
+> \text{rank}\left(A^{\top}A\right)=\text{rank}\left(AA^{\top}\right)=\text{rank}\left(A\right)
 > $$
 
 ### Problem 1
@@ -149,40 +149,40 @@ $\blacksquare$
 
 ### Problem 4
 
-(Problem 4.5-6) Let $A$ be an $s\times n$ matrix over the real field, and $\beta$ any column vector in $\mathbb{R}^{s}$. Prove: the $n$-unknown linear system $A^{T}AX=A^{T}\beta$ is always solvable.
+(Problem 4.5-6) Let $A$ be an $s\times n$ matrix over the real field, and $\beta$ any column vector in $\mathbb{R}^{s}$. Prove: the $n$-unknown linear system $A^{\top}AX=A^{\top}\beta$ is always solvable.
 
 ### Solution to Problem 4
 
 By **Proposition 2** (Rank identity over the real field), for matrices over the real field,
 
 $$
-\text{rank}\left(A^{T}A\right)=\text{rank}\left(A\right).
+\text{rank}\left(A^{\top}A\right)=\text{rank}\left(A\right).
 $$
 
-The augmented matrix is $\left(A^{T}A,A^{T}\beta\right)=A^{T}\left(A,\beta\right)$.
+The augmented matrix is $\left(A^{\top}A,A^{\top}\beta\right)=A^{\top}\left(A,\beta\right)$.
 
 Therefore
 
 $$
-\text{rank}\left(A^{T}A,A^{T}\beta\right)=\text{rank}\left(A^{T}\left(A,\beta\right)\right)\le\text{rank}\left(A^{T}\right)=\text{rank}\left(A\right).
+\text{rank}\left(A^{\top}A,A^{\top}\beta\right)=\text{rank}\left(A^{\top}\left(A,\beta\right)\right)\le\text{rank}\left(A^{\top}\right)=\text{rank}\left(A\right).
 $$
 
-On the other hand, $A^{T}A$ is a submatrix of $\left(A^{T}A,A^{T}\beta\right)$, so
+On the other hand, $A^{\top}A$ is a submatrix of $\left(A^{\top}A,A^{\top}\beta\right)$, so
 
 $$
-\text{rank}\left(A^{T}A\right)\le\text{rank}\left(A^{T}A,A^{T}\beta\right).
+\text{rank}\left(A^{\top}A\right)\le\text{rank}\left(A^{\top}A,A^{\top}\beta\right).
 $$
 
 Therefore
 
 $$
-\text{rank}\left(A^{T}A\right)\le\text{rank}\left(A^{T}A,A^{T}\beta\right)\le\text{rank}\left(A\right)=\text{rank}\left(A^{T}A\right).
+\text{rank}\left(A^{\top}A\right)\le\text{rank}\left(A^{\top}A,A^{\top}\beta\right)\le\text{rank}\left(A\right)=\text{rank}\left(A^{\top}A\right).
 $$
 
 Hence
 
 $$
-\text{rank}\left(A^{T}A\right)=\text{rank}\left(A^{T}A,A^{T}\beta\right).
+\text{rank}\left(A^{\top}A\right)=\text{rank}\left(A^{\top}A,A^{\top}\beta\right).
 $$
 
 The coefficient matrix and the augmented matrix have the same rank, so the system is solvable. $\blacksquare$

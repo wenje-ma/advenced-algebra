@@ -8,7 +8,7 @@
 > **命题2** (实数域上秩的等式)<br>设 $A$ 是实数域上 $s\times n$ 矩阵, 则:
 > 
 > $$
-> \text{rank}\left(A^{T}A\right)=\text{rank}\left(AA^{T}\right)=\text{rank}\left(A\right)
+> \text{rank}\left(A^{\top}A\right)=\text{rank}\left(AA^{\top}\right)=\text{rank}\left(A\right)
 > $$
 
 ### 习题一
@@ -149,40 +149,40 @@ $\blacksquare$
 
 ### 习题四
 
-(习题 4.5-6) 设 $A$ 是实数域上的 $s\times n$ 矩阵, $\beta$ 是 $\mathbb{R}^{s}$ 的任意一个列向量. 证明: $n$ 元线性方程组 $A^{T}AX=A^{T}\beta$ 一定有解.
+(习题 4.5-6) 设 $A$ 是实数域上的 $s\times n$ 矩阵, $\beta$ 是 $\mathbb{R}^{s}$ 的任意一个列向量. 证明: $n$ 元线性方程组 $A^{\top}AX=A^{\top}\beta$ 一定有解.
 
 ### 解答 习题四
 
 由**命题2** (实数域上秩的等式), 对于实数域上的矩阵,
 
 $$
-\text{rank}\left(A^{T}A\right)=\text{rank}\left(A\right).
+\text{rank}\left(A^{\top}A\right)=\text{rank}\left(A\right).
 $$
 
-增广矩阵为 $\left(A^{T}A,A^{T}\beta\right)=A^{T}\left(A,\beta\right)$.
+增广矩阵为 $\left(A^{\top}A,A^{\top}\beta\right)=A^{\top}\left(A,\beta\right)$.
 
 因此
 
 $$
-\text{rank}\left(A^{T}A,A^{T}\beta\right)=\text{rank}\left(A^{T}\left(A,\beta\right)\right)\le\text{rank}\left(A^{T}\right)=\text{rank}\left(A\right).
+\text{rank}\left(A^{\top}A,A^{\top}\beta\right)=\text{rank}\left(A^{\top}\left(A,\beta\right)\right)\le\text{rank}\left(A^{\top}\right)=\text{rank}\left(A\right).
 $$
 
-另一方面, $A^{T}A$ 是 $\left(A^{T}A,A^{T}\beta\right)$ 的子矩阵, 故
+另一方面, $A^{\top}A$ 是 $\left(A^{\top}A,A^{\top}\beta\right)$ 的子矩阵, 故
 
 $$
-\text{rank}\left(A^{T}A\right)\le\text{rank}\left(A^{T}A,A^{T}\beta\right).
+\text{rank}\left(A^{\top}A\right)\le\text{rank}\left(A^{\top}A,A^{\top}\beta\right).
 $$
 
 因此
 
 $$
-\text{rank}\left(A^{T}A\right)\le\text{rank}\left(A^{T}A,A^{T}\beta\right)\le\text{rank}\left(A\right)=\text{rank}\left(A^{T}A\right).
+\text{rank}\left(A^{\top}A\right)\le\text{rank}\left(A^{\top}A,A^{\top}\beta\right)\le\text{rank}\left(A\right)=\text{rank}\left(A^{\top}A\right).
 $$
 
 所以
 
 $$
-\text{rank}\left(A^{T}A\right)=\text{rank}\left(A^{T}A,A^{T}\beta\right).
+\text{rank}\left(A^{\top}A\right)=\text{rank}\left(A^{\top}A,A^{\top}\beta\right).
 $$
 
 系数矩阵与增广矩阵有相同的秩, 故该方程组有解. $\blacksquare$

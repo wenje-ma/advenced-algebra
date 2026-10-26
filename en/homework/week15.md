@@ -93,7 +93,7 @@ Prove that the above linear system is solvable.
 
 By **Theorem 1** (Solvability criterion), to prove the system is solvable, we need to show that the coefficient matrix $A$ and the augmented matrix $\overline{A}$ have the same rank.
 
-Let the augmented matrix be $\overline{A}$, i.e., $\overline{A}=\left[A,b\right]$, where $b=\left(b_{1},b_{2},\cdots,b_{n}\right)^{T}$.
+Let the augmented matrix be $\overline{A}$, i.e., $\overline{A}=\left[A,b\right]$, where $b=\left(b_{1},b_{2},\cdots,b_{n}\right)^{\top}$.
 
 Note that $\overline{A}$ is the first $n$ rows of $B$, so $\overline{A}$ is a submatrix of $B$.
 

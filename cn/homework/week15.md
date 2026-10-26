@@ -93,7 +93,7 @@ $$
 
 由**定理1** (线性方程组有解判别定理), 要证明线性方程组有解, 即证明系数矩阵 $A$ 与增广矩阵 $\overline{A}$ 有相同的秩.
 
-设增广矩阵为 $\overline{A}$, 即 $\overline{A}=\left[A,b\right]$, 其中 $b=\left(b_{1},b_{2},\cdots,b_{n}\right)^{T}$.
+设增广矩阵为 $\overline{A}$, 即 $\overline{A}=\left[A,b\right]$, 其中 $b=\left(b_{1},b_{2},\cdots,b_{n}\right)^{\top}$.
 
 注意到 $\overline{A}$ 是 $B$ 的前 $n$ 行, 故 $\overline{A}$ 是 $B$ 的子矩阵.
 

@@ -1,8 +1,8 @@
 # 作业 33
 
-> **定理1** (惯性定理)<br>$n$ 元实二次型 $X^{T}AX$ 的规范形是唯一的.
+> **定理1** (惯性定理)<br>$n$ 元实二次型 $X^{\top}AX$ 的规范形是唯一的.
 
-> **定义1** (正惯性指数)<br>在实二次型 $X^{T}AX$ 的规范形中, 系数为 $+1$ 的平方项的数目 $p$ 称为 $X^{T}AX$ 的正惯性指数, 系数为 $-1$ 的平方项的数目 $r-p$ 称为 $X^{T}AX$ 的负惯性指数.
+> **定义1** (正惯性指数)<br>在实二次型 $X^{\top}AX$ 的规范形中, 系数为 $+1$ 的平方项的数目 $p$ 称为 $X^{\top}AX$ 的正惯性指数, 系数为 $-1$ 的平方项的数目 $r-p$ 称为 $X^{\top}AX$ 的负惯性指数.
 
 > **推论4** (合同的充要条件)<br>两个 $n$ 级实对称矩阵合同当且仅当它们的秩相等, 并且正惯性指数也相等.
 
@@ -12,7 +12,7 @@
 
 ### 解答 习题一
 
-由**定理1** (惯性定理), $n$ 元实二次型 $X^{T}AX$ 的规范形是唯一的.
+由**定理1** (惯性定理), $n$ 元实二次型 $X^{\top}AX$ 的规范形是唯一的.
 
 **习题 6.1 第 3 题(1)**:
 
@@ -50,27 +50,27 @@ $$
 
 ### 习题二
 
-(习题 6.2-4) 设 $X^{T}AX$ 是一个 $n$ 元实二次型, 证明: 如果 $\mathbb{R}^{n}$ 中有列向量 $\alpha_{1},\alpha_{2}$, 使得 $\alpha_{1}^{T}A\alpha_{1}> 0$, $\alpha_{2}^{T}A\alpha_{2}< 0$, 则 $\mathbb{R}^{n}$ 中有非零列向量 $\alpha$, 使得 $\alpha^{T}A\alpha=0$.
+(习题 6.2-4) 设 $X^{\top}AX$ 是一个 $n$ 元实二次型, 证明: 如果 $\mathbb{R}^{n}$ 中有列向量 $\alpha_{1},\alpha_{2}$, 使得 $\alpha_{1}^{\top}A\alpha_{1}> 0$, $\alpha_{2}^{\top}A\alpha_{2}< 0$, 则 $\mathbb{R}^{n}$ 中有非零列向量 $\alpha$, 使得 $\alpha^{\top}A\alpha=0$.
 
 ### 解答 习题二
 
-由**定义1** (正惯性指数), 设 $X^{T}AX$ 是一个 $n$ 元实二次型. 考虑函数
+由**定义1** (正惯性指数), 设 $X^{\top}AX$ 是一个 $n$ 元实二次型. 考虑函数
 
 $$
-g\left(t\right)=\left(\alpha_{1}+t\alpha_{2}\right)^{T}A\left(\alpha_{1}+t\alpha_{2}\right).
+g\left(t\right)=\left(\alpha_{1}+t\alpha_{2}\right)^{\top}A\left(\alpha_{1}+t\alpha_{2}\right).
 $$
 
 展开:
 
 $$
-g\left(t\right)=\alpha_{1}^{T}A\alpha_{1}+2t\alpha_{1}^{T}A\alpha_{2}+t^{2}\alpha_{2}^{T}A\alpha_{2}.
+g\left(t\right)=\alpha_{1}^{\top}A\alpha_{1}+2t\alpha_{1}^{\top}A\alpha_{2}+t^{2}\alpha_{2}^{\top}A\alpha_{2}.
 $$
 
 这是关于 $t$ 的二次函数.
 
-已知 $g\left(0\right)=\alpha_{1}^{T}A\alpha_{1}> 0$.
+已知 $g\left(0\right)=\alpha_{1}^{\top}A\alpha_{1}> 0$.
 
-又因为 $\alpha_{2}^{T}A\alpha_{2}< 0$, 所以当 $t\to\infty$ 时, $g\left(t\right)\to-\infty$.
+又因为 $\alpha_{2}^{\top}A\alpha_{2}< 0$, 所以当 $t\to\infty$ 时, $g\left(t\right)\to-\infty$.
 
 因此存在 $t_{0}> 0$, 使得 $g\left(t_{0}\right)< 0$.
 
@@ -78,11 +78,11 @@ $$
 
 令 $\alpha=\alpha_{1}+t_{1}\alpha_{2}$.
 
-则 $\alpha\ne0$ (因为如果 $\alpha=0$, 则 $\alpha_{1}=-t_{1}\alpha_{2}$, 从而 $\alpha_{1}^{T}A\alpha_{1}=t_{1}^{2}\alpha_{2}^{T}A\alpha_{2}< 0$, 矛盾).
+则 $\alpha\ne0$ (因为如果 $\alpha=0$, 则 $\alpha_{1}=-t_{1}\alpha_{2}$, 从而 $\alpha_{1}^{\top}A\alpha_{1}=t_{1}^{2}\alpha_{2}^{\top}A\alpha_{2}< 0$, 矛盾).
 
-且 $\alpha^{T}A\alpha=g\left(t_{1}\right)=0$.
+且 $\alpha^{\top}A\alpha=g\left(t_{1}\right)=0$.
 
-因此 $\mathbb{R}^{n}$ 中有非零列向量 $\alpha$, 使得 $\alpha^{T}A\alpha=0$. $\blacksquare$
+因此 $\mathbb{R}^{n}$ 中有非零列向量 $\alpha$, 使得 $\alpha^{\top}A\alpha=0$. $\blacksquare$
 
 ### 习题三
 
@@ -109,21 +109,21 @@ $$
 设
 
 $$
-X^{T}AX=\left(a_{1}x_{1}+\cdots+a_{n}x_{n}\right)\left(b_{1}x_{1}+\cdots+b_{n}x_{n}\right).
+X^{\top}AX=\left(a_{1}x_{1}+\cdots+a_{n}x_{n}\right)\left(b_{1}x_{1}+\cdots+b_{n}x_{n}\right).
 $$
 
-令 $\alpha=\left(a_{1},\cdots,a_{n}\right)^{T}$, $\beta=\left(b_{1},\cdots,b_{n}\right)^{T}$.
+令 $\alpha=\left(a_{1},\cdots,a_{n}\right)^{\top}$, $\beta=\left(b_{1},\cdots,b_{n}\right)^{\top}$.
 
 则
 
 $$
-X^{T}AX=\left(\alpha^{T}X\right)\left(\beta^{T}X\right)=X^{T}\left(\frac{\alpha\beta^{T}+\beta\alpha^{T}}{2}\right)X.
+X^{\top}AX=\left(\alpha^{\top}X\right)\left(\beta^{\top}X\right)=X^{\top}\left(\frac{\alpha\beta^{\top}+\beta\alpha^{\top}}{2}\right)X.
 $$
 
 因此
 
 $$
-A=\frac{\alpha\beta^{T}+\beta\alpha^{T}}{2}.
+A=\frac{\alpha\beta^{\top}+\beta\alpha^{\top}}{2}.
 $$
 
 **情况1**: $\alpha$ 与 $\beta$ 线性相关.
@@ -131,7 +131,7 @@ $$
 设 $\beta=k\alpha$. 则
 
 $$
-A=\frac{\alpha\cdot k\alpha^{T}+k\alpha\cdot\alpha^{T}}{2}=k\alpha\alpha^{T}.
+A=\frac{\alpha\cdot k\alpha^{\top}+k\alpha\cdot\alpha^{\top}}{2}=k\alpha\alpha^{\top}.
 $$
 
 因此 $\operatorname{rank}\left(A\right)=1$.
@@ -147,7 +147,7 @@ $$
 则
 
 $$
-A=\gamma_{1}\gamma_{1}^{T}-\gamma_{2}\gamma_{2}^{T}.
+A=\gamma_{1}\gamma_{1}^{\top}-\gamma_{2}\gamma_{2}^{\top}.
 $$
 
 因为 $\gamma_{1},\gamma_{2}$ 线性无关, 所以 $\operatorname{rank}\left(A\right)=2$.
@@ -160,13 +160,13 @@ $\blacksquare$
 
 ### 习题四
 
-(习题 6.2-7) 证明: 复数域上 $n$ 元二次型 (简称为复二次型) $X^{T}AX$ 能经过非退化线性替换化成下述形式的标准形:
+(习题 6.2-7) 证明: 复数域上 $n$ 元二次型 (简称为复二次型) $X^{\top}AX$ 能经过非退化线性替换化成下述形式的标准形:
 
 $$
 z_{1}^{2}+z_{2}^{2}+\cdots+z_{r}^{2},
 $$
 
-其中 $r$ 是二次型 $X^{T}AX$ 的秩. 这种形式的标准形称为 $X^{T}AX$ 的规范形, 它只含平方项, 且平方项的系数为 $1$ 或 $0$.
+其中 $r$ 是二次型 $X^{\top}AX$ 的秩. 这种形式的标准形称为 $X^{\top}AX$ 的规范形, 它只含平方项, 且平方项的系数为 $1$ 或 $0$.
 
 ### 解答 习题四
 
@@ -189,17 +189,17 @@ $$
 则
 
 $$
-C^{T}DC=\operatorname{diag}\left\{1,1,\cdots,1,0,\cdots,0\right\}.
+C^{\top}DC=\operatorname{diag}\left\{1,1,\cdots,1,0,\cdots,0\right\}.
 $$
 
 因此 $A$ 合同于 $\operatorname{diag}\left\{I_{r},0\right\}$.
 
-即存在可逆矩阵 $P$, 使得 $P^{T}AP=\operatorname{diag}\left\{I_{r},0\right\}$.
+即存在可逆矩阵 $P$, 使得 $P^{\top}AP=\operatorname{diag}\left\{I_{r},0\right\}$.
 
 令 $X=PZ$, 则
 
 $$
-X^{T}AX=Z^{T}P^{T}APZ=Z^{T}\operatorname{diag}\left\{I_{r},0\right\}Z=z_{1}^{2}+z_{2}^{2}+\cdots+z_{r}^{2}.
+X^{\top}AX=Z^{\top}P^{\top}APZ=Z^{\top}\operatorname{diag}\left\{I_{r},0\right\}Z=z_{1}^{2}+z_{2}^{2}+\cdots+z_{r}^{2}.
 $$
 
-因此复二次型 $X^{T}AX$ 的规范形为 $z_{1}^{2}+z_{2}^{2}+\cdots+z_{r}^{2}$, 其中 $r$ 是二次型的秩. $\blacksquare$
+因此复二次型 $X^{\top}AX$ 的规范形为 $z_{1}^{2}+z_{2}^{2}+\cdots+z_{r}^{2}$, 其中 $r$ 是二次型的秩. $\blacksquare$

@@ -290,7 +290,7 @@ $$
 将 $A\left(t\right)$ 的第 $1$ 列拆成两个列之和: 第 $1$ 列
 
 $$
-=\left(a_{11}+t,a_{21}+t,\cdots,a_{n1}+t\right)^{T}=\left(a_{11},a_{21},\cdots,a_{n1}\right)^{T}+\left(t,t,\cdots,t\right)^{T}.
+=\left(a_{11}+t,a_{21}+t,\cdots,a_{n1}+t\right)^{\top}=\left(a_{11},a_{21},\cdots,a_{n1}\right)^{\top}+\left(t,t,\cdots,t\right)^{\top}.
 $$
 
 由行列式对列的多重线性,
@@ -353,7 +353,7 @@ $$
 
 ### 解答 习题六
 
-**(1)** 把矩阵写成 $A=J+xy^{T}$, 其中 $J$ 是全 $1$ 矩阵, $x=\left(x_{1},\cdots,x_{n}\right)^{T}$, $y=\left(y_{1},\cdots,y_{n}\right)^{T}$.
+**(1)** 把矩阵写成 $A=J+xy^{\top}$, 其中 $J$ 是全 $1$ 矩阵, $x=\left(x_{1},\cdots,x_{n}\right)^{\top}$, $y=\left(y_{1},\cdots,y_{n}\right)^{\top}$.
 
 $A$ 是两个秩 $1$ 矩阵之和, 故 $\text{rank}\left(A\right)\le2$.
 

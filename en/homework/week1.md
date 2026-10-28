@@ -1,21 +1,18 @@
-# Assignment 1
+# week1
 
-> **Definition 1** (Elementary Operations on Systems of Linear Equations)<br>The following three operations are performed on a system of linear equations:
-> (1) add a multiple of one equation to another;
-> 
-> (2) interchange the positions of two equations;
-> 
-> (3) multiply an equation by a nonzero scalar. These three operations are collectively called the elementary operations on systems of linear equations. A system obtained by elementary operations has the same solution set as the original system.
+> **Basic Knowledge: Elementary Operations on a Linear System and Elementary Row Operations on a Matrix**<br>The following three operations are performed on a linear system: (1) add a multiple of one equation to another; (2) interchange the positions of two equations; (3) multiply an equation by a nonzero scalar. These are collectively called the elementary operations on a linear system. Applying the corresponding three operations to the rows of its augmented matrix is called an elementary row operation on the matrix. A system obtained by elementary operations has the same solution set as the original system.
 
-> **Definition 2** (Row Echelon Matrix)<br>In a matrix, rows whose elements are all $0$ (zero rows) lie below; in a row whose elements are not all $0$ (nonzero row), the first element not equal to $0$ counted from the left is called the pivot, and the column index of the pivot of each nonzero row strictly increases as the row index increases.
+> **Basic Knowledge: Row Echelon Matrix**<br>Rows whose entries are all $0$ (zero rows) lie below; in a row whose entries are not all $0$ (a nonzero row), the first nonzero entry counted from the left is called a pivot, and the column index of the pivot of each nonzero row strictly increases as the row index increases.
 
-> **Definition 3** (Reduced Row Echelon Matrix)<br>On the basis of a row echelon matrix, the pivot of each nonzero row is $1$, and all other elements in the column containing each pivot are $0$.
+> **Basic Knowledge: Reduced Row Echelon Matrix**<br>On the basis of a row echelon matrix, the pivot of each nonzero row is $1$, and all other entries in the column containing each pivot are $0$.
 
-> **Basic Knowledge 1** (Gauss–Jordan Algorithm)<br>By applying elementary row operations to the augmented matrix of a system of linear equations and reducing it to a reduced row echelon matrix, one can write down the solution directly. If the corresponding echelon system exhibits $0=d$($d\ne 0$), then the original system has no solution.
+> **Basic Knowledge: The Gauss-Jordan Algorithm**<br>Apply elementary row operations to the augmented matrix of a linear system to reduce it to a row echelon matrix (or further to a reduced row echelon matrix), and then write down the solution. If the corresponding echelon system exhibits $0=d$ ($d\ne 0$), then the original system has no solution.
 
-### Problem 1
+---
 
-(Problem 1.1-1(4)) Solve the following system of linear equations:
+## 1.1-1(4)
+
+Solve the following system of linear equations:
 
 $$
 \begin{cases}
@@ -26,9 +23,9 @@ x_{1}+4x_{2}-12x_{3}=-15.
 \end{cases}
 $$
 
-### Solution to Problem 1
+### Solution 1.1-1(4)
 
-By **Basic Knowledge 1** (Gauss–Jordan Algorithm), apply elementary row operations to the augmented matrix to reduce it to row echelon form. The augmented matrix is
+By **Basic Knowledge: The Gauss-Jordan Algorithm**, apply elementary row operations to the augmented matrix to reduce it to row echelon form. The augmented matrix is
 
 $$
 \left[\begin{array}{rrr|r}
@@ -39,7 +36,7 @@ $$
 \end{array}\right].
 $$
 
-By the (1)-th operation of **Definition 1** (Elementary Operations on Systems of Linear Equations), perform the row operations in turn: (2) $-2\times$(1), (3) $+3\times$(1), (4) $-$(1), giving
+By the (1)-th operation of **Basic Knowledge: Elementary Operations on a Linear System and Elementary Row Operations on a Matrix**, perform the row operations in turn: (2) $-2\times$(1), (3) $+3\times$(1), (4) $-$(1), giving
 
 $$
 \left[\begin{array}{rrr|r}
@@ -50,7 +47,7 @@ $$
 \end{array}\right].
 $$
 
-By **Definition 1**, elementary operations do not change the solutions of the system, so we can back-substitute from the echelon system. From (4) we get $x_{2}=5x_{3}-7$. Substituting into (2): $-\left(5x_{3}-7\right)+18x_{3}=20$, solving gives $x_{3}=1$. Hence $x_{2}=-2$. Substituting into (1):
+By **Basic Knowledge: Elementary Operations on a Linear System and Elementary Row Operations on a Matrix**, elementary operations do not change the solutions of the system, so we back-substitute from the echelon system. From (4) we get $x_{2}=5x_{3}-7$. Substituting into (2): $-\left(5x_{3}-7\right)+18x_{3}=20$, solving gives $x_{3}=1$. Hence $x_{2}=-2$. Substituting into (1):
 
 $$
 x_{1}+3\times\left(-2\right)-7\times1=-8,
@@ -66,21 +63,23 @@ $$
 
 which holds.
 
-By **Basic Knowledge 1**, the original system therefore has the unique solution
+By **Basic Knowledge: The Gauss-Jordan Algorithm**, the original system therefore has the unique solution
 
 $$
 \left(x_{1},x_{2},x_{3}\right)=\left(5,-2,1\right).\blacksquare
 $$
 
-### Problem 2
+---
 
-(Problem 1.1-2) An investor wants to invest $1$ ten-thousand yuan in $3$ enterprises $A_{1},A_{2},A_{3}$, with profit rates of $12\%,15\%,22\%$, respectively. He wants to obtain a profit of $2000$ yuan.
+## 1.1-2
+
+An investor wants to invest $1$ ten-thousand yuan in $3$ enterprises $A_{1},A_{2},A_{3}$, with profit rates of $12\%,15\%,22\%$, respectively. He wants to obtain a profit of $2000$ yuan.
 
 (1) If the amount invested in $A_{1}$ is $2$ times that invested in $A_{2}$, how much should be invested in $A_{1},A_{2},A_{3}$, respectively?
 
 (2) Is it possible to make the amount invested in $A_{3}$ equal to the sum of the amounts invested in $A_{1}$ and $A_{2}$?
 
-### Solution to Problem 2
+### Solution 1.1-2
 
 Let the amounts invested in $A_{1},A_{2},A_{3}$ be $x_{1},x_{2},x_{3}$, respectively (unit: yuan). Based on the total investment and the total profit, set up the system
 
@@ -134,9 +133,11 @@ $$
 
 Then $x_{2}=10000$. Since an investment cannot be negative, $x_{1}=-5000< 0$ has no practical meaning. Hence it is not possible to make the amount invested in $A_{3}$ equal to the sum of the amounts invested in $A_{1}$ and $A_{2}$. $\blacksquare$
 
-### Problem 3
+---
 
-(Problem 1.1-3(2)) Solve the following system of linear equations:
+## 1.1-3(2)
+
+Solve the following system of linear equations:
 
 $$
 \begin{cases}
@@ -146,9 +147,9 @@ $$
 \end{cases}
 $$
 
-### Solution to Problem 3
+### Solution 1.1-3(2)
 
-By **Basic Knowledge 1** (Gauss–Jordan Algorithm), apply elementary row operations to the augmented matrix. The augmented matrix is
+By **Basic Knowledge: The Gauss-Jordan Algorithm**, apply elementary row operations to the augmented matrix. The augmented matrix is
 
 $$
 \left[\begin{array}{rrrr|r}
@@ -158,7 +159,7 @@ $$
 \end{array}\right].
 $$
 
-By the (2)-th operation of **Definition 1** (Elementary Operations on Systems of Linear Equations), interchange rows $1,3$, giving
+By the (2)-th operation of **Basic Knowledge: Elementary Operations on a Linear System and Elementary Row Operations on a Matrix**, interchange rows $1,3$, giving
 
 $$
 \left[\begin{array}{rrrr|r}
@@ -168,7 +169,7 @@ $$
 \end{array}\right].
 $$
 
-By the (1)-th operation of **Definition 1**, perform (2) $-3\times$(1), (3) $+2\times$(1):
+By the (1)-th operation of **Basic Knowledge: Elementary Operations on a Linear System and Elementary Row Operations on a Matrix**, perform (2) $-3\times$(1), (3) $+2\times$(1):
 
 $$
 \left[\begin{array}{rrrr|r}
@@ -178,7 +179,7 @@ $$
 \end{array}\right].
 $$
 
-By **Definition 1**, elementary operations do not change the solutions of the system, so we back-substitute from the echelon system. From the $3$rd row we get $-7x_{2}+7x_{3}+7x_{4}=28$, i.e. $-x_{2}+x_{3}+x_{4}=4$, hence $x_{2}=x_{3}+x_{4}-4$.
+By **Basic Knowledge: Elementary Operations on a Linear System and Elementary Row Operations on a Matrix**, elementary operations do not change the solutions of the system, so we back-substitute from the echelon system. From the $3$rd row we get $-7x_{2}+7x_{3}+7x_{4}=28$, i.e. $-x_{2}+x_{3}+x_{4}=4$, hence $x_{2}=x_{3}+x_{4}-4$.
 
 Substituting into the $2$nd row:
 
@@ -198,7 +199,7 @@ $$
 -x_{1}-2\times0+3\left(4-c\right)+c=11-x_{1}+12-3c+c=11-x_{1}=-1+2c;x_{1}=1-2c.
 $$
 
-By **Basic Knowledge 1**, the original system therefore has infinitely many solutions, and the general solution is
+By **Basic Knowledge: The Gauss-Jordan Algorithm**, the original system therefore has infinitely many solutions, and the general solution is
 
 $$
 \begin{cases}
@@ -211,9 +212,11 @@ $$
 
 where $c$ is an arbitrary constant. $\blacksquare$
 
-### Problem 4
+---
 
-(Problem 1.1-3(3)) Solve the following system of linear equations:
+## 1.1-3(3)
+
+Solve the following system of linear equations:
 
 $$
 \begin{cases}
@@ -224,9 +227,9 @@ x_{1}+16x_{2}+13x_{3}=-1.
 \end{cases}
 $$
 
-### Solution to Problem 4
+### Solution 1.1-3(3)
 
-By **Basic Knowledge 1** (Gauss–Jordan Algorithm), apply elementary row operations to the augmented matrix. The augmented matrix is
+By **Basic Knowledge: The Gauss-Jordan Algorithm**, apply elementary row operations to the augmented matrix. The augmented matrix is
 
 $$
 \left[\begin{array}{rrr|r}
@@ -237,7 +240,7 @@ $$
 \end{array}\right].
 $$
 
-By the (1)-th operation of **Definition 1** (Elementary Operations on Systems of Linear Equations), perform (2) $-2\times$(1), (3) $+$(1), (4) $-$(1):
+By the (1)-th operation of **Basic Knowledge: Elementary Operations on a Linear System and Elementary Row Operations on a Matrix**, perform (2) $-2\times$(1), (3) $+$(1), (4) $-$(1):
 
 $$
 \left[\begin{array}{rrr|r}
@@ -248,7 +251,7 @@ $$
 \end{array}\right].
 $$
 
-By **Definition 1**, elementary operations do not change the solutions of the system, so we can determine whether there is a solution from the echelon system. From the $2$nd row we get $7x_{2}+5x_{3}=-1$. The $4$th row is $21x_{2}+15x_{3}=-5$.
+By **Basic Knowledge: Elementary Operations on a Linear System and Elementary Row Operations on a Matrix**, elementary operations do not change the solutions of the system, so we determine whether there is a solution from the echelon system. From the $2$nd row we get $7x_{2}+5x_{3}=-1$. The $4$th row is $21x_{2}+15x_{3}=-5$.
 
 Note that the left-hand side of the $4$th row is exactly $3$ times the left-hand side of the $2$nd row, whereas the right-hand side $3\times\left(-1\right)=-3\ne-5$. That is,
 
@@ -258,4 +261,4 @@ $$
 
 which contradicts the $4$th row $21x_{2}+15x_{3}=-5$, yielding $0=-2$.
 
-By **Basic Knowledge 1**, the corresponding echelon system exhibits the case $0=d$($d\ne 0$), so the original system has no solution. $\blacksquare$
+By **Basic Knowledge: The Gauss-Jordan Algorithm**, the corresponding echelon system exhibits the case $0=d$ ($d\ne 0$), so the original system has no solution. $\blacksquare$

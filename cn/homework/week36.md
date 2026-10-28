@@ -1,22 +1,24 @@
-# 作业 36
+# week36
 
-> **定义1** (不可约多项式)<br>$K\left[x\right]$ 中一个次数大于零的多项式 $p\left(x\right)$, 如果它在 $K\left[x\right]$ 中的因式只有零次多项式和 $p\left(x\right)$ 的相伴元, 则称 $p\left(x\right)$ 是数域 $K$ 上的一个不可约多项式.
+> **定义 7.4.1 (不可约多项式)**<br>$K\left[x\right]$ 中一个次数大于零的多项式 $p\left(x\right)$, 如果它在 $K\left[x\right]$ 中的因式只有零次多项式和 $p\left(x\right)$ 的相伴元, 则称 $p\left(x\right)$ 是数域 $K$ 上的一个不可约多项式.
 
-> **性质2** (不可约多项式的性质)<br>在 $K\left[x\right]$ 中, 如果 $p\left(x\right)$ 不可约, 且 $p\left(x\right)\mid f\left(x\right)g\left(x\right)$, 则 $p\left(x\right)\mid f\left(x\right)$ 或 $p\left(x\right)\mid g\left(x\right)$.
+> **性质 7.4.1 (不可约多项式的性质)**<br>在 $K\left[x\right]$ 中, 如果 $p\left(x\right)$ 不可约, 且 $p\left(x\right)\mid f\left(x\right)g\left(x\right)$, 则 $p\left(x\right)\mid f\left(x\right)$ 或 $p\left(x\right)\mid g\left(x\right)$.
 
-> **定理1** (唯一因式分解定理)<br>$K\left[x\right]$ 中每一个次数大于零的多项式都能唯一地分解成数域 $K$ 上有限多个不可约多项式的乘积.
+> **定理 7.4.1 (唯一因式分解定理)**<br>$K\left[x\right]$ 中每一个次数大于零的多项式都能唯一地分解成数域 $K$ 上有限多个不可约多项式的乘积.
 
-### 习题一
+---
 
-(习题 7.4-2(2)) 分别在复数域, 实数域和有理数域上分解下列多项式为不可约因式的乘积:
+## 7.4-2(2)
+
+分别在复数域, 实数域和有理数域上分解下列多项式为不可约因式的乘积:
 
 $$
 x^{4}+4.
 $$
 
-### 解答 习题一
+### 解答 7.4-2(2)
 
-由**定理1** (唯一因式分解定理), $K\left[x\right]$ 中每一个次数大于零的多项式都能唯一地分解成数域 $K$ 上有限多个不可约多项式的乘积.
+由**定理 7.4.1 (唯一因式分解定理)**, $K\left[x\right]$ 中每一个次数大于零的多项式都能唯一地分解成数域 $K$ 上有限多个不可约多项式的乘积.
 
 **复数域**.
 
@@ -25,7 +27,7 @@ $x^{4}+4=0$ 的根是 $x^{4}=-4=4e^{i\pi}$.
 因此
 
 $$
-x=4^{1/4}e^{i\left(\pi/4+k\pi/2\right)}, k=0,1,2,3.
+x=4^{1/4}e^{i\left(\pi/4+k\pi/2\right)},\ k=0,1,2,3.
 $$
 
 $4^{1/4}=\sqrt{2}$.
@@ -33,7 +35,7 @@ $4^{1/4}=\sqrt{2}$.
 所以四个根为:
 
 $$
-x_{1}=1+i, x_{2}=-1+i, x_{3}=-1-i, x_{4}=1-i.
+x_{1}=1+i,\ x_{2}=-1+i,\ x_{3}=-1-i,\ x_{4}=1-i.
 $$
 
 因此
@@ -74,13 +76,15 @@ $$
 
 以上分解都是唯一的. $\blacksquare$
 
-### 习题二
+---
 
-(习题 7.4-3) 证明: 在 $K\left[x\right]$ 中, $g^{2}\left(x\right)\mid f^{2}\left(x\right)$ 当且仅当 $g\left(x\right)\mid f\left(x\right)$.
+## 7.4-3
 
-### 解答 习题二
+证明: 在 $K\left[x\right]$ 中, $g^{2}\left(x\right)\mid f^{2}\left(x\right)$ 当且仅当 $g\left(x\right)\mid f\left(x\right)$.
 
-由**性质2** (不可约多项式的性质), 在 $K\left[x\right]$ 中, 如果 $p\left(x\right)$ 不可约, 且 $p\left(x\right)\mid f\left(x\right)g\left(x\right)$, 则 $p\left(x\right)\mid f\left(x\right)$ 或 $p\left(x\right)\mid g\left(x\right)$.
+### 解答 7.4-3
+
+由**性质 7.4.1 (不可约多项式的性质)**, 在 $K\left[x\right]$ 中, 如果 $p\left(x\right)$ 不可约, 且 $p\left(x\right)\mid f\left(x\right)g\left(x\right)$, 则 $p\left(x\right)\mid f\left(x\right)$ 或 $p\left(x\right)\mid g\left(x\right)$.
 
 **必要性**. 若 $g^{2}\mid f^{2}$, 证明 $g\mid f$.
 
@@ -108,11 +112,13 @@ $$
 
 $g^{2}\left(x\right)\mid f^{2}\left(x\right)$ 当且仅当 $g\left(x\right)\mid f\left(x\right)$. $\blacksquare$
 
-### 习题三
+---
 
-(习题 7.4-7) 在 $K\left[x\right]$ 中, 设 $\left(f,g_{i}\right)=1$, $i=1,2$, 证明: $\left(f,g_{1}g_{2}\right)=1$.
+## 7.4-7
 
-### 解答 习题三
+在 $K\left[x\right]$ 中, 设 $\left(f,g_{i}\right)=1$, $i=1,2$, 证明: $\left(f,g_{1}g_{2}\right)=1$.
+
+### 解答 7.4-7
 
 因为 $\left(f,g_{1}\right)=1$, 所以存在 $u_{1},v_{1}$ 使得
 

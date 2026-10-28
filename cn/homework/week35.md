@@ -1,28 +1,28 @@
-# 作业 35
+# week35
 
-> **定义1** (最大公因式)<br>设 $f\left(x\right),g\left(x\right)\in K\left[x\right]$, $d\left(x\right)$ 是 $f\left(x\right)$ 与 $g\left(x\right)$ 的一个公因式. 如果 $f\left(x\right)$ 与 $g\left(x\right)$ 的任一公因式都能整除 $d\left(x\right)$, 则称 $d\left(x\right)$ 是 $f\left(x\right)$ 与 $g\left(x\right)$ 的一个最大公因式.
+> **定义 7.3.1 (最大公因式)**<br>设 $f\left(x\right),g\left(x\right)\in K\left[x\right]$, $d\left(x\right)$ 是 $f\left(x\right)$ 与 $g\left(x\right)$ 的一个公因式. 如果 $f\left(x\right)$ 与 $g\left(x\right)$ 的任一公因式都能整除 $d\left(x\right)$, 则称 $d\left(x\right)$ 是 $f\left(x\right)$ 与 $g\left(x\right)$ 的一个最大公因式.
 
-> **定理3** (最大公因式的存在性与倍式和)<br>对于 $K\left[x\right]$ 中任意两个多项式 $f\left(x\right)$ 与 $g\left(x\right)$, 存在它们的一个最大公因式 $d\left(x\right)$, 并且 $d\left(x\right)$ 可以表示成 $f\left(x\right)$ 与 $g\left(x\right)$ 的倍式和, 即有 $u\left(x\right),v\left(x\right)\in K\left[x\right]$, 使得
-> $$
-> d\left(x\right)=u\left(x\right)f\left(x\right)+v\left(x\right)g\left(x\right).
-> $$
-
-> **定义3** (互素)<br>在 $K\left[x\right]$ 中, 如果 $f\left(x\right)$ 与 $g\left(x\right)$ 的最大公因式是零次多项式, 则称 $f\left(x\right)$ 与 $g\left(x\right)$ 互素.
-
-### 习题一
-
-(习题 7.3-1) 求 $f\left(x\right)$ 与 $g\left(x\right)$ 的最大公因式, 并且把 $\left(f\left(x\right),g\left(x\right)\right)$ 表示成 $f\left(x\right)$ 与 $g\left(x\right)$ 的倍式和:
-
-(1)
+> **定理 7.3.1 (最大公因式的存在性与倍式和)**<br>对于 $K\left[x\right]$ 中任意两个多项式 $f\left(x\right)$ 与 $g\left(x\right)$, 存在它们的一个最大公因式 $d\left(x\right)$, 并且 $d\left(x\right)$ 可以表示成 $f\left(x\right)$ 与 $g\left(x\right)$ 的倍式和, 即有 $u\left(x\right),v\left(x\right)\in K\left[x\right]$, 使得
 
 $$
-f\left(x\right)=x^{4}+3x^{3}-x^{2}-4x-3,\
-g\left(x\right)=3x^{3}+10x^{2}+2x-3.
+d\left(x\right)=u\left(x\right)f\left(x\right)+v\left(x\right)g\left(x\right).
 $$
 
-### 解答 习题一
+> **定义 7.3.2 (互素)**<br>在 $K\left[x\right]$ 中, 如果 $f\left(x\right)$ 与 $g\left(x\right)$ 的最大公因式是零次多项式, 则称 $f\left(x\right)$ 与 $g\left(x\right)$ 互素.
 
-由**定理3** (最大公因式的存在性与倍式和), 存在最大公因式 $d\left(x\right)$, 并且 $d\left(x\right)$ 可以表示成 $f\left(x\right)$ 与 $g\left(x\right)$ 的倍式和. 用辗转相除法.
+---
+
+## 7.3-1(1)
+
+求 $f\left(x\right)$ 与 $g\left(x\right)$ 的最大公因式, 并且把 $\left(f\left(x\right),g\left(x\right)\right)$ 表示成 $f\left(x\right)$ 与 $g\left(x\right)$ 的倍式和:
+
+$$
+f\left(x\right)=x^{4}+3x^{3}-x^{2}-4x-3,\quad g\left(x\right)=3x^{3}+10x^{2}+2x-3.
+$$
+
+### 解答 7.3-1(1)
+
+由**定理 7.3.1 (最大公因式的存在性与倍式和)**, 存在最大公因式 $d\left(x\right)$, 并且 $d\left(x\right)$ 可以表示成 $f\left(x\right)$ 与 $g\left(x\right)$ 的倍式和. 用辗转相除法.
 
 **第一步**: $f$ 除以 $g$.
 
@@ -89,9 +89,7 @@ x+3
 =-3f+xg-x\left[-\frac{9}{5}f+\left(\frac{3x}{5}-\frac{1}{5}\right)g\right]=\frac{9x-15}{5}f+\frac{-3x^{2}+6x}{5}g.
 $$
 
-因此
-
-由**定理3** (最大公因式的存在性与倍式和),
+因此, 由**定理 7.3.1 (最大公因式的存在性与倍式和)**,
 
 $$
 \left(f,g\right)=\frac{9x-15}{5}\cdot f\left(x\right)+\frac{-3x^{2}+6x}{5}\cdot g\left(x\right).
@@ -99,9 +97,11 @@ $$
 
 $\blacksquare$
 
-### 习题二
+---
 
-(习题 7.3-5) 证明: 在 $K\left[x\right]$ 中, 如果 $f\left(x\right),g\left(x\right)$ 不全为零, 并且
+## 7.3-5
+
+证明: 在 $K\left[x\right]$ 中, 如果 $f\left(x\right),g\left(x\right)$ 不全为零, 并且
 
 $$
 u\left(x\right)f\left(x\right)+v\left(x\right)g\left(x\right)=\left(f\left(x\right),g\left(x\right)\right),
@@ -109,7 +109,7 @@ $$
 
 则 $\left(u\left(x\right),v\left(x\right)\right)=1$.
 
-### 解答 习题二
+### 解答 7.3-5
 
 设 $d\left(x\right)=\left(f\left(x\right),g\left(x\right)\right)$.
 
@@ -131,15 +131,17 @@ $$
 
 因此 $\left(u\left(x\right),v\left(x\right)\right)=1$. $\blacksquare$
 
-### 习题三
+---
 
-(习题 7.3-7) 设 $f\left(x\right),g\left(x\right)\in K\left[x\right]$, 并且 $a,b,c,d\in K$, 使得 $ad-bc\ne0$. 证明:
+## 7.3-7
+
+设 $f\left(x\right),g\left(x\right)\in K\left[x\right]$, 并且 $a,b,c,d\in K$, 使得 $ad-bc\ne0$. 证明:
 
 $$
 \left(af+bg,cf+dg\right)=\left(f,g\right).
 $$
 
-### 解答 习题三
+### 解答 7.3-7
 
 设 $d_{1}=\left(af+bg,cf+dg\right)$, $d_{2}=\left(f,g\right)$.
 
@@ -165,18 +167,20 @@ $$
 
 首项系数都是 $1$, 故 $d_{1}=d_{2}$. $\blacksquare$
 
-### 习题四
+---
 
-(习题 7.3-9) 证明: $K\left[x\right]$ 中两个非零多项式 $f\left(x\right)$ 与 $g\left(x\right)$ 不互素的充分必要条件是, 存在两个非零多项式 $u\left(x\right),v\left(x\right)$, 使 $u\left(x\right)f\left(x\right)=v\left(x\right)g\left(x\right)$, $\deg u\left(x\right)< \deg g\left(x\right)$, $\deg v\left(x\right)< \deg f\left(x\right)$.
+## 7.3-9
 
-### 解答 习题四
+证明: $K\left[x\right]$ 中两个非零多项式 $f\left(x\right)$ 与 $g\left(x\right)$ 不互素的充分必要条件是, 存在两个非零多项式 $u\left(x\right),v\left(x\right)$, 使 $u\left(x\right)f\left(x\right)=v\left(x\right)g\left(x\right)$, $\deg u\left(x\right)< \deg g\left(x\right)$, $\deg v\left(x\right)< \deg f\left(x\right)$.
+
+### 解答 7.3-9
 
 **必要性**. 若 $f$ 与 $g$ 不互素, 设 $d\left(x\right)=\left(f,g\right)$, $\deg d> 0$.
 
 令
 
 $$
-u\left(x\right)=\frac{g\left(x\right)}{d\left(x\right)}, v\left(x\right)=\frac{f\left(x\right)}{d\left(x\right)}.
+u\left(x\right)=\frac{g\left(x\right)}{d\left(x\right)},\quad v\left(x\right)=\frac{f\left(x\right)}{d\left(x\right)}.
 $$
 
 则
@@ -207,11 +211,13 @@ $$
 
 因此 $f$ 与 $g$ 不互素. $\blacksquare$
 
-### 习题五
+---
 
-(习题 7.3-11) 设 $A\in M_{n}\left(K\right)$, $f\left(x\right),g\left(x\right)\in K\left[x\right]$. 证明: 如果 $d\left(x\right)$ 是 $f\left(x\right)$ 与 $g\left(x\right)$ 的一个最大公因式, 则 $d\left(A\right)$ 的核等于 $f\left(A\right)$ 的核与 $g\left(A\right)$ 的核的交.
+## 7.3-11
 
-### 解答 习题五
+设 $A\in M_{n}\left(K\right)$, $f\left(x\right),g\left(x\right)\in K\left[x\right]$. 证明: 如果 $d\left(x\right)$ 是 $f\left(x\right)$ 与 $g\left(x\right)$ 的一个最大公因式, 则 $d\left(A\right)$ 的核等于 $f\left(A\right)$ 的核与 $g\left(A\right)$ 的核的交.
+
+### 解答 7.3-11
 
 因为 $d$ 是 $f$ 与 $g$ 的最大公因式, 所以 $d\mid f$ 且 $d\mid g$.
 
@@ -267,9 +273,11 @@ $$
 
 $\blacksquare$
 
-### 习题六
+---
 
-(习题 7.3-12) 设 $A\in M_{n}\left(K\right)$,
+## 7.3-12
+
+设 $A\in M_{n}\left(K\right)$,
 
 $$
 f\left(x\right),f_{1}\left(x\right),f_{2}\left(x\right)\in K\left[x\right],
@@ -277,7 +285,7 @@ $$
 
 记 $f\left(x\right)=f_{1}\left(x\right)f_{2}\left(x\right)$. 证明: 如果 $\left(f_{1}\left(x\right),f_{2}\left(x\right)\right)=1$, 则 $f\left(A\right)X=0$ 的任一个解可以唯一地表示成 $f_{1}\left(A\right)X=0$ 的一个解与 $f_{2}\left(A\right)X=0$ 的一个解的和.
 
-### 解答 习题六
+### 解答 7.3-12
 
 **存在性**.
 
@@ -288,7 +296,7 @@ $$
 令
 
 $$
-X_{1}=v\left(A\right)f_{2}\left(A\right)X, X_{2}=u\left(A\right)f_{1}\left(A\right)X.
+X_{1}=v\left(A\right)f_{2}\left(A\right)X,\quad X_{2}=u\left(A\right)f_{1}\left(A\right)X.
 $$
 
 则

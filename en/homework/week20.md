@@ -1,66 +1,82 @@
-# Assignment 20
+# week20
 
-> **Theorem 1** (Rank of matrix product)<br>Let $A=\left(a_{ij}\right)_{s\times n}$ and $B=\left(b_{ij}\right)_{n\times m}$. Then:
-> 
-> $$
-> \text{rank}\left(AB\right)\le\min\left\{\text{rank}\left(A\right),\text{rank}\left(B\right)\right\}
-> $$
+> **Basic Knowledge: Formula for the Vandermonde Determinant**<br>The $3\times 3$ Vandermonde determinant in $x_{1},x_{2},x_{3}$
 
-> **Theorem 3** (Determinant of product)<br>Let $A,B$ both be $n$-th order matrices. Then $\left|AB\right|=\left|A\right|\left|B\right|$.
+$$
+\left|\begin{array}{ccc}
+1 & 1 & 1\\
+x_{1} & x_{2} & x_{3}\\
+x_{1}^{2} & x_{2}^{2} & x_{3}^{2}
+\end{array}\right|=\left(x_{2}-x_{1}\right)\left(x_{3}-x_{1}\right)\left(x_{3}-x_{2}\right).
+$$
 
-### Problem 1
+> **Theorem 4.3.1 (Rank of a Matrix Product)**<br>Let $A=\left(a_{ij}\right)_{s\times n}$ and $B=\left(b_{ij}\right)_{n\times m}$. Then
 
-(Problem 4.3-2) A matrix is called row-(column-)full-rank if its row (column) vectors are linearly independent. Prove: if an $s\times n$ matrix $A$ has rank $r$, then there exist an $s\times r$ column-full-rank matrix $B$ and an $r\times n$ row-full-rank matrix $C$ such that $A=BC$.
+$$
+\text{rank}\left(AB\right)\le\min\left\{\text{rank}\left(A\right),\text{rank}\left(B\right)\right\}.
+$$
 
-### Solution to Problem 1
+> **Proposition 4.3.2 (Over $\mathbb{R}$, $A^{\top}Az=0$ Has the Same Solutions as $z=0$)**<br>Let $A$ be a matrix over the real number field. Then the homogeneous system $A^{\top}Az=0$ and $z=0$ have the same solutions.
 
-Following the approach of **Theorem 1** (Rank of matrix product), transform $A$ by elementary row operations into reduced row echelon form $J$.
+> **Theorem 4.3.3 (Determinant of a Product)**<br>Let $A,B$ both be $n\times n$ matrices. Then $\left|AB\right|=\left|A\right|\left|B\right|$.
+
+---
+
+## 4.3-2
+
+A matrix is called row (column) full-rank if its row (column) vector group is linearly independent. Prove: if an $s\times n$ matrix $A$ has rank $r$, then there exist an $s\times r$ column full-rank matrix $B$ and an $r\times n$ row full-rank matrix $C$ such that $A=BC$.
+
+### Solution 4.3-2
+
+Following the idea of **Theorem 4.3.1 (Rank of a Matrix Product)**, transform $A$ by elementary row operations into a reduced row-echelon matrix $J$.
 
 Since $\text{rank}\left(A\right)=r$, $J$ has $r$ nonzero rows.
 
-Let
+Set
 
 $$
-J=\left[\begin{array}{c}C\\0\end{array}\right]
+J=\left[\begin{array}{c}C\\0\end{array}\right],
 $$
 
-where $C$ is an $r\times n$ matrix, and the row vectors of $C$ are linearly independent (since the nonzero rows of $J$ are linearly independent).
+where $C$ is an $r\times n$ matrix whose row vector group is linearly independent (because the nonzero rows of $J$ are linearly independent).
 
-Thus $C$ is row-full-rank.
+Hence $C$ is row full-rank.
 
-Let $A=PJ$, where $P$ is an $s\times s$ invertible matrix.
+Write $A=PJ$, where $P$ is an $s\times s$ invertible matrix.
 
 Then $A=P\left[\begin{array}{c}C\\0\end{array}\right]$.
 
-Partition $P$ by columns: $P=\left(P_{1},P_{2}\right)$, where $P_{1}$ is an $s\times r$ matrix.
+Block $P$ by columns: $P=\left(P_{1},P_{2}\right)$, where $P_{1}$ is an $s\times r$ matrix.
 
 Then
 
 $$
-A=\left(P_{1},P_{2}\right)\left[\begin{array}{c}C\\0\end{array}\right]=P_{1}C
+A=\left(P_{1},P_{2}\right)\left[\begin{array}{c}C\\0\end{array}\right]=P_{1}C.
 $$
 
-Let $B=P_{1}$.
+Set $B=P_{1}$.
 
-Since $P$ is invertible, the column vectors of $P$ are linearly independent; hence the column vectors of $P_{1}$ are also linearly independent.
+Since $P$ is invertible, its column group is linearly independent, and hence the column group of $P_{1}$ is also linearly independent.
 
-Thus $B$ is column-full-rank.
+Thus $B$ is column full-rank.
 
-Therefore $A=BC$, where $B$ is an $s\times r$ column-full-rank matrix and $C$ is an $r\times n$ row-full-rank matrix. $\blacksquare$
+Therefore $A=BC$, where $B$ is an $s\times r$ column full-rank matrix and $C$ is an $r\times n$ row full-rank matrix. $\blacksquare$
 
-### Problem 2
+---
 
-(Problem 4.3-6) Prove: if $A$ is an $n$-th order matrix over $K$, $n$ is odd, and $AA^{\top}=I$, $\left|A\right|=1$, then $\left|I-A\right|=0$.
+## 4.3-6
 
-### Solution to Problem 2
+Prove: if $A$ is an $n\times n$ matrix over a number field $K$, $n$ is odd, and $AA^{\top}=I$ with $\left|A\right|=1$, then $\left|I-A\right|=0$.
 
-By **Theorem 3** (Determinant of product), $\left|AB\right|=\left|A\right|\left|B\right|$. We prove $\left|I-A\right|=0$.
+### Solution 4.3-6
+
+By **Theorem 4.3.3 (Determinant of a Product)**, $\left|AB\right|=\left|A\right|\left|B\right|$. We prove $\left|I-A\right|=0$.
 
 $$
 \left|I-A\right|=\left|\left(I-A\right)^{\top}\right|=\left|I-A^{\top}\right|.
 $$
 
-Since $AA^{\top}=I$, $A^{\top}=A^{-1}$.
+Since $AA^{\top}=I$, we have $A^{\top}=A^{-1}$.
 
 Therefore
 
@@ -84,11 +100,13 @@ $$
 \left|I-A\right|=1\times\left(-1\right)\times\left|I-A\right|=-\left|I-A\right|.
 $$
 
-Hence $2\left|I-A\right|=0$, i.e., $\left|I-A\right|=0$. $\blacksquare$
+Hence $2\left|I-A\right|=0$, i.e. $\left|I-A\right|=0$. $\blacksquare$
 
-### Problem 3
+---
 
-(Problem 4.3-7) Let $s_{k}=x_{1}^{k}+x_{2}^{k}+x_{3}^{k}$, $k=0,1,2,\cdots$; let
+## 4.3-7
+
+Let $s_{k}=x_{1}^{k}+x_{2}^{k}+x_{3}^{k}$ for $k=0,1,2,\cdots$; and let
 
 $$
 A=\left[\begin{array}{ccc}
@@ -104,9 +122,9 @@ $$
 \left|A\right|=\left(x_{1}-x_{2}\right)^{2}\left(x_{1}-x_{3}\right)^{2}\left(x_{2}-x_{3}\right)^{2}.
 $$
 
-### Solution to Problem 3
+### Solution 4.3-7
 
-By **Theorem 3** (Determinant of product), $\left|AB\right|=\left|A\right|\left|B\right|$. Let
+By **Theorem 4.3.3 (Determinant of a Product)**, $\left|AB\right|=\left|A\right|\left|B\right|$. Set
 
 $$
 B=\left[\begin{array}{ccc}
@@ -132,15 +150,13 @@ s_{2} & s_{3} & s_{4}
 \end{array}\right]=A.
 $$
 
-Therefore
-
-By **Theorem 3** (Determinant of product),
+By **Theorem 4.3.3 (Determinant of a Product)**,
 
 $$
 \left|A\right|=\left|BB^{\top}\right|=\left|B\right|\left|B^{\top}\right|=\left|B\right|^{2}.
 $$
 
-$B$ is a Vandermonde matrix,
+By **Basic Knowledge: Formula for the Vandermonde Determinant**, $B$ is a Vandermonde matrix,
 
 $$
 \left|B\right|=\left(x_{2}-x_{1}\right)\left(x_{3}-x_{1}\right)\left(x_{3}-x_{2}\right).
@@ -154,17 +170,19 @@ $$
 
 $\blacksquare$
 
-### Problem 4
+---
 
-(Problem 4.3-12) Prove: for any $s\times n$ matrix $A$ over the real field,
+## 4.3-12
+
+Prove: for any $s\times n$ matrix $A$ over the real number field,
 
 $$
 \text{rank}\left(A^{\top}AA^{\top}\right)=\text{rank}\left(A\right).
 $$
 
-### Solution to Problem 4
+### Solution 4.3-12
 
-By **Theorem 1** (Rank of matrix product),
+By **Theorem 4.3.1 (Rank of a Matrix Product)**,
 
 $$
 \text{rank}\left(AB\right)\le\min\left\{\text{rank}\left(A\right),\text{rank}\left(B\right)\right\}.
@@ -172,7 +190,7 @@ $$
 
 Consider the homogeneous system $\left(A^{\top}AA^{\top}\right)y=0$, where $y$ is an $s$-dimensional column vector.
 
-Let $y$ be a solution of $\left(A^{\top}AA^{\top}\right)y=0$. Then
+Suppose $y$ solves $\left(A^{\top}AA^{\top}\right)y=0$; then
 
 $$
 A^{\top}A\left(A^{\top}y\right)=0.
@@ -180,9 +198,9 @@ $$
 
 Set $z=A^{\top}y$; then $A^{\top}Az=0$.
 
-By Proposition $2$, over the real field, $A^{\top}Az=0$ and $z=0$ have the same solutions.
+By **Proposition 4.3.2 (Over $\mathbb{R}$, $A^{\top}Az=0$ Has the Same Solutions as $z=0$)**, over the real number field $A^{\top}Az=0$ and $z=0$ have the same solutions.
 
-Hence $z=0$, i.e., $A^{\top}y=0$.
+Hence $z=0$, i.e. $A^{\top}y=0$.
 
 Conversely, if $A^{\top}y=0$, then
 
@@ -190,7 +208,7 @@ $$
 A^{\top}AA^{\top}y=A^{\top}A\left(A^{\top}y\right)=A^{\top}A\times0=0.
 $$
 
-Therefore $\left(A^{\top}AA^{\top}\right)y=0$ and $A^{\top}y=0$ have the same solutions.
+Thus $\left(A^{\top}AA^{\top}\right)y=0$ and $A^{\top}y=0$ have the same solutions.
 
 Hence their solution spaces have the same dimension:
 

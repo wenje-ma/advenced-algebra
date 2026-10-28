@@ -1,28 +1,30 @@
-# Assignment 39
+# week39
 
-> **Theorem 3** (Unique Factorization Theorem for Real Polynomials)<br>Every real polynomial of positive degree can be uniquely factored over the real number field as a product of linear factors and quadratic factors with negative discriminant.
+> **Property 7.7.1 (Conjugate Pairs of Nonreal Roots)**<br>The nonreal roots of a real-coefficient polynomial occur in conjugate pairs with the same multiplicity.
 
-> **Property** (Complex Roots Occur in Conjugate Pairs)<br>The non-real roots of a real polynomial occur in conjugate pairs, and with the same multiplicities.
+> **Theorem 7.7.1 (Unique Factorization Theorem for Real Polynomials)**<br>Every real-coefficient polynomial of positive degree can be uniquely factored over $\mathbb{R}$ into a product of linear factors and quadratic factors with negative discriminant.
 
-### Problem 1
+---
 
-(Problem 7.7-4) Prove: if two real matrices $A$ and $B$ of order $n$ are not similar, then they are still not similar when regarded as complex matrices.
+## 7.7-4
 
-### Solution to Problem 1
+Prove: if two $n\times n$ real matrices $A$ and $B$ are not similar over $\mathbb{R}$, then they are still not similar when viewed as complex matrices.
 
-By **Property** (Complex Roots Occur in Conjugate Pairs), the non-real roots of a real polynomial occur in conjugate pairs with the same multiplicities. Use proof by contradiction.
+### Solution 7.7-4
 
-Suppose, for contradiction, that $A$ and $B$ are similar as complex matrices, i.e. there exists an invertible complex matrix $P$ such that
+By **Property 7.7.1 (Conjugate Pairs of Nonreal Roots)**, nonreal roots of a real polynomial come in conjugate pairs. Use proof by contradiction.
+
+Assume $A$ and $B$ are similar over $\mathbb{C}$, i.e. there exists an invertible complex matrix $P$ such that
 
 $$
 B=P^{-1}AP.
 $$
 
-We need to prove that $A$ and $B$ are also similar as real matrices.
+We show that $A$ and $B$ are also similar over $\mathbb{R}$.
 
 Write $P=P_{1}+iP_{2}$, where $P_{1},P_{2}$ are real matrices.
 
-From $B=P^{-1}AP$ we get
+From $B=P^{-1}AP$,
 
 $$
 BP=PA.
@@ -34,7 +36,7 @@ $$
 B\left(P_{1}+iP_{2}\right)=\left(P_{1}+iP_{2}\right)A.
 $$
 
-Compare the real and imaginary parts:
+Compare real and imaginary parts:
 
 $$
 BP_{1}=P_{1}A,
@@ -44,19 +46,19 @@ $$
 BP_{2}=P_{2}A.
 $$
 
-Therefore for any real number $t$,
+Therefore, for every real number $t$,
 
 $$
 B\left(P_{1}+tP_{2}\right)=\left(P_{1}+tP_{2}\right)A.
 $$
 
-Consider the polynomial $\det\left(P_{1}+xP_{2}\right)$; this is a real polynomial in $x$.
+Consider the polynomial $\det\left(P_{1}+xP_{2}\right)$ in $x$ with real coefficients.
 
 Since $P=P_{1}+iP_{2}$ is invertible, $\det\left(P\right)\ne0$, i.e. $\det\left(P_{1}+iP_{2}\right)\ne0$.
 
-Therefore $\det\left(P_{1}+xP_{2}\right)$ is not the zero polynomial, and it has only finitely many real roots.
+Hence $\det\left(P_{1}+xP_{2}\right)$ is not the zero polynomial and has only finitely many real roots.
 
-Hence there exists a real number $t$ such that
+Therefore there exists a real number $t$ such that
 
 $$
 \det\left(P_{1}+tP_{2}\right)\ne0.
@@ -64,7 +66,7 @@ $$
 
 That is, $P_{1}+tP_{2}$ is invertible.
 
-Let $Q=P_{1}+tP_{2}$; this is an invertible real matrix.
+Set $Q=P_{1}+tP_{2}$, an invertible real matrix.
 
 Then
 
@@ -78,8 +80,8 @@ $$
 B=Q^{-1}AQ.
 $$
 
-Therefore $A$ and $B$ are also similar as real matrices.
+Hence $A$ and $B$ are similar as real matrices.
 
-This contradicts the hypothesis.
+This contradicts the assumption.
 
-Therefore if $A$ and $B$ are not similar as real matrices, they are also not similar as complex matrices. $\blacksquare$
+Therefore, if $A$ and $B$ are not similar as real matrices, they are not similar as complex matrices either. $\blacksquare$

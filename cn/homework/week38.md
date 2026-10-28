@@ -1,24 +1,26 @@
-# 作业 38
+# week38
 
-> **定义1** (多项式的根)<br>设 $K$ 是一个数域, 设 $R$ 是一个有单位元的交换环, 且 $R$ 可看成是 $K$ 的一个扩环. 对于 $K\left[x\right]$ 中一个多项式 $f\left(x\right)$, 如果 $R$ 中有一个元素 $c$ 使得 $f\left(c\right)=0$, 则称 $c$ 是 $f\left(x\right)$ 在 $R$ 中的一个根.
+> **定义 7.6.1 (多项式的根)**<br>设 $K$ 是一个数域, 设 $R$ 是一个有单位元的交换环, 且 $R$ 可看成是 $K$ 的一个扩环. 对于 $K\left[x\right]$ 中一个多项式 $f\left(x\right)$, 如果 $R$ 中有一个元素 $c$ 使得 $f\left(c\right)=0$, 则称 $c$ 是 $f\left(x\right)$ 在 $R$ 中的一个根.
 
-> **定理1** (余数定理)<br>在 $K\left[x\right]$ 中, 用 $x-a$ 去除 $f\left(x\right)$ 所得的余式是 $f\left(a\right)$.
+> **定理 7.6.1 (余数定理)**<br>在 $K\left[x\right]$ 中, 用 $x-a$ 去除 $f\left(x\right)$ 所得的余式是 $f\left(a\right)$.
 
-> **推论2** (因式定理)<br>在 $K\left[x\right]$ 中, $x-a$ 整除 $f\left(x\right)$ 当且仅当 $f\left(a\right)=0$.
+> **推论 7.6.2 (因式定理)**<br>在 $K\left[x\right]$ 中, $x-a$ 整除 $f\left(x\right)$ 当且仅当 $f\left(a\right)=0$.
 
-### 习题一
+---
 
-(习题 7.6-1) 设
+## 7.6-1
+
+设
 
 $$
-f\left(x\right)=x^{5}+7x^{4}+19x^{3}+26x^{2}+20x+8\in Q\left[x\right],
+f\left(x\right)=x^{5}+7x^{4}+19x^{3}+26x^{2}+20x+8\in\mathbb{Q}\left[x\right],
 $$
 
 判断 $-2$ 是不是多项式 $f\left(x\right)$ 的根, 如果是的话, 它是几重根?
 
-### 解答 习题一
+### 解答 7.6-1
 
-由**推论2** (因式定理), 在 $K\left[x\right]$ 中, $x-a$ 整除 $f\left(x\right)$ 当且仅当 $f\left(a\right)=0$. 计算 $f\left(-2\right)$:
+由**推论 7.6.2 (因式定理)**, 在 $K\left[x\right]$ 中, $x-a$ 整除 $f\left(x\right)$ 当且仅当 $f\left(a\right)=0$. 计算 $f\left(-2\right)$:
 
 $$
 f\left(-2\right)
@@ -83,17 +85,19 @@ $$
 
 因此 $-2$ 是 $f\left(x\right)$ 的 $3$ 重根. $\blacksquare$
 
-### 习题二
+---
 
-(习题 7.6-4) 设
+## 7.6-4
+
+设
 
 $$
-f\left(x\right)=x^{4}-5x^{3}+ax^{2}+bx+9\in Q\left[x\right],
+f\left(x\right)=x^{4}-5x^{3}+ax^{2}+bx+9\in\mathbb{Q}\left[x\right],
 $$
 
 如果 $3$ 是 $f\left(x\right)$ 的二重根, 求 $a,b$.
 
-### 解答 习题二
+### 解答 7.6-4
 
 如果 $3$ 是 $f\left(x\right)$ 的二重根, 则 $f\left(3\right)=0$ 且 $f'\left(3\right)=0$.
 
@@ -143,18 +147,20 @@ $$
 
 因此 $a=4$, $b=3$. $\blacksquare$
 
-### 习题三
+---
 
-(习题 7.6-8) 求复系数多项式 $x^{n}-1$ 的标准分解式.
+## 7.6-8
 
-### 解答 习题三
+求复系数多项式 $x^{n}-1$ 的标准分解式.
+
+### 解答 7.6-8
 
 $x^{n}-1=0$ 的根是 $x^{n}=1$.
 
 $1$ 的 $n$ 次方根为:
 
 $$
-x_{k}=e^{2\pi i k/n}=\cos\frac{2\pi k}{n}+i\sin\frac{2\pi k}{n}, k=0,1,\ldots,n-1.
+x_{k}=e^{2\pi i k/n}=\cos\frac{2\pi k}{n}+i\sin\frac{2\pi k}{n},\ k=0,1,\ldots,n-1.
 $$
 
 因此标准分解式为:

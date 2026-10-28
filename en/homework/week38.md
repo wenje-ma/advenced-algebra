@@ -1,35 +1,37 @@
-# Assignment 38
+# week38
 
-> **Definition 1** (Root of a Polynomial)<br>Let $K$ be a number field, let $R$ be a commutative ring with identity element, and suppose $R$ can be regarded as an extension ring of $K$. For a polynomial $f\left(x\right)$ in $K\left[x\right]$, if there exists an element $c$ in $R$ such that $f\left(c\right)=0$, then $c$ is called a root of $f\left(x\right)$ in $R$.
+> **Definition 7.6.1 (Root of a Polynomial)**<br>Let $K$ be a number field, and let $R$ be a commutative ring with identity that can be viewed as an extension ring of $K$. For a polynomial $f\left(x\right)$ in $K\left[x\right]$, if there is an element $c$ in $R$ such that $f\left(c\right)=0$, then $c$ is called a root of $f\left(x\right)$ in $R$.
 
-> **Theorem 1** (Remainder Theorem)<br>In $K\left[x\right]$, the remainder when $f\left(x\right)$ is divided by $x-a$ is $f\left(a\right)$.
+> **Theorem 7.6.1 (Remainder Theorem)**<br>In $K\left[x\right]$, the remainder when $f\left(x\right)$ is divided by $x-a$ is $f\left(a\right)$.
 
-> **Corollary 2** (Factor Theorem)<br>In $K\left[x\right]$, $x-a$ divides $f\left(x\right)$ if and only if $f\left(a\right)=0$.
+> **Corollary 7.6.2 (Factor Theorem)**<br>In $K\left[x\right]$, $x-a$ divides $f\left(x\right)$ if and only if $f\left(a\right)=0$.
 
-### Problem 1
+---
 
-(Problem 7.6-1) Let
+## 7.6-1
+
+Let
 
 $$
-f\left(x\right)=x^{5}+7x^{4}+19x^{3}+26x^{2}+20x+8\in Q\left[x\right],
+f\left(x\right)=x^{5}+7x^{4}+19x^{3}+26x^{2}+20x+8\in\mathbb{Q}\left[x\right].
 $$
 
-Determine whether $-2$ is a root of $f\left(x\right)$; if so, what is its multiplicity?
+Determine whether $-2$ is a root of $f\left(x\right)$, and if so, its multiplicity.
 
-### Solution to Problem 1
+### Solution 7.6-1
 
-By **Corollary 2** (Factor Theorem), in $K\left[x\right]$, $x-a$ divides $f\left(x\right)$ if and only if $f\left(a\right)=0$. Compute $f\left(-2\right)$:
+By **Corollary 7.6.2 (Factor Theorem)**, $x-a$ divides $f\left(x\right)$ if and only if $f\left(a\right)=0$. Compute $f\left(-2\right)$:
 
 $$
 f\left(-2\right)
 =\left(-2\right)^{5}+7\left(-2\right)^{4}+19\left(-2\right)^{3}+26\left(-2\right)^{2}+20\left(-2\right)+8=-32+112-152+104-40+8=0.
 $$
 
-Therefore $-2$ is a root of $f\left(x\right)$.
+Hence $-2$ is a root of $f\left(x\right)$.
 
-Use synthetic division to see how many times $x+2$ divides.
+Use synthetic division to see how many times $x+2$ divides $f$.
 
-**First time**:
+**First division**:
 
 $$
 \begin{array}{r|rrrrrr}
@@ -40,9 +42,9 @@ $$
 \end{array}
 $$
 
-The remainder is $0$, and the quotient is $x^{4}+5x^{3}+9x^{2}+8x+4$.
+Remainder $0$, quotient $x^{4}+5x^{3}+9x^{2}+8x+4$.
 
-**Second time**:
+**Second division**:
 
 $$
 \begin{array}{r|rrrrr}
@@ -53,9 +55,9 @@ $$
 \end{array}
 $$
 
-The remainder is $0$, and the quotient is $x^{3}+3x^{2}+3x+2$.
+Remainder $0$, quotient $x^{3}+3x^{2}+3x+2$.
 
-**Third time**:
+**Third division**:
 
 $$
 \begin{array}{r|rrrr}
@@ -66,9 +68,9 @@ $$
 \end{array}
 $$
 
-The remainder is $0$, and the quotient is $x^{2}+x+1$.
+Remainder $0$, quotient $x^{2}+x+1$.
 
-**Fourth time**:
+**Fourth division**:
 
 $$
 \begin{array}{r|rrr}
@@ -79,21 +81,23 @@ $$
 \end{array}
 $$
 
-The remainder is $3\ne0$.
+Remainder $3\ne0$.
 
-Therefore $-2$ is a root of $f\left(x\right)$ of multiplicity $3$. $\blacksquare$
+Hence $-2$ is a triple root of $f\left(x\right)$. $\blacksquare$
 
-### Problem 2
+---
 
-(Problem 7.6-4) Let
+## 7.6-4
+
+Let
 
 $$
-f\left(x\right)=x^{4}-5x^{3}+ax^{2}+bx+9\in Q\left[x\right],
+f\left(x\right)=x^{4}-5x^{3}+ax^{2}+bx+9\in\mathbb{Q}\left[x\right].
 $$
 
 If $3$ is a double root of $f\left(x\right)$, find $a,b$.
 
-### Solution to Problem 2
+### Solution 7.6-4
 
 If $3$ is a double root of $f\left(x\right)$, then $f\left(3\right)=0$ and $f'\left(3\right)=0$.
 
@@ -129,7 +133,7 @@ $$
 6a+b=27. \tag{2}
 $$
 
-$\left(2\right)-\left(1\right)$ gives:
+Subtract $\left(1\right)$ from $\left(2\right)$:
 
 $$
 3a=12\Rightarrow a=4.
@@ -141,20 +145,22 @@ $$
 3\cdot4+b=15\Rightarrow b=3.
 $$
 
-Therefore $a=4$, $b=3$. $\blacksquare$
+Hence $a=4$, $b=3$. $\blacksquare$
 
-### Problem 3
+---
 
-(Problem 7.6-8) Find the standard factorization of the complex polynomial $x^{n}-1$.
+## 7.6-8
 
-### Solution to Problem 3
+Find the standard factorization of the complex-coefficient polynomial $x^{n}-1$.
+
+### Solution 7.6-8
 
 The roots of $x^{n}-1=0$ satisfy $x^{n}=1$.
 
-The $n$-th roots of $1$ are:
+The $n$-th roots of unity are:
 
 $$
-x_{k}=e^{2\pi i k/n}=\cos\frac{2\pi k}{n}+i\sin\frac{2\pi k}{n}, k=0,1,\ldots,n-1.
+x_{k}=e^{2\pi i k/n}=\cos\frac{2\pi k}{n}+i\sin\frac{2\pi k}{n},\ k=0,1,\ldots,n-1.
 $$
 
 Therefore the standard factorization is:

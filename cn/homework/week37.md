@@ -1,20 +1,22 @@
-# 作业 37
+# week37
 
-> **定义1** (重因式)<br>在 $K\left[x\right]$ 中, 不可约多项式 $p\left(x\right)$ 称为多项式 $f\left(x\right)$ 的 $k$ 重因式, 如果 $p^{k}\left(x\right)\mid f\left(x\right)$, 而 $p^{k+1}\left(x\right)\nmid f\left(x\right)$.
+> **定义 7.5.1 (重因式)**<br>在 $K\left[x\right]$ 中, 不可约多项式 $p\left(x\right)$ 称为多项式 $f\left(x\right)$ 的 $k$ 重因式, 如果 $p^{k}\left(x\right)\mid f\left(x\right)$, 而 $p^{k+1}\left(x\right)\nmid f\left(x\right)$.
 
-> **定理3** (无重因式的判别)<br>设 $K$ 是数域, $K\left[x\right]$ 中次数大于零的多项式 $f\left(x\right)$ 没有重因式的充分必要条件是 $f\left(x\right)$ 与它的导数 $f'\left(x\right)$ 互素.
+> **定理 7.5.1 (无重因式的判别)**<br>设 $K$ 是数域, $K\left[x\right]$ 中次数大于零的多项式 $f\left(x\right)$ 没有重因式的充分必要条件是 $f\left(x\right)$ 与它的导数 $f'\left(x\right)$ 互素.
 
-### 习题一
+---
 
-(习题 7.5-2) $a,b$ 应该满足什么条件, 下述实系数多项式才能有重因式:
+## 7.5-2
+
+$a,b$ 应该满足什么条件, 下述实系数多项式才能有重因式:
 
 $$
 f\left(x\right)=x^{4}+2ax^{2}+b.
 $$
 
-### 解答 习题一
+### 解答 7.5-2
 
-由**定理3** (无重因式的判别), $f\left(x\right)$ 没有重因式的充分必要条件是 $f\left(x\right)$ 与它的导数 $f'\left(x\right)$ 互素. 求导数:
+由**定理 7.5.1 (无重因式的判别)**, $f\left(x\right)$ 没有重因式的充分必要条件是 $f\left(x\right)$ 与它的导数 $f'\left(x\right)$ 互素. 求导数:
 
 $$
 f'\left(x\right)=4x^{3}+4ax=4x\left(x^{2}+a\right).
@@ -44,23 +46,25 @@ $$
 
 此时 $f=\left(x^{2}+a\right)^{2}$, $x^{2}+a$ 是 $f$ 的 $2$ 重因式.
 
-综合两种情况, 由**定理3** (无重因式的判别), $f$ 有重因式的充分必要条件是
+综合两种情况, 由**定理 7.5.1 (无重因式的判别)**, $f$ 有重因式的充分必要条件是
 
 $$
-b=0\text{或} b=a^{2}.
+b=0\text{ 或 } b=a^{2}.
 $$
 
 $\blacksquare$
 
-### 习题二
+---
 
-(习题 7.5-6) 在 $Q\left[x\right]$ 中求一个没有重因式的多项式 $g\left(x\right)$, 使它与 $f\left(x\right)$ 含有完全相同的不可约因式 (不计重数); 然后求 $f\left(x\right)$ 的标准分解式:
+## 7.5-6
+
+在 $\mathbb{Q}\left[x\right]$ 中求一个没有重因式的多项式 $g\left(x\right)$, 使它与 $f\left(x\right)$ 含有完全相同的不可约因式 (不计重数); 然后求 $f\left(x\right)$ 的标准分解式:
 
 $$
 f\left(x\right)=x^{5}-3x^{4}+2x^{3}+2x^{2}-3x+1.
 $$
 
-### 解答 习题二
+### 解答 7.5-6
 
 求导数:
 
@@ -197,7 +201,7 @@ $$
 验证其余系数:
 
 $$
--4a+6=-4+6=2,;6a-4=6-4=2,-4a+1=-4+1=-3,;a=1.
+-4a+6=-4+6=2,\quad 6a-4=6-4=2,\quad -4a+1=-4+1=-3,\quad a=1.
 $$
 
 全部符合.

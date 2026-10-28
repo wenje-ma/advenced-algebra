@@ -1,6 +1,6 @@
-# 作业 41
+# week41
 
-> **定义1** ($n$ 元多项式)<br>设 $K$ 是一个数域, 用不属于 $K$ 的 $n$ 个符号 $x_{1},x_{2},\ldots,x_{n}$ 作表达式
+> **定义 7.9.1 ($n$ 元多项式)**<br>设 $K$ 是一个数域, 用不属于 $K$ 的 $n$ 个符号 $x_{1},x_{2},\ldots,x_{n}$ 作表达式
 
 $$
 \sum_{i_{1},i_{2},\ldots,i_{n}}a_{i_{1}i_{2}\ldots i_{n}}x_{1}^{i_{1}}x_{2}^{i_{2}}\cdots x_{n}^{i_{n}},
@@ -8,15 +8,17 @@ $$
 
 其中 $a_{i_{1}i_{2}\ldots i_{n}}\in K$, $i_{1},i_{2},\ldots,i_{n}$ 是非负整数. 只有有限多个单项式的系数不为 $0$. 这种表达式称为数域 $K$ 上的 $n$ 元多项式.
 
-> **定理1** (首项定理)<br>在 $K\left[x_{1},x_{2},\ldots,x_{n}\right]$ 中两个非零多项式的乘积的首项等于它们的首项的乘积. 从而两个非零多项式的乘积仍是非零多项式, 即 $K\left[x_{1},x_{2},\ldots,x_{n}\right]$ 是无零因子环.
+> **定理 7.9.1 (首项定理)**<br>在 $K\left[x_{1},x_{2},\ldots,x_{n}\right]$ 中两个非零多项式的乘积的首项等于它们的首项的乘积. 从而两个非零多项式的乘积仍是非零多项式, 即 $K\left[x_{1},x_{2},\ldots,x_{n}\right]$ 是无零因子环.
 
-### 习题一
+---
 
-(习题 7.9-3) 设 $f,g\in K\left[x_{1},\ldots,x_{n}\right]$, 且 $g\ne0$. 证明: 如果对于使 $g\left(c_{1},\ldots,c_{n}\right)\ne0$ 的任意一组元素 $c_{1},\ldots,c_{n}\in K$, 都有 $f\left(c_{1},\ldots,c_{n}\right)=0$, 则 $f\left(x_{1},\ldots,x_{n}\right)=0$.
+## 7.9-3
 
-### 解答 习题一
+设 $f,g\in K\left[x_{1},\ldots,x_{n}\right]$, 且 $g\ne0$. 证明: 如果对于使 $g\left(c_{1},\ldots,c_{n}\right)\ne0$ 的任意一组元素 $c_{1},\ldots,c_{n}\in K$, 都有 $f\left(c_{1},\ldots,c_{n}\right)=0$, 则 $f\left(x_{1},\ldots,x_{n}\right)=0$.
 
-由**定理1** (首项定理), 在 $K\left[x_{1},x_{2},\ldots,x_{n}\right]$ 中两个非零多项式的乘积仍是非零多项式. 用数学归纳法.
+### 解答 7.9-3
+
+由**定理 7.9.1 (首项定理)**, 在 $K\left[x_{1},x_{2},\ldots,x_{n}\right]$ 中两个非零多项式的乘积仍是非零多项式. 用数学归纳法.
 
 **当 $n=1$ 时**.
 
@@ -33,7 +35,7 @@ $f\left(x\right)$ 是 $K\left[x\right]$ 中的多项式. 如果对于无穷多�
 把 $f$ 写成关于 $x_{n}$ 的多项式:
 
 $$
-f\left(x_{1},\ldots,x_{n}\right)=u_{0}\left(x_{1},\ldots,x_{n-1}\right)+u_{1}\left(x_{1},\ldots,x_{n-1}\right)x_{n}+\ldots+u_{s}\left(x_{1},\ldots,x_{n-1}\right)x_{n}^{s}.
+f\left(x_{1},\ldots,x_{n}\right)=u_{0}\left(x_{1},\ldots,x_{n-1}\right)+u_{1}\left(x_{1},\ldots,x_{n-1}\right)x_{n}+\cdots+u_{s}\left(x_{1},\ldots,x_{n-1}\right)x_{n}^{s}.
 $$
 
 其中
@@ -56,7 +58,7 @@ $$
 对于这样的 $c_{1},\ldots,c_{n-1}$, 考虑关于 $x_{n}$ 的一元多项式:
 
 $$
-f\left(c_{1},\ldots,c_{n-1},x_{n}\right)=u_{0}\left(c_{1},\ldots,c_{n-1}\right)+\ldots+u_{s}\left(c_{1},\ldots,c_{n-1}\right)x_{n}^{s}.
+f\left(c_{1},\ldots,c_{n-1},x_{n}\right)=u_{0}\left(c_{1},\ldots,c_{n-1}\right)+\cdots+u_{s}\left(c_{1},\ldots,c_{n-1}\right)x_{n}^{s}.
 $$
 
 如果 $f$ 不是零多项式, 则这个一元多项式也不是零多项式.
@@ -77,11 +79,13 @@ $$
 
 因此 $f\left(x_{1},\ldots,x_{n}\right)=0$. $\blacksquare$
 
-### 习题二
+---
 
-(习题 7.9-4(2)) $f\in K\left[x_{1},\ldots,x_{n}\right]$ 称为不可约的, 如果 $f$ 的因式只有零次多项式以及 $f$ 的相伴元. 否则称为可约的. 证明: 在 $K\left[x,y\right]$ 中, 多项式 $x-y$ 是不可约的.
+## 7.9-4(2)
 
-### 解答 习题二
+$f\in K\left[x_{1},\ldots,x_{n}\right]$ 称为不可约的, 如果 $f$ 的因式只有零次多项式以及 $f$ 的相伴元. 否则称为可约的. 证明: 在 $K\left[x,y\right]$ 中, 多项式 $x-y$ 是不可约的.
+
+### 解答 7.9-4(2)
 
 假设 $x-y$ 可约, 即存在两个次数大于零的多项式 $g\left(x,y\right),h\left(x,y\right)$ 使得:
 

@@ -1,16 +1,31 @@
-# Assignment 15
+# week15
 
-> **Theorem 1** (Solvability criterion for linear systems)<br>A linear system
-> $$
-> x_{1}\alpha_{1}+x_{2}\alpha_{2}+\cdots+x_{n}\alpha_{n}=\beta
-> $$
-> is solvable if and only if its coefficient matrix and augmented matrix have the same rank.
+> **Basic Knowledge: Formula for the Vandermonde Determinant**<br>The $s\times s$ Vandermonde determinant in $a_{1},a_{2},\cdots,a_{s}$
 
-> **Theorem 2** (Criterion for number of solutions)<br>If a linear system is solvable, then: if the rank of the coefficient matrix equals the number of unknowns $n$, the system has a unique solution; if the rank is less than $n$, the system has infinitely many solutions.
+$$
+\left|\begin{array}{cccc}
+1 & 1 & \cdots & 1\\
+a_{1} & a_{2} & \cdots & a_{s}\\
+\vdots & \vdots & & \vdots\\
+a_{1}^{s-1} & a_{2}^{s-1} & \cdots & a_{s}^{s-1}
+\end{array}\right|=\prod_{1\le i< j\le s}\left(a_{j}-a_{i}\right).
+$$
 
-### Problem 1
+> **Theorem 3.6.1 (Solvability Criterion for a Linear System)**<br>The linear system
 
-(Problem 3.6-2) Determine whether the following linear system is solvable and how many solutions it has.
+$$
+x_{1}\alpha_{1}+x_{2}\alpha_{2}+\cdots+x_{n}\alpha_{n}=\beta
+$$
+
+is solvable if and only if its coefficient matrix and its augmented matrix have the same rank.
+
+> **Theorem 3.6.2 (Criterion for the Number of Solutions)**<br>Suppose a linear system is solvable. If the rank of the coefficient matrix equals the number $n$ of unknowns, the system has a unique solution; if the rank is less than $n$, the system has infinitely many solutions.
+
+---
+
+## 3.6-2
+
+Determine whether the following linear system is solvable and how many solutions it has.
 
 $$
 \begin{cases}
@@ -21,13 +36,13 @@ x_{1}+a^{s}x_{2}+a^{2s}x_{3}+\cdots+a^{s\left(n-1\right)}x_{n}=b_{s},
 \end{cases}
 $$
 
-where $s< n$, $a\ne0$, and when $0< r< s$, $a^{r}\ne1$.
+where $s< n$, $a\ne0$, and $a^{r}\ne1$ whenever $0< r< s$.
 
-### Solution to Problem 1
+### Solution 3.6-2
 
-By **Theorem 1** (Solvability criterion) and **Theorem 2** (Criterion for number of solutions), we need to compare the ranks of the coefficient matrix and the augmented matrix.
+By **Theorem 3.6.1 (Solvability Criterion for a Linear System)** and **Theorem 3.6.2 (Criterion for the Number of Solutions)**, we compare the ranks of the coefficient matrix and the augmented matrix.
 
-The coefficient matrix $A$ is an $s\times n$ matrix. Take the $s$-th order minor formed by the first $s$ columns of $A$:
+The coefficient matrix $A$ is an $s\times n$ matrix. Take the $s\times s$ minor formed by the first $s$ columns of $A$:
 
 $$
 D=\left|\begin{array}{cccc}
@@ -38,33 +53,35 @@ D=\left|\begin{array}{cccc}
 \end{array}\right|.
 $$
 
-This is a Vandermonde determinant,
+By **Basic Knowledge: Formula for the Vandermonde Determinant**, this is a Vandermonde determinant,
 
 $$
 D=\prod_{1\le i< j\le s}\left(a^{j}-a^{i}\right).
 $$
 
-Since $a\ne 0$ and when $0< r< s$, $a^{r}\ne 1$, the values $a,a^{2},\cdots,a^{s}$ are all distinct, so $D\ne 0$.
+Because $a\ne 0$ and $a^{r}\ne 1$ whenever $0< r< s$, the numbers $a,a^{2},\cdots,a^{s}$ are pairwise distinct, so $D\ne 0$.
 
-Therefore $\text{rank}\left(A\right)\ge s$.
+Hence $\text{rank}\left(A\right)\ge s$.
 
 Also, $A$ has only $s$ rows, so $\text{rank}\left(A\right)\le s$.
 
-Hence $\text{rank}\left(A\right)=s$.
+Thus $\text{rank}\left(A\right)=s$.
 
-The augmented matrix $\overline{A}$ is $A$ with one additional column, so $\text{rank}\left(\overline{A}\right)\ge\text{rank}\left(A\right)=s$.
+The augmented matrix $\overline{A}$ is $A$ with one column added, so $\text{rank}\left(\overline{A}\right)\ge\text{rank}\left(A\right)=s$.
 
 Also, $\overline{A}$ has only $s$ rows, so $\text{rank}\left(\overline{A}\right)\le s$.
 
-Hence $\text{rank}\left(\overline{A}\right)=s=\text{rank}\left(A\right)$.
+Thus $\text{rank}\left(\overline{A}\right)=s=\text{rank}\left(A\right)$.
 
-Therefore the system is solvable.
+By **Theorem 3.6.1 (Solvability Criterion for a Linear System)**, the system is therefore solvable.
 
-Also, $\text{rank}\left(A\right)=s< n$ (number of unknowns), so the system has infinitely many solutions. $\blacksquare$
+Also, $\text{rank}\left(A\right)=s< n$ (the number of unknowns); by **Theorem 3.6.2 (Criterion for the Number of Solutions)**, the system therefore has infinitely many solutions. $\blacksquare$
 
-### Problem 2
+---
 
-(Problem 3.6-4) Given the linear system
+## 3.6-4
+
+Given the linear system
 
 $$
 \begin{cases}
@@ -89,24 +106,24 @@ $$
 
 Prove that the above linear system is solvable.
 
-### Solution to Problem 2
+### Solution 3.6-4
 
-By **Theorem 1** (Solvability criterion), to prove the system is solvable, we need to show that the coefficient matrix $A$ and the augmented matrix $\overline{A}$ have the same rank.
+By **Theorem 3.6.1 (Solvability Criterion for a Linear System)**, to prove the system is solvable is to prove that the coefficient matrix $A$ and the augmented matrix $\overline{A}$ have the same rank.
 
-Let the augmented matrix be $\overline{A}$, i.e., $\overline{A}=\left[A,b\right]$, where $b=\left(b_{1},b_{2},\cdots,b_{n}\right)^{\top}$.
+Let the augmented matrix be $\overline{A}$, i.e. $\overline{A}=\left[A,b\right]$, where $b=\left(b_{1},b_{2},\cdots,b_{n}\right)^{\top}$.
 
 Note that $\overline{A}$ is the first $n$ rows of $B$, so $\overline{A}$ is a submatrix of $B$.
 
-Therefore $\text{rank}\left(\overline{A}\right)\le\text{rank}\left(B\right)$.
+Hence $\text{rank}\left(\overline{A}\right)\le\text{rank}\left(B\right)$.
 
 Also, $A$ is a submatrix of $\overline{A}$, so $\text{rank}\left(A\right)\le\text{rank}\left(\overline{A}\right)$.
 
-By the hypothesis $\text{rank}\left(A\right)=\text{rank}\left(B\right)$, we have
+By hypothesis $\text{rank}\left(A\right)=\text{rank}\left(B\right)$, so
 
 $$
 \text{rank}\left(A\right)\le\text{rank}\left(\overline{A}\right)\le\text{rank}\left(B\right)=\text{rank}\left(A\right).
 $$
 
-Therefore $\text{rank}\left(\overline{A}\right)=\text{rank}\left(A\right)$.
+Thus $\text{rank}\left(\overline{A}\right)=\text{rank}\left(A\right)$.
 
-The system is solvable. $\blacksquare$
+By **Theorem 3.6.1 (Solvability Criterion for a Linear System)**, the system is solvable. $\blacksquare$

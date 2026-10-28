@@ -1,14 +1,18 @@
-﻿# Assignment 14
+# week14
 
-> **Definition 1** (Rank of a matrix)<br>The row rank and column rank of a matrix $A$ are collectively called the rank of $A$, denoted $\text{rank}\left(A\right)$.
+> **Basic Knowledge: Upper Bound on the Rank of a Union of Vector Groups**<br>If a vector group $A$ can be split into two subgroups $A_{1},A_{2}$, then $\text{rank}\left(A\right)\le\text{rank}\left(A_{1}\right)+\text{rank}\left(A_{2}\right)$.
 
-> **Theorem 4** (Row rank equals column rank)<br>The row rank of any matrix equals its column rank.
+> **Definition 3.5.1 (Rank of a Matrix)**<br>The row rank and column rank of a matrix $A$ are collectively called the rank of $A$, denoted $\text{rank}\left(A\right)$.
 
-> **Corollary 5** (Finding rank by elementary row operations)<br>Let the matrix $A$ be transformed into a row echelon matrix $J$ by elementary row operations. Then the rank of $A$ equals the number of nonzero rows of $J$. If the pivot columns of $J$ are the $j_{1},\cdots,j_{r}$-th columns, then the $j_{1},\cdots,j_{r}$-th columns of $A$ form a maximal linearly independent set of the column vectors of $A$.
+> **Theorem 3.5.4 (Row Rank Equals Column Rank)**<br>The row rank of any matrix equals its column rank.
 
-### Problem 1
+> **Corollary 3.5.5 (Computing Rank by Elementary Row Operations)**<br>If a matrix $A$ is transformed by elementary row operations into a row-echelon matrix $J$, then the rank of $A$ equals the number of nonzero rows of $J$. If the pivot columns of $J$ are columns $j_{1},\cdots,j_{r}$, then columns $j_{1},\cdots,j_{r}$ of $A$ form a maximal linearly independent subset of the column group of $A$.
 
-(Problem 3.5-2(1)) Find the rank of the following vector family and a maximal linearly independent subset:
+---
+
+## 3.5-2(1)
+
+Find the rank of the following vector group and a maximal linearly independent subset:
 
 $$
 \alpha_{1}=\begin{bmatrix}-1\\5\\3\\-2\end{bmatrix},
@@ -17,9 +21,9 @@ $$
 \alpha_{4}=\begin{bmatrix}0\\3\\4\\-5\end{bmatrix}.
 $$
 
-### Solution to Problem 1
+### Solution 3.5-2(1)
 
-By **Corollary 5** (Finding rank by elementary row operations), arrange the vectors as columns of a matrix and perform elementary row operations:
+By **Corollary 3.5.5 (Computing Rank by Elementary Row Operations)**, arrange the vectors as columns into a matrix and perform elementary row operations:
 
 $$
 \left[\begin{array}{rrrr}
@@ -28,7 +32,7 @@ $$
 3 & -2 & -1 & 4\\
 -2 & 9 & 4 & -5
 \end{array}\right]
-\xrightarrow{\text{行变换}}
+\xrightarrow{\text{row ops}}
 \left[\begin{array}{rrrr}
 1 & -4 & -2 & 0\\
 0 & 1 & 0 & -5\\
@@ -37,13 +41,15 @@ $$
 \end{array}\right].
 $$
 
-By **Corollary 5**, the row echelon matrix has $3$ nonzero rows, so the rank is $3$.
+By **Corollary 3.5.5 (Computing Rank by Elementary Row Operations)**, the echelon matrix has $3$ nonzero rows, so the rank is $3$.
 
-By **Corollary 5**, the pivots are in columns $1,2,3$, so $\alpha_{1},\alpha_{2},\alpha_{3}$ form a maximal linearly independent set. $\blacksquare$
+By **Corollary 3.5.5 (Computing Rank by Elementary Row Operations)**, the pivots are in columns $1,2,3$, so $\alpha_{1},\alpha_{2},\alpha_{3}$ are a maximal linearly independent subset. $\blacksquare$
 
-### Problem 2
+---
 
-(Problem 3.5-3) Find a basis of the column space and the dimension of the row space of the following matrix $A$:
+## 3.5-3
+
+Find a basis of the column space and the dimension of the row space of the following matrix $A$:
 
 $$
 A=\left[\begin{array}{rrrr}
@@ -54,9 +60,9 @@ A=\left[\begin{array}{rrrr}
 \end{array}\right].
 $$
 
-### Solution to Problem 2
+### Solution 3.5-3
 
-By **Corollary 5** (Finding rank by elementary row operations), perform elementary row operations:
+By **Corollary 3.5.5 (Computing Rank by Elementary Row Operations)**, perform elementary row operations:
 
 $$
 \left[\begin{array}{rrrr}
@@ -65,7 +71,7 @@ $$
 5 & 2 & 0 & 1\\
 1 & 4 & 1 & -11
 \end{array}\right]
-\xrightarrow{\text{行变换}}
+\xrightarrow{\text{row ops}}
 \left[\begin{array}{rrrr}
 1 & 3 & -2 & -7\\
 0 & 1 & 3 & -4\\
@@ -74,11 +80,11 @@ $$
 \end{array}\right].
 $$
 
-The row echelon matrix has $3$ nonzero rows. By **Corollary 5** (Finding rank by elementary row operations), $\text{rank}\left(A\right)=3$.
+The echelon matrix has $3$ nonzero rows; by **Corollary 3.5.5 (Computing Rank by Elementary Row Operations)**, $\text{rank}\left(A\right)=3$.
 
-By **Theorem 4** (Row rank equals column rank), the dimension of the row space equals the rank of the matrix, namely $3$.
+By **Theorem 3.5.4 (Row Rank Equals Column Rank)**, the dimension of the row space equals the rank of the matrix, namely $3$.
 
-By **Corollary 5**, the pivots are in columns $1,2,3$, so columns $1,2,3$ of the original matrix $A$ form a basis of the column space:
+By **Corollary 3.5.5 (Computing Rank by Elementary Row Operations)**, the pivots are in columns $1,2,3$, so columns $1,2,3$ of the original matrix $A$ form a basis of the column space:
 
 $$
 \alpha_{1}=\begin{bmatrix}1\\0\\5\\1\end{bmatrix},
@@ -88,9 +94,11 @@ $$
 
 $\blacksquare$
 
-### Problem 3
+---
 
-(Problem 3.5-4) For different values of $\lambda$, what is the rank of the following matrix?
+## 3.5-4
+
+For different values of $\lambda$, what are the ranks of the following matrix?
 
 $$
 \left[\begin{array}{rrrr}
@@ -100,15 +108,15 @@ $$
 \end{array}\right].
 $$
 
-### Solution to Problem 3
+### Solution 3.5-4
 
-By **Corollary 5** (Finding rank by elementary row operations), perform elementary row operations to find the rank:
+By **Corollary 3.5.5 (Computing Rank by Elementary Row Operations)**, perform elementary row operations to find the rank:
 
-Row $2$ $-$ Row $1$ $\times 2$: Row $2$ $=\left(0,-1-2\lambda,\lambda+2,1\right)$.
+Row $2$ $-$ row $1$ $\times 2$: row $2$ $=\left(0,-1-2\lambda,\lambda+2,1\right)$.
 
-Row $3$ $-$ Row $1$: Row $3$ $=\left(0,10-\lambda,-5,-1\right)$.
+Row $3$ $-$ row $1$: row $3$ $=\left(0,10-\lambda,-5,-1\right)$.
 
-The matrix becomes:
+The matrix becomes
 
 $$
 \left[\begin{array}{rrrr}
@@ -118,7 +126,7 @@ $$
 \end{array}\right].
 $$
 
-Row $2$ $+$ Row $3$: Row $2$
+Row $2$ $+$ row $3$: row $2$
 
 $$
 =\left(0,9-3\lambda,\lambda-3,0\right)=\left(0,3\left(3-\lambda\right),-\left(3-\lambda\right),0\right).
@@ -126,47 +134,49 @@ $$
 
 **When $\lambda=3$**:
 
-Row $2$ $=\left(0,0,0,0\right)$, Row $3$ $=\left(0,7,-5,-1\right)$.
+row $2$ $=\left(0,0,0,0\right)$, row $3$ $=\left(0,7,-5,-1\right)$.
 
-The row echelon matrix has $2$ nonzero rows, so the rank is $2$.
+The echelon matrix has $2$ nonzero rows, so the rank is $2$.
 
 **When $\lambda\ne3$**:
 
-Row $2$ is nonzero. Row $3$ $-$ Row $2$ $\times\frac{10-\lambda}{3\left(3-\lambda\right)}$; the $4$-th entry of Row $3$ remains $-1\ne0$, so Row $3$ is nonzero.
+row $2$ is nonzero. Row $3$ $-$ row $2$ $\times\frac{10-\lambda}{3\left(3-\lambda\right)}$: the $4$th column of row $3$ is still $-1\ne0$, so row $3$ is nonzero.
 
-The row echelon matrix has $3$ nonzero rows, so the rank is $3$.
+The echelon matrix has $3$ nonzero rows, so the rank is $3$.
 
-In summary: when $\lambda=3$, by **Corollary 5** (Finding rank by elementary row operations), the row echelon matrix has $2$ nonzero rows, so the rank is $2$; when $\lambda\ne3$, the row echelon matrix has $3$ nonzero rows, so the rank is $3$. $\blacksquare$
+In summary: when $\lambda=3$, by **Corollary 3.5.5 (Computing Rank by Elementary Row Operations)**, the echelon matrix has $2$ nonzero rows, so the rank is $2$; when $\lambda\ne3$, the echelon matrix has $3$ nonzero rows, so the rank is $3$. $\blacksquare$
 
-### Problem 4
+---
 
-(Problem 3.5-8) Prove: if an $m\times n$ matrix $A$ has rank $r$, then the rank of any submatrix $A_{1}$ formed by any $s$ of its rows is at least $r+s-m$.
+## 3.5-8
 
-### Solution to Problem 4
+Prove: if an $m\times n$ matrix $A$ has rank $r$, then the submatrix $A_{1}$ formed by any $s$ rows of $A$ has rank at least $r+s-m$.
 
-By **Definition 1** (Rank of a matrix), the row rank and column rank of $A$ are collectively called the rank of $A$. We need to prove that the rank of $A_{1}$ is at least $r+s-m$.
+### Solution 3.5-8
+
+By **Definition 3.5.1 (Rank of a Matrix)**, the row rank and column rank of $A$ are collectively called the rank of $A$. We prove that the rank of $A_{1}$ is at least $r+s-m$.
 
 Let $A_{2}$ be the submatrix formed by the remaining $m-s$ rows of $A$.
 
-Viewing $A$ as a family of row vectors, the rank of the row vectors of $A$ is $r$.
+Viewing $A$ as a row vector group, the rank of the row group of $A$ is $r$.
 
-The row vectors of $A$ $=A_{1}$'s row vectors $\cup A_{2}$'s row vectors.
+The row group of $A$ $=$ the row group of $A_{1}$ $\cup$ the row group of $A_{2}$.
 
-By the rank inequality:
+By **Basic Knowledge: Upper Bound on the Rank of a Union of Vector Groups**,
 
 $$
 \text{rank}\left(A\right)\le\text{rank}\left(A_{1}\right)+\text{rank}\left(A_{2}\right).
 $$
 
-Also, $A_{2}$ has only $m-s$ rows, so $\text{rank}\left(A_{2}\right)\le m-s$.
+Since $A_{2}$ has only $m-s$ rows, $\text{rank}\left(A_{2}\right)\le m-s$.
 
-Therefore
+Hence
 
 $$
 r\le\text{rank}\left(A_{1}\right)+\left(m-s\right).
 $$
 
-Rearranging gives
+Rearranging,
 
 $$
 \text{rank}\left(A_{1}\right)\ge r-\left(m-s\right)=r+s-m.
@@ -174,17 +184,19 @@ $$
 
 $\blacksquare$
 
-### Problem 5
+---
 
-(Problem 3.5-13) Let $A$ be an $s\times n$ matrix, $B$ an $l\times m$ matrix, and $C$ an $s\times m$ matrix. Prove:
+## 3.5-13
+
+Let $A$ be an $s\times n$ matrix, $B$ an $l\times m$ matrix, and $C$ an $s\times m$ matrix. Prove:
 
 $$
 \text{rank}\left(\begin{array}{cc}A & C\\0 & B\end{array}\right)\ge\text{rank}\left(A\right)+\text{rank}\left(B\right).
 $$
 
-### Solution to Problem 5
+### Solution 3.5-13
 
-By **Definition 1** (Rank of a matrix), we need to prove that the rank of the block matrix is at least the sum of the ranks of $A$ and $B$. Take bases of the column spaces of $A$ and $B$ to construct a linearly independent set of vectors.
+By **Definition 3.5.1 (Rank of a Matrix)**, prove that the rank of the block matrix is at least the sum of the ranks of $A$ and $B$. Take bases of the column spaces of $A$ and $B$ to construct a linearly independent vector group.
 
 Let $\text{rank}\left(A\right)=r_{1}$ and $\text{rank}\left(B\right)=r_{2}$.
 
@@ -192,22 +204,20 @@ Take a basis of the column space of $A$: $\alpha_{1},\cdots,\alpha_{r_{1}}$ ( $s
 
 Take a basis of the column space of $B$: $\beta_{1},\cdots,\beta_{r_{2}}$ ( $l$-dimensional vectors).
 
-Consider the block matrix
+Consider the following column vectors of the block matrix
 
 $$
-M=\left(\begin{array}{cc}A & C\\0 & B\end{array}\right)
+M=\left(\begin{array}{cc}A & C\\0 & B\end{array}\right):
 $$
-
-and the following column vectors of it:
 
 $$
 \begin{bmatrix}\alpha_{1}\\0\end{bmatrix},\cdots,\begin{bmatrix}\alpha_{r_{1}}\\0\end{bmatrix},
 \begin{bmatrix}c_{1}\\\beta_{1}\end{bmatrix},\cdots,\begin{bmatrix}c_{r_{2}}\\\beta_{r_{2}}\end{bmatrix},
 $$
 
-where $c_{i}$ are $s$-dimensional vectors appropriately chosen from the columns of $C$, so that the lower half of the corresponding column of $M$ is $\beta_{i}$.
+where $c_{i}$ are $s$-dimensional vectors suitably chosen from the columns of $C$ so that the lower half of the corresponding column of $M$ is $\beta_{i}$.
 
-Prove that these $r_{1}+r_{2}$ vectors are linearly independent. Suppose
+Prove that these $r_{1}+r_{2}$ vectors are linearly independent: set
 
 $$
 k_{1}\begin{bmatrix}\alpha_{1}\\0\end{bmatrix}+\cdots+k_{r_{1}}\begin{bmatrix}\alpha_{r_{1}}\\0\end{bmatrix}
@@ -218,7 +228,7 @@ Lower half: $l_{1}\beta_{1}+\cdots+l_{r_{2}}\beta_{r_{2}}=0$. Since $\beta_{1},\
 
 Upper half: $k_{1}\alpha_{1}+\cdots+k_{r_{1}}\alpha_{r_{1}}=0$. Since $\alpha_{1},\cdots,\alpha_{r_{1}}$ are linearly independent, $k_{1}=\cdots=k_{r_{1}}=0$.
 
-Thus these $r_{1}+r_{2}$ vectors are linearly independent.
+Hence these $r_{1}+r_{2}$ vectors are linearly independent.
 
 Therefore
 

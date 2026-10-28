@@ -1,21 +1,20 @@
-# Assignment 6
+# week6
 
-> **Basic Knowledge 1** (Properties of Determinants)<br>
-> (1) interchanging the rows and columns of a determinant (transposition) leaves its value unchanged;
-> 
-> (2) a common factor of a row (column) of a determinant can be pulled outside the determinant sign;
-> 
-> (3) if all elements of a row (column) of a determinant are sums of two terms, then the determinant can be split into the sum of two determinants;
-> 
-> (4) adding a multiple of one row (column) to another row (column) leaves the value of the determinant unchanged;
-> 
-> (5) interchanging two rows (columns) of a determinant changes its sign;
-> 
-> (6) if two rows (columns) of a determinant are identical or proportional, then the determinant is $0$.
+> **Property 2.3.2 (A Common Factor of a Row Can Be Pulled Out)**<br>A common factor of a row of a determinant can be pulled outside the determinant; in particular, if a row of a determinant is zero (all its entries are $0$), then the determinant is $0$.
 
-### Problem 1
+> **Property 2.3.3 (Splitting When a Row Is a Sum of Two Groups)**<br>If a row of a determinant is the sum of two groups of numbers, then the determinant equals the sum of two determinants: in these two determinants that row is respectively the first group and the second group of numbers, while all other rows are the same as the corresponding rows of the original determinant.
 
-(Problem 2.3-1(2)) Compute the following determinant:
+> **Property 2.3.5 (Two Identical Rows Make the Determinant Zero)**<br>If a determinant has two identical rows, its value is $0$; consequently, if two rows are proportional, the determinant is also $0$.
+
+> **Property 2.3.7 (Adding a Multiple of One Row to Another Leaves the Determinant Unchanged)**<br>Adding a multiple of one row to another row leaves the value of the determinant unchanged.
+
+> **Theorem 2.4.1 (Expansion of a Determinant Along a Row (Column))**<br>The $n\times n$ determinant $|A|$ equals the sum of the products of the entries in its $i$-th row and their cofactors, and also the sum of the products of the entries in its $j$-th column and their cofactors, i.e. $|A|=\sum_{k=1}^{n}a_{ik}A_{ik}=\sum_{k=1}^{n}a_{kj}A_{kj}$, where $A_{kj}=\left(-1\right)^{k+j}M_{kj}$ is the cofactor.
+
+---
+
+## 2.3-1(2)
+
+Compute the following determinant:
 
 $$
 \left|\begin{array}{rrr}
@@ -25,9 +24,9 @@ $$
 \end{array}\right|.
 $$
 
-### Solution to Problem 1
+### Solution 2.3-1(2)
 
-Observe that the elements $203,298,399$ in the $2$nd column can be split into sums of two numbers, namely $203=200+3$, $298=300-2$, $399=400-1$. By **Basic Knowledge 1** (Properties of Determinants)(3), if all elements of a column of a determinant are sums of two terms, then the determinant can be split into the sum of two determinants:
+Observe that the entries $203,298,399$ of the $2$nd column can be split into sums of two numbers, namely $203=200+3$, $298=300-2$, $399=400-1$. By **Property 2.3.3 (Splitting When a Row Is a Sum of Two Groups)**, when all entries of a column are sums of two terms, the determinant can be split into the sum of two determinants:
 
 $$
 \left|\begin{array}{rrr}
@@ -49,7 +48,7 @@ $$
 \end{array}\right|.
 $$
 
-By **Basic Knowledge 1** (2), a common factor of a column of a determinant can be pulled outside the determinant sign. The $2$nd column of the first determinant has a common factor $100$; pulling it out gives:
+By **Property 2.3.2 (A Common Factor of a Row Can Be Pulled Out)**, a common factor of a column can be moved outside the determinant. The $2$nd column of the first determinant has a common factor $100$; pulling it out gives
 
 $$
 D_{1}=100\times\left|\begin{array}{rrr}
@@ -59,7 +58,7 @@ D_{1}=100\times\left|\begin{array}{rrr}
 \end{array}\right|.
 $$
 
-By **Basic Knowledge 1** (2), the $3$rd column has a common factor $1/6$ (after putting over a common denominator); to simplify the computation, expand directly:
+Expanding directly,
 
 $$
 \left|\begin{array}{rrr}
@@ -81,17 +80,19 @@ D_{2}=\left|\begin{array}{rrr}
 \end{array}\right|=-1\times\left(-2\times\frac{2}{3}-\frac{1}{2}\times\left(-1\right)\right)-3\times\left(3\times\frac{2}{3}-\frac{1}{2}\times5\right)+\frac{1}{3}\times\left(3\times\left(-1\right)-\left(-2\right)\times5\right)=-1\times\left(-\frac{4}{3}+\frac{1}{2}\right)-3\times\left(2-\frac{5}{2}\right)+\frac{1}{3}\times\left(-3+10\right)=-1\times\left(-\frac{5}{6}\right)-3\times\left(-\frac{1}{2}\right)+\frac{1}{3}\times7=\frac{5}{6}+\frac{3}{2}+\frac{7}{3}=\frac{5}{6}+\frac{9}{6}+\frac{14}{6}=\frac{28}{6}=\frac{14}{3}.
 $$
 
-Hence the original determinant
+Hence the original determinant is
 
 $$
-D=D_{1}+D_{2}=0+\frac{14}{3}=\frac{14}{3}
+D=D_{1}+D_{2}=0+\frac{14}{3}=\frac{14}{3}.
 $$
 
 $\blacksquare$
 
-### Problem 2
+---
 
-(Problem 2.3-2(2)) Compute the following $n$-th order determinant:
+## 2.3-2(2)
+
+Compute the following $n\times n$ determinant:
 
 $$
 \left|\begin{array}{cccc}
@@ -102,9 +103,9 @@ a_{1} & a_{2} & \cdots & a_{n}-b
 \end{array}\right|.
 $$
 
-### Solution to Problem 2
+### Solution 2.3-2(2)
 
-By **Basic Knowledge 1** (Properties of Determinants)(4), adding a multiple of one row to another leaves the value of the determinant unchanged. Add $-1$ times the $n$-th row to rows $1,2,\cdots,n-1$, respectively, giving
+By **Property 2.3.7 (Adding a Multiple of One Row to Another Leaves the Determinant Unchanged)**, adding a multiple of one row to another leaves the determinant unchanged. Add $-1$ times the $n$-th row respectively to rows $1,2,\cdots,n-1$, giving
 
 $$
 \left|\begin{array}{rrrrr}
@@ -116,21 +117,23 @@ a_{1} & a_{2} & \cdots & a_{n-1} & a_{n}-b
 \end{array}\right|.
 $$
 
-Expand along the last column. The elements of the last column are $\left(b,b,\cdots,b,a_{n}-b\right)$.
+By **Theorem 2.4.1 (Expansion of a Determinant Along a Row (Column))**, expand along the last column. The entries of the last column are $\left(b,b,\cdots,b,a_{n}-b\right)$.
 
-For $j< n$, the cofactor is $A_{jn}=\left(-1\right)^{j+n}M_{jn}$, where $M_{jn}$ is the $\left(n-1\right)$-th order determinant obtained by deleting the $j$-th row and the $n$-th column. In that determinant, the $j$-th row (the original $j$-th row with the $n$-th column removed) has only the $1$st entry equal to $b_{j}$, with all the rest equal to $0$; expanding along this row, the minor is a diagonal determinant, giving $M_{jn}=\left(-1\right)^{j-1}a_{j}\left(-b\right)^{n-2}$.
+For $j< n$, the cofactor is $A_{jn}=\left(-1\right)^{j+n}M_{jn}$, where $M_{jn}$ is the $\left(n-1\right)$-determinant obtained by deleting row $j$ and column $n$. In that determinant, row $j$ (the original row $j$ with column $n$ removed) has only its first entry $b_{j}$ nonzero and all others $0$; expanding along that row, the minor is a diagonal determinant, giving $M_{jn}=\left(-1\right)^{j-1}a_{j}\left(-b\right)^{n-2}$.
 
 Hence
 
 $$
-\text{行列式}=\sum_{j=1}^{n-1}b\cdot\left(-1\right)^{j+n}\cdot\left(-1\right)^{j-1}a_{j}\left(-b\right)^{n-2}+\left(a_{n}-b\right)\left(-1\right)^{2n}\left(-b\right)^{n-1}=\sum_{j=1}^{n-1}b\cdot\left(-1\right)^{2j+n-1}a_{j}\left(-b\right)^{n-2}+\left(a_{n}-b\right)\left(-b\right)^{n-1}=\sum_{j=1}^{n-1}b\cdot\left(-1\right)^{n-1}a_{j}\left(-b\right)^{n-2}+\left(a_{n}-b\right)\left(-b\right)^{n-1}=\left(-1\right)^{n-1}b^{n-1}\sum_{j=1}^{n-1}a_{j}+\left(a_{n}-b\right)\left(-b\right)^{n-1}=\left(-b\right)^{n-1}\left(\sum_{j=1}^{n}a_{j}-b\right).
+\text{determinant}=\sum_{j=1}^{n-1}b\cdot\left(-1\right)^{j+n}\cdot\left(-1\right)^{j-1}a_{j}\left(-b\right)^{n-2}+\left(a_{n}-b\right)\left(-1\right)^{2n}\left(-b\right)^{n-1}=\sum_{j=1}^{n-1}b\cdot\left(-1\right)^{2j+n-1}a_{j}\left(-b\right)^{n-2}+\left(a_{n}-b\right)\left(-b\right)^{n-1}=\sum_{j=1}^{n-1}b\cdot\left(-1\right)^{n-1}a_{j}\left(-b\right)^{n-2}+\left(a_{n}-b\right)\left(-b\right)^{n-1}=\left(-1\right)^{n-1}b^{n-1}\sum_{j=1}^{n-1}a_{j}+\left(a_{n}-b\right)\left(-b\right)^{n-1}=\left(-b\right)^{n-1}\left(\sum_{j=1}^{n}a_{j}-b\right).
 $$
 
 $\blacksquare$
 
-### Problem 3
+---
 
-(Problem 2.3-3(1)) Prove that
+## 2.3-3(1)
+
+Prove that
 
 $$
 \left|\begin{array}{ccc}
@@ -140,25 +143,27 @@ a_{3}-b_{3} & b_{3}-c_{3} & c_{3}-a_{3}
 \end{array}\right|=0.
 $$
 
-### Solution to Problem 3
+### Solution 2.3-3(1)
 
-Note that the $1$st, $2$nd, and $3$rd columns of the determinant satisfy: the $1$st column + the $2$nd column + the $3$rd column $=0$.
+Observe that columns $1$, $2$, and $3$ satisfy: column $1$ $+$ column $2$ $+$ column $3$ $=0$.
 
-Specifically, for the $i$-th row: the $1$-st column + the $i$-th column + the $i$-th column
+Precisely, in row $i$, column $1$ $+$ column $2$ $+$ column $3$
 
 $$
 =\left(a_{i}-b_{i}\right)+\left(b_{i}-c_{i}\right)+\left(c_{i}-a_{i}\right)=0.
 $$
 
-By **Basic Knowledge 1** (Properties of Determinants)(4), adding a multiple of one column to another leaves the value of the determinant unchanged. Add both the $2$nd and $3$rd columns to the $1$st column; then all elements of the $1$st column become $0$.
+By **Property 2.3.7 (Adding a Multiple of One Row to Another Leaves the Determinant Unchanged)**, adding a multiple of one column to another leaves the determinant unchanged. Add both column $2$ and column $3$ to column $1$; then all entries of column $1$ become $0$.
 
-By **Basic Knowledge 1** (Properties of Determinants), a determinant in which one column is entirely $0$ has value $0$.
+By **Property 2.3.2 (A Common Factor of a Row Can Be Pulled Out)**, a determinant whose column is all zeros has value $0$.
 
 Hence the original determinant $=0$. $\blacksquare$
 
-### Problem 4
+---
 
-(Problem 2.3-4(1)) Compute the following $n$-th order determinant:
+## 2.3-4(1)
+
+Compute the following $n\times n$ determinant:
 
 $$
 \left|\begin{array}{cccc}
@@ -169,9 +174,9 @@ b_{n} & 0 & \cdots & 1
 \end{array}\right|.
 $$
 
-### Solution to Problem 4
+### Solution 2.3-4(1)
 
-By **Basic Knowledge 1** (Properties of Determinants)(4), adding a multiple of one row to another leaves the value of the determinant unchanged. Add $-a_{2}$ times the $2$nd row to the $1$st row, $-a_{3}$ times the $3$rd row to the $1$st row, $\cdots$, and $-a_{n}$ times the $n$-th row to the $1$st row; then the $2$nd through $n$-th entries of the $1$st row all become $0$:
+By **Property 2.3.7 (Adding a Multiple of One Row to Another Leaves the Determinant Unchanged)**, adding a multiple of one row to another leaves the determinant unchanged. Add $-a_{2}$ times row $2$ to row $1$, $-a_{3}$ times row $3$ to row $1$, $\cdots$, and $-a_{n}$ times row $n$ to row $1$; then columns $2$ through $n$ of row $1$ all become $0$:
 
 $$
 \left|\begin{array}{cccc}
@@ -182,7 +187,7 @@ b_{n} & 0 & \cdots & 1
 \end{array}\right|.
 $$
 
-Expanding along the $1$st row, the minor is the $\left(n-1\right)$-th order identity matrix, whose determinant is $1$. Hence the value of the determinant is
+By **Theorem 2.4.1 (Expansion of a Determinant Along a Row (Column))**, expand along row $1$; the minor is the $\left(n-1\right)$-identity matrix, whose determinant is $1$. Hence the determinant equals
 
 $$
 a_{1}-\sum_{j=2}^{n}a_{j}b_{j}.
@@ -190,9 +195,11 @@ $$
 
 $\blacksquare$
 
-### Problem 5
+---
 
-(Problem 2.3-4(2)) Compute the following $n$-th order determinant:
+## 2.3-4(2)
+
+Compute the following $n\times n$ determinant:
 
 $$
 \left|\begin{array}{cccc}
@@ -203,9 +210,9 @@ a_{n}+b_{1} & a_{n}+b_{2} & \cdots & a_{n}+b_{n}
 \end{array}\right|.
 $$
 
-### Solution to Problem 5
+### Solution 2.3-4(2)
 
-By **Basic Knowledge 1** (Properties of Determinants)(4), adding a multiple of one row to another leaves the value of the determinant unchanged. Add $-1$ times the $1$-st row to rows $2,3,\cdots,n$, respectively, giving
+By **Property 2.3.7 (Adding a Multiple of One Row to Another Leaves the Determinant Unchanged)**, adding a multiple of one row to another leaves the determinant unchanged. Add $-1$ times row $1$ respectively to rows $2,3,\cdots,n$, giving
 
 $$
 \left|\begin{array}{cccc}
@@ -216,11 +223,11 @@ a_{n}-a_{1} & a_{n}-a_{1} & \cdots & a_{n}-a_{1}
 \end{array}\right|.
 $$
 
-When $n\ge3$, the elements of every row from the $2$nd to the $n$-th are identical. By **Basic Knowledge 1** (6), if two rows of a determinant are identical, the determinant is $0$. Hence when $n\ge3$ the determinant $=0$.
+When $n\ge3$, every row from row $2$ to row $n$ has identical entries. By **Property 2.3.5 (Two Identical Rows Make the Determinant Zero)**, two identical rows make the determinant $0$. Hence for $n\ge3$ the determinant $=0$.
 
 When $n=1$, the determinant $=a_{1}+b_{1}$.
 
-When $n=2$, by **Basic Knowledge 1** (4), add $-1$ times the $1$st row to the $2$nd row, giving
+When $n=2$, by **Property 2.3.7 (Adding a Multiple of One Row to Another Leaves the Determinant Unchanged)**, add $-1$ times row $1$ to row $2$, giving
 
 $$
 \left|\begin{array}{cc}
@@ -229,7 +236,7 @@ a_{2}-a_{1} & a_{2}-a_{1}
 \end{array}\right|.
 $$
 
-By **Basic Knowledge 1** (2), the $2$nd row has a common factor $a_{2}-a_{1}$; pulling it out gives:
+By **Property 2.3.2 (A Common Factor of a Row Can Be Pulled Out)**, row $2$ has a common factor $a_{2}-a_{1}$; pulling it out gives
 
 $$
 \left(a_{2}-a_{1}\right)\times\left|\begin{array}{cc}
@@ -238,7 +245,7 @@ a_{1}+b_{1} & a_{1}+b_{2}\\
 \end{array}\right|.
 $$
 
-By **Basic Knowledge 1** (4), add $-1$ times the $2$nd column to the $1$st column, giving
+By **Property 2.3.7 (Adding a Multiple of One Row to Another Leaves the Determinant Unchanged)**, add $-1$ times column $2$ to column $1$, giving
 
 $$
 \left(a_{2}-a_{1}\right)\times\left|\begin{array}{cc}
@@ -247,13 +254,13 @@ b_{1}-b_{2} & a_{1}+b_{2}\\
 \end{array}\right|.
 $$
 
-Expanding along the $2$nd column gives
+By **Theorem 2.4.1 (Expansion of a Determinant Along a Row (Column))**, expand along column $2$, obtaining
 
 $$
 \left(a_{2}-a_{1}\right)\times\left(b_{1}-b_{2}\right)=\left(a_{1}-a_{2}\right)\left(b_{2}-b_{1}\right).
 $$
 
-In summary:
+In summary,
 
 $$
 \det\left(A\right)=

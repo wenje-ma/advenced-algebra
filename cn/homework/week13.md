@@ -1,10 +1,20 @@
-﻿# 作业 13
+# week13
 
-> **定义1** (基)<br>设 $U$ 是 $K^{n}$ 的一个子空间, $U$ 中的向量组 $\alpha_{1},\alpha_{2},\cdots,\alpha_{s}$ 如果满足: $1^{\circ}$ 线性无关; $2^{\circ}$ $U$ 中每一个向量都可以由它线性表出, 则称它是 $U$ 的一个基.
+> **命题 3.3.6 (线性无关的充要条件是秩等于所含向量数目)**<br>向量组 $\alpha_{1},\alpha_{2},\cdots,\alpha_{s}$ 线性无关的充分必要条件是它的秩等于它所含向量的数目 $s$.
 
-### 习题一
+> **定义 3.4.1 (基)**<br>设 $U$ 是 $K^{n}$ 的一个子空间, $U$ 中的向量组 $\alpha_{1},\alpha_{2},\cdots,\alpha_{s}$ 如果满足: $1^{\circ}$ 线性无关; $2^{\circ}$ $U$ 中每一个向量都可以由它线性表出, 则称它是 $U$ 的一个基.
 
-(习题 3.4-2) 证明: $K^{n}$ 中的向量组
+> **定理 3.4.8 (向量组的秩等于其生成子空间的维数)**<br>$K^{n}$ 中向量组 $\alpha_{1},\alpha_{2},\cdots,\alpha_{s}$ 的一个极大线性无关组是由这个向量组生成的子空间 $U=\left\langle\alpha_{1},\alpha_{2},\cdots,\alpha_{s}\right\rangle$ 的一个基, 从而
+
+$$
+\dim\left\langle\alpha_{1},\alpha_{2},\cdots,\alpha_{s}\right\rangle=\text{rank}\left\{\alpha_{1},\alpha_{2},\cdots,\alpha_{s}\right\}.
+$$
+
+---
+
+## 3.4-2
+
+证明: $K^{n}$ 中的向量组
 
 $$
 \eta_{1}=\begin{bmatrix}1\\0\\0\\\vdots\\0\end{bmatrix},
@@ -14,9 +24,9 @@ $$
 
 是 $K^{n}$ 的一个基.
 
-### 解答 习题一
+### 解答 3.4-2
 
-由**定义1** (基)的要求, 需验证两个条件: 线性无关, 且能线性表出 $K^{n}$ 中每一个向量.
+由**定义 3.4.1 (基)**的要求, 需验证两个条件: 线性无关, 且能线性表出 $K^{n}$ 中每一个向量.
 
 **验证线性无关**. 设
 
@@ -41,6 +51,7 @@ $$
 $$
 \alpha=\left(a_{1},a_{2},\cdots,a_{n}\right)^{\top}\in K^{n},
 $$
+
 设
 
 $$
@@ -59,11 +70,13 @@ $$
 
 表出方式存在且唯一.
 
-由**定义1**, 因此 $\eta_{1},\eta_{2},\cdots,\eta_{n}$ 是 $K^{n}$ 的一个基. $\blacksquare$
+由**定义 3.4.1 (基)**, 因此 $\eta_{1},\eta_{2},\cdots,\eta_{n}$ 是 $K^{n}$ 的一个基. $\blacksquare$
 
-### 习题二
+---
 
-(习题 3.4-3(3)) 判断下述向量组是否为 $K^{3}$ 的一个基:
+## 3.4-3(3)
+
+判断下述向量组是否为 $K^{3}$ 的一个基:
 
 $$
 \alpha_{1}=\begin{bmatrix}1\\0\\1\end{bmatrix},
@@ -71,9 +84,9 @@ $$
 \alpha_{3}=\begin{bmatrix}2\\-4\\3\end{bmatrix}.
 $$
 
-### 解答 习题二
+### 解答 3.4-3(3)
 
-由**定义1** (基)的要求, 判断三个 $3$ 维向量是否为 $K^{3}$ 的基, 等价于判断它们是否线性无关, 即判断它们组成的矩阵的行列式是否不等于 $0$.
+由**定义 3.4.1 (基)**的要求, 判断三个 $3$ 维向量是否为 $K^{3}$ 的基, 等价于判断它们是否线性无关, 即判断它们组成的矩阵的行列式是否不等于 $0$.
 
 $$
 \left|\begin{array}{rrr}
@@ -88,15 +101,17 @@ $$
 =1\times\left(12-4\right)+2\times\left(-4\right)=8-8=0.
 $$
 
-行列式等于 $0$, 故 $\alpha_{1},\alpha_{2},\alpha_{3}$ 线性相关, 不满足**定义1** (基)中"线性无关"的要求, 不是 $K^{3}$ 的一个基. $\blacksquare$
+行列式等于 $0$, 由**命题 3.3.6 (线性无关的充要条件是秩等于所含向量数目)**, 故 $\alpha_{1},\alpha_{2},\alpha_{3}$ 线性相关, 不满足**定义 3.4.1 (基)**中"线性无关"的要求, 不是 $K^{3}$ 的一个基. $\blacksquare$
 
-### 习题三
+---
 
-(习题 3.4-4) 设 $U$ 是 $K^{n}$ 的一个 $r$ 维子空间, $\alpha_{1},\alpha_{2},\cdots,\alpha_{r}$ 是 $U$ 中 $r$ 个向量. 证明: 如果 $U$ 中每一个向量都可以由 $\alpha_{1},\alpha_{2},\cdots,\alpha_{r}$ 线性表出, 则 $\alpha_{1},\alpha_{2},\cdots,\alpha_{r}$ 是 $U$ 的一个基.
+## 3.4-4
 
-### 解答 习题三
+设 $U$ 是 $K^{n}$ 的一个 $r$ 维子空间, $\alpha_{1},\alpha_{2},\cdots,\alpha_{r}$ 是 $U$ 中 $r$ 个向量. 证明: 如果 $U$ 中每一个向量都可以由 $\alpha_{1},\alpha_{2},\cdots,\alpha_{r}$ 线性表出, 则 $\alpha_{1},\alpha_{2},\cdots,\alpha_{r}$ 是 $U$ 的一个基.
 
-由**定义1** (基)的要求, 需验证两个条件: 线性无关, 且 $U$ 中每一个向量都可以由 $\alpha_{1},\alpha_{2},\cdots,\alpha_{r}$ 线性表出. 已知第二个条件成立, 只需验证线性无关.
+### 解答 3.4-4
+
+由**定义 3.4.1 (基)**的要求, 需验证两个条件: 线性无关, 且 $U$ 中每一个向量都可以由 $\alpha_{1},\alpha_{2},\cdots,\alpha_{r}$ 线性表出. 已知第二个条件成立, 只需验证线性无关.
 
 因为 $U$ 中每一个向量都可以由 $\alpha_{1},\alpha_{2},\cdots,\alpha_{r}$ 线性表出, 所以 $U\subseteq\left\langle\alpha_{1},\alpha_{2},\cdots,\alpha_{r}\right\rangle$.
 
@@ -104,7 +119,7 @@ $$
 
 因此 $U=\left\langle\alpha_{1},\alpha_{2},\cdots,\alpha_{r}\right\rangle$.
 
-由定理 $8$,
+由**定理 3.4.8 (向量组的秩等于其生成子空间的维数)**,
 
 $$
 \dim\left\langle\alpha_{1},\alpha_{2},\cdots,\alpha_{r}\right\rangle=\text{rank}\left\{\alpha_{1},\alpha_{2},\cdots,\alpha_{r}\right\}.
@@ -116,8 +131,8 @@ $$
 \text{rank}\left\{\alpha_{1},\alpha_{2},\cdots,\alpha_{r}\right\}=r.
 $$
 
-$r$ 个向量的秩为 $r$, 说明它们线性无关.
+由**命题 3.3.6 (线性无关的充要条件是秩等于所含向量数目)**, $r$ 个向量的秩为 $r$, 说明它们线性无关.
 
 因此 $\alpha_{1},\alpha_{2},\cdots,\alpha_{r}$ 线性无关, 并且 $U$ 中每一个向量都可以由它们线性表出.
 
-$\alpha_{1},\alpha_{2},\cdots,\alpha_{r}$ 是 $U$ 的一个基. $\blacksquare$
+由**定义 3.4.1 (基)**, $\alpha_{1},\alpha_{2},\cdots,\alpha_{r}$ 是 $U$ 的一个基. $\blacksquare$

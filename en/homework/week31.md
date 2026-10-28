@@ -1,12 +1,22 @@
-# Assignment 31
+# week31
 
-> **Theorem 1** (Eigenvalues of Real Symmetric Matrices)<br>Every root in the complex number field of the characteristic polynomial of a real symmetric matrix is a real number.
+> **Basic Knowledge: The Schmidt Orthogonalization Process**<br>For a linearly independent vector group $\alpha_{1},\alpha_{2},\cdots,\alpha_{m}$, set $\beta_{1}=\alpha_{1}$ and, for $i\ge2$, recursively define
 
-> **Theorem 3** (Real Symmetric Matrices Are Orthogonally Diagonalizable)<br>For any real symmetric matrix $A$ of order $n$, there always exists an orthogonal matrix $T$ of order $n$ such that $T^{-1}AT$ is a diagonal matrix.
+$$
+\beta_{i}=\alpha_{i}-\sum_{k=1}^{i-1}\frac{\left(\alpha_{i},\beta_{k}\right)}{\left(\beta_{k},\beta_{k}\right)}\beta_{k}.
+$$
 
-### Problem 1
+Then $\beta_{1},\beta_{2},\cdots,\beta_{m}$ is an orthogonal vector group equivalent to the original one.
 
-(Problem 5.7-1(1)) For the following real symmetric matrix $A$, find an orthogonal matrix $T$ such that $T^{\top}AT$ is a diagonal matrix:
+> **Theorem 5.7.1 (Eigenvalues of a Real Symmetric Matrix)**<br>Every root of the characteristic polynomial of a real symmetric matrix, over the complex number field, is a real number.
+
+> **Theorem 5.7.3 (A Real Symmetric Matrix Is Orthogonally Diagonalizable)**<br>For any $n\times n$ real symmetric matrix $A$, there exists an $n\times n$ orthogonal matrix $T$ such that $T^{-1}AT$ is a diagonal matrix.
+
+---
+
+## 5.7-1(1)
+
+For the following real symmetric matrix $A$, find an orthogonal matrix $T$ such that $T^{\top}AT$ is diagonal:
 
 $$
 A=\left[\begin{array}{rrr}
@@ -16,9 +26,9 @@ A=\left[\begin{array}{rrr}
 \end{array}\right].
 $$
 
-### Solution to Problem 1
+### Solution 5.7-1(1)
 
-By **Theorem 3** (Real Symmetric Matrices Are Orthogonally Diagonalizable), there always exists an orthogonal matrix $T$ such that $T^{\top}AT$ is a diagonal matrix. Find the characteristic polynomial:
+By **Theorem 5.7.3 (A Real Symmetric Matrix Is Orthogonally Diagonalizable)**, there is an orthogonal matrix $T$ such that $T^{\top}AT$ is diagonal. Compute the characteristic polynomial:
 
 $$
 \left|\lambda I-A\right|=\left|\begin{array}{rrr}
@@ -28,9 +38,9 @@ $$
 \end{array}\right|=\left(\lambda-1\right)^{2}\left(\lambda+8\right).
 $$
 
-Therefore the eigenvalues are $\lambda_{1}=\lambda_{2}=1$, $\lambda_{3}=-8$.
+Thus the eigenvalues are $\lambda_{1}=\lambda_{2}=1$ and $\lambda_{3}=-8$.
 
-**Find eigenvectors for $\lambda=1$**.
+**Find the eigenvectors for $\lambda=1$.**
 
 $$
 I-A=\left[\begin{array}{rrr}
@@ -45,9 +55,9 @@ I-A=\left[\begin{array}{rrr}
 \end{array}\right].
 $$
 
-A fundamental system of solutions: $\alpha_{1}=\left(-2,1,0\right)^{\top}$, $\alpha_{2}=\left(2,0,1\right)^{\top}$.
+A fundamental solution system: $\alpha_{1}=\left(-2,1,0\right)^{\top}$, $\alpha_{2}=\left(2,0,1\right)^{\top}$.
 
-Apply the Gram–Schmidt orthogonalization:
+By **Basic Knowledge: The Schmidt Orthogonalization Process**:
 
 $$
 \beta_{1}=\alpha_{1}=\left(-2,1,0\right)^{\top}.
@@ -69,7 +79,7 @@ $$
 \eta_{2}=\left(\frac{2}{3\sqrt{5}},\frac{4}{3\sqrt{5}},\frac{\sqrt{5}}{3}\right)^{\top}.
 $$
 
-**Find eigenvectors for $\lambda=-8$**.
+**Find the eigenvectors for $\lambda=-8$.**
 
 $$
 -8I-A=\left[\begin{array}{rrr}
@@ -84,7 +94,7 @@ $$
 \end{array}\right].
 $$
 
-A fundamental system of solutions: $\alpha_{3}=\left(-1,2,-4\right)^{\top}$.
+A fundamental solution system: $\alpha_{3}=\left(-1,2,-4\right)^{\top}$.
 
 Normalize:
 
@@ -92,7 +102,7 @@ $$
 \eta_{3}=\left(-\frac{1}{\sqrt{21}},\frac{2}{\sqrt{21}},-\frac{4}{\sqrt{21}}\right)^{\top}.
 $$
 
-Therefore the orthogonal matrix is
+Thus the orthogonal matrix is
 
 $$
 T=\left[\begin{array}{ccc}
@@ -102,7 +112,7 @@ T=\left[\begin{array}{ccc}
 \end{array}\right].
 $$
 
-By **Theorem 3** (Real Symmetric Matrices Are Orthogonally Diagonalizable),
+By **Theorem 5.7.3 (A Real Symmetric Matrix Is Orthogonally Diagonalizable)**,
 
 $$
 T^{\top}AT=\operatorname{diag}\left\{1,1,-8\right\}.
@@ -110,9 +120,11 @@ $$
 
 $\blacksquare$
 
-### Problem 2
+---
 
-(Problem 5.7-1(3)) For the following real symmetric matrix $A$, find an orthogonal matrix $T$ such that $T^{\top}AT$ is a diagonal matrix:
+## 5.7-1(3)
+
+For the following real symmetric matrix $A$, find an orthogonal matrix $T$ such that $T^{\top}AT$ is diagonal:
 
 $$
 A=\left[\begin{array}{rrr}
@@ -122,9 +134,9 @@ A=\left[\begin{array}{rrr}
 \end{array}\right].
 $$
 
-### Solution to Problem 2
+### Solution 5.7-1(3)
 
-Find the characteristic polynomial:
+Compute the characteristic polynomial:
 
 $$
 \left|\lambda I-A\right|=\left|\begin{array}{rrr}
@@ -134,19 +146,19 @@ $$
 \end{array}\right|=\left(\lambda+1\right)\left(\lambda-2\right)\left(\lambda-5\right).
 $$
 
-Therefore the eigenvalues are $\lambda_{1}=-1$, $\lambda_{2}=2$, $\lambda_{3}=5$.
+Thus the eigenvalues are $\lambda_{1}=-1$, $\lambda_{2}=2$ and $\lambda_{3}=5$.
 
-**Find eigenvectors for $\lambda=-1$**.
+**Find the eigenvectors for $\lambda=-1$.**
 
-A fundamental system of solutions: $\alpha_{1}=\left(1,2,2\right)^{\top}$.
+A fundamental solution system: $\alpha_{1}=\left(1,2,2\right)^{\top}$.
 
-**Find eigenvectors for $\lambda=2$**.
+**Find the eigenvectors for $\lambda=2$.**
 
-A fundamental system of solutions: $\alpha_{2}=\left(2,1,-2\right)^{\top}$.
+A fundamental solution system: $\alpha_{2}=\left(2,1,-2\right)^{\top}$.
 
-**Find eigenvectors for $\lambda=5$**.
+**Find the eigenvectors for $\lambda=5$.**
 
-A fundamental system of solutions: $\alpha_{3}=\left(-2,2,-1\right)^{\top}$.
+A fundamental solution system: $\alpha_{3}=\left(-2,2,-1\right)^{\top}$.
 
 Verify orthogonality: $\left(\alpha_{1},\alpha_{2}\right)=0$, $\left(\alpha_{1},\alpha_{3}\right)=0$, $\left(\alpha_{2},\alpha_{3}\right)=0$.
 
@@ -164,7 +176,7 @@ $$
 \eta_{3}=\left(-\frac{2}{3},\frac{2}{3},-\frac{1}{3}\right)^{\top}.
 $$
 
-Therefore the orthogonal matrix is
+Thus the orthogonal matrix is
 
 $$
 T=\left[\begin{array}{rrr}
@@ -180,21 +192,23 @@ $$
 
 $\blacksquare$
 
-### Problem 3
+---
 
-(Problem 5.7-2) Prove: if two real symmetric matrices $A,B$ of order $n$ have the same characteristic polynomial, then $A$ and $B$ are similar.
+## 5.7-2
 
-### Solution to Problem 3
+Prove: if $n\times n$ real symmetric matrices $A,B$ have the same characteristic polynomial, then $A$ and $B$ are similar.
 
-Since $A$ is a real symmetric matrix, $A$ is orthogonally similar to a diagonal matrix $D_{A}$, and the diagonal entries of $D_{A}$ are all the eigenvalues of $A$ (counting multiplicities).
+### Solution 5.7-2
 
-Similarly, $B$ is orthogonally similar to a diagonal matrix $D_{B}$, and the diagonal entries of $D_{B}$ are all the eigenvalues of $B$ (counting multiplicities).
+Since $A$ is real symmetric, by **Theorem 5.7.3 (A Real Symmetric Matrix Is Orthogonally Diagonalizable)**, $A$ is orthogonally similar to a diagonal matrix $D_{A}$, whose diagonal entries are all eigenvalues of $A$ (with multiplicity).
 
-Since $A,B$ have the same characteristic polynomial, they have the same eigenvalues (counting multiplicities).
+Similarly, $B$ is orthogonally similar to a diagonal matrix $D_{B}$, whose diagonal entries are all eigenvalues of $B$ (with multiplicity).
 
-Therefore the diagonal entries of $D_{A}$ and $D_{B}$ are the same (up to ordering).
+Since $A,B$ have the same characteristic polynomial, they have the same eigenvalues (with multiplicity).
 
-By permuting the order of the diagonal entries of $D_{B}$, we can make $D_{A}=D_{B}$.
+Hence the diagonal entries of $D_{A}$ and $D_{B}$ agree (up to order).
+
+By permuting the diagonal entries of $D_{B}$, we can make $D_{A}=D_{B}$.
 
 Permuting the diagonal entries amounts to a similarity transformation by an orthogonal matrix $Q$: $Q^{\top}D_{B}Q=D_{A}$.
 
@@ -206,13 +220,15 @@ $$
 
 Hence $A$ and $B$ are similar. $\blacksquare$
 
-### Problem 4
+---
 
-(Problem 5.7-3) Prove: if a real matrix $A$ is orthogonally similar to a diagonal matrix, then $A$ must be a symmetric matrix.
+## 5.7-3
 
-### Solution to Problem 4
+Prove: if a real matrix $A$ is orthogonally similar to a diagonal matrix, then $A$ must be symmetric.
 
-Let $A$ be orthogonally similar to a diagonal matrix $D$, i.e. there exists an orthogonal matrix $T$ such that
+### Solution 5.7-3
+
+Suppose $A$ is orthogonally similar to a diagonal matrix $D$, i.e. there is an orthogonal matrix $T$ such that
 
 $$
 T^{\top}AT=D.
@@ -224,7 +240,7 @@ $$
 A=TDT^{\top}.
 $$
 
-Since $D$ is a diagonal matrix, $D^{\top}=D$.
+Since $D$ is diagonal, $D^{\top}=D$.
 
 Therefore
 
@@ -232,4 +248,4 @@ $$
 A^{\top}=\left(TDT^{\top}\right)^{\top}=TD^{\top}T^{\top}=TDT^{\top}=A.
 $$
 
-Hence $A$ is a symmetric matrix. $\blacksquare$
+Hence $A$ is symmetric. $\blacksquare$

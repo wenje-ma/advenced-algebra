@@ -1,22 +1,26 @@
-# Assignment 24
+# week24
 
-> **Definition 1** (Map)<br>Let $S$ and $S'$ be two sets. If there exists a rule $f$ such that for every element $a$ in $S$, there is a unique element $b$ in $S'$ corresponding to it, then $f$ is called a map from $S$ to $S'$.
+> **Definition 4.7.1 (Mapping)**<br>Let $S$ and $S'$ be two sets. If there is a rule $f$ such that to every element $a$ of $S$ there corresponds a unique element $b$ of $S'$, then $f$ is called a mapping from $S$ to $S'$.
 
-> **Definition 5** (Linear map)<br>A map $\mathcal{A}$ from $K^{n}$ to $K^{s}$ that preserves addition and scalar multiplication, i.e., $\forall\alpha,\beta\in K^{n},k\in K$, satisfies
-> $$
-> \mathcal{A}\left(\alpha+\beta\right)=\mathcal{A}\left(\alpha\right)+\mathcal{A}\left(\beta\right),
-> $$
-> $\mathcal{A}\left(k\alpha\right)=k\mathcal{A}\left(\alpha\right)$, then $\mathcal{A}$ is called a linear map from $K^{n}$ to $K^{s}$.
+> **Theorem 4.7.1 (Dimension Formula for Kernel and Image)**<br>Let $\mathcal{A}:K^{n}\to K^{s}$ be a linear map. The sum of the dimension of the kernel (the solution space of the homogeneous system) and the dimension of the image equals the dimension of the domain:
 
-> **Theorem** (Dimension formula for kernel and image)<br>
-> 
-> $$
-> \dim\left(\ker\mathcal{A}\right)+\dim\left(\operatorname{Im}\mathcal{A}\right)=\dim\left(K^{n}\right)
-> $$
+$$
+\dim\left(\ker\mathcal{A}\right)+\dim\left(\operatorname{Im}\mathcal{A}\right)=\dim\left(K^{n}\right)=n.
+$$
 
-### Problem 1
+> **Definition 4.7.5 (Linear Map)**<br>A mapping $\mathcal{A}$ from $K^{n}$ to $K^{s}$ is called a linear map if it preserves addition and scalar multiplication, i.e. for all $\alpha,\beta\in K^{n}$ and $k\in K$,
 
-(Problem 4.7-1) Determine whether the following rules are maps from $\mathbb{R}$ to itself, whether they are injective, and whether they are surjective:
+$$
+\mathcal{A}\left(\alpha+\beta\right)=\mathcal{A}\left(\alpha\right)+\mathcal{A}\left(\beta\right),
+$$
+
+and $\mathcal{A}\left(k\alpha\right)=k\mathcal{A}\left(\alpha\right)$.
+
+---
+
+## 4.7-1
+
+Determine whether the following rules are mappings from $\mathbb{R}$ to itself, and whether they are injective or surjective:
 
 (1) $x\mapsto x^{3}$;
 
@@ -26,13 +30,13 @@
 
 (4) $x\mapsto\ln x$.
 
-### Solution to Problem 1
+### Solution 4.7-1
 
-By **Definition 1** (Map), determine whether the following rules are maps from $\mathbb{R}$ to itself, whether they are injective, and whether they are surjective.
+By **Definition 4.7.1 (Mapping)**, determine whether each rule is a mapping from $\mathbb{R}$ to itself, and whether it is injective or surjective.
 
 **(1)** $f\left(x\right)=x^{3}$.
 
-It is a map. For any $x\in\mathbb{R}$, $x^{3}$ is well-defined and unique.
+It is a mapping. For every $x\in\mathbb{R}$, $x^{3}$ is defined and unique.
 
 Injective:
 
@@ -42,34 +46,29 @@ $$
 
 Hence it is injective.
 
-Surjective: for any $y\in\mathbb{R}$, there exists
-
-$$
-x=\sqrt\left[3\right]{y}
-$$
-
-such that $f\left(x\right)=y$. Hence it is surjective.
+Surjective: for every $y\in\mathbb{R}$, there is $x=\sqrt[3]{y}$ such that $f\left(x\right)=y$. Hence it is surjective.
 
 Therefore it is both injective and surjective (bijective).
 
-** (2)** $f\left(x\right)=x^{2}-x$.
+**(2)** $f\left(x\right)=x^{2}-x$.
 
-It is a map.
+It is a mapping.
 
-Injective: $f\left(0\right)=0$, $f\left(1\right)=0$, but $0\ne1$. Hence it is not injective.
+Injective: $f\left(0\right)=0$ and $f\left(1\right)=0$, but $0\ne1$. Hence it is not injective.
 
 Surjective:
 
 $$
-f\left(x\right)=x^{2}-x=\left(x-\frac{1}{2}\right)^{2}-\frac{1}{4}\ge-\frac{1}{4}
+f\left(x\right)=x^{2}-x=\left(x-\frac{1}{2}\right)^{2}-\frac{1}{4}\ge-\frac{1}{4}.
 $$
+
 For example, $-1$ has no preimage. Hence it is not surjective.
 
 Therefore it is neither injective nor surjective.
 
-** (3)** $f\left(x\right)=2^{x}$.
+**(3)** $f\left(x\right)=2^{x}$.
 
-It is a map.
+It is a mapping.
 
 Injective:
 
@@ -83,31 +82,35 @@ Surjective: $2^{x}> 0$. For example, $-1$ has no preimage. Hence it is not surje
 
 Therefore it is injective but not surjective.
 
-** (4)** $f\left(x\right)=\ln x$.
+**(4)** $f\left(x\right)=\ln x$.
 
-It is not a map. Because for $x\le0$, $\ln x$ is not defined; not every $x\in\mathbb{R}$ has a corresponding value.
+It is not a mapping. Because for $x\le0$, $\ln x$ is not defined, so not every $x\in\mathbb{R}$ has a corresponding value.
 
 $\blacksquare$
 
-### Problem 2
+---
 
-(Problem 4.7-4) Let $S$ be a finite set. Prove: if a map $f:S\to S$ is injective, then $f$ must be bijective.
+## 4.7-4
 
-### Solution to Problem 2
+Let $S$ be a finite set. Prove: if a mapping $f:S\to S$ is injective, then $f$ must be bijective.
 
-By **Definition 1** (Map), let $S$ have $n$ elements.
+### Solution 4.7-4
 
-$f$ is injective, so the images of distinct elements in $S$ are also distinct. Hence the number of elements in $f\left(S\right)$ equals $\left|S\right|=n$.
+By **Definition 4.7.1 (Mapping)**, suppose $S$ has $n$ elements.
 
-Also, since $f\left(S\right)\subseteq S$, and $\left|f\left(S\right)\right|=n=\left|S\right|$, we have $f\left(S\right)=S$.
+Since $f$ is injective, distinct elements of $S$ have distinct images. Hence the number of elements in $f\left(S\right)$ equals $\left|S\right|=n$.
 
-i.e., $f$ is surjective.
+Since $f\left(S\right)\subseteq S$ and $\left|f\left(S\right)\right|=n=\left|S\right|$, we have $f\left(S\right)=S$.
 
-Therefore $f$ is both injective and surjective, i.e., $f$ is bijective. $\blacksquare$
+That is, $f$ is surjective.
 
-### Problem 3
+Therefore $f$ is both injective and surjective, i.e. $f$ is bijective. $\blacksquare$
 
-(Problem 4.7-7) Let
+---
+
+## 4.7-7
+
+Let
 
 $$
 A=\left[\begin{array}{rrrr}
@@ -117,19 +120,19 @@ A=\left[\begin{array}{rrrr}
 \end{array}\right].
 $$
 
-Define $\mathcal{A}\left(\alpha\right)=A\alpha$, $\forall\alpha\in K^{4}$.
+Define $\mathcal{A}\left(\alpha\right)=A\alpha$ for all $\alpha\in K^{4}$.
 
-(1) Find the dimension of $\operatorname{Im}\mathcal{A}$ and a basis;
+(1) Find the dimension and a basis of $\operatorname{Im}\mathcal{A}$;
 
-(2) Find the dimension of $\ker\mathcal{A}$ and a basis.
+(2) Find the dimension and a basis of $\ker\mathcal{A}$.
 
-### Solution to Problem 3
+### Solution 4.7-7
 
-By **Definition 5** (Linear map) and the **Theorem** (Dimension formula for kernel and image), $\mathcal{A}\left(\alpha\right)=A\alpha$ is a linear map.
+By **Definition 4.7.5 (Linear Map)** and **Theorem 4.7.1 (Dimension Formula for Kernel and Image)**, $\mathcal{A}\left(\alpha\right)=A\alpha$ is a linear map.
 
-**(1)** $\operatorname{Im}\mathcal{A}$ equals the column space of $A$.
+**(1)** $\operatorname{Im}\mathcal{A}$ is the column space of $A$.
 
-Perform elementary row operations on $A$:
+Apply elementary row operations to $A$:
 
 $$
 A=\left[\begin{array}{rrrr}
@@ -151,9 +154,9 @@ A=\left[\begin{array}{rrrr}
 \end{array}\right].
 $$
 
-Therefore $\operatorname{rank}\left(A\right)=2$.
+Hence $\operatorname{rank}\left(A\right)=2$.
 
-The pivot columns are column $1$ and column $2$, so a basis for $\operatorname{Im}\mathcal{A}$ is
+The pivot columns are column $1$ and column $2$, so a basis of $\operatorname{Im}\mathcal{A}$ is
 
 $$
 \alpha_{1}=\left(1,-1,1\right)^{\top},\alpha_{2}=\left(0,2,2\right)^{\top}.
@@ -165,7 +168,7 @@ $$
 
 **(2)** $\ker\mathcal{A}$ is the solution space of $Ax=0$.
 
-The row echelon form gives the equivalent system:
+From the row echelon form, the equivalent system is
 
 $$
 \begin{cases}
@@ -177,7 +180,7 @@ $$
 The free variables are $x_{3},x_{4}$.
 
 $$
-x_{1}=-2x_{3}-x_{4}, x_{2}=-\frac{3}{2}x_{3}-2x_{4}.
+x_{1}=-2x_{3}-x_{4},\quad x_{2}=-\frac{3}{2}x_{3}-2x_{4}.
 $$
 
 Set $x_{3}=1,x_{4}=0$:
@@ -192,13 +195,13 @@ $$
 \xi_{2}=\left(-1,-2,0,1\right)^{\top}.
 $$
 
-Therefore a basis for $\ker\mathcal{A}$ is $\xi_{1},\xi_{2}$.
+Hence a basis of $\ker\mathcal{A}$ is $\xi_{1},\xi_{2}$.
 
 $$
 \dim\left(\ker\mathcal{A}\right)=4-\operatorname{rank}\left(A\right)=2.
 $$
 
-By the **Theorem** (Dimension formula for kernel and image), verify:
+By **Theorem 4.7.1 (Dimension Formula for Kernel and Image)**, verify:
 
 $$
 \dim\left(\ker\mathcal{A}\right)+\dim\left(\operatorname{Im}\mathcal{A}\right)=2+2=4=\dim\left(K^{4}\right).

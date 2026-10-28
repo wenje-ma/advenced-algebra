@@ -1,22 +1,26 @@
-# 作业 24
+# week24
 
-> **定义1** (映射)<br>设 $S$ 和 $S'$ 是两个集合, 如果存在一个法则 $f$, 使得集合 $S$ 中每一个元素 $a$, 都有集合 $S'$ 中唯一确定的元素 $b$ 与它对应, 则称 $f$ 是 $S$ 到 $S'$ 的一个映射.
+> **定义 4.7.1 (映射)**<br>设 $S$ 和 $S'$ 是两个集合, 如果存在一个法则 $f$, 使得集合 $S$ 中每一个元素 $a$, 都有集合 $S'$ 中唯一确定的元素 $b$ 与它对应, 则称 $f$ 是 $S$ 到 $S'$ 的一个映射.
 
-> **定义5** (线性映射)<br>$K^{n}$ 到 $K^{s}$ 的一个映射 $\mathcal{A}$ 如果保持加法和数量乘法, 即 $\forall\alpha,\beta\in K^{n},k\in K$, 有
-> $$
-> \mathcal{A}\left(\alpha+\beta\right)=\mathcal{A}\left(\alpha\right)+\mathcal{A}\left(\beta\right),
-> $$
-> $\mathcal{A}\left(k\alpha\right)=k\mathcal{A}\left(\alpha\right)$, 则称 $\mathcal{A}$ 是 $K^{n}$ 到 $K^{s}$ 的一个线性映射.
+> **定理 4.7.1 (核与象的维数公式)**<br>设 $\mathcal{A}:K^{n}\to K^{s}$ 是线性映射, 则核 (即齐次线性方程组的解空间) 的维数与象的维数之和等于定义域的维数, 即
 
-> **定理** (核与象的维数公式)<br>
-> 
-> $$
-> \dim\left(\ker\mathcal{A}\right)+\dim\left(\operatorname{Im}\mathcal{A}\right)=\dim\left(K^{n}\right)
-> $$
+$$
+\dim\left(\ker\mathcal{A}\right)+\dim\left(\operatorname{Im}\mathcal{A}\right)=\dim\left(K^{n}\right)=n.
+$$
 
-### 习题一
+> **定义 4.7.5 (线性映射)**<br>$K^{n}$ 到 $K^{s}$ 的一个映射 $\mathcal{A}$ 如果保持加法和数量乘法, 即 $\forall\alpha,\beta\in K^{n},k\in K$, 有
 
-(习题 4.7-1) 判别下列对应法则是否为 $\mathbb{R}$ 到自身的映射, 是否为单射, 是否为满射:
+$$
+\mathcal{A}\left(\alpha+\beta\right)=\mathcal{A}\left(\alpha\right)+\mathcal{A}\left(\beta\right),
+$$
+
+$\mathcal{A}\left(k\alpha\right)=k\mathcal{A}\left(\alpha\right)$, 则称 $\mathcal{A}$ 是 $K^{n}$ 到 $K^{s}$ 的一个线性映射.
+
+---
+
+## 4.7-1
+
+判别下列对应法则是否为 $\mathbb{R}$ 到自身的映射, 是否为单射, 是否为满射:
 
 (1) $x\mapsto x^{3}$;
 
@@ -26,9 +30,9 @@
 
 (4) $x\mapsto\ln x$.
 
-### 解答 习题一
+### 解答 4.7-1
 
-由**定义1** (映射), 判别下列对应法则是否为 $\mathbb{R}$ 到自身的映射, 是否为单射, 是否为满射.
+由**定义 4.7.1 (映射)**, 判别下列对应法则是否为 $\mathbb{R}$ 到自身的映射, 是否为单射, 是否为满射.
 
 **(1)** $f\left(x\right)=x^{3}$.
 
@@ -42,17 +46,11 @@ $$
 
 故是单射.
 
-满射: 对任意 $y\in\mathbb{R}$, 存在
-
-$$
-x=\sqrt\left[3\right]{y}
-$$
-
-使得 $f\left(x\right)=y$. 故是满射.
+满射: 对任意 $y\in\mathbb{R}$, 存在 $x=\sqrt[3]{y}$ 使得 $f\left(x\right)=y$. 故是满射.
 
 因此既是单射又是满射 (双射).
 
-** (2)** $f\left(x\right)=x^{2}-x$.
+**(2)** $f\left(x\right)=x^{2}-x$.
 
 是映射.
 
@@ -61,13 +59,14 @@ $$
 满射:
 
 $$
-f\left(x\right)=x^{2}-x=\left(x-\frac{1}{2}\right)^{2}-\frac{1}{4}\ge-\frac{1}{4}
+f\left(x\right)=x^{2}-x=\left(x-\frac{1}{2}\right)^{2}-\frac{1}{4}\ge-\frac{1}{4}.
 $$
+
 例如 $-1$ 没有原象. 故不是满射.
 
 因此既不是单射也不是满射.
 
-** (3)** $f\left(x\right)=2^{x}$.
+**(3)** $f\left(x\right)=2^{x}$.
 
 是映射.
 
@@ -83,19 +82,21 @@ $$
 
 因此是单射但不是满射.
 
-** (4)** $f\left(x\right)=\ln x$.
+**(4)** $f\left(x\right)=\ln x$.
 
 不是映射. 因为对 $x\le0$, $\ln x$ 没有定义, 不是对所有 $x\in\mathbb{R}$ 都有对应.
 
 $\blacksquare$
 
-### 习题二
+---
 
-(习题 4.7-4) 设 $S$ 是一个有限集合. 证明: 如果映射 $f:S\to S$ 是单射, 则 $f$ 一定是双射.
+## 4.7-4
 
-### 解答 习题二
+设 $S$ 是一个有限集合. 证明: 如果映射 $f:S\to S$ 是单射, 则 $f$ 一定是双射.
 
-由**定义1** (映射), 设 $S$ 有 $n$ 个元素.
+### 解答 4.7-4
+
+由**定义 4.7.1 (映射)**, 设 $S$ 有 $n$ 个元素.
 
 $f$ 是单射, 故 $S$ 中不同元素的象也不同. 因此 $f\left(S\right)$ 的元素个数等于 $\left|S\right|=n$.
 
@@ -105,9 +106,11 @@ $f$ 是单射, 故 $S$ 中不同元素的象也不同. 因此 $f\left(S\right)$ 
 
 因此 $f$ 既是单射又是满射, 即 $f$ 是双射. $\blacksquare$
 
-### 习题三
+---
 
-(习题 4.7-7) 设
+## 4.7-7
+
+设
 
 $$
 A=\left[\begin{array}{rrrr}
@@ -123,9 +126,9 @@ $$
 
 (2) 求 $\ker\mathcal{A}$ 的维数和一个基.
 
-### 解答 习题三
+### 解答 4.7-7
 
-由**定义5** (线性映射)和**定理** (核与象的维数公式), $\mathcal{A}\left(\alpha\right)=A\alpha$ 是线性映射.
+由**定义 4.7.5 (线性映射)**和**定理 4.7.1 (核与象的维数公式)**, $\mathcal{A}\left(\alpha\right)=A\alpha$ 是线性映射.
 
 **(1)** $\operatorname{Im}\mathcal{A}$ 等于 $A$ 的列空间.
 
@@ -163,7 +166,7 @@ $$
 \dim\left(\operatorname{Im}\mathcal{A}\right)=\operatorname{rank}\left(A\right)=2.
 $$
 
-** (2)** $\ker\mathcal{A}$ 是 $Ax=0$ 的解空间.
+**(2)** $\ker\mathcal{A}$ 是 $Ax=0$ 的解空间.
 
 由行阶梯形得同解方程组:
 
@@ -177,7 +180,7 @@ $$
 自由未知量为 $x_{3},x_{4}$.
 
 $$
-x_{1}=-2x_{3}-x_{4}, x_{2}=-\frac{3}{2}x_{3}-2x_{4}.
+x_{1}=-2x_{3}-x_{4},\quad x_{2}=-\frac{3}{2}x_{3}-2x_{4}.
 $$
 
 令 $x_{3}=1,x_{4}=0$:
@@ -198,7 +201,7 @@ $$
 \dim\left(\ker\mathcal{A}\right)=4-\operatorname{rank}\left(A\right)=2.
 $$
 
-由**定理** (核与象的维数公式), 验证:
+由**定理 4.7.1 (核与象的维数公式)**, 验证:
 
 $$
 \dim\left(\ker\mathcal{A}\right)+\dim\left(\operatorname{Im}\mathcal{A}\right)=2+2=4=\dim\left(K^{4}\right).

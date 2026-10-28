@@ -1,20 +1,34 @@
-# 作业 20
+# week20
 
-> **定理1** (矩阵乘积的秩)<br>设 $A=\left(a_{ij}\right)_{s\times n}$, $B=\left(b_{ij}\right)_{n\times m}$, 则:
-> 
-> $$
-> \text{rank}\left(AB\right)\le\min\left\{\text{rank}\left(A\right),\text{rank}\left(B\right)\right\}
-> $$
+> **基础知识: 范德蒙行列式的计算公式**<br>关于 $x_{1},x_{2},x_{3}$ 的 $3$ 阶范德蒙行列式
 
-> **定理3** (乘积的行列式)<br>设 $A,B$ 都是 $n$ 级矩阵, 则 $\left|AB\right|=\left|A\right|\left|B\right|$.
+$$
+\left|\begin{array}{ccc}
+1 & 1 & 1\\
+x_{1} & x_{2} & x_{3}\\
+x_{1}^{2} & x_{2}^{2} & x_{3}^{2}
+\end{array}\right|=\left(x_{2}-x_{1}\right)\left(x_{3}-x_{1}\right)\left(x_{3}-x_{2}\right).
+$$
 
-### 习题一
+> **定理 4.3.1 (矩阵乘积的秩)**<br>设 $A=\left(a_{ij}\right)_{s\times n}$, $B=\left(b_{ij}\right)_{n\times m}$, 则
 
-(习题 4.3-2) 一个矩阵称为行 (列) 满秩矩阵, 如果它的行 (列) 向量组是线性无关的. 证明: 如果一个 $s\times n$ 矩阵 $A$ 的秩为 $r$, 则有 $s\times r$ 的列满秩矩阵 $B$ 和 $r\times n$ 的行满秩矩阵 $C$, 使得 $A=BC$.
+$$
+\text{rank}\left(AB\right)\le\min\left\{\text{rank}\left(A\right),\text{rank}\left(B\right)\right\}.
+$$
 
-### 解答 习题一
+> **命题 4.3.2 (实矩阵 $A^{\top}Az=0$ 与 $z=0$ 同解)**<br>设 $A$ 是实数域上的矩阵, 则齐次线性方程组 $A^{\top}Az=0$ 与 $z=0$ 同解.
 
-由**定理1** (矩阵乘积的秩)的思路, 把 $A$ 经过初等行变换化成简化行阶梯形矩阵 $J$.
+> **定理 4.3.3 (乘积的行列式)**<br>设 $A,B$ 都是 $n$ 级矩阵, 则 $\left|AB\right|=\left|A\right|\left|B\right|$.
+
+---
+
+## 4.3-2
+
+一个矩阵称为行 (列) 满秩矩阵, 如果它的行 (列) 向量组是线性无关的. 证明: 如果一个 $s\times n$ 矩阵 $A$ 的秩为 $r$, 则有 $s\times r$ 的列满秩矩阵 $B$ 和 $r\times n$ 的行满秩矩阵 $C$, 使得 $A=BC$.
+
+### 解答 4.3-2
+
+由**定理 4.3.1 (矩阵乘积的秩)**的思路, 把 $A$ 经过初等行变换化成简化行阶梯形矩阵 $J$.
 
 因为 $\text{rank}\left(A\right)=r$, 所以 $J$ 有 $r$ 个非零行.
 
@@ -37,7 +51,7 @@ $$
 则
 
 $$
-A=\left(P_{1},P_{2}\right)\left[\begin{array}{c}C\\0\end{array}\right]=P_{1}C
+A=\left(P_{1},P_{2}\right)\left[\begin{array}{c}C\\0\end{array}\right]=P_{1}C.
 $$
 
 令 $B=P_{1}$.
@@ -48,13 +62,15 @@ $$
 
 因此 $A=BC$, 其中 $B$ 是 $s\times r$ 列满秩矩阵, $C$ 是 $r\times n$ 行满秩矩阵. $\blacksquare$
 
-### 习题二
+---
 
-(习题 4.3-6) 证明: 如果 $A$ 是数域 $K$ 上 $n$ 级矩阵, $n$ 是奇数, 且满足 $AA^{\top}=I$, $\left|A\right|=1$, 则 $\left|I-A\right|=0$.
+## 4.3-6
 
-### 解答 习题二
+证明: 如果 $A$ 是数域 $K$ 上 $n$ 级矩阵, $n$ 是奇数, 且满足 $AA^{\top}=I$, $\left|A\right|=1$, 则 $\left|I-A\right|=0$.
 
-由**定理3** (乘积的行列式), $\left|AB\right|=\left|A\right|\left|B\right|$. 要证明 $\left|I-A\right|=0$.
+### 解答 4.3-6
+
+由**定理 4.3.3 (乘积的行列式)**, $\left|AB\right|=\left|A\right|\left|B\right|$. 要证明 $\left|I-A\right|=0$.
 
 $$
 \left|I-A\right|=\left|\left(I-A\right)^{\top}\right|=\left|I-A^{\top}\right|.
@@ -86,9 +102,11 @@ $$
 
 所以 $2\left|I-A\right|=0$, 即 $\left|I-A\right|=0$. $\blacksquare$
 
-### 习题三
+---
 
-(习题 4.3-7) 设 $s_{k}=x_{1}^{k}+x_{2}^{k}+x_{3}^{k}$, $k=0,1,2,\cdots$; 设
+## 4.3-7
+
+设 $s_{k}=x_{1}^{k}+x_{2}^{k}+x_{3}^{k}$, $k=0,1,2,\cdots$; 设
 
 $$
 A=\left[\begin{array}{ccc}
@@ -104,9 +122,9 @@ $$
 \left|A\right|=\left(x_{1}-x_{2}\right)^{2}\left(x_{1}-x_{3}\right)^{2}\left(x_{2}-x_{3}\right)^{2}.
 $$
 
-### 解答 习题三
+### 解答 4.3-7
 
-由**定理3** (乘积的行列式), $\left|AB\right|=\left|A\right|\left|B\right|$. 令
+由**定理 4.3.3 (乘积的行列式)**, $\left|AB\right|=\left|A\right|\left|B\right|$. 令
 
 $$
 B=\left[\begin{array}{ccc}
@@ -132,15 +150,13 @@ s_{2} & s_{3} & s_{4}
 \end{array}\right]=A.
 $$
 
-所以
-
-由**定理3** (乘积的行列式),
+由**定理 4.3.3 (乘积的行列式)**,
 
 $$
 \left|A\right|=\left|BB^{\top}\right|=\left|B\right|\left|B^{\top}\right|=\left|B\right|^{2}.
 $$
 
-$B$ 是范德蒙矩阵,
+由**基础知识: 范德蒙行列式的计算公式**, $B$ 是范德蒙矩阵,
 
 $$
 \left|B\right|=\left(x_{2}-x_{1}\right)\left(x_{3}-x_{1}\right)\left(x_{3}-x_{2}\right).
@@ -154,17 +170,19 @@ $$
 
 $\blacksquare$
 
-### 习题四
+---
 
-(习题 4.3-12) 证明: 对于实数域上任一 $s\times n$ 矩阵 $A$, 都有
+## 4.3-12
+
+证明: 对于实数域上任一 $s\times n$ 矩阵 $A$, 都有
 
 $$
 \text{rank}\left(A^{\top}AA^{\top}\right)=\text{rank}\left(A\right).
 $$
 
-### 解答 习题四
+### 解答 4.3-12
 
-由**定理1** (矩阵乘积的秩),
+由**定理 4.3.1 (矩阵乘积的秩)**,
 
 $$
 \text{rank}\left(AB\right)\le\min\left\{\text{rank}\left(A\right),\text{rank}\left(B\right)\right\}.
@@ -180,7 +198,7 @@ $$
 
 令 $z=A^{\top}y$, 则 $A^{\top}Az=0$.
 
-由命题 $2$, 实数域上 $A^{\top}Az=0$ 与 $z=0$ 同解.
+由**命题 4.3.2 (实矩阵 $A^{\top}Az=0$ 与 $z=0$ 同解)**, 实数域上 $A^{\top}Az=0$ 与 $z=0$ 同解.
 
 故 $z=0$, 即 $A^{\top}y=0$.
 

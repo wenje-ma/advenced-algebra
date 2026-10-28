@@ -1,14 +1,18 @@
-# Assignment 18
+# week18
 
-> **Definition 1** (Matrix addition)<br>Let $A=\left(a_{ij}\right),B=\left(b_{ij}\right)$ both be $s\times n$ matrices over $K$. Set $C=\left(a_{ij}+b_{ij}\right)_{s\times n}$; then $C$ is called the sum of matrices $A$ and $B$, denoted $C=A+B$.
+> **Basic Knowledge: Matrix Binomial Theorem**<br>If two matrices $P,Q$ commute ($PQ=QP$), then $\left(P+Q\right)^{n}=\sum_{k=0}^{n}\binom{n}{k}P^{n-k}Q^{k}$.
 
-> **Definition 2** (Scalar multiplication of matrices)<br>Let $k\in K$ and set $M=\left(ka_{ij}\right)_{s\times n}$; then $M$ is called the scalar product of $k$ and matrix $A$, denoted $M=kA$.
+> **Definition 4.1.1 (Matrix Addition)**<br>Let $A=\left(a_{ij}\right),B=\left(b_{ij}\right)$ both be $s\times n$ matrices over a number field $K$, and set $C=\left(a_{ij}+b_{ij}\right)_{s\times n}$. Then $C$ is called the sum of the matrices $A$ and $B$, denoted $C=A+B$.
 
-> **Definition 3** (Matrix multiplication)<br>Let $A=\left(a_{ij}\right)_{s\times n}$ and $B=\left(b_{ij}\right)_{n\times m}$. Set $C=\left(c_{ij}\right)_{s\times m}$ where $c_{ij}=\sum_{k=1}^{n}a_{ik}b_{kj}$; then $C$ is called the product of $A$ and $B$, denoted $C=AB$.
+> **Definition 4.1.2 (Scalar Multiplication of Matrices)**<br>Let $k\in K$ and set $M=\left(ka_{ij}\right)_{s\times n}$. Then $M$ is called the scalar product of $k$ and the matrix $A$, denoted $M=kA$.
 
-### Problem 1
+> **Definition 4.1.3 (Matrix Multiplication)**<br>Let $A=\left(a_{ij}\right)_{s\times n}$ and $B=\left(b_{ij}\right)_{n\times m}$, and set $C=\left(c_{ij}\right)_{s\times m}$ with $c_{ij}=\sum_{k=1}^{n}a_{ik}b_{kj}$. Then $C$ is called the product of $A$ and $B$, denoted $C=AB$.
 
-(Problem 4.1-1) Let
+---
+
+## 4.1-1
+
+Let
 
 $$
 A=\left[\begin{array}{ccc}
@@ -25,9 +29,9 @@ $$
 
 Find $A+B$.
 
-### Solution to Problem 1
+### Solution 4.1-1
 
-By **Definition 1** (Matrix addition),
+By **Definition 4.1.1 (Matrix Addition)**,
 
 $$
 A+B=\left[\begin{array}{ccc}
@@ -39,9 +43,11 @@ $$
 
 $\blacksquare$
 
-### Problem 2
+---
 
-(Problem 4.1-3) Let $I$ be the $n$-th order identity matrix and $J$ be the $n$-th order matrix with all entries equal to $1$. Let
+## 4.1-3
+
+Let $I$ be the $n\times n$ identity matrix and $J$ be the $n\times n$ matrix all of whose entries are $1$. Let
 
 $$
 M=\left[\begin{array}{cccc}
@@ -54,11 +60,11 @@ $$
 
 Express $M$ in the form $xI+yJ$, where $x,y$ are undetermined coefficients.
 
-### Solution to Problem 2
+### Solution 4.1-3
 
-By **Definition 1** (Matrix addition) and **Definition 2** (Scalar multiplication), the diagonal entries of $xI+yJ$ are $x+y$, and all other entries are $y$.
+By **Definition 4.1.1 (Matrix Addition)** and **Definition 4.1.2 (Scalar Multiplication of Matrices)**, the diagonal entries of $xI+yJ$ are $x+y$ and the off-diagonal entries are $y$.
 
-Comparing with $M$, whose diagonal entries are $k$ and other entries are $\lambda$, we get
+Comparing with $M$, whose diagonal entries are $k$ and off-diagonal entries are $\lambda$, gives
 
 $$
 \begin{cases}
@@ -69,7 +75,7 @@ $$
 
 Solving gives $x=k-\lambda$, $y=\lambda$.
 
-By **Definition 1** (Matrix addition) and **Definition 2** (Scalar multiplication),
+By **Definition 4.1.1 (Matrix Addition)** and **Definition 4.1.2 (Scalar Multiplication of Matrices)**,
 
 $$
 M=\left(k-\lambda\right)I+\lambda J.
@@ -77,9 +83,11 @@ $$
 
 $\blacksquare$
 
-### Problem 3
+---
 
-(Problem 4.1-4(1)) Compute:
+## 4.1-4(1)
+
+Compute:
 
 $$
 \left[\begin{array}{rr}
@@ -92,9 +100,9 @@ $$
 \end{array}\right].
 $$
 
-### Solution to Problem 3
+### Solution 4.1-4(1)
 
-By **Definition 3** (Matrix multiplication), the $\left(i,j\right)$-entry of the matrix product equals the inner product of the $i$-th row and the $j$-th column:
+By **Definition 4.1.3 (Matrix Multiplication)**, the $\left(i,j\right)$-entry of the product equals the inner product of row $i$ and column $j$:
 
 $$
 \left[\begin{array}{rr}
@@ -121,9 +129,11 @@ $$
 
 $\blacksquare$
 
-### Problem 4
+---
 
-(Problem 4.1-4(2)) Compute:
+## 4.1-4(2)
+
+Compute:
 
 $$
 \left[\begin{array}{rr}
@@ -135,9 +145,9 @@ $$
 \end{array}\right].
 $$
 
-### Solution to Problem 4
+### Solution 4.1-4(2)
 
-By **Definition 3** (Matrix multiplication), the $\left(i,j\right)$-entry of the matrix product equals the inner product of the $i$-th row and the $j$-th column:
+By **Definition 4.1.3 (Matrix Multiplication)**, the $\left(i,j\right)$-entry of the product equals the inner product of row $i$ and column $j$:
 
 $$
 \left[\begin{array}{rr}
@@ -161,9 +171,11 @@ $$
 
 $\blacksquare$
 
-### Problem 5
+---
 
-(Problem 4.1-4(3)) Compute:
+## 4.1-4(3)
+
+Compute:
 
 $$
 \left[\begin{array}{rr}
@@ -175,9 +187,9 @@ $$
 \end{array}\right].
 $$
 
-### Solution to Problem 5
+### Solution 4.1-4(3)
 
-By **Definition 3** (Matrix multiplication), the $\left(i,j\right)$-entry of the matrix product equals the inner product of the $i$-th row and the $j$-th column:
+By **Definition 4.1.3 (Matrix Multiplication)**, the $\left(i,j\right)$-entry of the product equals the inner product of row $i$ and column $j$:
 
 $$
 \left[\begin{array}{rr}
@@ -201,9 +213,11 @@ $$
 
 $\blacksquare$
 
-### Problem 6
+---
 
-(Problem 4.1-4(8)) Compute:
+## 4.1-4(8)
+
+Compute:
 
 $$
 \left[\begin{array}{ccc}
@@ -217,9 +231,9 @@ c_{1} & c_{2} & c_{3}
 \end{array}\right].
 $$
 
-### Solution to Problem 6
+### Solution 4.1-4(8)
 
-By **Definition 3** (Matrix multiplication), left-multiplying by a diagonal matrix amounts to multiplying each row by the corresponding diagonal entry:
+By **Definition 4.1.3 (Matrix Multiplication)**, left-multiplying by a diagonal matrix amounts to multiplying the corresponding rows by the diagonal entries:
 
 $$
 =
@@ -232,9 +246,11 @@ $$
 
 $\blacksquare$
 
-### Problem 7
+---
 
-(Problem 4.1-4(9)) Compute:
+## 4.1-4(9)
+
+Compute:
 
 $$
 \left[\begin{array}{ccc}
@@ -248,9 +264,9 @@ d_{1} & 0 & 0\\
 \end{array}\right].
 $$
 
-### Solution to Problem 7
+### Solution 4.1-4(9)
 
-By **Definition 3** (Matrix multiplication), right-multiplying by a diagonal matrix amounts to multiplying each column by the corresponding diagonal entry:
+By **Definition 4.1.3 (Matrix Multiplication)**, right-multiplying by a diagonal matrix amounts to multiplying the corresponding columns by the diagonal entries:
 
 $$
 =
@@ -263,9 +279,11 @@ $$
 
 $\blacksquare$
 
-### Problem 8
+---
 
-(Problem 4.1-4(13)) Compute:
+## 4.1-4(13)
+
+Compute:
 
 $$
 \left[\begin{array}{ccc}
@@ -279,9 +297,9 @@ c_{1} & c_{2} & c_{3} & c_{4}
 \end{array}\right].
 $$
 
-### Solution to Problem 8
+### Solution 4.1-4(13)
 
-By **Definition 3** (Matrix multiplication), this is left-multiplication by the elementary matrix that swaps row $1$ and row $2$:
+By **Definition 4.1.3 (Matrix Multiplication)**, this is left-multiplication by the elementary matrix that swaps rows $1$ and $2$:
 
 $$
 =
@@ -294,9 +312,11 @@ $$
 
 $\blacksquare$
 
-### Problem 9
+---
 
-(Problem 4.1-4(14)) Compute:
+## 4.1-4(14)
+
+Compute:
 
 $$
 \left[\begin{array}{ccc}
@@ -310,9 +330,9 @@ c_{1} & c_{2} & c_{3}
 \end{array}\right].
 $$
 
-### Solution to Problem 9
+### Solution 4.1-4(14)
 
-By **Definition 3** (Matrix multiplication), this is right-multiplication by the elementary matrix that swaps column $1$ and column $2$:
+By **Definition 4.1.3 (Matrix Multiplication)**, this is right-multiplication by the elementary matrix that swaps columns $1$ and $2$:
 
 $$
 =
@@ -325,9 +345,11 @@ $$
 
 $\blacksquare$
 
-### Problem 10
+---
 
-(Problem 4.1-6) Compute:
+## 4.1-6
+
+Compute:
 
 $$
 \left(x,y,1\right)\left[\begin{array}{ccc}
@@ -341,9 +363,9 @@ y\\
 \end{array}\right].
 $$
 
-### Solution to Problem 10
+### Solution 4.1-6
 
-By **Definition 3** (Matrix multiplication), first compute the row vector times the matrix on the right:
+By **Definition 4.1.3 (Matrix Multiplication)**, first multiply the row vector on the left by the matrix:
 
 $$
 \left(x,y,1\right)M
@@ -351,32 +373,34 @@ $$
 \left(a_{11}x+a_{12}y+a_{1},a_{12}x+a_{22}y+a_{2},a_{1}x+a_{2}y+a_{0}\right).
 $$
 
-then multiply by the column vector:
+Then multiply by the column vector:
 
 $$
-=\left(a_{11}x+a_{12}y+a_{1}\right)x+\left(a_{12}x+a_{22}y+a_{2}\right)y+\left(a_{1}x+a_{2}y+a_{0}\right)=a_{11}x^{2}+a_{12}xy+a_{1}x+a_{12}xy+a_{22}y^{2}+a_{2}y+a_{1}x+a_{2}y+a_{0}=a_{11}x^{2}+2a_{12}xy+a_{22}y^{2}+2a_{1}x+2a_{2}y+a_{0}.
+=\left(a_{11}x+a_{12}y+a_{1}\right)x+\left(a_{12}x+a_{22}y+a_{2}\right)y+\left(a_{1}x+a_{2}y+a_{0}\right)=a_{11}x^{2}+2a_{12}xy+a_{22}y^{2}+2a_{1}x+2a_{2}y+a_{0}.
 $$
 
 $\blacksquare$
 
-### Problem 11
+---
 
-(Problem 4.1-7(5)) Compute:
+## 4.1-7(5)
+
+Compute:
 
 $$
 \left[\begin{array}{ccc}
 0 & 1 & 0\\
 0 & 0 & 1\\
 0 & 0 & 0
-\end{array}\right]^{n},n\text{ 是正整数}.
+\end{array}\right]^{n},\text{ where }n\text{ is a positive integer}.
 $$
 
-### Solution to Problem 11
+### Solution 4.1-7(5)
 
-By **Definition 3** (Matrix multiplication), let
+By **Definition 4.1.3 (Matrix Multiplication)**, write
 
 $$
-H=\left[\begin{array}{ccc}0 & 1 & 0\\0 & 0 & 1\\0 & 0 & 0\end{array}\right]
+H=\left[\begin{array}{ccc}0 & 1 & 0\\0 & 0 & 1\\0 & 0 & 0\end{array}\right].
 $$
 
 $$
@@ -397,33 +421,35 @@ $$
 
 Therefore:
 
-- When $n=1$, $H^{n}=H=\left[\begin{array}{ccc}0 & 1 & 0\\0 & 0 & 1\\0 & 0 & 0\end{array}\right]$.
-- When $n=2$, $H^{n}=\left[\begin{array}{ccc}0 & 0 & 1\\0 & 0 & 0\\0 & 0 & 0\end{array}\right]$.
-- When $n\ge3$, $H^{n}=0$.
+- when $n=1$, $H^{n}=H=\left[\begin{array}{ccc}0 & 1 & 0\\0 & 0 & 1\\0 & 0 & 0\end{array}\right]$;
+- when $n=2$, $H^{n}=\left[\begin{array}{ccc}0 & 0 & 1\\0 & 0 & 0\\0 & 0 & 0\end{array}\right]$;
+- when $n\ge3$, $H^{n}=0$.
 
 $\blacksquare$
 
-### Problem 12
+---
 
-(Problem 4.1-7(6)) Compute:
+## 4.1-7(6)
+
+Compute:
 
 $$
 \left[\begin{array}{ccc}
 \lambda & 1 & 0\\
 0 & \lambda & 1\\
 0 & 0 & \lambda
-\end{array}\right]^{n},n\text{ 是正整数}.
+\end{array}\right]^{n},\text{ where }n\text{ is a positive integer}.
 $$
 
-### Solution to Problem 12
+### Solution 4.1-7(6)
 
-By **Definition 3** (Matrix multiplication), let $A=\lambda I+N$, where
+By **Definition 4.1.3 (Matrix Multiplication)**, write $A=\lambda I+N$, where
 
 $$
-N=\left[\begin{array}{ccc}0 & 1 & 0\\0 & 0 & 1\\0 & 0 & 0\end{array}\right]
+N=\left[\begin{array}{ccc}0 & 1 & 0\\0 & 0 & 1\\0 & 0 & 0\end{array}\right].
 $$
 
-Since $\lambda I$ and $N$ commute, by the binomial theorem:
+Because $\lambda I$ and $N$ commute, by **Basic Knowledge: Matrix Binomial Theorem**,
 
 $$
 A^{n}=\sum_{k=0}^{n}\binom{n}{k}\left(\lambda I\right)^{n-k}N^{k}.
@@ -431,12 +457,12 @@ $$
 
 Also $N^{0}=I$, $N^{1}=N$, $N^{2}=\left[\begin{array}{ccc}0 & 0 & 1\\0 & 0 & 0\\0 & 0 & 0\end{array}\right]$, $N^{3}=0$.
 
-Thus when $n\ge2$,
+Hence
 
 $$
 A^{n}
 =\lambda^{n}I+n\lambda^{n-1}N+\binom{n}{2}\lambda^{n-2}N^{2}=\left[\begin{array}{ccc}
-\lambda^{n} & n\lambda^{n-1} & n\left(n-1\right)/2 \cdot \lambda^{n-2}\\
+\lambda^{n} & n\lambda^{n-1} & \dfrac{n\left(n-1\right)}{2}\lambda^{n-2}\\
 0 & \lambda^{n} & n\lambda^{n-1}\\
 0 & 0 & \lambda^{n}
 \end{array}\right].
@@ -444,17 +470,19 @@ $$
 
 When $n=1$, the above also holds (note $\lambda^{0}=1$, and the third term is $0$). $\blacksquare$
 
-### Problem 13
+---
 
-(Problem 4.1-10) Prove: if $A=\frac{1}{2}\left(B+I\right)$, then $A^{2}=A$ if and only if $B^{2}=I$.
+## 4.1-10
 
-### Solution to Problem 13
+Prove: if $A=\frac{1}{2}\left(B+I\right)$, then $A^{2}=A$ if and only if $B^{2}=I$.
+
+### Solution 4.1-10
 
 $$
 A^{2}=\left(\frac{1}{2}\left(B+I\right)\right)^{2}=\frac{1}{4}\left(B+I\right)^{2}=\frac{1}{4}\left(B^{2}+2B+I\right).
 $$
 
-$A^{2}=A$ is equivalent to:
+$A^{2}=A$ is equivalent to
 
 $$
 \frac{1}{4}\left(B^{2}+2B+I\right)=\frac{1}{2}\left(B+I\right).

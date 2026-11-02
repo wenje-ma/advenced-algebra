@@ -1,19 +1,19 @@
 # week18
 
 > **Basic Knowledge: Matrix Binomial Theorem**
->
+> 
 > If two matrices $P,Q$ commute ($PQ=QP$), then $\left(P+Q\right)^{n}=\sum_{k=0}^{n}\binom{n}{k}P^{n-k}Q^{k}$.
 
 > **Definition 4.1.1 (Matrix Addition)**
->
+> 
 > Let $A=\left(a_{ij}\right),B=\left(b_{ij}\right)$ both be $s\times n$ matrices over a number field $K$, and set $C=\left(a_{ij}+b_{ij}\right)_{s\times n}$. Then $C$ is called the sum of the matrices $A$ and $B$, denoted $C=A+B$.
 
 > **Definition 4.1.2 (Scalar Multiplication of Matrices)**
->
+> 
 > Let $k\in K$ and set $M=\left(ka_{ij}\right)_{s\times n}$. Then $M$ is called the scalar product of $k$ and the matrix $A$, denoted $M=kA$.
 
 > **Definition 4.1.3 (Matrix Multiplication)**
->
+> 
 > Let $A=\left(a_{ij}\right)_{s\times n}$ and $B=\left(b_{ij}\right)_{n\times m}$, and set $C=\left(c_{ij}\right)_{s\times m}$ with $c_{ij}=\sum_{k=1}^{n}a_{ik}b_{kj}$. Then $C$ is called the product of $A$ and $B$, denoted $C=AB$.
 
 ---

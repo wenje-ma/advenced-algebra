@@ -1,11 +1,11 @@
 # week35
 
 > **定义 7.3.1 (最大公因式)**
->
+> 
 > 设 $f\left(x\right),g\left(x\right)\in K\left[x\right]$, $d\left(x\right)$ 是 $f\left(x\right)$ 与 $g\left(x\right)$ 的一个公因式. 如果 $f\left(x\right)$ 与 $g\left(x\right)$ 的任一公因式都能整除 $d\left(x\right)$, 则称 $d\left(x\right)$ 是 $f\left(x\right)$ 与 $g\left(x\right)$ 的一个最大公因式.
 
 > **定理 7.3.1 (最大公因式的存在性与倍式和)**
->
+> 
 > 对于 $K\left[x\right]$ 中任意两个多项式 $f\left(x\right)$ 与 $g\left(x\right)$, 存在它们的一个最大公因式 $d\left(x\right)$, 并且 $d\left(x\right)$ 可以表示成 $f\left(x\right)$ 与 $g\left(x\right)$ 的倍式和, 即有 $u\left(x\right),v\left(x\right)\in K\left[x\right]$, 使得
 
 $$
@@ -13,7 +13,7 @@ d\left(x\right)=u\left(x\right)f\left(x\right)+v\left(x\right)g\left(x\right).
 $$
 
 > **定义 7.3.2 (互素)**
->
+> 
 > 在 $K\left[x\right]$ 中, 如果 $f\left(x\right)$ 与 $g\left(x\right)$ 的最大公因式是零次多项式, 则称 $f\left(x\right)$ 与 $g\left(x\right)$ 互素.
 
 ---

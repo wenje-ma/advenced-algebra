@@ -1,7 +1,7 @@
 # week17
 
 > **定理 3.8.1 (非齐次方程组的解集结构)**
->
+> 
 > 如果数域 $K$ 上 $n$ 元非齐次线性方程组有解, 则它的解集 $U=\gamma_{0}+W$, 其中 $\gamma_{0}$ 是一个特解, $W$ 是导出组的解空间.
 
 ---
@@ -24,14 +24,14 @@ $$
 由**定理 3.8.1 (非齐次方程组的解集结构)**, 增广矩阵作初等行变换:
 
 $$
-\left[\begin{array}{rrrr|r}
+\left[\begin{array}{rrrr\left|r}
 1 & -5 & 2 & -3 & 11\\
 -3 & 1 & -4 & 2 & -5\\
 -1 & -9 & 0 & -4 & 17\\
 5 & 3 & 6 & -1 & -1
 \end{array}\right]
 \xrightarrow{\text{行变换}}
-\left[\begin{array}{rrrr|r}
+\left[\begin{array}{rrrr\right|r}
 1 & -5 & 2 & -3 & 11\\
 0 & -14 & 2 & -7 & 28\\
 0 & 0 & 0 & 0 & 0\\
@@ -83,7 +83,7 @@ $\blacksquare$
 **必要性**. 设非齐次方程组有唯一解, 则
 
 $$
-\text{rank}\left(A\right)=\text{rank}\left(\overline{A}\right)=n\ \text{(系数矩阵的秩等于未知量数目)}.
+\text{rank}\left(A\right)=\text{rank}\left(\overline{A}\right)=n\ \text{\left(系数矩阵的秩等于未知量数目\right)}.
 $$
 
 导出组 $Ax=0$ 的系数矩阵秩为 $n$, 未知量数目为 $n$, 故只有零解.

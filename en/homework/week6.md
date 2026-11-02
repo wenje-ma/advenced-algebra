@@ -1,24 +1,24 @@
 # week6
 
 > **Property 2.3.2 (A Common Factor of a Row Can Be Pulled Out)**
->
+> 
 > A common factor of a row of a determinant can be pulled outside the determinant; in particular, if a row of a determinant is zero (all its entries are $0$), then the determinant is $0$.
 
 > **Property 2.3.3 (Splitting When a Row Is a Sum of Two Groups)**
->
+> 
 > If a row of a determinant is the sum of two groups of numbers, then the determinant equals the sum of two determinants: in these two determinants that row is respectively the first group and the second group of numbers, while all other rows are the same as the corresponding rows of the original determinant.
 
 > **Property 2.3.5 (Two Identical Rows Make the Determinant Zero)**
->
+> 
 > If a determinant has two identical rows, its value is $0$; consequently, if two rows are proportional, the determinant is also $0$.
 
 > **Property 2.3.7 (Adding a Multiple of One Row to Another Leaves the Determinant Unchanged)**
->
+> 
 > Adding a multiple of one row to another row leaves the value of the determinant unchanged.
 
 > **Theorem 2.4.1 (Expansion of a Determinant Along a Row (Column))**
->
-> The $n\times n$ determinant $|A|$ equals the sum of the products of the entries in its $i$-th row and their cofactors, and also the sum of the products of the entries in its $j$-th column and their cofactors, i.e. $|A|=\sum_{k=1}^{n}a_{ik}A_{ik}=\sum_{k=1}^{n}a_{kj}A_{kj}$, where $A_{kj}=\left(-1\right)^{k+j}M_{kj}$ is the cofactor.
+> 
+> The $n\times n$ determinant $\left|A\right|$ equals the sum of the products of the entries in its $i$-th row and their cofactors, and also the sum of the products of the entries in its $j$-th column and their cofactors, i.e. $\left|A\right|=\sum_{k=1}^{n}a_{ik}A_{ik}=\sum_{k=1}^{n}a_{kj}A_{kj}$, where $A_{kj}=\left(-1\right)^{k+j}M_{kj}$ is the cofactor.
 
 ---
 

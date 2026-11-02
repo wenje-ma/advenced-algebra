@@ -1,19 +1,19 @@
 # week19
 
 > **Definition 4.2.2 (Upper/Lower Triangular Matrix)**
->
+> 
 > A square matrix whose entries below (above) the main diagonal are all zero is called an upper (lower) triangular matrix.
 
 > **Definition 4.2.3 (Elementary Matrix Unit)**
->
+> 
 > A matrix with exactly one entry equal to $1$ and all other entries equal to $0$ is called a matrix unit. The matrix unit whose $\left(i,j\right)$-entry is $1$ is denoted $E_{ij}$.
 
 > **Definition 4.2.5 (Symmetric Matrix)**
->
+> 
 > A matrix $A$ satisfying $A^{\top}=A$ is called a symmetric matrix.
 
 > **Definition 4.2.6 (Skew-Symmetric Matrix)**
->
+> 
 > A matrix $A$ satisfying $A^{\top}=-A$ is called a skew-symmetric matrix.
 
 ---

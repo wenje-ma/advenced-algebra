@@ -1,15 +1,15 @@
 # week28
 
 > **基础知识: 相似矩阵的不变量**
->
+> 
 > 相似的矩阵有相等的行列式, 相等的秩, 相等的迹. 此外, 相似矩阵的迹满足 $\operatorname{tr}\left(A^{-1}BA\right)=\operatorname{tr}\left(B\right)$.
 
 > **定义 5.4.1 (相似)**
->
+> 
 > 设 $A$ 与 $B$ 都是数域 $K$ 上 $n$ 级矩阵, 如果存在数域 $K$ 上的一个 $n$ 级可逆矩阵 $P$, 使得 $P^{-1}AP=B$, 则称 $A$ 与 $B$ 是相似的, 记作 $A\sim B$.
 
 > **定理 5.4.2 (可对角化的充要条件)**
->
+> 
 > 数域 $K$ 上的 $n$ 级矩阵 $A$ 能够相似于对角矩阵的充分必要条件是: $K^{n}$ 中有 $n$ 个线性无关的列向量 $\alpha_{1},\alpha_{2},\cdots,\alpha_{n}$ 以及 $K$ 中有 $n$ 个数 $\lambda_{1},\lambda_{2},\cdots,\lambda_{n}$, 使得 $A\alpha_{i}=\lambda_{i}\alpha_{i}$ ( $i=1,2,\cdots,n$ ).
 
 ---

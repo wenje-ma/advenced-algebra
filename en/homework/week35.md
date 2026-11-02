@@ -1,11 +1,11 @@
 # week35
 
 > **Definition 7.3.1 (Greatest Common Divisor)**
->
+> 
 > Let $f\left(x\right),g\left(x\right)\in K\left[x\right]$, and let $d\left(x\right)$ be a common divisor of $f\left(x\right)$ and $g\left(x\right)$. If every common divisor of $f\left(x\right)$ and $g\left(x\right)$ divides $d\left(x\right)$, then $d\left(x\right)$ is called a greatest common divisor of $f\left(x\right)$ and $g\left(x\right)$.
 
 > **Theorem 7.3.1 (Existence of the Greatest Common Divisor and Bezout Identity)**
->
+> 
 > For any two polynomials $f\left(x\right)$ and $g\left(x\right)$ in $K\left[x\right]$, there exists a greatest common divisor $d\left(x\right)$, and $d\left(x\right)$ can be expressed as a linear combination of $f\left(x\right)$ and $g\left(x\right)$, i.e. there exist $u\left(x\right),v\left(x\right)\in K\left[x\right]$ such that
 
 $$
@@ -13,7 +13,7 @@ d\left(x\right)=u\left(x\right)f\left(x\right)+v\left(x\right)g\left(x\right).
 $$
 
 > **Definition 7.3.2 (Coprime)**
->
+> 
 > In $K\left[x\right]$, if the greatest common divisor of $f\left(x\right)$ and $g\left(x\right)$ is a zero-degree polynomial, then $f\left(x\right)$ and $g\left(x\right)$ are said to be coprime.
 
 ---

@@ -1,7 +1,7 @@
 # week2
 
 > **定理 1.2.1 (线性方程组解的判别准则)**
->
+> 
 > 把 $n$ 元线性方程组的增广矩阵经过初等行变换化成阶梯形矩阵: (1) 若相应的阶梯形方程组出现 $0=d$($d\ne 0$), 则原方程组无解; (2) 若不出现 $0=d$, 则有解, 且当阶梯形矩阵的非零行数目等于未知量数目 $n$ 时有唯一解, 当非零行数目 $r< n$ 时有无穷多个解.
 
 ---
@@ -68,14 +68,14 @@ $$
 由**定理 1.2.1 (线性方程组解的判别准则)**, 对增广矩阵施行初等行变换化为阶梯形:
 
 $$
-\left[\begin{array}{rrrrr|r}
+\left[\begin{array}{rrrrr\left|r}
 1 & 1 & 1 & 1 & 1 & 1\\
 3 & 2 & 1 & 1 & -3 & c\\
 0 & 1 & 2 & 2 & 6 & 3\\
 5 & 4 & 3 & 3 & -1 & d
 \end{array}\right]
 \xrightarrow{\left(2\right)-3\left(1\right),\left(4\right)-5\left(1\right)}
-\left[\begin{array}{rrrrr|r}
+\left[\begin{array}{rrrrr\right|r}
 1 & 1 & 1 & 1 & 1 & 1\\
 0 & -1 & -2 & -2 & -6 & c-3\\
 0 & 1 & 2 & 2 & 6 & 3\\
@@ -86,14 +86,14 @@ $$
 由**定理 1.2.1 (线性方程组解的判别准则)**, 继续作初等行变换: 作 (2) $\times\left(-1\right)$, (4) $-$(2) 替换后的行:
 
 $$
-\left[\begin{array}{rrrrr|r}
+\left[\begin{array}{rrrrr\left|r}
 1 & 1 & 1 & 1 & 1 & 1\\
 0 & 1 & 2 & 2 & 6 & 3-c\\
 0 & 1 & 2 & 2 & 6 & 3\\
 0 & -1 & -2 & -2 & -6 & d-5
 \end{array}\right]
 \xrightarrow{\left(3\right)-\left(2\right),\left(4\right)+\left(2\right)}
-\left[\begin{array}{rrrrr|r}
+\left[\begin{array}{rrrrr\right|r}
 1 & 1 & 1 & 1 & 1 & 1\\
 0 & 1 & 2 & 2 & 6 & 3-c\\
 0 & 0 & 0 & 0 & 0 & c\\

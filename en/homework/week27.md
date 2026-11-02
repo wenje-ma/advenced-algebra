@@ -1,11 +1,11 @@
 # week27
 
 > **Definition 5.3.1 (Generalized Inverse)**
->
+> 
 > Let $A$ be an $s\times n$ matrix over a number field $K$. If a matrix $G$ satisfies $AGA=A$, then $G$ is called a generalized inverse of $A$, denoted $A^{-}$.
 
 > **Theorem 5.3.1 (Existence of a Generalized Inverse)**
->
+> 
 > Let $A$ be a nonzero $s\times n$ matrix over a number field $K$. Then the matrix equation $AXA=A$ always has a solution.
 
 ---

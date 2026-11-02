@@ -1,15 +1,15 @@
 # week38
 
 > **定义 7.6.1 (多项式的根)**
->
+> 
 > 设 $K$ 是一个数域, 设 $R$ 是一个有单位元的交换环, 且 $R$ 可看成是 $K$ 的一个扩环. 对于 $K\left[x\right]$ 中一个多项式 $f\left(x\right)$, 如果 $R$ 中有一个元素 $c$ 使得 $f\left(c\right)=0$, 则称 $c$ 是 $f\left(x\right)$ 在 $R$ 中的一个根.
 
 > **定理 7.6.1 (余数定理)**
->
+> 
 > 在 $K\left[x\right]$ 中, 用 $x-a$ 去除 $f\left(x\right)$ 所得的余式是 $f\left(a\right)$.
 
 > **推论 7.6.2 (因式定理)**
->
+> 
 > 在 $K\left[x\right]$ 中, $x-a$ 整除 $f\left(x\right)$ 当且仅当 $f\left(a\right)=0$.
 
 ---

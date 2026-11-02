@@ -1,7 +1,7 @@
 # week17
 
 > **Theorem 3.8.1 (Solution Set Structure of an Inhomogeneous System)**
->
+> 
 > If an $n$-variable inhomogeneous linear system over a number field $K$ is solvable, then its solution set is $U=\gamma_{0}+W$, where $\gamma_{0}$ is a particular solution and $W$ is the solution space of the derived homogeneous system.
 
 ---
@@ -24,14 +24,14 @@ $$
 By **Theorem 3.8.1 (Solution Set Structure of an Inhomogeneous System)**, perform elementary row operations on the augmented matrix:
 
 $$
-\left[\begin{array}{rrrr|r}
+\left[\begin{array}{rrrr\left|r}
 1 & -5 & 2 & -3 & 11\\
 -3 & 1 & -4 & 2 & -5\\
 -1 & -9 & 0 & -4 & 17\\
 5 & 3 & 6 & -1 & -1
 \end{array}\right]
 \xrightarrow{\text{row ops}}
-\left[\begin{array}{rrrr|r}
+\left[\begin{array}{rrrr\right|r}
 1 & -5 & 2 & -3 & 11\\
 0 & -14 & 2 & -7 & 28\\
 0 & 0 & 0 & 0 & 0\\
@@ -83,7 +83,7 @@ Let the inhomogeneous system be $Ax=\beta$, where $A$ is an $n\times n$ matrix; 
 **Necessity.** Suppose the inhomogeneous system has a unique solution; then
 
 $$
-\text{rank}\left(A\right)=\text{rank}\left(\overline{A}\right)=n\ \text{(the rank of the coefficient matrix equals the number of unknowns)}.
+\text{rank}\left(A\right)=\text{rank}\left(\overline{A}\right)=n\ \text{\left(the rank of the coefficient matrix equals the number of unknowns\right)}.
 $$
 
 The derived system $Ax=0$ has coefficient matrix of rank $n$ and $n$ unknowns, so it has only the zero solution.

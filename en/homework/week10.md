@@ -1,11 +1,11 @@
 # week10
 
 > **Basic Knowledge: Criterion for a Subspace**
->
+> 
 > A nonempty subset $W$ of $K^{n}$ is a subspace if and only if it is closed under addition and scalar multiplication: namely, for any $\alpha,\beta\in W$ and $k\in K$, $\alpha+\beta\in W$ and $k\alpha\in W$.
 
 > **Definition 3.1.1 (Linear Combination and Linear Representation)**
->
+> 
 > In $K^{n}$, given a vector group $\alpha_{1},\alpha_{2},\cdots,\alpha_{s}$ and any numbers $k_{1},k_{2},\cdots,k_{s}$ in $K$, we call $k_{1}\alpha_{1}+k_{2}\alpha_{2}+\cdots+k_{s}\alpha_{s}$ a linear combination of the vector group $\alpha_{1},\alpha_{2},\cdots,\alpha_{s}$. If
 
 $$
@@ -15,7 +15,7 @@ $$
 then we say that $\beta$ can be linearly represented by $\alpha_{1},\alpha_{2},\cdots,\alpha_{s}$.
 
 > **Proposition 3.1.1 (Relation Between Linear Representability and Solvability of a System)**
->
+> 
 > An $n$-variable linear system over a number field $K$
 
 $$
@@ -44,14 +44,14 @@ By **Proposition 3.1.1 (Relation Between Linear Representability and Solvability
 Write down the augmented matrix and perform elementary row operations:
 
 $$
-\left[\begin{array}{rrr|r}
+\left[\begin{array}{rrr\left|r}
 -1 & 2 & -4 & 8\\
 3 & 0 & 1 & 3\\
 0 & 7 & -2 & -1\\
 -5 & -3 & 6 & -25
 \end{array}\right]
 \xrightarrow{\substack{②+①\times3\\④-①\times5}}
-\left[\begin{array}{rrr|r}
+\left[\begin{array}{rrr\right|r}
 -1 & 2 & -4 & 8\\
 0 & 6 & -11 & 27\\
 0 & 7 & -2 & -1\\
@@ -83,14 +83,14 @@ By **Proposition 3.1.1 (Relation Between Linear Representability and Solvability
 Write down the augmented matrix and perform elementary row operations:
 
 $$
-\left[\begin{array}{rrr|r}
+\left[\begin{array}{rrr\left|r}
 3 & -1 & 3 & 2\\
 -5 & 7 & 11 & -30\\
 2 & -3 & -5 & 13\\
 -4 & 6 & 10 & -26
 \end{array}\right]
 \xrightarrow{\substack{②+①\times5/3\\③-①\times2/3\\④+①\times4/3}}
-\left[\begin{array}{rrr|r}
+\left[\begin{array}{rrr\right|r}
 3 & -1 & 3 & 2\\
 0 & 16/3 & 16 & -80/3\\
 0 & -7/3 & -7 & 35/3\\

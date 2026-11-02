@@ -1,19 +1,19 @@
 # week7
 
 > **Basic Knowledge: Minor Characterization of Matrix Rank**
->
+> 
 > If the rank of a matrix is at most $2$, then all its minors of order $3$ and higher are $0$; in particular, when $n\ge3$, the $n\times n$ determinant is $0$.
 
 > **Basic Knowledge: Primitive $n$-th Roots of Unity and Eigenvalues of Circulant Matrices**
->
+> 
 > Let $\omega$ be a primitive $n$-th root of unity. The eigenvalues of the cyclic shift matrix $P$ are $\omega^{k}$ $\left(k=0,1,\cdots,n-1\right)$, and the identity $\prod_{k=1}^{n-1}\left(1-\omega^{k}\right)=n$ holds.
 
 > **Definition 2.4.1 (Minors and Cofactors)**
->
-> In the $n\times n$ determinant $\left|A\right|$, deleting row $i$ and column $j$, the $(n-1)$-determinant formed by the remaining entries in their original order is called the minor of the $\left(i,j\right)$-entry of $A$, denoted $M_{ij}$. Setting $A_{ij}=\left(-1\right)^{i+j}M_{ij}$, $A_{ij}$ is called the cofactor of the $\left(i,j\right)$-entry of $A$.
+> 
+> In the $n\times n$ determinant $\left|A\right|$, deleting row $i$ and column $j$, the $\left(n-1\right)$-determinant formed by the remaining entries in their original order is called the minor of the $\left(i,j\right)$-entry of $A$, denoted $M_{ij}$. Setting $A_{ij}=\left(-1\right)^{i+j}M_{ij}$, $A_{ij}$ is called the cofactor of the $\left(i,j\right)$-entry of $A$.
 
 > **Theorem 2.4.1 (Expansion of a Determinant Along a Row (Column))**
->
+> 
 > The $n\times n$ determinant $\left|A\right|$ equals the sum of the products of the entries in its $i$-th row and their cofactors:
 
 $$

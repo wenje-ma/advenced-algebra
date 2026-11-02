@@ -1,7 +1,7 @@
 # week11
 
 > **Basic Knowledge: Formula for the Vandermonde Determinant**
->
+> 
 > The $r\times r$ Vandermonde determinant in $a_{1},a_{2},\cdots,a_{r}$
 
 $$
@@ -14,15 +14,15 @@ a_{1}^{r-1} & a_{2}^{r-1} & \cdots & a_{r}^{r-1}
 $$
 
 > **Definition 3.2.1 (Linear Dependence)**
->
+> 
 > A vector group $\alpha_{1},\cdots,\alpha_{s}$ in $K^{n}$ is called linearly dependent if there exist numbers $k_{1},\cdots,k_{s}$ in $K$, not all zero, such that $k_{1}\alpha_{1}+\cdots+k_{s}\alpha_{s}=0$.
 
 > **Proposition 3.2.1 (Relation Between Linear Representability and Linear Dependence)**
->
+> 
 > Suppose the vector group $\alpha_{1},\cdots,\alpha_{s}$ is linearly independent. Then the vector $\beta$ can be linearly represented by $\alpha_{1},\cdots,\alpha_{s}$ if and only if $\alpha_{1},\cdots,\alpha_{s},\beta$ is linearly dependent.
 
 > **Definition 3.2.2 (Linear Independence)**
->
+> 
 > A vector group $\alpha_{1},\cdots,\alpha_{s}$ in $K^{n}$ is called linearly independent if it is not linearly dependent. That is, if from $k_{1}\alpha_{1}+\cdots+k_{s}\alpha_{s}=0$ one can deduce that all coefficients are $0$, then the vector group is linearly independent.
 
 ---

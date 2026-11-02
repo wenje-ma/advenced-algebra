@@ -1,7 +1,7 @@
 # week42
 
 > **Basic Knowledge: Elementary Symmetric Polynomials**
->
+> 
 > The elementary symmetric polynomials in $n$ variables are
 
 $$
@@ -21,7 +21,7 @@ $$
 $$
 
 > **Basic Knowledge: Newton's Identities**
->
+> 
 > Let $S_{k}=x_{1}^{k}+x_{2}^{k}+\cdots+x_{n}^{k}$; then:
 
 $$
@@ -37,7 +37,7 @@ S_{k}-\sigma_{1}S_{k-1}+\sigma_{2}S_{k-2}-\cdots+\left(-1\right)^{n}\sigma_{n}S_
 $$
 
 > **Definition 7.10.1 (Symmetric Polynomial)**
->
+> 
 > Let $f\left(x_{1},x_{2},\ldots,x_{n}\right)$ be a polynomial over $K$. If for every permutation $j_{1}j_{2}\ldots j_{n}$ of $1,2,\ldots,n$,
 
 $$

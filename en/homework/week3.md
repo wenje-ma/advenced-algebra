@@ -1,11 +1,11 @@
 # week3
 
 > **Basic Knowledge: Closure of the Rational Field under the Four Arithmetic Operations**
->
+> 
 > The set $\mathbb Q$ of rational numbers is closed under addition, subtraction, multiplication, and division (with nonzero divisor); that is, the sum, difference, product, and quotient (with nonzero divisor) of two rational numbers are still rational numbers.
 
 > **Definition 1.3.1 (Number Field)**
->
+> 
 > Let $K$ be a subset of the set of complex numbers. If $K$ satisfies: (1) $0,1\in K$; (2) it is closed under addition, subtraction, multiplication, and division (with nonzero divisor), then $K$ is called a number field.
 
 ---

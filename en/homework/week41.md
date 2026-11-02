@@ -1,7 +1,7 @@
 # week41
 
 > **Definition 7.9.1 (Polynomial in $n$ Variables)**
->
+> 
 > Let $K$ be a number field. Using $n$ symbols $x_{1},x_{2},\ldots,x_{n}$ not in $K$, form the expression
 
 $$
@@ -11,7 +11,7 @@ $$
 where $a_{i_{1}i_{2}\ldots i_{n}}\in K$ and $i_{1},i_{2},\ldots,i_{n}$ are nonnegative integers. Only finitely many monomials have nonzero coefficients. Such an expression is called a polynomial in $n$ variables over $K$.
 
 > **Theorem 7.9.1 (Leading Term Theorem)**
->
+> 
 > In $K\left[x_{1},x_{2},\ldots,x_{n}\right]$, the leading term of the product of two nonzero polynomials equals the product of their leading terms. Hence the product of two nonzero polynomials is again nonzero, i.e. $K\left[x_{1},x_{2},\ldots,x_{n}\right]$ has no zero divisors.
 
 ---

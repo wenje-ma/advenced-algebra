@@ -1,11 +1,11 @@
 # week4
 
 > **Basic Knowledge: Inversions, the Number of Inversions, and Even/Odd Permutations**
->
+> 
 > In an $n$-permutation, if a pair of numbers has its order reversed relative to its size (i.e. the number in front is larger than the one behind), then the pair is called an inversion. The total number of inversions in a permutation is called its inversion number, denoted $\tau$. A permutation with odd inversion number is called an odd permutation, and one with even inversion number is called an even permutation.
 
 > **Proposition 2.1.1 (Criterion for a Unique Solution of a Two-Variable Linear System)**
->
+> 
 > A two-equation linear system in two variables has a unique solution if and only if its coefficient determinant is nonzero; in that case the unique solution is given by the Cramer formula, i.e. two fractions whose numerators are the $2\times2$ determinants obtained by replacing the $1$st and $2$nd columns of the coefficient determinant by the constant terms of the system.
 
 ---

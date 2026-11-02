@@ -1,11 +1,11 @@
 # week10
 
 > **基础知识: 子空间的判别**
->
+> 
 > $K^{n}$ 的一个非空子集 $W$ 是子空间, 当且仅当它对加法和数量乘法都封闭: 即任取 $\alpha,\beta\in W$, $k\in K$, 有 $\alpha+\beta\in W$, $k\alpha\in W$.
 
 > **定义 3.1.1 (线性组合与线性表出)**
->
+> 
 > $K^{n}$ 中, 给定向量组 $\alpha_{1},\alpha_{2},\cdots,\alpha_{s}$, 任给 $K$ 中一组数 $k_{1},k_{2},\cdots,k_{s}$, 称 $k_{1}\alpha_{1}+k_{2}\alpha_{2}+\cdots+k_{s}\alpha_{s}$ 为向量组 $\alpha_{1},\alpha_{2},\cdots,\alpha_{s}$ 的一个线性组合. 如果
 
 $$
@@ -15,7 +15,7 @@ $$
 则称 $\beta$ 可以由 $\alpha_{1},\alpha_{2},\cdots,\alpha_{s}$ 线性表出.
 
 > **命题 3.1.1 (线性表出与方程组有解的关系)**
->
+> 
 > 数域 $K$ 上 $n$ 元线性方程组
 
 $$
@@ -44,14 +44,14 @@ $$
 写出增广矩阵, 作初等行变换:
 
 $$
-\left[\begin{array}{rrr|r}
+\left[\begin{array}{rrr\left|r}
 -1 & 2 & -4 & 8\\
 3 & 0 & 1 & 3\\
 0 & 7 & -2 & -1\\
 -5 & -3 & 6 & -25
 \end{array}\right]
 \xrightarrow{\substack{②+①\times3\\④-①\times5}}
-\left[\begin{array}{rrr|r}
+\left[\begin{array}{rrr\right|r}
 -1 & 2 & -4 & 8\\
 0 & 6 & -11 & 27\\
 0 & 7 & -2 & -1\\
@@ -83,14 +83,14 @@ $$
 写出增广矩阵, 作初等行变换:
 
 $$
-\left[\begin{array}{rrr|r}
+\left[\begin{array}{rrr\left|r}
 3 & -1 & 3 & 2\\
 -5 & 7 & 11 & -30\\
 2 & -3 & -5 & 13\\
 -4 & 6 & 10 & -26
 \end{array}\right]
 \xrightarrow{\substack{②+①\times5/3\\③-①\times2/3\\④+①\times4/3}}
-\left[\begin{array}{rrr|r}
+\left[\begin{array}{rrr\right|r}
 3 & -1 & 3 & 2\\
 0 & 16/3 & 16 & -80/3\\
 0 & -7/3 & -7 & 35/3\\

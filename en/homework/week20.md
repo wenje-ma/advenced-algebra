@@ -1,7 +1,7 @@
 # week20
 
 > **Basic Knowledge: Formula for the Vandermonde Determinant**
->
+> 
 > The $3\times 3$ Vandermonde determinant in $x_{1},x_{2},x_{3}$
 
 $$
@@ -13,7 +13,7 @@ x_{1}^{2} & x_{2}^{2} & x_{3}^{2}
 $$
 
 > **Theorem 4.3.1 (Rank of a Matrix Product)**
->
+> 
 > Let $A=\left(a_{ij}\right)_{s\times n}$ and $B=\left(b_{ij}\right)_{n\times m}$. Then
 
 $$
@@ -21,11 +21,11 @@ $$
 $$
 
 > **Proposition 4.3.2 (Over $\mathbb{R}$, $A^{\top}Az=0$ Has the Same Solutions as $z=0$)**
->
+> 
 > Let $A$ be a matrix over the real number field. Then the homogeneous system $A^{\top}Az=0$ and $z=0$ have the same solutions.
 
 > **Theorem 4.3.3 (Determinant of a Product)**
->
+> 
 > Let $A,B$ both be $n\times n$ matrices. Then $\left|AB\right|=\left|A\right|\left|B\right|$.
 
 ---

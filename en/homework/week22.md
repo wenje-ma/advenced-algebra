@@ -1,7 +1,7 @@
 # week22
 
 > **Basic Knowledge: Subadditivity of Rank**
->
+> 
 > For any two matrices $A,B$ with the same number of rows and columns,
 
 $$
@@ -9,7 +9,7 @@ $$
 $$
 
 > **Basic Knowledge: Determinant of a Block Upper Triangular Matrix**
->
+> 
 > For a block upper triangular matrix $\left[\begin{array}{cc}A & B\\0 & D\end{array}\right]$, where $A,D$ are square,
 
 $$
@@ -17,7 +17,7 @@ $$
 $$
 
 > **Theorem 3.7.1 (Dimension of the Solution Space of a Homogeneous System)**
->
+> 
 > For an $n$-variable homogeneous system $Ax=0$ over a number field $K$, the solution space $W$ has dimension
 
 $$
@@ -25,7 +25,7 @@ $$
 $$
 
 > **Theorem 4.3.1 (Rank of a Matrix Product)**
->
+> 
 > Let $A=\left(a_{ij}\right)_{s\times n}$ and $B=\left(b_{ij}\right)_{n\times m}$. Then
 
 $$
@@ -33,7 +33,7 @@ $$
 $$
 
 > **Proposition 4.5.2 (Rank Identity over the Real Number Field)**
->
+> 
 > Let $A$ be an $s\times n$ matrix over the real number field. Then
 
 $$

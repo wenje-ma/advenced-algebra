@@ -1,7 +1,7 @@
 # week9
 
 > **Basic Knowledge: Block Upper-Triangular Determinant**
->
+> 
 > Here $A,B$ are both square matrices:
 
 $$
@@ -9,7 +9,7 @@ $$
 $$
 
 > **Basic Knowledge: Formula for the Vandermonde Determinant**
->
+> 
 > The $n\times n$ Vandermonde determinant in $a_{1},a_{2},\cdots,a_{n}$
 
 $$
@@ -23,7 +23,7 @@ a_{1}^{n-1} & a_{2}^{n-1} & \cdots & a_{n}^{n-1}
 $$
 
 > **Theorem 2.6.1 (Laplace Expansion Theorem)**
->
+> 
 > In an $n\times n$ determinant $\left|A\right|$, fix $k$ rows; then the sum of the products of all $k$-minors formed by the entries in these $k$ rows and their own cofactors equals $\left|A\right|$.
 
 ---

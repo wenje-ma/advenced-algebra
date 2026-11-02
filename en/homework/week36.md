@@ -1,15 +1,15 @@
 # week36
 
 > **Definition 7.4.1 (Irreducible Polynomial)**
->
+> 
 > A polynomial $p\left(x\right)$ in $K\left[x\right]$ of positive degree is called irreducible over the number field $K$ if its only divisors in $K\left[x\right]$ are zero-degree polynomials and associates of $p\left(x\right)$.
 
 > **Property 7.4.1 (Property of Irreducible Polynomials)**
->
+> 
 > In $K\left[x\right]$, if $p\left(x\right)$ is irreducible and $p\left(x\right)\mid f\left(x\right)g\left(x\right)$, then $p\left(x\right)\mid f\left(x\right)$ or $p\left(x\right)\mid g\left(x\right)$.
 
 > **Theorem 7.4.1 (Unique Factorization Theorem)**
->
+> 
 > Every polynomial in $K\left[x\right]$ of positive degree can be uniquely factored into a product of finitely many irreducible polynomials over $K$.
 
 ---

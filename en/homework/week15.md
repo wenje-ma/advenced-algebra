@@ -1,7 +1,7 @@
 # week15
 
 > **Basic Knowledge: Formula for the Vandermonde Determinant**
->
+> 
 > The $s\times s$ Vandermonde determinant in $a_{1},a_{2},\cdots,a_{s}$
 
 $$
@@ -14,7 +14,7 @@ a_{1}^{s-1} & a_{2}^{s-1} & \cdots & a_{s}^{s-1}
 $$
 
 > **Theorem 3.6.1 (Solvability Criterion for a Linear System)**
->
+> 
 > The linear system
 
 $$
@@ -24,7 +24,7 @@ $$
 is solvable if and only if its coefficient matrix and its augmented matrix have the same rank.
 
 > **Theorem 3.6.2 (Criterion for the Number of Solutions)**
->
+> 
 > Suppose a linear system is solvable. If the rank of the coefficient matrix equals the number $n$ of unknowns, the system has a unique solution; if the rank is less than $n$, the system has infinitely many solutions.
 
 ---

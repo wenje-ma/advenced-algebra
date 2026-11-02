@@ -1,7 +1,7 @@
 # week23
 
 > **Basic Knowledge: The Schmidt Orthogonalization Process**
->
+> 
 > For a linearly independent vector group $\alpha_{1},\alpha_{2},\cdots,\alpha_{m}$, set $\beta_{1}=\alpha_{1}$ and, for $i\ge2$, recursively define
 
 $$
@@ -11,11 +11,11 @@ $$
 Then $\beta_{1},\beta_{2},\cdots,\beta_{m}$ is an orthogonal vector group equivalent to the original one.
 
 > **Definition 4.6.1 (Orthogonal Matrix)**
->
+> 
 > A real square matrix $A$ satisfying $A^{\top}A=I$ is called an orthogonal matrix.
 
 > **Definition 4.6.2 (Standard Inner Product)**
->
+> 
 > In $\mathbb{R}^{n}$, for any $\alpha=\left(a_{1},a_{2},\cdots,a_{n}\right)$ and $\beta=\left(b_{1},b_{2},\cdots,b_{n}\right)$, define
 
 $$
@@ -25,7 +25,7 @@ $$
 which is called the standard inner product on $\mathbb{R}^{n}$.
 
 > **Proposition 4.6.2 (An Orthogonal Vector Group Is Linearly Independent)**
->
+> 
 > In the Euclidean space $\mathbb{R}^{n}$, an orthogonal vector group is always linearly independent.
 
 ---

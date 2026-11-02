@@ -1,11 +1,11 @@
 # week37
 
 > **定义 7.5.1 (重因式)**
->
+> 
 > 在 $K\left[x\right]$ 中, 不可约多项式 $p\left(x\right)$ 称为多项式 $f\left(x\right)$ 的 $k$ 重因式, 如果 $p^{k}\left(x\right)\mid f\left(x\right)$, 而 $p^{k+1}\left(x\right)\nmid f\left(x\right)$.
 
 > **定理 7.5.1 (无重因式的判别)**
->
+> 
 > 设 $K$ 是数域, $K\left[x\right]$ 中次数大于零的多项式 $f\left(x\right)$ 没有重因式的充分必要条件是 $f\left(x\right)$ 与它的导数 $f'\left(x\right)$ 互素.
 
 ---

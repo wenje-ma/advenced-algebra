@@ -1,7 +1,7 @@
 # week2
 
 > **Theorem 1.2.1 (Criterion for the Number of Solutions of a Linear System)**
->
+> 
 > Reduce the augmented matrix of an $n$-variable linear system to a row echelon matrix by elementary row operations: (1) if the corresponding echelon system exhibits $0=d$ ($d\ne 0$), then the original system has no solution; (2) if $0=d$ does not appear, then there is a solution: when the number of nonzero rows of the echelon matrix equals the number $n$ of unknowns there is a unique solution, and when the number of nonzero rows is $r< n$ there are infinitely many solutions.
 
 ---
@@ -68,14 +68,14 @@ $$
 By **Theorem 1.2.1 (Criterion for the Number of Solutions of a Linear System)**, apply elementary row operations to the augmented matrix to reduce it to row echelon form:
 
 $$
-\left[\begin{array}{rrrrr|r}
+\left[\begin{array}{rrrrr\left|r}
 1 & 1 & 1 & 1 & 1 & 1\\
 3 & 2 & 1 & 1 & -3 & c\\
 0 & 1 & 2 & 2 & 6 & 3\\
 5 & 4 & 3 & 3 & -1 & d
 \end{array}\right]
 \xrightarrow{\left(2\right)-3\left(1\right),\left(4\right)-5\left(1\right)}
-\left[\begin{array}{rrrrr|r}
+\left[\begin{array}{rrrrr\right|r}
 1 & 1 & 1 & 1 & 1 & 1\\
 0 & -1 & -2 & -2 & -6 & c-3\\
 0 & 1 & 2 & 2 & 6 & 3\\
@@ -86,14 +86,14 @@ $$
 By **Theorem 1.2.1 (Criterion for the Number of Solutions of a Linear System)**, continue with elementary row operations: multiply (2) by $\left(-1\right)$, and replace (4) by (4) $-$(2):
 
 $$
-\left[\begin{array}{rrrrr|r}
+\left[\begin{array}{rrrrr\left|r}
 1 & 1 & 1 & 1 & 1 & 1\\
 0 & 1 & 2 & 2 & 6 & 3-c\\
 0 & 1 & 2 & 2 & 6 & 3\\
 0 & -1 & -2 & -2 & -6 & d-5
 \end{array}\right]
 \xrightarrow{\left(3\right)-\left(2\right),\left(4\right)+\left(2\right)}
-\left[\begin{array}{rrrrr|r}
+\left[\begin{array}{rrrrr\right|r}
 1 & 1 & 1 & 1 & 1 & 1\\
 0 & 1 & 2 & 2 & 6 & 3-c\\
 0 & 0 & 0 & 0 & 0 & c\\

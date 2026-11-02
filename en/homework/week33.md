@@ -1,15 +1,15 @@
 # week33
 
 > **Definition 6.2.1 (Positive Index of Inertia)**
->
+> 
 > In the canonical form of a real quadratic form $X^{\top}AX$, the number $p$ of square terms with coefficient $+1$ is called the positive index of inertia of $X^{\top}AX$, and the number $r-p$ of square terms with coefficient $-1$ is called its negative index of inertia.
 
 > **Theorem 6.2.1 (Law of Inertia)**
->
+> 
 > The canonical form of an $n$-variable real quadratic form $X^{\top}AX$ is unique.
 
 > **Corollary 6.2.4 (Necessary and Sufficient Condition for Congruence)**
->
+> 
 > Two $n\times n$ real symmetric matrices are congruent if and only if they have the same rank and the same positive index of inertia.
 
 ---

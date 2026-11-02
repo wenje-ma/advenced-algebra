@@ -1,15 +1,15 @@
 # week28
 
 > **Basic Knowledge: Invariants of Similar Matrices**
->
+> 
 > Similar matrices have equal determinants, equal ranks and equal traces. Moreover, their traces satisfy $\operatorname{tr}\left(A^{-1}BA\right)=\operatorname{tr}\left(B\right)$.
 
 > **Definition 5.4.1 (Similarity)**
->
+> 
 > Let $A$ and $B$ both be $n\times n$ matrices over a number field $K$. If there exists an $n\times n$ invertible matrix $P$ over $K$ such that $P^{-1}AP=B$, then $A$ and $B$ are called similar, denoted $A\sim B$.
 
 > **Theorem 5.4.2 (Necessary and Sufficient Condition for Diagonalizability)**
->
+> 
 > An $n\times n$ matrix $A$ over a number field $K$ is similar to a diagonal matrix if and only if there are $n$ linearly independent column vectors $\alpha_{1},\alpha_{2},\cdots,\alpha_{n}$ in $K^{n}$ and $n$ scalars $\lambda_{1},\lambda_{2},\cdots,\lambda_{n}$ in $K$ such that $A\alpha_{i}=\lambda_{i}\alpha_{i}$ ( $i=1,2,\cdots,n$ ).
 
 ---

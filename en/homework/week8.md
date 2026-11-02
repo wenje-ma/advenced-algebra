@@ -1,11 +1,11 @@
 # week8
 
 > **Theorem 2.5.1 (Cramer's Rule)**
->
+> 
 > For a system of $n$ equations in $n$ variables, if its coefficient determinant $\left|A\right|\ne0$, then it has a unique solution; if its coefficient determinant $\left|A\right|=0$, then it has no solution or infinitely many solutions.
 
 > **Corollary 2.5.2 (Condition for a Nontrivial Solution of a Homogeneous System)**
->
+> 
 > A homogeneous system of $n$ equations in $n$ variables has only the zero solution if and only if its coefficient determinant is nonzero. Consequently, such a homogeneous system has a nontrivial solution if and only if its coefficient determinant is zero.
 
 ---

@@ -1,11 +1,11 @@
 # week24
 
 > **Definition 4.7.1 (Mapping)**
->
+> 
 > Let $S$ and $S'$ be two sets. If there is a rule $f$ such that to every element $a$ of $S$ there corresponds a unique element $b$ of $S'$, then $f$ is called a mapping from $S$ to $S'$.
 
 > **Theorem 4.7.1 (Dimension Formula for Kernel and Image)**
->
+> 
 > Let $\mathcal{A}:K^{n}\to K^{s}$ be a linear map. The sum of the dimension of the kernel (the solution space of the homogeneous system) and the dimension of the image equals the dimension of the domain:
 
 $$
@@ -13,7 +13,7 @@ $$
 $$
 
 > **Definition 4.7.5 (Linear Map)**
->
+> 
 > A mapping $\mathcal{A}$ from $K^{n}$ to $K^{s}$ is called a linear map if it preserves addition and scalar multiplication, i.e. for all $\alpha,\beta\in K^{n}$ and $k\in K$,
 
 $$
@@ -52,7 +52,7 @@ $$
 
 Hence it is injective.
 
-Surjective: for every $y\in\mathbb{R}$, there is $x=\sqrt[3]{y}$ such that $f\left(x\right)=y$. Hence it is surjective.
+Surjective: for every $y\in\mathbb{R}$, there is $x=\sqrt\left[3\right]{y}$ such that $f\left(x\right)=y$. Hence it is surjective.
 
 Therefore it is both injective and surjective (bijective).
 

@@ -1,15 +1,15 @@
 # week40
 
 > **Definition 7.8.1 (Primitive Polynomial)**
->
+> 
 > A nonzero polynomial with integer coefficients is called primitive if the greatest common divisor of its coefficients is $1$.
 
 > **Lemma 7.8.1 (Gauss Lemma)**
->
+> 
 > The product of two primitive polynomials is again primitive.
 
 > **Theorem 7.8.1 (Eisenstein Criterion)**
->
+> 
 > Let
 
 $$

@@ -1,12 +1,20 @@
 # week1
 
-> **Basic Knowledge: Elementary Operations on a Linear System and Elementary Row Operations on a Matrix**<br>The following three operations are performed on a linear system: (1) add a multiple of one equation to another; (2) interchange the positions of two equations; (3) multiply an equation by a nonzero scalar. These are collectively called the elementary operations on a linear system. Applying the corresponding three operations to the rows of its augmented matrix is called an elementary row operation on the matrix. A system obtained by elementary operations has the same solution set as the original system.
+> **Basic Knowledge: Elementary Operations on a Linear System and Elementary Row Operations on a Matrix**
+>
+> The following three operations are performed on a linear system: (1) add a multiple of one equation to another; (2) interchange the positions of two equations; (3) multiply an equation by a nonzero scalar. These are collectively called the elementary operations on a linear system. Applying the corresponding three operations to the rows of its augmented matrix is called an elementary row operation on the matrix. A system obtained by elementary operations has the same solution set as the original system.
 
-> **Basic Knowledge: Row Echelon Matrix**<br>Rows whose entries are all $0$ (zero rows) lie below; in a row whose entries are not all $0$ (a nonzero row), the first nonzero entry counted from the left is called a pivot, and the column index of the pivot of each nonzero row strictly increases as the row index increases.
+> **Basic Knowledge: Row Echelon Matrix**
+>
+> Rows whose entries are all $0$ (zero rows) lie below; in a row whose entries are not all $0$ (a nonzero row), the first nonzero entry counted from the left is called a pivot, and the column index of the pivot of each nonzero row strictly increases as the row index increases.
 
-> **Basic Knowledge: Reduced Row Echelon Matrix**<br>On the basis of a row echelon matrix, the pivot of each nonzero row is $1$, and all other entries in the column containing each pivot are $0$.
+> **Basic Knowledge: Reduced Row Echelon Matrix**
+>
+> On the basis of a row echelon matrix, the pivot of each nonzero row is $1$, and all other entries in the column containing each pivot are $0$.
 
-> **Basic Knowledge: The Gauss-Jordan Algorithm**<br>Apply elementary row operations to the augmented matrix of a linear system to reduce it to a row echelon matrix (or further to a reduced row echelon matrix), and then write down the solution. If the corresponding echelon system exhibits $0=d$ ($d\ne 0$), then the original system has no solution.
+> **Basic Knowledge: The Gauss-Jordan Algorithm**
+>
+> Apply elementary row operations to the augmented matrix of a linear system to reduce it to a row echelon matrix (or further to a reduced row echelon matrix), and then write down the solution. If the corresponding echelon system exhibits $0=d$ ($d\ne 0$), then the original system has no solution.
 
 ---
 

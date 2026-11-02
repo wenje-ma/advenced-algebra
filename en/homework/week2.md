@@ -1,6 +1,8 @@
 # week2
 
-> **Theorem 1.2.1 (Criterion for the Number of Solutions of a Linear System)**<br>Reduce the augmented matrix of an $n$-variable linear system to a row echelon matrix by elementary row operations: (1) if the corresponding echelon system exhibits $0=d$ ($d\ne 0$), then the original system has no solution; (2) if $0=d$ does not appear, then there is a solution: when the number of nonzero rows of the echelon matrix equals the number $n$ of unknowns there is a unique solution, and when the number of nonzero rows is $r< n$ there are infinitely many solutions.
+> **Theorem 1.2.1 (Criterion for the Number of Solutions of a Linear System)**
+>
+> Reduce the augmented matrix of an $n$-variable linear system to a row echelon matrix by elementary row operations: (1) if the corresponding echelon system exhibits $0=d$ ($d\ne 0$), then the original system has no solution; (2) if $0=d$ does not appear, then there is a solution: when the number of nonzero rows of the echelon matrix equals the number $n$ of unknowns there is a unique solution, and when the number of nonzero rows is $r< n$ there are infinitely many solutions.
 
 ---
 

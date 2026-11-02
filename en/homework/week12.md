@@ -1,16 +1,28 @@
 # week12
 
-> **Definition 3.3.1 (Maximal Linearly Independent Subset)**<br>A subset of a vector group in $K^{n}$ is called a maximal linearly independent subset if it is itself linearly independent, yet adding any one vector from the remaining vectors of the group yields a linearly dependent subset.
+> **Definition 3.3.1 (Maximal Linearly Independent Subset)**
+>
+> A subset of a vector group in $K^{n}$ is called a maximal linearly independent subset if it is itself linearly independent, yet adding any one vector from the remaining vectors of the group yields a linearly dependent subset.
 
-> **Definition 3.3.2 (Equivalence of Vector Groups)**<br>If the vector group $\alpha_{1},\cdots,\alpha_{s}$ and the vector group $\beta_{1},\cdots,\beta_{t}$ can be linearly represented by each other, then the two groups are called equivalent.
+> **Definition 3.3.2 (Equivalence of Vector Groups)**
+>
+> If the vector group $\alpha_{1},\cdots,\alpha_{s}$ and the vector group $\beta_{1},\cdots,\beta_{t}$ can be linearly represented by each other, then the two groups are called equivalent.
 
-> **Definition 3.3.3 (Rank of a Vector Group)**<br>The number of vectors contained in a maximal linearly independent subset of a vector group is called the rank of that vector group, denoted $\text{rank}\left\{\alpha_{1},\alpha_{2},\cdots,\alpha_{s}\right\}$.
+> **Definition 3.3.3 (Rank of a Vector Group)**
+>
+> The number of vectors contained in a maximal linearly independent subset of a vector group is called the rank of that vector group, denoted $\text{rank}\left\{\alpha_{1},\alpha_{2},\cdots,\alpha_{s}\right\}$.
 
-> **Proposition 3.3.6 (Linear Independence iff Rank Equals the Number of Vectors)**<br>The vector group $\alpha_{1},\alpha_{2},\cdots,\alpha_{s}$ is linearly independent if and only if its rank equals the number $s$ of vectors it contains.
+> **Proposition 3.3.6 (Linear Independence iff Rank Equals the Number of Vectors)**
+>
+> The vector group $\alpha_{1},\alpha_{2},\cdots,\alpha_{s}$ is linearly independent if and only if its rank equals the number $s$ of vectors it contains.
 
-> **Proposition 3.3.7 (Comparison of Ranks)**<br>If vector group (I) can be linearly represented by vector group (II), then the rank of (I) is at most the rank of (II).
+> **Proposition 3.3.7 (Comparison of Ranks)**
+>
+> If vector group (I) can be linearly represented by vector group (II), then the rank of (I) is at most the rank of (II).
 
-> **Corollary 3.3.8 (Equivalent Vector Groups Have the Same Rank)**<br>Equivalent vector groups have the same rank.
+> **Corollary 3.3.8 (Equivalent Vector Groups Have the Same Rank)**
+>
+> Equivalent vector groups have the same rank.
 
 ---
 

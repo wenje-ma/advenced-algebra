@@ -1,10 +1,16 @@
 # week21
 
-> **Definition 4.4.1 (Invertible Matrix)**<br>For a matrix $A$ over a number field $K$, if there exists a matrix $B$ over $K$ such that $AB=BA=I$, then $A$ is called an invertible (or nonsingular) matrix.
+> **Definition 4.4.1 (Invertible Matrix)**
+>
+> For a matrix $A$ over a number field $K$, if there exists a matrix $B$ over $K$ such that $AB=BA=I$, then $A$ is called an invertible (or nonsingular) matrix.
 
-> **Definition 4.4.2 (Inverse Matrix)**<br>If $A$ is invertible, the matrix $B$ satisfying $AB=BA=I$ is called the inverse matrix of $A$, denoted $A^{-1}$.
+> **Definition 4.4.2 (Inverse Matrix)**
+>
+> If $A$ is invertible, the matrix $B$ satisfying $AB=BA=I$ is called the inverse matrix of $A$, denoted $A^{-1}$.
 
-> **Theorem 4.4.2 (Necessary and Sufficient Condition for Invertibility)**<br>An $n\times n$ matrix $A$ over a number field $K$ is invertible if and only if $\left|A\right|\ne0$. When $A$ is invertible,
+> **Theorem 4.4.2 (Necessary and Sufficient Condition for Invertibility)**
+>
+> An $n\times n$ matrix $A$ over a number field $K$ is invertible if and only if $\left|A\right|\ne0$. When $A$ is invertible,
 
 $$
 A^{-1}=\frac{1}{\left|A\right|}A^{*}.

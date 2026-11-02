@@ -1,6 +1,8 @@
 # week20
 
-> **基础知识: 范德蒙行列式的计算公式**<br>关于 $x_{1},x_{2},x_{3}$ 的 $3$ 阶范德蒙行列式
+> **基础知识: 范德蒙行列式的计算公式**
+>
+> 关于 $x_{1},x_{2},x_{3}$ 的 $3$ 阶范德蒙行列式
 
 $$
 \left|\begin{array}{ccc}
@@ -10,15 +12,21 @@ x_{1}^{2} & x_{2}^{2} & x_{3}^{2}
 \end{array}\right|=\left(x_{2}-x_{1}\right)\left(x_{3}-x_{1}\right)\left(x_{3}-x_{2}\right).
 $$
 
-> **定理 4.3.1 (矩阵乘积的秩)**<br>设 $A=\left(a_{ij}\right)_{s\times n}$, $B=\left(b_{ij}\right)_{n\times m}$, 则
+> **定理 4.3.1 (矩阵乘积的秩)**
+>
+> 设 $A=\left(a_{ij}\right)_{s\times n}$, $B=\left(b_{ij}\right)_{n\times m}$, 则
 
 $$
 \text{rank}\left(AB\right)\le\min\left\{\text{rank}\left(A\right),\text{rank}\left(B\right)\right\}.
 $$
 
-> **命题 4.3.2 (实矩阵 $A^{\top}Az=0$ 与 $z=0$ 同解)**<br>设 $A$ 是实数域上的矩阵, 则齐次线性方程组 $A^{\top}Az=0$ 与 $z=0$ 同解.
+> **命题 4.3.2 (实矩阵 $A^{\top}Az=0$ 与 $z=0$ 同解)**
+>
+> 设 $A$ 是实数域上的矩阵, 则齐次线性方程组 $A^{\top}Az=0$ 与 $z=0$ 同解.
 
-> **定理 4.3.3 (乘积的行列式)**<br>设 $A,B$ 都是 $n$ 级矩阵, 则 $\left|AB\right|=\left|A\right|\left|B\right|$.
+> **定理 4.3.3 (乘积的行列式)**
+>
+> 设 $A,B$ 都是 $n$ 级矩阵, 则 $\left|AB\right|=\left|A\right|\left|B\right|$.
 
 ---
 

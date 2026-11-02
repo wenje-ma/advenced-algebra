@@ -1,30 +1,40 @@
 # week22
 
-> **基础知识: 秩的子加性**<br>对任意两个行数相同, 列数相同的矩阵 $A,B$, 有
+> **基础知识: 秩的子加性**
+>
+> 对任意两个行数相同, 列数相同的矩阵 $A,B$, 有
 
 $$
 \text{rank}\left(A+B\right)\le\text{rank}\left(A\right)+\text{rank}\left(B\right).
 $$
 
-> **基础知识: 分块上三角矩阵的行列式**<br>对分块上三角矩阵 $\left[\begin{array}{cc}A & B\\0 & D\end{array}\right]$, 其中 $A,D$ 都是方阵, 有
+> **基础知识: 分块上三角矩阵的行列式**
+>
+> 对分块上三角矩阵 $\left[\begin{array}{cc}A & B\\0 & D\end{array}\right]$, 其中 $A,D$ 都是方阵, 有
 
 $$
 \left|\begin{array}{cc}A & B\\0 & D\end{array}\right|=\left|A\right|\cdot\left|D\right|.
 $$
 
-> **定理 3.7.1 (齐次线性方程组解空间的维数)**<br>数域 $K$ 上 $n$ 元齐次线性方程组 $Ax=0$ 的解空间 $W$ 的维数为
+> **定理 3.7.1 (齐次线性方程组解空间的维数)**
+>
+> 数域 $K$ 上 $n$ 元齐次线性方程组 $Ax=0$ 的解空间 $W$ 的维数为
 
 $$
 \dim W=n-\text{rank}\left(A\right).
 $$
 
-> **定理 4.3.1 (矩阵乘积的秩)**<br>设 $A=\left(a_{ij}\right)_{s\times n}$, $B=\left(b_{ij}\right)_{n\times m}$, 则
+> **定理 4.3.1 (矩阵乘积的秩)**
+>
+> 设 $A=\left(a_{ij}\right)_{s\times n}$, $B=\left(b_{ij}\right)_{n\times m}$, 则
 
 $$
 \text{rank}\left(AB\right)\le\min\left\{\text{rank}\left(A\right),\text{rank}\left(B\right)\right\}.
 $$
 
-> **命题 4.5.2 (实数域上秩的等式)**<br>设 $A$ 是实数域上 $s\times n$ 矩阵, 则
+> **命题 4.5.2 (实数域上秩的等式)**
+>
+> 设 $A$ 是实数域上 $s\times n$ 矩阵, 则
 
 $$
 \text{rank}\left(A^{\top}A\right)=\text{rank}\left(AA^{\top}\right)=\text{rank}\left(A\right).

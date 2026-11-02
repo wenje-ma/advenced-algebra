@@ -1,10 +1,16 @@
 # week13
 
-> **Proposition 3.3.6 (Linear Independence iff Rank Equals the Number of Vectors)**<br>The vector group $\alpha_{1},\alpha_{2},\cdots,\alpha_{s}$ is linearly independent if and only if its rank equals the number $s$ of vectors it contains.
+> **Proposition 3.3.6 (Linear Independence iff Rank Equals the Number of Vectors)**
+>
+> The vector group $\alpha_{1},\alpha_{2},\cdots,\alpha_{s}$ is linearly independent if and only if its rank equals the number $s$ of vectors it contains.
 
-> **Definition 3.4.1 (Basis)**<br>Let $U$ be a subspace of $K^{n}$. A vector group $\alpha_{1},\alpha_{2},\cdots,\alpha_{s}$ in $U$ is called a basis of $U$ if it satisfies: $1^{\circ}$ it is linearly independent; $2^{\circ}$ every vector in $U$ can be linearly represented by it.
+> **Definition 3.4.1 (Basis)**
+>
+> Let $U$ be a subspace of $K^{n}$. A vector group $\alpha_{1},\alpha_{2},\cdots,\alpha_{s}$ in $U$ is called a basis of $U$ if it satisfies: $1^{\circ}$ it is linearly independent; $2^{\circ}$ every vector in $U$ can be linearly represented by it.
 
-> **Theorem 3.4.8 (The Rank of a Vector Group Equals the Dimension of Its Spanning Subspace)**<br>A maximal linearly independent subset of the vector group $\alpha_{1},\alpha_{2},\cdots,\alpha_{s}$ in $K^{n}$ is a basis of the subspace $U=\left\langle\alpha_{1},\alpha_{2},\cdots,\alpha_{s}\right\rangle$ spanned by this group, and hence
+> **Theorem 3.4.8 (The Rank of a Vector Group Equals the Dimension of Its Spanning Subspace)**
+>
+> A maximal linearly independent subset of the vector group $\alpha_{1},\alpha_{2},\cdots,\alpha_{s}$ in $K^{n}$ is a basis of the subspace $U=\left\langle\alpha_{1},\alpha_{2},\cdots,\alpha_{s}\right\rangle$ spanned by this group, and hence
 
 $$
 \dim\left\langle\alpha_{1},\alpha_{2},\cdots,\alpha_{s}\right\rangle=\text{rank}\left\{\alpha_{1},\alpha_{2},\cdots,\alpha_{s}\right\}.

@@ -1,8 +1,12 @@
 # week16
 
-> **Definition 3.7.1 (Fundamental System of Solutions)**<br>When a homogeneous linear system has a nontrivial solution, if finitely many of its solutions $\eta_{1},\eta_{2},\cdots,\eta_{t}$ satisfy: $1^{\circ}$ they are linearly independent; $2^{\circ}$ every solution of the system can be linearly represented by them, then they are called a fundamental system of solutions.
+> **Definition 3.7.1 (Fundamental System of Solutions)**
+>
+> When a homogeneous linear system has a nontrivial solution, if finitely many of its solutions $\eta_{1},\eta_{2},\cdots,\eta_{t}$ satisfy: $1^{\circ}$ they are linearly independent; $2^{\circ}$ every solution of the system can be linearly represented by them, then they are called a fundamental system of solutions.
 
-> **Theorem 3.7.1 (Dimension of the Solution Space)**<br>The dimension of the solution space $W$ of an $n$-variable homogeneous linear system over a number field $K$ is
+> **Theorem 3.7.1 (Dimension of the Solution Space)**
+>
+> The dimension of the solution space $W$ of an $n$-variable homogeneous linear system over a number field $K$ is
 
 $$
 \dim W=n-\text{rank}\left(A\right),

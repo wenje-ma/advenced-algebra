@@ -1,12 +1,20 @@
 # week14
 
-> **Basic Knowledge: Upper Bound on the Rank of a Union of Vector Groups**<br>If a vector group $A$ can be split into two subgroups $A_{1},A_{2}$, then $\text{rank}\left(A\right)\le\text{rank}\left(A_{1}\right)+\text{rank}\left(A_{2}\right)$.
+> **Basic Knowledge: Upper Bound on the Rank of a Union of Vector Groups**
+>
+> If a vector group $A$ can be split into two subgroups $A_{1},A_{2}$, then $\text{rank}\left(A\right)\le\text{rank}\left(A_{1}\right)+\text{rank}\left(A_{2}\right)$.
 
-> **Definition 3.5.1 (Rank of a Matrix)**<br>The row rank and column rank of a matrix $A$ are collectively called the rank of $A$, denoted $\text{rank}\left(A\right)$.
+> **Definition 3.5.1 (Rank of a Matrix)**
+>
+> The row rank and column rank of a matrix $A$ are collectively called the rank of $A$, denoted $\text{rank}\left(A\right)$.
 
-> **Theorem 3.5.4 (Row Rank Equals Column Rank)**<br>The row rank of any matrix equals its column rank.
+> **Theorem 3.5.4 (Row Rank Equals Column Rank)**
+>
+> The row rank of any matrix equals its column rank.
 
-> **Corollary 3.5.5 (Computing Rank by Elementary Row Operations)**<br>If a matrix $A$ is transformed by elementary row operations into a row-echelon matrix $J$, then the rank of $A$ equals the number of nonzero rows of $J$. If the pivot columns of $J$ are columns $j_{1},\cdots,j_{r}$, then columns $j_{1},\cdots,j_{r}$ of $A$ form a maximal linearly independent subset of the column group of $A$.
+> **Corollary 3.5.5 (Computing Rank by Elementary Row Operations)**
+>
+> If a matrix $A$ is transformed by elementary row operations into a row-echelon matrix $J$, then the rank of $A$ equals the number of nonzero rows of $J$. If the pivot columns of $J$ are columns $j_{1},\cdots,j_{r}$, then columns $j_{1},\cdots,j_{r}$ of $A$ form a maximal linearly independent subset of the column group of $A$.
 
 ---
 

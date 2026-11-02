@@ -1,10 +1,16 @@
 # week38
 
-> **Definition 7.6.1 (Root of a Polynomial)**<br>Let $K$ be a number field, and let $R$ be a commutative ring with identity that can be viewed as an extension ring of $K$. For a polynomial $f\left(x\right)$ in $K\left[x\right]$, if there is an element $c$ in $R$ such that $f\left(c\right)=0$, then $c$ is called a root of $f\left(x\right)$ in $R$.
+> **Definition 7.6.1 (Root of a Polynomial)**
+>
+> Let $K$ be a number field, and let $R$ be a commutative ring with identity that can be viewed as an extension ring of $K$. For a polynomial $f\left(x\right)$ in $K\left[x\right]$, if there is an element $c$ in $R$ such that $f\left(c\right)=0$, then $c$ is called a root of $f\left(x\right)$ in $R$.
 
-> **Theorem 7.6.1 (Remainder Theorem)**<br>In $K\left[x\right]$, the remainder when $f\left(x\right)$ is divided by $x-a$ is $f\left(a\right)$.
+> **Theorem 7.6.1 (Remainder Theorem)**
+>
+> In $K\left[x\right]$, the remainder when $f\left(x\right)$ is divided by $x-a$ is $f\left(a\right)$.
 
-> **Corollary 7.6.2 (Factor Theorem)**<br>In $K\left[x\right]$, $x-a$ divides $f\left(x\right)$ if and only if $f\left(a\right)=0$.
+> **Corollary 7.6.2 (Factor Theorem)**
+>
+> In $K\left[x\right]$, $x-a$ divides $f\left(x\right)$ if and only if $f\left(a\right)=0$.
 
 ---
 

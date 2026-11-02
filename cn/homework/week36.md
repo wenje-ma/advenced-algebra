@@ -1,10 +1,16 @@
 # week36
 
-> **定义 7.4.1 (不可约多项式)**<br>$K\left[x\right]$ 中一个次数大于零的多项式 $p\left(x\right)$, 如果它在 $K\left[x\right]$ 中的因式只有零次多项式和 $p\left(x\right)$ 的相伴元, 则称 $p\left(x\right)$ 是数域 $K$ 上的一个不可约多项式.
+> **定义 7.4.1 (不可约多项式)**
+>
+> $K\left[x\right]$ 中一个次数大于零的多项式 $p\left(x\right)$, 如果它在 $K\left[x\right]$ 中的因式只有零次多项式和 $p\left(x\right)$ 的相伴元, 则称 $p\left(x\right)$ 是数域 $K$ 上的一个不可约多项式.
 
-> **性质 7.4.1 (不可约多项式的性质)**<br>在 $K\left[x\right]$ 中, 如果 $p\left(x\right)$ 不可约, 且 $p\left(x\right)\mid f\left(x\right)g\left(x\right)$, 则 $p\left(x\right)\mid f\left(x\right)$ 或 $p\left(x\right)\mid g\left(x\right)$.
+> **性质 7.4.1 (不可约多项式的性质)**
+>
+> 在 $K\left[x\right]$ 中, 如果 $p\left(x\right)$ 不可约, 且 $p\left(x\right)\mid f\left(x\right)g\left(x\right)$, 则 $p\left(x\right)\mid f\left(x\right)$ 或 $p\left(x\right)\mid g\left(x\right)$.
 
-> **定理 7.4.1 (唯一因式分解定理)**<br>$K\left[x\right]$ 中每一个次数大于零的多项式都能唯一地分解成数域 $K$ 上有限多个不可约多项式的乘积.
+> **定理 7.4.1 (唯一因式分解定理)**
+>
+> $K\left[x\right]$ 中每一个次数大于零的多项式都能唯一地分解成数域 $K$ 上有限多个不可约多项式的乘积.
 
 ---
 

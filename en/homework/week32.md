@@ -1,8 +1,12 @@
 # week32
 
-> **Definition 6.1.1 (Quadratic Form)**<br>A homogeneous quadratic polynomial in $n$ variables $x_{1},x_{2},\cdots,x_{n}$ with coefficients in a number field $K$ is called an $n$-variable quadratic form over $K$.
+> **Definition 6.1.1 (Quadratic Form)**
+>
+> A homogeneous quadratic polynomial in $n$ variables $x_{1},x_{2},\cdots,x_{n}$ with coefficients in a number field $K$ is called an $n$-variable quadratic form over $K$.
 
-> **Definition 6.1.2 (Canonical Form)**<br>The canonical form of a real quadratic form $X^{\top}AX$ is
+> **Definition 6.1.2 (Canonical Form)**
+>
+> The canonical form of a real quadratic form $X^{\top}AX$ is
 
 $$
 z_{1}^{2}+\cdots+z_{p}^{2}-z_{p+1}^{2}-\cdots-z_{r}^{2},
@@ -10,7 +14,9 @@ $$
 
 where $p$ is the positive index of inertia and $r$ is the rank of the quadratic form.
 
-> **Theorem 6.1.3 (Canonical Form of a Quadratic Form)**<br>Every quadratic form over a number field $K$ is equivalent to a quadratic form containing only square terms.
+> **Theorem 6.1.3 (Canonical Form of a Quadratic Form)**
+>
+> Every quadratic form over a number field $K$ is equivalent to a quadratic form containing only square terms.
 
 ---
 

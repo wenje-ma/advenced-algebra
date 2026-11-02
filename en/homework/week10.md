@@ -1,8 +1,12 @@
 # week10
 
-> **Basic Knowledge: Criterion for a Subspace**<br>A nonempty subset $W$ of $K^{n}$ is a subspace if and only if it is closed under addition and scalar multiplication: namely, for any $\alpha,\beta\in W$ and $k\in K$, $\alpha+\beta\in W$ and $k\alpha\in W$.
+> **Basic Knowledge: Criterion for a Subspace**
+>
+> A nonempty subset $W$ of $K^{n}$ is a subspace if and only if it is closed under addition and scalar multiplication: namely, for any $\alpha,\beta\in W$ and $k\in K$, $\alpha+\beta\in W$ and $k\alpha\in W$.
 
-> **Definition 3.1.1 (Linear Combination and Linear Representation)**<br>In $K^{n}$, given a vector group $\alpha_{1},\alpha_{2},\cdots,\alpha_{s}$ and any numbers $k_{1},k_{2},\cdots,k_{s}$ in $K$, we call $k_{1}\alpha_{1}+k_{2}\alpha_{2}+\cdots+k_{s}\alpha_{s}$ a linear combination of the vector group $\alpha_{1},\alpha_{2},\cdots,\alpha_{s}$. If
+> **Definition 3.1.1 (Linear Combination and Linear Representation)**
+>
+> In $K^{n}$, given a vector group $\alpha_{1},\alpha_{2},\cdots,\alpha_{s}$ and any numbers $k_{1},k_{2},\cdots,k_{s}$ in $K$, we call $k_{1}\alpha_{1}+k_{2}\alpha_{2}+\cdots+k_{s}\alpha_{s}$ a linear combination of the vector group $\alpha_{1},\alpha_{2},\cdots,\alpha_{s}$. If
 
 $$
 \beta=k_{1}\alpha_{1}+k_{2}\alpha_{2}+\cdots+k_{s}\alpha_{s},
@@ -10,7 +14,9 @@ $$
 
 then we say that $\beta$ can be linearly represented by $\alpha_{1},\alpha_{2},\cdots,\alpha_{s}$.
 
-> **Proposition 3.1.1 (Relation Between Linear Representability and Solvability of a System)**<br>An $n$-variable linear system over a number field $K$
+> **Proposition 3.1.1 (Relation Between Linear Representability and Solvability of a System)**
+>
+> An $n$-variable linear system over a number field $K$
 
 $$
 x_{1}\alpha_{1}+x_{2}\alpha_{2}+\cdots+x_{n}\alpha_{n}=\beta

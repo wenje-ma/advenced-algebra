@@ -1,6 +1,8 @@
 # week42
 
-> **Basic Knowledge: Elementary Symmetric Polynomials**<br>The elementary symmetric polynomials in $n$ variables are
+> **Basic Knowledge: Elementary Symmetric Polynomials**
+>
+> The elementary symmetric polynomials in $n$ variables are
 
 $$
 \sigma_{1}=x_{1}+x_{2}+\cdots+x_{n},
@@ -18,7 +20,9 @@ $$
 \sigma_{n}=x_{1}x_{2}\cdots x_{n}.
 $$
 
-> **Basic Knowledge: Newton's Identities**<br>Let $S_{k}=x_{1}^{k}+x_{2}^{k}+\cdots+x_{n}^{k}$; then:
+> **Basic Knowledge: Newton's Identities**
+>
+> Let $S_{k}=x_{1}^{k}+x_{2}^{k}+\cdots+x_{n}^{k}$; then:
 
 $$
 S_{1}=\sigma_{1},
@@ -32,7 +36,9 @@ $$
 S_{k}-\sigma_{1}S_{k-1}+\sigma_{2}S_{k-2}-\cdots+\left(-1\right)^{n}\sigma_{n}S_{k-n}=0,\quad k> n.
 $$
 
-> **Definition 7.10.1 (Symmetric Polynomial)**<br>Let $f\left(x_{1},x_{2},\ldots,x_{n}\right)$ be a polynomial over $K$. If for every permutation $j_{1}j_{2}\ldots j_{n}$ of $1,2,\ldots,n$,
+> **Definition 7.10.1 (Symmetric Polynomial)**
+>
+> Let $f\left(x_{1},x_{2},\ldots,x_{n}\right)$ be a polynomial over $K$. If for every permutation $j_{1}j_{2}\ldots j_{n}$ of $1,2,\ldots,n$,
 
 $$
 f\left(x_{j_{1}},x_{j_{2}},\ldots,x_{j_{n}}\right)=f\left(x_{1},x_{2},\ldots,x_{n}\right),

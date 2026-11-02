@@ -1,8 +1,12 @@
 # week10
 
-> **基础知识: 子空间的判别**<br>$K^{n}$ 的一个非空子集 $W$ 是子空间, 当且仅当它对加法和数量乘法都封闭: 即任取 $\alpha,\beta\in W$, $k\in K$, 有 $\alpha+\beta\in W$, $k\alpha\in W$.
+> **基础知识: 子空间的判别**
+>
+> $K^{n}$ 的一个非空子集 $W$ 是子空间, 当且仅当它对加法和数量乘法都封闭: 即任取 $\alpha,\beta\in W$, $k\in K$, 有 $\alpha+\beta\in W$, $k\alpha\in W$.
 
-> **定义 3.1.1 (线性组合与线性表出)**<br>$K^{n}$ 中, 给定向量组 $\alpha_{1},\alpha_{2},\cdots,\alpha_{s}$, 任给 $K$ 中一组数 $k_{1},k_{2},\cdots,k_{s}$, 称 $k_{1}\alpha_{1}+k_{2}\alpha_{2}+\cdots+k_{s}\alpha_{s}$ 为向量组 $\alpha_{1},\alpha_{2},\cdots,\alpha_{s}$ 的一个线性组合. 如果
+> **定义 3.1.1 (线性组合与线性表出)**
+>
+> $K^{n}$ 中, 给定向量组 $\alpha_{1},\alpha_{2},\cdots,\alpha_{s}$, 任给 $K$ 中一组数 $k_{1},k_{2},\cdots,k_{s}$, 称 $k_{1}\alpha_{1}+k_{2}\alpha_{2}+\cdots+k_{s}\alpha_{s}$ 为向量组 $\alpha_{1},\alpha_{2},\cdots,\alpha_{s}$ 的一个线性组合. 如果
 
 $$
 \beta=k_{1}\alpha_{1}+k_{2}\alpha_{2}+\cdots+k_{s}\alpha_{s},
@@ -10,7 +14,9 @@ $$
 
 则称 $\beta$ 可以由 $\alpha_{1},\alpha_{2},\cdots,\alpha_{s}$ 线性表出.
 
-> **命题 3.1.1 (线性表出与方程组有解的关系)**<br>数域 $K$ 上 $n$ 元线性方程组
+> **命题 3.1.1 (线性表出与方程组有解的关系)**
+>
+> 数域 $K$ 上 $n$ 元线性方程组
 
 $$
 x_{1}\alpha_{1}+x_{2}\alpha_{2}+\cdots+x_{n}\alpha_{n}=\beta

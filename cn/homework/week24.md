@@ -1,14 +1,20 @@
 # week24
 
-> **定义 4.7.1 (映射)**<br>设 $S$ 和 $S'$ 是两个集合, 如果存在一个法则 $f$, 使得集合 $S$ 中每一个元素 $a$, 都有集合 $S'$ 中唯一确定的元素 $b$ 与它对应, 则称 $f$ 是 $S$ 到 $S'$ 的一个映射.
+> **定义 4.7.1 (映射)**
+>
+> 设 $S$ 和 $S'$ 是两个集合, 如果存在一个法则 $f$, 使得集合 $S$ 中每一个元素 $a$, 都有集合 $S'$ 中唯一确定的元素 $b$ 与它对应, 则称 $f$ 是 $S$ 到 $S'$ 的一个映射.
 
-> **定理 4.7.1 (核与象的维数公式)**<br>设 $\mathcal{A}:K^{n}\to K^{s}$ 是线性映射, 则核 (即齐次线性方程组的解空间) 的维数与象的维数之和等于定义域的维数, 即
+> **定理 4.7.1 (核与象的维数公式)**
+>
+> 设 $\mathcal{A}:K^{n}\to K^{s}$ 是线性映射, 则核 (即齐次线性方程组的解空间) 的维数与象的维数之和等于定义域的维数, 即
 
 $$
 \dim\left(\ker\mathcal{A}\right)+\dim\left(\operatorname{Im}\mathcal{A}\right)=\dim\left(K^{n}\right)=n.
 $$
 
-> **定义 4.7.5 (线性映射)**<br>$K^{n}$ 到 $K^{s}$ 的一个映射 $\mathcal{A}$ 如果保持加法和数量乘法, 即 $\forall\alpha,\beta\in K^{n},k\in K$, 有
+> **定义 4.7.5 (线性映射)**
+>
+> $K^{n}$ 到 $K^{s}$ 的一个映射 $\mathcal{A}$ 如果保持加法和数量乘法, 即 $\forall\alpha,\beta\in K^{n},k\in K$, 有
 
 $$
 \mathcal{A}\left(\alpha+\beta\right)=\mathcal{A}\left(\alpha\right)+\mathcal{A}\left(\beta\right),

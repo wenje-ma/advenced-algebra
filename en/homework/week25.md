@@ -1,10 +1,16 @@
 # week25
 
-> **Definition 5.1.1 (Binary Relation)**<br>Let $S$ be a nonempty set. A subset $W$ of $S\times S$ is called a binary relation on $S$. If $\left(a,b\right)\in W$, we say $a$ and $b$ are in the relation $W$.
+> **Definition 5.1.1 (Binary Relation)**
+>
+> Let $S$ be a nonempty set. A subset $W$ of $S\times S$ is called a binary relation on $S$. If $\left(a,b\right)\in W$, we say $a$ and $b$ are in the relation $W$.
 
-> **Definition 5.1.2 (Equivalence Relation)**<br>A binary relation $\sim$ on a set $S$ is called an equivalence relation if, for all $a,b,c\in S$: $1^{\circ}a\sim a$ (reflexivity); $2^{\circ}a\sim b\Rightarrow b\sim a$ (symmetry); $3^{\circ}a\sim b$ and $b\sim c\Rightarrow a\sim c$ (transitivity).
+> **Definition 5.1.2 (Equivalence Relation)**
+>
+> A binary relation $\sim$ on a set $S$ is called an equivalence relation if, for all $a,b,c\in S$: $1^{\circ}a\sim a$ (reflexivity); $2^{\circ}a\sim b\Rightarrow b\sim a$ (symmetry); $3^{\circ}a\sim b$ and $b\sim c\Rightarrow a\sim c$ (transitivity).
 
-> **Definition 5.1.4 (Quotient Set)**<br>Let $\sim$ be an equivalence relation on a set $S$. The set consisting of all equivalence classes is called the quotient set of $S$ with respect to $\sim$, denoted $S/\sim$.
+> **Definition 5.1.4 (Quotient Set)**
+>
+> Let $\sim$ be an equivalence relation on a set $S$. The set consisting of all equivalence classes is called the quotient set of $S$ with respect to $\sim$, denoted $S/\sim$.
 
 ---
 

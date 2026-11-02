@@ -1,8 +1,12 @@
 # week37
 
-> **Definition 7.5.1 (Multiple Factor)**<br>In $K\left[x\right]$, an irreducible polynomial $p\left(x\right)$ is called a $k$-fold factor of $f\left(x\right)$ if $p^{k}\left(x\right)\mid f\left(x\right)$ but $p^{k+1}\left(x\right)\nmid f\left(x\right)$.
+> **Definition 7.5.1 (Multiple Factor)**
+>
+> In $K\left[x\right]$, an irreducible polynomial $p\left(x\right)$ is called a $k$-fold factor of $f\left(x\right)$ if $p^{k}\left(x\right)\mid f\left(x\right)$ but $p^{k+1}\left(x\right)\nmid f\left(x\right)$.
 
-> **Theorem 7.5.1 (Criterion for No Multiple Factors)**<br>Let $K$ be a number field. A polynomial $f\left(x\right)$ of positive degree in $K\left[x\right]$ has no multiple factors if and only if $f\left(x\right)$ is coprime to its derivative $f'\left(x\right)$.
+> **Theorem 7.5.1 (Criterion for No Multiple Factors)**
+>
+> Let $K$ be a number field. A polynomial $f\left(x\right)$ of positive degree in $K\left[x\right]$ has no multiple factors if and only if $f\left(x\right)$ is coprime to its derivative $f'\left(x\right)$.
 
 ---
 

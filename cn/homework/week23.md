@@ -1,6 +1,8 @@
 # week23
 
-> **基础知识: 施密特正交化方法**<br>对线性无关向量组 $\alpha_{1},\alpha_{2},\cdots,\alpha_{m}$, 令 $\beta_{1}=\alpha_{1}$, 并对 $i\ge2$ 递推
+> **基础知识: 施密特正交化方法**
+>
+> 对线性无关向量组 $\alpha_{1},\alpha_{2},\cdots,\alpha_{m}$, 令 $\beta_{1}=\alpha_{1}$, 并对 $i\ge2$ 递推
 
 $$
 \beta_{i}=\alpha_{i}-\sum_{k=1}^{i-1}\frac{\left(\alpha_{i},\beta_{k}\right)}{\left(\beta_{k},\beta_{k}\right)}\beta_{k},
@@ -8,9 +10,13 @@ $$
 
 则 $\beta_{1},\beta_{2},\cdots,\beta_{m}$ 是正交向量组, 且与原向量组等价.
 
-> **定义 4.6.1 (正交矩阵)**<br>实数域上的方阵 $A$ 如果满足 $A^{\top}A=I$, 则称 $A$ 是正交矩阵.
+> **定义 4.6.1 (正交矩阵)**
+>
+> 实数域上的方阵 $A$ 如果满足 $A^{\top}A=I$, 则称 $A$ 是正交矩阵.
 
-> **定义 4.6.2 (标准内积)**<br>在 $\mathbb{R}^{n}$ 中, 任给 $\alpha=\left(a_{1},a_{2},\cdots,a_{n}\right)$, $\beta=\left(b_{1},b_{2},\cdots,b_{n}\right)$, 规定
+> **定义 4.6.2 (标准内积)**
+>
+> 在 $\mathbb{R}^{n}$ 中, 任给 $\alpha=\left(a_{1},a_{2},\cdots,a_{n}\right)$, $\beta=\left(b_{1},b_{2},\cdots,b_{n}\right)$, 规定
 
 $$
 \left(\alpha,\beta\right)=a_{1}b_{1}+a_{2}b_{2}+\cdots+a_{n}b_{n},
@@ -18,7 +24,9 @@ $$
 
 称为 $\mathbb{R}^{n}$ 的标准内积.
 
-> **命题 4.6.2 (正交向量组线性无关)**<br>欧几里得空间 $\mathbb{R}^{n}$ 中, 正交向量组一定是线性无关的.
+> **命题 4.6.2 (正交向量组线性无关)**
+>
+> 欧几里得空间 $\mathbb{R}^{n}$ 中, 正交向量组一定是线性无关的.
 
 ---
 

@@ -1,6 +1,8 @@
 # week17
 
-> **Theorem 3.8.1 (Solution Set Structure of an Inhomogeneous System)**<br>If an $n$-variable inhomogeneous linear system over a number field $K$ is solvable, then its solution set is $U=\gamma_{0}+W$, where $\gamma_{0}$ is a particular solution and $W$ is the solution space of the derived homogeneous system.
+> **Theorem 3.8.1 (Solution Set Structure of an Inhomogeneous System)**
+>
+> If an $n$-variable inhomogeneous linear system over a number field $K$ is solvable, then its solution set is $U=\gamma_{0}+W$, where $\gamma_{0}$ is a particular solution and $W$ is the solution space of the derived homogeneous system.
 
 ---
 

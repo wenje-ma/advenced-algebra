@@ -1,8 +1,12 @@
 # week30
 
-> **Theorem 5.6.1 (Necessary and Sufficient Condition for Diagonalizability)**<br>An $n\times n$ matrix $A$ over a number field $K$ is diagonalizable if and only if $A$ has $n$ linearly independent eigenvectors.
+> **Theorem 5.6.1 (Necessary and Sufficient Condition for Diagonalizability)**
+>
+> An $n\times n$ matrix $A$ over a number field $K$ is diagonalizable if and only if $A$ has $n$ linearly independent eigenvectors.
 
-> **Corollary 5.6.6 (Distinct Eigenvalues Imply Diagonalizability)**<br>If an $n\times n$ matrix $A$ over a number field $K$ has $n$ distinct eigenvalues, then $A$ is diagonalizable.
+> **Corollary 5.6.6 (Distinct Eigenvalues Imply Diagonalizability)**
+>
+> If an $n\times n$ matrix $A$ over a number field $K$ has $n$ distinct eigenvalues, then $A$ is diagonalizable.
 
 ---
 

@@ -1,6 +1,8 @@
 # week31
 
-> **Basic Knowledge: The Schmidt Orthogonalization Process**<br>For a linearly independent vector group $\alpha_{1},\alpha_{2},\cdots,\alpha_{m}$, set $\beta_{1}=\alpha_{1}$ and, for $i\ge2$, recursively define
+> **Basic Knowledge: The Schmidt Orthogonalization Process**
+>
+> For a linearly independent vector group $\alpha_{1},\alpha_{2},\cdots,\alpha_{m}$, set $\beta_{1}=\alpha_{1}$ and, for $i\ge2$, recursively define
 
 $$
 \beta_{i}=\alpha_{i}-\sum_{k=1}^{i-1}\frac{\left(\alpha_{i},\beta_{k}\right)}{\left(\beta_{k},\beta_{k}\right)}\beta_{k}.
@@ -8,9 +10,13 @@ $$
 
 Then $\beta_{1},\beta_{2},\cdots,\beta_{m}$ is an orthogonal vector group equivalent to the original one.
 
-> **Theorem 5.7.1 (Eigenvalues of a Real Symmetric Matrix)**<br>Every root of the characteristic polynomial of a real symmetric matrix, over the complex number field, is a real number.
+> **Theorem 5.7.1 (Eigenvalues of a Real Symmetric Matrix)**
+>
+> Every root of the characteristic polynomial of a real symmetric matrix, over the complex number field, is a real number.
 
-> **Theorem 5.7.3 (A Real Symmetric Matrix Is Orthogonally Diagonalizable)**<br>For any $n\times n$ real symmetric matrix $A$, there exists an $n\times n$ orthogonal matrix $T$ such that $T^{-1}AT$ is a diagonal matrix.
+> **Theorem 5.7.3 (A Real Symmetric Matrix Is Orthogonally Diagonalizable)**
+>
+> For any $n\times n$ real symmetric matrix $A$, there exists an $n\times n$ orthogonal matrix $T$ such that $T^{-1}AT$ is a diagonal matrix.
 
 ---
 

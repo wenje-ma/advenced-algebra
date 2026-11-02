@@ -1,14 +1,20 @@
 # week24
 
-> **Definition 4.7.1 (Mapping)**<br>Let $S$ and $S'$ be two sets. If there is a rule $f$ such that to every element $a$ of $S$ there corresponds a unique element $b$ of $S'$, then $f$ is called a mapping from $S$ to $S'$.
+> **Definition 4.7.1 (Mapping)**
+>
+> Let $S$ and $S'$ be two sets. If there is a rule $f$ such that to every element $a$ of $S$ there corresponds a unique element $b$ of $S'$, then $f$ is called a mapping from $S$ to $S'$.
 
-> **Theorem 4.7.1 (Dimension Formula for Kernel and Image)**<br>Let $\mathcal{A}:K^{n}\to K^{s}$ be a linear map. The sum of the dimension of the kernel (the solution space of the homogeneous system) and the dimension of the image equals the dimension of the domain:
+> **Theorem 4.7.1 (Dimension Formula for Kernel and Image)**
+>
+> Let $\mathcal{A}:K^{n}\to K^{s}$ be a linear map. The sum of the dimension of the kernel (the solution space of the homogeneous system) and the dimension of the image equals the dimension of the domain:
 
 $$
 \dim\left(\ker\mathcal{A}\right)+\dim\left(\operatorname{Im}\mathcal{A}\right)=\dim\left(K^{n}\right)=n.
 $$
 
-> **Definition 4.7.5 (Linear Map)**<br>A mapping $\mathcal{A}$ from $K^{n}$ to $K^{s}$ is called a linear map if it preserves addition and scalar multiplication, i.e. for all $\alpha,\beta\in K^{n}$ and $k\in K$,
+> **Definition 4.7.5 (Linear Map)**
+>
+> A mapping $\mathcal{A}$ from $K^{n}$ to $K^{s}$ is called a linear map if it preserves addition and scalar multiplication, i.e. for all $\alpha,\beta\in K^{n}$ and $k\in K$,
 
 $$
 \mathcal{A}\left(\alpha+\beta\right)=\mathcal{A}\left(\alpha\right)+\mathcal{A}\left(\beta\right),

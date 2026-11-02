@@ -1,10 +1,16 @@
 # week5
 
-> **Basic Knowledge: Inversions, the Number of Inversions, and Even/Odd Permutations**<br>In an $n$-permutation, if a pair of numbers has its order reversed relative to its size (i.e. the number in front is larger than the one behind), then the pair is called an inversion. The total number of inversions in a permutation is called its inversion number, denoted $\tau$. A permutation with odd inversion number is called an odd permutation, and one with even inversion number is called an even permutation.
+> **Basic Knowledge: Inversions, the Number of Inversions, and Even/Odd Permutations**
+>
+> In an $n$-permutation, if a pair of numbers has its order reversed relative to its size (i.e. the number in front is larger than the one behind), then the pair is called an inversion. The total number of inversions in a permutation is called its inversion number, denoted $\tau$. A permutation with odd inversion number is called an odd permutation, and one with even inversion number is called an even permutation.
 
-> **Basic Knowledge: The Pigeonhole Principle**<br>If $n+1$ (or more) objects are placed into $n$ boxes, then at least one box contains at least two objects.
+> **Basic Knowledge: The Pigeonhole Principle**
+>
+> If $n+1$ (or more) objects are placed into $n$ boxes, then at least one box contains at least two objects.
 
-> **Definition 2.2.1 ($n\times n$ Determinant)**<br>An $n\times n$ determinant is an algebraic sum of $n!$ terms, each term being a product of $n$ entries from distinct rows and distinct columns; after these $n$ entries are arranged so that their row indices are in natural order, the term carries a plus sign when the permutation formed by the column indices is even and a minus sign when it is odd. Namely,
+> **Definition 2.2.1 ($n\times n$ Determinant)**
+>
+> An $n\times n$ determinant is an algebraic sum of $n!$ terms, each term being a product of $n$ entries from distinct rows and distinct columns; after these $n$ entries are arranged so that their row indices are in natural order, the term carries a plus sign when the permutation formed by the column indices is even and a minus sign when it is odd. Namely,
 
 $$
 \left|\begin{array}{cccc}

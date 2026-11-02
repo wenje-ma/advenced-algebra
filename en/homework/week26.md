@@ -1,14 +1,20 @@
 # week26
 
-> **Definition 5.2.1 (Equivalence)**<br>A matrix $A$ over a number field $K$ is equivalent to a matrix $B$ if $A$ can be transformed into $B$ by a sequence of elementary row and column operations, denoted $A\sim B$.
+> **Definition 5.2.1 (Equivalence)**
+>
+> A matrix $A$ over a number field $K$ is equivalent to a matrix $B$ if $A$ can be transformed into $B$ by a sequence of elementary row and column operations, denoted $A\sim B$.
 
-> **Theorem 5.2.1 (Canonical Form under Equivalence)**<br>Let $A$ be an $s\times n$ matrix over a number field $K$ with rank $r$. If $r> 0$, then $A$ is equivalent to a matrix of the form
+> **Theorem 5.2.1 (Canonical Form under Equivalence)**
+>
+> Let $A$ be an $s\times n$ matrix over a number field $K$ with rank $r$. If $r> 0$, then $A$ is equivalent to a matrix of the form
 
 $$
 \left[\begin{array}{cc}I_{r} & 0\\0 & 0\end{array}\right].
 $$
 
-> **Theorem 5.2.2 (Necessary and Sufficient Condition for Equivalence)**<br>Two $s\times n$ matrices $A$ and $B$ over a number field $K$ are equivalent if and only if they have the same rank.
+> **Theorem 5.2.2 (Necessary and Sufficient Condition for Equivalence)**
+>
+> Two $s\times n$ matrices $A$ and $B$ over a number field $K$ are equivalent if and only if they have the same rank.
 
 ---
 

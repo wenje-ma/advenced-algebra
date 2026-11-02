@@ -1,6 +1,8 @@
 # week11
 
-> **基础知识: 范德蒙行列式的计算公式**<br>关于 $a_{1},a_{2},\cdots,a_{r}$ 的 $r$ 阶范德蒙行列式
+> **基础知识: 范德蒙行列式的计算公式**
+>
+> 关于 $a_{1},a_{2},\cdots,a_{r}$ 的 $r$ 阶范德蒙行列式
 
 $$
 \left|\begin{array}{cccc}
@@ -11,11 +13,17 @@ a_{1}^{r-1} & a_{2}^{r-1} & \cdots & a_{r}^{r-1}
 \end{array}\right|=\prod_{1\le i< j\le r}\left(a_{j}-a_{i}\right).
 $$
 
-> **定义 3.2.1 (线性相关)**<br>$K^{n}$ 中向量组 $\alpha_{1},\cdots,\alpha_{s}$ 称为是线性相关的, 如果有 $K$ 中不全为零的数 $k_{1},\cdots,k_{s}$ 使得 $k_{1}\alpha_{1}+\cdots+k_{s}\alpha_{s}=0$.
+> **定义 3.2.1 (线性相关)**
+>
+> $K^{n}$ 中向量组 $\alpha_{1},\cdots,\alpha_{s}$ 称为是线性相关的, 如果有 $K$ 中不全为零的数 $k_{1},\cdots,k_{s}$ 使得 $k_{1}\alpha_{1}+\cdots+k_{s}\alpha_{s}=0$.
 
-> **命题 3.2.1 (线性表出与线性相关的关系)**<br>设向量组 $\alpha_{1},\cdots,\alpha_{s}$ 线性无关, 则向量 $\beta$ 可以由 $\alpha_{1},\cdots,\alpha_{s}$ 线性表出的充分必要条件是 $\alpha_{1},\cdots,\alpha_{s},\beta$ 线性相关.
+> **命题 3.2.1 (线性表出与线性相关的关系)**
+>
+> 设向量组 $\alpha_{1},\cdots,\alpha_{s}$ 线性无关, 则向量 $\beta$ 可以由 $\alpha_{1},\cdots,\alpha_{s}$ 线性表出的充分必要条件是 $\alpha_{1},\cdots,\alpha_{s},\beta$ 线性相关.
 
-> **定义 3.2.2 (线性无关)**<br>$K^{n}$ 中向量组 $\alpha_{1},\cdots,\alpha_{s}$ 如果不是线性相关的, 则称为线性无关的. 即如果从 $k_{1}\alpha_{1}+\cdots+k_{s}\alpha_{s}=0$ 可以推出所有系数全为 $0$, 则称该向量组线性无关.
+> **定义 3.2.2 (线性无关)**
+>
+> $K^{n}$ 中向量组 $\alpha_{1},\cdots,\alpha_{s}$ 如果不是线性相关的, 则称为线性无关的. 即如果从 $k_{1}\alpha_{1}+\cdots+k_{s}\alpha_{s}=0$ 可以推出所有系数全为 $0$, 则称该向量组线性无关.
 
 ---
 

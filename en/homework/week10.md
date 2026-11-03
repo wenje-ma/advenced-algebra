@@ -1,9 +1,5 @@
 # week10
 
-> **Basic Knowledge: Criterion for a Subspace**
-> 
-> A nonempty subset $W$ of $K^{n}$ is a subspace if and only if it is closed under addition and scalar multiplication: namely, for any $\alpha,\beta\in W$ and $k\in K$, $\alpha+\beta\in W$ and $k\alpha\in W$.
-
 > **Definition 3.1.1 (Linear Combination and Linear Representation)**
 > 
 > In $K^{n}$, given a vector group $\alpha_{1},\alpha_{2},\cdots,\alpha_{s}$ and any numbers $k_{1},k_{2},\cdots,k_{s}$ in $K$, we call $k_{1}\alpha_{1}+k_{2}\alpha_{2}+\cdots+k_{s}\alpha_{s}$ a linear combination of the vector group $\alpha_{1},\alpha_{2},\cdots,\alpha_{s}$. If
@@ -190,7 +186,7 @@ $$
 
 ### Solution 3.1-8
 
-By **Basic Knowledge: Criterion for a Subspace**, it suffices to verify that $W$ is nonempty and closed under addition and scalar multiplication.
+By Criterion for a Subspace, it suffices to verify that $W$ is nonempty and closed under addition and scalar multiplication.
 
 **Verify closure under addition.** Take any
 
@@ -221,4 +217,4 @@ $$
 
 $W$ is nonempty (e.g. the zero vector $\left(0,\cdots,0\right)\in W$).
 
-By **Basic Knowledge: Criterion for a Subspace**, $W$ is a subspace of $K^{n}$. $\blacksquare$
+By Criterion for a Subspace, $W$ is a subspace of $K^{n}$. $\blacksquare$

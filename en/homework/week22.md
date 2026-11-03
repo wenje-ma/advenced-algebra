@@ -1,16 +1,8 @@
 # week22
 
-> **Basic Knowledge: Subadditivity of Rank**
-> 
-> For any two matrices $A,B$ with the same number of rows and columns,
-
 $$
 \text{rank}\left(A+B\right)\le\text{rank}\left(A\right)+\text{rank}\left(B\right).
 $$
-
-> **Basic Knowledge: Determinant of a Block Upper Triangular Matrix**
-> 
-> For a block upper triangular matrix $\left[\begin{array}{cc}A & B\\0 & D\end{array}\right]$, where $A,D$ are square,
 
 $$
 \left|\begin{array}{cc}A & B\\0 & D\end{array}\right|=\left|A\right|\cdot\left|D\right|.
@@ -100,7 +92,7 @@ $$
 \left(I+A\right)+\left(I-A\right)=2I.
 $$
 
-By **Basic Knowledge: Subadditivity of Rank**,
+By Subadditivity of Rank,
 
 $$
 \text{rank}\left(2I\right)\le\text{rank}\left(I+A\right)+\text{rank}\left(I-A\right).
@@ -150,7 +142,7 @@ $$
 A+\left(I-A\right)=I.
 $$
 
-By **Basic Knowledge: Subadditivity of Rank**,
+By Subadditivity of Rank,
 
 $$
 \text{rank}\left(I\right)\le\text{rank}\left(A\right)+\text{rank}\left(I-A\right).
@@ -285,7 +277,7 @@ $$
 \left|\begin{array}{cc}A & B\\0 & D-CA^{-1}B\end{array}\right|.
 $$
 
-This is a block upper triangular matrix. By **Basic Knowledge: Determinant of a Block Upper Triangular Matrix**, its determinant equals the product of the determinants of the diagonal block submatrices:
+This is a block upper triangular matrix. By Determinant of a Block Upper Triangular Matrix, its determinant equals the product of the determinants of the diagonal block submatrices:
 
 $$
 =\left|A\right|\cdot\left|D-CA^{-1}B\right|.

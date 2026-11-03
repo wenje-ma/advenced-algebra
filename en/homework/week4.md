@@ -1,9 +1,5 @@
 # week4
 
-> **Basic Knowledge: Inversions, the Number of Inversions, and Even/Odd Permutations**
-> 
-> In an $n$-permutation, if a pair of numbers has its order reversed relative to its size (i.e. the number in front is larger than the one behind), then the pair is called an inversion. The total number of inversions in a permutation is called its inversion number, denoted $\tau$. A permutation with odd inversion number is called an odd permutation, and one with even inversion number is called an even permutation.
-
 > **Proposition 2.1.1 (Criterion for a Unique Solution of a Two-Variable Linear System)**
 > 
 > A two-equation linear system in two variables has a unique solution if and only if its coefficient determinant is nonzero; in that case the unique solution is given by the Cramer formula, i.e. two fractions whose numerators are the $2\times2$ determinants obtained by replacing the $1$st and $2$nd columns of the coefficient determinant by the constant terms of the system.
@@ -16,7 +12,7 @@ Find the inversion number of the permutation $315462$ and determine its parity.
 
 ### Solution 2.1-1(1)
 
-By **Basic Knowledge: Inversions, the Number of Inversions, and Even/Odd Permutations**, count the inversions digit by digit:
+By Inversions, the Number of Inversions, and Even/Odd Permutations, count the inversions digit by digit:
 
 - after $3$, the numbers smaller than $3$ are $1,2$, contributing $2$ inversions;
 - after $1$, there is no number smaller than $1$, contributing $0$;
@@ -31,7 +27,7 @@ $$
 \tau\left(315462\right)=2+0+2+1+1+0=6.
 $$
 
-By **Basic Knowledge: Inversions, the Number of Inversions, and Even/Odd Permutations**, $\tau=6$ is even, so $315462$ is an even permutation. $\blacksquare$
+By Inversions, the Number of Inversions, and Even/Odd Permutations, $\tau=6$ is even, so $315462$ is an even permutation. $\blacksquare$
 
 ---
 
@@ -41,13 +37,13 @@ Find the inversion number of the permutation $7654321$ and determine its parity.
 
 ### Solution 2.1-1(4)
 
-By **Basic Knowledge: Inversions, the Number of Inversions, and Even/Odd Permutations**, this is the fully reversed $7$-permutation, whose inversion number is
+By Inversions, the Number of Inversions, and Even/Odd Permutations, this is the fully reversed $7$-permutation, whose inversion number is
 
 $$
 \tau\left(7654321\right)=6+5+4+3+2+1+0=21.
 $$
 
-By **Basic Knowledge: Inversions, the Number of Inversions, and Even/Odd Permutations**, $\tau=21$ is odd, so $7654321$ is an odd permutation. $\blacksquare$
+By Inversions, the Number of Inversions, and Even/Odd Permutations, $\tau=21$ is odd, so $7654321$ is an odd permutation. $\blacksquare$
 
 ---
 
@@ -57,13 +53,13 @@ Find the inversion number of the permutation $123456789$ and determine its parit
 
 ### Solution 2.1-1(7)
 
-By **Basic Knowledge: Inversions, the Number of Inversions, and Even/Odd Permutations**, this is the natural-order permutation, which has no inversions, so
+By Inversions, the Number of Inversions, and Even/Odd Permutations, this is the natural-order permutation, which has no inversions, so
 
 $$
 \tau\left(123456789\right)=0.
 $$
 
-By **Basic Knowledge: Inversions, the Number of Inversions, and Even/Odd Permutations**, $\tau=0$ is even, so $123456789$ is an even permutation. $\blacksquare$
+By Inversions, the Number of Inversions, and Even/Odd Permutations, $\tau=0$ is even, so $123456789$ is an even permutation. $\blacksquare$
 
 ---
 
@@ -77,7 +73,7 @@ Find the inversion number of the following $n$-permutations:
 
 ### Solution 2.1-2
 
-By **Basic Knowledge: Inversions, the Number of Inversions, and Even/Odd Permutations**:
+By Inversions, the Number of Inversions, and Even/Odd Permutations:
 
 (1) In the permutation $\left(n-1\right)\left(n-2\right)\cdots 21n$, the first $n-1$ numbers are in fully reversed order, and the last number $n$ is the largest, producing no inversion. The inversion number of the first $n-1$ numbers is
 

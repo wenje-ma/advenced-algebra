@@ -1,9 +1,5 @@
 # week11
 
-> **Basic Knowledge: Formula for the Vandermonde Determinant**
-> 
-> The $r\times r$ Vandermonde determinant in $a_{1},a_{2},\cdots,a_{r}$
-
 $$
 \left|\begin{array}{cccc}
 1 & 1 & \cdots & 1\\
@@ -329,7 +325,7 @@ k_{1}a_{1}^{r-1}+k_{2}a_{2}^{r-1}+\cdots+k_{r}a_{r}^{r-1}=0.
 \end{cases}
 $$
 
-By **Basic Knowledge: Formula for the Vandermonde Determinant**, its coefficient determinant is the $r\times r$ Vandermonde determinant:
+By Formula for the Vandermonde Determinant, its coefficient determinant is the $r\times r$ Vandermonde determinant:
 
 $$
 \left|\begin{array}{cccc}

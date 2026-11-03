@@ -1,9 +1,5 @@
 # week18
 
-> **基础知识: 矩阵二项式定理**
-> 
-> 若两个矩阵 $P,Q$ 可交换 ($PQ=QP$), 则 $\left(P+Q\right)^{n}=\sum_{k=0}^{n}\binom{n}{k}P^{n-k}Q^{k}$.
-
 > **定义 4.1.1 (矩阵的加法)**
 > 
 > 设 $A=\left(a_{ij}\right),B=\left(b_{ij}\right)$ 都是数域 $K$ 上 $s\times n$ 矩阵, 令 $C=\left(a_{ij}+b_{ij}\right)_{s\times n}$, 则称 $C$ 是矩阵 $A$ 与 $B$ 的和, 记作 $C=A+B$.
@@ -457,7 +453,7 @@ $$
 N=\left[\begin{array}{ccc}0 & 1 & 0\\0 & 0 & 1\\0 & 0 & 0\end{array}\right].
 $$
 
-因为 $\lambda I$ 与 $N$ 可交换, 由**基础知识: 矩阵二项式定理**:
+因为 $\lambda I$ 与 $N$ 可交换, 由矩阵二项式定理:
 
 $$
 A^{n}=\sum_{k=0}^{n}\binom{n}{k}\left(\lambda I\right)^{n-k}N^{k}.

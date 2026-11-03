@@ -1,16 +1,8 @@
 # week9
 
-> **Basic Knowledge: Block Upper-Triangular Determinant**
-> 
-> Here $A,B$ are both square matrices:
-
 $$
 \left|\begin{array}{cc}A & 0\\C & B\end{array}\right|=\left|A\right|\left|B\right|.
 $$
-
-> **Basic Knowledge: Formula for the Vandermonde Determinant**
-> 
-> The $n\times n$ Vandermonde determinant in $a_{1},a_{2},\cdots,a_{n}$
 
 $$
 \left|\begin{array}{cccc}
@@ -80,7 +72,7 @@ $$
 
 ### Solution 2.6-4(1)
 
-By **Basic Knowledge: Formula for the Vandermonde Determinant**, the Vandermonde determinant is
+By Formula for the Vandermonde Determinant, the Vandermonde determinant is
 
 $$
 \left|A\right|=\left|\begin{array}{cccc}
@@ -107,7 +99,7 @@ a_{2}^{n-2} & a_{3}^{n-2} & \cdots & a_{n}^{n-2}
 \end{array}\right|.
 $$
 
-This is the $\left(n-1\right)$-Vandermonde determinant in $a_{2},a_{3},\cdots,a_{n}$; by **Basic Knowledge: Formula for the Vandermonde Determinant**, its value is
+This is the $\left(n-1\right)$-Vandermonde determinant in $a_{2},a_{3},\cdots,a_{n}$; by Formula for the Vandermonde Determinant, its value is
 
 $$
 \prod_{2\le i< j\le n}\left(a_{j}-a_{i}\right)=\prod_{2\le i< j\le n}\left(j-i\right).

@@ -1,9 +1,5 @@
 # week18
 
-> **Basic Knowledge: Matrix Binomial Theorem**
-> 
-> If two matrices $P,Q$ commute ($PQ=QP$), then $\left(P+Q\right)^{n}=\sum_{k=0}^{n}\binom{n}{k}P^{n-k}Q^{k}$.
-
 > **Definition 4.1.1 (Matrix Addition)**
 > 
 > Let $A=\left(a_{ij}\right),B=\left(b_{ij}\right)$ both be $s\times n$ matrices over a number field $K$, and set $C=\left(a_{ij}+b_{ij}\right)_{s\times n}$. Then $C$ is called the sum of the matrices $A$ and $B$, denoted $C=A+B$.
@@ -457,7 +453,7 @@ $$
 N=\left[\begin{array}{ccc}0 & 1 & 0\\0 & 0 & 1\\0 & 0 & 0\end{array}\right].
 $$
 
-Because $\lambda I$ and $N$ commute, by **Basic Knowledge: Matrix Binomial Theorem**,
+Because $\lambda I$ and $N$ commute, by Matrix Binomial Theorem,
 
 $$
 A^{n}=\sum_{k=0}^{n}\binom{n}{k}\left(\lambda I\right)^{n-k}N^{k}.

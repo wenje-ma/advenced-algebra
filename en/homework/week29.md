@@ -1,9 +1,5 @@
 # week29
 
-> **Basic Knowledge: Invariants of Similar Matrices**
-> 
-> Similar matrices have the same determinant, the same rank, the same trace, the same characteristic polynomial and the same eigenvalues.
-
 > **Definition 5.5.1 (Eigenvalue and Eigenvector)**
 > 
 > Let $A$ be an $n\times n$ matrix over a number field $K$. If there is a nonzero column vector $\alpha$ in $K^{n}$ such that $A\alpha=\lambda_{0}\alpha$ with $\lambda_{0}\in K$, then $\lambda_{0}$ is called an eigenvalue of $A$, and $\alpha$ is called an eigenvector of $A$ belonging to the eigenvalue $\lambda_{0}$.

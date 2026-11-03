@@ -1,9 +1,5 @@
 # week23
 
-> **Basic Knowledge: The Schmidt Orthogonalization Process**
-> 
-> For a linearly independent vector group $\alpha_{1},\alpha_{2},\cdots,\alpha_{m}$, set $\beta_{1}=\alpha_{1}$ and, for $i\ge2$, recursively define
-
 $$
 \beta_{i}=\alpha_{i}-\sum_{k=1}^{i-1}\frac{\left(\alpha_{i},\beta_{k}\right)}{\left(\beta_{k},\beta_{k}\right)}\beta_{k}.
 $$
@@ -206,7 +202,7 @@ Find an orthonormal vector group equivalent to $\alpha_{1},\alpha_{2},\alpha_{3}
 
 ### Solution 4.6-12
 
-By **Basic Knowledge: The Schmidt Orthogonalization Process**.
+By The Schmidt Orthogonalization Process.
 
 Set $\beta_{1}=\alpha_{1}=\left(1,1,0,0\right)^{\top}$.
 
@@ -271,7 +267,7 @@ where $T$ is orthogonal and $B$ is upper triangular with all diagonal entries po
 
 Since $A$ is invertible, $\alpha_{1},\alpha_{2},\cdots,\alpha_{n}$ are linearly independent.
 
-By **Basic Knowledge: The Schmidt Orthogonalization Process**, apply it to $\alpha_{1},\alpha_{2},\cdots,\alpha_{n}$ to obtain an orthogonal group $\beta_{1},\beta_{2},\cdots,\beta_{n}$, where $\beta_{i}$ is a linear combination of $\alpha_{1},\cdots,\alpha_{i}$ and $\alpha_{i}$ is a linear combination of $\beta_{1},\cdots,\beta_{i}$.
+By The Schmidt Orthogonalization Process, apply it to $\alpha_{1},\alpha_{2},\cdots,\alpha_{n}$ to obtain an orthogonal group $\beta_{1},\beta_{2},\cdots,\beta_{n}$, where $\beta_{i}$ is a linear combination of $\alpha_{1},\cdots,\alpha_{i}$ and $\alpha_{i}$ is a linear combination of $\beta_{1},\cdots,\beta_{i}$.
 
 Normalize $\beta_{1},\beta_{2},\cdots,\beta_{n}$ to obtain an orthonormal group $\eta_{1},\eta_{2},\cdots,\eta_{n}$.
 

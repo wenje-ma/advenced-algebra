@@ -1,9 +1,5 @@
 # week42
 
-> **Basic Knowledge: Elementary Symmetric Polynomials**
-> 
-> The elementary symmetric polynomials in $n$ variables are
-
 $$
 \sigma_{1}=x_{1}+x_{2}+\cdots+x_{n},
 $$
@@ -19,10 +15,6 @@ $$
 $$
 \sigma_{n}=x_{1}x_{2}\cdots x_{n}.
 $$
-
-> **Basic Knowledge: Newton's Identities**
-> 
-> Let $S_{k}=x_{1}^{k}+x_{2}^{k}+\cdots+x_{n}^{k}$; then:
 
 $$
 S_{1}=\sigma_{1},
@@ -54,7 +46,7 @@ In $K\left[x_{1},x_{2},x_{3}\right]$, use Newton's identities to express the pow
 
 ### Solution 7.10-5
 
-By **Basic Knowledge: Newton's Identities**, let $S_{k}=x_{1}^{k}+x_{2}^{k}+x_{3}^{k}$. The elementary symmetric polynomials:
+By Newton's Identities, let $S_{k}=x_{1}^{k}+x_{2}^{k}+x_{3}^{k}$. The elementary symmetric polynomials:
 
 $$
 \sigma_{1}=x_{1}+x_{2}+x_{3},

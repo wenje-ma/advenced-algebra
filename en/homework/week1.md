@@ -1,21 +1,5 @@
 # week1
 
-> **Basic Knowledge: Elementary Operations on a Linear System and Elementary Row Operations on a Matrix**
-> 
-> The following three operations are performed on a linear system: (1) add a multiple of one equation to another; (2) interchange the positions of two equations; (3) multiply an equation by a nonzero scalar. These are collectively called the elementary operations on a linear system. Applying the corresponding three operations to the rows of its augmented matrix is called an elementary row operation on the matrix. A system obtained by elementary operations has the same solution set as the original system.
-
-> **Basic Knowledge: Row Echelon Matrix**
-> 
-> Rows whose entries are all $0$ (zero rows) lie below; in a row whose entries are not all $0$ (a nonzero row), the first nonzero entry counted from the left is called a pivot, and the column index of the pivot of each nonzero row strictly increases as the row index increases.
-
-> **Basic Knowledge: Reduced Row Echelon Matrix**
-> 
-> On the basis of a row echelon matrix, the pivot of each nonzero row is $1$, and all other entries in the column containing each pivot are $0$.
-
-> **Basic Knowledge: The Gauss-Jordan Algorithm**
-> 
-> Apply elementary row operations to the augmented matrix of a linear system to reduce it to a row echelon matrix (or further to a reduced row echelon matrix), and then write down the solution. If the corresponding echelon system exhibits $0=d$ ($d\ne 0$), then the original system has no solution.
-
 ---
 
 ## 1.1-1(4)
@@ -33,7 +17,7 @@ $$
 
 ### Solution 1.1-1(4)
 
-By **Basic Knowledge: The Gauss-Jordan Algorithm**, apply elementary row operations to the augmented matrix to reduce it to row echelon form. The augmented matrix is
+By The Gauss-Jordan Algorithm, apply elementary row operations to the augmented matrix to reduce it to row echelon form. The augmented matrix is
 
 $$
 \left[\begin{array}{rrr|r}
@@ -44,7 +28,7 @@ $$
 \end{array}\right].
 $$
 
-By the (1)-th operation of **Basic Knowledge: Elementary Operations on a Linear System and Elementary Row Operations on a Matrix**, perform the row operations in turn: (2) $-2\times$(1), (3) $+3\times$(1), (4) $-$(1), giving
+By the (1)-th operation of Elementary Operations on a Linear System and Elementary Row Operations on a Matrix, perform the row operations in turn: (2) $-2\times$(1), (3) $+3\times$(1), (4) $-$(1), giving
 
 $$
 \left[\begin{array}{rrr|r}
@@ -55,7 +39,7 @@ $$
 \end{array}\right].
 $$
 
-By **Basic Knowledge: Elementary Operations on a Linear System and Elementary Row Operations on a Matrix**, elementary operations do not change the solutions of the system, so we back-substitute from the echelon system. From (4) we get $x_{2}=5x_{3}-7$. Substituting into (2): $-\left(5x_{3}-7\right)+18x_{3}=20$, solving gives $x_{3}=1$. Hence $x_{2}=-2$. Substituting into (1):
+By Elementary Operations on a Linear System and Elementary Row Operations on a Matrix, elementary operations do not change the solutions of the system, so we back-substitute from the echelon system. From (4) we get $x_{2}=5x_{3}-7$. Substituting into (2): $-\left(5x_{3}-7\right)+18x_{3}=20$, solving gives $x_{3}=1$. Hence $x_{2}=-2$. Substituting into (1):
 
 $$
 x_{1}+3\times\left(-2\right)-7\times1=-8,
@@ -71,7 +55,7 @@ $$
 
 which holds.
 
-By **Basic Knowledge: The Gauss-Jordan Algorithm**, the original system therefore has the unique solution
+By The Gauss-Jordan Algorithm, the original system therefore has the unique solution
 
 $$
 \left(x_{1},x_{2},x_{3}\right)=\left(5,-2,1\right).\blacksquare
@@ -157,7 +141,7 @@ $$
 
 ### Solution 1.1-3(2)
 
-By **Basic Knowledge: The Gauss-Jordan Algorithm**, apply elementary row operations to the augmented matrix. The augmented matrix is
+By The Gauss-Jordan Algorithm, apply elementary row operations to the augmented matrix. The augmented matrix is
 
 $$
 \left[\begin{array}{rrrr|r}
@@ -167,7 +151,7 @@ $$
 \end{array}\right].
 $$
 
-By the (2)-th operation of **Basic Knowledge: Elementary Operations on a Linear System and Elementary Row Operations on a Matrix**, interchange rows $1,3$, giving
+By the (2)-th operation of Elementary Operations on a Linear System and Elementary Row Operations on a Matrix, interchange rows $1,3$, giving
 
 $$
 \left[\begin{array}{rrrr|r}
@@ -177,7 +161,7 @@ $$
 \end{array}\right].
 $$
 
-By the (1)-th operation of **Basic Knowledge: Elementary Operations on a Linear System and Elementary Row Operations on a Matrix**, perform (2) $-3\times$(1), (3) $+2\times$(1):
+By the (1)-th operation of Elementary Operations on a Linear System and Elementary Row Operations on a Matrix, perform (2) $-3\times$(1), (3) $+2\times$(1):
 
 $$
 \left[\begin{array}{rrrr|r}
@@ -187,7 +171,7 @@ $$
 \end{array}\right].
 $$
 
-By **Basic Knowledge: Elementary Operations on a Linear System and Elementary Row Operations on a Matrix**, elementary operations do not change the solutions of the system, so we back-substitute from the echelon system. From the $3$rd row we get $-7x_{2}+7x_{3}+7x_{4}=28$, i.e. $-x_{2}+x_{3}+x_{4}=4$, hence $x_{2}=x_{3}+x_{4}-4$.
+By Elementary Operations on a Linear System and Elementary Row Operations on a Matrix, elementary operations do not change the solutions of the system, so we back-substitute from the echelon system. From the $3$rd row we get $-7x_{2}+7x_{3}+7x_{4}=28$, i.e. $-x_{2}+x_{3}+x_{4}=4$, hence $x_{2}=x_{3}+x_{4}-4$.
 
 Substituting into the $2$nd row:
 
@@ -207,7 +191,7 @@ $$
 -x_{1}-2\times0+3\left(4-c\right)+c=11-x_{1}+12-3c+c=11-x_{1}=-1+2c;x_{1}=1-2c.
 $$
 
-By **Basic Knowledge: The Gauss-Jordan Algorithm**, the original system therefore has infinitely many solutions, and the general solution is
+By The Gauss-Jordan Algorithm, the original system therefore has infinitely many solutions, and the general solution is
 
 $$
 \begin{cases}
@@ -237,7 +221,7 @@ $$
 
 ### Solution 1.1-3(3)
 
-By **Basic Knowledge: The Gauss-Jordan Algorithm**, apply elementary row operations to the augmented matrix. The augmented matrix is
+By The Gauss-Jordan Algorithm, apply elementary row operations to the augmented matrix. The augmented matrix is
 
 $$
 \left[\begin{array}{rrr|r}
@@ -248,7 +232,7 @@ $$
 \end{array}\right].
 $$
 
-By the (1)-th operation of **Basic Knowledge: Elementary Operations on a Linear System and Elementary Row Operations on a Matrix**, perform (2) $-2\times$(1), (3) $+$(1), (4) $-$(1):
+By the (1)-th operation of Elementary Operations on a Linear System and Elementary Row Operations on a Matrix, perform (2) $-2\times$(1), (3) $+$(1), (4) $-$(1):
 
 $$
 \left[\begin{array}{rrr|r}
@@ -259,7 +243,7 @@ $$
 \end{array}\right].
 $$
 
-By **Basic Knowledge: Elementary Operations on a Linear System and Elementary Row Operations on a Matrix**, elementary operations do not change the solutions of the system, so we determine whether there is a solution from the echelon system. From the $2$nd row we get $7x_{2}+5x_{3}=-1$. The $4$th row is $21x_{2}+15x_{3}=-5$.
+By Elementary Operations on a Linear System and Elementary Row Operations on a Matrix, elementary operations do not change the solutions of the system, so we determine whether there is a solution from the echelon system. From the $2$nd row we get $7x_{2}+5x_{3}=-1$. The $4$th row is $21x_{2}+15x_{3}=-5$.
 
 Note that the left-hand side of the $4$th row is exactly $3$ times the left-hand side of the $2$nd row, whereas the right-hand side $3\times\left(-1\right)=-3\ne-5$. That is,
 
@@ -269,4 +253,4 @@ $$
 
 which contradicts the $4$th row $21x_{2}+15x_{3}=-5$, yielding $0=-2$.
 
-By **Basic Knowledge: The Gauss-Jordan Algorithm**, the corresponding echelon system exhibits the case $0=d$ ($d\ne 0$), so the original system has no solution. $\blacksquare$
+By The Gauss-Jordan Algorithm, the corresponding echelon system exhibits the case $0=d$ ($d\ne 0$), so the original system has no solution. $\blacksquare$

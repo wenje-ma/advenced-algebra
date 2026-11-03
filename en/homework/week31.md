@@ -1,9 +1,5 @@
 # week31
 
-> **Basic Knowledge: The Schmidt Orthogonalization Process**
-> 
-> For a linearly independent vector group $\alpha_{1},\alpha_{2},\cdots,\alpha_{m}$, set $\beta_{1}=\alpha_{1}$ and, for $i\ge2$, recursively define
-
 $$
 \beta_{i}=\alpha_{i}-\sum_{k=1}^{i-1}\frac{\left(\alpha_{i},\beta_{k}\right)}{\left(\beta_{k},\beta_{k}\right)}\beta_{k}.
 $$
@@ -63,7 +59,7 @@ $$
 
 A fundamental solution system: $\alpha_{1}=\left(-2,1,0\right)^{\top}$, $\alpha_{2}=\left(2,0,1\right)^{\top}$.
 
-By **Basic Knowledge: The Schmidt Orthogonalization Process**:
+By The Schmidt Orthogonalization Process:
 
 $$
 \beta_{1}=\alpha_{1}=\left(-2,1,0\right)^{\top}.

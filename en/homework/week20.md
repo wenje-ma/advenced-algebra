@@ -1,9 +1,5 @@
 # week20
 
-> **Basic Knowledge: Formula for the Vandermonde Determinant**
-> 
-> The $3\times 3$ Vandermonde determinant in $x_{1},x_{2},x_{3}$
-
 $$
 \left|\begin{array}{ccc}
 1 & 1 & 1\\
@@ -164,7 +160,7 @@ $$
 \left|A\right|=\left|BB^{\top}\right|=\left|B\right|\left|B^{\top}\right|=\left|B\right|^{2}.
 $$
 
-By **Basic Knowledge: Formula for the Vandermonde Determinant**, $B$ is a Vandermonde matrix,
+By Formula for the Vandermonde Determinant, $B$ is a Vandermonde matrix,
 
 $$
 \left|B\right|=\left(x_{2}-x_{1}\right)\left(x_{3}-x_{1}\right)\left(x_{3}-x_{2}\right).

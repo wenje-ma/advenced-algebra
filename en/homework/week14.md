@@ -1,9 +1,5 @@
 # week14
 
-> **Basic Knowledge: Upper Bound on the Rank of a Union of Vector Groups**
-> 
-> If a vector group $A$ can be split into two subgroups $A_{1},A_{2}$, then $\text{rank}\left(A\right)\le\text{rank}\left(A_{1}\right)+\text{rank}\left(A_{2}\right)$.
-
 > **Definition 3.5.1 (Rank of a Matrix)**
 > 
 > The row rank and column rank of a matrix $A$ are collectively called the rank of $A$, denoted $\text{rank}\left(A\right)$.
@@ -170,7 +166,7 @@ Viewing $A$ as a row vector group, the rank of the row group of $A$ is $r$.
 
 The row group of $A$ $=$ the row group of $A_{1}$ $\cup$ the row group of $A_{2}$.
 
-By **Basic Knowledge: Upper Bound on the Rank of a Union of Vector Groups**,
+By Upper Bound on the Rank of a Union of Vector Groups,
 
 $$
 \text{rank}\left(A\right)\le\text{rank}\left(A_{1}\right)+\text{rank}\left(A_{2}\right).

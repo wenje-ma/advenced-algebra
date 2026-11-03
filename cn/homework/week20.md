@@ -1,9 +1,5 @@
 # week20
 
-> **基础知识: 范德蒙行列式的计算公式**
-> 
-> 关于 $x_{1},x_{2},x_{3}$ 的 $3$ 阶范德蒙行列式
-
 $$
 \left|\begin{array}{ccc}
 1 & 1 & 1\\
@@ -164,7 +160,7 @@ $$
 \left|A\right|=\left|BB^{\top}\right|=\left|B\right|\left|B^{\top}\right|=\left|B\right|^{2}.
 $$
 
-由**基础知识: 范德蒙行列式的计算公式**, $B$ 是范德蒙矩阵,
+由范德蒙行列式的计算公式, $B$ 是范德蒙矩阵,
 
 $$
 \left|B\right|=\left(x_{2}-x_{1}\right)\left(x_{3}-x_{1}\right)\left(x_{3}-x_{2}\right).

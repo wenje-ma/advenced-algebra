@@ -1,9 +1,5 @@
 # week14
 
-> **基础知识: 向量组之并的秩的上界**
-> 
-> 若向量组 $A$ 可以分成两个部分组 $A_{1},A_{2}$, 则 $\text{rank}\left(A\right)\le\text{rank}\left(A_{1}\right)+\text{rank}\left(A_{2}\right)$.
-
 > **定义 3.5.1 (矩阵的秩)**
 > 
 > 矩阵 $A$ 的行秩与列秩统称为 $A$ 的秩, 记作 $\text{rank}\left(A\right)$.
@@ -170,7 +166,7 @@ $$
 
 $A$ 的行向量组 $=A_{1}$ 的行向量组 $\cup A_{2}$ 的行向量组.
 
-由**基础知识: 向量组之并的秩的上界**,
+由向量组之并的秩的上界,
 
 $$
 \text{rank}\left(A\right)\le\text{rank}\left(A_{1}\right)+\text{rank}\left(A_{2}\right).

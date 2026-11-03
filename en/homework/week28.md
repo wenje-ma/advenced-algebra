@@ -1,9 +1,5 @@
 # week28
 
-> **Basic Knowledge: Invariants of Similar Matrices**
-> 
-> Similar matrices have equal determinants, equal ranks and equal traces. Moreover, their traces satisfy $\operatorname{tr}\left(A^{-1}BA\right)=\operatorname{tr}\left(B\right)$.
-
 > **Definition 5.4.1 (Similarity)**
 > 
 > Let $A$ and $B$ both be $n\times n$ matrices over a number field $K$. If there exists an $n\times n$ invertible matrix $P$ over $K$ such that $P^{-1}AP=B$, then $A$ and $B$ are called similar, denoted $A\sim B$.
@@ -121,7 +117,7 @@ then $A$ is not invertible.
 
 ### Solution 5.4-9
 
-By **Basic Knowledge: Invariants of Similar Matrices**, similar matrices have equal traces. Suppose, for contradiction, that $A$ is invertible.
+By Invariants of Similar Matrices, similar matrices have equal traces. Suppose, for contradiction, that $A$ is invertible.
 
 From $AB-BA=A$, multiply on the left by $A^{-1}$:
 
@@ -143,7 +139,7 @@ $$
 \operatorname{tr}\left(B-C\right)=\operatorname{tr}\left(I\right)=n.
 $$
 
-On the other hand, by **Basic Knowledge: Invariants of Similar Matrices**,
+On the other hand, by Invariants of Similar Matrices,
 
 $$
 \operatorname{tr}\left(C\right)=\operatorname{tr}\left(A^{-1}BA\right)=\operatorname{tr}\left(BAA^{-1}\right)=\operatorname{tr}\left(B\right).

@@ -1,13 +1,5 @@
 # week7
 
-> **Basic Knowledge: Minor Characterization of Matrix Rank**
-> 
-> If the rank of a matrix is at most $2$, then all its minors of order $3$ and higher are $0$; in particular, when $n\ge3$, the $n\times n$ determinant is $0$.
-
-> **Basic Knowledge: Primitive $n$-th Roots of Unity and Eigenvalues of Circulant Matrices**
-> 
-> Let $\omega$ be a primitive $n$-th root of unity. The eigenvalues of the cyclic shift matrix $P$ are $\omega^{k}$ $\left(k=0,1,\cdots,n-1\right)$, and the identity $\prod_{k=1}^{n-1}\left(1-\omega^{k}\right)=n$ holds.
-
 > **Definition 2.4.1 (Minors and Cofactors)**
 > 
 > In the $n\times n$ determinant $\left|A\right|$, deleting row $i$ and column $j$, the $\left(n-1\right)$-determinant formed by the remaining entries in their original order is called the minor of the $\left(i,j\right)$-entry of $A$, denoted $M_{ij}$. Setting $A_{ij}=\left(-1\right)^{i+j}M_{ij}$, $A_{ij}$ is called the cofactor of the $\left(i,j\right)$-entry of $A$.
@@ -244,7 +236,7 @@ $$
 
 Subtract row $1$ from row $i$ for $i=2,\cdots,n$, and expand along column $1$.
 
-By **Basic Knowledge: Primitive $n$-th Roots of Unity and Eigenvalues of Circulant Matrices**, let $P$ be the $n\times n$ cyclic shift matrix; then the original matrix is
+By Primitive $n$-th Roots of Unity and Eigenvalues of Circulant Matrices, let $P$ be the $n\times n$ cyclic shift matrix; then the original matrix is
 
 $$
 C=1\cdot I+2\cdot P+\cdots+n\cdot P^{n-1}.
@@ -276,7 +268,7 @@ $$
 D=\prod_{k=0}^{n-1}\lambda_{k}=\frac{n\left(n+1\right)}{2}\cdot\prod_{k=1}^{n-1}\frac{n}{\omega^{k}-1}=\frac{n\left(n+1\right)}{2}\cdot\frac{n^{n-1}}{\prod_{k=1}^{n-1}\left(\omega^{k}-1\right)}.
 $$
 
-By the identity $\prod_{k=1}^{n-1}\left(1-\omega^{k}\right)=n$ in **Basic Knowledge: Primitive $n$-th Roots of Unity and Eigenvalues of Circulant Matrices**,
+By the identity $\prod_{k=1}^{n-1}\left(1-\omega^{k}\right)=n$ in Primitive $n$-th Roots of Unity and Eigenvalues of Circulant Matrices,
 
 $$
 \prod_{k=1}^{n-1}\left(\omega^{k}-1\right)=\left(-1\right)^{n-1}n.
@@ -374,7 +366,7 @@ $$
 
 $A$ is the sum of two rank-$1$ matrices, so $\text{rank}\left(A\right)\le2$.
 
-When $n\ge3$, by **Basic Knowledge: Minor Characterization of Matrix Rank**, $\det\left(A\right)=0$.
+When $n\ge3$, by Minor Characterization of Matrix Rank, $\det\left(A\right)=0$.
 
 When $n=1$, $\det\left(A\right)=1+x_{1}y_{1}$.
 

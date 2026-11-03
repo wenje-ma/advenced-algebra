@@ -1,9 +1,5 @@
 # week28
 
-> **基础知识: 相似矩阵的不变量**
-> 
-> 相似的矩阵有相等的行列式, 相等的秩, 相等的迹. 此外, 相似矩阵的迹满足 $\operatorname{tr}\left(A^{-1}BA\right)=\operatorname{tr}\left(B\right)$.
-
 > **定义 5.4.1 (相似)**
 > 
 > 设 $A$ 与 $B$ 都是数域 $K$ 上 $n$ 级矩阵, 如果存在数域 $K$ 上的一个 $n$ 级可逆矩阵 $P$, 使得 $P^{-1}AP=B$, 则称 $A$ 与 $B$ 是相似的, 记作 $A\sim B$.
@@ -121,7 +117,7 @@ $$
 
 ### 解答 5.4-9
 
-由**基础知识: 相似矩阵的不变量**, 相似的矩阵有相等的迹. 假设 $A$ 可逆.
+由相似矩阵的不变量, 相似的矩阵有相等的迹. 假设 $A$ 可逆.
 
 由 $AB-BA=A$, 两边左乘 $A^{-1}$:
 
@@ -143,7 +139,7 @@ $$
 \operatorname{tr}\left(B-C\right)=\operatorname{tr}\left(I\right)=n.
 $$
 
-另一方面, 由**基础知识: 相似矩阵的不变量**,
+另一方面, 由相似矩阵的不变量,
 
 $$
 \operatorname{tr}\left(C\right)=\operatorname{tr}\left(A^{-1}BA\right)=\operatorname{tr}\left(BAA^{-1}\right)=\operatorname{tr}\left(B\right).

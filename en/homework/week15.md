@@ -1,9 +1,5 @@
 # week15
 
-> **Basic Knowledge: Formula for the Vandermonde Determinant**
-> 
-> The $s\times s$ Vandermonde determinant in $a_{1},a_{2},\cdots,a_{s}$
-
 $$
 \left|\begin{array}{cccc}
 1 & 1 & \cdots & 1\\
@@ -59,7 +55,7 @@ D=\left|\begin{array}{cccc}
 \end{array}\right|.
 $$
 
-By **Basic Knowledge: Formula for the Vandermonde Determinant**, this is a Vandermonde determinant,
+By Formula for the Vandermonde Determinant, this is a Vandermonde determinant,
 
 $$
 D=\prod_{1\le i< j\le s}\left(a^{j}-a^{i}\right).

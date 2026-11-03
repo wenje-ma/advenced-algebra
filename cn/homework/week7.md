@@ -1,13 +1,5 @@
 # week7
 
-> **基础知识: 矩阵秩的子式刻画**
-> 
-> 若一个矩阵的秩不超过 $2$, 则它的所有 $3$ 阶及更高阶子式全为 $0$; 特别地, 当 $n\ge3$ 时 $n$ 阶行列式为 $0$.
-
-> **基础知识: $n$ 次本原单位根与循环矩阵的特征值**
-> 
-> 设 $\omega$ 是 $n$ 次本原单位根, 循环移位矩阵 $P$ 的特征值为 $\omega^{k}$ $\left(k=0,1,\cdots,n-1\right)$, 且有恒等式 $\prod_{k=1}^{n-1}\left(1-\omega^{k}\right)=n$.
-
 > **定义 2.4.1 (余子式与代数余子式)**
 > 
 > $n$ 阶行列式 $\left|A\right|$ 中, 划去第 $i$ 行和第 $j$ 列, 剩下的元素按原来次序组成的 $n-1$ 阶行列式称为 $A$ 的 $\left(i,j\right)$ 元的余子式, 记作 $M_{ij}$. 令 $A_{ij}=\left(-1\right)^{i+j}M_{ij}$, 称 $A_{ij}$ 是 $A$ 的 $\left(i,j\right)$ 元的代数余子式.
@@ -244,7 +236,7 @@ $$
 
 第 $i$ 行减第 $1$ 行 $\left(i=2,\cdots,n\right)$, 按第 $1$ 列展开.
 
-由**基础知识: $n$ 次本原单位根与循环矩阵的特征值**, 设 $P$ 是 $n$ 阶循环移位矩阵, 则原矩阵
+由$n$ 次本原单位根与循环矩阵的特征值, 设 $P$ 是 $n$ 阶循环移位矩阵, 则原矩阵
 
 $$
 C=1\cdot I+2\cdot P+\cdots+n\cdot P^{n-1}.
@@ -276,7 +268,7 @@ $$
 D=\prod_{k=0}^{n-1}\lambda_{k}=\frac{n\left(n+1\right)}{2}\cdot\prod_{k=1}^{n-1}\frac{n}{\omega^{k}-1}=\frac{n\left(n+1\right)}{2}\cdot\frac{n^{n-1}}{\prod_{k=1}^{n-1}\left(\omega^{k}-1\right)}.
 $$
 
-由**基础知识: $n$ 次本原单位根与循环矩阵的特征值** 中 $\prod_{k=1}^{n-1}\left(1-\omega^{k}\right)=n$, 得
+由$n$ 次本原单位根与循环矩阵的特征值 中 $\prod_{k=1}^{n-1}\left(1-\omega^{k}\right)=n$, 得
 
 $$
 \prod_{k=1}^{n-1}\left(\omega^{k}-1\right)=\left(-1\right)^{n-1}n.
@@ -374,7 +366,7 @@ $$
 
 $A$ 是两个秩 $1$ 矩阵之和, 故 $\text{rank}\left(A\right)\le2$.
 
-当 $n\ge3$ 时, 由**基础知识: 矩阵秩的子式刻画**, $\det\left(A\right)=0$.
+当 $n\ge3$ 时, 由矩阵秩的子式刻画, $\det\left(A\right)=0$.
 
 当 $n=1$ 时, $\det\left(A\right)=1+x_{1}y_{1}$.
 

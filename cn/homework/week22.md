@@ -1,16 +1,8 @@
 # week22
 
-> **基础知识: 秩的子加性**
-> 
-> 对任意两个行数相同, 列数相同的矩阵 $A,B$, 有
-
 $$
 \text{rank}\left(A+B\right)\le\text{rank}\left(A\right)+\text{rank}\left(B\right).
 $$
-
-> **基础知识: 分块上三角矩阵的行列式**
-> 
-> 对分块上三角矩阵 $\left[\begin{array}{cc}A & B\\0 & D\end{array}\right]$, 其中 $A,D$ 都是方阵, 有
 
 $$
 \left|\begin{array}{cc}A & B\\0 & D\end{array}\right|=\left|A\right|\cdot\left|D\right|.
@@ -100,7 +92,7 @@ $$
 \left(I+A\right)+\left(I-A\right)=2I.
 $$
 
-由**基础知识: 秩的子加性**,
+由秩的子加性,
 
 $$
 \text{rank}\left(2I\right)\le\text{rank}\left(I+A\right)+\text{rank}\left(I-A\right).
@@ -150,7 +142,7 @@ $$
 A+\left(I-A\right)=I.
 $$
 
-由**基础知识: 秩的子加性**,
+由秩的子加性,
 
 $$
 \text{rank}\left(I\right)\le\text{rank}\left(A\right)+\text{rank}\left(I-A\right).
@@ -285,7 +277,7 @@ $$
 \left|\begin{array}{cc}A & B\\0 & D-CA^{-1}B\end{array}\right|.
 $$
 
-这是分块上三角矩阵, 由**基础知识: 分块上三角矩阵的行列式**, 行列式等于主对角线上子矩阵行列式的乘积:
+这是分块上三角矩阵, 由分块上三角矩阵的行列式, 行列式等于主对角线上子矩阵行列式的乘积:
 
 $$
 =\left|A\right|\cdot\left|D-CA^{-1}B\right|.

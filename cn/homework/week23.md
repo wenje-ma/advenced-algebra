@@ -1,9 +1,5 @@
 # week23
 
-> **基础知识: 施密特正交化方法**
-> 
-> 对线性无关向量组 $\alpha_{1},\alpha_{2},\cdots,\alpha_{m}$, 令 $\beta_{1}=\alpha_{1}$, 并对 $i\ge2$ 递推
-
 $$
 \beta_{i}=\alpha_{i}-\sum_{k=1}^{i-1}\frac{\left(\alpha_{i},\beta_{k}\right)}{\left(\beta_{k},\beta_{k}\right)}\beta_{k},
 $$
@@ -206,7 +202,7 @@ $$
 
 ### 解答 4.6-12
 
-由**基础知识: 施密特正交化方法**.
+由施密特正交化方法.
 
 令 $\beta_{1}=\alpha_{1}=\left(1,1,0,0\right)^{\top}$.
 
@@ -271,7 +267,7 @@ $$
 
 因为 $A$ 可逆, 故 $\alpha_{1},\alpha_{2},\cdots,\alpha_{n}$ 线性无关.
 
-由**基础知识: 施密特正交化方法**, 对 $\alpha_{1},\alpha_{2},\cdots,\alpha_{n}$ 作施密特正交化, 得到正交向量组 $\beta_{1},\beta_{2},\cdots,\beta_{n}$, 其中 $\beta_{i}$ 是 $\alpha_{1},\cdots,\alpha_{i}$ 的线性组合, 且 $\alpha_{i}$ 是 $\beta_{1},\cdots,\beta_{i}$ 的线性组合.
+由施密特正交化方法, 对 $\alpha_{1},\alpha_{2},\cdots,\alpha_{n}$ 作施密特正交化, 得到正交向量组 $\beta_{1},\beta_{2},\cdots,\beta_{n}$, 其中 $\beta_{i}$ 是 $\alpha_{1},\cdots,\alpha_{i}$ 的线性组合, 且 $\alpha_{i}$ 是 $\beta_{1},\cdots,\beta_{i}$ 的线性组合.
 
 把 $\beta_{1},\beta_{2},\cdots,\beta_{n}$ 单位化, 得到正交单位向量组 $\eta_{1},\eta_{2},\cdots,\eta_{n}$.
 

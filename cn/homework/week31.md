@@ -1,9 +1,5 @@
 # week31
 
-> **基础知识: 施密特正交化方法**
-> 
-> 对线性无关向量组 $\alpha_{1},\alpha_{2},\cdots,\alpha_{m}$, 令 $\beta_{1}=\alpha_{1}$, 并对 $i\ge2$ 递推
-
 $$
 \beta_{i}=\alpha_{i}-\sum_{k=1}^{i-1}\frac{\left(\alpha_{i},\beta_{k}\right)}{\left(\beta_{k},\beta_{k}\right)}\beta_{k},
 $$
@@ -63,7 +59,7 @@ $$
 
 基础解系: $\alpha_{1}=\left(-2,1,0\right)^{\top}$, $\alpha_{2}=\left(2,0,1\right)^{\top}$.
 
-由**基础知识: 施密特正交化方法**:
+由施密特正交化方法:
 
 $$
 \beta_{1}=\alpha_{1}=\left(-2,1,0\right)^{\top}.

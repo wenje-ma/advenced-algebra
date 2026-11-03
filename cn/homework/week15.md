@@ -1,9 +1,5 @@
 # week15
 
-> **基础知识: 范德蒙行列式的计算公式**
-> 
-> 关于 $a_{1},a_{2},\cdots,a_{s}$ 的 $s$ 阶范德蒙行列式
-
 $$
 \left|\begin{array}{cccc}
 1 & 1 & \cdots & 1\\
@@ -59,7 +55,7 @@ D=\left|\begin{array}{cccc}
 \end{array}\right|.
 $$
 
-由**基础知识: 范德蒙行列式的计算公式**, 这是范德蒙行列式,
+由范德蒙行列式的计算公式, 这是范德蒙行列式,
 
 $$
 D=\prod_{1\le i< j\le s}\left(a^{j}-a^{i}\right).

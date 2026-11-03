@@ -1,16 +1,8 @@
 # week9
 
-> **基础知识: 分块上三角行列式**
-> 
-> 其中 $A,B$ 都是方阵:
-
 $$
 \left|\begin{array}{cc}A & 0\\C & B\end{array}\right|=\left|A\right|\left|B\right|.
 $$
-
-> **基础知识: 范德蒙行列式的计算公式**
-> 
-> 关于 $a_{1},a_{2},\cdots,a_{n}$ 的 $n$ 阶范德蒙行列式
 
 $$
 \left|\begin{array}{cccc}
@@ -80,7 +72,7 @@ $$
 
 ### 解答 2.6-4(1)
 
-由**基础知识: 范德蒙行列式的计算公式**, 范德蒙行列式为
+由范德蒙行列式的计算公式, 范德蒙行列式为
 
 $$
 \left|A\right|=\left|\begin{array}{cccc}
@@ -107,7 +99,7 @@ a_{2}^{n-2} & a_{3}^{n-2} & \cdots & a_{n}^{n-2}
 \end{array}\right|.
 $$
 
-这是关于 $a_{2},a_{3},\cdots,a_{n}$ 的 $n-1$ 阶范德蒙行列式, 由**基础知识: 范德蒙行列式的计算公式**, 其值为
+这是关于 $a_{2},a_{3},\cdots,a_{n}$ 的 $n-1$ 阶范德蒙行列式, 由范德蒙行列式的计算公式, 其值为
 
 $$
 \prod_{2\le i< j\le n}\left(a_{j}-a_{i}\right)=\prod_{2\le i< j\le n}\left(j-i\right).

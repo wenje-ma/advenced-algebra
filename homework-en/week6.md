@@ -1,274 +1,321 @@
 # week6
 
-> **Property 2.3.2 (A Common Factor of a Row Can Be Pulled Out)**
-> 
-> A common factor of a row of a determinant can be pulled outside the determinant; in particular, if a row of a determinant is zero (all its entries are $0$), then the determinant is $0$.
+$$
+\left|\begin{array}{cc}A & 0\\C & B\end{array}\right|=\left|A\right|\left|B\right|.
+$$
+$$
+\left|\begin{array}{cccc}
+1 & 1 & \cdots & 1\\
+a_{1} & a_{2} & \cdots & a_{n}\\
+a_{1}^{2} & a_{2}^{2} & \cdots & a_{n}^{2}\\
+\vdots & \vdots & & \vdots\\
+a_{1}^{n-1} & a_{2}^{n-1} & \cdots & a_{n}^{n-1}
+\end{array}\right|=\prod_{1\le i< j\le n}\left(a_{j}-a_{i}\right).
+$$
 
-> **Property 2.3.3 (Splitting When a Row Is a Sum of Two Groups)**
+> **Theorem 2.6.1 (Laplace Expansion Theorem)**
 > 
-> If a row of a determinant is the sum of two groups of numbers, then the determinant equals the sum of two determinants: in these two determinants that row is respectively the first group and the second group of numbers, while all other rows are the same as the corresponding rows of the original determinant.
+> In an $n\times n$ determinant $\left|A\right|$, fix $k$ rows; then the sum of the products of all $k$-minors formed by the entries in these $k$ rows and their own cofactors equals $\left|A\right|$.
 
-> **Property 2.3.5 (Two Identical Rows Make the Determinant Zero)**
+> **Definition 3.1.1 (Linear Combination and Linear Representation)**
 > 
-> If a determinant has two identical rows, its value is $0$; consequently, if two rows are proportional, the determinant is also $0$.
+> In $K^{n}$, given a vector group $\alpha_{1},\alpha_{2},\cdots,\alpha_{s}$ and any numbers $k_{1},k_{2},\cdots,k_{s}$ in $K$, we call $k_{1}\alpha_{1}+k_{2}\alpha_{2}+\cdots+k_{s}\alpha_{s}$ a linear combination of the vector group $\alpha_{1},\alpha_{2},\cdots,\alpha_{s}$. If
 
-> **Property 2.3.7 (Adding a Multiple of One Row to Another Leaves the Determinant Unchanged)**
+$$
+\beta=k_{1}\alpha_{1}+k_{2}\alpha_{2}+\cdots+k_{s}\alpha_{s},
+$$
+then we say that $\beta$ can be linearly represented by $\alpha_{1},\alpha_{2},\cdots,\alpha_{s}$.
+
+> **Proposition 3.1.1 (Relation Between Linear Representability and Solvability of a System)**
 > 
-> Adding a multiple of one row to another row leaves the value of the determinant unchanged.
+> An $n$-variable linear system over a number field $K$
 
-> **Theorem 2.4.1 (Expansion of a Determinant Along a Row (Column))**
-> 
-> The $n\times n$ determinant $\left|A\right|$ equals the sum of the products of the entries in its $i$-th row and their cofactors, and also the sum of the products of the entries in its $j$-th column and their cofactors, i.e. $\left|A\right|=\sum_{k=1}^{n}a_{ik}A_{ik}=\sum_{k=1}^{n}a_{kj}A_{kj}$, where $A_{kj}=\left(-1\right)^{k+j}M_{kj}$ is the cofactor.
+$$
+x_{1}\alpha_{1}+x_{2}\alpha_{2}+\cdots+x_{n}\alpha_{n}=\beta
+$$
+is solvable $\Leftrightarrow$ $\beta$ can be linearly represented by $\alpha_{1},\alpha_{2},\cdots,\alpha_{n}$ $\Leftrightarrow$ $\beta\in\left\langle\alpha_{1},\alpha_{2},\cdots,\alpha_{n}\right\rangle$.
 
-## 2.3-1(2)
+## 2.6-3
 
 Compute the following determinant:
 
 $$
-\left|\begin{array}{rrr}
--1 & 203 & 1/3\\
-3 & 298 & 1/2\\
-5 & 399 & 2/3
+\left|\begin{array}{cccccc}
+0 & \cdots & 0 & a_{11} & \cdots & a_{1k}\\
+\vdots & & \vdots & \vdots & & \vdots\\
+0 & \cdots & 0 & a_{k1} & \cdots & a_{kk}\\
+b_{11} & \cdots & b_{1r} & c_{11} & \cdots & c_{1k}\\
+\vdots & & \vdots & \vdots & & \vdots\\
+b_{r1} & \cdots & b_{rr} & c_{r1} & \cdots & c_{rk}
 \end{array}\right|.
 $$
 
-### Solution 2.3-1(2)
+### Solution to 2.6-3
 
-Observe that the entries $203,298,399$ of the $2$nd column can be split into sums of two numbers, namely $203=200+3$, $298=300-2$, $399=400-1$. By **Property 2.3.3 (Splitting When a Row Is a Sum of Two Groups)**, when all entries of a column are sums of two terms, the determinant can be split into the sum of two determinants:
+By **Theorem 2.6.1 (Laplace Expansion Theorem)**, expand along the first $k$ rows. Among all $k$-minors of the first $k$ rows, only the upper-right $k$-minor $A=\left(a_{ij}\right)_{k\times k}$ can be nonzero (because the first $r$ columns of the first $k$ rows are all $0$).
 
-$$
-\left|\begin{array}{rrr}
--1 & 203 & 1/3\\
-3 & 298 & 1/2\\
-5 & 399 & 2/3
-\end{array}\right|
-=
-\left|\begin{array}{rrr}
--1 & 200 & 1/3\\
-3 & 300 & 1/2\\
-5 & 400 & 2/3
-\end{array}\right|
-+
-\left|\begin{array}{rrr}
--1 & 3 & 1/3\\
-3 & -2 & 1/2\\
-5 & -1 & 2/3
-\end{array}\right|.
-$$
+The cofactor of the upper-right $k$-minor $A$: its row indices are $1,2,\cdots,k$ and its column indices are $r+1,r+2,\cdots,r+k$.
 
-By **Property 2.3.2 (A Common Factor of a Row Can Be Pulled Out)**, a common factor of a column can be moved outside the determinant. The $2$nd column of the first determinant has a common factor $100$; pulling it out gives
+By **Theorem 2.6.1 (Laplace Expansion Theorem)**, the minor is the $r$-determinant after deleting the first $k$ rows and the last $k$ columns, namely $B=\left(b_{ij}\right)_{r\times r}$.
+
+The cofactor is
 
 $$
-D_{1}=100\times\left|\begin{array}{rrr}
--1 & 2 & 1/3\\
-3 & 3 & 1/2\\
-5 & 4 & 2/3
-\end{array}\right|.
+\left(-1\right)^{\left(1+2+\cdots+k\right)+\left(r+1+r+2+\cdots+r+k\right)}\cdot\left|B\right|
+=\left(-1\right)^{\frac{k\left(k+1\right)}{2}+kr+\frac{k\left(k+1\right)}{2}}\cdot\left|B\right|
+=\left(-1\right)^{k\left(k+1+r\right)}\cdot\left|B\right|.
 $$
 
-Expanding directly,
+Hence the determinant equals
 
 $$
-\left|\begin{array}{rrr}
--1 & 2 & 1/3\\
-3 & 3 & 1/2\\
-5 & 4 & 2/3
-\end{array}\right|=-1\times\left(3\times\frac{2}{3}-\frac{1}{2}\times4\right)-2\times\left(3\times\frac{2}{3}-\frac{1}{2}\times5\right)+\frac{1}{3}\times\left(3\times4-3\times5\right)=-1\times\left(2-2\right)-2\times\left(2-\frac{5}{2}\right)+\frac{1}{3}\times\left(12-15\right)=0-2\times\left(-\frac{1}{2}\right)+\frac{1}{3}\times\left(-3\right)=1-1=0.
-$$
-
-Hence $D_{1}=100\times0=0$.
-
-Compute the second determinant $D_{2}$:
-
-$$
-D_{2}=\left|\begin{array}{rrr}
--1 & 3 & 1/3\\
-3 & -2 & 1/2\\
-5 & -1 & 2/3
-\end{array}\right|=-1\times\left(-2\times\frac{2}{3}-\frac{1}{2}\times\left(-1\right)\right)-3\times\left(3\times\frac{2}{3}-\frac{1}{2}\times5\right)+\frac{1}{3}\times\left(3\times\left(-1\right)-\left(-2\right)\times5\right)=-1\times\left(-\frac{4}{3}+\frac{1}{2}\right)-3\times\left(2-\frac{5}{2}\right)+\frac{1}{3}\times\left(-3+10\right)=-1\times\left(-\frac{5}{6}\right)-3\times\left(-\frac{1}{2}\right)+\frac{1}{3}\times7=\frac{5}{6}+\frac{3}{2}+\frac{7}{3}=\frac{5}{6}+\frac{9}{6}+\frac{14}{6}=\frac{28}{6}=\frac{14}{3}.
-$$
-
-Hence the original determinant is
-
-$$
-D=D_{1}+D_{2}=0+\frac{14}{3}=\frac{14}{3}.
+\left|A\right|\cdot\left(-1\right)^{k\left(k+1+r\right)}\cdot\left|B\right|
+=\left(-1\right)^{k\left(r+k+1\right)}\left|A\right|\left|B\right|.
 $$
 
 $\blacksquare$
 
-## 2.3-2(2)
+## 2.6-4(1)
 
-Compute the following $n\times n$ determinant:
+Let $\left|A\right|$ be the Vandermonde determinant in the $n$ numbers $1,2,\cdots,n$. Compute
 
 $$
-\left|\begin{array}{cccc}
-a_{1}-b & a_{2} & \cdots & a_{n}\\
-a_{1} & a_{2}-b & \cdots & a_{n}\\
+A\begin{bmatrix}1,2,\cdots,n-1\\2,3,\cdots,n\end{bmatrix}.
+$$
+
+### Solution to 2.6-4(1)
+
+By Formula for the Vandermonde Determinant, the Vandermonde determinant is
+
+$$
+\left|A\right|=\left|\begin{array}{cccc}
+1 & 1 & \cdots & 1\\
+a_{1} & a_{2} & \cdots & a_{n}\\
+a_{1}^{2} & a_{2}^{2} & \cdots & a_{n}^{2}\\
 \vdots & \vdots & & \vdots\\
-a_{1} & a_{2} & \cdots & a_{n}-b
+a_{1}^{n-1} & a_{2}^{n-1} & \cdots & a_{n}^{n-1}
+\end{array}\right|,
+$$
+
+where $a_{i}=i$.
+
+Taking rows $1,2,\cdots,n-1$ (namely the rows of powers $0$ through $n-2$) and columns $2,3,\cdots,n$ (namely the columns of $a_{2},a_{3},\cdots,a_{n}$), the resulting $\left(n-1\right)$-minor is
+
+$$
+A\begin{bmatrix}1,2,\cdots,n-1\\2,3,\cdots,n\end{bmatrix}
+=\left|\begin{array}{cccc}
+1 & 1 & \cdots & 1\\
+a_{2} & a_{3} & \cdots & a_{n}\\
+a_{2}^{2} & a_{3}^{2} & \cdots & a_{n}^{2}\\
+\vdots & \vdots & & \vdots\\
+a_{2}^{n-2} & a_{3}^{n-2} & \cdots & a_{n}^{n-2}
 \end{array}\right|.
 $$
 
-### Solution 2.3-2(2)
-
-By **Property 2.3.7 (Adding a Multiple of One Row to Another Leaves the Determinant Unchanged)**, adding a multiple of one row to another leaves the determinant unchanged. Add $-1$ times the $n$-th row respectively to rows $1,2,\cdots,n-1$, giving
+This is the $\left(n-1\right)$-Vandermonde determinant in $a_{2},a_{3},\cdots,a_{n}$; by Formula for the Vandermonde Determinant, its value is
 
 $$
-\left|\begin{array}{rrrrr}
--b & 0 & \cdots & 0 & b\\
-0 & -b & \cdots & 0 & b\\
-\vdots & \vdots & & \vdots & \vdots\\
-0 & 0 & \cdots & -b & b\\
-a_{1} & a_{2} & \cdots & a_{n-1} & a_{n}-b
-\end{array}\right|.
+\prod_{2\le i< j\le n}\left(a_{j}-a_{i}\right)=\prod_{2\le i< j\le n}\left(j-i\right).
 $$
 
-By **Theorem 2.4.1 (Expansion of a Determinant Along a Row (Column))**, expand along the last column. The entries of the last column are $\left(b,b,\cdots,b,a_{n}-b\right)$.
-
-For $j< n$, the cofactor is $A_{jn}=\left(-1\right)^{j+n}M_{jn}$, where $M_{jn}$ is the $\left(n-1\right)$-determinant obtained by deleting row $j$ and column $n$. In that determinant, row $j$ (the original row $j$ with column $n$ removed) has only its first entry $b_{j}$ nonzero and all others $0$; expanding along that row, the minor is a diagonal determinant, giving $M_{jn}=\left(-1\right)^{j-1}a_{j}\left(-b\right)^{n-2}$.
+Let $d=j-i$; then $d=1,2,\cdots,n-2$, and for each $d$ there are $n-1-d$ pairs $\left(i,j\right)$ with $j-i=d$.
 
 Hence
 
 $$
-\text{determinant}=\sum_{j=1}^{n-1}b\cdot\left(-1\right)^{j+n}\cdot\left(-1\right)^{j-1}a_{j}\left(-b\right)^{n-2}+\left(a_{n}-b\right)\left(-1\right)^{2n}\left(-b\right)^{n-1}=\sum_{j=1}^{n-1}b\cdot\left(-1\right)^{2j+n-1}a_{j}\left(-b\right)^{n-2}+\left(a_{n}-b\right)\left(-b\right)^{n-1}=\sum_{j=1}^{n-1}b\cdot\left(-1\right)^{n-1}a_{j}\left(-b\right)^{n-2}+\left(a_{n}-b\right)\left(-b\right)^{n-1}=\left(-1\right)^{n-1}b^{n-1}\sum_{j=1}^{n-1}a_{j}+\left(a_{n}-b\right)\left(-b\right)^{n-1}=\left(-b\right)^{n-1}\left(\sum_{j=1}^{n}a_{j}-b\right).
+\prod_{2\le i< j\le n}\left(j-i\right)=\prod_{d=1}^{n-2}d^{n-1-d}
+=1^{n-2}\cdot2^{n-3}\cdot\cdots\cdot\left(n-2\right)^{1}.
 $$
 
 $\blacksquare$
 
-## 2.3-3(1)
+## 3.1-3(1)
 
-Prove that
-
-$$
-\left|\begin{array}{ccc}
-a_{1}-b_{1} & b_{1}-c_{1} & c_{1}-a_{1}\\
-a_{2}-b_{2} & b_{2}-c_{2} & c_{2}-a_{2}\\
-a_{3}-b_{3} & b_{3}-c_{3} & c_{3}-a_{3}
-\end{array}\right|=0.
-$$
-
-### Solution 2.3-3(1)
-
-Observe that columns $1$, $2$, and $3$ satisfy: column $1$ $+$ column $2$ $+$ column $3$ $=0$.
-
-Precisely, in row $i$, column $1$ $+$ column $2$ $+$ column $3$
+In $K^{4}$, determine whether the vector $\beta$ can be linearly represented by the vector group $\alpha_{1},\alpha_{2},\alpha_{3}$. If so, write down one way of representing it.
 
 $$
-=\left(a_{i}-b_{i}\right)+\left(b_{i}-c_{i}\right)+\left(c_{i}-a_{i}\right)=0.
+\alpha_{1}=\begin{bmatrix}-1\\3\\0\\-5\end{bmatrix},
+\alpha_{2}=\begin{bmatrix}2\\0\\7\\-3\end{bmatrix},
+\alpha_{3}=\begin{bmatrix}-4\\1\\-2\\6\end{bmatrix},
+\beta=\begin{bmatrix}8\\3\\-1\\-25\end{bmatrix}.
 $$
 
-By **Property 2.3.7 (Adding a Multiple of One Row to Another Leaves the Determinant Unchanged)**, adding a multiple of one column to another leaves the determinant unchanged. Add both column $2$ and column $3$ to column $1$; then all entries of column $1$ become $0$.
+### Solution to 3.1-3(1)
 
-By **Property 2.3.2 (A Common Factor of a Row Can Be Pulled Out)**, a determinant whose column is all zeros has value $0$.
+By **Proposition 3.1.1 (Relation Between Linear Representability and Solvability of a System)**, to determine whether $\beta$ can be represented by $\alpha_{1},\alpha_{2},\alpha_{3}$ is to determine whether the linear system $x_{1}\alpha_{1}+x_{2}\alpha_{2}+x_{3}\alpha_{3}=\beta$ is solvable.
 
-Hence the original determinant $=0$. $\blacksquare$
-
-## 2.3-4(1)
-
-Compute the following $n\times n$ determinant:
+Write down the augmented matrix and perform elementary row operations:
 
 $$
-\left|\begin{array}{cccc}
-a_{1} & a_{2} & \cdots & a_{n}\\
-b_{2} & 1 & \cdots & 0\\
-\vdots & \vdots & & \vdots\\
-b_{n} & 0 & \cdots & 1
-\end{array}\right|.
+\left[\begin{array}{rrr\left|r}
+-1 & 2 & -4 & 8\\
+3 & 0 & 1 & 3\\
+0 & 7 & -2 & -1\\
+-5 & -3 & 6 & -25
+\end{array}\right]
+\xrightarrow{\substack{②+①\times3\\④-①\times5}}
+\left[\begin{array}{rrr\right|r}
+-1 & 2 & -4 & 8\\
+0 & 6 & -11 & 27\\
+0 & 7 & -2 & -1\\
+0 & -13 & 26 & 15
+\end{array}\right].
 $$
 
-### Solution 2.3-4(1)
+Continuing the row operations, the last row becomes a contradictory row $0=80$, so the system has no solution.
 
-By **Property 2.3.7 (Adding a Multiple of One Row to Another Leaves the Determinant Unchanged)**, adding a multiple of one row to another leaves the determinant unchanged. Add $-a_{2}$ times row $2$ to row $1$, $-a_{3}$ times row $3$ to row $1$, $\cdots$, and $-a_{n}$ times row $n$ to row $1$; then columns $2$ through $n$ of row $1$ all become $0$:
+By **Proposition 3.1.1 (Relation Between Linear Representability and Solvability of a System)**, $\beta$ therefore cannot be linearly represented by $\alpha_{1},\alpha_{2},\alpha_{3}$. $\blacksquare$
 
-$$
-\left|\begin{array}{cccc}
-a_{1}-\sum_{j=2}^{n}a_{j}b_{j} & 0 & \cdots & 0\\
-b_{2} & 1 & \cdots & 0\\
-\vdots & \vdots & & \vdots\\
-b_{n} & 0 & \cdots & 1
-\end{array}\right|.
-$$
+## 3.1-3(3)
 
-By **Theorem 2.4.1 (Expansion of a Determinant Along a Row (Column))**, expand along row $1$; the minor is the $\left(n-1\right)$-identity matrix, whose determinant is $1$. Hence the determinant equals
+In $K^{4}$, determine whether the vector $\beta$ can be linearly represented by the vector group $\alpha_{1},\alpha_{2},\alpha_{3}$. If so, write down one way of representing it.
 
 $$
-a_{1}-\sum_{j=2}^{n}a_{j}b_{j}.
+\alpha_{1}=\begin{bmatrix}3\\-5\\2\\-4\end{bmatrix},
+\alpha_{2}=\begin{bmatrix}-1\\7\\-3\\6\end{bmatrix},
+\alpha_{3}=\begin{bmatrix}3\\11\\-5\\10\end{bmatrix},
+\beta=\begin{bmatrix}2\\-30\\13\\-26\end{bmatrix}.
 $$
 
-$\blacksquare$
+### Solution to 3.1-3(3)
 
-## 2.3-4(2)
+By **Proposition 3.1.1 (Relation Between Linear Representability and Solvability of a System)**, to determine whether $\beta$ can be represented by $\alpha_{1},\alpha_{2},\alpha_{3}$ is to determine whether the linear system $x_{1}\alpha_{1}+x_{2}\alpha_{2}+x_{3}\alpha_{3}=\beta$ is solvable.
 
-Compute the following $n\times n$ determinant:
-
-$$
-\left|\begin{array}{cccc}
-a_{1}+b_{1} & a_{1}+b_{2} & \cdots & a_{1}+b_{n}\\
-a_{2}+b_{1} & a_{2}+b_{2} & \cdots & a_{2}+b_{n}\\
-\vdots & \vdots & & \vdots\\
-a_{n}+b_{1} & a_{n}+b_{2} & \cdots & a_{n}+b_{n}
-\end{array}\right|.
-$$
-
-### Solution 2.3-4(2)
-
-By **Property 2.3.7 (Adding a Multiple of One Row to Another Leaves the Determinant Unchanged)**, adding a multiple of one row to another leaves the determinant unchanged. Add $-1$ times row $1$ respectively to rows $2,3,\cdots,n$, giving
+Write down the augmented matrix and perform elementary row operations:
 
 $$
-\left|\begin{array}{cccc}
-a_{1}+b_{1} & a_{1}+b_{2} & \cdots & a_{1}+b_{n}\\
-a_{2}-a_{1} & a_{2}-a_{1} & \cdots & a_{2}-a_{1}\\
-\vdots & \vdots & & \vdots\\
-a_{n}-a_{1} & a_{n}-a_{1} & \cdots & a_{n}-a_{1}
-\end{array}\right|.
+\left[\begin{array}{rrr\left|r}
+3 & -1 & 3 & 2\\
+-5 & 7 & 11 & -30\\
+2 & -3 & -5 & 13\\
+-4 & 6 & 10 & -26
+\end{array}\right]
+\xrightarrow{\substack{②+①\times5/3\\③-①\times2/3\\④+①\times4/3}}
+\left[\begin{array}{rrr\right|r}
+3 & -1 & 3 & 2\\
+0 & 16/3 & 16 & -80/3\\
+0 & -7/3 & -7 & 35/3\\
+0 & 14/3 & 14 & -70/3
+\end{array}\right].
 $$
 
-When $n\ge3$, every row from row $2$ to row $n$ has identical entries. By **Property 2.3.5 (Two Identical Rows Make the Determinant Zero)**, two identical rows make the determinant $0$. Hence for $n\ge3$ the determinant $=0$.
-
-When $n=1$, the determinant $=a_{1}+b_{1}$.
-
-When $n=2$, by **Property 2.3.7 (Adding a Multiple of One Row to Another Leaves the Determinant Unchanged)**, add $-1$ times row $1$ to row $2$, giving
+Note that rows $2,3,4$ are proportional; after elimination the echelon matrix has only two rows:
 
 $$
-\left|\begin{array}{cc}
-a_{1}+b_{1} & a_{1}+b_{2}\\
-a_{2}-a_{1} & a_{2}-a_{1}
-\end{array}\right|.
+\left[\begin{array}{rrr|r}
+3 & -1 & 3 & 2\\
+0 & 16/3 & 16 & -80/3
+\end{array}\right].
 $$
 
-By **Property 2.3.2 (A Common Factor of a Row Can Be Pulled Out)**, row $2$ has a common factor $a_{2}-a_{1}$; pulling it out gives
+From row $2$:
 
 $$
-\left(a_{2}-a_{1}\right)\times\left|\begin{array}{cc}
-a_{1}+b_{1} & a_{1}+b_{2}\\
-1 & 1
-\end{array}\right|.
+\frac{16}{3}x_{2}+16x_{3}=-\frac{80}{3},
 $$
 
-By **Property 2.3.7 (Adding a Multiple of One Row to Another Leaves the Determinant Unchanged)**, add $-1$ times column $2$ to column $1$, giving
+i.e. $x_{2}+3x_{3}=-5$, so $x_{2}=-5-3x_{3}$.
+
+From row $1$: $3x_{1}-x_{2}+3x_{3}=2$; substituting $x_{2}$ gives $3x_{1}+6x_{3}=-3$, so $x_{1}=-1-2x_{3}$.
+
+Setting $x_{3}=0$ gives $x_{1}=-1$, $x_{2}=-5$.
+
+Verify:
 
 $$
-\left(a_{2}-a_{1}\right)\times\left|\begin{array}{cc}
-b_{1}-b_{2} & a_{1}+b_{2}\\
-0 & 1
-\end{array}\right|.
+-\alpha_{1}-5\alpha_{2}=\begin{bmatrix}-3+5\\5-35\\-2+15\\4-30\end{bmatrix}=\begin{bmatrix}2\\-30\\13\\-26\end{bmatrix}=\beta.
 $$
 
-By **Theorem 2.4.1 (Expansion of a Determinant Along a Row (Column))**, expand along column $2$, obtaining
+Hence $\beta=-\alpha_{1}-5\alpha_{2}$. By **Proposition 3.1.1 (Relation Between Linear Representability and Solvability of a System)**, the system is solvable, so $\beta$ can be linearly represented by $\alpha_{1},\alpha_{2},\alpha_{3}$. $\blacksquare$
+
+## 3.1-5
+
+In $K^{4}$, let
 
 $$
-\left(a_{2}-a_{1}\right)\times\left(b_{1}-b_{2}\right)=\left(a_{1}-a_{2}\right)\left(b_{2}-b_{1}\right).
+\alpha_{1}=\begin{bmatrix}1\\0\\0\\0\end{bmatrix},
+\alpha_{2}=\begin{bmatrix}1\\1\\0\\0\end{bmatrix},
+\alpha_{3}=\begin{bmatrix}1\\1\\1\\0\end{bmatrix},
+\alpha_{4}=\begin{bmatrix}1\\1\\1\\1\end{bmatrix}.
 $$
 
-In summary,
+Prove that every vector $\alpha=\left(a_{1},a_{2},a_{3},a_{4}\right)^{\top}$ in $K^{4}$ can be linearly represented by the vector group $\alpha_{1},\alpha_{2},\alpha_{3},\alpha_{4}$, that this representation is unique, and write it down.
+
+### Solution to 3.1-5
+
+By **Proposition 3.1.1 (Relation Between Linear Representability and Solvability of a System)**, to prove that every vector $\alpha$ in $K^{4}$ can be represented by $\alpha_{1},\alpha_{2},\alpha_{3},\alpha_{4}$ is to prove that the linear system
 
 $$
-\det\left(A\right)=
-\begin{cases}
-a_{1}+b_{1}, & n=1,\\
-\left(a_{1}-a_{2}\right)\left(b_{2}-b_{1}\right), & n=2,\\
-0, & n\ge3.
-\end{cases}
+x_{1}\alpha_{1}+x_{2}\alpha_{2}+x_{3}\alpha_{3}+x_{4}\alpha_{4}=\alpha
 $$
 
-$\blacksquare$
+is solvable.
+
+Set
+
+$$
+\alpha=x_{1}\alpha_{1}+x_{2}\alpha_{2}+x_{3}\alpha_{3}+x_{4}\alpha_{4}.
+$$
+
+Comparing components:
+
+$4$th component: $x_{4}=a_{4}$.
+
+$3$rd component: $x_{3}+x_{4}=a_{3}$, so $x_{3}=a_{3}-a_{4}$.
+
+$2$nd component: $x_{2}+x_{3}+x_{4}=a_{2}$, so $x_{2}=a_{2}-a_{3}$.
+
+$1$st component: $x_{1}+x_{2}+x_{3}+x_{4}=a_{1}$, so $x_{1}=a_{1}-a_{2}$.
+
+The above solving process is uniquely determined from bottom to top, so the representation is unique.
+
+The representation is
+
+$$
+\alpha=\left(a_{1}-a_{2}\right)\alpha_{1}+\left(a_{2}-a_{3}\right)\alpha_{2}+\left(a_{3}-a_{4}\right)\alpha_{3}+a_{4}\alpha_{4}.
+$$
+
+The system has a unique solution, so $\alpha$ can be uniquely linearly represented by $\alpha_{1},\alpha_{2},\alpha_{3},\alpha_{4}$. $\blacksquare$
+
+## 3.1-8
+
+Let $r< n$. Prove that the following subset $W$ of $K^{n}$ is a subspace:
+
+$$
+W=\left\{\left(a_{1},a_{2},\cdots,a_{r},0,\cdots,0\right)\mid a_{i}\in K,i=1,2,\cdots,r\right\}.
+$$
+
+### Solution to 3.1-8
+
+By Criterion for a Subspace, it suffices to verify that $W$ is nonempty and closed under addition and scalar multiplication.
+
+**Verify closure under addition.** Take any
+
+$$
+\alpha=\left(a_{1},\cdots,a_{r},0,\cdots,0\right),
+\beta=\left(b_{1},\cdots,b_{r},0,\cdots,0\right)\in W.
+$$
+
+Then
+
+$$
+\alpha+\beta=\left(a_{1}+b_{1},\cdots,a_{r}+b_{r},0,\cdots,0\right)\in W.
+$$
+
+**Verify closure under scalar multiplication.** Take any
+
+$$
+\alpha=\left(a_{1},\cdots,a_{r},0,\cdots,0\right)\in W
+$$
+
+and $k\in K$.
+
+Then
+
+$$
+k\alpha=\left(ka_{1},\cdots,ka_{r},0,\cdots,0\right)\in W.
+$$
+
+$W$ is nonempty (e.g. the zero vector $\left(0,\cdots,0\right)\in W$).
+
+By Criterion for a Subspace, $W$ is a subspace of $K^{n}$. $\blacksquare$

@@ -1,331 +1,421 @@
 # week11
 
-$$
-\left|\begin{array}{cccc}
-1 & 1 & \cdots & 1\\
-a_{1} & a_{2} & \cdots & a_{r}\\
-\vdots & \vdots & & \vdots\\
-a_{1}^{r-1} & a_{2}^{r-1} & \cdots & a_{r}^{r-1}
-\end{array}\right|=\prod_{1\le i< j\le r}\left(a_{j}-a_{i}\right).
-$$
-
-> **Definition 3.2.1 (Linear Dependence)**
+> **Theorem 3.8.1 (Solution Set Structure of an Inhomogeneous System)**
 > 
-> A vector group $\alpha_{1},\cdots,\alpha_{s}$ in $K^{n}$ is called linearly dependent if there exist numbers $k_{1},\cdots,k_{s}$ in $K$, not all zero, such that $k_{1}\alpha_{1}+\cdots+k_{s}\alpha_{s}=0$.
+> If an $n$-variable inhomogeneous linear system over a number field $K$ is solvable, then its solution set is $U=\gamma_{0}+W$, where $\gamma_{0}$ is a particular solution and $W$ is the solution space of the derived homogeneous system.
 
-> **Proposition 3.2.1 (Relation Between Linear Representability and Linear Dependence)**
+> **Definition 4.1.1 (Matrix Addition)**
 > 
-> Suppose the vector group $\alpha_{1},\cdots,\alpha_{s}$ is linearly independent. Then the vector $\beta$ can be linearly represented by $\alpha_{1},\cdots,\alpha_{s}$ if and only if $\alpha_{1},\cdots,\alpha_{s},\beta$ is linearly dependent.
+> Let $A=\left(a_{ij}\right),B=\left(b_{ij}\right)$ both be $s\times n$ matrices over a number field $K$, and set $C=\left(a_{ij}+b_{ij}\right)_{s\times n}$. Then $C$ is called the sum of the matrices $A$ and $B$, denoted $C=A+B$.
 
-> **Definition 3.2.2 (Linear Independence)**
+> **Definition 4.1.2 (Scalar Multiplication of Matrices)**
 > 
-> A vector group $\alpha_{1},\cdots,\alpha_{s}$ in $K^{n}$ is called linearly independent if it is not linearly dependent. That is, if from $k_{1}\alpha_{1}+\cdots+k_{s}\alpha_{s}=0$ one can deduce that all coefficients are $0$, then the vector group is linearly independent.
+> Let $k\in K$ and set $M=\left(ka_{ij}\right)_{s\times n}$. Then $M$ is called the scalar product of $k$ and the matrix $A$, denoted $M=kA$.
 
-## 3.2-2(1)
+> **Definition 4.1.3 (Matrix Multiplication)**
+> 
+> Let $A=\left(a_{ij}\right)_{s\times n}$ and $B=\left(b_{ij}\right)_{n\times m}$, and set $C=\left(c_{ij}\right)_{s\times m}$ with $c_{ij}=\sum_{k=1}^{n}a_{ik}b_{kj}$. Then $C$ is called the product of $A$ and $B$, denoted $C=AB$.
 
-Determine whether the following vector groups are linearly dependent or linearly independent. If linearly dependent, find one vector that can be linearly represented by the others, and write down one such expression.
+## 3.8-2
 
-$$
-\alpha_{1}=\begin{bmatrix}3\\1\\2\\-4\end{bmatrix},
-\alpha_{2}=\begin{bmatrix}1\\0\\5\\2\end{bmatrix},
-\alpha_{3}=\begin{bmatrix}-1\\2\\0\\3\end{bmatrix}.
-$$
+Prove: an inhomogeneous linear system of $n$ equations in $n$ variables has a unique solution if and only if its derived homogeneous system has only the zero solution.
 
-### Solution 3.2-2(1)
+### Solution to 3.8-2
 
-By **Definition 3.2.1 (Linear Dependence)** and **Definition 3.2.2 (Linear Independence)**, consider the homogeneous system $x_{1}\alpha_{1}+x_{2}\alpha_{2}+x_{3}\alpha_{3}=0$. Write down the coefficient matrix and perform elementary row operations:
+By **Theorem 3.8.1 (Solution Set Structure of an Inhomogeneous System)**, the solution set of the inhomogeneous system is $U=\gamma_{0}+W$, where $W$ is the solution space of the derived homogeneous system. We prove that the inhomogeneous system has a unique solution if and only if its derived system has only the zero solution.
 
-$$
-\left[\begin{array}{rrr}
-3 & 1 & -1\\
-1 & 0 & 2\\
-2 & 5 & 0\\
--4 & 2 & 3
-\end{array}\right]
-\xrightarrow{\text{row ops}}
-\left[\begin{array}{rrr}
-1 & 0 & 2\\
-0 & 1 & -7\\
-0 & 0 & 31\\
-0 & 0 & 0
-\end{array}\right].
-$$
+Let the inhomogeneous system be $Ax=\beta$, where $A$ is an $n\times n$ matrix; the derived system is $Ax=0$.
 
-The number of nonzero rows of the echelon matrix is $3$, equal to the number of unknowns $3$, so the homogeneous system has only the zero solution.
-
-By **Definition 3.2.2 (Linear Independence)**, $\alpha_{1},\alpha_{2},\alpha_{3}$ are therefore linearly independent. $\blacksquare$
-
-## 3.2-2(2)
-
-Determine whether the following vector groups are linearly dependent or linearly independent. If linearly dependent, find one vector that can be linearly represented by the others, and write down one such expression.
+**Necessity.** Suppose the inhomogeneous system has a unique solution; then
 
 $$
-\alpha_{1}=\begin{bmatrix}-2\\1\\0\\3\end{bmatrix},
-\alpha_{2}=\begin{bmatrix}1\\-3\\2\\4\end{bmatrix},
-\alpha_{3}=\begin{bmatrix}3\\0\\2\\-1\end{bmatrix},
-\alpha_{4}=\begin{bmatrix}2\\-2\\4\\6\end{bmatrix}.
+\text{rank}\left(A\right)=\text{rank}\left(\overline{A}\right)=n\ \text{\left(the rank of the coefficient matrix equals the number of unknowns\right)}.
 $$
 
-### Solution 3.2-2(2)
+The derived system $Ax=0$ has coefficient matrix of rank $n$ and $n$ unknowns, so it has only the zero solution.
 
-By **Definition 3.2.1 (Linear Dependence)** and **Definition 3.2.2 (Linear Independence)**, consider the homogeneous system
+**Sufficiency.** Suppose the derived system has only the zero solution; then $\text{rank}\left(A\right)=n$.
 
-$$
-x_{1}\alpha_{1}+x_{2}\alpha_{2}+x_{3}\alpha_{3}+x_{4}\alpha_{4}=0.
-$$
+$A$ is an $n\times n$ matrix with $\text{rank}\left(A\right)=n$, so $\left|A\right|\ne0$.
 
-Write down the coefficient matrix and perform elementary row operations:
+The derived system having only the zero solution means the solution space $W=\left\{0\right\}$, so the inhomogeneous system's solution set $U=\gamma_{0}+W=\left\{\gamma_{0}\right\}$, i.e. it has a unique solution. $\blacksquare$
 
-$$
-\left[\begin{array}{rrrr}
--2 & 1 & 3 & 2\\
-1 & -3 & 0 & -2\\
-0 & 2 & 2 & 4\\
-3 & 4 & -1 & 6
-\end{array}\right]
-\xrightarrow{\text{row ops}}
-\left[\begin{array}{rrrr}
-1 & -3 & 0 & -2\\
-0 & -5 & 3 & -2\\
-0 & 0 & 16/5 & 16/5\\
-0 & 0 & 0 & 0
-\end{array}\right].
-$$
+## 3.8-4
 
-The number of nonzero rows of the echelon matrix is $3$, less than the number of unknowns $4$, so the homogeneous system has a nontrivial solution.
-
-Hence $\alpha_{1},\alpha_{2},\alpha_{3},\alpha_{4}$ are linearly dependent.
-
-Solve for the general solution:
-
-From row $3$: $x_{3}+x_{4}=0$, so $x_{3}=-x_{4}$.
-
-From row $2$: $-5x_{2}+3x_{3}-2x_{4}=0$; substituting $x_{3}=-x_{4}$ gives $x_{2}=-x_{4}$.
-
-From row $1$: $x_{1}-3x_{2}-2x_{4}=0$; substituting $x_{2}=-x_{4}$ gives $x_{1}=-x_{4}$.
-
-Setting $x_{4}=1$ gives $x_{1}=-1$, $x_{2}=-1$, $x_{3}=-1$.
-
-Hence $-\alpha_{1}-\alpha_{2}-\alpha_{3}+\alpha_{4}=0$, i.e.
+Prove: if $\gamma_{0}$ is a particular solution of inhomogeneous linear system (1), and $\eta_{1},\eta_{2},\cdots,\eta_{t}$ is a fundamental system of its derived homogeneous system. Set
 
 $$
-\alpha_{4}=\alpha_{1}+\alpha_{2}+\alpha_{3}.
+\gamma_{1}=\gamma_{0}+\eta_{1},\gamma_{2}=\gamma_{0}+\eta_{2},\cdots,\gamma_{t}=\gamma_{0}+\eta_{t}.
 $$
 
-Verify:
+Then any solution $\gamma$ of inhomogeneous linear system (1) can be expressed as
 
 $$
-\alpha_{1}+\alpha_{2}+\alpha_{3}=\left(-2+1+3,1-3+0,0+2+2,3+4-1\right)^{\top}=\left(2,-2,4,6\right)^{\top}=\alpha_{4}.
+\gamma=u_{0}\gamma_{0}+u_{1}\gamma_{1}+u_{2}\gamma_{2}+\cdots+u_{t}\gamma_{t},
 $$
 
-By **Definition 3.2.1 (Linear Dependence)**, the homogeneous system has a nontrivial solution, so $\alpha_{1},\alpha_{2},\alpha_{3},\alpha_{4}$ are linearly dependent. $\blacksquare$
-
-## 3.2-6
-
-Suppose the vector group $\alpha_{1},\alpha_{2},\alpha_{3},\alpha_{4}$ is linearly independent. Determine whether the vector group
+where
 
 $$
-\alpha_{1}+\alpha_{2},\alpha_{2}+\alpha_{3},\alpha_{3}+\alpha_{4},\alpha_{4}+\alpha_{1}
+u_{0}+u_{1}+u_{2}+\cdots+u_{t}=1.
 $$
 
-is linearly independent.
+### Solution to 3.8-4
 
-### Solution 3.2-6
+By **Theorem 3.8.1 (Solution Set Structure of an Inhomogeneous System)**, the solution set of the inhomogeneous system is $U=\gamma_{0}+W$, where $W$ is the solution space of the derived homogeneous system.
 
-By **Definition 3.2.2 (Linear Independence)**, to determine whether the vector group
+Take any $\gamma\in U$; then $\gamma-\gamma_{0}\in W$.
 
-$$
-\alpha_{1}+\alpha_{2},\alpha_{2}+\alpha_{3},\alpha_{3}+\alpha_{4},\alpha_{4}+\alpha_{1}
-$$
-
-is linearly independent is to determine whether the homogeneous system
+Because $\eta_{1},\eta_{2},\cdots,\eta_{t}$ is a basis of $W$, there exist $k_{1},\cdots,k_{t}\in K$ such that
 
 $$
-k_{1}\left(\alpha_{1}+\alpha_{2}\right)+k_{2}\left(\alpha_{2}+\alpha_{3}\right)+k_{3}\left(\alpha_{3}+\alpha_{4}\right)+k_{4}\left(\alpha_{4}+\alpha_{1}\right)=0
+\gamma-\gamma_{0}=k_{1}\eta_{1}+k_{2}\eta_{2}+\cdots+k_{t}\eta_{t}.
 $$
 
-has only the zero solution.
+Substituting $\eta_{i}=\gamma_{i}-\gamma_{0}$:
+
+$$
+\gamma=\gamma_{0}+k_{1}\left(\gamma_{1}-\gamma_{0}\right)+k_{2}\left(\gamma_{2}-\gamma_{0}\right)+\cdots+k_{t}\left(\gamma_{t}-\gamma_{0}\right)=\left(1-k_{1}-k_{2}-\cdots-k_{t}\right)\gamma_{0}+k_{1}\gamma_{1}+k_{2}\gamma_{2}+\cdots+k_{t}\gamma_{t}.
+$$
 
 Set
 
 $$
-k_{1}\left(\alpha_{1}+\alpha_{2}\right)+k_{2}\left(\alpha_{2}+\alpha_{3}\right)+k_{3}\left(\alpha_{3}+\alpha_{4}\right)+k_{4}\left(\alpha_{4}+\alpha_{1}\right)=0.
+u_{0}=1-k_{1}-k_{2}-\cdots-k_{t},
 $$
 
-Rearranging gives
-
-$$
-\left(k_{1}+k_{4}\right)\alpha_{1}+\left(k_{1}+k_{2}\right)\alpha_{2}+\left(k_{2}+k_{3}\right)\alpha_{3}+\left(k_{3}+k_{4}\right)\alpha_{4}=0.
-$$
-
-Because $\alpha_{1},\alpha_{2},\alpha_{3},\alpha_{4}$ are linearly independent,
-
-$$
-\begin{cases}
-k_{1}+k_{4}=0,\\
-k_{1}+k_{2}=0,\\
-k_{2}+k_{3}=0,\\
-k_{3}+k_{4}=0.
-\end{cases}
-$$
-
-Solving gives $k_{2}=-k_{1}$, $k_{3}=k_{1}$, $k_{4}=-k_{1}$, where $k_{1}$ is free.
-
-Setting $k_{1}=1$ gives $k_{2}=-1$, $k_{3}=1$, $k_{4}=-1$, which is a nontrivial solution.
-
-Hence the vector group
-
-$$
-\alpha_{1}+\alpha_{2},\alpha_{2}+\alpha_{3},\alpha_{3}+\alpha_{4},\alpha_{4}+\alpha_{1}
-$$
-
-is linearly dependent.
-
-Concretely,
-
-$$
-\left(\alpha_{1}+\alpha_{2}\right)-\left(\alpha_{2}+\alpha_{3}\right)+\left(\alpha_{3}+\alpha_{4}\right)-\left(\alpha_{4}+\alpha_{1}\right)=0.
-$$
-
-There exist numbers $1,-1,1,-1$, not all zero, making the above identity hold, so the vector group is linearly dependent. $\blacksquare$
-
-## 3.2-7
-
-Prove: if the vector $\beta$ can be linearly represented by the vector group $\alpha_{1},\cdots,\alpha_{s}$, then this representation is unique if and only if $\alpha_{1},\cdots,\alpha_{s}$ is linearly independent.
-
-### Solution 3.2-7
-
-By **Definition 3.2.2 (Linear Independence)** and **Definition 3.2.1 (Linear Dependence)**, prove that the representation is unique if and only if $\alpha_{1},\cdots,\alpha_{s}$ is linearly independent.
-
-**Sufficiency.** Suppose $\alpha_{1},\cdots,\alpha_{s}$ is linearly independent. Assume there are two representations:
-
-$$
-\beta=k_{1}\alpha_{1}+\cdots+k_{s}\alpha_{s},
-\beta=l_{1}\alpha_{1}+\cdots+l_{s}\alpha_{s}.
-$$
-
-Subtracting gives
-
-$$
-\left(k_{1}-l_{1}\right)\alpha_{1}+\cdots+\left(k_{s}-l_{s}\right)\alpha_{s}=0.
-$$
-
-Because $\alpha_{1},\cdots,\alpha_{s}$ is linearly independent, $k_{i}-l_{i}=0$, i.e. $k_{i}=l_{i}$. The representation is unique.
-
-**Necessity.** Suppose the representation is unique. By contradiction: assume $\alpha_{1},\cdots,\alpha_{s}$ is linearly dependent; then there exist numbers $c_{1},\cdots,c_{s}$, not all zero, such that $c_{1}\alpha_{1}+\cdots+c_{s}\alpha_{s}=0$.
-
-Let $\beta=k_{1}\alpha_{1}+\cdots+k_{s}\alpha_{s}$; then
-
-$$
-\beta=\left(k_{1}+c_{1}\right)\alpha_{1}+\cdots+\left(k_{s}+c_{s}\right)\alpha_{s}.
-$$
-
-Because the $c_{i}$ are not all zero,
-
-$$
-\left(k_{1}+c_{1},\cdots,k_{s}+c_{s}\right)\ne\left(k_{1},\cdots,k_{s}\right),
-$$
-
-which contradicts the uniqueness of the representation.
-
-The assumption is false, so $\alpha_{1},\cdots,\alpha_{s}$ is linearly independent. $\blacksquare$
-
-## 3.2-9
-
-Prove: a vector group $\alpha_{1},\alpha_{2},\cdots,\alpha_{s}$ $\left(s\ge2\right)$ consisting of nonzero vectors is linearly independent if and only if each $\alpha_{i}$ $\left(1< i\le s\right)$ cannot be linearly represented by the vectors preceding it.
-
-### Solution 3.2-9
-
-By **Definition 3.2.2 (Linear Independence)** and **Definition 3.2.1 (Linear Dependence)**, prove that the vector group of nonzero vectors $\alpha_{1},\alpha_{2},\cdots,\alpha_{s}$ $\left(s\ge2\right)$ is linearly independent if and only if each $\alpha_{i}$ $\left(1< i\le s\right)$ cannot be linearly represented by the vectors preceding it.
-
-**Necessity.** Suppose $\alpha_{1},\cdots,\alpha_{s}$ is linearly independent. By contradiction: suppose some $\alpha_{i}$ $\left(i> 1\right)$ can be represented by the preceding vectors, i.e.
-
-$$
-\alpha_{i}=k_{1}\alpha_{1}+\cdots+k_{i-1}\alpha_{i-1}.
-$$
+$u_{1}=k_{1}$, $\cdots$, $u_{t}=k_{t}$.
 
 Then
 
 $$
-k_{1}\alpha_{1}+\cdots+k_{i-1}\alpha_{i-1}-\alpha_{i}+0\cdot\alpha_{i+1}+\cdots+0\cdot\alpha_{s}=0.
+u_{0}+u_{1}+u_{2}+\cdots+u_{t}=1.
 $$
 
-Here the coefficient $-1\ne0$, so $\alpha_{1},\cdots,\alpha_{s}$ is linearly dependent, a contradiction.
-
-Hence each $\alpha_{i}$ $\left(i> 1\right)$ cannot be represented by the vectors preceding it.
-
-**Sufficiency.** Suppose each $\alpha_{i}$ $\left(i> 1\right)$ cannot be represented by the preceding vectors. By contradiction: suppose $\alpha_{1},\cdots,\alpha_{s}$ is linearly dependent; then there exist numbers $c_{1},\cdots,c_{s}$, not all zero, such that $c_{1}\alpha_{1}+\cdots+c_{s}\alpha_{s}=0$.
-
-Let $c_{i}$ be the last nonzero coefficient:
+Any solution of the inhomogeneous system can be expressed in the above form. Hence
 
 $$
-\left(c_{i}\ne0,c_{i+1}=\cdots=c_{s}=0\right).
+\gamma=u_{0}\gamma_{0}+u_{1}\gamma_{1}+u_{2}\gamma_{2}+\cdots+u_{t}\gamma_{t},\quad
+u_{0}+u_{1}+u_{2}+\cdots+u_{t}=1.
 $$
 
-If $i=1$, then $c_{1}\alpha_{1}=0$. Because $\alpha_{1}\ne0$, $c_{1}=0$, a contradiction. Hence $i> 1$.
+$\blacksquare$
 
-From $c_{1}\alpha_{1}+\cdots+c_{i}\alpha_{i}=0$ we get
+## 4.1-1
 
-$$
-\alpha_{i}=-\frac{c_{1}}{c_{i}}\alpha_{1}-\cdots-\frac{c_{i-1}}{c_{i}}\alpha_{i-1}.
-$$
-
-This shows $\alpha_{i}$ can be represented by the preceding vectors, contradicting the hypothesis.
-
-The assumption is false, so $\alpha_{1},\cdots,\alpha_{s}$ is linearly independent. $\blacksquare$
-
-## 3.2-11
-
-Let $a_{1},a_{2},\cdots,a_{r}$ be pairwise distinct numbers with $r\le n$. Set
+Let
 
 $$
-\alpha_{1}=\begin{bmatrix}1\\a_{1}\\a_{1}^{2}\\\vdots\\a_{1}^{n-1}\end{bmatrix},
-\alpha_{2}=\begin{bmatrix}1\\a_{2}\\a_{2}^{2}\\\vdots\\a_{2}^{n-1}\end{bmatrix},\cdots,
-\alpha_{r}=\begin{bmatrix}1\\a_{r}\\a_{r}^{2}\\\vdots\\a_{r}^{n-1}\end{bmatrix}.
+A=\left[\begin{array}{ccc}
+\lambda & 0 & 0\\
+0 & \lambda & 0\\
+0 & 0 & \lambda
+\end{array}\right],
+B=\left[\begin{array}{ccc}
+0 & 1 & 0\\
+0 & 0 & 1\\
+0 & 0 & 0
+\end{array}\right].
 $$
 
-Prove that $\alpha_{1},\alpha_{2},\cdots,\alpha_{r}$ are linearly independent.
+Find $A+B$.
 
-### Solution 3.2-11
+### Solution to 4.1-1
 
-By **Definition 3.2.2 (Linear Independence)**, to prove that $\alpha_{1},\alpha_{2},\cdots,\alpha_{r}$ are linearly independent is to prove that the homogeneous system
-
-$$
-k_{1}\alpha_{1}+k_{2}\alpha_{2}+\cdots+k_{r}\alpha_{r}=0
-$$
-
-has only the zero solution.
-
-Set
+By **Definition 4.1.1 (Matrix Addition)**,
 
 $$
-k_{1}\alpha_{1}+k_{2}\alpha_{2}+\cdots+k_{r}\alpha_{r}=0.
+A+B=\left[\begin{array}{ccc}
+\lambda & 1 & 0\\
+0 & \lambda & 1\\
+0 & 0 & \lambda
+\end{array}\right].
 $$
 
-Taking the first $r$ components gives the homogeneous system:
+$\blacksquare$
+
+## 4.1-3
+
+Let $I$ be the $n\times n$ identity matrix and $J$ be the $n\times n$ matrix all of whose entries are $1$. Let
+
+$$
+M=\left[\begin{array}{cccc}
+k & \lambda & \cdots & \lambda\\
+\lambda & k & \cdots & \lambda\\
+\vdots & \vdots & & \vdots\\
+\lambda & \lambda & \cdots & k
+\end{array}\right]_{n\times n}.
+$$
+
+Express $M$ in the form $xI+yJ$, where $x,y$ are undetermined coefficients.
+
+### Solution to 4.1-3
+
+By **Definition 4.1.1 (Matrix Addition)** and **Definition 4.1.2 (Scalar Multiplication of Matrices)**, the diagonal entries of $xI+yJ$ are $x+y$ and the off-diagonal entries are $y$.
+
+Comparing with $M$, whose diagonal entries are $k$ and off-diagonal entries are $\lambda$, gives
 
 $$
 \begin{cases}
-k_{1}+k_{2}+\cdots+k_{r}=0,\\
-k_{1}a_{1}+k_{2}a_{2}+\cdots+k_{r}a_{r}=0,\\
-\cdots\cdots\cdots\cdots\\
-k_{1}a_{1}^{r-1}+k_{2}a_{2}^{r-1}+\cdots+k_{r}a_{r}^{r-1}=0.
+x+y=k,\\
+y=\lambda.
 \end{cases}
 $$
 
-By Formula for the Vandermonde Determinant, its coefficient determinant is the $r\times r$ Vandermonde determinant:
+Solving gives $x=k-\lambda$, $y=\lambda$.
+
+By **Definition 4.1.1 (Matrix Addition)** and **Definition 4.1.2 (Scalar Multiplication of Matrices)**,
 
 $$
-\left|\begin{array}{cccc}
-1 & 1 & \cdots & 1\\
-a_{1} & a_{2} & \cdots & a_{r}\\
-\vdots & \vdots & & \vdots\\
-a_{1}^{r-1} & a_{2}^{r-1} & \cdots & a_{r}^{r-1}
-\end{array}\right|=\prod_{1\le i< j\le r}\left(a_{j}-a_{i}\right).
+M=\left(k-\lambda\right)I+\lambda J.
 $$
 
-Because $a_{1},a_{2},\cdots,a_{r}$ are pairwise distinct, the determinant is nonzero.
+$\blacksquare$
 
-Hence the homogeneous system has only the zero solution: $k_{1}=k_{2}=\cdots=k_{r}=0$.
+## 4.1-4(1)
 
-Therefore $\alpha_{1},\alpha_{2},\cdots,\alpha_{r}$ are linearly independent. $\blacksquare$
+Compute:
+
+$$
+\left[\begin{array}{rr}
+7 & -1\\
+-2 & 5\\
+3 & -4
+\end{array}\right]\left[\begin{array}{rr}
+1 & 4\\
+-5 & 2
+\end{array}\right].
+$$
+
+### Solution to 4.1-4(1)
+
+By **Definition 4.1.3 (Matrix Multiplication)**, the $\left(i,j\right)$-entry of the product equals the inner product of row $i$ and column $j$:
+
+$$
+\left[\begin{array}{rr}
+7 & -1\\
+-2 & 5\\
+3 & -4
+\end{array}\right]\left[\begin{array}{rr}
+1 & 4\\
+-5 & 2
+\end{array}\right]
+=
+\left[\begin{array}{rr}
+7\times1+\left(-1\right)\times\left(-5\right) & 7\times4+\left(-1\right)\times2\\
+\left(-2\right)\times1+5\times\left(-5\right) & \left(-2\right)\times4+5\times2\\
+3\times1+\left(-4\right)\times\left(-5\right) & 3\times4+\left(-4\right)\times2
+\end{array}\right]
+=
+\left[\begin{array}{rr}
+12 & 26\\
+-27 & 2\\
+23 & 4
+\end{array}\right].
+$$
+
+$\blacksquare$
+
+## 4.1-4(2)
+
+Compute:
+
+$$
+\left[\begin{array}{rr}
+0 & 2\\
+0 & 3
+\end{array}\right]\left[\begin{array}{rr}
+1 & 1\\
+0 & 0
+\end{array}\right].
+$$
+
+### Solution to 4.1-4(2)
+
+By **Definition 4.1.3 (Matrix Multiplication)**, the $\left(i,j\right)$-entry of the product equals the inner product of row $i$ and column $j$:
+
+$$
+\left[\begin{array}{rr}
+0 & 2\\
+0 & 3
+\end{array}\right]\left[\begin{array}{rr}
+1 & 1\\
+0 & 0
+\end{array}\right]
+=
+\left[\begin{array}{rr}
+0\times1+2\times0 & 0\times1+2\times0\\
+0\times1+3\times0 & 0\times1+3\times0
+\end{array}\right]
+=
+\left[\begin{array}{rr}
+0 & 0\\
+0 & 0
+\end{array}\right].
+$$
+
+$\blacksquare$
+
+## 4.1-4(3)
+
+Compute:
+
+$$
+\left[\begin{array}{rr}
+1 & 1\\
+0 & 0
+\end{array}\right]\left[\begin{array}{rr}
+0 & 2\\
+0 & 3
+\end{array}\right].
+$$
+
+### Solution to 4.1-4(3)
+
+By **Definition 4.1.3 (Matrix Multiplication)**, the $\left(i,j\right)$-entry of the product equals the inner product of row $i$ and column $j$:
+
+$$
+\left[\begin{array}{rr}
+1 & 1\\
+0 & 0
+\end{array}\right]\left[\begin{array}{rr}
+0 & 2\\
+0 & 3
+\end{array}\right]
+=
+\left[\begin{array}{rr}
+1\times0+1\times0 & 1\times2+1\times3\\
+0\times0+0\times0 & 0\times2+0\times3
+\end{array}\right]
+=
+\left[\begin{array}{rr}
+0 & 5\\
+0 & 0
+\end{array}\right].
+$$
+
+$\blacksquare$
+
+## 4.1-4(8)
+
+Compute:
+
+$$
+\left[\begin{array}{ccc}
+d_{1} & 0 & 0\\
+0 & d_{2} & 0\\
+0 & 0 & d_{3}
+\end{array}\right]\left[\begin{array}{ccc}
+a_{1} & a_{2} & a_{3}\\
+b_{1} & b_{2} & b_{3}\\
+c_{1} & c_{2} & c_{3}
+\end{array}\right].
+$$
+
+### Solution to 4.1-4(8)
+
+By **Definition 4.1.3 (Matrix Multiplication)**, left-multiplying by a diagonal matrix amounts to multiplying the corresponding rows by the diagonal entries:
+
+$$
+=
+\left[\begin{array}{ccc}
+d_{1}a_{1} & d_{1}a_{2} & d_{1}a_{3}\\
+d_{2}b_{1} & d_{2}b_{2} & d_{2}b_{3}\\
+d_{3}c_{1} & d_{3}c_{2} & d_{3}c_{3}
+\end{array}\right].
+$$
+
+$\blacksquare$
+
+## 4.1-4(9)
+
+Compute:
+
+$$
+\left[\begin{array}{ccc}
+a_{1} & a_{2} & a_{3}\\
+b_{1} & b_{2} & b_{3}\\
+c_{1} & c_{2} & c_{3}
+\end{array}\right]\left[\begin{array}{ccc}
+d_{1} & 0 & 0\\
+0 & d_{2} & 0\\
+0 & 0 & d_{3}
+\end{array}\right].
+$$
+
+### Solution to 4.1-4(9)
+
+By **Definition 4.1.3 (Matrix Multiplication)**, right-multiplying by a diagonal matrix amounts to multiplying the corresponding columns by the diagonal entries:
+
+$$
+=
+\left[\begin{array}{ccc}
+d_{1}a_{1} & d_{2}a_{2} & d_{3}a_{3}\\
+d_{1}b_{1} & d_{2}b_{2} & d_{3}b_{3}\\
+d_{1}c_{1} & d_{2}c_{2} & d_{3}c_{3}
+\end{array}\right].
+$$
+
+$\blacksquare$
+
+## 4.1-4(13)
+
+Compute:
+
+$$
+\left[\begin{array}{ccc}
+0 & 1 & 0\\
+1 & 0 & 0\\
+0 & 0 & 1
+\end{array}\right]\left[\begin{array}{cccc}
+a_{1} & a_{2} & a_{3} & a_{4}\\
+b_{1} & b_{2} & b_{3} & b_{4}\\
+c_{1} & c_{2} & c_{3} & c_{4}
+\end{array}\right].
+$$
+
+### Solution to 4.1-4(13)
+
+By **Definition 4.1.3 (Matrix Multiplication)**, this is left-multiplication by the elementary matrix that swaps rows $1$ and $2$:
+
+$$
+=
+\left[\begin{array}{cccc}
+b_{1} & b_{2} & b_{3} & b_{4}\\
+a_{1} & a_{2} & a_{3} & a_{4}\\
+c_{1} & c_{2} & c_{3} & c_{4}
+\end{array}\right].
+$$
+
+$\blacksquare$
+
+## 4.1-4(14)
+
+Compute:
+
+$$
+\left[\begin{array}{ccc}
+a_{1} & a_{2} & a_{3}\\
+b_{1} & b_{2} & b_{3}\\
+c_{1} & c_{2} & c_{3}
+\end{array}\right]\left[\begin{array}{ccc}
+0 & 1 & 0\\
+1 & 0 & 0\\
+0 & 0 & 1
+\end{array}\right].
+$$
+
+### Solution to 4.1-4(14)
+
+By **Definition 4.1.3 (Matrix Multiplication)**, this is right-multiplication by the elementary matrix that swaps columns $1$ and $2$:
+
+$$
+=
+\left[\begin{array}{ccc}
+a_{2} & a_{1} & a_{3}\\
+b_{2} & b_{1} & b_{3}\\
+c_{2} & c_{1} & c_{3}
+\end{array}\right].
+$$
+
+$\blacksquare$

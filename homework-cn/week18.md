@@ -1,481 +1,357 @@
 # week18
 
-> **定义 4.1.1 (矩阵的加法)**
+> **定义 5.5.1 (特征值与特征向量)**
 > 
-> 设 $A=\left(a_{ij}\right),B=\left(b_{ij}\right)$ 都是数域 $K$ 上 $s\times n$ 矩阵, 令 $C=\left(a_{ij}+b_{ij}\right)_{s\times n}$, 则称 $C$ 是矩阵 $A$ 与 $B$ 的和, 记作 $C=A+B$.
+> 设 $A$ 是数域 $K$ 上的 $n$ 级矩阵, 如果 $K^{n}$ 中有非零列向量 $\alpha$, 使得 $A\alpha=\lambda_{0}\alpha$, 且 $\lambda_{0}\in K$, 则称 $\lambda_{0}$ 是 $A$ 的一个特征值, 称 $\alpha$ 是 $A$ 的属于特征值 $\lambda_{0}$ 的一个特征向量.
 
-> **定义 4.1.2 (矩阵的数量乘法)**
+> **定理 5.6.1 (可对角化的充要条件)**
 > 
-> 设 $k\in K$, 令 $M=\left(ka_{ij}\right)_{s\times n}$, 则称 $M$ 是 $k$ 与矩阵 $A$ 的数量乘积, 记作 $M=kA$.
+> 数域 $K$ 上 $n$ 级矩阵 $A$ 可对角化的充分必要条件是 $A$ 有 $n$ 个线性无关的特征向量.
 
-> **定义 4.1.3 (矩阵的乘法)**
+> **推论 5.6.6 (有 $n$ 个不同特征值则可对角化)**
 > 
-> 设 $A=\left(a_{ij}\right)_{s\times n}$, $B=\left(b_{ij}\right)_{n\times m}$, 令 $C=\left(c_{ij}\right)_{s\times m}$, 其中 $c_{ij}=\sum_{k=1}^{n}a_{ik}b_{kj}$, 则称 $C$ 是 $A$ 与 $B$ 的乘积, 记作 $C=AB$.
+> 如果数域 $K$ 上 $n$ 级矩阵 $A$ 有 $n$ 个不同的特征值, 则 $A$ 可对角化.
 
-## 4.1-1
+## 5.5-12(1)
 
-设
+求下列复数域上矩阵的全部特征值和特征向量:
 
 $$
-A=\left[\begin{array}{ccc}
-\lambda & 0 & 0\\
-0 & \lambda & 0\\
-0 & 0 & \lambda
+P=\left[\begin{array}{ccc}
+0 & 1 & 0\\
+0 & 0 & 1\\
+1 & 0 & 0
+\end{array}\right].
+$$
+
+### 解答 5.5-12(1)
+
+求特征多项式:
+
+$$
+\left|\lambda I-P\right|=\left|\begin{array}{rrr}
+\lambda & -1 & 0\\
+0 & \lambda & -1\\
+-1 & 0 & \lambda
+\end{array}\right|=\lambda^{3}-1.
+$$
+
+因此特征值为 $\lambda_{1}=1$, $\lambda_{2}=\omega$, $\lambda_{3}=\omega^{2}$, 其中
+
+$$
+\omega=e^{2\pi i/3}=-\frac{1}{2}+\frac{\sqrt{3}}{2}i.
+$$
+
+**求 $\lambda=1$ 的特征向量**.
+
+$$
+I-P=\left[\begin{array}{rrr}
+1 & -1 & 0\\
+0 & 1 & -1\\
+-1 & 0 & 1
+\end{array}\right]\rightarrow
+\left[\begin{array}{rrr}
+1 & -1 & 0\\
+0 & 1 & -1\\
+0 & 0 & 0
+\end{array}\right].
+$$
+
+解得 $x_{1}=x_{2}=x_{3}$.
+
+基础解系: $\alpha_{1}=\left(1,1,1\right)^{\top}$.
+
+**求 $\lambda=\omega$ 的特征向量**.
+
+由第 $1$ 行: $\omega x_{1}-x_{2}=0$, 即 $x_{2}=\omega x_{1}$.
+
+由第 $2$ 行: $\omega x_{2}-x_{3}=0$, 即 $x_{3}=\omega x_{2}=\omega^{2}x_{1}$.
+
+基础解系: $\alpha_{2}=\left(1,\omega,\omega^{2}\right)^{\top}$.
+
+**求 $\lambda=\omega^{2}$ 的特征向量**.
+
+同理, 基础解系: $\alpha_{3}=\left(1,\omega^{2},\omega\right)^{\top}$.
+
+$\blacksquare$
+
+## 5.5-13
+
+设 $A,B$ 分别是数域 $K$ 上 $s\times n$, $n\times s$ 矩阵, 证明: $AB$ 与 $BA$ 有相同的非零特征值.
+
+### 解答 5.5-13
+
+设 $\lambda\ne0$ 是 $AB$ 的一个特征值, $\alpha$ 是 $AB$ 的属于 $\lambda$ 的特征向量, 即
+
+$$
+AB\alpha=\lambda\alpha.
+$$
+
+令 $\beta=B\alpha$.
+
+则
+
+$$
+BA\beta=BA\left(B\alpha\right)=B\left(AB\alpha\right)=B\left(\lambda\alpha\right)=\lambda\left(B\alpha\right)=\lambda\beta.
+$$
+
+**证明 $\beta\ne0$**.
+
+如果 $\beta=0$, 则 $B\alpha=0$.
+
+那么
+
+$$
+AB\alpha=A\left(0\right)=0.
+$$
+
+但 $AB\alpha=\lambda\alpha$, 且 $\lambda\ne0$, 故 $\lambda\alpha=0$, 从而 $\alpha=0$.
+
+矛盾, 因为 $\alpha$ 是特征向量, $\alpha\ne0$.
+
+因此 $\beta\ne0$.
+
+所以 $\beta$ 是 $BA$ 的属于 $\lambda$ 的特征向量.
+
+因此 $\lambda$ 是 $BA$ 的一个特征值.
+
+同理可证, $BA$ 的非零特征值也是 $AB$ 的特征值.
+
+因此 $AB$ 与 $BA$ 有相同的非零特征值. $\blacksquare$
+
+## 5.6-1
+
+习题 5.5 的第 1, 2 题中, 哪些矩阵可对角化? 哪些矩阵不可对角化? 对于可对角化的矩阵 $A$, 求可逆矩阵 $P$, 使得 $P^{-1}AP$ 为对角矩阵, 并且写出这个对角矩阵.
+
+### 解答 5.6-1
+
+由**定理 5.6.1 (可对角化的充要条件)**, 数域 $K$ 上 $n$ 级矩阵 $A$ 可对角化的充分必要条件是 $A$ 有 $n$ 个线性无关的特征向量.
+
+**习题 5.5 第 1 题(1)**: $A=\left[\begin{array}{rrr}2 & 2 & -2\\2 & 5 & -4\\-2 & -4 & 5\end{array}\right]$.
+
+特征值: $\lambda_{1}=1$, $\lambda_{2}=\lambda_{3}=10$.
+
+求 $\lambda=10$ 的特征向量:
+
+$$
+10I-A=\left[\begin{array}{rrr}
+8 & -2 & 2\\
+-2 & 5 & 4\\
+2 & 4 & 5
+\end{array}\right]\rightarrow
+\left[\begin{array}{rrr}
+2 & 4 & 5\\
+0 & 9 & 9\\
+0 & 0 & 0
+\end{array}\right].
+$$
+
+解得 $x_{2}=-x_{3}$, $x_{1}=\frac{1}{2}x_{3}$.
+
+基础解系: $\alpha_{1}=\left(1,-2,2\right)^{\top}$.
+
+特征值 $\lambda=1$ 的特征向量:
+
+$$
+I-A=\left[\begin{array}{rrr}
+-1 & -2 & 2\\
+-2 & -4 & 4\\
+2 & 4 & -4
+\end{array}\right]\rightarrow
+\left[\begin{array}{rrr}
+1 & 2 & -2\\
+0 & 0 & 0\\
+0 & 0 & 0
+\end{array}\right].
+$$
+
+解得 $x_{1}=-2x_{2}+2x_{3}$.
+
+基础解系: $\alpha_{2}=\left(-2,1,0\right)^{\top}$, $\alpha_{3}=\left(2,0,1\right)^{\top}$.
+
+三个特征向量线性无关, 故 $A$ 可对角化.
+
+$$
+P=\left[\begin{array}{rrr}
+1 & -2 & 2\\
+-2 & 1 & 0\\
+2 & 0 & 1
 \end{array}\right],
-B=\left[\begin{array}{ccc}
+P^{-1}AP=\left[\begin{array}{rrr}
+10 & 0 & 0\\
 0 & 1 & 0\\
-0 & 0 & 1\\
-0 & 0 & 0
-\end{array}\right].
-$$
-
-求 $A+B$.
-
-### 解答 4.1-1
-
-由**定义 4.1.1 (矩阵的加法)**,
-
-$$
-A+B=\left[\begin{array}{ccc}
-\lambda & 1 & 0\\
-0 & \lambda & 1\\
-0 & 0 & \lambda
-\end{array}\right].
-$$
-
-$\blacksquare$
-
-## 4.1-3
-
-设 $I$ 是 $n$ 级单位矩阵, $J$ 是元素全为 $1$ 的 $n$ 级矩阵. 设
-
-$$
-M=\left[\begin{array}{cccc}
-k & \lambda & \cdots & \lambda\\
-\lambda & k & \cdots & \lambda\\
-\vdots & \vdots & & \vdots\\
-\lambda & \lambda & \cdots & k
-\end{array}\right]_{n\times n}.
-$$
-
-把 $M$ 表示成 $xI+yJ$ 的形式, 其中 $x,y$ 是待定系数.
-
-### 解答 4.1-3
-
-由**定义 4.1.1 (矩阵的加法)**和**定义 4.1.2 (矩阵的数量乘法)**, $xI+yJ$ 的主对角元为 $x+y$, 其余元素为 $y$.
-
-对比 $M$ 的主对角元为 $k$, 其余元素为 $\lambda$, 得
-
-$$
-\begin{cases}
-x+y=k,\\
-y=\lambda.
-\end{cases}
-$$
-
-解得 $x=k-\lambda$, $y=\lambda$.
-
-由**定义 4.1.1 (矩阵的加法)**和**定义 4.1.2 (矩阵的数量乘法)**, 故
-
-$$
-M=\left(k-\lambda\right)I+\lambda J.
-$$
-
-$\blacksquare$
-
-## 4.1-4(1)
-
-计算:
-
-$$
-\left[\begin{array}{rr}
-7 & -1\\
--2 & 5\\
-3 & -4
-\end{array}\right]\left[\begin{array}{rr}
-1 & 4\\
--5 & 2
-\end{array}\right].
-$$
-
-### 解答 4.1-4(1)
-
-由**定义 4.1.3 (矩阵的乘法)**, 矩阵乘积的第 $\left(i,j\right)$ 元等于第 $i$ 行与第 $j$ 列的内积:
-
-$$
-\left[\begin{array}{rr}
-7 & -1\\
--2 & 5\\
-3 & -4
-\end{array}\right]\left[\begin{array}{rr}
-1 & 4\\
--5 & 2
-\end{array}\right]
-=
-\left[\begin{array}{rr}
-7\times1+\left(-1\right)\times\left(-5\right) & 7\times4+\left(-1\right)\times2\\
-\left(-2\right)\times1+5\times\left(-5\right) & \left(-2\right)\times4+5\times2\\
-3\times1+\left(-4\right)\times\left(-5\right) & 3\times4+\left(-4\right)\times2
-\end{array}\right]
-=
-\left[\begin{array}{rr}
-12 & 26\\
--27 & 2\\
-23 & 4
-\end{array}\right].
-$$
-
-$\blacksquare$
-
-## 4.1-4(2)
-
-计算:
-
-$$
-\left[\begin{array}{rr}
-0 & 2\\
-0 & 3
-\end{array}\right]\left[\begin{array}{rr}
-1 & 1\\
-0 & 0
-\end{array}\right].
-$$
-
-### 解答 4.1-4(2)
-
-由**定义 4.1.3 (矩阵的乘法)**, 矩阵乘积的第 $\left(i,j\right)$ 元等于第 $i$ 行与第 $j$ 列的内积:
-
-$$
-\left[\begin{array}{rr}
-0 & 2\\
-0 & 3
-\end{array}\right]\left[\begin{array}{rr}
-1 & 1\\
-0 & 0
-\end{array}\right]
-=
-\left[\begin{array}{rr}
-0\times1+2\times0 & 0\times1+2\times0\\
-0\times1+3\times0 & 0\times1+3\times0
-\end{array}\right]
-=
-\left[\begin{array}{rr}
-0 & 0\\
-0 & 0
-\end{array}\right].
-$$
-
-$\blacksquare$
-
-## 4.1-4(3)
-
-计算:
-
-$$
-\left[\begin{array}{rr}
-1 & 1\\
-0 & 0
-\end{array}\right]\left[\begin{array}{rr}
-0 & 2\\
-0 & 3
-\end{array}\right].
-$$
-
-### 解答 4.1-4(3)
-
-由**定义 4.1.3 (矩阵的乘法)**, 矩阵乘积的第 $\left(i,j\right)$ 元等于第 $i$ 行与第 $j$ 列的内积:
-
-$$
-\left[\begin{array}{rr}
-1 & 1\\
-0 & 0
-\end{array}\right]\left[\begin{array}{rr}
-0 & 2\\
-0 & 3
-\end{array}\right]
-=
-\left[\begin{array}{rr}
-1\times0+1\times0 & 1\times2+1\times3\\
-0\times0+0\times0 & 0\times2+0\times3
-\end{array}\right]
-=
-\left[\begin{array}{rr}
-0 & 5\\
-0 & 0
-\end{array}\right].
-$$
-
-$\blacksquare$
-
-## 4.1-4(8)
-
-计算:
-
-$$
-\left[\begin{array}{ccc}
-d_{1} & 0 & 0\\
-0 & d_{2} & 0\\
-0 & 0 & d_{3}
-\end{array}\right]\left[\begin{array}{ccc}
-a_{1} & a_{2} & a_{3}\\
-b_{1} & b_{2} & b_{3}\\
-c_{1} & c_{2} & c_{3}
-\end{array}\right].
-$$
-
-### 解答 4.1-4(8)
-
-由**定义 4.1.3 (矩阵的乘法)**, 用对角矩阵左乘, 相当于用对角元分别乘相应的行:
-
-$$
-=
-\left[\begin{array}{ccc}
-d_{1}a_{1} & d_{1}a_{2} & d_{1}a_{3}\\
-d_{2}b_{1} & d_{2}b_{2} & d_{2}b_{3}\\
-d_{3}c_{1} & d_{3}c_{2} & d_{3}c_{3}
-\end{array}\right].
-$$
-
-$\blacksquare$
-
-## 4.1-4(9)
-
-计算:
-
-$$
-\left[\begin{array}{ccc}
-a_{1} & a_{2} & a_{3}\\
-b_{1} & b_{2} & b_{3}\\
-c_{1} & c_{2} & c_{3}
-\end{array}\right]\left[\begin{array}{ccc}
-d_{1} & 0 & 0\\
-0 & d_{2} & 0\\
-0 & 0 & d_{3}
-\end{array}\right].
-$$
-
-### 解答 4.1-4(9)
-
-由**定义 4.1.3 (矩阵的乘法)**, 用对角矩阵右乘, 相当于用对角元分别乘相应的列:
-
-$$
-=
-\left[\begin{array}{ccc}
-d_{1}a_{1} & d_{2}a_{2} & d_{3}a_{3}\\
-d_{1}b_{1} & d_{2}b_{2} & d_{3}b_{3}\\
-d_{1}c_{1} & d_{2}c_{2} & d_{3}c_{3}
-\end{array}\right].
-$$
-
-$\blacksquare$
-
-## 4.1-4(13)
-
-计算:
-
-$$
-\left[\begin{array}{ccc}
-0 & 1 & 0\\
-1 & 0 & 0\\
-0 & 0 & 1
-\end{array}\right]\left[\begin{array}{cccc}
-a_{1} & a_{2} & a_{3} & a_{4}\\
-b_{1} & b_{2} & b_{3} & b_{4}\\
-c_{1} & c_{2} & c_{3} & c_{4}
-\end{array}\right].
-$$
-
-### 解答 4.1-4(13)
-
-由**定义 4.1.3 (矩阵的乘法)**, 这是交换第 $1$ 行和第 $2$ 行的初等矩阵左乘:
-
-$$
-=
-\left[\begin{array}{cccc}
-b_{1} & b_{2} & b_{3} & b_{4}\\
-a_{1} & a_{2} & a_{3} & a_{4}\\
-c_{1} & c_{2} & c_{3} & c_{4}
-\end{array}\right].
-$$
-
-$\blacksquare$
-
-## 4.1-4(14)
-
-计算:
-
-$$
-\left[\begin{array}{ccc}
-a_{1} & a_{2} & a_{3}\\
-b_{1} & b_{2} & b_{3}\\
-c_{1} & c_{2} & c_{3}
-\end{array}\right]\left[\begin{array}{ccc}
-0 & 1 & 0\\
-1 & 0 & 0\\
 0 & 0 & 1
 \end{array}\right].
 $$
 
-### 解答 4.1-4(14)
+**习题 5.5 第 1 题(2)**: $A=\left[\begin{array}{rrr}2 & 3 & 2\\1 & 8 & 2\\-2 & -14 & -3\end{array}\right]$.
 
-由**定义 4.1.3 (矩阵的乘法)**, 这是交换第 $1$ 列和第 $2$ 列的初等矩阵右乘:
+特征值: $\lambda_{1}=1$, $\lambda_{2}=\lambda_{3}=3$.
 
-$$
-=
-\left[\begin{array}{ccc}
-a_{2} & a_{1} & a_{3}\\
-b_{2} & b_{1} & b_{3}\\
-c_{2} & c_{1} & c_{3}
-\end{array}\right].
-$$
+$\lambda=3$ 的特征子空间维数为 $1$ (几何重数), 而代数重数为 $2$.
 
-$\blacksquare$
+几何重数 $< $ 代数重数, 故 $A$ 不可对角化.
 
-## 4.1-6
+**习题 5.5 第 1 题(3)**: $A=\left[\begin{array}{rrr}6 & 2 & 4\\2 & 3 & 2\\4 & 2 & 6\end{array}\right]$.
 
-计算:
+特征值: $\lambda_{1}=2$, $\lambda_{2}=11$.
 
-$$
-\left(x,y,1\right)\left[\begin{array}{ccc}
-a_{11} & a_{12} & a_{1}\\
-a_{12} & a_{22} & a_{2}\\
-a_{1} & a_{2} & a_{0}
-\end{array}\right]\left[\begin{array}{c}
-x\\
-y\\
-1
-\end{array}\right].
-$$
+有两个不同的特征值, 且 $3$ 级矩阵有 $3$ 个线性无关的特征向量, 故可对角化.
 
-### 解答 4.1-6
+**习题 5.5 第 1 题(4)**: $A=\left[\begin{array}{rrr}2 & -1 & 2\\5 & -3 & 3\\-1 & 0 & -2\end{array}\right]$.
 
-由**定义 4.1.3 (矩阵的乘法)**, 先算左边的行向量乘矩阵:
+特征值: $\lambda=-1$ (三重根).
 
-$$
-\left(x,y,1\right)M
-=
-\left(a_{11}x+a_{12}y+a_{1},a_{12}x+a_{22}y+a_{2},a_{1}x+a_{2}y+a_{0}\right).
-$$
+几何重数 $< 3$, 故不可对角化.
 
-再乘列向量:
+**习题 5.5 第 1 题(5)**: $A=\left[\begin{array}{rrr}0 & 1/2 & 1/2\\1 & -1/2 & 1/2\\1 & -1/2 & 1/2\end{array}\right]$.
 
-$$
-=\left(a_{11}x+a_{12}y+a_{1}\right)x+\left(a_{12}x+a_{22}y+a_{2}\right)y+\left(a_{1}x+a_{2}y+a_{0}\right)=a_{11}x^{2}+2a_{12}xy+a_{22}y^{2}+2a_{1}x+2a_{2}y+a_{0}.
-$$
+特征值: $\lambda_{1}=0$, $\lambda_{2}=1$, $\lambda_{3}=-1$.
 
-$\blacksquare$
+三个不同的特征值, 故可对角化.
 
-## 4.1-7(5)
+**习题 5.5 第 2 题(1)**: $A=\left[\begin{array}{rr}1 & -\sqrt{3}\\\sqrt{3} & 1\end{array}\right]$.
 
-计算:
+看成实数域上的矩阵, 没有实特征值, 故不可对角化.
 
-$$
-\left[\begin{array}{ccc}
-0 & 1 & 0\\
-0 & 0 & 1\\
-0 & 0 & 0
-\end{array}\right]^{n},n\text{ 是正整数}.
-$$
+看成复数域上的矩阵, 有两个不同的特征值, 故可对角化.
 
-### 解答 4.1-7(5)
+**习题 5.5 第 2 题(2)**: $A=\left[\begin{array}{rrr}3 & 7 & -3\\-2 & -5 & 2\\-4 & -10 & 3\end{array}\right]$.
 
-由**定义 4.1.3 (矩阵的乘法)**, 记
+看成实数域上的矩阵, 只有 $1$ 个实特征值, 故不可对角化.
+
+看成复数域上的矩阵, 有三个不同的特征值, 故可对角化.
+
+以上判断均基于矩阵是否有 $n$ 个线性无关的特征向量. $\blacksquare$
+
+## 5.6-5
+
+设 $A$ 是数域 $K$ 上的 $n$ 级矩阵. 证明: 如果 $K^{n}$ 中任意非零列向量都是 $A$ 的特征向量, 则 $A$ 一定是数量矩阵.
+
+### 解答 5.6-5
+
+假设 $A$ 不是数量矩阵.
+
+则 $A$ 至少有两个不同的特征值 $\lambda_{1}\ne\lambda_{2}$.
+
+设 $\alpha$ 是属于 $\lambda_{1}$ 的特征向量, $\beta$ 是属于 $\lambda_{2}$ 的特征向量.
+
+不同特征值的特征向量线性无关.
+
+因此 $\alpha+\beta\ne0$.
+
+由题设, $\alpha+\beta$ 也是 $A$ 的特征向量.
+
+设 $\alpha+\beta$ 属于特征值 $\lambda_{3}$.
+
+则
 
 $$
-H=\left[\begin{array}{ccc}0 & 1 & 0\\0 & 0 & 1\\0 & 0 & 0\end{array}\right].
+A\left(\alpha+\beta\right)=\lambda_{3}\left(\alpha+\beta\right).
 $$
 
-$$
-H^{2}=HH=\left[\begin{array}{ccc}
-0 & 0 & 1\\
-0 & 0 & 0\\
-0 & 0 & 0
-\end{array}\right].
-$$
+另一方面,
 
 $$
-H^{3}=H^{2}H=\left[\begin{array}{ccc}
-0 & 0 & 0\\
-0 & 0 & 0\\
-0 & 0 & 0
-\end{array}\right].
+A\left(\alpha+\beta\right)=A\alpha+A\beta=\lambda_{1}\alpha+\lambda_{2}\beta.
 $$
 
-因此:
-
-- 当 $n=1$ 时, $H^{n}=H=\left[\begin{array}{ccc}0 & 1 & 0\\0 & 0 & 1\\0 & 0 & 0\end{array}\right]$.
-- 当 $n=2$ 时, $H^{n}=\left[\begin{array}{ccc}0 & 0 & 1\\0 & 0 & 0\\0 & 0 & 0\end{array}\right]$.
-- 当 $n\ge3$ 时, $H^{n}=0$.
-
-$\blacksquare$
-
-## 4.1-7(6)
-
-计算:
+因此
 
 $$
-\left[\begin{array}{ccc}
-\lambda & 1 & 0\\
-0 & \lambda & 1\\
-0 & 0 & \lambda
-\end{array}\right]^{n},n\text{ 是正整数}.
+\lambda_{1}\alpha+\lambda_{2}\beta=\lambda_{3}\alpha+\lambda_{3}\beta.
 $$
 
-### 解答 4.1-7(6)
-
-由**定义 4.1.3 (矩阵的乘法)**, 记 $A=\lambda I+N$, 其中
+即
 
 $$
-N=\left[\begin{array}{ccc}0 & 1 & 0\\0 & 0 & 1\\0 & 0 & 0\end{array}\right].
+\left(\lambda_{1}-\lambda_{3}\right)\alpha+\left(\lambda_{2}-\lambda_{3}\right)\beta=0.
 $$
 
-因为 $\lambda I$ 与 $N$ 可交换, 由矩阵二项式定理:
+因为 $\alpha,\beta$ 线性无关, 故
 
 $$
-A^{n}=\sum_{k=0}^{n}\binom{n}{k}\left(\lambda I\right)^{n-k}N^{k}.
+\lambda_{1}-\lambda_{3}=0,\quad\lambda_{2}-\lambda_{3}=0.
 $$
 
-又 $N^{0}=I$, $N^{1}=N$, $N^{2}=\left[\begin{array}{ccc}0 & 0 & 1\\0 & 0 & 0\\0 & 0 & 0\end{array}\right]$, $N^{3}=0$.
+即 $\lambda_{1}=\lambda_{2}=\lambda_{3}$.
+
+矛盾.
+
+因此假设不成立, 即 $A$ 是数量矩阵. $\blacksquare$
+
+## 5.6-7
+
+证明: 数域 $K$ 上 $n$ 级幂等矩阵 $A$ 一定可对角化, 并且 $A$ 的相似标准形是 $\operatorname{diag}\left\{I_{r},0\right\}$, 其中 $r=\operatorname{rank}\left(A\right)$.
+
+### 解答 5.6-7
+
+因为 $A^{2}=A$, 故 $A$ 的特征值只能是 $0$ 或 $1$.
+
+**证明 $A$ 可对角化**.
+
+$\ker\left(A\right)=\left\{x\mid Ax=0\right\}$ 是属于特征值 $0$ 的特征子空间.
+
+$$
+\ker\left(I-A\right)=\left\{x\mid \left(I-A\right)x=0\right\}=\left\{x\mid Ax=x\right\}
+$$
+
+是属于特征值 $1$ 的特征子空间.
+
+我们证明
+
+$$
+K^{n}=\ker\left(A\right)\oplus\ker\left(I-A\right).
+$$
+
+对任意 $x\in K^{n}$,
+
+$$
+x=Ax+\left(I-A\right)x.
+$$
+
+因为 $A\left(Ax\right)=A^{2}x=Ax$, 故 $Ax\in\ker\left(I-A\right)$.
+
+因为
+
+$$
+A\left(\left(I-A\right)x\right)=\left(A-A^{2}\right)x=0,
+$$
+
+故 $\left(I-A\right)x\in\ker\left(A\right)$.
+
+因此
+
+$$
+K^{n}=\ker\left(A\right)+\ker\left(I-A\right).
+$$
+
+又因为
+
+$$
+\ker\left(A\right)\cap\ker\left(I-A\right)=\left\{0\right\}\ \left(\text{若 }Ax=0\text{ 且 }Ax=x\text{, 则 }x=0\right).
+$$
 
 故
 
 $$
-A^{n}
-=\lambda^{n}I+n\lambda^{n-1}N+\binom{n}{2}\lambda^{n-2}N^{2}=\left[\begin{array}{ccc}
-\lambda^{n} & n\lambda^{n-1} & \frac{n\left(n-1\right)}{2}\lambda^{n-2}\\
-0 & \lambda^{n} & n\lambda^{n-1}\\
-0 & 0 & \lambda^{n}
-\end{array}\right].
+K^{n}=\ker\left(A\right)\oplus\ker\left(I-A\right).
 $$
 
-当 $n=1$ 时, 上式也成立 (注意 $\lambda^{0}=1$, 第三项为 $0$). $\blacksquare$
+因此 $A$ 有 $n$ 个线性无关的特征向量, 即可对角化.
 
-## 4.1-10
-
-证明: 如果 $A=\frac{1}{2}\left(B+I\right)$, 则 $A^{2}=A$ 当且仅当 $B^{2}=I$.
-
-### 解答 4.1-10
+**求相似标准形**.
 
 $$
-A^{2}=\left(\frac{1}{2}\left(B+I\right)\right)^{2}=\frac{1}{4}\left(B+I\right)^{2}=\frac{1}{4}\left(B^{2}+2B+I\right).
+\dim\ker\left(A\right)=n-\operatorname{rank}\left(A\right).
 $$
 
-$A^{2}=A$ 等价于:
-
 $$
-\frac{1}{4}\left(B^{2}+2B+I\right)=\frac{1}{2}\left(B+I\right).
+\dim\ker\left(I-A\right)=\operatorname{rank}\left(A\right)=r.
 $$
 
-两边乘 $4$:
+故 $A$ 有 $r$ 个特征值 $1$, $n-r$ 个特征值 $0$.
 
-$$
-B^{2}+2B+I=2B+2I.
-$$
+因此 $A$ 的相似标准形是 $\operatorname{diag}\left\{I_{r},0\right\}$, 其中 $r=\operatorname{rank}\left(A\right)$.
 
-化简得:
-
-$$
-B^{2}=I.
-$$
-
-因此 $A^{2}=A$ 当且仅当 $B^{2}=I$. $\blacksquare$
+$\blacksquare$

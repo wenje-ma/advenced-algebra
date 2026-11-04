@@ -1,274 +1,321 @@
 # week6
 
-> **性质 2.3.2 (一行的公因子可以提出去)**
-> 
-> 行列式一行的公因子可以提出去; 特别地, 若行列式中有一行为零(该行元素全为 $0$), 则行列式的值为 $0$.
-
-> **性质 2.3.3 (某行为两组数之和则可拆分)**
-> 
-> 行列式中若有某一行是两组数的和, 则此行列式等于两个行列式的和, 这两个行列式的这一行分别是第一组数和第二组数, 而其余各行与原来行列式的相应各行相同.
-
-> **性质 2.3.5 (两行相同则行列式为零)**
-> 
-> 行列式中有两行相同, 则行列式的值为 $0$; 进而若两行成比例, 行列式的值也为 $0$.
-
-> **性质 2.3.7 (把一行的倍数加到另一行上值不变)**
-> 
-> 把一行的倍数加到另一行上, 行列式的值不变.
-
-> **定理 2.4.1 (行列式按一行(列)展开)**
-> 
-> $n$ 阶行列式 $\left|A\right|$ 等于它的第 $i$ 行元素与自己的代数余子式的乘积之和, 也等于它的第 $j$ 列元素与自己的代数余子式的乘积之和, 即 $\left|A\right|=\sum_{k=1}^{n}a_{ik}A_{ik}=\sum_{k=1}^{n}a_{kj}A_{kj}$, 其中 $A_{kj}=\left(-1\right)^{k+j}M_{kj}$ 为代数余子式.
-
-## 2.3-1(2)
-
-计算下列行列式:
-
 $$
-\left|\begin{array}{rrr}
--1 & 203 & 1/3\\
-3 & 298 & 1/2\\
-5 & 399 & 2/3
-\end{array}\right|.
+\left|\begin{array}{cc}A & 0\\C & B\end{array}\right|=\left|A\right|\left|B\right|.
 $$
-
-### 解答 2.3-1(2)
-
-观察到第 $2$ 列的元素 $203,298,399$ 可以拆成两个数之和, 即 $203=200+3$, $298=300-2$, $399=400-1$. 由**性质 2.3.3 (某行为两组数之和则可拆分)**, 行列式某一列的所有元素都是两项之和, 则行列式可拆成两个行列式之和:
-
-$$
-\left|\begin{array}{rrr}
--1 & 203 & 1/3\\
-3 & 298 & 1/2\\
-5 & 399 & 2/3
-\end{array}\right|
-=
-\left|\begin{array}{rrr}
--1 & 200 & 1/3\\
-3 & 300 & 1/2\\
-5 & 400 & 2/3
-\end{array}\right|
-+
-\left|\begin{array}{rrr}
--1 & 3 & 1/3\\
-3 & -2 & 1/2\\
-5 & -1 & 2/3
-\end{array}\right|.
-$$
-
-由**性质 2.3.2 (一行的公因子可以提出去)**, 行列式某一列的公因子可以提到行列式符号外面. 第一个行列式的第 $2$ 列有公因子 $100$, 提出得:
-
-$$
-D_{1}=100\times\left|\begin{array}{rrr}
--1 & 2 & 1/3\\
-3 & 3 & 1/2\\
-5 & 4 & 2/3
-\end{array}\right|.
-$$
-
-直接展开计算:
-
-$$
-\left|\begin{array}{rrr}
--1 & 2 & 1/3\\
-3 & 3 & 1/2\\
-5 & 4 & 2/3
-\end{array}\right|=-1\times\left(3\times\frac{2}{3}-\frac{1}{2}\times4\right)-2\times\left(3\times\frac{2}{3}-\frac{1}{2}\times5\right)+\frac{1}{3}\times\left(3\times4-3\times5\right)=-1\times\left(2-2\right)-2\times\left(2-\frac{5}{2}\right)+\frac{1}{3}\times\left(12-15\right)=0-2\times\left(-\frac{1}{2}\right)+\frac{1}{3}\times\left(-3\right)=1-1=0.
-$$
-
-故 $D_{1}=100\times0=0$.
-
-计算第二个行列式 $D_{2}$:
-
-$$
-D_{2}=\left|\begin{array}{rrr}
--1 & 3 & 1/3\\
-3 & -2 & 1/2\\
-5 & -1 & 2/3
-\end{array}\right|=-1\times\left(-2\times\frac{2}{3}-\frac{1}{2}\times\left(-1\right)\right)-3\times\left(3\times\frac{2}{3}-\frac{1}{2}\times5\right)+\frac{1}{3}\times\left(3\times\left(-1\right)-\left(-2\right)\times5\right)=-1\times\left(-\frac{4}{3}+\frac{1}{2}\right)-3\times\left(2-\frac{5}{2}\right)+\frac{1}{3}\times\left(-3+10\right)=-1\times\left(-\frac{5}{6}\right)-3\times\left(-\frac{1}{2}\right)+\frac{1}{3}\times7=\frac{5}{6}+\frac{3}{2}+\frac{7}{3}=\frac{5}{6}+\frac{9}{6}+\frac{14}{6}=\frac{28}{6}=\frac{14}{3}.
-$$
-
-故原行列式
-
-$$
-D=D_{1}+D_{2}=0+\frac{14}{3}=\frac{14}{3}.
-$$
-
-$\blacksquare$
-
-## 2.3-2(2)
-
-计算下列 $n$ 阶行列式:
-
 $$
 \left|\begin{array}{cccc}
-a_{1}-b & a_{2} & \cdots & a_{n}\\
-a_{1} & a_{2}-b & \cdots & a_{n}\\
-\vdots & \vdots & & \vdots\\
-a_{1} & a_{2} & \cdots & a_{n}-b
-\end{array}\right|.
-$$
-
-### 解答 2.3-2(2)
-
-由**性质 2.3.7 (把一行的倍数加到另一行上值不变)**, 把某一行的倍数加到另一行上, 行列式的值不变. 将第 $n$ 行的 $-1$ 倍分别加到第 $1,2,\cdots,n-1$ 行上, 得
-
-$$
-\left|\begin{array}{rrrrr}
--b & 0 & \cdots & 0 & b\\
-0 & -b & \cdots & 0 & b\\
-\vdots & \vdots & & \vdots & \vdots\\
-0 & 0 & \cdots & -b & b\\
-a_{1} & a_{2} & \cdots & a_{n-1} & a_{n}-b
-\end{array}\right|.
-$$
-
-由**定理 2.4.1 (行列式按一行(列)展开)**, 按最后一列展开. 最后一列的元素为 $\left(b,b,\cdots,b,a_{n}-b\right)$.
-
-对于 $j< n$, 代数余子式 $A_{jn}=\left(-1\right)^{j+n}M_{jn}$, 其中 $M_{jn}$ 是去掉第 $j$ 行第 $n$ 列后的 $\left(n-1\right)$ 阶行列式. 该行列式中第 $j$ 行(原第 $j$ 行去掉第 $n$ 列后)只有第 $1$ 列为 $b_{j}$, 其余全为 $0$, 按此行展开后余子式为对角行列式, 可得 $M_{jn}=\left(-1\right)^{j-1}a_{j}\left(-b\right)^{n-2}$.
-
-于是
-
-$$
-\text{行列式}=\sum_{j=1}^{n-1}b\cdot\left(-1\right)^{j+n}\cdot\left(-1\right)^{j-1}a_{j}\left(-b\right)^{n-2}+\left(a_{n}-b\right)\left(-1\right)^{2n}\left(-b\right)^{n-1}=\sum_{j=1}^{n-1}b\cdot\left(-1\right)^{2j+n-1}a_{j}\left(-b\right)^{n-2}+\left(a_{n}-b\right)\left(-b\right)^{n-1}=\sum_{j=1}^{n-1}b\cdot\left(-1\right)^{n-1}a_{j}\left(-b\right)^{n-2}+\left(a_{n}-b\right)\left(-b\right)^{n-1}=\left(-1\right)^{n-1}b^{n-1}\sum_{j=1}^{n-1}a_{j}+\left(a_{n}-b\right)\left(-b\right)^{n-1}=\left(-b\right)^{n-1}\left(\sum_{j=1}^{n}a_{j}-b\right).
-$$
-
-$\blacksquare$
-
-## 2.3-3(1)
-
-证明:
-
-$$
-\left|\begin{array}{ccc}
-a_{1}-b_{1} & b_{1}-c_{1} & c_{1}-a_{1}\\
-a_{2}-b_{2} & b_{2}-c_{2} & c_{2}-a_{2}\\
-a_{3}-b_{3} & b_{3}-c_{3} & c_{3}-a_{3}
-\end{array}\right|=0.
-$$
-
-### 解答 2.3-3(1)
-
-注意到行列式的第 $1$ 列, 第 $2$ 列, 第 $3$ 列满足: 第 $1$ 列 + 第 $2$ 列 + 第 $3$ 列 $=0$.
-
-具体地, 第 $i$ 行第 $1$ 列 + 第 $i$ 行第 $2$ 列 + 第 $i$ 行第 $3$ 列
-
-$$
-=\left(a_{i}-b_{i}\right)+\left(b_{i}-c_{i}\right)+\left(c_{i}-a_{i}\right)=0.
-$$
-
-由**性质 2.3.7 (把一行的倍数加到另一行上值不变)**, 把某一列的倍数加到另一列上, 行列式的值不变. 将第 $2$ 列和第 $3$ 列都加到第 $1$ 列上, 第 $1$ 列的所有元素都变成 $0$.
-
-由**性质 2.3.2 (一行的公因子可以提出去)**, 某一列全为 $0$ 的行列式值为 $0$.
-
-故原行列式 $=0$. $\blacksquare$
-
-## 2.3-4(1)
-
-计算下列 $n$ 阶行列式:
-
-$$
-\left|\begin{array}{cccc}
+1 & 1 & \cdots & 1\\
 a_{1} & a_{2} & \cdots & a_{n}\\
-b_{2} & 1 & \cdots & 0\\
+a_{1}^{2} & a_{2}^{2} & \cdots & a_{n}^{2}\\
 \vdots & \vdots & & \vdots\\
-b_{n} & 0 & \cdots & 1
+a_{1}^{n-1} & a_{2}^{n-1} & \cdots & a_{n}^{n-1}
+\end{array}\right|=\prod_{1\le i< j\le n}\left(a_{j}-a_{i}\right).
+$$
+
+> **定理 2.6.1 (拉普拉斯定理)**
+> 
+> 在 $n$ 阶行列式 $\left|A\right|$ 中, 取定 $k$ 行, 则这 $k$ 行元素形成的所有 $k$ 阶子式与它们自己的代数余子式的乘积之和等于 $\left|A\right|$.
+
+> **定义 3.1.1 (线性组合与线性表出)**
+> 
+> $K^{n}$ 中, 给定向量组 $\alpha_{1},\alpha_{2},\cdots,\alpha_{s}$, 任给 $K$ 中一组数 $k_{1},k_{2},\cdots,k_{s}$, 称 $k_{1}\alpha_{1}+k_{2}\alpha_{2}+\cdots+k_{s}\alpha_{s}$ 为向量组 $\alpha_{1},\alpha_{2},\cdots,\alpha_{s}$ 的一个线性组合. 如果
+
+$$
+\beta=k_{1}\alpha_{1}+k_{2}\alpha_{2}+\cdots+k_{s}\alpha_{s},
+$$
+则称 $\beta$ 可以由 $\alpha_{1},\alpha_{2},\cdots,\alpha_{s}$ 线性表出.
+
+> **命题 3.1.1 (线性表出与方程组有解的关系)**
+> 
+> 数域 $K$ 上 $n$ 元线性方程组
+
+$$
+x_{1}\alpha_{1}+x_{2}\alpha_{2}+\cdots+x_{n}\alpha_{n}=\beta
+$$
+有解 $\Leftrightarrow$ $\beta$ 可以由 $\alpha_{1},\alpha_{2},\cdots,\alpha_{n}$ 线性表出 $\Leftrightarrow$ $\beta\in\left\langle\alpha_{1},\alpha_{2},\cdots,\alpha_{n}\right\rangle$.
+
+## 2.6-3
+
+计算下述行列式:
+
+$$
+\left|\begin{array}{cccccc}
+0 & \cdots & 0 & a_{11} & \cdots & a_{1k}\\
+\vdots & & \vdots & \vdots & & \vdots\\
+0 & \cdots & 0 & a_{k1} & \cdots & a_{kk}\\
+b_{11} & \cdots & b_{1r} & c_{11} & \cdots & c_{1k}\\
+\vdots & & \vdots & \vdots & & \vdots\\
+b_{r1} & \cdots & b_{rr} & c_{r1} & \cdots & c_{rk}
 \end{array}\right|.
 $$
 
-### 解答 2.3-4(1)
+### 解答 2.6-3
 
-由**性质 2.3.7 (把一行的倍数加到另一行上值不变)**, 把某一行的倍数加到另一行上, 行列式的值不变. 把第 $2$ 行的 $-a_{2}$ 倍加到第 $1$ 行, 第 $3$ 行的 $-a_{3}$ 倍加到第 $1$ 行, $\cdots$, 第 $n$ 行的 $-a_{n}$ 倍加到第 $1$ 行, 则第 $1$ 行的第 $2$ 列到第 $n$ 列全部变成 $0$:
+由**定理 2.6.1 (拉普拉斯定理)**, 按前 $k$ 行展开. 前 $k$ 行的所有 $k$ 阶子式中, 只有右上角的 $k$ 阶子式 $A=\left(a_{ij}\right)_{k\times k}$ 可能不为零 (因为前 $k$ 行的前 $r$ 列全为 $0$).
 
-$$
-\left|\begin{array}{cccc}
-a_{1}-\sum_{j=2}^{n}a_{j}b_{j} & 0 & \cdots & 0\\
-b_{2} & 1 & \cdots & 0\\
-\vdots & \vdots & & \vdots\\
-b_{n} & 0 & \cdots & 1
-\end{array}\right|.
-$$
+右上角的 $k$ 阶子式 $A$ 的代数余子式: 行指标为 $1,2,\cdots,k$, 列指标为 $r+1,r+2,\cdots,r+k$.
 
-由**定理 2.4.1 (行列式按一行(列)展开)**, 按第 $1$ 行展开, 余子式为 $\left(n-1\right)$ 阶单位矩阵, 其行列式为 $1$. 故行列式值为
+由**定理 2.6.1 (拉普拉斯定理)**, 余子式是去掉前 $k$ 行和后 $k$ 列后的 $r$ 阶行列式, 即 $B=\left(b_{ij}\right)_{r\times r}$.
+
+代数余子式为
 
 $$
-a_{1}-\sum_{j=2}^{n}a_{j}b_{j}.
+\left(-1\right)^{\left(1+2+\cdots+k\right)+\left(r+1+r+2+\cdots+r+k\right)}\cdot\left|B\right|
+=\left(-1\right)^{\frac{k\left(k+1\right)}{2}+kr+\frac{k\left(k+1\right)}{2}}\cdot\left|B\right|
+=\left(-1\right)^{k\left(k+1+r\right)}\cdot\left|B\right|.
+$$
+
+故行列式值为
+
+$$
+\left|A\right|\cdot\left(-1\right)^{k\left(k+1+r\right)}\cdot\left|B\right|
+=\left(-1\right)^{k\left(r+k+1\right)}\left|A\right|\left|B\right|.
 $$
 
 $\blacksquare$
 
-## 2.3-4(2)
+## 2.6-4(1)
 
-计算下列 $n$ 阶行列式:
+设 $\left|A\right|$ 是关于 $1,2,\cdots,n$ 这 $n$ 个数的范德蒙行列式. 计算:
 
 $$
-\left|\begin{array}{cccc}
-a_{1}+b_{1} & a_{1}+b_{2} & \cdots & a_{1}+b_{n}\\
-a_{2}+b_{1} & a_{2}+b_{2} & \cdots & a_{2}+b_{n}\\
+A\begin{bmatrix}1,2,\cdots,n-1\\2,3,\cdots,n\end{bmatrix}.
+$$
+
+### 解答 2.6-4(1)
+
+由范德蒙行列式的计算公式, 范德蒙行列式为
+
+$$
+\left|A\right|=\left|\begin{array}{cccc}
+1 & 1 & \cdots & 1\\
+a_{1} & a_{2} & \cdots & a_{n}\\
+a_{1}^{2} & a_{2}^{2} & \cdots & a_{n}^{2}\\
 \vdots & \vdots & & \vdots\\
-a_{n}+b_{1} & a_{n}+b_{2} & \cdots & a_{n}+b_{n}
-\end{array}\right|.
+a_{1}^{n-1} & a_{2}^{n-1} & \cdots & a_{n}^{n-1}
+\end{array}\right|,
 $$
 
-### 解答 2.3-4(2)
+其中 $a_{i}=i$.
 
-由**性质 2.3.7 (把一行的倍数加到另一行上值不变)**, 把某一行的倍数加到另一行上, 行列式的值不变. 把第 $1$ 行的 $-1$ 倍分别加到第 $2,3,\cdots,n$ 行上, 得
+取第 $1,2,\cdots,n-1$ 行 (即 $0$ 次幂到 $n-2$ 次幂行) 和第 $2,3,\cdots,n$ 列 (即 $a_{2},a_{3},\cdots,a_{n}$ 列), 得到的 $n-1$ 阶子式为
 
 $$
-\left|\begin{array}{cccc}
-a_{1}+b_{1} & a_{1}+b_{2} & \cdots & a_{1}+b_{n}\\
-a_{2}-a_{1} & a_{2}-a_{1} & \cdots & a_{2}-a_{1}\\
+A\begin{bmatrix}1,2,\cdots,n-1\\2,3,\cdots,n\end{bmatrix}
+=\left|\begin{array}{cccc}
+1 & 1 & \cdots & 1\\
+a_{2} & a_{3} & \cdots & a_{n}\\
+a_{2}^{2} & a_{3}^{2} & \cdots & a_{n}^{2}\\
 \vdots & \vdots & & \vdots\\
-a_{n}-a_{1} & a_{n}-a_{1} & \cdots & a_{n}-a_{1}
+a_{2}^{n-2} & a_{3}^{n-2} & \cdots & a_{n}^{n-2}
 \end{array}\right|.
 $$
 
-当 $n\ge3$ 时, 第 $2$ 行到第 $n$ 行的每一行元素都相同. 由**性质 2.3.5 (两行相同则行列式为零)**, 行列式某两行相同, 则行列式为 $0$. 故 $n\ge3$ 时行列式 $=0$.
-
-当 $n=1$ 时, 行列式 $=a_{1}+b_{1}$.
-
-当 $n=2$ 时, 由**性质 2.3.7 (把一行的倍数加到另一行上值不变)**, 把第 $1$ 行的 $-1$ 倍加到第 $2$ 行, 得
+这是关于 $a_{2},a_{3},\cdots,a_{n}$ 的 $n-1$ 阶范德蒙行列式, 由范德蒙行列式的计算公式, 其值为
 
 $$
-\left|\begin{array}{cc}
-a_{1}+b_{1} & a_{1}+b_{2}\\
-a_{2}-a_{1} & a_{2}-a_{1}
-\end{array}\right|.
+\prod_{2\le i< j\le n}\left(a_{j}-a_{i}\right)=\prod_{2\le i< j\le n}\left(j-i\right).
 $$
 
-由**性质 2.3.2 (一行的公因子可以提出去)**, 第 $2$ 行有公因子 $a_{2}-a_{1}$, 提出得:
+令 $d=j-i$, 则 $d=1,2,\cdots,n-2$, 对于每个 $d$, 有 $n-1-d$ 对 $\left(i,j\right)$ 满足 $j-i=d$.
+
+故
 
 $$
-\left(a_{2}-a_{1}\right)\times\left|\begin{array}{cc}
-a_{1}+b_{1} & a_{1}+b_{2}\\
-1 & 1
-\end{array}\right|.
-$$
-
-由**性质 2.3.7 (把一行的倍数加到另一行上值不变)**, 把第 $2$ 列的 $-1$ 倍加到第 $1$ 列, 得
-
-$$
-\left(a_{2}-a_{1}\right)\times\left|\begin{array}{cc}
-b_{1}-b_{2} & a_{1}+b_{2}\\
-0 & 1
-\end{array}\right|.
-$$
-
-由**定理 2.4.1 (行列式按一行(列)展开)**, 按第 $2$ 列展开, 得
-
-$$
-\left(a_{2}-a_{1}\right)\times\left(b_{1}-b_{2}\right)=\left(a_{1}-a_{2}\right)\left(b_{2}-b_{1}\right).
-$$
-
-综上:
-
-$$
-\det\left(A\right)=
-\begin{cases}
-a_{1}+b_{1}, & n=1,\\
-\left(a_{1}-a_{2}\right)\left(b_{2}-b_{1}\right), & n=2,\\
-0, & n\ge3.
-\end{cases}
+\prod_{2\le i< j\le n}\left(j-i\right)=\prod_{d=1}^{n-2}d^{n-1-d}
+=1^{n-2}\cdot2^{n-3}\cdot\cdots\cdot\left(n-2\right)^{1}.
 $$
 
 $\blacksquare$
+
+## 3.1-3(1)
+
+在 $K^{4}$ 中, 判断向量 $\beta$ 能否由向量组 $\alpha_{1},\alpha_{2},\alpha_{3}$ 线性表出. 若能, 写出它的一种表示方式.
+
+$$
+\alpha_{1}=\begin{bmatrix}-1\\3\\0\\-5\end{bmatrix},
+\alpha_{2}=\begin{bmatrix}2\\0\\7\\-3\end{bmatrix},
+\alpha_{3}=\begin{bmatrix}-4\\1\\-2\\6\end{bmatrix},
+\beta=\begin{bmatrix}8\\3\\-1\\-25\end{bmatrix}.
+$$
+
+### 解答 3.1-3(1)
+
+由**命题 3.1.1 (线性表出与方程组有解的关系)**, 判断 $\beta$ 能否由 $\alpha_{1},\alpha_{2},\alpha_{3}$ 线性表出, 即判断线性方程组 $x_{1}\alpha_{1}+x_{2}\alpha_{2}+x_{3}\alpha_{3}=\beta$ 是否有解.
+
+写出增广矩阵, 作初等行变换:
+
+$$
+\left[\begin{array}{rrr\left|r}
+-1 & 2 & -4 & 8\\
+3 & 0 & 1 & 3\\
+0 & 7 & -2 & -1\\
+-5 & -3 & 6 & -25
+\end{array}\right]
+\xrightarrow{\substack{②+①\times3\\④-①\times5}}
+\left[\begin{array}{rrr\right|r}
+-1 & 2 & -4 & 8\\
+0 & 6 & -11 & 27\\
+0 & 7 & -2 & -1\\
+0 & -13 & 26 & 15
+\end{array}\right].
+$$
+
+继续作行变换, 最后一行出现矛盾行 $0=80$, 故方程组无解.
+
+由**命题 3.1.1 (线性表出与方程组有解的关系)**, 因此 $\beta$ 不能由 $\alpha_{1},\alpha_{2},\alpha_{3}$ 线性表出. $\blacksquare$
+
+## 3.1-3(3)
+
+在 $K^{4}$ 中, 判断向量 $\beta$ 能否由向量组 $\alpha_{1},\alpha_{2},\alpha_{3}$ 线性表出. 若能, 写出它的一种表示方式.
+
+$$
+\alpha_{1}=\begin{bmatrix}3\\-5\\2\\-4\end{bmatrix},
+\alpha_{2}=\begin{bmatrix}-1\\7\\-3\\6\end{bmatrix},
+\alpha_{3}=\begin{bmatrix}3\\11\\-5\\10\end{bmatrix},
+\beta=\begin{bmatrix}2\\-30\\13\\-26\end{bmatrix}.
+$$
+
+### 解答 3.1-3(3)
+
+由**命题 3.1.1 (线性表出与方程组有解的关系)**, 判断 $\beta$ 能否由 $\alpha_{1},\alpha_{2},\alpha_{3}$ 线性表出, 即判断线性方程组 $x_{1}\alpha_{1}+x_{2}\alpha_{2}+x_{3}\alpha_{3}=\beta$ 是否有解.
+
+写出增广矩阵, 作初等行变换:
+
+$$
+\left[\begin{array}{rrr\left|r}
+3 & -1 & 3 & 2\\
+-5 & 7 & 11 & -30\\
+2 & -3 & -5 & 13\\
+-4 & 6 & 10 & -26
+\end{array}\right]
+\xrightarrow{\substack{②+①\times5/3\\③-①\times2/3\\④+①\times4/3}}
+\left[\begin{array}{rrr\right|r}
+3 & -1 & 3 & 2\\
+0 & 16/3 & 16 & -80/3\\
+0 & -7/3 & -7 & 35/3\\
+0 & 14/3 & 14 & -70/3
+\end{array}\right].
+$$
+
+注意到第 $2,3,4$ 行成比例, 消去后得阶梯形矩阵只有两行:
+
+$$
+\left[\begin{array}{rrr|r}
+3 & -1 & 3 & 2\\
+0 & 16/3 & 16 & -80/3
+\end{array}\right].
+$$
+
+由第 $2$ 行:
+
+$$
+\frac{16}{3}x_{2}+16x_{3}=-\frac{80}{3}
+$$
+
+即 $x_{2}+3x_{3}=-5$, 故 $x_{2}=-5-3x_{3}$.
+
+由第 $1$ 行: $3x_{1}-x_{2}+3x_{3}=2$, 代入 $x_{2}$ 得 $3x_{1}+6x_{3}=-3$, 故 $x_{1}=-1-2x_{3}$.
+
+令 $x_{3}=0$, 得 $x_{1}=-1$, $x_{2}=-5$.
+
+验证:
+
+$$
+-\alpha_{1}-5\alpha_{2}=\begin{bmatrix}-3+5\\5-35\\-2+15\\4-30\end{bmatrix}=\begin{bmatrix}2\\-30\\13\\-26\end{bmatrix}=\beta.
+$$
+
+故 $\beta=-\alpha_{1}-5\alpha_{2}$. 由**命题 3.1.1 (线性表出与方程组有解的关系)**, 方程组有解, 故 $\beta$ 可以由 $\alpha_{1},\alpha_{2},\alpha_{3}$ 线性表出. $\blacksquare$
+
+## 3.1-5
+
+在 $K^{4}$ 中, 设
+
+$$
+\alpha_{1}=\begin{bmatrix}1\\0\\0\\0\end{bmatrix},
+\alpha_{2}=\begin{bmatrix}1\\1\\0\\0\end{bmatrix},
+\alpha_{3}=\begin{bmatrix}1\\1\\1\\0\end{bmatrix},
+\alpha_{4}=\begin{bmatrix}1\\1\\1\\1\end{bmatrix}.
+$$
+
+证明: $K^{4}$ 中任一向量 $\alpha=\left(a_{1},a_{2},a_{3},a_{4}\right)^{\top}$ 可以由向量组 $\alpha_{1},\alpha_{2},\alpha_{3},\alpha_{4}$ 线性表出, 并且表出方式唯一, 写出这种表出方式.
+
+### 解答 3.1-5
+
+由**命题 3.1.1 (线性表出与方程组有解的关系)**, 要证明 $K^{4}$ 中任一向量 $\alpha$ 可以由 $\alpha_{1},\alpha_{2},\alpha_{3},\alpha_{4}$ 线性表出, 即证明线性方程组
+
+$$
+x_{1}\alpha_{1}+x_{2}\alpha_{2}+x_{3}\alpha_{3}+x_{4}\alpha_{4}=\alpha
+$$
+
+有解.
+
+设
+
+$$
+\alpha=x_{1}\alpha_{1}+x_{2}\alpha_{2}+x_{3}\alpha_{3}+x_{4}\alpha_{4}.
+$$
+
+比较各分量:
+
+第 $4$ 分量: $x_{4}=a_{4}$.
+
+第 $3$ 分量: $x_{3}+x_{4}=a_{3}$, 故 $x_{3}=a_{3}-a_{4}$.
+
+第 $2$ 分量: $x_{2}+x_{3}+x_{4}=a_{2}$, 故 $x_{2}=a_{2}-a_{3}$.
+
+第 $1$ 分量: $x_{1}+x_{2}+x_{3}+x_{4}=a_{1}$, 故 $x_{1}=a_{1}-a_{2}$.
+
+上述求解过程是从下到上唯一确定的, 故表出方式唯一.
+
+表出方式为:
+
+$$
+\alpha=\left(a_{1}-a_{2}\right)\alpha_{1}+\left(a_{2}-a_{3}\right)\alpha_{2}+\left(a_{3}-a_{4}\right)\alpha_{3}+a_{4}\alpha_{4}.
+$$
+
+方程组有唯一解, 故 $\alpha$ 可以由 $\alpha_{1},\alpha_{2},\alpha_{3},\alpha_{4}$ 唯一线性表出. $\blacksquare$
+
+## 3.1-8
+
+设 $r< n$, 证明 $K^{n}$ 的下述子集 $W$ 是一个子空间:
+
+$$
+W=\left\{\left(a_{1},a_{2},\cdots,a_{r},0,\cdots,0\right)\mid a_{i}\in K,i=1,2,\cdots,r\right\}.
+$$
+
+### 解答 3.1-8
+
+由子空间的判别, 只需验证 $W$ 非空且对加法和数量乘法封闭.
+
+**验证加法封闭**. 任取
+
+$$
+\alpha=\left(a_{1},\cdots,a_{r},0,\cdots,0\right),
+\beta=\left(b_{1},\cdots,b_{r},0,\cdots,0\right)\in W.
+$$
+
+则
+
+$$
+\alpha+\beta=\left(a_{1}+b_{1},\cdots,a_{r}+b_{r},0,\cdots,0\right)\in W.
+$$
+
+**验证数量乘法封闭**. 任取
+
+$$
+\alpha=\left(a_{1},\cdots,a_{r},0,\cdots,0\right)\in W,
+$$
+
+$k\in K$.
+
+则
+
+$$
+k\alpha=\left(ka_{1},\cdots,ka_{r},0,\cdots,0\right)\in W.
+$$
+
+$W$ 非空 (例如零向量 $\left(0,\cdots,0\right)\in W$).
+
+由子空间的判别, $W$ 是 $K^{n}$ 的一个子空间. $\blacksquare$

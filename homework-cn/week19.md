@@ -1,202 +1,411 @@
 # week19
 
-> **定义 4.2.2 (上/下三角矩阵)**
+> **定理 5.6.1 (可对角化的充要条件)**
 > 
-> 主对角线下 (上) 方元素全为零的方阵称为上 (下) 三角矩阵.
+> 数域 $K$ 上 $n$ 级矩阵 $A$ 可对角化的充分必要条件是 $A$ 有 $n$ 个线性无关的特征向量.
 
-> **定义 4.2.3 (基本矩阵)**
+> **推论 5.6.6 (有 $n$ 个不同特征值则可对角化)**
 > 
-> 只有一个元素是 $1$, 其余元素全为零的矩阵称为基本矩阵. $\left(i,j\right)$ 元为 $1$ 的基本矩阵记作 $E_{ij}$.
-
-> **定义 4.2.5 (对称矩阵)**
-> 
-> 一个矩阵 $A$ 如果满足 $A^{\top}=A$, 则称 $A$ 是对称矩阵.
-
-> **定义 4.2.6 (斜对称矩阵)**
-> 
-> 一个矩阵 $A$ 如果满足 $A^{\top}=-A$, 则称 $A$ 是斜 (反) 对称矩阵.
-
-## 4.2-2
-
-证明: 两个 $n$ 级下三角矩阵的乘积仍是 $n$ 级下三角矩阵, 并且乘积矩阵的主对角元等于因子矩阵的相应主对角元的乘积.
-
-### 解答 4.2-2
-
-由**定义 4.2.2 (上/下三角矩阵)**, 设 $A=\left(a_{ij}\right),B=\left(b_{ij}\right)$ 都是 $n$ 级下三角矩阵, 即当 $i< j$ 时, $a_{ij}=0,b_{ij}=0$.
-
-设 $C=AB=\left(c_{ij}\right)$, 则
+> 如果数域 $K$ 上 $n$ 级矩阵 $A$ 有 $n$ 个不同的特征值, 则 $A$ 可对角化.
 
 $$
-c_{ij}=\sum_{k=1}^{n}a_{ik}b_{kj}.
+\beta_{i}=\alpha_{i}-\sum_{k=1}^{i-1}\frac{\left(\alpha_{i},\beta_{k}\right)}{\left(\beta_{k},\beta_{k}\right)}\beta_{k},
+$$
+则 $\beta_{1},\beta_{2},\cdots,\beta_{m}$ 是正交向量组, 且与原向量组等价.
+
+> **定理 5.7.1 (实对称矩阵的特征值)**
+> 
+> 实对称矩阵的特征多项式在复数域中的每一个根都是实数.
+
+> **定理 5.7.3 (实对称矩阵可正交对角化)**
+> 
+> 对于任意 $n$ 级实对称矩阵 $A$, 一定存在一个 $n$ 级正交矩阵 $T$, 使得 $T^{-1}AT$ 为对角矩阵.
+
+> **定义 6.1.1 (二次型)**
+> 
+> 系数在数域 $K$ 中的 $n$ 个变量 $x_{1},x_{2},\cdots,x_{n}$ 的一个二次齐次多项式, 称为数域 $K$ 上的一个 $n$ 元二次型.
+
+> **定义 6.1.2 (规范形)**
+> 
+> 实二次型 $X^{\top}AX$ 的规范形为
+
+$$
+z_{1}^{2}+\cdots+z_{p}^{2}-z_{p+1}^{2}-\cdots-z_{r}^{2},
+$$
+其中 $p$ 是正惯性指数, $r$ 是二次型的秩.
+
+> **定理 6.1.3 (二次型的标准形)**
+> 
+> 数域 $K$ 上任意一个二次型都等价于一个只含平方项的二次型.
+
+## 5.6-10
+
+设 $A=\left(a_{ij}\right)$ 是数域 $K$ 上一个 $n$ 级上三角矩阵, 证明: 如果 $a_{11}=a_{22}=\cdots=a_{nn}$, 并且至少有一个 $a_{kl}\ne0$ ( $k< l$ ), 则 $A$ 一定不能对角化.
+
+### 解答 5.6-10
+
+因为 $A$ 是上三角矩阵, 故特征值就是主对角元 $a_{11},a_{22},\cdots,a_{nn}$.
+
+已知
+
+$$
+a_{11}=a_{22}=\cdots=a_{nn}=\lambda_{0}.
 $$
 
-**下三角性**. 当 $i< j$ 时:
+即 $\lambda_{0}$ 是 $A$ 的 $n$ 重特征值 (代数重数为 $n$ ).
 
-- 若 $k\le i< j$, 则 $k< j$, 故 $b_{kj}=0$.
-- 若 $k> i$, 则 $a_{ik}=0$.
-
-因此所有项均为 $0$, 故 $c_{ij}=0$ (当 $i< j$). 由**定义 4.2.2 (上/下三角矩阵)**, 所以 $C$ 是下三角矩阵.
-
-**主对角元**. 当 $i=j$ 时:
-
-- 若 $k< i$, 则 $b_{ki}=0$.
-- 若 $k> i$, 则 $a_{ik}=0$.
-
-因此只有 $k=i$ 这一项非零:
+**求特征子空间的维数**.
 
 $$
-c_{ii}=a_{ii}b_{ii}.
+\lambda_{0}I-A=\left[\begin{array}{cccc}
+0 & -a_{12} & \cdots & -a_{1n}\\
+0 & 0 & \cdots & -a_{2n}\\
+\vdots & \vdots & \ddots & \vdots\\
+0 & 0 & \cdots & 0
+\end{array}\right].
+$$
+
+因为至少有一个 $a_{kl}\ne0$ ( $k< l$ ), 故 $\lambda_{0}I-A$ 不是零矩阵.
+
+因此 $\operatorname{rank}\left(\lambda_{0}I-A\right)\ge1$.
+
+故特征子空间的维数为
+
+$$
+n-\operatorname{rank}\left(\lambda_{0}I-A\right)\le n-1.
+$$
+
+即几何重数 $\le n-1< n=$ 代数重数.
+
+因此 $A$ 不能对角化. $\blacksquare$
+
+## 5.7-1(1)
+
+对于下列实对称矩阵 $A$, 求正交矩阵 $T$, 使 $T^{\top}AT$ 为对角矩阵:
+
+$$
+A=\left[\begin{array}{rrr}
+0 & -2 & 2\\
+-2 & -3 & 4\\
+2 & 4 & -3
+\end{array}\right].
+$$
+
+### 解答 5.7-1(1)
+
+由**定理 5.7.3 (实对称矩阵可正交对角化)**, 一定存在正交矩阵 $T$, 使 $T^{\top}AT$ 为对角矩阵. 求特征多项式:
+
+$$
+\left|\lambda I-A\right|=\left|\begin{array}{rrr}
+\lambda & 2 & -2\\
+2 & \lambda+3 & -4\\
+-2 & -4 & \lambda+3
+\end{array}\right|=\left(\lambda-1\right)^{2}\left(\lambda+8\right).
+$$
+
+因此特征值为 $\lambda_{1}=\lambda_{2}=1$, $\lambda_{3}=-8$.
+
+**求 $\lambda=1$ 的特征向量**.
+
+$$
+I-A=\left[\begin{array}{rrr}
+1 & 2 & -2\\
+2 & 4 & -4\\
+-2 & -4 & 4
+\end{array}\right]\rightarrow
+\left[\begin{array}{rrr}
+1 & 2 & -2\\
+0 & 0 & 0\\
+0 & 0 & 0
+\end{array}\right].
+$$
+
+基础解系: $\alpha_{1}=\left(-2,1,0\right)^{\top}$, $\alpha_{2}=\left(2,0,1\right)^{\top}$.
+
+由施密特正交化方法:
+
+$$
+\beta_{1}=\alpha_{1}=\left(-2,1,0\right)^{\top}.
+$$
+
+$$
+\beta_{2}=\alpha_{2}-\frac{\left(\alpha_{2},\beta_{1}\right)}{\left(\beta_{1},\beta_{1}\right)}\beta_{1}
+=\left(2,0,1\right)^{\top}-\frac{-4}{5}\left(-2,1,0\right)^{\top}
+=\left(\frac{2}{5},\frac{4}{5},1\right)^{\top}.
+$$
+
+单位化:
+
+$$
+\eta_{1}=\left(-\frac{2}{\sqrt{5}},\frac{1}{\sqrt{5}},0\right)^{\top}.
+$$
+
+$$
+\eta_{2}=\left(\frac{2}{3\sqrt{5}},\frac{4}{3\sqrt{5}},\frac{\sqrt{5}}{3}\right)^{\top}.
+$$
+
+**求 $\lambda=-8$ 的特征向量**.
+
+$$
+-8I-A=\left[\begin{array}{rrr}
+-8 & 2 & -2\\
+2 & -5 & -4\\
+-2 & -4 & -5
+\end{array}\right]\rightarrow
+\left[\begin{array}{rrr}
+1 & 0 & 1/2\\
+0 & 1 & 1\\
+0 & 0 & 0
+\end{array}\right].
+$$
+
+基础解系: $\alpha_{3}=\left(-1,2,-4\right)^{\top}$.
+
+单位化:
+
+$$
+\eta_{3}=\left(-\frac{1}{\sqrt{21}},\frac{2}{\sqrt{21}},-\frac{4}{\sqrt{21}}\right)^{\top}.
+$$
+
+因此正交矩阵为
+
+$$
+T=\left[\begin{array}{ccc}
+-2/\sqrt{5} & 2/\left(3\sqrt{5}\right) & -1/\sqrt{21}\\
+1/\sqrt{5} & 4/\left(3\sqrt{5}\right) & 2/\sqrt{21}\\
+0 & \sqrt{5}/3 & -4/\sqrt{21}
+\end{array}\right].
+$$
+
+由**定理 5.7.3 (实对称矩阵可正交对角化)**,
+
+$$
+T^{\top}AT=\operatorname{diag}\left\{1,1,-8\right\}.
 $$
 
 $\blacksquare$
 
-## 4.2-3
+## 5.7-1(3)
 
-证明: 与所有 $n$ 级矩阵可交换的矩阵一定是 $n$ 级数量矩阵.
-
-### 解答 4.2-3
-
-设 $A=\left(a_{ij}\right)$ 与所有 $n$ 级矩阵可交换.
-
-取**定义 4.2.3 (基本矩阵)**中的基本矩阵 $E_{ij}$ (第 $i$ 行第 $j$ 列为 $1$, 其余为 $0$). 则 $AE_{ij}=E_{ij}A$.
-
-$AE_{ij}$ 的第 $j$ 列等于 $A$ 的第 $i$ 列, 其余列为 $0$.
-
-$E_{ij}A$ 的第 $i$ 行等于 $A$ 的第 $j$ 行, 其余行为 $0$.
-
-比较两者的 $\left(i,j\right)$ 元:
-
-$AE_{ij}$ 的 $\left(i,j\right)$ 元 $=a_{ii}$.
-
-$E_{ij}A$ 的 $\left(i,j\right)$ 元 $=a_{jj}$.
-
-因此 $a_{ii}=a_{jj}$.
-
-这对所有 $i,j$ 都成立, 故所有主对角元相等:
+对于下列实对称矩阵 $A$, 求正交矩阵 $T$, 使 $T^{\top}AT$ 为对角矩阵:
 
 $$
-a_{11}=a_{22}=\cdots=a_{nn}=k.
+A=\left[\begin{array}{rrr}
+3 & -2 & 0\\
+-2 & 2 & -2\\
+0 & -2 & 1
+\end{array}\right].
 $$
 
-再比较 $\left(k,j\right)$ 元 ( $k\ne i$ ):
+### 解答 5.7-1(3)
 
-$AE_{ij}$ 的 $\left(k,j\right)$ 元 $=a_{ki}$.
-
-$E_{ij}A$ 的 $\left(k,j\right)$ 元 $=0$ (因为 $k\ne i$).
-
-因此 $a_{ki}=0$ (当 $k\ne i$).
-
-这对所有 $i$ 都成立, 故 $A$ 的非对角元全为 $0$.
-
-因此 $A=kI$, 即 $A$ 是数量矩阵. $\blacksquare$
-
-## 4.2-8
-
-证明: 数域 $K$ 上任一 $n$ 级矩阵都可以表示成一个对称矩阵与一个斜对称矩阵之和, 并且表法唯一.
-
-### 解答 4.2-8
-
-设 $A$ 是任一 $n$ 级矩阵. 令
+求特征多项式:
 
 $$
-S=\frac{1}{2}\left(A+A^{\top}\right),
-K=\frac{1}{2}\left(A-A^{\top}\right).
+\left|\lambda I-A\right|=\left|\begin{array}{rrr}
+\lambda-3 & 2 & 0\\
+2 & \lambda-2 & 2\\
+0 & 2 & \lambda-1
+\end{array}\right|=\left(\lambda+1\right)\left(\lambda-2\right)\left(\lambda-5\right).
 $$
 
-则 $A=S+K$.
+因此特征值为 $\lambda_{1}=-1$, $\lambda_{2}=2$, $\lambda_{3}=5$.
+
+**求 $\lambda=-1$ 的特征向量**.
+
+基础解系: $\alpha_{1}=\left(1,2,2\right)^{\top}$.
+
+**求 $\lambda=2$ 的特征向量**.
+
+基础解系: $\alpha_{2}=\left(2,1,-2\right)^{\top}$.
+
+**求 $\lambda=5$ 的特征向量**.
+
+基础解系: $\alpha_{3}=\left(-2,2,-1\right)^{\top}$.
+
+验证正交性: $\left(\alpha_{1},\alpha_{2}\right)=0$, $\left(\alpha_{1},\alpha_{3}\right)=0$, $\left(\alpha_{2},\alpha_{3}\right)=0$.
+
+单位化:
 
 $$
-S^{\top}=\frac{1}{2}\left(A^{\top}+\left(A^{\top}\right)^{\top}\right)=\frac{1}{2}\left(A^{\top}+A\right)=S.
+\eta_{1}=\left(\frac{1}{3},\frac{2}{3},\frac{2}{3}\right)^{\top}.
 $$
 
-由**定义 4.2.5 (对称矩阵)**, 故 $S$ 是对称矩阵.
-
 $$
-K^{\top}=\frac{1}{2}\left(A^{\top}-\left(A^{\top}\right)^{\top}\right)=\frac{1}{2}\left(A^{\top}-A\right)=-K.
+\eta_{2}=\left(\frac{2}{3},\frac{1}{3},-\frac{2}{3}\right)^{\top}.
 $$
 
-由**定义 4.2.6 (斜对称矩阵)**, 故 $K$ 是斜对称矩阵.
-
-**唯一性**. 设 $A=S_{1}+K_{1}=S_{2}+K_{2}$, 其中 $S_{1},S_{2}$ 对称, $K_{1},K_{2}$ 斜对称.
-
-则 $S_{1}-S_{2}=K_{2}-K_{1}$.
-
-左边 $\left(S_{1}-S_{2}\right)^{\top}=S_{1}-S_{2}$, 是对称矩阵.
-
-右边
-
 $$
-\left(K_{2}-K_{1}\right)^{\top}=-K_{2}+K_{1}=-\left(K_{2}-K_{1}\right),
+\eta_{3}=\left(-\frac{2}{3},\frac{2}{3},-\frac{1}{3}\right)^{\top}.
 $$
 
-是斜对称矩阵.
-
-一个矩阵既是对称的又是斜对称的, 故它必为零矩阵.
-
-因此 $S_{1}-S_{2}=0$, $K_{2}-K_{1}=0$, 即 $S_{1}=S_{2}$, $K_{1}=K_{2}$.
-
-表法唯一. $\blacksquare$
-
-## 4.2-9
-
-证明: 如果 $A$ 是实数域上的 $n$ 级对称矩阵, 并且 $A^{2}=0$, 则 $A=0$.
-
-### 解答 4.2-9
-
-设 $A=\left(a_{ij}\right)$ 是实对称矩阵, $A^{2}=0$.
-
-考虑 $A^{2}$ 的主对角元:
+因此正交矩阵为
 
 $$
-\left(A^{2}\right)_{ii}=\sum_{k=1}^{n}a_{ik}a_{ki}.
+T=\left[\begin{array}{rrr}
+1/3 & 2/3 & -2/3\\
+2/3 & 1/3 & 2/3\\
+2/3 & -2/3 & -1/3
+\end{array}\right].
 $$
 
-由**定义 4.2.5 (对称矩阵)**, $A$ 对称, 所以 $a_{ki}=a_{ik}$.
-
-故
-
 $$
-\left(A^{2}\right)_{ii}=\sum_{k=1}^{n}a_{ik}^{2}.
+T^{\top}AT=\operatorname{diag}\left\{-1,2,5\right\}.
 $$
 
-因为 $A^{2}=0$, 所以 $\left(A^{2}\right)_{ii}=0$, 即
+$\blacksquare$
 
-$$
-\sum_{k=1}^{n}a_{ik}^{2}=0.
-$$
+## 5.7-2
 
-因为 $a_{ik}$ 都是实数, 故 $a_{ik}^{2}\ge0$.
+证明: 如果 $n$ 级实对称矩阵 $A,B$ 有相同的特征多项式, 则 $A$ 与 $B$ 相似.
 
-因此每个 $a_{ik}=0$, 即 $A=0$. $\blacksquare$
+### 解答 5.7-2
 
-## 4.2-10
+因为 $A$ 是实对称矩阵, 故由**定理 5.7.3 (实对称矩阵可正交对角化)**, $A$ 正交相似于对角矩阵 $D_{A}$, 且 $D_{A}$ 的主对角元是 $A$ 的全部特征值 (计重数).
 
-证明: 数域 $K$ 上奇数级斜对称矩阵的行列式等于零.
+同理, $B$ 正交相似于对角矩阵 $D_{B}$, 且 $D_{B}$ 的主对角元是 $B$ 的全部特征值 (计重数).
 
-### 解答 4.2-10
+因为 $A,B$ 有相同的特征多项式, 所以它们有相同的特征值 (计重数).
 
-设 $A$ 是 $n$ 级斜对称矩阵, $n$ 为奇数.
+因此 $D_{A}$ 与 $D_{B}$ 的主对角元相同 (至多排列次序不同).
 
-由**定义 4.2.6 (斜对称矩阵)**, 则 $A^{\top}=-A$.
+通过交换 $D_{B}$ 的主对角元的次序, 可使 $D_{A}=D_{B}$.
 
-$$
-\left|A^{\top}\right|=\left|-A\right|.
-$$
-
-因为 $\left|A^{\top}\right|=\left|A\right|$, 且 $\left|-A\right|=\left(-1\right)^{n}\left|A\right|$.
-
-所以
-
-$$
-\left|A\right|=\left(-1\right)^{n}\left|A\right|.
-$$
-
-因为 $n$ 为奇数, 故 $\left(-1\right)^{n}=-1$.
+交换主对角元的次序相当于用一个正交矩阵 $Q$ 作相似变换: $Q^{\top}D_{B}Q=D_{A}$.
 
 因此
 
 $$
-\left|A\right|=-\left|A\right|\Rightarrow 2\left|A\right|=0\Rightarrow \left|A\right|=0.
+A\sim D_{A}=D_{B}\sim B.
 $$
 
-$\blacksquare$
+所以 $A$ 与 $B$ 相似. $\blacksquare$
+
+## 5.7-3
+
+证明: 如果实矩阵 $A$ 正交相似于对角矩阵, 则 $A$ 一定是对称矩阵.
+
+### 解答 5.7-3
+
+设 $A$ 正交相似于对角矩阵 $D$, 即存在正交矩阵 $T$, 使得
+
+$$
+T^{\top}AT=D.
+$$
+
+则
+
+$$
+A=TDT^{\top}.
+$$
+
+因为 $D$ 是对角矩阵, 故 $D^{\top}=D$.
+
+因此
+
+$$
+A^{\top}=\left(TDT^{\top}\right)^{\top}=TD^{\top}T^{\top}=TDT^{\top}=A.
+$$
+
+所以 $A$ 是对称矩阵. $\blacksquare$
+
+## 6.1-3(1)
+
+作非退化线性替换把下列数域 $K$ 上二次型化成标准形, 并且写出所作的非退化线性替换:
+
+$$
+f\left(x_{1},x_{2},x_{3}\right)=x_{1}^{2}+2x_{2}^{2}+2x_{1}x_{2}-2x_{1}x_{3}.
+$$
+
+### 解答 6.1-3(1)
+
+由**定理 6.1.3 (二次型的标准形)**, 用配方法:
+
+$$
+f
+=x_{1}^{2}+2x_{1}x_{2}-2x_{1}x_{3}+2x_{2}^{2}=\left(x_{1}+x_{2}-x_{3}\right)^{2}-\left(x_{2}-x_{3}\right)^{2}+2x_{2}^{2}=\left(x_{1}+x_{2}-x_{3}\right)^{2}+x_{2}^{2}+2x_{2}x_{3}-x_{3}^{2}=\left(x_{1}+x_{2}-x_{3}\right)^{2}+\left(x_{2}+x_{3}\right)^{2}-2x_{3}^{2}.
+$$
+
+令
+
+$$
+\begin{cases}
+y_{1}=x_{1}+x_{2}-x_{3},\\
+y_{2}=x_{2}+x_{3},\\
+y_{3}=x_{3}.
+\end{cases}
+$$
+
+则
+
+$$
+\begin{cases}
+x_{1}=y_{1}-y_{2}+2y_{3},\\
+x_{2}=y_{2}-y_{3},\\
+x_{3}=y_{3}.
+\end{cases}
+$$
+
+因此
+
+$$
+f=y_{1}^{2}+y_{2}^{2}-2y_{3}^{2}.
+$$
+
+非退化线性替换 $X=CY$, 其中
+
+$$
+C=\left[\begin{array}{rrr}
+1 & -1 & 2\\
+0 & 1 & -1\\
+0 & 0 & 1
+\end{array}\right].
+$$
+
+$f=y_{1}^{2}+y_{2}^{2}-2y_{3}^{2}$ 是标准形. $\blacksquare$
+
+## 6.1-5
+
+设 $A$ 是数域 $K$ 上的 $n$ 级矩阵, 证明: $A$ 是斜对称矩阵当且仅当对于 $K^{n}$ 中任一列向量 $\alpha$, 有 $\alpha^{\top}A\alpha=0$.
+
+### 解答 6.1-5
+
+由**定义 6.1.1 (二次型)**, $A$ 是数域 $K$ 上的 $n$ 级矩阵.
+
+**必要性**. 若 $A$ 是斜对称矩阵, 即 $A^{\top}=-A$.
+
+则 $\alpha^{\top}A\alpha$ 是一个数, 其转置等于自身:
+
+$$
+\left(\alpha^{\top}A\alpha\right)^{\top}=\alpha^{\top}A^{\top}\alpha=\alpha^{\top}\left(-A\right)\alpha=-\alpha^{\top}A\alpha.
+$$
+
+但 $\left(\alpha^{\top}A\alpha\right)^{\top}=\alpha^{\top}A\alpha$ (因为它是一个数).
+
+因此
+
+$$
+\alpha^{\top}A\alpha=-\alpha^{\top}A\alpha,
+$$
+
+即 $2\alpha^{\top}A\alpha=0$, 故 $\alpha^{\top}A\alpha=0$.
+
+**充分性**. 若对于任一列向量 $\alpha$, $\alpha^{\top}A\alpha=0$.
+
+要证明 $A$ 是斜对称矩阵, 即 $A^{\top}=-A$, 即 $A+A^{\top}=0$.
+
+因为 $\left(A+A^{\top}\right)$ 是对称矩阵.
+
+对于任一列向量 $\alpha$,
+
+$$
+\alpha^{\top}\left(A+A^{\top}\right)\alpha=\alpha^{\top}A\alpha+\alpha^{\top}A^{\top}\alpha=0+\left(\alpha^{\top}A\alpha\right)^{\top}=0+0=0.
+$$
+
+即对于任一列向量 $\alpha$, $\alpha^{\top}\left(A+A^{\top}\right)\alpha=0$.
+
+因为 $\left(A+A^{\top}\right)$ 是对称矩阵, 且对于任一列向量 $\alpha$, $\alpha^{\top}\left(A+A^{\top}\right)\alpha=0$.
+
+由对称矩阵的性质 (对称矩阵如果对任意 $\alpha$ 都有 $\alpha^{\top}A\alpha=0$, 则 $A=0$ ), 可知 $A+A^{\top}=0$.
+
+因此 $A^{\top}=-A$, 即 $A$ 是斜对称矩阵. $\blacksquare$

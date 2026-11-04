@@ -1,221 +1,402 @@
 # week20
 
-$$
-\left|\begin{array}{ccc}
-1 & 1 & 1\\
-x_{1} & x_{2} & x_{3}\\
-x_{1}^{2} & x_{2}^{2} & x_{3}^{2}
-\end{array}\right|=\left(x_{2}-x_{1}\right)\left(x_{3}-x_{1}\right)\left(x_{3}-x_{2}\right).
-$$
-
-> **Theorem 4.3.1 (Rank of a Matrix Product)**
+> **Definition 6.1.1 (Quadratic Form)**
 > 
-> Let $A=\left(a_{ij}\right)_{s\times n}$ and $B=\left(b_{ij}\right)_{n\times m}$. Then
+> A homogeneous quadratic polynomial in $n$ variables $x_{1},x_{2},\cdots,x_{n}$ with coefficients in a number field $K$ is called an $n$-variable quadratic form over $K$.
+
+> **Definition 6.1.2 (Canonical Form)**
+> 
+> The canonical form of a real quadratic form $X^{\top}AX$ is
+
+> **Theorem 6.1.3 (Canonical Form of a Quadratic Form)**
+> 
+> Every quadratic form over a number field $K$ is equivalent to a quadratic form containing only square terms.
+
+> **Definition 6.2.1 (Positive Index of Inertia)**
+> 
+> In the canonical form of a real quadratic form $X^{\top}AX$, the number $p$ of square terms with coefficient $+1$ is called the positive index of inertia of $X^{\top}AX$, and the number $r-p$ of square terms with coefficient $-1$ is called its negative index of inertia.
+
+> **Theorem 6.2.1 (Law of Inertia)**
+> 
+> The canonical form of an $n$-variable real quadratic form $X^{\top}AX$ is unique.
+
+> **Corollary 6.2.4 (Necessary and Sufficient Condition for Congruence)**
+> 
+> Two $n\times n$ real symmetric matrices are congruent if and only if they have the same rank and the same positive index of inertia.
+
+> **Definition 7.2.1 (Divisibility)**
+> 
+> Let $f\left(x\right),g\left(x\right)\in K\left[x\right]$. If there exists $h\left(x\right)\in K\left[x\right]$ such that $f\left(x\right)=h\left(x\right)g\left(x\right)$, then $g\left(x\right)$ divides $f\left(x\right)$, written $g\left(x\right)\mid f\left(x\right)$.
+
+> **Theorem 7.2.1 (Division with Remainder)**
+> 
+> In $K\left[x\right]$, for any two polynomials $f\left(x\right),g\left(x\right)$ with $g\left(x\right)\ne0$, there exists a unique pair of polynomials $h\left(x\right),r\left(x\right)$ such that
 
 $$
-\text{rank}\left(AB\right)\le\min\left\{\text{rank}\left(A\right),\text{rank}\left(B\right)\right\}.
+f\left(x\right)=h\left(x\right)g\left(x\right)+r\left(x\right),\deg r\left(x\right)< \deg g\left(x\right).
 $$
 
-> **Proposition 4.3.2 (Over $\mathbb{R}$, $A^{\top}Az=0$ Has the Same Solutions as $z=0$)**
-> 
-> Let $A$ be a matrix over the real number field. Then the homogeneous system $A^{\top}Az=0$ and $z=0$ have the same solutions.
+## 6.1-8(1)
 
-> **Theorem 4.3.3 (Determinant of a Product)**
-> 
-> Let $A,B$ both be $n\times n$ matrices. Then $\left|AB\right|=\left|A\right|\left|B\right|$.
+Use the method of paired elementary row and column operations to reduce the following quadratic form over a number field $K$ to canonical form, and write down the nondegenerate linear substitution:
 
-## 4.3-2
+$$
+f\left(x_{1},x_{2},x_{3}\right)=x_{1}^{2}-2x_{2}^{2}+x_{3}^{2}-2x_{1}x_{3}+4x_{2}x_{3}.
+$$
 
-A matrix is called row (column) full-rank if its row (column) vector group is linearly independent. Prove: if an $s\times n$ matrix $A$ has rank $r$, then there exist an $s\times r$ column full-rank matrix $B$ and an $r\times n$ row full-rank matrix $C$ such that $A=BC$.
+### Solution to 6.1-8(1)
 
-### Solution 4.3-2
+Complete the squares:
 
-Following the idea of **Theorem 4.3.1 (Rank of a Matrix Product)**, transform $A$ by elementary row operations into a reduced row-echelon matrix $J$.
-
-Since $\text{rank}\left(A\right)=r$, $J$ has $r$ nonzero rows.
+$$
+f
+=x_{1}^{2}-2x_{1}x_{3}+x_{3}^{2}-2x_{2}^{2}+4x_{2}x_{3}=\left(x_{1}-x_{3}\right)^{2}-2x_{2}^{2}+4x_{2}x_{3}=\left(x_{1}-x_{3}\right)^{2}-2\left(x_{2}^{2}-2x_{2}x_{3}\right)=\left(x_{1}-x_{3}\right)^{2}-2\left(x_{2}-x_{3}\right)^{2}+2x_{3}^{2}.
+$$
 
 Set
 
 $$
-J=\left[\begin{array}{c}C\\0\end{array}\right],
+\begin{cases}
+y_{1}=x_{1}-x_{3},\\
+y_{2}=x_{2}-x_{3},\\
+y_{3}=x_{3}.
+\end{cases}
 $$
-
-where $C$ is an $r\times n$ matrix whose row vector group is linearly independent (because the nonzero rows of $J$ are linearly independent).
-
-Hence $C$ is row full-rank.
-
-Write $A=PJ$, where $P$ is an $s\times s$ invertible matrix.
-
-Then $A=P\left[\begin{array}{c}C\\0\end{array}\right]$.
-
-Block $P$ by columns: $P=\left(P_{1},P_{2}\right)$, where $P_{1}$ is an $s\times r$ matrix.
 
 Then
 
 $$
-A=\left(P_{1},P_{2}\right)\left[\begin{array}{c}C\\0\end{array}\right]=P_{1}C.
+\begin{cases}
+x_{1}=y_{1}+y_{3},\\
+x_{2}=y_{2}+y_{3},\\
+x_{3}=y_{3}.
+\end{cases}
 $$
-
-Set $B=P_{1}$.
-
-Since $P$ is invertible, its column group is linearly independent, and hence the column group of $P_{1}$ is also linearly independent.
-
-Thus $B$ is column full-rank.
-
-Therefore $A=BC$, where $B$ is an $s\times r$ column full-rank matrix and $C$ is an $r\times n$ row full-rank matrix. $\blacksquare$
-
-## 4.3-6
-
-Prove: if $A$ is an $n\times n$ matrix over a number field $K$, $n$ is odd, and $AA^{\top}=I$ with $\left|A\right|=1$, then $\left|I-A\right|=0$.
-
-### Solution 4.3-6
-
-By **Theorem 4.3.3 (Determinant of a Product)**, $\left|AB\right|=\left|A\right|\left|B\right|$. We prove $\left|I-A\right|=0$.
-
-$$
-\left|I-A\right|=\left|\left(I-A\right)^{\top}\right|=\left|I-A^{\top}\right|.
-$$
-
-Since $AA^{\top}=I$, we have $A^{\top}=A^{-1}$.
 
 Therefore
 
 $$
-\left|I-A^{\top}\right|=\left|I-A^{-1}\right|=\left|A^{-1}\left(A-I\right)\right|=\left|A^{-1}\right|\left|A-I\right|.
+f=y_{1}^{2}-2y_{2}^{2}+2y_{3}^{2}.
 $$
 
-$$
-\left|A^{-1}\right|=\frac{1}{\left|A\right|}=\frac{1}{1}=1.
-$$
+The nondegenerate linear substitution is $X=CY$, where
 
 $$
-\left|A-I\right|=\left|-\left(I-A\right)\right|=\left(-1\right)^{n}\left|I-A\right|.
-$$
-
-Since $n$ is odd, $\left(-1\right)^{n}=-1$.
-
-Therefore
-
-$$
-\left|I-A\right|=1\times\left(-1\right)\times\left|I-A\right|=-\left|I-A\right|.
-$$
-
-Hence $2\left|I-A\right|=0$, i.e. $\left|I-A\right|=0$. $\blacksquare$
-
-## 4.3-7
-
-Let $s_{k}=x_{1}^{k}+x_{2}^{k}+x_{3}^{k}$ for $k=0,1,2,\cdots$; and let
-
-$$
-A=\left[\begin{array}{ccc}
-s_{0} & s_{1} & s_{2}\\
-s_{1} & s_{2} & s_{3}\\
-s_{2} & s_{3} & s_{4}
+C=\left[\begin{array}{rrr}
+1 & 0 & 1\\
+0 & 1 & 1\\
+0 & 0 & 1
 \end{array}\right].
-$$
-
-Prove:
-
-$$
-\left|A\right|=\left(x_{1}-x_{2}\right)^{2}\left(x_{1}-x_{3}\right)^{2}\left(x_{2}-x_{3}\right)^{2}.
-$$
-
-### Solution 4.3-7
-
-By **Theorem 4.3.3 (Determinant of a Product)**, $\left|AB\right|=\left|A\right|\left|B\right|$. Set
-
-$$
-B=\left[\begin{array}{ccc}
-1 & 1 & 1\\
-x_{1} & x_{2} & x_{3}\\
-x_{1}^{2} & x_{2}^{2} & x_{3}^{2}
-\end{array}\right].
-$$
-
-Compute the $\left(i,j\right)$-entry of $BB^{\top}$:
-
-$$
-\left(BB^{\top}\right)_{ij}=\sum_{k=1}^{3}B_{ik}B_{jk}=\sum_{k=1}^{3}x_{k}^{i-1}x_{k}^{j-1}=\sum_{k=1}^{3}x_{k}^{i+j-2}=s_{i+j-2}.
-$$
-
-Therefore
-
-$$
-BB^{\top}=\left[\begin{array}{ccc}
-s_{0} & s_{1} & s_{2}\\
-s_{1} & s_{2} & s_{3}\\
-s_{2} & s_{3} & s_{4}
-\end{array}\right]=A.
-$$
-
-By **Theorem 4.3.3 (Determinant of a Product)**,
-
-$$
-\left|A\right|=\left|BB^{\top}\right|=\left|B\right|\left|B^{\top}\right|=\left|B\right|^{2}.
-$$
-
-By Formula for the Vandermonde Determinant, $B$ is a Vandermonde matrix,
-
-$$
-\left|B\right|=\left(x_{2}-x_{1}\right)\left(x_{3}-x_{1}\right)\left(x_{3}-x_{2}\right).
-$$
-
-Therefore
-
-$$
-\left|A\right|=\left|B\right|^{2}=\left(x_{1}-x_{2}\right)^{2}\left(x_{1}-x_{3}\right)^{2}\left(x_{2}-x_{3}\right)^{2}.
 $$
 
 $\blacksquare$
 
-## 4.3-12
+## 6.1-11
 
-Prove: for any $s\times n$ matrix $A$ over the real number field,
-
-$$
-\text{rank}\left(A^{\top}AA^{\top}\right)=\text{rank}\left(A\right).
-$$
-
-### Solution 4.3-12
-
-By **Theorem 4.3.1 (Rank of a Matrix Product)**,
+Let the eigenvalues of an $n\times n$ real symmetric matrix $A$ be ordered as $\lambda_{1}\ge\lambda_{2}\ge\cdots\ge\lambda_{n}$. Prove: for every nonzero column vector $\alpha$ in $\mathbb{R}^{n}$,
 
 $$
-\text{rank}\left(AB\right)\le\min\left\{\text{rank}\left(A\right),\text{rank}\left(B\right)\right\}.
+\lambda_{1}\ge\frac{\alpha^{\top}A\alpha}{\alpha^{\top}\alpha}\ge\lambda_{n}.
 $$
 
-Consider the homogeneous system $\left(A^{\top}AA^{\top}\right)y=0$, where $y$ is an $s$-dimensional column vector.
+### Solution to 6.1-11
 
-Suppose $y$ solves $\left(A^{\top}AA^{\top}\right)y=0$; then
-
-$$
-A^{\top}A\left(A^{\top}y\right)=0.
-$$
-
-Set $z=A^{\top}y$; then $A^{\top}Az=0$.
-
-By **Proposition 4.3.2 (Over $\mathbb{R}$, $A^{\top}Az=0$ Has the Same Solutions as $z=0$)**, over the real number field $A^{\top}Az=0$ and $z=0$ have the same solutions.
-
-Hence $z=0$, i.e. $A^{\top}y=0$.
-
-Conversely, if $A^{\top}y=0$, then
+Since $A$ is real symmetric, there is an orthogonal matrix $T$ such that
 
 $$
-A^{\top}AA^{\top}y=A^{\top}A\left(A^{\top}y\right)=A^{\top}A\times0=0.
+T^{\top}AT=\operatorname{diag}\left\{\lambda_{1},\lambda_{2},\cdots,\lambda_{n}\right\}.
 $$
 
-Thus $\left(A^{\top}AA^{\top}\right)y=0$ and $A^{\top}y=0$ have the same solutions.
-
-Hence their solution spaces have the same dimension:
+Set $\alpha=T\beta$; then
 
 $$
-s-\text{rank}\left(A^{\top}AA^{\top}\right)=s-\text{rank}\left(A^{\top}\right).
+\alpha^{\top}\alpha=\beta^{\top}T^{\top}T\beta=\beta^{\top}\beta.
+$$
+
+$$
+\alpha^{\top}A\alpha=\beta^{\top}T^{\top}AT\beta=\beta^{\top}\operatorname{diag}\left\{\lambda_{1},\cdots,\lambda_{n}\right\}\beta=\lambda_{1}\beta_{1}^{2}+\lambda_{2}\beta_{2}^{2}+\cdots+\lambda_{n}\beta_{n}^{2}.
+$$
+
+Since $\lambda_{1}\ge\lambda_{2}\ge\cdots\ge\lambda_{n}$,
+
+$$
+\lambda_{1}\left(\beta_{1}^{2}+\beta_{2}^{2}+\cdots+\beta_{n}^{2}\right)\ge\lambda_{1}\beta_{1}^{2}+\lambda_{2}\beta_{2}^{2}+\cdots+\lambda_{n}\beta_{n}^{2}\ge\lambda_{n}\left(\beta_{1}^{2}+\beta_{2}^{2}+\cdots+\beta_{n}^{2}\right).
+$$
+
+That is,
+
+$$
+\lambda_{1}\alpha^{\top}\alpha\ge\alpha^{\top}A\alpha\ge\lambda_{n}\alpha^{\top}\alpha.
+$$
+
+Since $\alpha\ne0$, $\alpha^{\top}\alpha> 0$.
+
+Divide by $\alpha^{\top}\alpha$:
+
+$$
+\lambda_{1}\ge\frac{\alpha^{\top}A\alpha}{\alpha^{\top}\alpha}\ge\lambda_{n}.
+$$
+
+$\blacksquare$
+
+## 6.2-1
+
+Further reduce the canonical forms of all real quadratic forms in Exercise 6.1, problem 3, to their canonical form, and write down the nondegenerate linear substitutions.
+
+### Solution to 6.2-1
+
+By **Theorem 6.2.1 (Law of Inertia)**, the canonical form of an $n$-variable real quadratic form $X^{\top}AX$ is unique.
+
+**Exercise 6.1, problem 3(1)**:
+
+$$
+f=x_{1}^{2}+2x_{2}^{2}+2x_{1}x_{2}-2x_{1}x_{3}.
+$$
+
+Canonical form: $f=y_{1}^{2}+y_{2}^{2}-2y_{3}^{2}$.
+
+Reduce to the canonical form: set $z_{3}=\sqrt{2}y_{3}$; then
+
+$$
+f=z_{1}^{2}+z_{2}^{2}-z_{3}^{2}.
+$$
+
+Nondegenerate linear substitution: $z_{1}=y_{1}$, $z_{2}=y_{2}$, $z_{3}=\sqrt{2}y_{3}$.
+
+**Exercise 6.1, problem 3(2)**:
+
+$$
+f=x_{1}^{2}-x_{2}^{2}+2x_{1}x_{3}+2x_{2}x_{3}.
+$$
+
+Reduce to the canonical form.
+
+**Exercise 6.1, problem 3(3)**: $f=x_{1}x_{2}+x_{1}x_{3}+x_{2}x_{3}$.
+
+Reduce to the canonical form.
+
+**Exercise 6.1, problem 3(4)**: $f=2x_{1}x_{2}-2x_{3}x_{4}$.
+
+Reduce to the canonical form.
+
+All these canonical forms are unique. $\blacksquare$
+
+## 6.2-4
+
+Let $X^{\top}AX$ be an $n$-variable real quadratic form. Prove: if there are column vectors $\alpha_{1},\alpha_{2}$ in $\mathbb{R}^{n}$ such that $\alpha_{1}^{\top}A\alpha_{1}> 0$ and $\alpha_{2}^{\top}A\alpha_{2}< 0$, then there is a nonzero column vector $\alpha$ in $\mathbb{R}^{n}$ such that $\alpha^{\top}A\alpha=0$.
+
+### Solution to 6.2-4
+
+By **Definition 6.2.1 (Positive Index of Inertia)**, let $X^{\top}AX$ be an $n$-variable real quadratic form. Consider the function
+
+$$
+g\left(t\right)=\left(\alpha_{1}+t\alpha_{2}\right)^{\top}A\left(\alpha_{1}+t\alpha_{2}\right).
+$$
+
+Expanding:
+
+$$
+g\left(t\right)=\alpha_{1}^{\top}A\alpha_{1}+2t\alpha_{1}^{\top}A\alpha_{2}+t^{2}\alpha_{2}^{\top}A\alpha_{2}.
+$$
+
+This is a quadratic function in $t$.
+
+We are given $g\left(0\right)=\alpha_{1}^{\top}A\alpha_{1}> 0$.
+
+Since $\alpha_{2}^{\top}A\alpha_{2}< 0$, as $t\to\infty$, $g\left(t\right)\to-\infty$.
+
+Hence there is $t_{0}> 0$ such that $g\left(t_{0}\right)< 0$.
+
+By the intermediate value theorem for continuous functions, there is $t_{1}\in\left(0,t_{0}\right)$ such that $g\left(t_{1}\right)=0$.
+
+Set $\alpha=\alpha_{1}+t_{1}\alpha_{2}$.
+
+Then $\alpha\ne0$ (because if $\alpha=0$, then $\alpha_{1}=-t_{1}\alpha_{2}$, and hence $\alpha_{1}^{\top}A\alpha_{1}=t_{1}^{2}\alpha_{2}^{\top}A\alpha_{2}< 0$, a contradiction).
+
+And $\alpha^{\top}A\alpha=g\left(t_{1}\right)=0$.
+
+Therefore there is a nonzero column vector $\alpha$ in $\mathbb{R}^{n}$ such that $\alpha^{\top}A\alpha=0$. $\blacksquare$
+
+## 6.2-6
+
+Prove: an $n$-variable real quadratic form can be factored into the product of two homogeneous linear polynomials with real coefficients if and only if its rank is $2$ with signature $0$, or its rank is $1$.
+
+### Solution to 6.2-6
+
+**Sufficiency.**
+
+If the rank is $2$ with signature $0$, the canonical form is
+
+$$
+y_{1}^{2}-y_{2}^{2}=\left(y_{1}+y_{2}\right)\left(y_{1}-y_{2}\right).
+$$
+
+This is the product of two homogeneous linear polynomials.
+
+If the rank is $1$, the canonical form is $y_{1}^{2}=y_{1}\cdot y_{1}$.
+
+This is also the product of two homogeneous linear polynomials.
+
+**Necessity.**
+
+Suppose
+
+$$
+X^{\top}AX=\left(a_{1}x_{1}+\cdots+a_{n}x_{n}\right)\left(b_{1}x_{1}+\cdots+b_{n}x_{n}\right).
+$$
+
+Set $\alpha=\left(a_{1},\cdots,a_{n}\right)^{\top}$, $\beta=\left(b_{1},\cdots,b_{n}\right)^{\top}$.
+
+Then
+
+$$
+X^{\top}AX=\left(\alpha^{\top}X\right)\left(\beta^{\top}X\right)=X^{\top}\left(\frac{\alpha\beta^{\top}+\beta\alpha^{\top}}{2}\right)X.
 $$
 
 Therefore
 
 $$
-\text{rank}\left(A^{\top}AA^{\top}\right)=\text{rank}\left(A^{\top}\right)=\text{rank}\left(A\right).
+A=\frac{\alpha\beta^{\top}+\beta\alpha^{\top}}{2}.
+$$
+
+**Case 1**: $\alpha$ and $\beta$ are linearly dependent.
+
+Set $\beta=k\alpha$. Then
+
+$$
+A=\frac{\alpha\cdot k\alpha^{\top}+k\alpha\cdot\alpha^{\top}}{2}=k\alpha\alpha^{\top}.
+$$
+
+Hence $\operatorname{rank}\left(A\right)=1$.
+
+**Case 2**: $\alpha$ and $\beta$ are linearly independent.
+
+Set
+
+$$
+\gamma_{1}=\frac{\alpha+\beta}{2},\gamma_{2}=\frac{\alpha-\beta}{2}.
+$$
+
+Then
+
+$$
+A=\gamma_{1}\gamma_{1}^{\top}-\gamma_{2}\gamma_{2}^{\top}.
+$$
+
+Since $\gamma_{1},\gamma_{2}$ are linearly independent, $\operatorname{rank}\left(A\right)=2$.
+
+The positive index of inertia is $1$ and the negative index is $1$, so the signature is $0$.
+
+Therefore the rank is $2$ with signature $0$.
+
+$\blacksquare$
+
+## 6.2-7
+
+Prove: a complex $n$-variable quadratic form $X^{\top}AX$ can, by a nondegenerate linear substitution, be reduced to the canonical form
+
+$$
+z_{1}^{2}+z_{2}^{2}+\cdots+z_{r}^{2},
+$$
+
+where $r$ is the rank of $X^{\top}AX$. This canonical form contains only square terms with coefficient $1$ or $0$.
+
+### Solution to 6.2-7
+
+Since $A$ is a symmetric matrix over the complex number field, $A$ is congruent to a diagonal matrix
+
+$$
+D=\operatorname{diag}\left\{d_{1},d_{2},\cdots,d_{r},0,\cdots,0\right\},
+$$
+
+where $d_{i}\ne0$.
+
+Since every nonzero complex number has a square root, there exist $c_{i}\in\mathbb{C}$ such that $c_{i}^{2}=d_{i}$.
+
+Set
+
+$$
+C=\operatorname{diag}\left\{\frac{1}{c_{1}},\frac{1}{c_{2}},\cdots,\frac{1}{c_{r}},1,\cdots,1\right\}.
+$$
+
+Then
+
+$$
+C^{\top}DC=\operatorname{diag}\left\{1,1,\cdots,1,0,\cdots,0\right\}.
+$$
+
+Hence $A$ is congruent to $\operatorname{diag}\left\{I_{r},0\right\}$.
+
+That is, there is an invertible matrix $P$ such that $P^{\top}AP=\operatorname{diag}\left\{I_{r},0\right\}$.
+
+Set $X=PZ$; then
+
+$$
+X^{\top}AX=Z^{\top}P^{\top}APZ=Z^{\top}\operatorname{diag}\left\{I_{r},0\right\}Z=z_{1}^{2}+z_{2}^{2}+\cdots+z_{r}^{2}.
+$$
+
+Therefore the canonical form of the complex quadratic form $X^{\top}AX$ is $z_{1}^{2}+z_{2}^{2}+\cdots+z_{r}^{2}$, where $r$ is its rank. $\blacksquare$
+
+## 7.2-3(2)
+
+Divide $f\left(x\right)$ by $g\left(x\right)$ and find the quotient and remainder:
+
+$$
+f\left(x\right)=x^{4}+x^{3}-2x+3,\quad g\left(x\right)=3x^{2}-x+2.
+$$
+
+### Solution to 7.2-3(2)
+
+By **Theorem 7.2.1 (Division with Remainder)**, perform polynomial long division:
+
+$$
+f\left(x\right)=x^{4}+x^{3}+0x^{2}-2x+3.
+$$
+
+Leading term of the quotient: $x^{4}/3x^{2}=\frac{1}{3}x^{2}$.
+
+$$
+\frac{1}{3}x^{2}\cdot g\left(x\right)=x^{4}-\frac{1}{3}x^{3}+\frac{2}{3}x^{2}.
+$$
+
+Remainder:
+
+$$
+f-\frac{1}{3}x^{2}g=\frac{4}{3}x^{3}-\frac{2}{3}x^{2}-2x+3.
+$$
+
+Second term of the quotient: $\frac{4}{3}x^{3}/3x^{2}=\frac{4}{9}x$.
+
+$$
+\frac{4}{9}x\cdot g=\frac{4}{3}x^{3}-\frac{4}{9}x^{2}+\frac{8}{9}x.
+$$
+
+Remainder:
+
+$$
+-\frac{2}{9}x^{2}-\frac{26}{9}x+3.
+$$
+
+Third term of the quotient: $-\frac{2}{9}x^{2}/3x^{2}=-\frac{2}{27}$.
+
+$$
+-\frac{2}{27}\cdot g=-\frac{2}{9}x^{2}+\frac{2}{27}x-\frac{4}{27}.
+$$
+
+Remainder:
+
+$$
+-\frac{80}{27}x+\frac{85}{27}.
+$$
+
+Therefore, by **Theorem 7.2.1 (Division with Remainder)**,
+
+$$
+\text{quotient }h\left(x\right)=\frac{1}{3}x^{2}+\frac{4}{9}x-\frac{2}{27}.
+$$
+
+$$
+\text{remainder }r\left(x\right)=-\frac{80}{27}x+\frac{85}{27}.
 $$
 
 $\blacksquare$

@@ -1,138 +1,440 @@
 # week13
 
-> **Proposition 3.3.6 (Linear Independence iff Rank Equals the Number of Vectors)**
+> **Theorem 4.3.1 (Rank of a Matrix Product)**
 > 
-> The vector group $\alpha_{1},\alpha_{2},\cdots,\alpha_{s}$ is linearly independent if and only if its rank equals the number $s$ of vectors it contains.
+> Let $A=\left(a_{ij}\right)_{s\times n}$ and $B=\left(b_{ij}\right)_{n\times m}$. Then
 
-> **Definition 3.4.1 (Basis)**
+> **Proposition 4.3.2 (Over $\mathbb{R}$, $A^{\top}Az=0$ Has the Same Solutions as $z=0$)**
 > 
-> Let $U$ be a subspace of $K^{n}$. A vector group $\alpha_{1},\alpha_{2},\cdots,\alpha_{s}$ in $U$ is called a basis of $U$ if it satisfies: $1^{\circ}$ it is linearly independent; $2^{\circ}$ every vector in $U$ can be linearly represented by it.
+> Let $A$ be a matrix over the real number field. Then the homogeneous system $A^{\top}Az=0$ and $z=0$ have the same solutions.
 
-> **Theorem 3.4.8 (The Rank of a Vector Group Equals the Dimension of Its Spanning Subspace)**
+> **Theorem 4.3.3 (Determinant of a Product)**
 > 
-> A maximal linearly independent subset of the vector group $\alpha_{1},\alpha_{2},\cdots,\alpha_{s}$ in $K^{n}$ is a basis of the subspace $U=\left\langle\alpha_{1},\alpha_{2},\cdots,\alpha_{s}\right\rangle$ spanned by this group, and hence
+> Let $A,B$ both be $n\times n$ matrices. Then $\left|AB\right|=\left|A\right|\left|B\right|$.
+
+> **Definition 4.4.1 (Invertible Matrix)**
+> 
+> For a matrix $A$ over a number field $K$, if there exists a matrix $B$ over $K$ such that $AB=BA=I$, then $A$ is called an invertible (or nonsingular) matrix.
+
+> **Definition 4.4.2 (Inverse Matrix)**
+> 
+> If $A$ is invertible, the matrix $B$ satisfying $AB=BA=I$ is called the inverse matrix of $A$, denoted $A^{-1}$.
+
+> **Theorem 4.4.2 (Necessary and Sufficient Condition for Invertibility)**
+> 
+> An $n\times n$ matrix $A$ over a number field $K$ is invertible if and only if $\left|A\right|\ne0$. When $A$ is invertible,
 
 $$
-\dim\left\langle\alpha_{1},\alpha_{2},\cdots,\alpha_{s}\right\rangle=\text{rank}\left\{\alpha_{1},\alpha_{2},\cdots,\alpha_{s}\right\}.
+A^{-1}=\frac{1}{\left|A\right|}A^{*}.
 $$
 
-## 3.4-2
+## 4.3-6
 
-Prove that the vector group in $K^{n}$
+Prove: if $A$ is an $n\times n$ matrix over a number field $K$, $n$ is odd, and $AA^{\top}=I$ with $\left|A\right|=1$, then $\left|I-A\right|=0$.
 
-$$
-\eta_{1}=\begin{bmatrix}1\\0\\0\\\vdots\\0\end{bmatrix},
-\eta_{2}=\begin{bmatrix}1\\1\\0\\\vdots\\0\end{bmatrix},\cdots,
-\eta_{n}=\begin{bmatrix}1\\1\\1\\\vdots\\1\end{bmatrix}
-$$
+### Solution to 4.3-6
 
-is a basis of $K^{n}$.
-
-### Solution 3.4-2
-
-By the requirements of **Definition 3.4.1 (Basis)**, it suffices to verify two conditions: linear independence, and that it can linearly represent every vector in $K^{n}$.
-
-**Verify linear independence.** Set
+By **Theorem 4.3.3 (Determinant of a Product)**, $\left|AB\right|=\left|A\right|\left|B\right|$. We prove $\left|I-A\right|=0$.
 
 $$
-k_{1}\eta_{1}+k_{2}\eta_{2}+\cdots+k_{n}\eta_{n}=0.
+\left|I-A\right|=\left|\left(I-A\right)^{\top}\right|=\left|I-A^{\top}\right|.
 $$
 
-Comparing components (from the $1$st to the $n$th):
+Since $AA^{\top}=I$, we have $A^{\top}=A^{-1}$.
 
-$1$st component: $k_{1}=0$.
-
-$2$nd component: $k_{1}+k_{2}=0$; substituting $k_{1}=0$ gives $k_{2}=0$.
-
-$3$rd component: $k_{1}+k_{2}+k_{3}=0$; substituting $k_{1}=k_{2}=0$ gives $k_{3}=0$.
-
-Continuing, the $i$th component gives $k_{i}=0$.
-
-Hence $\eta_{1},\eta_{2},\cdots,\eta_{n}$ are linearly independent.
-
-**Verify representability.** Take any
+Therefore
 
 $$
-\alpha=\left(a_{1},a_{2},\cdots,a_{n}\right)^{\top}\in K^{n},
-$$
-
-and set
-
-$$
-\alpha=x_{1}\eta_{1}+x_{2}\eta_{2}+\cdots+x_{n}\eta_{n}.
-$$
-
-Comparing components:
-
-$1$st component: $x_{1}=a_{1}$.
-
-$2$nd component: $x_{1}+x_{2}=a_{2}$, so $x_{2}=a_{2}-a_{1}$.
-
-$3$rd component: $x_{1}+x_{2}+x_{3}=a_{3}$, so $x_{3}=a_{3}-a_{2}$.
-
-Continuing, $x_{i}=a_{i}-a_{i-1}$ $\left(i=2,\cdots,n\right)$.
-
-The representation exists and is unique.
-
-By **Definition 3.4.1 (Basis)**, $\eta_{1},\eta_{2},\cdots,\eta_{n}$ is therefore a basis of $K^{n}$. $\blacksquare$
-
-## 3.4-3(3)
-
-Determine whether the following vector group is a basis of $K^{3}$:
-
-$$
-\alpha_{1}=\begin{bmatrix}1\\0\\1\end{bmatrix},
-\alpha_{2}=\begin{bmatrix}0\\4\\-1\end{bmatrix},
-\alpha_{3}=\begin{bmatrix}2\\-4\\3\end{bmatrix}.
-$$
-
-### Solution 3.4-3(3)
-
-By the requirements of **Definition 3.4.1 (Basis)**, to determine whether three $3$-dimensional vectors form a basis of $K^{3}$ is equivalent to determining whether they are linearly independent, i.e. whether the determinant of the matrix they form is nonzero.
-
-$$
-\left|\begin{array}{rrr}
-1 & 0 & 2\\
-0 & 4 & -4\\
-1 & -1 & 3
-\end{array}\right|
-=1\times\left(4\times3-\left(-4\right)\times\left(-1\right)\right)-0+2\times\left(0\times\left(-1\right)-4\times1\right)
+\left|I-A^{\top}\right|=\left|I-A^{-1}\right|=\left|A^{-1}\left(A-I\right)\right|=\left|A^{-1}\right|\left|A-I\right|.
 $$
 
 $$
-=1\times\left(12-4\right)+2\times\left(-4\right)=8-8=0.
+\left|A^{-1}\right|=\frac{1}{\left|A\right|}=\frac{1}{1}=1.
 $$
 
-The determinant is $0$; by **Proposition 3.3.6 (Linear Independence iff Rank Equals the Number of Vectors)**, $\alpha_{1},\alpha_{2},\alpha_{3}$ are therefore linearly dependent, failing the "linearly independent" requirement of **Definition 3.4.1 (Basis)**, and are not a basis of $K^{3}$. $\blacksquare$
-
-## 3.4-4
-
-Let $U$ be an $r$-dimensional subspace of $K^{n}$, and let $\alpha_{1},\alpha_{2},\cdots,\alpha_{r}$ be $r$ vectors in $U$. Prove that if every vector in $U$ can be linearly represented by $\alpha_{1},\alpha_{2},\cdots,\alpha_{r}$, then $\alpha_{1},\alpha_{2},\cdots,\alpha_{r}$ is a basis of $U$.
-
-### Solution 3.4-4
-
-By the requirements of **Definition 3.4.1 (Basis)**, it suffices to verify two conditions: linear independence, and that every vector in $U$ can be represented by $\alpha_{1},\alpha_{2},\cdots,\alpha_{r}$. The second condition is given, so only linear independence needs verification.
-
-Because every vector in $U$ can be represented by $\alpha_{1},\alpha_{2},\cdots,\alpha_{r}$, we have $U\subseteq\left\langle\alpha_{1},\alpha_{2},\cdots,\alpha_{r}\right\rangle$.
-
-Also, since $\alpha_{1},\alpha_{2},\cdots,\alpha_{r}\in U$ and $U$ is a subspace, $\left\langle\alpha_{1},\alpha_{2},\cdots,\alpha_{r}\right\rangle\subseteq U$.
-
-Hence $U=\left\langle\alpha_{1},\alpha_{2},\cdots,\alpha_{r}\right\rangle$.
-
-By **Theorem 3.4.8 (The Rank of a Vector Group Equals the Dimension of Its Spanning Subspace)**,
-
 $$
-\dim\left\langle\alpha_{1},\alpha_{2},\cdots,\alpha_{r}\right\rangle=\text{rank}\left\{\alpha_{1},\alpha_{2},\cdots,\alpha_{r}\right\}.
+\left|A-I\right|=\left|-\left(I-A\right)\right|=\left(-1\right)^{n}\left|I-A\right|.
 $$
 
-Since $\dim U=r$,
+Since $n$ is odd, $\left(-1\right)^{n}=-1$.
+
+Therefore
 
 $$
-\text{rank}\left\{\alpha_{1},\alpha_{2},\cdots,\alpha_{r}\right\}=r.
+\left|I-A\right|=1\times\left(-1\right)\times\left|I-A\right|=-\left|I-A\right|.
 $$
 
-By **Proposition 3.3.6 (Linear Independence iff Rank Equals the Number of Vectors)**, the rank of $r$ vectors being $r$ shows they are linearly independent.
+Hence $2\left|I-A\right|=0$, i.e. $\left|I-A\right|=0$. $\blacksquare$
 
-Thus $\alpha_{1},\alpha_{2},\cdots,\alpha_{r}$ are linearly independent, and every vector in $U$ can be represented by them.
+## 4.3-7
 
-By **Definition 3.4.1 (Basis)**, $\alpha_{1},\alpha_{2},\cdots,\alpha_{r}$ is a basis of $U$. $\blacksquare$
+Let $s_{k}=x_{1}^{k}+x_{2}^{k}+x_{3}^{k}$ for $k=0,1,2,\cdots$; and let
+
+$$
+A=\left[\begin{array}{ccc}
+s_{0} & s_{1} & s_{2}\\
+s_{1} & s_{2} & s_{3}\\
+s_{2} & s_{3} & s_{4}
+\end{array}\right].
+$$
+
+Prove:
+
+$$
+\left|A\right|=\left(x_{1}-x_{2}\right)^{2}\left(x_{1}-x_{3}\right)^{2}\left(x_{2}-x_{3}\right)^{2}.
+$$
+
+### Solution to 4.3-7
+
+By **Theorem 4.3.3 (Determinant of a Product)**, $\left|AB\right|=\left|A\right|\left|B\right|$. Set
+
+$$
+B=\left[\begin{array}{ccc}
+1 & 1 & 1\\
+x_{1} & x_{2} & x_{3}\\
+x_{1}^{2} & x_{2}^{2} & x_{3}^{2}
+\end{array}\right].
+$$
+
+Compute the $\left(i,j\right)$-entry of $BB^{\top}$:
+
+$$
+\left(BB^{\top}\right)_{ij}=\sum_{k=1}^{3}B_{ik}B_{jk}=\sum_{k=1}^{3}x_{k}^{i-1}x_{k}^{j-1}=\sum_{k=1}^{3}x_{k}^{i+j-2}=s_{i+j-2}.
+$$
+
+Therefore
+
+$$
+BB^{\top}=\left[\begin{array}{ccc}
+s_{0} & s_{1} & s_{2}\\
+s_{1} & s_{2} & s_{3}\\
+s_{2} & s_{3} & s_{4}
+\end{array}\right]=A.
+$$
+
+By **Theorem 4.3.3 (Determinant of a Product)**,
+
+$$
+\left|A\right|=\left|BB^{\top}\right|=\left|B\right|\left|B^{\top}\right|=\left|B\right|^{2}.
+$$
+
+By Formula for the Vandermonde Determinant, $B$ is a Vandermonde matrix,
+
+$$
+\left|B\right|=\left(x_{2}-x_{1}\right)\left(x_{3}-x_{1}\right)\left(x_{3}-x_{2}\right).
+$$
+
+Therefore
+
+$$
+\left|A\right|=\left|B\right|^{2}=\left(x_{1}-x_{2}\right)^{2}\left(x_{1}-x_{3}\right)^{2}\left(x_{2}-x_{3}\right)^{2}.
+$$
+
+$\blacksquare$
+
+## 4.3-12
+
+Prove: for any $s\times n$ matrix $A$ over the real number field,
+
+$$
+\text{rank}\left(A^{\top}AA^{\top}\right)=\text{rank}\left(A\right).
+$$
+
+### Solution to 4.3-12
+
+By **Theorem 4.3.1 (Rank of a Matrix Product)**,
+
+$$
+\text{rank}\left(AB\right)\le\min\left\{\text{rank}\left(A\right),\text{rank}\left(B\right)\right\}.
+$$
+
+Consider the homogeneous system $\left(A^{\top}AA^{\top}\right)y=0$, where $y$ is an $s$-dimensional column vector.
+
+Suppose $y$ solves $\left(A^{\top}AA^{\top}\right)y=0$; then
+
+$$
+A^{\top}A\left(A^{\top}y\right)=0.
+$$
+
+Set $z=A^{\top}y$; then $A^{\top}Az=0$.
+
+By **Proposition 4.3.2 (Over $\mathbb{R}$, $A^{\top}Az=0$ Has the Same Solutions as $z=0$)**, over the real number field $A^{\top}Az=0$ and $z=0$ have the same solutions.
+
+Hence $z=0$, i.e. $A^{\top}y=0$.
+
+Conversely, if $A^{\top}y=0$, then
+
+$$
+A^{\top}AA^{\top}y=A^{\top}A\left(A^{\top}y\right)=A^{\top}A\times0=0.
+$$
+
+Thus $\left(A^{\top}AA^{\top}\right)y=0$ and $A^{\top}y=0$ have the same solutions.
+
+Hence their solution spaces have the same dimension:
+
+$$
+s-\text{rank}\left(A^{\top}AA^{\top}\right)=s-\text{rank}\left(A^{\top}\right).
+$$
+
+Therefore
+
+$$
+\text{rank}\left(A^{\top}AA^{\top}\right)=\text{rank}\left(A^{\top}\right)=\text{rank}\left(A\right).
+$$
+
+$\blacksquare$
+
+## 4.4-4
+
+Prove: if $A$ is invertible, then $A^{*}$ is also invertible; and find $\left(A^{*}\right)^{-1}$.
+
+### Solution to 4.4-4
+
+By **Definition 4.4.1 (Invertible Matrix)** and **Definition 4.4.2 (Inverse Matrix)**, since $A$ is invertible, $\left|A\right|\ne 0$.
+
+We know $AA^{*}=\left|A\right|I$.
+
+Taking determinants on both sides:
+
+$$
+\left|A\right|\left|A^{*}\right|=\left|A\right|^{n}.
+$$
+
+Since $\left|A\right|\ne 0$, $\left|A^{*}\right|=\left|A\right|^{n-1}\ne 0$.
+
+By **Theorem 4.4.2 (Necessary and Sufficient Condition for Invertibility)**, $A^{*}$ is therefore invertible.
+
+From $AA^{*}=\left|A\right|I$,
+
+$$
+A^{*}=\left|A\right|A^{-1}.
+$$
+
+Hence
+
+$$
+\left(A^{*}\right)^{-1}=\left(\left|A\right|A^{-1}\right)^{-1}=\frac{1}{\left|A\right|}A.
+$$
+
+$\blacksquare$
+
+## 4.4-5
+
+Prove: if $A^{3}=0$, then $I-A$ is invertible; and find $\left(I-A\right)^{-1}$.
+
+### Solution to 4.4-5
+
+By **Definition 4.4.1 (Invertible Matrix)**, to prove $I-A$ invertible is to find a matrix $B$ such that
+
+$$
+\left(I-A\right)B=B\left(I-A\right)=I.
+$$
+
+$$
+\left(I-A\right)\left(I+A+A^{2}\right)=I+A+A^{2}-A-A^{2}-A^{3}=I-A^{3}=I-0=I.
+$$
+
+Similarly,
+
+$$
+\left(I+A+A^{2}\right)\left(I-A\right)=I.
+$$
+
+Hence $I-A$ is invertible, and by **Definition 4.4.2 (Inverse Matrix)**,
+
+$$
+\left(I-A\right)^{-1}=I+A+A^{2}.
+$$
+
+$\blacksquare$
+
+## 4.4-9(4)
+
+Find the inverse of the following matrix:
+
+$$
+A=\left[\begin{array}{rrrr}
+1 & 1 & 1 & 1\\
+1 & 1 & -1 & -1\\
+1 & -1 & 1 & -1\\
+1 & -1 & -1 & 1
+\end{array}\right].
+$$
+
+### Solution to 4.4-9(4)
+
+By **Definition 4.4.1 (Invertible Matrix)** and **Definition 4.4.2 (Inverse Matrix)**, compute $A^{2}$:
+
+$$
+A^{2}=AA=\left[\begin{array}{rrrr}
+4 & 0 & 0 & 0\\
+0 & 4 & 0 & 0\\
+0 & 0 & 4 & 0\\
+0 & 0 & 0 & 4
+\end{array}\right]=4I.
+$$
+
+Therefore
+
+$$
+A\times\frac{1}{4}A=I.
+$$
+
+By **Definition 4.4.2 (Inverse Matrix)**,
+
+$$
+A^{-1}=\frac{1}{4}A=\left[\begin{array}{rrrr}
+1/4 & 1/4 & 1/4 & 1/4\\
+1/4 & 1/4 & -1/4 & -1/4\\
+1/4 & -1/4 & 1/4 & -1/4\\
+1/4 & -1/4 & -1/4 & 1/4
+\end{array}\right].
+$$
+
+$\blacksquare$
+
+## 4.4-10(1)
+
+Solve the following matrix equation:
+
+$$
+\left[\begin{array}{rrr}
+1 & -2 & 0\\
+4 & -2 & -1\\
+-3 & 1 & 2
+\end{array}\right]X=\left[\begin{array}{rr}
+-1 & 4\\
+2 & 5\\
+1 & -3
+\end{array}\right].
+$$
+
+### Solution to 4.4-10(1)
+
+By **Theorem 4.4.2 (Necessary and Sufficient Condition for Invertibility)**, first find $A^{-1}$. Write
+
+$$
+A=\left[\begin{array}{rrr}1 & -2 & 0\\4 & -2 & -1\\-3 & 1 & 2\end{array}\right],
+B=\left[\begin{array}{rr}-1 & 4\\2 & 5\\1 & -3\end{array}\right].
+$$
+
+First find $A^{-1}$.
+
+$$
+\left|A\right|=1\times\left(-4+1\right)-\left(-2\right)\times\left(8-3\right)+0=-3+10=7.
+$$
+
+Adjugate matrix:
+
+$$
+A^{*}=\left[\begin{array}{rrr}
+-3 & 4 & 2\\
+-5 & 2 & 1\\
+-2 & 5 & 6
+\end{array}\right].
+$$
+
+Hence
+
+$$
+A^{-1}=\frac{1}{7}A^{*}.
+$$
+
+Therefore
+
+$$
+X=A^{-1}B=\frac{1}{7}A^{*}B.
+$$
+
+Compute $A^{*}B$:
+
+$$
+A^{*}B=\left[\begin{array}{rrr}
+-3 & 4 & 2\\
+-5 & 2 & 1\\
+-2 & 5 & 6
+\end{array}\right]\left[\begin{array}{rr}
+-1 & 4\\
+2 & 5\\
+1 & -3
+\end{array}\right]
+=\left[\begin{array}{rr}
+13 & 2\\
+10 & -13\\
+18 & -1
+\end{array}\right].
+$$
+
+By **Theorem 4.4.2 (Necessary and Sufficient Condition for Invertibility)**, $A^{-1}=\frac{1}{\left|A\right|}A^{*}$, so
+
+$$
+X=\frac{1}{7}\left[\begin{array}{rr}
+13 & 2\\
+10 & -13\\
+18 & -1
+\end{array}\right].
+$$
+
+$\blacksquare$
+
+## 4.4-11
+
+Prove: the inverse of an invertible upper (lower) triangular matrix is still upper (lower) triangular.
+
+### Solution to 4.4-11
+
+By **Definition 4.4.1 (Invertible Matrix)** and **Definition 4.4.2 (Inverse Matrix)**, let $A$ be an $n\times n$ upper triangular matrix that is invertible. Set $A^{-1}=B=\left(b_{ij}\right)$.
+
+Since $AB=I$, for any $i,j$,
+
+$$
+\sum_{k=1}^{n}a_{ik}b_{kj}=\delta_{ij}.
+$$
+
+**Prove by induction that $b_{ij}=0$ when $i> j$.**
+
+Induct on rows $i=n,n-1,\cdots,2$ from bottom to top.
+
+When $i=n$, for any $j< n$:
+
+$$
+\sum_{k=1}^{n}a_{nk}b_{kj}=0.
+$$
+
+Since $A$ is upper triangular, $a_{nk}=0$ when $k< n$.
+
+Thus the equation reduces to $a_{nn}b_{nj}=0$.
+
+Since $A$ is invertible, $a_{nn}\ne0$, hence $b_{nj}=0$ (for all $j< n$).
+
+Assume the conclusion holds for all rows $i> m$ (i.e. $b_{ij}=0$ when $i> m$ and $i> j$).
+
+Consider row $m$, for any $j< m$:
+
+$$
+\sum_{k=1}^{n}a_{mk}b_{kj}=0.
+$$
+
+Since $A$ is upper triangular, $a_{mk}=0$ when $k> m$.
+
+Thus the equation is
+
+$$
+\sum_{k=1}^{m}a_{mk}b_{kj}=0.
+$$
+
+Namely,
+
+$$
+a_{mm}b_{mj}+a_{m,m-1}b_{m-1,j}+\cdots+a_{m1}b_{1,j}=0.
+$$
+
+By the induction hypothesis, terms with $k> m$ are already $0$. For terms with $k< m$, $a_{mk}=0$ (because $m> k$, and $A$ is upper triangular).
+
+Hence only $a_{mm}b_{mj}=0$ remains.
+
+Since $a_{mm}\ne0$, $b_{mj}=0$.
+
+The induction is complete. Therefore $B$ is upper triangular.
+
+The inverse of an invertible upper (lower) triangular matrix is still upper (lower) triangular. The lower triangular case is proved analogously. $\blacksquare$

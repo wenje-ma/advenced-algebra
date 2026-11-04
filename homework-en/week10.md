@@ -1,212 +1,347 @@
 # week10
 
-> **Definition 3.1.1 (Linear Combination and Linear Representation)**
+> **Theorem 3.6.1 (Solvability Criterion for a Linear System)**
 > 
-> In $K^{n}$, given a vector group $\alpha_{1},\alpha_{2},\cdots,\alpha_{s}$ and any numbers $k_{1},k_{2},\cdots,k_{s}$ in $K$, we call $k_{1}\alpha_{1}+k_{2}\alpha_{2}+\cdots+k_{s}\alpha_{s}$ a linear combination of the vector group $\alpha_{1},\alpha_{2},\cdots,\alpha_{s}$. If
+> The linear system
 
-$$
-\beta=k_{1}\alpha_{1}+k_{2}\alpha_{2}+\cdots+k_{s}\alpha_{s},
-$$
-
-then we say that $\beta$ can be linearly represented by $\alpha_{1},\alpha_{2},\cdots,\alpha_{s}$.
-
-> **Proposition 3.1.1 (Relation Between Linear Representability and Solvability of a System)**
+> **Theorem 3.6.2 (Criterion for the Number of Solutions)**
 > 
-> An $n$-variable linear system over a number field $K$
+> Suppose a linear system is solvable. If the rank of the coefficient matrix equals the number $n$ of unknowns, the system has a unique solution; if the rank is less than $n$, the system has infinitely many solutions.
+
+> **Definition 3.7.1 (Fundamental System of Solutions)**
+> 
+> When a homogeneous linear system has a nontrivial solution, if finitely many of its solutions $\eta_{1},\eta_{2},\cdots,\eta_{t}$ satisfy: $1^{\circ}$ they are linearly independent; $2^{\circ}$ every solution of the system can be linearly represented by them, then they are called a fundamental system of solutions.
+
+> **Theorem 3.7.1 (Dimension of the Solution Space)**
+> 
+> The dimension of the solution space $W$ of an $n$-variable homogeneous linear system over a number field $K$ is
 
 $$
-x_{1}\alpha_{1}+x_{2}\alpha_{2}+\cdots+x_{n}\alpha_{n}=\beta
+\dim W=n-\text{rank}\left(A\right),
 $$
+where $A$ is the coefficient matrix.
 
-is solvable $\Leftrightarrow$ $\beta$ can be linearly represented by $\alpha_{1},\alpha_{2},\cdots,\alpha_{n}$ $\Leftrightarrow$ $\beta\in\left\langle\alpha_{1},\alpha_{2},\cdots,\alpha_{n}\right\rangle$.
+> **Theorem 3.8.1 (Solution Set Structure of an Inhomogeneous System)**
+> 
+> If an $n$-variable inhomogeneous linear system over a number field $K$ is solvable, then its solution set is $U=\gamma_{0}+W$, where $\gamma_{0}$ is a particular solution and $W$ is the solution space of the derived homogeneous system.
 
-## 3.1-3(1)
+## 3.6-4
 
-In $K^{4}$, determine whether the vector $\beta$ can be linearly represented by the vector group $\alpha_{1},\alpha_{2},\alpha_{3}$. If so, write down one way of representing it.
-
-$$
-\alpha_{1}=\begin{bmatrix}-1\\3\\0\\-5\end{bmatrix},
-\alpha_{2}=\begin{bmatrix}2\\0\\7\\-3\end{bmatrix},
-\alpha_{3}=\begin{bmatrix}-4\\1\\-2\\6\end{bmatrix},
-\beta=\begin{bmatrix}8\\3\\-1\\-25\end{bmatrix}.
-$$
-
-### Solution 3.1-3(1)
-
-By **Proposition 3.1.1 (Relation Between Linear Representability and Solvability of a System)**, to determine whether $\beta$ can be represented by $\alpha_{1},\alpha_{2},\alpha_{3}$ is to determine whether the linear system $x_{1}\alpha_{1}+x_{2}\alpha_{2}+x_{3}\alpha_{3}=\beta$ is solvable.
-
-Write down the augmented matrix and perform elementary row operations:
+Given the linear system
 
 $$
-\left[\begin{array}{rrr\left|r}
--1 & 2 & -4 & 8\\
-3 & 0 & 1 & 3\\
-0 & 7 & -2 & -1\\
--5 & -3 & 6 & -25
+\begin{cases}
+a_{11}x_{1}+a_{12}x_{2}+\cdots+a_{1n}x_{n}=b_{1},\\
+a_{21}x_{1}+a_{22}x_{2}+\cdots+a_{2n}x_{n}=b_{2},\\
+\cdots\cdots\cdots\cdots\\
+a_{n1}x_{1}+a_{n2}x_{2}+\cdots+a_{nn}x_{n}=b_{n}
+\end{cases}
+$$
+
+whose coefficient matrix $A$ has the same rank as the following matrix $B$:
+
+$$
+B=\left[\begin{array}{ccccc}
+a_{11} & a_{12} & \cdots & a_{1n} & b_{1}\\
+a_{21} & a_{22} & \cdots & a_{2n} & b_{2}\\
+\vdots & \vdots & & \vdots & \vdots\\
+a_{n1} & a_{n2} & \cdots & a_{nn} & b_{n}\\
+b_{1} & b_{2} & \cdots & b_{n} & 0
+\end{array}\right].
+$$
+
+Prove that the above linear system is solvable.
+
+### Solution to 3.6-4
+
+By **Theorem 3.6.1 (Solvability Criterion for a Linear System)**, to prove the system is solvable is to prove that the coefficient matrix $A$ and the augmented matrix $\overline{A}$ have the same rank.
+
+Let the augmented matrix be $\overline{A}$, i.e. $\overline{A}=\left[A,b\right]$, where $b=\left(b_{1},b_{2},\cdots,b_{n}\right)^{\top}$.
+
+Note that $\overline{A}$ is the first $n$ rows of $B$, so $\overline{A}$ is a submatrix of $B$.
+
+Hence $\text{rank}\left(\overline{A}\right)\le\text{rank}\left(B\right)$.
+
+Also, $A$ is a submatrix of $\overline{A}$, so $\text{rank}\left(A\right)\le\text{rank}\left(\overline{A}\right)$.
+
+By hypothesis $\text{rank}\left(A\right)=\text{rank}\left(B\right)$, so
+
+$$
+\text{rank}\left(A\right)\le\text{rank}\left(\overline{A}\right)\le\text{rank}\left(B\right)=\text{rank}\left(A\right).
+$$
+
+Thus $\text{rank}\left(\overline{A}\right)=\text{rank}\left(A\right)$.
+
+By **Theorem 3.6.1 (Solvability Criterion for a Linear System)**, the system is solvable. $\blacksquare$
+
+## 3.7-1(1)
+
+Find a fundamental system of solutions of the following homogeneous linear system over a number field $K$, and write down its solution set.
+
+$$
+\begin{cases}
+x_{1}-3x_{2}+x_{3}-2x_{4}=0,\\
+-5x_{1}+x_{2}-2x_{3}+3x_{4}=0,\\
+-x_{1}-11x_{2}+2x_{3}-5x_{4}=0,\\
+3x_{1}+5x_{2}+x_{4}=0.
+\end{cases}
+$$
+
+### Solution to 3.7-1(1)
+
+By **Definition 3.7.1 (Fundamental System of Solutions)** and **Theorem 3.7.1 (Dimension of the Solution Space)**, perform elementary row operations on the coefficient matrix:
+
+$$
+\left[\begin{array}{rrrr}
+1 & -3 & 1 & -2\\
+-5 & 1 & -2 & 3\\
+-1 & -11 & 2 & -5\\
+3 & 5 & 0 & 1
 \end{array}\right]
-\xrightarrow{\substack{②+①\times3\\④-①\times5}}
-\left[\begin{array}{rrr\right|r}
--1 & 2 & -4 & 8\\
-0 & 6 & -11 & 27\\
-0 & 7 & -2 & -1\\
-0 & -13 & 26 & 15
+\xrightarrow{\text{row ops}}
+\left[\begin{array}{rrrr}
+1 & -3 & 1 & -2\\
+0 & -14 & 3 & -7\\
+0 & 0 & 0 & 0\\
+0 & 0 & 0 & 0
 \end{array}\right].
 $$
 
-Continuing the row operations, the last row becomes a contradictory row $0=80$, so the system has no solution.
+The rank is $2$ and the number of unknowns is $4$. By **Theorem 3.7.1 (Dimension of the Solution Space)**, the solution space has dimension $4-2=2$, so the fundamental system contains $2$ vectors.
 
-By **Proposition 3.1.1 (Relation Between Linear Representability and Solvability of a System)**, $\beta$ therefore cannot be linearly represented by $\alpha_{1},\alpha_{2},\alpha_{3}$. $\blacksquare$
-
-## 3.1-3(3)
-
-In $K^{4}$, determine whether the vector $\beta$ can be linearly represented by the vector group $\alpha_{1},\alpha_{2},\alpha_{3}$. If so, write down one way of representing it.
+The general solution:
 
 $$
-\alpha_{1}=\begin{bmatrix}3\\-5\\2\\-4\end{bmatrix},
-\alpha_{2}=\begin{bmatrix}-1\\7\\-3\\6\end{bmatrix},
-\alpha_{3}=\begin{bmatrix}3\\11\\-5\\10\end{bmatrix},
-\beta=\begin{bmatrix}2\\-30\\13\\-26\end{bmatrix}.
+\begin{cases}
+x_{1}=\frac{-5x_{3}+7x_{4}}{14},\\
+x_{2}=\frac{3x_{3}-7x_{4}}{14},
+\end{cases}
 $$
 
-### Solution 3.1-3(3)
+where $x_{3},x_{4}$ are free variables.
 
-By **Proposition 3.1.1 (Relation Between Linear Representability and Solvability of a System)**, to determine whether $\beta$ can be represented by $\alpha_{1},\alpha_{2},\alpha_{3}$ is to determine whether the linear system $x_{1}\alpha_{1}+x_{2}\alpha_{2}+x_{3}\alpha_{3}=\beta$ is solvable.
+Set $x_{3}=14,x_{4}=0$ to get $\eta_{1}=\left(-5,3,14,0\right)^{\top}$.
 
-Write down the augmented matrix and perform elementary row operations:
+Set $x_{3}=0,x_{4}=14$ to get $\eta_{2}=\left(7,-7,0,14\right)^{\top}$.
+
+By **Definition 3.7.1 (Fundamental System of Solutions)**, $\eta_{1},\eta_{2}$ are linearly independent and every solution can be represented by them, so they form a fundamental system.
+
+The solution set:
 
 $$
-\left[\begin{array}{rrr\left|r}
-3 & -1 & 3 & 2\\
--5 & 7 & 11 & -30\\
-2 & -3 & -5 & 13\\
--4 & 6 & 10 & -26
+W=\left\{k_{1}\eta_{1}+k_{2}\eta_{2}\mid k_{1},k_{2}\in K\right\}.
+$$
+
+$\blacksquare$
+
+## 3.7-1(2)
+
+Find a fundamental system of solutions of the following homogeneous linear system over a number field $K$, and write down its solution set.
+
+$$
+\begin{cases}
+3x_{1}-x_{2}+2x_{3}+x_{4}=0,\\
+x_{1}+3x_{2}-x_{3}+2x_{4}=0,\\
+-2x_{1}+5x_{2}+x_{3}-x_{4}=0,\\
+3x_{1}+10x_{2}+x_{3}+4x_{4}=0,\\
+-2x_{1}+15x_{2}-4x_{3}+4x_{4}=0.
+\end{cases}
+$$
+
+### Solution to 3.7-1(2)
+
+By **Definition 3.7.1 (Fundamental System of Solutions)** and **Theorem 3.7.1 (Dimension of the Solution Space)**, perform elementary row operations on the coefficient matrix:
+
+$$
+\left[\begin{array}{rrrr}
+3 & -1 & 2 & 1\\
+1 & 3 & -1 & 2\\
+-2 & 5 & 1 & -1\\
+3 & 10 & 1 & 4\\
+-2 & 15 & -4 & 4
 \end{array}\right]
-\xrightarrow{\substack{②+①\times5/3\\③-①\times2/3\\④+①\times4/3}}
-\left[\begin{array}{rrr\right|r}
-3 & -1 & 3 & 2\\
-0 & 16/3 & 16 & -80/3\\
-0 & -7/3 & -7 & 35/3\\
-0 & 14/3 & 14 & -70/3
+\xrightarrow{\text{row ops}}
+\left[\begin{array}{rrrr}
+1 & 3 & -1 & 2\\
+0 & 1 & 4 & -2\\
+0 & 0 & -45 & 25\\
+0 & 0 & 0 & 0\\
+0 & 0 & 0 & 0
 \end{array}\right].
 $$
 
-Note that rows $2,3,4$ are proportional; after elimination the echelon matrix has only two rows:
+The rank is $3$ and the number of unknowns is $4$, so the fundamental system contains $4-3=1$ vector.
+
+The general solution:
 
 $$
-\left[\begin{array}{rrr|r}
-3 & -1 & 3 & 2\\
-0 & 16/3 & 16 & -80/3
+\begin{cases}
+x_{1}=-\frac{7}{9}x_{4},\\
+x_{2}=-\frac{2}{9}x_{4},\\
+x_{3}=\frac{5}{9}x_{4},
+\end{cases}
+$$
+
+where $x_{4}$ is a free variable.
+
+Set $x_{4}=9$ to get $\eta_{1}=\left(-7,-2,5,9\right)^{\top}$.
+
+By **Definition 3.7.1 (Fundamental System of Solutions)**, $\eta_{1}$ is linearly independent and every solution can be represented by it, so it forms a fundamental system.
+
+The solution set:
+
+$$
+W=\left\{k\eta_{1}\mid k\in K\right\}.
+$$
+
+$\blacksquare$
+
+## 3.7-4
+
+Prove: let the coefficient matrix of an $n$-variable homogeneous linear system have rank $r$ $\left(r< n\right)$, and let $\delta_{1},\delta_{2},\cdots,\delta_{m}$ be solution vectors of the system. Then
+
+$$
+\text{rank}\left\{\delta_{1},\delta_{2},\cdots,\delta_{m}\right\}\le n-r.
+$$
+
+### Solution to 3.7-4
+
+By **Theorem 3.7.1 (Dimension of the Solution Space)**, the solution space $W$ of the homogeneous system has dimension
+
+$$
+\dim W=n-\text{rank}\left(A\right)=n-r.
+$$
+
+$\delta_{1},\delta_{2},\cdots,\delta_{m}$ are all vectors in $W$, so $\left\langle\delta_{1},\delta_{2},\cdots,\delta_{m}\right\rangle\subseteq W$.
+
+Therefore
+
+$$
+\text{rank}\left\{\delta_{1},\delta_{2},\cdots,\delta_{m}\right\}
+=\dim\left\langle\delta_{1},\delta_{2},\cdots,\delta_{m}\right\rangle
+\le\dim W=n-r.
+$$
+
+$\blacksquare$
+
+## 3.7-5
+
+Let the determinant of the coefficient matrix $A$ of an $n$-variable homogeneous linear system of $n$ equations be zero, and let the cofactor $A_{kl}$ of the $\left(k,l\right)$-entry of $A$ be nonzero. Prove that
+
+$$
+\eta_{1}=\begin{bmatrix}A_{k1}\\A_{k2}\\\vdots\\A_{kn}\end{bmatrix}
+$$
+
+is a fundamental system of solutions of this homogeneous system.
+
+### Solution to 3.7-5
+
+By **Definition 3.7.1 (Fundamental System of Solutions)** and **Theorem 3.7.1 (Dimension of the Solution Space)**, to prove that $\eta_{1}$ is a fundamental system we verify three conditions: $\eta_{1}$ is a solution, $\eta_{1}\ne0$, and the solution space has dimension $1$.
+
+**Verify that $\eta_{1}$ is a solution.** For each $i=1,2,\cdots,n$, compute
+
+$$
+a_{i1}A_{k1}+a_{i2}A_{k2}+\cdots+a_{in}A_{kn}.
+$$
+
+When $i=k$, this is $\left|A\right|=0$ (by hypothesis).
+
+When $i\ne k$, this is the determinant obtained by replacing row $k$ of $A$ with row $i$; since two rows are identical, the determinant is $0$.
+
+Hence for all $i$ the above is $0$, i.e. $A\eta_{1}=0$.
+
+**Verify that $\eta_{1}\ne0$.** Because $A_{kl}\ne0$, the $l$th component of $\eta_{1}$ is nonzero, so $\eta_{1}\ne0$.
+
+**Verify that the solution space has dimension $1$.** Since $\left|A\right|=0$, $\text{rank}\left(A\right)< n$.
+
+Also, since $A_{kl}\ne0$, $A$ has a nonzero $\left(n-1\right)$-minor (the minor after deleting row $k$ and column $l$), so $\text{rank}\left(A\right)\ge n-1$.
+
+Thus $\text{rank}\left(A\right)=n-1$.
+
+By **Theorem 3.7.1 (Dimension of the Solution Space)**, the solution space has dimension $n-\text{rank}\left(A\right)=1$.
+
+$\eta_{1}$ is a nonzero solution, and by itself forms a basis of the solution space, i.e. a fundamental system. $\blacksquare$
+
+## 3.7-7
+
+Let $A_{1}$ be the submatrix of the $s\times n$ matrix $A=\left(a_{ij}\right)$ formed by its first $s-1$ rows. Prove: if every solution of the homogeneous system with coefficient matrix $A_{1}$ is also a solution of the equation
+
+$$
+a_{s1}x_{1}+a_{s2}x_{2}+\cdots+a_{sn}x_{n}=0,
+$$
+
+then the $s$th row of $A$ can be linearly represented by the first $s-1$ rows of $A$.
+
+### Solution to 3.7-7
+
+By **Theorem 3.7.1 (Dimension of the Solution Space)**, the solution space of a homogeneous system is the orthogonal complement of the row space of the coefficient matrix. Let $V_{1}$ be the row space of $A_{1}$; then the solution space $W_{1}$ of the homogeneous system with coefficient matrix $A_{1}$ is $W_{1}=V_{1}^{\perp}$ (the orthogonal complement of $V_{1}$).
+
+By hypothesis, every $x$ in $W_{1}$ satisfies $a_{s1}x_{1}+\cdots+a_{sn}x_{n}=0$.
+
+That is, the row vector of the $s$th row $\gamma_{s}=\left(a_{s1},\cdots,a_{sn}\right)$ is orthogonal to every vector in $W_{1}$.
+
+Hence $\gamma_{s}\in\left(W_{1}\right)^{\perp}=V_{1}$.
+
+Therefore $\gamma_{s}$ can be linearly represented by the row vectors of $A_{1}$, i.e. the $s$th row of $A$ can be linearly represented by the first $s-1$ rows of $A$. $\blacksquare$
+
+## 3.8-1(1)
+
+Find the solution set of the following inhomogeneous linear system over a number field $K$:
+
+$$
+\begin{cases}
+x_{1}-5x_{2}+2x_{3}-3x_{4}=11,\\
+-3x_{1}+x_{2}-4x_{3}+2x_{4}=-5,\\
+-x_{1}-9x_{2}-4x_{4}=17,\\
+5x_{1}+3x_{2}+6x_{3}-x_{4}=-1.
+\end{cases}
+$$
+
+### Solution to 3.8-1(1)
+
+By **Theorem 3.8.1 (Solution Set Structure of an Inhomogeneous System)**, perform elementary row operations on the augmented matrix:
+
+$$
+\left[\begin{array}{rrrr\left|r}
+1 & -5 & 2 & -3 & 11\\
+-3 & 1 & -4 & 2 & -5\\
+-1 & -9 & 0 & -4 & 17\\
+5 & 3 & 6 & -1 & -1
+\end{array}\right]
+\xrightarrow{\text{row ops}}
+\left[\begin{array}{rrrr\right|r}
+1 & -5 & 2 & -3 & 11\\
+0 & -14 & 2 & -7 & 28\\
+0 & 0 & 0 & 0 & 0\\
+0 & 0 & 0 & 0 & 0
 \end{array}\right].
 $$
 
-From row $2$:
+The rank is $2$, equal to the rank of the augmented matrix, so the system is solvable.
+
+The general solution:
 
 $$
-\frac{16}{3}x_{2}+16x_{3}=-\frac{80}{3},
+\begin{cases}
+x_{1}=-\frac{9}{7}x_{3}+\frac{1}{2}x_{4}+1,\\
+x_{2}=\frac{1}{7}x_{3}-\frac{1}{2}x_{4}-2,
+\end{cases}
 $$
 
-i.e. $x_{2}+3x_{3}=-5$, so $x_{2}=-5-3x_{3}$.
+where $x_{3},x_{4}$ are free variables.
 
-From row $1$: $3x_{1}-x_{2}+3x_{3}=2$; substituting $x_{2}$ gives $3x_{1}+6x_{3}=-3$, so $x_{1}=-1-2x_{3}$.
+Set $x_{3}=x_{4}=0$ to get the particular solution $\gamma_{0}=\left(1,-2,0,0\right)^{\top}$.
 
-Setting $x_{3}=0$ gives $x_{1}=-1$, $x_{2}=-5$.
+Fundamental system of the derived homogeneous system:
 
-Verify:
+Set $x_{3}=7,x_{4}=0$ to get $\eta_{1}=\left(-9,1,7,0\right)^{\top}$.
 
-$$
--\alpha_{1}-5\alpha_{2}=\begin{bmatrix}-3+5\\5-35\\-2+15\\4-30\end{bmatrix}=\begin{bmatrix}2\\-30\\13\\-26\end{bmatrix}=\beta.
-$$
+Set $x_{3}=0,x_{4}=2$ to get $\eta_{2}=\left(1,-1,0,2\right)^{\top}$.
 
-Hence $\beta=-\alpha_{1}-5\alpha_{2}$. By **Proposition 3.1.1 (Relation Between Linear Representability and Solvability of a System)**, the system is solvable, so $\beta$ can be linearly represented by $\alpha_{1},\alpha_{2},\alpha_{3}$. $\blacksquare$
-
-## 3.1-5
-
-In $K^{4}$, let
+By **Theorem 3.8.1 (Solution Set Structure of an Inhomogeneous System)**, the solution set is the particular solution $\gamma_{0}$ plus the solution space $W$ of the derived system:
 
 $$
-\alpha_{1}=\begin{bmatrix}1\\0\\0\\0\end{bmatrix},
-\alpha_{2}=\begin{bmatrix}1\\1\\0\\0\end{bmatrix},
-\alpha_{3}=\begin{bmatrix}1\\1\\1\\0\end{bmatrix},
-\alpha_{4}=\begin{bmatrix}1\\1\\1\\1\end{bmatrix}.
+U=\left\{\gamma_{0}+k_{1}\eta_{1}+k_{2}\eta_{2}\mid k_{1},k_{2}\in K\right\}.
 $$
 
-Prove that every vector $\alpha=\left(a_{1},a_{2},a_{3},a_{4}\right)^{\top}$ in $K^{4}$ can be linearly represented by the vector group $\alpha_{1},\alpha_{2},\alpha_{3},\alpha_{4}$, that this representation is unique, and write it down.
-
-### Solution 3.1-5
-
-By **Proposition 3.1.1 (Relation Between Linear Representability and Solvability of a System)**, to prove that every vector $\alpha$ in $K^{4}$ can be represented by $\alpha_{1},\alpha_{2},\alpha_{3},\alpha_{4}$ is to prove that the linear system
-
-$$
-x_{1}\alpha_{1}+x_{2}\alpha_{2}+x_{3}\alpha_{3}+x_{4}\alpha_{4}=\alpha
-$$
-
-is solvable.
-
-Set
-
-$$
-\alpha=x_{1}\alpha_{1}+x_{2}\alpha_{2}+x_{3}\alpha_{3}+x_{4}\alpha_{4}.
-$$
-
-Comparing components:
-
-$4$th component: $x_{4}=a_{4}$.
-
-$3$rd component: $x_{3}+x_{4}=a_{3}$, so $x_{3}=a_{3}-a_{4}$.
-
-$2$nd component: $x_{2}+x_{3}+x_{4}=a_{2}$, so $x_{2}=a_{2}-a_{3}$.
-
-$1$st component: $x_{1}+x_{2}+x_{3}+x_{4}=a_{1}$, so $x_{1}=a_{1}-a_{2}$.
-
-The above solving process is uniquely determined from bottom to top, so the representation is unique.
-
-The representation is
-
-$$
-\alpha=\left(a_{1}-a_{2}\right)\alpha_{1}+\left(a_{2}-a_{3}\right)\alpha_{2}+\left(a_{3}-a_{4}\right)\alpha_{3}+a_{4}\alpha_{4}.
-$$
-
-The system has a unique solution, so $\alpha$ can be uniquely linearly represented by $\alpha_{1},\alpha_{2},\alpha_{3},\alpha_{4}$. $\blacksquare$
-
-## 3.1-8
-
-Let $r< n$. Prove that the following subset $W$ of $K^{n}$ is a subspace:
-
-$$
-W=\left\{\left(a_{1},a_{2},\cdots,a_{r},0,\cdots,0\right)\mid a_{i}\in K,i=1,2,\cdots,r\right\}.
-$$
-
-### Solution 3.1-8
-
-By Criterion for a Subspace, it suffices to verify that $W$ is nonempty and closed under addition and scalar multiplication.
-
-**Verify closure under addition.** Take any
-
-$$
-\alpha=\left(a_{1},\cdots,a_{r},0,\cdots,0\right),
-\beta=\left(b_{1},\cdots,b_{r},0,\cdots,0\right)\in W.
-$$
-
-Then
-
-$$
-\alpha+\beta=\left(a_{1}+b_{1},\cdots,a_{r}+b_{r},0,\cdots,0\right)\in W.
-$$
-
-**Verify closure under scalar multiplication.** Take any
-
-$$
-\alpha=\left(a_{1},\cdots,a_{r},0,\cdots,0\right)\in W
-$$
-
-and $k\in K$.
-
-Then
-
-$$
-k\alpha=\left(ka_{1},\cdots,ka_{r},0,\cdots,0\right)\in W.
-$$
-
-$W$ is nonempty (e.g. the zero vector $\left(0,\cdots,0\right)\in W$).
-
-By Criterion for a Subspace, $W$ is a subspace of $K^{n}$. $\blacksquare$
+$\blacksquare$

@@ -4,124 +4,26 @@
 > 
 > Reduce the augmented matrix of an $n$-variable linear system to a row echelon matrix by elementary row operations: (1) if the corresponding echelon system exhibits $0=d$ ($d\ne 0$), then the original system has no solution; (2) if $0=d$ does not appear, then there is a solution: when the number of nonzero rows of the echelon matrix equals the number $n$ of unknowns there is a unique solution, and when the number of nonzero rows is $r< n$ there are infinitely many solutions.
 
-## 1.2-2
+> **Definition 1.3.1 (Number Field)**
+> 
+> Let $K$ be a subset of the set of complex numbers. If $K$ satisfies: (1) $0,1\in K$; (2) it is closed under addition, subtraction, multiplication, and division (with nonzero divisor), then $K$ is called a number field.
 
-For which value of $a$ does the following linear system have a unique solution? For which value of $a$ does this system have no solution?
+> **Proposition 2.1.1 (Criterion for a Unique Solution of a Two-Variable Linear System)**
+> 
+> A two-equation linear system in two variables has a unique solution if and only if its coefficient determinant is nonzero; in that case the unique solution is given by the Cramer formula, i.e. two fractions whose numerators are the $2\times2$ determinants obtained by replacing the $1$st and $2$nd columns of the coefficient determinant by the constant terms of the system.
 
-$$
-\begin{cases}
-x_{1}+x_{2}+x_{3}=3,\\
-x_{1}+2x_{2}-ax_{3}=9,\\
-2x_{1}-x_{2}+3x_{3}=6.
-\end{cases}
-$$
-
-### Solution 1.2-2
-
-By **Theorem 1.2.1 (Criterion for the Number of Solutions of a Linear System)**, apply elementary row operations to the augmented matrix to reduce it to row echelon form:
+> **Definition 2.2.1 ($n\times n$ Determinant)**
+> 
+> An $n\times n$ determinant is an algebraic sum of $n!$ terms, each term being a product of $n$ entries from distinct rows and distinct columns; after these $n$ entries are arranged so that their row indices are in natural order, the term carries a plus sign when the permutation formed by the column indices is even and a minus sign when it is odd. Namely,
 
 $$
-\left[\begin{array}{rrr|r}
-1 & 1 & 1 & 3\\
-1 & 2 & -a & 9\\
-2 & -1 & 3 & 6
-\end{array}\right]
-\xrightarrow{\left(2\right)-\left(1\right),\left(3\right)-2\left(1\right)}
-\left[\begin{array}{rrr|r}
-1 & 1 & 1 & 3\\
-0 & 1 & -a-1 & 6\\
-0 & -3 & 1 & 0
-\end{array}\right]
-\xrightarrow{\left(3\right)+3\left(2\right)}
-\left[\begin{array}{rrr|r}
-1 & 1 & 1 & 3\\
-0 & 1 & -a-1 & 6\\
-0 & 0 & -3a-2 & 18
-\end{array}\right].
+\left|\begin{array}{cccc}
+a_{11} & a_{12} & \cdots & a_{1n}\\
+a_{21} & a_{22} & \cdots & a_{2n}\\
+\vdots & \vdots & & \vdots\\
+a_{n1} & a_{n2} & \cdots & a_{nn}
+\end{array}\right|=\sum_{j_{1}j_{2}\cdots j_{n}}\left(-1\right)^{\tau\left(j_{1}j_{2}\cdots j_{n}\right)}a_{1j_{1}}a_{2j_{2}}\cdots a_{nj_{n}}.
 $$
-
-By **Theorem 1.2.1 (Criterion for the Number of Solutions of a Linear System)**, when $-3a-2\ne 0$, i.e. $a\ne-\frac{2}{3}$, the echelon matrix has $3$ nonzero rows, equal to the number $3$ of unknowns, so the system has a unique solution.
-
-By **Theorem 1.2.1 (Criterion for the Number of Solutions of a Linear System)**, when $-3a-2=0$, i.e. $a=-\frac{2}{3}$, the $3$rd row becomes $0=18$, exhibiting $0=d$ ($d\ne 0$), so the system has no solution.
-
-In summary, there is a unique solution when $a\ne-\frac{2}{3}$, and no solution when $a=-\frac{2}{3}$. $\blacksquare$
-
-## 1.2-5
-
-For which values of $c$ and $d$ does the following linear system have a solution? When it has a solution, find all its solutions.
-
-$$
-\begin{cases}
-x_{1}+x_{2}+x_{3}+x_{4}+x_{5}=1,\\
-3x_{1}+2x_{2}+x_{3}+x_{4}-3x_{5}=c,\\
-x_{2}+2x_{3}+2x_{4}+6x_{5}=3,\\
-5x_{1}+4x_{2}+3x_{3}+3x_{4}-x_{5}=d.
-\end{cases}
-$$
-
-### Solution 1.2-5
-
-By **Theorem 1.2.1 (Criterion for the Number of Solutions of a Linear System)**, apply elementary row operations to the augmented matrix to reduce it to row echelon form:
-
-$$
-\left[\begin{array}{rrrrr\left|r}
-1 & 1 & 1 & 1 & 1 & 1\\
-3 & 2 & 1 & 1 & -3 & c\\
-0 & 1 & 2 & 2 & 6 & 3\\
-5 & 4 & 3 & 3 & -1 & d
-\end{array}\right]
-\xrightarrow{\left(2\right)-3\left(1\right),\left(4\right)-5\left(1\right)}
-\left[\begin{array}{rrrrr\right|r}
-1 & 1 & 1 & 1 & 1 & 1\\
-0 & -1 & -2 & -2 & -6 & c-3\\
-0 & 1 & 2 & 2 & 6 & 3\\
-0 & -1 & -2 & -2 & -6 & d-5
-\end{array}\right].
-$$
-
-By **Theorem 1.2.1 (Criterion for the Number of Solutions of a Linear System)**, continue with elementary row operations: multiply (2) by $\left(-1\right)$, and replace (4) by (4) $-$(2):
-
-$$
-\left[\begin{array}{rrrrr\left|r}
-1 & 1 & 1 & 1 & 1 & 1\\
-0 & 1 & 2 & 2 & 6 & 3-c\\
-0 & 1 & 2 & 2 & 6 & 3\\
-0 & -1 & -2 & -2 & -6 & d-5
-\end{array}\right]
-\xrightarrow{\left(3\right)-\left(2\right),\left(4\right)+\left(2\right)}
-\left[\begin{array}{rrrrr\right|r}
-1 & 1 & 1 & 1 & 1 & 1\\
-0 & 1 & 2 & 2 & 6 & 3-c\\
-0 & 0 & 0 & 0 & 0 & c\\
-0 & 0 & 0 & 0 & 0 & d-c-2
-\end{array}\right].
-$$
-
-By **Theorem 1.2.1 (Criterion for the Number of Solutions of a Linear System)**, the system has a solution if and only if $0=d$ does not appear, i.e. $c=0$ and $d-c-2=0$, namely $c=0$ and $d=2$.
-
-When $c=0,d=2$, by **Theorem 1.2.1 (Criterion for the Number of Solutions of a Linear System)**, the echelon matrix has $2$ nonzero rows, less than the number $5$ of unknowns, so there are infinitely many solutions. Continue to reduce it to reduced row echelon form:
-
-From (2):
-
-$$
-x_{2}+2x_{3}+2x_{4}+6x_{5}=3.
-$$
-
-From (1) $-$(2): $x_{1}-x_{3}-x_{4}-5x_{5}=-2$.
-
-Let $x_{3}=c_{1},x_{4}=c_{2},x_{5}=c_{3}$ be free unknowns; then
-
-$$
-\begin{cases}
-x_{1}=-2+c_{1}+c_{2}+5c_{3},\\
-x_{2}=3-2c_{1}-2c_{2}-6c_{3},\\
-x_{3}=c_{1},\\
-x_{4}=c_{2},\\
-x_{5}=c_{3},
-\end{cases}
-$$
-
-where $c_{1},c_{2},c_{3}$ are arbitrary constants. $\blacksquare$
 
 ## 1.2-6
 
@@ -133,7 +35,7 @@ $$
 
 ?
 
-### Solution 1.2-6
+### Solution to 1.2-6
 
 If the graph of the quadratic function $f\left(x\right)=ax^{2}+bx+c$ passes through these $4$ points, then $a,b,c$ must satisfy the system:
 
@@ -169,7 +71,7 @@ Hence the $3$rd equation is not satisfied. Therefore no such quadratic function 
 
 An investor wants to invest $1$ ten-thousand yuan in $3$ enterprises $A_{1},A_{2},A_{3}$, with profit rates of $12\%,15\%,22\%$, respectively. If the amount he invests in $A_{1}$ equals the sum of the amounts invested in $A_{2}$ and $A_{3}$, find the maximum and minimum values of the total profit $l$ (in thousand yuan). How much (in thousand yuan) should be invested in $A_{1},A_{2},A_{3}$ in each case?
 
-### Solution 1.2-8
+### Solution to 1.2-8
 
 Let the amounts invested in $A_{1},A_{2},A_{3}$ be $x_{1},x_{2},x_{3}$ (in thousand yuan). The total investment is $10$ thousand yuan, and $x_{1}=x_{2}+x_{3}$.
 
@@ -198,3 +100,212 @@ When $x_{3}=0$, $l$ attains its minimum $1.35$, at which point $x_{1}=5,x_{2}=5,
 When $x_{3}=5$, $l$ attains its maximum $1.35+0.07\times5=1.7$, at which point $x_{1}=5,x_{2}=0,x_{3}=5$.
 
 Hence the minimum total profit $l$ is $1.35$ thousand yuan (investing $5$ thousand in $A_{1}$, $5$ thousand in $A_{2}$, and $0$ in $A_{3}$), and the maximum is $1.7$ thousand yuan (investing $5$ thousand in $A_{1}$, $0$ in $A_{2}$, and $5$ thousand in $A_{3}$). $\blacksquare$
+
+## 1.3-1
+
+Let
+
+$$
+\mathbb Q\left(i\right)=\left\{a+bi\mid a,b\in\mathbb Q\right\},
+$$
+
+and prove that $\mathbb Q\left(i\right)$ is a number field.
+
+### Solution to 1.3-1
+
+By the requirements of **Definition 1.3.1 (Number Field)**, we must verify that $\mathbb Q\left(i\right)$ satisfies $0,1\in K$ and is closed under addition, subtraction, multiplication, and division.
+
+**Verify $0,1\in\mathbb Q\left(i\right)$**. By condition (1) of **Definition 1.3.1 (Number Field)**, clearly $0=0+0\cdot i\in\mathbb Q\left(i\right)$ and $1=1+0\cdot i\in\mathbb Q\left(i\right)$.
+
+**Verify closure under addition**. By condition (2) of **Definition 1.3.1 (Number Field)**, take any
+
+$$
+\alpha=a+bi,\beta=c+di\in\mathbb Q\left(i\right),
+$$
+
+where $a,b,c,d\in\mathbb Q$; then
+
+$$
+\alpha+\beta=\left(a+c\right)+\left(b+d\right)i.
+$$
+
+Since the rationals are closed under addition (Closure of the Rational Field under the Four Arithmetic Operations), $a+c\in\mathbb Q$ and $b+d\in\mathbb Q$, so $\alpha+\beta\in\mathbb Q\left(i\right)$.
+
+**Verify closure under subtraction**. By condition (2) of **Definition 1.3.1 (Number Field)**, similarly,
+
+$$
+\alpha-\beta=\left(a-c\right)+\left(b-d\right)i,
+$$
+
+and $a-c\in\mathbb Q$, $b-d\in\mathbb Q$ (Closure of the Rational Field under the Four Arithmetic Operations), so $\alpha-\beta\in\mathbb Q\left(i\right)$.
+
+**Verify closure under multiplication**. By condition (2) of **Definition 1.3.1 (Number Field)**,
+
+$$
+\alpha\beta=\left(a+bi\right)\left(c+di\right)=\left(ac-bd\right)+\left(ad+bc\right)i.
+$$
+
+Since the rationals are closed under addition, subtraction, and multiplication (Closure of the Rational Field under the Four Arithmetic Operations), $ac-bd\in\mathbb Q$ and $ad+bc\in\mathbb Q$, so $\alpha\beta\in\mathbb Q\left(i\right)$.
+
+**Verify closure under division**. By condition (2) of **Definition 1.3.1 (Number Field)**, let $\beta=c+di\ne 0$; then $c^{2}+d^{2}\ne 0$, and
+
+$$
+\frac{\alpha}{\beta}=\frac{a+bi}{c+di}=\frac{\left(a+bi\right)\left(c-di\right)}{\left(c+di\right)\left(c-di\right)}=\frac{ac+bd}{c^{2}+d^{2}}+\frac{bc-ad}{c^{2}+d^{2}}i.
+$$
+
+Since the rationals are closed under addition, subtraction, multiplication, and division (with nonzero divisor) (Closure of the Rational Field under the Four Arithmetic Operations), $\frac{ac+bd}{c^{2}+d^{2}}\in\mathbb Q$ and $\frac{bc-ad}{c^{2}+d^{2}}\in\mathbb Q$, so $\frac{\alpha}{\beta}\in\mathbb Q\left(i\right)$.
+
+In summary, $\mathbb Q\left(i\right)$ satisfies all conditions of **Definition 1.3.1 (Number Field)**, so $\mathbb Q\left(i\right)$ is a number field. $\blacksquare$
+
+## 2.1-1(1)
+
+Find the inversion number of the permutation $315462$ and determine its parity.
+
+### Solution to 2.1-1(1)
+
+By Inversions, the Number of Inversions, and Even/Odd Permutations, count the inversions digit by digit:
+
+- after $3$, the numbers smaller than $3$ are $1,2$, contributing $2$ inversions;
+- after $1$, there is no number smaller than $1$, contributing $0$;
+- after $5$, the numbers smaller than $5$ are $4,2$, contributing $2$;
+- after $4$, the number smaller than $4$ is $2$, contributing $1$;
+- after $6$, the number smaller than $6$ is $2$, contributing $1$;
+- after $2$, there is no number smaller than $2$, contributing $0$.
+
+Hence
+
+$$
+\tau\left(315462\right)=2+0+2+1+1+0=6.
+$$
+
+By Inversions, the Number of Inversions, and Even/Odd Permutations, $\tau=6$ is even, so $315462$ is an even permutation. $\blacksquare$
+
+## 2.1-1(4)
+
+Find the inversion number of the permutation $7654321$ and determine its parity.
+
+### Solution to 2.1-1(4)
+
+By Inversions, the Number of Inversions, and Even/Odd Permutations, this is the fully reversed $7$-permutation, whose inversion number is
+
+$$
+\tau\left(7654321\right)=6+5+4+3+2+1+0=21.
+$$
+
+By Inversions, the Number of Inversions, and Even/Odd Permutations, $\tau=21$ is odd, so $7654321$ is an odd permutation. $\blacksquare$
+
+## 2.1-1(7)
+
+Find the inversion number of the permutation $123456789$ and determine its parity.
+
+### Solution to 2.1-1(7)
+
+By Inversions, the Number of Inversions, and Even/Odd Permutations, this is the natural-order permutation, which has no inversions, so
+
+$$
+\tau\left(123456789\right)=0.
+$$
+
+By Inversions, the Number of Inversions, and Even/Odd Permutations, $\tau=0$ is even, so $123456789$ is an even permutation. $\blacksquare$
+
+## 2.1-2
+
+Find the inversion number of the following $n$-permutations:
+
+(1) $\left(n-1\right)\left(n-2\right)\cdots 21n$;
+
+(2) $23\cdots\left(n-1\right)n1$.
+
+### Solution to 2.1-2
+
+By Inversions, the Number of Inversions, and Even/Odd Permutations:
+
+(1) In the permutation $\left(n-1\right)\left(n-2\right)\cdots 21n$, the first $n-1$ numbers are in fully reversed order, and the last number $n$ is the largest, producing no inversion. The inversion number of the first $n-1$ numbers is
+
+$$
+\left(n-2\right)+\left(n-3\right)+\cdots+1+0=\frac{\left(n-2\right)\left(n-1\right)}{2}.
+$$
+
+Hence
+
+$$
+\tau=\frac{\left(n-1\right)\left(n-2\right)}{2}.
+$$
+
+(2) In the permutation $23\cdots\left(n-1\right)n1$, the number $1$ is at the end, and the preceding $n-1$ numbers $2,3,\cdots,n$ are all larger than $1$, each forming an inversion with $1$. Between the remaining numbers the order is natural, producing no inversion. Hence
+
+$$
+\tau=n-1.
+$$
+
+$\blacksquare$
+
+## 2.1-8
+
+Using $2\times2$ determinants, determine whether the following two-variable linear system has a unique solution, and when it does, find that solution:
+
+$$
+\begin{cases}
+2x_{1}-3x_{2}=7,\\
+5x_{1}+4x_{2}=6.
+\end{cases}
+$$
+
+### Solution to 2.1-8
+
+The coefficient determinant is
+
+$$
+\left|\begin{array}{rr}
+2 & -3\\
+5 & 4
+\end{array}\right|=2\times4-\left(-3\right)\times5=8+15=23\ne 0.
+$$
+
+By **Proposition 2.1.1 (Criterion for a Unique Solution of a Two-Variable Linear System)**, the system has a unique solution.
+
+By the Cramer formula given in that proposition:
+
+$$
+x_{1}=\frac{\left|\begin{array}{rr}7 & -3\\6 & 4\end{array}\right|}{23}=\frac{7\times4-\left(-3\right)\times6}{23}=\frac{28+18}{23}=\frac{46}{23}=2,
+$$
+
+$$
+x_{2}=\frac{\left|\begin{array}{rr}2 & 7\\5 & 6\end{array}\right|}{23}=\frac{2\times6-7\times5}{23}=\frac{12-35}{23}=\frac{-23}{23}=-1.
+$$
+
+Hence the unique solution is $\left(x_{1},x_{2}\right)=\left(2,-1\right)$. $\blacksquare$
+
+## 2.2-1(3)
+
+Compute the following determinant by the definition:
+
+$$
+\left|\begin{array}{ccccc}
+0 & b_{1} & 0 & \cdots & 0\\
+0 & 0 & b_{2} & \cdots & 0\\
+\vdots & \vdots & \vdots & & \vdots\\
+0 & 0 & 0 & \cdots & b_{n-1}\\
+b_{n} & 0 & 0 & \cdots & 0
+\end{array}\right|.
+$$
+
+### Solution to 2.2-1(3)
+
+By **Definition 2.2.1 ($n\times n$ Determinant)**, each term of the determinant is a product of $n$ entries from distinct rows and distinct columns.
+
+By **Definition 2.2.1 ($n\times n$ Determinant)**, determine the unique nonzero entry row by row: row $1$ has only $b_{1}$ in column $2$ nonzero, row $2$ has only $b_{2}$ in column $3$ nonzero, $\cdots$, row $n-1$ has only $b_{n-1}$ in column $n$ nonzero, and row $n$ has only $b_{n}$ in column $1$ nonzero. Hence the only nonzero term is $b_{1}b_{2}\cdots b_{n}$.
+
+By **Definition 2.2.1 ($n\times n$ Determinant)**, the column-index permutation of this nonzero term is $2,3,\cdots,n,1$, whose inversion number is
+
+$$
+\tau\left(2,3,\cdots,n,1\right)=n-1.
+$$
+
+By the sign convention in **Definition 2.2.1 ($n\times n$ Determinant)**, even permutations carry a plus sign and odd permutations a minus sign, so the determinant equals
+
+$$
+\left(-1\right)^{n-1}b_{1}b_{2}\cdots b_{n}.
+$$
+
+$\blacksquare$

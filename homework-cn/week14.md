@@ -1,235 +1,433 @@
 # week14
 
-> **定义 3.5.1 (矩阵的秩)**
+$$
+\text{rank}\left(A+B\right)\le\text{rank}\left(A\right)+\text{rank}\left(B\right).
+$$
+$$
+\left|\begin{array}{cc}A & B\\0 & D\end{array}\right|=\left|A\right|\cdot\left|D\right|.
+$$
+
+> **定理 3.7.1 (齐次线性方程组解空间的维数)**
 > 
-> 矩阵 $A$ 的行秩与列秩统称为 $A$ 的秩, 记作 $\text{rank}\left(A\right)$.
+> 数域 $K$ 上 $n$ 元齐次线性方程组 $Ax=0$ 的解空间 $W$ 的维数为
 
-> **定理 3.5.4 (行秩等于列秩)**
+$$
+\dim W=n-\text{rank}\left(A\right).
+$$
+
+> **定理 4.3.1 (矩阵乘积的秩)**
 > 
-> 任一矩阵的行秩等于它的列秩.
+> 设 $A=\left(a_{ij}\right)_{s\times n}$, $B=\left(b_{ij}\right)_{n\times m}$, 则
 
-> **推论 3.5.5 (用初等行变换求秩)**
+$$
+\text{rank}\left(AB\right)\le\min\left\{\text{rank}\left(A\right),\text{rank}\left(B\right)\right\}.
+$$
+
+> **命题 4.5.2 (实数域上秩的等式)**
 > 
-> 设矩阵 $A$ 经过初等行变换化成阶梯形矩阵 $J$, 则 $A$ 的秩等于 $J$ 的非零行的数目. 设 $J$ 的主元所在的列是第 $j_{1},\cdots,j_{r}$ 列, 则 $A$ 的第 $j_{1},\cdots,j_{r}$ 列构成 $A$ 的列向量组的一个极大线性无关组.
-
-## 3.5-2(1)
-
-求下列向量组的秩以及它的一个极大线性无关组:
+> 设 $A$ 是实数域上 $s\times n$ 矩阵, 则
 
 $$
-\alpha_{1}=\begin{bmatrix}-1\\5\\3\\-2\end{bmatrix},
-\alpha_{2}=\begin{bmatrix}4\\1\\-2\\9\end{bmatrix},
-\alpha_{3}=\begin{bmatrix}2\\0\\-1\\4\end{bmatrix},
-\alpha_{4}=\begin{bmatrix}0\\3\\4\\-5\end{bmatrix}.
+\text{rank}\left(A^{\top}A\right)=\text{rank}\left(AA^{\top}\right)=\text{rank}\left(A\right).
 $$
 
-### 解答 3.5-2(1)
+$$
+\beta_{i}=\alpha_{i}-\sum_{k=1}^{i-1}\frac{\left(\alpha_{i},\beta_{k}\right)}{\left(\beta_{k},\beta_{k}\right)}\beta_{k},
+$$
+则 $\beta_{1},\beta_{2},\cdots,\beta_{m}$ 是正交向量组, 且与原向量组等价.
 
-由**推论 3.5.5 (用初等行变换求秩)**, 把向量按列排成矩阵, 作初等行变换:
+> **定义 4.6.1 (正交矩阵)**
+> 
+> 实数域上的方阵 $A$ 如果满足 $A^{\top}A=I$, 则称 $A$ 是正交矩阵.
+
+> **定义 4.6.2 (标准内积)**
+> 
+> 在 $\mathbb{R}^{n}$ 中, 任给 $\alpha=\left(a_{1},a_{2},\cdots,a_{n}\right)$, $\beta=\left(b_{1},b_{2},\cdots,b_{n}\right)$, 规定
 
 $$
-\left[\begin{array}{rrrr}
--1 & 4 & 2 & 0\\
-5 & 1 & 0 & 3\\
-3 & -2 & -1 & 4\\
--2 & 9 & 4 & -5
-\end{array}\right]
-\xrightarrow{\text{行变换}}
-\left[\begin{array}{rrrr}
-1 & -4 & -2 & 0\\
-0 & 1 & 0 & -5\\
-0 & 0 & 5 & 54\\
-0 & 0 & 0 & 0
-\end{array}\right].
+\left(\alpha,\beta\right)=a_{1}b_{1}+a_{2}b_{2}+\cdots+a_{n}b_{n},
 $$
+称为 $\mathbb{R}^{n}$ 的标准内积.
 
-由**推论 3.5.5 (用初等行变换求秩)**, 阶梯形矩阵有 $3$ 个非零行, 故秩为 $3$.
+> **命题 4.6.2 (正交向量组线性无关)**
+> 
+> 欧几里得空间 $\mathbb{R}^{n}$ 中, 正交向量组一定是线性无关的.
 
-由**推论 3.5.5 (用初等行变换求秩)**, 主元在第 $1,2,3$ 列, 故 $\alpha_{1},\alpha_{2},\alpha_{3}$ 是一个极大线性无关组. $\blacksquare$
+## 4.5-1
 
-## 3.5-3
+证明: 设 $A,B$ 分别是 $s\times n$, $n\times m$ 矩阵. 如果 $AB=0$, 则 $\text{rank}\left(A\right)+\text{rank}\left(B\right)\le n$.
 
-求下述矩阵 $A$ 的列空间的一个基和行空间的维数:
+### 解答 4.5-1
 
-$$
-A=\left[\begin{array}{rrrr}
-1 & 3 & -2 & -7\\
-0 & -1 & -3 & 4\\
-5 & 2 & 0 & 1\\
-1 & 4 & 1 & -11
-\end{array}\right].
-$$
+设 $B$ 的列向量组为 $\beta_{1},\beta_{2},\cdots,\beta_{m}$.
 
-### 解答 3.5-3
+$AB=0$ 意味着 $A\beta_{j}=0$ ( $j=1,2,\cdots,m$ ).
 
-由**推论 3.5.5 (用初等行变换求秩)**, 作初等行变换:
+所以每个 $\beta_{j}$ 都是齐次线性方程组 $Ax=0$ 的解.
+
+因此 $B$ 的列空间 $\subseteq Ax=0$ 的解空间 $W$.
+
+由**定理 3.7.1 (齐次线性方程组解空间的维数)**,
 
 $$
-\left[\begin{array}{rrrr}
-1 & 3 & -2 & -7\\
-0 & -1 & -3 & 4\\
-5 & 2 & 0 & 1\\
-1 & 4 & 1 & -11
-\end{array}\right]
-\xrightarrow{\text{行变换}}
-\left[\begin{array}{rrrr}
-1 & 3 & -2 & -7\\
-0 & 1 & 3 & -4\\
-0 & 0 & 49 & -16\\
-0 & 0 & 0 & 0
-\end{array}\right].
+\text{rank}\left(B\right)=\dim\left\langle\beta_{1},\cdots,\beta_{m}\right\rangle\le\dim W=n-\text{rank}\left(A\right).
 $$
-
-阶梯形矩阵有 $3$ 个非零行, 由**推论 3.5.5 (用初等行变换求秩)**, 故 $\text{rank}\left(A\right)=3$.
-
-由**定理 3.5.4 (行秩等于列秩)**, 行空间的维数等于矩阵的秩, 即 $3$.
-
-由**推论 3.5.5 (用初等行变换求秩)**, 主元在第 $1,2,3$ 列, 故原矩阵 $A$ 的第 $1,2,3$ 列构成列空间的一个基:
-
-$$
-\alpha_{1}=\begin{bmatrix}1\\0\\5\\1\end{bmatrix},
-\alpha_{2}=\begin{bmatrix}3\\-1\\2\\4\end{bmatrix},
-\alpha_{3}=\begin{bmatrix}-2\\-3\\0\\1\end{bmatrix}.
-$$
-
-$\blacksquare$
-
-## 3.5-4
-
-对于 $\lambda$ 的不同的值, 下述矩阵的秩分别是多少?
-
-$$
-\left[\begin{array}{rrrr}
-1 & \lambda & -1 & 2\\
-2 & -1 & \lambda & 5\\
-1 & 10 & -6 & 1
-\end{array}\right].
-$$
-
-### 解答 3.5-4
-
-由**推论 3.5.5 (用初等行变换求秩)**, 作初等行变换求矩阵的秩:
-
-第 $2$ 行 $-$ 第 $1$ 行 $\times 2$: 第 $2$ 行 $=\left(0,-1-2\lambda,\lambda+2,1\right)$.
-
-第 $3$ 行 $-$ 第 $1$ 行: 第 $3$ 行 $=\left(0,10-\lambda,-5,-1\right)$.
-
-矩阵化为:
-
-$$
-\left[\begin{array}{rrrr}
-1 & \lambda & -1 & 2\\
-0 & -1-2\lambda & \lambda+2 & 1\\
-0 & 10-\lambda & -5 & -1
-\end{array}\right].
-$$
-
-第 $2$ 行 $+$ 第 $3$ 行: 第 $2$ 行
-
-$$
-=\left(0,9-3\lambda,\lambda-3,0\right)=\left(0,3\left(3-\lambda\right),-\left(3-\lambda\right),0\right).
-$$
-
-**当 $\lambda=3$ 时**:
-
-第 $2$ 行 $=\left(0,0,0,0\right)$, 第 $3$ 行 $=\left(0,7,-5,-1\right)$.
-
-阶梯形矩阵有 $2$ 个非零行, 故秩为 $2$.
-
-**当 $\lambda\ne3$ 时**:
-
-第 $2$ 行非零. 第 $3$ 行 $-$ 第 $2$ 行 $\times\frac{10-\lambda}{3\left(3-\lambda\right)}$, 第 $3$ 行的第 $4$ 列仍为 $-1\ne0$, 故第 $3$ 行非零.
-
-阶梯形矩阵有 $3$ 个非零行, 故秩为 $3$.
-
-综上: 当 $\lambda=3$ 时, 由**推论 3.5.5 (用初等行变换求秩)**, 阶梯形矩阵有 $2$ 个非零行, 故秩为 $2$; 当 $\lambda\ne3$ 时, 阶梯形矩阵有 $3$ 个非零行, 故秩为 $3$. $\blacksquare$
-
-## 3.5-8
-
-证明: 如果 $m\times n$ 矩阵 $A$ 的秩为 $r$, 则它的任何 $s$ 行组成的子矩阵 $A_{1}$ 的秩不小于 $r+s-m$.
-
-### 解答 3.5-8
-
-由**定义 3.5.1 (矩阵的秩)**, 矩阵 $A$ 的行秩与列秩统称为 $A$ 的秩. 要证明 $A_{1}$ 的秩不小于 $r+s-m$.
-
-设 $A_{2}$ 是 $A$ 的其余 $m-s$ 行组成的子矩阵.
-
-把 $A$ 看作行向量组, $A$ 的行向量组的秩为 $r$.
-
-$A$ 的行向量组 $=A_{1}$ 的行向量组 $\cup A_{2}$ 的行向量组.
-
-由向量组之并的秩的上界,
-
-$$
-\text{rank}\left(A\right)\le\text{rank}\left(A_{1}\right)+\text{rank}\left(A_{2}\right).
-$$
-
-又 $A_{2}$ 只有 $m-s$ 行, 故 $\text{rank}\left(A_{2}\right)\le m-s$.
 
 因此
 
 $$
-r\le\text{rank}\left(A_{1}\right)+\left(m-s\right).
-$$
-
-移项得
-
-$$
-\text{rank}\left(A_{1}\right)\ge r-\left(m-s\right)=r+s-m.
+\text{rank}\left(A\right)+\text{rank}\left(B\right)\le n.
 $$
 
 $\blacksquare$
 
-## 3.5-13
+## 4.5-4
 
-设 $A$ 是 $s\times n$ 矩阵, $B$ 是 $l\times m$ 矩阵, $C$ 是 $s\times m$ 矩阵, 证明:
-
-$$
-\text{rank}\left(\begin{array}{cc}A & C\\0 & B\end{array}\right)\ge\text{rank}\left(A\right)+\text{rank}\left(B\right).
-$$
-
-### 解答 3.5-13
-
-由**定义 3.5.1 (矩阵的秩)**, 要证明分块矩阵的秩不小于 $A$ 的秩与 $B$ 的秩之和. 取 $A$ 和 $B$ 的列空间的基来构造线性无关向量组.
-
-设 $\text{rank}\left(A\right)=r_{1}$, $\text{rank}\left(B\right)=r_{2}$.
-
-取 $A$ 的列空间的一个基: $\alpha_{1},\cdots,\alpha_{r_{1}}$ ( $s$ 维向量).
-
-取 $B$ 的列空间的一个基: $\beta_{1},\cdots,\beta_{r_{2}}$ ( $l$ 维向量).
-
-考虑分块矩阵
+证明: 如果 $n$ 级矩阵 $A$ 满足 $A^{2}=I$ (此时称 $A$ 是对合矩阵), 则
 
 $$
-M=\left(\begin{array}{cc}A & C\\0 & B\end{array}\right)
+\text{rank}\left(I+A\right)+\text{rank}\left(I-A\right)=n.
 $$
 
-的以下列向量:
+### 解答 4.5-4
+
+因为 $A^{2}=I$, 所以
 
 $$
-\begin{bmatrix}\alpha_{1}\\0\end{bmatrix},\cdots,\begin{bmatrix}\alpha_{r_{1}}\\0\end{bmatrix},
-\begin{bmatrix}c_{1}\\\beta_{1}\end{bmatrix},\cdots,\begin{bmatrix}c_{r_{2}}\\\beta_{r_{2}}\end{bmatrix},
+\left(I+A\right)\left(I-A\right)=I-A^{2}=I-I=0.
 $$
 
-其中 $c_{i}$ 是从 $C$ 的列中适当选取的 $s$ 维向量, 使得对应 $M$ 的列的下半部分为 $\beta_{i}$.
-
-证明这 $r_{1}+r_{2}$ 个向量线性无关: 设
+由**4.5-1**的结论,
 
 $$
-k_{1}\begin{bmatrix}\alpha_{1}\\0\end{bmatrix}+\cdots+k_{r_{1}}\begin{bmatrix}\alpha_{r_{1}}\\0\end{bmatrix}
-+l_{1}\begin{bmatrix}c_{1}\\\beta_{1}\end{bmatrix}+\cdots+l_{r_{2}}\begin{bmatrix}c_{r_{2}}\\\beta_{r_{2}}\end{bmatrix}=0.
+\text{rank}\left(I+A\right)+\text{rank}\left(I-A\right)\le n.
 $$
 
-下半部分: $l_{1}\beta_{1}+\cdots+l_{r_{2}}\beta_{r_{2}}=0$. 因为 $\beta_{1},\cdots,\beta_{r_{2}}$ 线性无关, 所以 $l_{1}=\cdots=l_{r_{2}}=0$.
+另一方面,
 
-上半部分: $k_{1}\alpha_{1}+\cdots+k_{r_{1}}\alpha_{r_{1}}=0$. 因为 $\alpha_{1},\cdots,\alpha_{r_{1}}$ 线性无关, 所以 $k_{1}=\cdots=k_{r_{1}}=0$.
+$$
+\left(I+A\right)+\left(I-A\right)=2I.
+$$
 
-故这 $r_{1}+r_{2}$ 个向量线性无关.
+由秩的子加性,
+
+$$
+\text{rank}\left(2I\right)\le\text{rank}\left(I+A\right)+\text{rank}\left(I-A\right).
+$$
+
+$\text{rank}\left(2I\right)=n$, 故
+
+$$
+n\le\text{rank}\left(I+A\right)+\text{rank}\left(I-A\right).
+$$
 
 因此
 
 $$
-\text{rank}\left(M\right)\ge r_{1}+r_{2}=\text{rank}\left(A\right)+\text{rank}\left(B\right).
+\text{rank}\left(I+A\right)+\text{rank}\left(I-A\right)=n.
 $$
 
 $\blacksquare$
+
+## 4.5-5
+
+证明: 如果 $n$ 级矩阵 $A$ 满足 $A^{2}=A$ (此时称 $A$ 是幂等矩阵), 则
+
+$$
+\text{rank}\left(A\right)+\text{rank}\left(I-A\right)=n.
+$$
+
+### 解答 4.5-5
+
+因为 $A^{2}=A$, 所以
+
+$$
+A\left(I-A\right)=A-A^{2}=A-A=0.
+$$
+
+由**4.5-1**的结论,
+
+$$
+\text{rank}\left(A\right)+\text{rank}\left(I-A\right)\le n.
+$$
+
+另一方面,
+
+$$
+A+\left(I-A\right)=I.
+$$
+
+由秩的子加性,
+
+$$
+\text{rank}\left(I\right)\le\text{rank}\left(A\right)+\text{rank}\left(I-A\right).
+$$
+
+$\text{rank}\left(I\right)=n$, 故
+
+$$
+n\le\text{rank}\left(A\right)+\text{rank}\left(I-A\right).
+$$
+
+因此
+
+$$
+\text{rank}\left(A\right)+\text{rank}\left(I-A\right)=n.
+$$
+
+$\blacksquare$
+
+## 4.5-6
+
+设 $A$ 是实数域上的 $s\times n$ 矩阵, $\beta$ 是 $\mathbb{R}^{s}$ 的任意一个列向量. 证明: $n$ 元线性方程组 $A^{\top}AX=A^{\top}\beta$ 一定有解.
+
+### 解答 4.5-6
+
+由**命题 4.5.2 (实数域上秩的等式)**, 对于实数域上的矩阵,
+
+$$
+\text{rank}\left(A^{\top}A\right)=\text{rank}\left(A\right).
+$$
+
+增广矩阵为 $\left(A^{\top}A,A^{\top}\beta\right)=A^{\top}\left(A,\beta\right)$.
+
+因此
+
+$$
+\text{rank}\left(A^{\top}A,A^{\top}\beta\right)=\text{rank}\left(A^{\top}\left(A,\beta\right)\right)\le\text{rank}\left(A^{\top}\right)=\text{rank}\left(A\right).
+$$
+
+另一方面, $A^{\top}A$ 是 $\left(A^{\top}A,A^{\top}\beta\right)$ 的子矩阵, 故
+
+$$
+\text{rank}\left(A^{\top}A\right)\le\text{rank}\left(A^{\top}A,A^{\top}\beta\right).
+$$
+
+因此
+
+$$
+\text{rank}\left(A^{\top}A\right)\le\text{rank}\left(A^{\top}A,A^{\top}\beta\right)\le\text{rank}\left(A\right)=\text{rank}\left(A^{\top}A\right).
+$$
+
+所以
+
+$$
+\text{rank}\left(A^{\top}A\right)=\text{rank}\left(A^{\top}A,A^{\top}\beta\right).
+$$
+
+系数矩阵与增广矩阵有相同的秩, 故该方程组有解. $\blacksquare$
+
+## 4.5-9
+
+设 $A$ 是 $n$ 级矩阵 ( $n\ge2$ ), 证明:
+
+$$
+\text{rank}\left(A^{*}\right)=
+\begin{cases}
+n, & \text{当 }\text{rank}\left(A\right)=n;\\
+1, & \text{当 }\text{rank}\left(A\right)=n-1;\\
+0, & \text{当 }\text{rank}\left(A\right)< n-1.
+\end{cases}
+$$
+
+### 解答 4.5-9
+
+由**定理 4.3.1 (矩阵乘积的秩)**,
+
+$$
+\text{rank}\left(AB\right)\le\min\left\{\text{rank}\left(A\right),\text{rank}\left(B\right)\right\}.
+$$
+
+分三种情况讨论.
+
+**当 $\text{rank}\left(A\right)=n$ 时**: $\left|A\right|\ne0$.
+
+由 $AA^{*}=\left|A\right|I$, 得 $\left|A\right|\left|A^{*}\right|=\left|A\right|^{n}$.
+
+故 $\left|A^{*}\right|=\left|A\right|^{n-1}\ne0$, 因此 $\text{rank}\left(A^{*}\right)=n$.
+
+**当 $\text{rank}\left(A\right)=n-1$ 时**: $\left|A\right|=0$.
+
+故 $AA^{*}=\left|A\right|I=0$.
+
+由**4.5-1**, $\text{rank}\left(A\right)+\text{rank}\left(A^{*}\right)\le n$.
+
+即 $\left(n-1\right)+\text{rank}\left(A^{*}\right)\le n$, 故 $\text{rank}\left(A^{*}\right)\le1$.
+
+又因为 $\text{rank}\left(A\right)=n-1$, 所以 $A$ 有一个 $n-1$ 阶子式非零. 这个 $n-1$ 阶子式就是某个代数余子式, 故 $A^{*}\ne0$, 从而 $\text{rank}\left(A^{*}\right)\ge1$.
+
+因此 $\text{rank}\left(A^{*}\right)=1$.
+
+**当 $\text{rank}\left(A\right)< n-1$ 时**: $A$ 的所有 $n-1$ 阶子式都为零.
+
+故所有代数余子式都为零, 即 $A^{*}=0$.
+
+因此 $\text{rank}\left(A^{*}\right)=0$.
+
+$\blacksquare$
+
+## 4.5-15
+
+设 $A,B,C,D$ 都是 $n$ 级矩阵, 并且 $\left|A\right|\ne0$, $AC=CA$. 证明:
+
+$$
+\left|\begin{array}{cc}A & B\\C & D\end{array}\right|=\left|AD-CB\right|.
+$$
+
+### 解答 4.5-15
+
+因为 $\left|A\right|\ne0$, 所以 $A$ 可逆.
+
+作分块矩阵的初等行变换: 用 $-CA^{-1}$ 左乘第 $1$ 块行, 加到第 $2$ 块行上.
+
+$$
+\left|\begin{array}{cc}A & B\\C & D\end{array}\right|
+=
+\left|\begin{array}{cc}A & B\\0 & D-CA^{-1}B\end{array}\right|.
+$$
+
+这是分块上三角矩阵, 由分块上三角矩阵的行列式, 行列式等于主对角线上子矩阵行列式的乘积:
+
+$$
+=\left|A\right|\cdot\left|D-CA^{-1}B\right|.
+$$
+
+因为 $AC=CA$, 所以 $CA^{-1}=A^{-1}C$.
+
+故
+
+$$
+D-CA^{-1}B=D-A^{-1}CB.
+$$
+
+因此
+
+$$
+\left|D-CA^{-1}B\right|
+=\left|D-A^{-1}CB\right|
+=\left|A^{-1}\left(AD-CB\right)\right|
+=\left|A^{-1}\right|\cdot\left|AD-CB\right|
+=\frac{1}{\left|A\right|}\cdot\left|AD-CB\right|.
+$$
+
+所以
+
+$$
+\left|A\right|\cdot\left|D-CA^{-1}B\right|
+=\left|A\right|\cdot\frac{1}{\left|A\right|}\cdot\left|AD-CB\right|
+=\left|AD-CB\right|.
+$$
+
+$\blacksquare$
+
+## 4.6-1(3)
+
+判断下列矩阵是否为正交矩阵:
+
+$$
+A=\left[\begin{array}{rr}
+\sqrt{3}/2 & 1/2\\
+1/2 & -\sqrt{3}/2
+\end{array}\right].
+$$
+
+### 解答 4.6-1(3)
+
+由**定义 4.6.1 (正交矩阵)**, 计算 $A^{\top}A$:
+
+$$
+A^{\top}A=\left[\begin{array}{rr}
+\sqrt{3}/2 & 1/2\\
+1/2 & -\sqrt{3}/2
+\end{array}\right]\left[\begin{array}{rr}
+\sqrt{3}/2 & 1/2\\
+1/2 & -\sqrt{3}/2
+\end{array}\right].
+$$
+
+$\left(1,1\right)$ 元:
+
+$$
+\left(\frac{\sqrt{3}}{2}\right)^{2}+\left(\frac{1}{2}\right)^{2}=\frac{3}{4}+\frac{1}{4}=1.
+$$
+
+$\left(1,2\right)$ 元:
+
+$$
+\frac{\sqrt{3}}{2}\cdot\frac{1}{2}+\frac{1}{2}\cdot\left(-\frac{\sqrt{3}}{2}\right)=\frac{\sqrt{3}}{4}-\frac{\sqrt{3}}{4}=0.
+$$
+
+$\left(2,1\right)$ 元:
+
+$$
+\frac{1}{2}\cdot\frac{\sqrt{3}}{2}+\left(-\frac{\sqrt{3}}{2}\right)\cdot\frac{1}{2}=\frac{\sqrt{3}}{4}-\frac{\sqrt{3}}{4}=0.
+$$
+
+$\left(2,2\right)$ 元:
+
+$$
+\left(\frac{1}{2}\right)^{2}+\left(-\frac{\sqrt{3}}{2}\right)^{2}=\frac{1}{4}+\frac{3}{4}=1.
+$$
+
+因此 $A^{\top}A=I$, 由**定义 4.6.1 (正交矩阵)**, 故 $A$ 是正交矩阵. $\blacksquare$
+
+## 4.6-1(8)
+
+判断下列矩阵是否为正交矩阵:
+
+$$
+A=\left[\begin{array}{rr}
+1 & 1\\
+1 & -1
+\end{array}\right].
+$$
+
+### 解答 4.6-1(8)
+
+由**定义 4.6.1 (正交矩阵)**, 计算 $A^{\top}A$:
+
+$$
+A^{\top}A=\left[\begin{array}{rr}
+1 & 1\\
+1 & -1
+\end{array}\right]\left[\begin{array}{rr}
+1 & 1\\
+1 & -1
+\end{array}\right]
+=\left[\begin{array}{rr}
+2 & 0\\
+0 & 2
+\end{array}\right].
+$$
+
+显然 $A^{\top}A\ne I$, 由**定义 4.6.1 (正交矩阵)**, 故 $A$ 不是正交矩阵. $\blacksquare$
+
+## 4.6-3
+
+证明: 如果 $A$ 是实数域上 $n$ 级对称矩阵, $T$ 是 $n$ 级正交矩阵, 则 $T^{-1}AT$ 是对称矩阵.
+
+### 解答 4.6-3
+
+由**定义 4.6.1 (正交矩阵)**, 因为 $T$ 是正交矩阵, 故 $T^{-1}=T^{\top}$.
+
+$$
+\left(T^{-1}AT\right)^{\top}=T^{\top}A^{\top}\left(T^{-1}\right)^{\top}.
+$$
+
+因为 $T$ 是正交矩阵, 故 $T^{-1}=T^{\top}$, 从而 $\left(T^{-1}\right)^{\top}=\left(T^{\top}\right)^{\top}=T$.
+
+因此
+
+$$
+\left(T^{-1}AT\right)^{\top}=T^{\top}A^{\top}T.
+$$
+
+因为 $A$ 是对称矩阵, 故 $A^{\top}=A$.
+
+所以
+
+$$
+\left(T^{-1}AT\right)^{\top}=T^{\top}AT=T^{-1}AT.
+$$
+
+因此 $T^{-1}AT$ 是对称矩阵. $\blacksquare$

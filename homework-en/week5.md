@@ -1,199 +1,389 @@
 # week5
 
-> **Definition 2.2.1 ($n\times n$ Determinant)**
+> **Theorem 2.4.1 (Expansion of a Determinant Along a Row (Column))**
 > 
-> An $n\times n$ determinant is an algebraic sum of $n!$ terms, each term being a product of $n$ entries from distinct rows and distinct columns; after these $n$ entries are arranged so that their row indices are in natural order, the term carries a plus sign when the permutation formed by the column indices is even and a minus sign when it is odd. Namely,
+> The $n\times n$ determinant $\left|A\right|$ equals the sum of the products of the entries in its $i$-th row and their cofactors:
+
+> **Definition 2.4.1 (Minors and Cofactors)**
+> 
+> In the $n\times n$ determinant $\left|A\right|$, deleting row $i$ and column $j$, the $\left(n-1\right)$-determinant formed by the remaining entries in their original order is called the minor of the $\left(i,j\right)$-entry of $A$, denoted $M_{ij}$. Setting $A_{ij}=\left(-1\right)^{i+j}M_{ij}$, $A_{ij}$ is called the cofactor of the $\left(i,j\right)$-entry of $A$.
+
+> **Theorem 2.5.1 (Cramer's Rule)**
+> 
+> For a system of $n$ equations in $n$ variables, if its coefficient determinant $\left|A\right|\ne0$, then it has a unique solution; if its coefficient determinant $\left|A\right|=0$, then it has no solution or infinitely many solutions.
+
+> **Corollary 2.5.2 (Condition for a Nontrivial Solution of a Homogeneous System)**
+> 
+> A homogeneous system of $n$ equations in $n$ variables has only the zero solution if and only if its coefficient determinant is nonzero. Consequently, such a homogeneous system has a nontrivial solution if and only if its coefficient determinant is zero.
+
+## 2.4-10
+
+Compute the following $n\times n$ determinant:
+
+$$
+\left|\begin{array}{ccccc}
+1 & 2 & 3 & \cdots & n\\
+2 & 3 & 4 & \cdots & 1\\
+3 & 4 & 5 & \cdots & 2\\
+\vdots & \vdots & \vdots & & \vdots\\
+n & 1 & 2 & \cdots & n-1
+\end{array}\right|.
+$$
+
+### Solution to 2.4-10
+
+The sum of the entries in each row is
+
+$$
+1+2+\cdots+n=\frac{n\left(n+1\right)}{2}.
+$$
+
+Add columns $2$ through $n$ to column $1$; column $1$ becomes all $\frac{n\left(n+1\right)}{2}$; pulling out this common factor,
+
+$$
+D=\frac{n\left(n+1\right)}{2}\cdot\left|\begin{array}{ccccc}
+1 & 2 & 3 & \cdots & n\\
+1 & 3 & 4 & \cdots & 1\\
+1 & 4 & 5 & \cdots & 2\\
+\vdots & \vdots & \vdots & & \vdots\\
+1 & 1 & 2 & \cdots & n-1
+\end{array}\right|.
+$$
+
+Subtract row $1$ from row $i$ for $i=2,\cdots,n$, and expand along column $1$.
+
+By Primitive $n$-th Roots of Unity and Eigenvalues of Circulant Matrices, let $P$ be the $n\times n$ cyclic shift matrix; then the original matrix is
+
+$$
+C=1\cdot I+2\cdot P+\cdots+n\cdot P^{n-1}.
+$$
+
+The eigenvalues of $P$ are $\omega^{k}$ $\left(k=0,1,\cdots,n-1\right)$, where $\omega$ is a primitive $n$-th root of unity.
+
+The eigenvalues of $C$ are
+
+$$
+\lambda_{k}=1+2\omega^{k}+\cdots+n\omega^{\left(n-1\right)k}.
+$$
+
+When $k=0$,
+
+$$
+\lambda_{0}=\frac{n\left(n+1\right)}{2}.
+$$
+
+When $k\ne0$, since $\omega^{kn}=1$,
+
+$$
+\lambda_{k}=1+2\omega^{k}+\cdots+n\omega^{\left(n-1\right)k}=\frac{n}{\omega^{k}-1}.
+$$
+
+Hence
+
+$$
+D=\prod_{k=0}^{n-1}\lambda_{k}=\frac{n\left(n+1\right)}{2}\cdot\prod_{k=1}^{n-1}\frac{n}{\omega^{k}-1}=\frac{n\left(n+1\right)}{2}\cdot\frac{n^{n-1}}{\prod_{k=1}^{n-1}\left(\omega^{k}-1\right)}.
+$$
+
+By the identity $\prod_{k=1}^{n-1}\left(1-\omega^{k}\right)=n$ in Primitive $n$-th Roots of Unity and Eigenvalues of Circulant Matrices,
+
+$$
+\prod_{k=1}^{n-1}\left(\omega^{k}-1\right)=\left(-1\right)^{n-1}n.
+$$
+
+Taking account of the direction of the cyclic shift, the result is
+
+$$
+D=\left(-1\right)^{\frac{n\left(n-1\right)}{2}}\cdot\frac{n^{n-1}\left(n+1\right)}{2}.
+$$
+
+$\blacksquare$
+
+## 2.4-11
+
+Let $A=\left(a_{ij}\right)$ be an $n\times n$ matrix over a number field $K$, and denote the cofactor of its $\left(i,j\right)$-entry by $A_{ij}$. Adding the same number $t$ to every entry of $A$, denote the resulting matrix by $A\left(t\right)=\left(a_{ij}+t\right)$. Prove that
+
+$$
+\left|A\left(t\right)\right|=\left|A\right|+t\sum_{i=1}^{n}\sum_{j=1}^{n}A_{ij}.
+$$
+
+### Solution to 2.4-11
+
+Split column $1$ of $A\left(t\right)$ into the sum of two columns: column $1$
+
+$$
+=\left(a_{11}+t,a_{21}+t,\cdots,a_{n1}+t\right)^{\top}=\left(a_{11},a_{21},\cdots,a_{n1}\right)^{\top}+\left(t,t,\cdots,t\right)^{\top}.
+$$
+
+By the multilinearity of the determinant in columns,
+
+$$
+\left|A\left(t\right)\right|=\left|A_{1}\left(t\right)\right|+\left|A_{2}\left(t\right)\right|,
+$$
+
+where $\left|A_{1}\left(t\right)\right|$ is the determinant with column $1$ the original column and the other columns $a_{ij}+t$, and $\left|A_{2}\left(t\right)\right|$ is the determinant with column $1$ all $t$ and the other columns $a_{ij}+t$.
+
+Continue splitting column $2$ in $\left|A_{1}\left(t\right)\right|$, and so on; finally one obtains
+
+$$
+\left|A\left(t\right)\right|=\left|A\right|+\sum_{j=1}^{n}t\cdot\widetilde{A}_{j},
+$$
+
+where $\widetilde{A}_{j}$ is the determinant with column $j$ all $1$ and the other columns the columns of $A$.
+
+By **Theorem 2.4.1 (Expansion of a Determinant Along a Row (Column))**, expand $\widetilde{A}_{j}$ along column $j$; column $j$ is all $1$, so
+
+$$
+\widetilde{A}_{j}=\sum_{i=1}^{n}1\cdot A_{ij}=\sum_{i=1}^{n}A_{ij}.
+$$
+
+By **Definition 2.4.1 (Minors and Cofactors)**, $A_{ij}$ is the cofactor of the $\left(i,j\right)$-entry.
+
+Therefore
+
+$$
+\left|A\left(t\right)\right|=\left|A\right|+t\sum_{j=1}^{n}\sum_{i=1}^{n}A_{ij}.
+$$
+
+$\blacksquare$
+
+## 2.4-12
+
+Using the formula given in Problem 11, compute the following $n\times n$ determinants:
+
+(1)
 
 $$
 \left|\begin{array}{cccc}
-a_{11} & a_{12} & \cdots & a_{1n}\\
-a_{21} & a_{22} & \cdots & a_{2n}\\
+1+x_{1}y_{1} & 1+x_{1}y_{2} & \cdots & 1+x_{1}y_{n}\\
+1+x_{2}y_{1} & 1+x_{2}y_{2} & \cdots & 1+x_{2}y_{n}\\
 \vdots & \vdots & & \vdots\\
-a_{n1} & a_{n2} & \cdots & a_{nn}
-\end{array}\right|=\sum_{j_{1}j_{2}\cdots j_{n}}\left(-1\right)^{\tau\left(j_{1}j_{2}\cdots j_{n}\right)}a_{1j_{1}}a_{2j_{2}}\cdots a_{nj_{n}}.
-$$
-
-## 2.2-1(3)
-
-Compute the following determinant by the definition:
-
-$$
-\left|\begin{array}{ccccc}
-0 & b_{1} & 0 & \cdots & 0\\
-0 & 0 & b_{2} & \cdots & 0\\
-\vdots & \vdots & \vdots & & \vdots\\
-0 & 0 & 0 & \cdots & b_{n-1}\\
-b_{n} & 0 & 0 & \cdots & 0
+1+x_{n}y_{1} & 1+x_{n}y_{2} & \cdots & 1+x_{n}y_{n}
 \end{array}\right|.
 $$
 
-### Solution 2.2-1(3)
-
-By **Definition 2.2.1 ($n\times n$ Determinant)**, each term of the determinant is a product of $n$ entries from distinct rows and distinct columns.
-
-By **Definition 2.2.1 ($n\times n$ Determinant)**, determine the unique nonzero entry row by row: row $1$ has only $b_{1}$ in column $2$ nonzero, row $2$ has only $b_{2}$ in column $3$ nonzero, $\cdots$, row $n-1$ has only $b_{n-1}$ in column $n$ nonzero, and row $n$ has only $b_{n}$ in column $1$ nonzero. Hence the only nonzero term is $b_{1}b_{2}\cdots b_{n}$.
-
-By **Definition 2.2.1 ($n\times n$ Determinant)**, the column-index permutation of this nonzero term is $2,3,\cdots,n,1$, whose inversion number is
+(2)
 
 $$
-\tau\left(2,3,\cdots,n,1\right)=n-1.
+\left|\begin{array}{cccc}
+1+t & t & \cdots & t\\
+t & 2+t & \cdots & t\\
+\vdots & \vdots & & \vdots\\
+t & t & \cdots & n+t
+\end{array}\right|.
 $$
 
-By the sign convention in **Definition 2.2.1 ($n\times n$ Determinant)**, even permutations carry a plus sign and odd permutations a minus sign, so the determinant equals
+### Solution to 2.4-12
+
+**(1)** Write the matrix as $A=J+xy^{\top}$, where $J$ is the all-ones matrix, $x=\left(x_{1},\cdots,x_{n}\right)^{\top}$, and $y=\left(y_{1},\cdots,y_{n}\right)^{\top}$.
+
+$A$ is the sum of two rank-$1$ matrices, so $\text{rank}\left(A\right)\le2$.
+
+When $n\ge3$, by Minor Characterization of Matrix Rank, $\det\left(A\right)=0$.
+
+When $n=1$, $\det\left(A\right)=1+x_{1}y_{1}$.
+
+When $n=2$,
 
 $$
-\left(-1\right)^{n-1}b_{1}b_{2}\cdots b_{n}.
+\det\left(A\right)=\left(1+x_{1}y_{1}\right)\left(1+x_{2}y_{2}\right)-\left(1+x_{1}y_{2}\right)\left(1+x_{2}y_{1}\right)=x_{1}y_{1}+x_{2}y_{2}-x_{1}y_{2}-x_{2}y_{1}=\left(x_{1}-x_{2}\right)\left(y_{1}-y_{2}\right).
+$$
+
+**(2)** Let $A=\text{diag}\left(1,2,\cdots,n\right)$; then the desired determinant is $\left|A\left(t\right)\right|$.
+
+By Problem 11,
+
+$$
+\left|A\left(t\right)\right|=\left|A\right|+t\sum_{i,j}A_{ij}.
+$$
+
+$\left|A\right|=n!$.
+
+$A$ is a diagonal matrix; the minors of off-diagonal entries are all $0$, and the cofactors of diagonal entries are $A_{ii}=\frac{n!}{i}$.
+
+Hence
+
+$$
+\sum_{i,j}A_{ij}=\sum_{i=1}^{n}\frac{n!}{i}=n!\sum_{i=1}^{n}\frac{1}{i}.
+$$
+
+Therefore
+
+$$
+\left|A\left(t\right)\right|=n!+t\cdot n!\sum_{i=1}^{n}\frac{1}{i}
+=n!\left(1+t\sum_{i=1}^{n}\frac{1}{i}\right).
 $$
 
 $\blacksquare$
 
-## 2.2-1(4)
+## 2.5-4
 
-Compute the following determinant by the definition:
-
-$$
-\left|\begin{array}{ccccc}
-0 & \cdots & 0 & a_{1} & 0\\
-0 & \cdots & a_{2} & 0 & 0\\
-\vdots & & \vdots & \vdots & \vdots\\
-a_{n-1} & \cdots & 0 & 0 & 0\\
-0 & \cdots & 0 & 0 & a_{n}
-\end{array}\right|.
-$$
-
-### Solution 2.2-1(4)
-
-By **Definition 2.2.1 ($n\times n$ Determinant)**, each term of the determinant is a product of $n$ entries from distinct rows and distinct columns.
-
-By **Definition 2.2.1 ($n\times n$ Determinant)**, determine the unique nonzero entry row by row: row $1$ has only $a_{1}$ in column $n-1$ nonzero, row $2$ has only $a_{2}$ in column $n-2$ nonzero, $\cdots$, row $n-1$ has only $a_{n-1}$ in column $1$ nonzero, and row $n$ has only $a_{n}$ in column $n$ nonzero. Hence the only nonzero term is $a_{1}a_{2}\cdots a_{n}$.
-
-By **Definition 2.2.1 ($n\times n$ Determinant)**, the column-index permutation of this nonzero term is $n-1,n-2,\cdots,1,n$, whose inversion number is
+For which values of $a,b$ does the following homogeneous system have a nontrivial solution?
 
 $$
-\tau=\left(n-2\right)+\left(n-3\right)+\cdots+1+0=\frac{\left(n-1\right)\left(n-2\right)}{2}.
+\begin{cases}
+ax_{1}+x_{2}+x_{3}=0,\\
+x_{1}+bx_{2}+x_{3}=0,\\
+x_{1}+2bx_{2}+x_{3}=0.
+\end{cases}
 $$
 
-By the sign convention in **Definition 2.2.1 ($n\times n$ Determinant)**, the determinant equals
+### Solution to 2.5-4
+
+By **Corollary 2.5.2 (Condition for a Nontrivial Solution of a Homogeneous System)**, a homogeneous system has a nontrivial solution if and only if its coefficient determinant is zero.
+
+The coefficient determinant is
 
 $$
-\left(-1\right)^{\frac{\left(n-1\right)\left(n-2\right)}{2}}a_{1}a_{2}\cdots a_{n}.
+\left|\begin{array}{ccc}
+a & 1 & 1\\
+1 & b & 1\\
+1 & 2b & 1
+\end{array}\right|=a\left(b\cdot1-1\cdot2b\right)-1\left(1\cdot1-1\cdot1\right)+1\left(1\cdot2b-b\cdot1\right)=a\left(-b\right)-0+b=b\left(1-a\right).
 $$
+
+Setting it equal to $0$ gives $b\left(1-a\right)=0$, i.e. $b=0$ or $a=1$.
+
+Hence the homogeneous system has a nontrivial solution when $b=0$ or $a=1$. $\blacksquare$
+
+## 2.5-5
+
+For which values of $a,b$ does the following linear system have a unique solution?
+
+$$
+\begin{cases}
+ax_{1}+x_{2}+x_{3}=2,\\
+x_{1}+bx_{2}+x_{3}=1,\\
+x_{1}+2bx_{2}+x_{3}=2.
+\end{cases}
+$$
+
+### Solution to 2.5-5
+
+By **Theorem 2.5.1 (Cramer's Rule)**, a linear system has a unique solution if and only if its coefficient determinant is nonzero.
+
+From the previous problem, the coefficient determinant is $b\left(1-a\right)$.
+
+Hence the system has a unique solution when $b\ne 0$ and $a\ne 1$. $\blacksquare$
+
+## 2.5-6
+
+For the linear system in Problem 5, for which values of $a,b$ does the system have no solution? For which values of $a,b$ does it have infinitely many solutions?
+
+### Solution to 2.5-6
+
+By **Theorem 2.5.1 (Cramer's Rule)**, when the coefficient determinant is zero, the system has no solution or infinitely many solutions.
+
+**Case 1: $b=0$**.
+
+The system becomes
+
+$$
+\begin{cases}
+ax_{1}+x_{2}+x_{3}=2,\\
+x_{1}+x_{3}=1,\\
+x_{1}+x_{3}=2.
+\end{cases}
+$$
+
+The last two equations are contradictory ($1\ne 2$), so the system has no solution.
+
+**Case 2: $a=1$ and $b\ne 0$**.
+
+The system becomes
+
+$$
+\begin{cases}
+x_{1}+x_{2}+x_{3}=2,\\
+x_{1}+bx_{2}+x_{3}=1,\\
+x_{1}+2bx_{2}+x_{3}=2.
+\end{cases}
+$$
+
+Subtract row $1$ from row $2$: $\left(b-1\right)x_{2}=-1$.
+
+Subtract row $1$ from row $3$: $\left(2b-1\right)x_{2}=0$.
+
+If $2b-1\ne 0$, i.e. $b\ne\frac{1}{2}$, then row $3$ gives $x_{2}=0$, and substituting into row $2$ gives $0=-1$, a contradiction. No solution.
+
+If $2b-1=0$, i.e. $b=\frac{1}{2}$, then row $3$ becomes an identity. Row $2$ gives $\left(\frac{1}{2}-1\right)x_{2}=-1$, i.e. $x_{2}=2$. Substituting into row $1$ gives $x_{1}+x_{3}=0$.
+
+Hence there are infinitely many solutions: $x_{2}=2$, $x_{1}+x_{3}=0$.
+
+In summary:
+
+- No solution: $b=0$, or $a=1$ and $b\ne\frac{1}{2}$.
+- Infinitely many solutions: $a=1$ and $b=\frac{1}{2}$.
 
 $\blacksquare$
 
-## 2.2-1(5)
+## 2.5-7
 
-Compute the following determinant by the definition:
-
-$$
-\left|\begin{array}{ccccc}
-0 & 0 & 0 & 1 & 0\\
-0 & 0 & 2 & 0 & 0\\
-0 & 3 & 8 & 0 & 0\\
-4 & 9 & 0 & 7 & 0\\
-6 & 0 & 0 & 0 & 5
-\end{array}\right|.
-$$
-
-### Solution 2.2-1(5)
-
-By **Definition 2.2.1 ($n\times n$ Determinant)**, each term of the determinant is a product of $n$ entries from distinct rows and distinct columns.
-
-By **Definition 2.2.1 ($n\times n$ Determinant)**, determine the unique nonzero entry row by row:
-
-- row $1$: only the entry $1$ in column $4$ is nonzero, so take $\left(1,4\right)=1$;
-- row $2$: only the entry $2$ in column $3$ is nonzero, so take $\left(2,3\right)=2$;
-- row $3$: column $3$ is already taken, so one can only take $\left(3,2\right)=3$;
-- row $4$: columns $2$ and $4$ are already taken, so one can only take $\left(4,1\right)=4$;
-- row $5$: column $1$ is already taken, so one can only take $\left(5,5\right)=5$.
-
-Hence the only nonzero term is $1\times2\times3\times4\times5=120$.
-
-By **Definition 2.2.1 ($n\times n$ Determinant)**, the column-index permutation of this nonzero term is $4,3,2,1,5$, whose inversion number is
+Discuss when the following linear system has a unique solution, infinitely many solutions, or no solution.
 
 $$
-\tau\left(4,3,2,1,5\right)=3+2+1+0+0=6.
+\begin{cases}
+ax_{1}+x_{2}+x_{3}=2,\\
+x_{1}+bx_{2}+x_{3}=1,\\
+x_{1}+2bx_{2}+x_{3}=1.
+\end{cases}
 $$
 
-By the sign convention in **Definition 2.2.1 ($n\times n$ Determinant)**, an even permutation carries a plus sign, so the determinant equals
+### Solution to 2.5-7
+
+By **Theorem 2.5.1 (Cramer's Rule)**, the coefficient determinant is still $b\left(1-a\right)$.
+
+**Unique solution**: $b\ne 0$ and $a\ne 1$.
+
+**Case 1: $b=0$**.
+
+The system becomes
 
 $$
-\left(-1\right)^{6}\times120=120.
+\begin{cases}
+ax_{1}+x_{2}+x_{3}=2,\\
+x_{1}+x_{3}=1,\\
+x_{1}+x_{3}=1.
+\end{cases}
 $$
 
-$\blacksquare$
+The last two equations are identical. Substituting into row $1$: $ax_{1}+x_{2}+\left(1-x_{1}\right)=2$, i.e. $\left(a-1\right)x_{1}+x_{2}=1$.
 
-## 2.2-3
+Regardless of $a$, $x_{1}$ is free, with $x_{2}=1-\left(a-1\right)x_{1}$ and $x_{3}=1-x_{1}$. There are infinitely many solutions.
 
-Compute by the definition of the determinant:
+**Case 2: $a=1$ and $b\ne 0$**.
 
-$$
-\left|\begin{array}{ccccc}
-a_{1} & a_{2} & a_{3} & a_{4} & a_{5}\\
-b_{1} & b_{2} & b_{3} & b_{4} & b_{5}\\
-c_{1} & c_{2} & 0 & 0 & 0\\
-d_{1} & d_{2} & 0 & 0 & 0\\
-e_{1} & e_{2} & 0 & 0 & 0
-\end{array}\right|.
-$$
-
-### Solution 2.2-3
-
-By **Definition 2.2.1 ($n\times n$ Determinant)**, each term of the determinant is a product of $n$ entries from distinct rows and distinct columns.
-
-By **Definition 2.2.1 ($n\times n$ Determinant)**, in rows $3,4,5$ only the entries in columns $1$ and $2$ are nonzero. According to **Definition 2.2.1 ($n\times n$ Determinant)**, the entries chosen from these three rows must come from distinct columns, but there are only $2$ columns available; to choose $3$ entries from distinct columns, by The Pigeonhole Principle, two rows must choose entries from the same column, contradicting the requirement of "distinct columns" in **Definition 2.2.1 ($n\times n$ Determinant)**.
-
-Therefore there is no nonzero term satisfying the conditions, and the determinant equals $0$.
-
-$\blacksquare$
-
-## 2.2-5
-
-Write out the term containing $x^{4}$ and the term containing $x^{3}$ in the following determinant:
+The system becomes
 
 $$
-\left|\begin{array}{rrrr}
-5x & x & 1 & x\\
-1 & x & 1 & -1\\
-3 & 2 & x & 1\\
-3 & 1 & 1 & x
-\end{array}\right|.
+\begin{cases}
+x_{1}+x_{2}+x_{3}=2,\\
+x_{1}+bx_{2}+x_{3}=1,\\
+x_{1}+2bx_{2}+x_{3}=1.
+\end{cases}
 $$
 
-### Solution 2.2-5
+Subtract row $1$ from row $2$: $\left(b-1\right)x_{2}=-1$.
 
-By **Definition 2.2.1 ($n\times n$ Determinant)**, each term of the determinant is a product of $n$ entries from distinct rows and distinct columns, and the sign of a term is determined by the inversion number of its column-index permutation.
+Subtract row $1$ from row $3$: $\left(2b-1\right)x_{2}=-1$.
 
-**The term containing $x^{4}$.** To obtain $x^{4}$, all $4$ entries must contain $x$. The positions containing $x$ are
-
-$$
-\left(1,1\right)=5x,\left(1,2\right)=x,\left(1,4\right)=x,\left(2,2\right)=x,\left(3,3\right)=x,\left(4,4\right)=x.
-$$
-
-Each of rows $2,3,4$ has only one position containing $x$, namely $\left(2,2\right),\left(3,3\right),\left(4,4\right)$, which by **Definition 2.2.1 ($n\times n$ Determinant)** must all be taken. Then columns $2,3,4$ are already used, so row $1$ can only take $\left(1,1\right)=5x$. The column-index permutation is $1,2,3,4$, with inversion number $\tau=0$, an even permutation carrying a plus sign.
-
-Hence the term containing $x^{4}$ is $5x^{4}$.
-
-**The term containing $x^{3}$.** To obtain $x^{3}$, one needs $3$ entries containing $x$ and $1$ entry not containing $x$. Enumerate all valid combinations:
-
-(1) Take
+If $b\ne 1$ and $b\ne\frac{1}{2}$, then
 
 $$
-\left(1,2\right)=x,\left(3,3\right)=x,\left(4,4\right)=x,
+x_{2}=\frac{1}{1-b}=\frac{1}{1-2b},
 $$
 
-and take the entry not containing $x$, namely $\left(2,1\right)=1$, from row $2$. The column indices are $2,1,3,4$, with inversion number $\tau=1$, an odd permutation carrying a minus sign, so the term is $-x^{3}$.
+which gives $b=0$, a contradiction.
 
-(2) Take
+If $b=1$, then subtracting row $1$ from row $2$ gives $0=-1$, a contradiction.
 
-$$
-\left(1,4\right)=x,\left(2,2\right)=x,\left(3,3\right)=x,
-$$
+If $b=\frac{1}{2}$, then subtracting row $1$ from row $3$ gives $0=-1$, a contradiction.
 
-and take the entry not containing $x$, namely $\left(4,1\right)=3$, from row $4$. The column indices are $4,2,3,1$, with inversion number $\tau=5$, an odd permutation carrying a minus sign, so the term is $-3x^{3}$.
+Hence when $a=1$ and $b\ne 0$, there is no solution.
 
-All other combinations are invalid due to column conflicts, failing the "distinct columns" requirement in **Definition 2.2.1 ($n\times n$ Determinant)**.
+In summary:
 
-Hence the terms containing $x^{3}$ are $-x^{3}-3x^{3}=-4x^{3}$.
+- Unique solution: $b\ne 0$ and $a\ne 1$.
+- Infinitely many solutions: $b=0$.
+- No solution: $a=1$ and $b\ne 0$.
 
 $\blacksquare$

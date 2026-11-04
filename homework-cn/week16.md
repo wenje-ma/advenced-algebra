@@ -1,225 +1,394 @@
 # week16
 
-> **定义 3.7.1 (基础解系)**
+> **定义 5.1.1 (二元关系)**
 > 
-> 齐次线性方程组有非零解时, 如果它的有限多个解 $\eta_{1},\eta_{2},\cdots,\eta_{t}$ 满足: $1^{\circ}$ 线性无关; $2^{\circ}$ 方程组的每一个解都可以由它们线性表出, 则称它们是一个基础解系.
+> 设 $S$ 是一个非空集合, 我们把 $S\times S$ 的一个子集 $W$ 叫做 $S$ 上的一个二元关系. 如果 $\left(a,b\right)\in W$, 则称 $a$ 与 $b$ 有 $W$ 关系.
 
-> **定理 3.7.1 (解空间的维数)**
+> **定义 5.1.2 (等价关系)**
 > 
-> 数域 $K$ 上 $n$ 元齐次线性方程组的解空间 $W$ 的维数为:
+> 集合 $S$ 上的一个二元关系 $\sim$ 如果具有下述性质: $\forall a,b,c\in S$, 有 $1^{\circ}a\sim a$ (反身性); $2^{\circ}a\sim b\Rightarrow b\sim a$ (对称性); $3^{\circ}a\sim b$ 且 $b\sim c\Rightarrow a\sim c$ (传递性), 则称 $\sim$ 是 $S$ 上的一个等价关系.
+
+> **定义 5.1.4 (商集)**
+> 
+> 设 $\sim$ 是集合 $S$ 上的一个等价关系. 由所有等价类组成的集合称为 $S$ 对于关系 $\sim$ 的商集, 记作 $S/\sim$.
+
+> **定义 5.2.1 (相抵)**
+> 
+> 数域 $K$ 上的矩阵 $A$ 如果经过一系列初等行变换和初等列变换变成矩阵 $B$, 则称 $A$ 与 $B$ 是相抵的, 记作 $A\overset{\text{相抵}}{\sim}B$.
+
+> **定理 5.2.1 (相抵标准形)**
+> 
+> 设数域 $K$ 上 $s\times n$ 矩阵 $A$ 的秩为 $r$. 如果 $r> 0$, 则 $A$ 相抵于下述形式的矩阵:
 
 $$
-\dim W=n-\text{rank}\left(A\right)
+\left[\begin{array}{cc}I_{r} & 0\\0 & 0\end{array}\right].
 $$
 
-其中 $A$ 是系数矩阵.
+> **定理 5.2.2 (相抵的充要条件)**
+> 
+> 数域 $K$ 上两个 $s\times n$ 矩阵 $A$ 与 $B$ 相抵当且仅当它们的秩相等.
 
-## 3.7-1(1)
+> **定义 5.3.1 (广义逆)**
+> 
+> 设 $A$ 是数域 $K$ 上 $s\times n$ 矩阵. 如果矩阵 $G$ 满足 $AGA=A$, 则称 $G$ 是 $A$ 的一个广义逆, 记作 $A^{-}$.
 
-求下列数域 $K$ 上齐次线性方程组的一个基础解系, 并且写出它的解集.
+> **定理 5.3.1 (广义逆的存在性)**
+> 
+> 设 $A$ 是数域 $K$ 上 $s\times n$ 非零矩阵, 则矩阵方程 $AXA=A$ 一定有解.
 
-$$
-\begin{cases}
-x_{1}-3x_{2}+x_{3}-2x_{4}=0,\\
--5x_{1}+x_{2}-2x_{3}+3x_{4}=0,\\
--x_{1}-11x_{2}+2x_{3}-5x_{4}=0,\\
-3x_{1}+5x_{2}+x_{4}=0.
-\end{cases}
-$$
+## 5.1-1
 
-### 解答 3.7-1(1)
-
-由**定义 3.7.1 (基础解系)**和**定理 3.7.1 (解空间的维数)**, 系数矩阵作初等行变换:
+在平面 $S$ (点集) 上定义一个二元关系:
 
 $$
-\left[\begin{array}{rrrr}
-1 & -3 & 1 & -2\\
--5 & 1 & -2 & 3\\
--1 & -11 & 2 & -5\\
-3 & 5 & 0 & 1
-\end{array}\right]
-\xrightarrow{\text{行变换}}
-\left[\begin{array}{rrrr}
-1 & -3 & 1 & -2\\
-0 & -14 & 3 & -7\\
-0 & 0 & 0 & 0\\
-0 & 0 & 0 & 0
-\end{array}\right].
+P\left(x_{1},y_{1}\right)\sim P\left(x_{2},y_{2}\right)\overset{def}{\Leftrightarrow}x_{1}=x_{2}.
 $$
 
-秩为 $2$, 未知量数目为 $4$. 由**定理 3.7.1 (解空间的维数)**, 解空间的维数为 $4-2=2$, 故基础解系含 $2$ 个向量.
+证明: $\sim$ 是 $S$ 上的一个等价关系.
 
-一般解:
+### 解答 5.1-1
 
-$$
-\begin{cases}
-x_{1}=\frac{-5x_{3}+7x_{4}}{14},\\
-x_{2}=\frac{3x_{3}-7x_{4}}{14},
-\end{cases}
-$$
+由**定义 5.1.2 (等价关系)**, 需验证反身性, 对称性和传递性.
 
-其中 $x_{3},x_{4}$ 是自由未知量.
+**反身性**: 对任意 $P\left(x,y\right)\in S$, 显然 $x=x$, 故 $P\sim P$.
 
-令 $x_{3}=14,x_{4}=0$, 得 $\eta_{1}=\left(-5,3,14,0\right)^{\top}$.
+**对称性**: 若 $P\left(x_{1},y_{1}\right)\sim P\left(x_{2},y_{2}\right)$, 则 $x_{1}=x_{2}$, 从而 $x_{2}=x_{1}$, 故 $P\left(x_{2},y_{2}\right)\sim P\left(x_{1},y_{1}\right)$.
 
-令 $x_{3}=0,x_{4}=14$, 得 $\eta_{2}=\left(7,-7,0,14\right)^{\top}$.
+**传递性**: 若 $P\left(x_{1},y_{1}\right)\sim P\left(x_{2},y_{2}\right)$ 且 $P\left(x_{2},y_{2}\right)\sim P\left(x_{3},y_{3}\right)$, 则 $x_{1}=x_{2}$ 且 $x_{2}=x_{3}$, 从而 $x_{1}=x_{3}$, 故 $P\left(x_{1},y_{1}\right)\sim P\left(x_{3},y_{3}\right)$.
 
-由**定义 3.7.1 (基础解系)**, $\eta_{1},\eta_{2}$ 线性无关, 且方程组的每一个解都可以由它们线性表出, 故它们是一个基础解系.
+因此 $\sim$ 满足**定义 5.1.2 (等价关系)**的全部条件, 故 $\sim$ 是 $S$ 上的等价关系. $\blacksquare$
 
-解集:
+## 5.1-4
 
-$$
-W=\left\{k_{1}\eta_{1}+k_{2}\eta_{2}\mid k_{1},k_{2}\in K\right\}.
-$$
+写出 $\mathbb{Z}$ 对于模 $3$ 同余关系的商集 $\mathbb{Z}/\left(3\right)$.
 
-$\blacksquare$
+### 解答 5.1-4
 
-## 3.7-1(2)
+由**定义 5.1.4 (商集)**, 模 $3$ 同余: $a\sim b\overset{def}{\Leftrightarrow}a$ 与 $b$ 被 $3$ 除所得余数相同.
 
-求下列数域 $K$ 上齐次线性方程组的一个基础解系, 并且写出它的解集.
+共有 $3$ 个等价类:
 
 $$
-\begin{cases}
-3x_{1}-x_{2}+2x_{3}+x_{4}=0,\\
-x_{1}+3x_{2}-x_{3}+2x_{4}=0,\\
--2x_{1}+5x_{2}+x_{3}-x_{4}=0,\\
-3x_{1}+10x_{2}+x_{3}+4x_{4}=0,\\
--2x_{1}+15x_{2}-4x_{3}+4x_{4}=0.
-\end{cases}
+\left[0\right]=\left\{\cdots,-6,-3,0,3,6,\cdots\right\}=\left\{3k\mid k\in\mathbb{Z}\right\}.
 $$
 
-### 解答 3.7-1(2)
-
-由**定义 3.7.1 (基础解系)**和**定理 3.7.1 (解空间的维数)**, 系数矩阵作初等行变换:
-
 $$
-\left[\begin{array}{rrrr}
-3 & -1 & 2 & 1\\
-1 & 3 & -1 & 2\\
--2 & 5 & 1 & -1\\
-3 & 10 & 1 & 4\\
--2 & 15 & -4 & 4
-\end{array}\right]
-\xrightarrow{\text{行变换}}
-\left[\begin{array}{rrrr}
-1 & 3 & -1 & 2\\
-0 & 1 & 4 & -2\\
-0 & 0 & -45 & 25\\
-0 & 0 & 0 & 0\\
-0 & 0 & 0 & 0
-\end{array}\right].
+\left[1\right]=\left\{\cdots,-5,-2,1,4,7,\cdots\right\}=\left\{3k+1\mid k\in\mathbb{Z}\right\}.
 $$
 
-秩为 $3$, 未知量数目为 $4$, 故基础解系含 $4-3=1$ 个向量.
-
-一般解:
-
 $$
-\begin{cases}
-x_{1}=-\frac{7}{9}x_{4},\\
-x_{2}=-\frac{2}{9}x_{4},\\
-x_{3}=\frac{5}{9}x_{4},
-\end{cases}
+\left[2\right]=\left\{\cdots,-4,-1,2,5,8,\cdots\right\}=\left\{3k+2\mid k\in\mathbb{Z}\right\}.
 $$
-
-其中 $x_{4}$ 是自由未知量.
-
-令 $x_{4}=9$, 得 $\eta_{1}=\left(-7,-2,5,9\right)^{\top}$.
-
-由**定义 3.7.1 (基础解系)**, $\eta_{1}$ 线性无关, 且方程组的每一个解都可以由它线性表出, 故它是一个基础解系.
-
-解集:
-
-$$
-W=\left\{k\eta_{1}\mid k\in K\right\}.
-$$
-
-$\blacksquare$
-
-## 3.7-4
-
-证明: 设 $n$ 元齐次线性方程组的系数矩阵的秩为 $r$ $\left(r< n\right)$, 设 $\delta_{1},\delta_{2},\cdots,\delta_{m}$ 是方程组的解向量, 则
-
-$$
-\text{rank}\left\{\delta_{1},\delta_{2},\cdots,\delta_{m}\right\}\le n-r.
-$$
-
-### 解答 3.7-4
-
-由**定理 3.7.1 (解空间的维数)**, 齐次线性方程组的解空间 $W$ 的维数为
-
-$$
-\dim W=n-\text{rank}\left(A\right)=n-r.
-$$
-
-$\delta_{1},\delta_{2},\cdots,\delta_{m}$ 都是 $W$ 中的向量, 故 $\left\langle\delta_{1},\delta_{2},\cdots,\delta_{m}\right\rangle\subseteq W$.
 
 因此
 
 $$
-\text{rank}\left\{\delta_{1},\delta_{2},\cdots,\delta_{m}\right\}
-=\dim\left\langle\delta_{1},\delta_{2},\cdots,\delta_{m}\right\rangle
-\le\dim W=n-r.
+\mathbb{Z}/\left(3\right)=\left\{\left[0\right],\left[1\right],\left[2\right]\right\}.
 $$
 
 $\blacksquare$
 
-## 3.7-5
+## 5.2-1(1)
 
-设 $n$ 个方程的 $n$ 元齐次线性方程组的系数矩阵 $A$ 的行列式等于零, 并且 $A$ 的 $\left(k,l\right)$ 元的代数余子式 $A_{kl}\ne0$. 证明:
-
-$$
-\eta_{1}=\begin{bmatrix}A_{k1}\\A_{k2}\\\vdots\\A_{kn}\end{bmatrix}
-$$
-
-是这个齐次线性方程组的一个基础解系.
-
-### 解答 3.7-5
-
-由**定义 3.7.1 (基础解系)**和**定理 3.7.1 (解空间的维数)**, 要证明 $\eta_{1}$ 是齐次线性方程组的一个基础解系, 需验证三个条件: $\eta_{1}$ 是解, $\eta_{1}\ne0$, 且解空间的维数为 $1$.
-
-**验证 $\eta_{1}$ 是解**. 对每个 $i=1,2,\cdots,n$, 计算
+求下列矩阵的相抵标准形:
 
 $$
-a_{i1}A_{k1}+a_{i2}A_{k2}+\cdots+a_{in}A_{kn}.
+A=\left[\begin{array}{rrr}
+1 & -1 & 3\\
+-2 & 3 & -11\\
+4 & -5 & 17
+\end{array}\right].
 $$
 
-当 $i=k$ 时, 这是 $\left|A\right|=0$ (题设).
+### 解答 5.2-1(1)
 
-当 $i\ne k$ 时, 这是把 $A$ 的第 $k$ 行换成第 $i$ 行后的行列式, 由于有两行相同, 故行列式为 $0$.
-
-因此对所有 $i$, 上式都为 $0$, 即 $A\eta_{1}=0$.
-
-**验证 $\eta_{1}\ne0$**. 因为 $A_{kl}\ne0$, 所以 $\eta_{1}$ 的第 $l$ 个分量非零, 故 $\eta_{1}\ne0$.
-
-**验证解空间维数为 $1$**. 因为 $\left|A\right|=0$, 故 $\text{rank}\left(A\right)< n$.
-
-又因为 $A_{kl}\ne0$, 说明 $A$ 有一个 $n-1$ 阶子式非零 (划去第 $k$ 行第 $l$ 列后的子式), 故 $\text{rank}\left(A\right)\ge n-1$.
-
-因此 $\text{rank}\left(A\right)=n-1$.
-
-由**定理 3.7.1 (解空间的维数)**, 解空间维数 $=n-\text{rank}\left(A\right)=1$.
-
-$\eta_{1}$ 是一个非零解, 它本身就构成解空间的一个基, 即基础解系. $\blacksquare$
-
-## 3.7-7
-
-设 $A_{1}$ 是 $s\times n$ 矩阵 $A=\left(a_{ij}\right)$ 的前 $s-1$ 行组成的子矩阵. 证明: 如果以 $A_{1}$ 为系数矩阵的齐次线性方程组的解都是方程
+由**定理 5.2.1 (相抵标准形)**, 对 $A$ 作初等行变换:
 
 $$
-a_{s1}x_{1}+a_{s2}x_{2}+\cdots+a_{sn}x_{n}=0
+A=\left[\begin{array}{rrr}
+1 & -1 & 3\\
+-2 & 3 & -11\\
+4 & -5 & 17
+\end{array}\right]
+\rightarrow
+\left[\begin{array}{rrr}
+1 & -1 & 3\\
+0 & 1 & -5\\
+0 & -1 & 5
+\end{array}\right]
+\rightarrow
+\left[\begin{array}{rrr}
+1 & -1 & 3\\
+0 & 1 & -5\\
+0 & 0 & 0
+\end{array}\right]
+\rightarrow
+\left[\begin{array}{rrr}
+1 & 0 & -2\\
+0 & 1 & -5\\
+0 & 0 & 0
+\end{array}\right].
 $$
 
-的解, 则 $A$ 的第 $s$ 行可以由 $A$ 的前 $s-1$ 行线性表出.
+再作初等列变换: 第 $3$ 列 $+2\times$ 第 $1$ 列, 第 $3$ 列 $+5\times$ 第 $2$ 列.
 
-### 解答 3.7-7
+$$
+A\rightarrow\left[\begin{array}{rrr}
+1 & 0 & 0\\
+0 & 1 & 0\\
+0 & 0 & 0
+\end{array}\right].
+$$
 
-由**定理 3.7.1 (解空间的维数)**, 齐次线性方程组的解空间是系数矩阵行空间的正交补. 设 $A_{1}$ 的行空间为 $V_{1}$, 则以 $A_{1}$ 为系数矩阵的齐次线性方程组的解空间 $W_{1}=V_{1}^{\perp}$ ( $V_{1}$ 的正交补).
+因此由**定理 5.2.1 (相抵标准形)**, 相抵标准形为
 
-题设: $W_{1}$ 中的每个 $x$ 都满足 $a_{s1}x_{1}+\cdots+a_{sn}x_{n}=0$.
+$$
+\left[\begin{array}{cc}I_{2} & 0\\0 & 0\end{array}\right].
+$$
 
-即第 $s$ 行的行向量 $\gamma_{s}=\left(a_{s1},\cdots,a_{sn}\right)$ 与 $W_{1}$ 中的每个向量正交.
+$\blacksquare$
 
-因此 $\gamma_{s}\in\left(W_{1}\right)^{\perp}=V_{1}$.
+## 5.2-1(3)
 
-所以 $\gamma_{s}$ 可以由 $A_{1}$ 的行向量线性表出, 即 $A$ 的第 $s$ 行可以由 $A$ 的前 $s-1$ 行线性表出. $\blacksquare$
+求下列矩阵的相抵标准形:
+
+$$
+A=\left[\begin{array}{rr}
+1 & -2\\
+-3 & -6\\
+2 & -4
+\end{array}\right].
+$$
+
+### 解答 5.2-1(3)
+
+由**定理 5.2.1 (相抵标准形)**, 对 $A$ 作初等行变换:
+
+$$
+A=\left[\begin{array}{rr}
+1 & -2\\
+-3 & -6\\
+2 & -4
+\end{array}\right]
+\rightarrow
+\left[\begin{array}{rr}
+1 & -2\\
+0 & -12\\
+0 & 0
+\end{array}\right]
+\rightarrow
+\left[\begin{array}{rr}
+1 & -2\\
+0 & 1\\
+0 & 0
+\end{array}\right]
+\rightarrow
+\left[\begin{array}{rr}
+1 & 0\\
+0 & 1\\
+0 & 0
+\end{array}\right].
+$$
+
+因此由**定理 5.2.1 (相抵标准形)**, 相抵标准形为
+
+$$
+\left[\begin{array}{c}I_{2}\\0\end{array}\right].
+$$
+
+$\blacksquare$
+
+## 5.2-4
+
+证明: 任意一个秩为 $r$ ( $r> 0$ ) 的矩阵都可以表示成 $r$ 个秩为 $1$ 的矩阵之和.
+
+### 解答 5.2-4
+
+由**定理 5.2.1 (相抵标准形)**, 设 $A$ 是 $s\times n$ 矩阵, $\operatorname{rank}\left(A\right)=r> 0$.
+
+由相抵标准形定理, 存在 $s$ 级可逆矩阵 $P$ 和 $n$ 级可逆矩阵 $Q$, 使得
+
+$$
+A=P\left[\begin{array}{cc}I_{r} & 0\\0 & 0\end{array}\right]Q.
+$$
+
+把中间的矩阵写成 $r$ 个矩阵之和:
+
+$$
+\left[\begin{array}{cc}I_{r} & 0\\0 & 0\end{array}\right]=E_{11}+E_{22}+\cdots+E_{rr},
+$$
+
+其中 $E_{ii}$ 是第 $i$ 行第 $i$ 列为 $1$, 其余元素为 $0$ 的矩阵.
+
+每个 $E_{ii}$ 的秩都是 $1$.
+
+因此
+
+$$
+A=P\left(E_{11}+E_{22}+\cdots+E_{rr}\right)Q=PE_{11}Q+PE_{22}Q+\cdots+PE_{rr}Q.
+$$
+
+令 $A_{i}=PE_{ii}Q$.
+
+因为 $P$ 和 $Q$ 可逆, 故
+
+$$
+\operatorname{rank}\left(A_{i}\right)=\operatorname{rank}\left(E_{ii}\right)=1.
+$$
+
+因此 $A$ 可以表示成 $r$ 个秩为 $1$ 的矩阵之和. $\blacksquare$
+
+## 5.2-5
+
+设 $A,B$ 分别是 $s\times n$, $n\times m$ 矩阵, 证明西尔维斯特秩不等式:
+
+$$
+\operatorname{rank}\left(AB\right)\ge\operatorname{rank}\left(A\right)+\operatorname{rank}\left(B\right)-n.
+$$
+
+### 解答 5.2-5
+
+由**定理 5.2.1 (相抵标准形)**的思路, 考虑分块矩阵
+
+$$
+M=\left[\begin{array}{cc}A & 0\\I_{n} & B\end{array}\right].
+$$
+
+**求 $\operatorname{rank}\left(M\right)$ 的上界**.
+
+作分块矩阵的初等列变换: 用 $-B$ 右乘第 $1$ 块列, 加到第 $2$ 块列上.
+
+$$
+M=\left[\begin{array}{cc}A & 0\\I_{n} & B\end{array}\right]
+\rightarrow
+\left[\begin{array}{cc}A & -AB\\I_{n} & 0\end{array}\right].
+$$
+
+再作分块矩阵的初等行变换: 交换第 $1$ 块行和第 $2$ 块行.
+
+$$
+\rightarrow
+\left[\begin{array}{cc}I_{n} & 0\\A & -AB\end{array}\right].
+$$
+
+这是分块上三角矩阵, 故
+
+$$
+\operatorname{rank}\left(M\right)=\operatorname{rank}\left(I_{n}\right)+\operatorname{rank}\left(-AB\right)=n+\operatorname{rank}\left(AB\right).
+$$
+
+**求 $\operatorname{rank}\left(M\right)$ 的下界**.
+
+设 $\operatorname{rank}\left(A\right)=r_{1}$, $\operatorname{rank}\left(B\right)=r_{2}$.
+
+$A$ 有 $r_{1}$ 个线性无关的行, $B$ 有 $r_{2}$ 个线性无关的行.
+
+$M$ 的前 $s$ 行中, $A$ 的 $r_{1}$ 个线性无关行对应到 $M$ 中也是线性无关的 (因为右边的 $0$ 不影响).
+
+$M$ 的后 $n$ 行中, $B$ 的 $r_{2}$ 个线性无关行对应到 $M$ 中.
+
+假设这些行与前面的行合起来线性相关, 即存在系数 $k_{1},k_{2}$ 使得
+
+$$
+k_{1}\left(\text{前 }s\text{ 行的线性组合}\right)+k_{2}\left(\text{后 }n\text{ 行的线性组合}\right)=0.
+$$
+
+看后 $m$ 个分量:
+
+$$
+k_{2}\left(B\text{ 的行的线性组合}\right)=0.
+$$
+
+因为 $B$ 的行线性无关, 故 $k_{2}=0$.
+
+再看前 $s$ 个分量:
+
+$$
+k_{1}\left(A\text{ 的行的线性组合}\right)=0.
+$$
+
+因为 $A$ 的行线性无关, 故 $k_{1}=0$.
+
+因此 $M$ 的行向量组的秩至少为 $r_{1}+r_{2}$.
+
+即
+
+$$
+\operatorname{rank}\left(M\right)\ge\operatorname{rank}\left(A\right)+\operatorname{rank}\left(B\right).
+$$
+
+综合两式:
+
+$$
+n+\operatorname{rank}\left(AB\right)\ge\operatorname{rank}\left(A\right)+\operatorname{rank}\left(B\right).
+$$
+
+即
+
+$$
+\operatorname{rank}\left(AB\right)\ge\operatorname{rank}\left(A\right)+\operatorname{rank}\left(B\right)-n.
+$$
+
+$\blacksquare$
+
+## 5.3-1
+
+设 $A$ 是数域 $K$ 上 $s\times n$ 矩阵. 证明: 如果 $A$ 行满秩, 则对于 $A$ 的任意一个广义逆 $A^{-}$, 都有 $AA^{-}=I_{s}$.
+
+### 解答 5.3-1
+
+由**定义 5.3.1 (广义逆)**, $A^{-}$ 是 $A$ 的广义逆, 即 $AA^{-}A=A$. 设 $A$ 行满秩, 即 $\operatorname{rank}\left(A\right)=s$.
+
+令 $B=AA^{-}$. 则 $B$ 是 $s\times s$ 矩阵.
+
+由 $AA^{-}A=A$, 两边右乘 $A^{-}$:
+
+$$
+\left(AA^{-}A\right)A^{-}=AA^{-}.
+$$
+
+即
+
+$$
+AA^{-}\left(AA^{-}\right)=AA^{-}.
+$$
+
+因此
+
+$$
+BB=B,
+$$
+
+即 $B$ 是幂等矩阵.
+
+**求 $B$ 的秩**.
+
+因为 $A$ 行满秩, $\operatorname{rank}\left(A\right)=s$.
+
+又因为 $AA^{-}A=A$, 故
+
+$$
+\operatorname{rank}\left(A\right)=\operatorname{rank}\left(AA^{-}A\right)\le\operatorname{rank}\left(AA^{-}\right)\le\operatorname{rank}\left(A\right).
+$$
+
+因此
+
+$$
+\operatorname{rank}\left(B\right)=\operatorname{rank}\left(AA^{-}\right)=\operatorname{rank}\left(A\right)=s.
+$$
+
+所以 $B$ 是 $s\times s$ 矩阵, 且 $\operatorname{rank}\left(B\right)=s$, 即 $B$ 可逆.
+
+由 $BB=B$, 两边左乘 $B^{-1}$:
+
+$$
+B=I_{s}.
+$$
+
+因此, 由**定义 5.3.1 (广义逆)**, 对于 $A$ 的任意一个广义逆 $A^{-}$, 都有
+
+$$
+AA^{-}=I_{s}.
+$$
+
+$\blacksquare$

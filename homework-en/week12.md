@@ -1,143 +1,425 @@
 # week12
 
-> **Definition 3.3.1 (Maximal Linearly Independent Subset)**
+> **Definition 4.1.1 (Matrix Addition)**
 > 
-> A subset of a vector group in $K^{n}$ is called a maximal linearly independent subset if it is itself linearly independent, yet adding any one vector from the remaining vectors of the group yields a linearly dependent subset.
+> Let $A=\left(a_{ij}\right),B=\left(b_{ij}\right)$ both be $s\times n$ matrices over a number field $K$, and set $C=\left(a_{ij}+b_{ij}\right)_{s\times n}$. Then $C$ is called the sum of the matrices $A$ and $B$, denoted $C=A+B$.
 
-> **Definition 3.3.2 (Equivalence of Vector Groups)**
+> **Definition 4.1.2 (Scalar Multiplication of Matrices)**
 > 
-> If the vector group $\alpha_{1},\cdots,\alpha_{s}$ and the vector group $\beta_{1},\cdots,\beta_{t}$ can be linearly represented by each other, then the two groups are called equivalent.
+> Let $k\in K$ and set $M=\left(ka_{ij}\right)_{s\times n}$. Then $M$ is called the scalar product of $k$ and the matrix $A$, denoted $M=kA$.
 
-> **Definition 3.3.3 (Rank of a Vector Group)**
+> **Definition 4.1.3 (Matrix Multiplication)**
 > 
-> The number of vectors contained in a maximal linearly independent subset of a vector group is called the rank of that vector group, denoted $\text{rank}\left\{\alpha_{1},\alpha_{2},\cdots,\alpha_{s}\right\}$.
+> Let $A=\left(a_{ij}\right)_{s\times n}$ and $B=\left(b_{ij}\right)_{n\times m}$, and set $C=\left(c_{ij}\right)_{s\times m}$ with $c_{ij}=\sum_{k=1}^{n}a_{ik}b_{kj}$. Then $C$ is called the product of $A$ and $B$, denoted $C=AB$.
 
-> **Proposition 3.3.6 (Linear Independence iff Rank Equals the Number of Vectors)**
+> **Definition 4.2.2 (Upper/Lower Triangular Matrix)**
 > 
-> The vector group $\alpha_{1},\alpha_{2},\cdots,\alpha_{s}$ is linearly independent if and only if its rank equals the number $s$ of vectors it contains.
+> A square matrix whose entries below (above) the main diagonal are all zero is called an upper (lower) triangular matrix.
 
-> **Proposition 3.3.7 (Comparison of Ranks)**
+> **Definition 4.2.3 (Elementary Matrix Unit)**
 > 
-> If vector group (I) can be linearly represented by vector group (II), then the rank of (I) is at most the rank of (II).
+> A matrix with exactly one entry equal to $1$ and all other entries equal to $0$ is called a matrix unit. The matrix unit whose $\left(i,j\right)$-entry is $1$ is denoted $E_{ij}$.
 
-> **Corollary 3.3.8 (Equivalent Vector Groups Have the Same Rank)**
+> **Definition 4.2.5 (Symmetric Matrix)**
 > 
-> Equivalent vector groups have the same rank.
+> A matrix $A$ satisfying $A^{\top}=A$ is called a symmetric matrix.
 
-## 3.3-1
-
-Given the vector group
+> **Definition 4.2.6 (Skew-Symmetric Matrix)**
+> 
+> A matrix $A$ satisfying $A^{\top}=-A$ is called a skew-symmetric matrix.
 
 $$
-\alpha_{1}=\begin{bmatrix}2\\0\\0\end{bmatrix},
-\alpha_{2}=\begin{bmatrix}-1\\3\\0\end{bmatrix},
-\alpha_{3}=\begin{bmatrix}7\\-4\\0\end{bmatrix}.
+\left|\begin{array}{ccc}
+1 & 1 & 1\\
+x_{1} & x_{2} & x_{3}\\
+x_{1}^{2} & x_{2}^{2} & x_{3}^{2}
+\end{array}\right|=\left(x_{2}-x_{1}\right)\left(x_{3}-x_{1}\right)\left(x_{3}-x_{2}\right).
 $$
 
-Find a maximal linearly independent subset of $\alpha_{1},\alpha_{2},\alpha_{3}$, and its rank.
-
-### Solution 3.3-1
-
-By **Definition 3.3.1 (Maximal Linearly Independent Subset)** and **Definition 3.3.3 (Rank of a Vector Group)**, first determine whether $\alpha_{1},\alpha_{2}$ are linearly independent. Clearly $\alpha_{2}$ is not a scalar multiple of $\alpha_{1}$, so $\alpha_{1},\alpha_{2}$ are linearly independent.
-
-Next determine whether $\alpha_{3}$ can be represented by $\alpha_{1},\alpha_{2}$. Set $\alpha_{3}=k_{1}\alpha_{1}+k_{2}\alpha_{2}$ and compare components:
+> **Theorem 4.3.1 (Rank of a Matrix Product)**
+> 
+> Let $A=\left(a_{ij}\right)_{s\times n}$ and $B=\left(b_{ij}\right)_{n\times m}$. Then
 
 $$
-\begin{cases}
-2k_{1}-k_{2}=7,\\
-3k_{2}=-4,\\
-0=0.
-\end{cases}
+\text{rank}\left(AB\right)\le\min\left\{\text{rank}\left(A\right),\text{rank}\left(B\right)\right\}.
 $$
 
-From the second equation $k_{2}=-\frac{4}{3}$; substituting into the first gives $k_{1}=\frac{17}{6}$.
+> **Proposition 4.3.2 (Over $\mathbb{R}$, $A^{\top}Az=0$ Has the Same Solutions as $z=0$)**
+> 
+> Let $A$ be a matrix over the real number field. Then the homogeneous system $A^{\top}Az=0$ and $z=0$ have the same solutions.
+
+> **Theorem 4.3.3 (Determinant of a Product)**
+> 
+> Let $A,B$ both be $n\times n$ matrices. Then $\left|AB\right|=\left|A\right|\left|B\right|$.
+
+## 4.1-6
+
+Compute:
+
+$$
+\left(x,y,1\right)\left[\begin{array}{ccc}
+a_{11} & a_{12} & a_{1}\\
+a_{12} & a_{22} & a_{2}\\
+a_{1} & a_{2} & a_{0}
+\end{array}\right]\left[\begin{array}{c}
+x\\
+y\\
+1
+\end{array}\right].
+$$
+
+### Solution to 4.1-6
+
+By **Definition 4.1.3 (Matrix Multiplication)**, first multiply the row vector on the left by the matrix:
+
+$$
+\left(x,y,1\right)M
+=
+\left(a_{11}x+a_{12}y+a_{1},a_{12}x+a_{22}y+a_{2},a_{1}x+a_{2}y+a_{0}\right).
+$$
+
+Then multiply by the column vector:
+
+$$
+=\left(a_{11}x+a_{12}y+a_{1}\right)x+\left(a_{12}x+a_{22}y+a_{2}\right)y+\left(a_{1}x+a_{2}y+a_{0}\right)=a_{11}x^{2}+2a_{12}xy+a_{22}y^{2}+2a_{1}x+2a_{2}y+a_{0}.
+$$
+
+$\blacksquare$
+
+## 4.1-7(5)
+
+Compute:
+
+$$
+\left[\begin{array}{ccc}
+0 & 1 & 0\\
+0 & 0 & 1\\
+0 & 0 & 0
+\end{array}\right]^{n},\text{ where }n\text{ is a positive integer}.
+$$
+
+### Solution to 4.1-7(5)
+
+By **Definition 4.1.3 (Matrix Multiplication)**, write
+
+$$
+H=\left[\begin{array}{ccc}0 & 1 & 0\\0 & 0 & 1\\0 & 0 & 0\end{array}\right].
+$$
+
+$$
+H^{2}=HH=\left[\begin{array}{ccc}
+0 & 0 & 1\\
+0 & 0 & 0\\
+0 & 0 & 0
+\end{array}\right].
+$$
+
+$$
+H^{3}=H^{2}H=\left[\begin{array}{ccc}
+0 & 0 & 0\\
+0 & 0 & 0\\
+0 & 0 & 0
+\end{array}\right].
+$$
+
+Therefore:
+
+- when $n=1$, $H^{n}=H=\left[\begin{array}{ccc}0 & 1 & 0\\0 & 0 & 1\\0 & 0 & 0\end{array}\right]$;
+- when $n=2$, $H^{n}=\left[\begin{array}{ccc}0 & 0 & 1\\0 & 0 & 0\\0 & 0 & 0\end{array}\right]$;
+- when $n\ge3$, $H^{n}=0$.
+
+$\blacksquare$
+
+## 4.1-7(6)
+
+Compute:
+
+$$
+\left[\begin{array}{ccc}
+\lambda & 1 & 0\\
+0 & \lambda & 1\\
+0 & 0 & \lambda
+\end{array}\right]^{n},\text{ where }n\text{ is a positive integer}.
+$$
+
+### Solution to 4.1-7(6)
+
+By **Definition 4.1.3 (Matrix Multiplication)**, write $A=\lambda I+N$, where
+
+$$
+N=\left[\begin{array}{ccc}0 & 1 & 0\\0 & 0 & 1\\0 & 0 & 0\end{array}\right].
+$$
+
+Because $\lambda I$ and $N$ commute, by Matrix Binomial Theorem,
+
+$$
+A^{n}=\sum_{k=0}^{n}\binom{n}{k}\left(\lambda I\right)^{n-k}N^{k}.
+$$
+
+Also $N^{0}=I$, $N^{1}=N$, $N^{2}=\left[\begin{array}{ccc}0 & 0 & 1\\0 & 0 & 0\\0 & 0 & 0\end{array}\right]$, $N^{3}=0$.
 
 Hence
 
 $$
-\alpha_{3}=\frac{17}{6}\alpha_{1}-\frac{4}{3}\alpha_{2}.
+A^{n}
+=\lambda^{n}I+n\lambda^{n-1}N+\binom{n}{2}\lambda^{n-2}N^{2}=\left[\begin{array}{ccc}
+\lambda^{n} & n\lambda^{n-1} & \frac{n\left(n-1\right)}{2}\lambda^{n-2}\\
+0 & \lambda^{n} & n\lambda^{n-1}\\
+0 & 0 & \lambda^{n}
+\end{array}\right].
 $$
 
-By **Definition 3.3.1 (Maximal Linearly Independent Subset)**, $\alpha_{1},\alpha_{2}$ are therefore a maximal linearly independent subset. By **Definition 3.3.3 (Rank of a Vector Group)**, the rank is $2$. $\blacksquare$
+When $n=1$, the above also holds (note $\lambda^{0}=1$, and the third term is $0$). $\blacksquare$
 
-## 3.3-7
+## 4.1-10
 
-Prove: if a vector group of rank $r$ can be linearly represented by $r$ of its own vectors, then these $r$ vectors form a maximal linearly independent subset of the group.
+Prove: if $A=\frac{1}{2}\left(B+I\right)$, then $A^{2}=A$ if and only if $B^{2}=I$.
 
-### Solution 3.3-7
-
-Let the rank of vector group (I) be $r$, and suppose (I) can be linearly represented by its $r$ vectors $\alpha_{1},\cdots,\alpha_{r}$.
-
-Because $\alpha_{1},\cdots,\alpha_{r}$ are part of (I), they can be represented by (I).
-
-By **Definition 3.3.2 (Equivalence of Vector Groups)**, (I) and $\alpha_{1},\cdots,\alpha_{r}$ are therefore equivalent.
-
-By **Corollary 3.3.8 (Equivalent Vector Groups Have the Same Rank)**, equivalent groups have the same rank, so $\text{rank}\left\{\alpha_{1},\cdots,\alpha_{r}\right\}=r$.
-
-By **Proposition 3.3.6 (Linear Independence iff Rank Equals the Number of Vectors)**, the rank of $r$ vectors being $r$ shows that they are linearly independent.
-
-Also, since (I) can be represented by $\alpha_{1},\cdots,\alpha_{r}$, adding any one remaining vector of (I) to $\alpha_{1},\cdots,\alpha_{r}$ gives a linearly dependent group (otherwise, by **Proposition 3.3.7 (Comparison of Ranks)**, the rank would exceed $r$).
-
-Hence $\alpha_{1},\cdots,\alpha_{r}$ is a maximal linearly independent subset of (I). $\blacksquare$
-
-## 3.3-8
-
-Prove: the $n$-variable linear system of $n$ equations over a number field $K$
+### Solution to 4.1-10
 
 $$
-x_{1}\alpha_{1}+x_{2}\alpha_{2}+\cdots+x_{n}\alpha_{n}=\beta
+A^{2}=\left(\frac{1}{2}\left(B+I\right)\right)^{2}=\frac{1}{4}\left(B+I\right)^{2}=\frac{1}{4}\left(B^{2}+2B+I\right).
 $$
 
-is solvable for every $\beta\in K^{n}$ if and only if its coefficient determinant $\left|A\right|\ne0$.
-
-### Solution 3.3-8
-
-**Necessity.** Suppose the system is solvable for every $\beta\in K^{n}$.
-
-Take $\beta=\varepsilon_{1},\varepsilon_{2},\cdots,\varepsilon_{n}$ (the standard basis); then they can all be represented by $\alpha_{1},\cdots,\alpha_{n}$.
-
-By **Definition 3.3.2 (Equivalence of Vector Groups)**, $\alpha_{1},\cdots,\alpha_{n}$ and $\varepsilon_{1},\cdots,\varepsilon_{n}$ are therefore equivalent (since $\alpha_{1},\cdots,\alpha_{n}$ can be represented by $\varepsilon_{1},\cdots,\varepsilon_{n}$ and vice versa).
-
-By **Corollary 3.3.8 (Equivalent Vector Groups Have the Same Rank)**,
+$A^{2}=A$ is equivalent to
 
 $$
-\text{rank}\left\{\alpha_{1},\cdots,\alpha_{n}\right\}=\text{rank}\left\{\varepsilon_{1},\cdots,\varepsilon_{n}\right\}=n.
+\frac{1}{4}\left(B^{2}+2B+I\right)=\frac{1}{2}\left(B+I\right).
 $$
 
-By **Proposition 3.3.6 (Linear Independence iff Rank Equals the Number of Vectors)**, $n$ vectors in $K^{n}$ having rank $n$ shows they are linearly independent, so the determinant of the matrix they form is $\left|A\right|\ne0$.
+Multiplying both sides by $4$:
 
-**Sufficiency.** Suppose $\left|A\right|\ne0$; then $\alpha_{1},\cdots,\alpha_{n}$ are linearly independent.
+$$
+B^{2}+2B+I=2B+2I.
+$$
 
-In $K^{n}$, $n$ linearly independent vectors form a basis of $K^{n}$.
+Simplifying:
 
-Hence every $\beta\in K^{n}$ can be represented by $\alpha_{1},\cdots,\alpha_{n}$, i.e. the system is solvable.
+$$
+B^{2}=I.
+$$
+
+Therefore $A^{2}=A$ if and only if $B^{2}=I$. $\blacksquare$
+
+## 4.2-2
+
+Prove: the product of two $n\times n$ lower triangular matrices is still an $n\times n$ lower triangular matrix, and the diagonal entries of the product equal the products of the corresponding diagonal entries of the factors.
+
+### Solution to 4.2-2
+
+By **Definition 4.2.2 (Upper/Lower Triangular Matrix)**, let $A=\left(a_{ij}\right),B=\left(b_{ij}\right)$ both be $n\times n$ lower triangular matrices, i.e. $a_{ij}=0,b_{ij}=0$ whenever $i< j$.
+
+Set $C=AB=\left(c_{ij}\right)$; then
+
+$$
+c_{ij}=\sum_{k=1}^{n}a_{ik}b_{kj}.
+$$
+
+**Lower triangularity.** When $i< j$:
+
+- if $k\le i< j$, then $k< j$, so $b_{kj}=0$;
+- if $k> i$, then $a_{ik}=0$.
+
+Hence every term is $0$, so $c_{ij}=0$ (when $i< j$). By **Definition 4.2.2 (Upper/Lower Triangular Matrix)**, $C$ is therefore a lower triangular matrix.
+
+**Diagonal entries.** When $i=j$:
+
+- if $k< i$, then $b_{ki}=0$;
+- if $k> i$, then $a_{ik}=0$.
+
+Hence only the term $k=i$ is nonzero:
+
+$$
+c_{ii}=a_{ii}b_{ii}.
+$$
 
 $\blacksquare$
 
-## 3.3-11
+## 4.2-3
 
-Prove: two vector groups are equivalent if and only if they have the same rank and one of them can be linearly represented by the other.
+Prove: a matrix that commutes with every $n\times n$ matrix must be an $n\times n$ scalar matrix.
 
-### Solution 3.3-11
+### Solution to 4.2-3
 
-**Necessity.** Suppose the two vector groups (I) and (II) are equivalent.
+Let $A=\left(a_{ij}\right)$ commute with every $n\times n$ matrix.
 
-By **Corollary 3.3.8 (Equivalent Vector Groups Have the Same Rank)**, equivalent groups have the same rank.
+Take the matrix unit $E_{ij}$ of **Definition 4.2.3 (Elementary Matrix Unit)** (its $\left(i,j\right)$-entry is $1$ and all others are $0$). Then $AE_{ij}=E_{ij}A$.
 
-Moreover, equivalence means they can represent each other, so one group can be represented by the other.
+Column $j$ of $AE_{ij}$ equals column $i$ of $A$, and its other columns are $0$.
 
-**Sufficiency.** Suppose (I) and (II) have the same rank and (I) can be represented by (II).
+Row $i$ of $E_{ij}A$ equals row $j$ of $A$, and its other rows are $0$.
 
-Let a maximal linearly independent subset of (I) be $\alpha_{1},\cdots,\alpha_{r}$, and a maximal linearly independent subset of (II) be $\beta_{1},\cdots,\beta_{r}$.
+Comparing their $\left(i,j\right)$-entries:
 
-Because (I) can be represented by (II), $\alpha_{1},\cdots,\alpha_{r}$ can be represented by $\beta_{1},\cdots,\beta_{r}$.
+the $\left(i,j\right)$-entry of $AE_{ij}$ $=a_{ii}$;
 
-Also, $\alpha_{1},\cdots,\alpha_{r}$ are linearly independent with $r$ vectors, and $\beta_{1},\cdots,\beta_{r}$ are likewise $r$ linearly independent vectors.
+the $\left(i,j\right)$-entry of $E_{ij}A$ $=a_{jj}$.
 
-By Problem 7 of Exercises 3.3, $r$ linearly independent vectors can represent all vectors in an $r$-dimensional space, so $\beta_{1},\cdots,\beta_{r}$ can be represented by $\alpha_{1},\cdots,\alpha_{r}$.
+Hence $a_{ii}=a_{jj}$.
 
-By **Definition 3.3.2 (Equivalence of Vector Groups)**, $\alpha_{1},\cdots,\alpha_{r}$ and $\beta_{1},\cdots,\beta_{r}$ are therefore equivalent.
+This holds for all $i,j$, so all diagonal entries are equal:
 
-Moreover, (I) is equivalent to $\alpha_{1},\cdots,\alpha_{r}$ and (II) is equivalent to $\beta_{1},\cdots,\beta_{r}$; by transitivity, (I) and (II) are equivalent.
+$$
+a_{11}=a_{22}=\cdots=a_{nn}=k.
+$$
+
+Now compare the $\left(k,j\right)$-entry (with $k\ne i$):
+
+the $\left(k,j\right)$-entry of $AE_{ij}$ $=a_{ki}$;
+
+the $\left(k,j\right)$-entry of $E_{ij}A$ $=0$ (because $k\ne i$).
+
+Hence $a_{ki}=0$ (when $k\ne i$).
+
+This holds for all $i$, so all off-diagonal entries of $A$ are $0$.
+
+Therefore $A=kI$, i.e. $A$ is a scalar matrix. $\blacksquare$
+
+## 4.2-8
+
+Prove: over a number field $K$, every $n\times n$ matrix can be written as the sum of a symmetric matrix and a skew-symmetric matrix, and this representation is unique.
+
+### Solution to 4.2-8
+
+Let $A$ be any $n\times n$ matrix. Set
+
+$$
+S=\frac{1}{2}\left(A+A^{\top}\right),
+K=\frac{1}{2}\left(A-A^{\top}\right).
+$$
+
+Then $A=S+K$.
+
+$$
+S^{\top}=\frac{1}{2}\left(A^{\top}+\left(A^{\top}\right)^{\top}\right)=\frac{1}{2}\left(A^{\top}+A\right)=S.
+$$
+
+By **Definition 4.2.5 (Symmetric Matrix)**, $S$ is therefore symmetric.
+
+$$
+K^{\top}=\frac{1}{2}\left(A^{\top}-\left(A^{\top}\right)^{\top}\right)=\frac{1}{2}\left(A^{\top}-A\right)=-K.
+$$
+
+By **Definition 4.2.6 (Skew-Symmetric Matrix)**, $K$ is therefore skew-symmetric.
+
+**Uniqueness.** Suppose $A=S_{1}+K_{1}=S_{2}+K_{2}$, where $S_{1},S_{2}$ are symmetric and $K_{1},K_{2}$ are skew-symmetric.
+
+Then $S_{1}-S_{2}=K_{2}-K_{1}$.
+
+The left side $\left(S_{1}-S_{2}\right)^{\top}=S_{1}-S_{2}$ is symmetric.
+
+The right side
+
+$$
+\left(K_{2}-K_{1}\right)^{\top}=-K_{2}+K_{1}=-\left(K_{2}-K_{1}\right)
+$$
+
+is skew-symmetric.
+
+A matrix that is both symmetric and skew-symmetric must be the zero matrix.
+
+Hence $S_{1}-S_{2}=0$ and $K_{2}-K_{1}=0$, i.e. $S_{1}=S_{2}$ and $K_{1}=K_{2}$.
+
+The representation is unique. $\blacksquare$
+
+## 4.2-9
+
+Prove: if $A$ is an $n\times n$ real symmetric matrix and $A^{2}=0$, then $A=0$.
+
+### Solution to 4.2-9
+
+Let $A=\left(a_{ij}\right)$ be a real symmetric matrix with $A^{2}=0$.
+
+Consider the diagonal entries of $A^{2}$:
+
+$$
+\left(A^{2}\right)_{ii}=\sum_{k=1}^{n}a_{ik}a_{ki}.
+$$
+
+By **Definition 4.2.5 (Symmetric Matrix)**, $A$ is symmetric, so $a_{ki}=a_{ik}$.
+
+Hence
+
+$$
+\left(A^{2}\right)_{ii}=\sum_{k=1}^{n}a_{ik}^{2}.
+$$
+
+Since $A^{2}=0$, $\left(A^{2}\right)_{ii}=0$, i.e.
+
+$$
+\sum_{k=1}^{n}a_{ik}^{2}=0.
+$$
+
+Since the $a_{ik}$ are all real, $a_{ik}^{2}\ge0$.
+
+Therefore each $a_{ik}=0$, i.e. $A=0$. $\blacksquare$
+
+## 4.2-10
+
+Prove: the determinant of an odd-order skew-symmetric matrix over a number field $K$ is zero.
+
+### Solution to 4.2-10
+
+Let $A$ be an $n\times n$ skew-symmetric matrix with $n$ odd.
+
+By **Definition 4.2.6 (Skew-Symmetric Matrix)**, $A^{\top}=-A$.
+
+$$
+\left|A^{\top}\right|=\left|-A\right|.
+$$
+
+Since $\left|A^{\top}\right|=\left|A\right|$ and $\left|-A\right|=\left(-1\right)^{n}\left|A\right|$,
+
+$$
+\left|A\right|=\left(-1\right)^{n}\left|A\right|.
+$$
+
+Since $n$ is odd, $\left(-1\right)^{n}=-1$.
+
+Therefore
+
+$$
+\left|A\right|=-\left|A\right|\Rightarrow 2\left|A\right|=0\Rightarrow \left|A\right|=0.
+$$
 
 $\blacksquare$
+
+## 4.3-2
+
+A matrix is called row (column) full-rank if its row (column) vector group is linearly independent. Prove: if an $s\times n$ matrix $A$ has rank $r$, then there exist an $s\times r$ column full-rank matrix $B$ and an $r\times n$ row full-rank matrix $C$ such that $A=BC$.
+
+### Solution to 4.3-2
+
+Following the idea of **Theorem 4.3.1 (Rank of a Matrix Product)**, transform $A$ by elementary row operations into a reduced row-echelon matrix $J$.
+
+Since $\text{rank}\left(A\right)=r$, $J$ has $r$ nonzero rows.
+
+Set
+
+$$
+J=\left[\begin{array}{c}C\\0\end{array}\right],
+$$
+
+where $C$ is an $r\times n$ matrix whose row vector group is linearly independent (because the nonzero rows of $J$ are linearly independent).
+
+Hence $C$ is row full-rank.
+
+Write $A=PJ$, where $P$ is an $s\times s$ invertible matrix.
+
+Then $A=P\left[\begin{array}{c}C\\0\end{array}\right]$.
+
+Block $P$ by columns: $P=\left(P_{1},P_{2}\right)$, where $P_{1}$ is an $s\times r$ matrix.
+
+Then
+
+$$
+A=\left(P_{1},P_{2}\right)\left[\begin{array}{c}C\\0\end{array}\right]=P_{1}C.
+$$
+
+Set $B=P_{1}$.
+
+Since $P$ is invertible, its column group is linearly independent, and hence the column group of $P_{1}$ is also linearly independent.
+
+Thus $B$ is column full-rank.
+
+Therefore $A=BC$, where $B$ is an $s\times r$ column full-rank matrix and $C$ is an $r\times n$ row full-rank matrix. $\blacksquare$

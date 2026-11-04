@@ -1,233 +1,433 @@
 # week14
 
-> **Definition 3.5.1 (Rank of a Matrix)**
+$$
+\text{rank}\left(A+B\right)\le\text{rank}\left(A\right)+\text{rank}\left(B\right).
+$$
+$$
+\left|\begin{array}{cc}A & B\\0 & D\end{array}\right|=\left|A\right|\cdot\left|D\right|.
+$$
+
+> **Theorem 3.7.1 (Dimension of the Solution Space of a Homogeneous System)**
 > 
-> The row rank and column rank of a matrix $A$ are collectively called the rank of $A$, denoted $\text{rank}\left(A\right)$.
+> For an $n$-variable homogeneous system $Ax=0$ over a number field $K$, the solution space $W$ has dimension
 
-> **Theorem 3.5.4 (Row Rank Equals Column Rank)**
+$$
+\dim W=n-\text{rank}\left(A\right).
+$$
+
+> **Theorem 4.3.1 (Rank of a Matrix Product)**
 > 
-> The row rank of any matrix equals its column rank.
+> Let $A=\left(a_{ij}\right)_{s\times n}$ and $B=\left(b_{ij}\right)_{n\times m}$. Then
 
-> **Corollary 3.5.5 (Computing Rank by Elementary Row Operations)**
+$$
+\text{rank}\left(AB\right)\le\min\left\{\text{rank}\left(A\right),\text{rank}\left(B\right)\right\}.
+$$
+
+> **Proposition 4.5.2 (Rank Identity over the Real Number Field)**
 > 
-> If a matrix $A$ is transformed by elementary row operations into a row-echelon matrix $J$, then the rank of $A$ equals the number of nonzero rows of $J$. If the pivot columns of $J$ are columns $j_{1},\cdots,j_{r}$, then columns $j_{1},\cdots,j_{r}$ of $A$ form a maximal linearly independent subset of the column group of $A$.
-
-## 3.5-2(1)
-
-Find the rank of the following vector group and a maximal linearly independent subset:
+> Let $A$ be an $s\times n$ matrix over the real number field. Then
 
 $$
-\alpha_{1}=\begin{bmatrix}-1\\5\\3\\-2\end{bmatrix},
-\alpha_{2}=\begin{bmatrix}4\\1\\-2\\9\end{bmatrix},
-\alpha_{3}=\begin{bmatrix}2\\0\\-1\\4\end{bmatrix},
-\alpha_{4}=\begin{bmatrix}0\\3\\4\\-5\end{bmatrix}.
+\text{rank}\left(A^{\top}A\right)=\text{rank}\left(AA^{\top}\right)=\text{rank}\left(A\right).
 $$
 
-### Solution 3.5-2(1)
+$$
+\beta_{i}=\alpha_{i}-\sum_{k=1}^{i-1}\frac{\left(\alpha_{i},\beta_{k}\right)}{\left(\beta_{k},\beta_{k}\right)}\beta_{k}.
+$$
+Then $\beta_{1},\beta_{2},\cdots,\beta_{m}$ is an orthogonal vector group equivalent to the original one.
 
-By **Corollary 3.5.5 (Computing Rank by Elementary Row Operations)**, arrange the vectors as columns into a matrix and perform elementary row operations:
+> **Definition 4.6.1 (Orthogonal Matrix)**
+> 
+> A real square matrix $A$ satisfying $A^{\top}A=I$ is called an orthogonal matrix.
+
+> **Definition 4.6.2 (Standard Inner Product)**
+> 
+> In $\mathbb{R}^{n}$, for any $\alpha=\left(a_{1},a_{2},\cdots,a_{n}\right)$ and $\beta=\left(b_{1},b_{2},\cdots,b_{n}\right)$, define
 
 $$
-\left[\begin{array}{rrrr}
--1 & 4 & 2 & 0\\
-5 & 1 & 0 & 3\\
-3 & -2 & -1 & 4\\
--2 & 9 & 4 & -5
-\end{array}\right]
-\xrightarrow{\text{row ops}}
-\left[\begin{array}{rrrr}
-1 & -4 & -2 & 0\\
-0 & 1 & 0 & -5\\
-0 & 0 & 5 & 54\\
-0 & 0 & 0 & 0
-\end{array}\right].
+\left(\alpha,\beta\right)=a_{1}b_{1}+a_{2}b_{2}+\cdots+a_{n}b_{n},
 $$
+which is called the standard inner product on $\mathbb{R}^{n}$.
 
-By **Corollary 3.5.5 (Computing Rank by Elementary Row Operations)**, the echelon matrix has $3$ nonzero rows, so the rank is $3$.
+> **Proposition 4.6.2 (An Orthogonal Vector Group Is Linearly Independent)**
+> 
+> In the Euclidean space $\mathbb{R}^{n}$, an orthogonal vector group is always linearly independent.
 
-By **Corollary 3.5.5 (Computing Rank by Elementary Row Operations)**, the pivots are in columns $1,2,3$, so $\alpha_{1},\alpha_{2},\alpha_{3}$ are a maximal linearly independent subset. $\blacksquare$
+## 4.5-1
 
-## 3.5-3
+Prove: let $A,B$ be $s\times n$ and $n\times m$ matrices, respectively. If $AB=0$, then $\text{rank}\left(A\right)+\text{rank}\left(B\right)\le n$.
 
-Find a basis of the column space and the dimension of the row space of the following matrix $A$:
+### Solution to 4.5-1
 
-$$
-A=\left[\begin{array}{rrrr}
-1 & 3 & -2 & -7\\
-0 & -1 & -3 & 4\\
-5 & 2 & 0 & 1\\
-1 & 4 & 1 & -11
-\end{array}\right].
-$$
+Let the column group of $B$ be $\beta_{1},\beta_{2},\cdots,\beta_{m}$.
 
-### Solution 3.5-3
+$AB=0$ means $A\beta_{j}=0$ ( $j=1,2,\cdots,m$ ).
 
-By **Corollary 3.5.5 (Computing Rank by Elementary Row Operations)**, perform elementary row operations:
+Hence each $\beta_{j}$ is a solution of the homogeneous system $Ax=0$.
+
+Therefore the column space of $B$ is contained in the solution space $W$ of $Ax=0$.
+
+By **Theorem 3.7.1 (Dimension of the Solution Space of a Homogeneous System)**,
 
 $$
-\left[\begin{array}{rrrr}
-1 & 3 & -2 & -7\\
-0 & -1 & -3 & 4\\
-5 & 2 & 0 & 1\\
-1 & 4 & 1 & -11
-\end{array}\right]
-\xrightarrow{\text{row ops}}
-\left[\begin{array}{rrrr}
-1 & 3 & -2 & -7\\
-0 & 1 & 3 & -4\\
-0 & 0 & 49 & -16\\
-0 & 0 & 0 & 0
-\end{array}\right].
+\text{rank}\left(B\right)=\dim\left\langle\beta_{1},\cdots,\beta_{m}\right\rangle\le\dim W=n-\text{rank}\left(A\right).
 $$
-
-The echelon matrix has $3$ nonzero rows; by **Corollary 3.5.5 (Computing Rank by Elementary Row Operations)**, $\text{rank}\left(A\right)=3$.
-
-By **Theorem 3.5.4 (Row Rank Equals Column Rank)**, the dimension of the row space equals the rank of the matrix, namely $3$.
-
-By **Corollary 3.5.5 (Computing Rank by Elementary Row Operations)**, the pivots are in columns $1,2,3$, so columns $1,2,3$ of the original matrix $A$ form a basis of the column space:
-
-$$
-\alpha_{1}=\begin{bmatrix}1\\0\\5\\1\end{bmatrix},
-\alpha_{2}=\begin{bmatrix}3\\-1\\2\\4\end{bmatrix},
-\alpha_{3}=\begin{bmatrix}-2\\-3\\0\\1\end{bmatrix}.
-$$
-
-$\blacksquare$
-
-## 3.5-4
-
-For different values of $\lambda$, what are the ranks of the following matrix?
-
-$$
-\left[\begin{array}{rrrr}
-1 & \lambda & -1 & 2\\
-2 & -1 & \lambda & 5\\
-1 & 10 & -6 & 1
-\end{array}\right].
-$$
-
-### Solution 3.5-4
-
-By **Corollary 3.5.5 (Computing Rank by Elementary Row Operations)**, perform elementary row operations to find the rank:
-
-Row $2$ $-$ row $1$ $\times 2$: row $2$ $=\left(0,-1-2\lambda,\lambda+2,1\right)$.
-
-Row $3$ $-$ row $1$: row $3$ $=\left(0,10-\lambda,-5,-1\right)$.
-
-The matrix becomes
-
-$$
-\left[\begin{array}{rrrr}
-1 & \lambda & -1 & 2\\
-0 & -1-2\lambda & \lambda+2 & 1\\
-0 & 10-\lambda & -5 & -1
-\end{array}\right].
-$$
-
-Row $2$ $+$ row $3$: row $2$
-
-$$
-=\left(0,9-3\lambda,\lambda-3,0\right)=\left(0,3\left(3-\lambda\right),-\left(3-\lambda\right),0\right).
-$$
-
-**When $\lambda=3$**:
-
-row $2$ $=\left(0,0,0,0\right)$, row $3$ $=\left(0,7,-5,-1\right)$.
-
-The echelon matrix has $2$ nonzero rows, so the rank is $2$.
-
-**When $\lambda\ne3$**:
-
-row $2$ is nonzero. Row $3$ $-$ row $2$ $\times\frac{10-\lambda}{3\left(3-\lambda\right)}$: the $4$th column of row $3$ is still $-1\ne0$, so row $3$ is nonzero.
-
-The echelon matrix has $3$ nonzero rows, so the rank is $3$.
-
-In summary: when $\lambda=3$, by **Corollary 3.5.5 (Computing Rank by Elementary Row Operations)**, the echelon matrix has $2$ nonzero rows, so the rank is $2$; when $\lambda\ne3$, the echelon matrix has $3$ nonzero rows, so the rank is $3$. $\blacksquare$
-
-## 3.5-8
-
-Prove: if an $m\times n$ matrix $A$ has rank $r$, then the submatrix $A_{1}$ formed by any $s$ rows of $A$ has rank at least $r+s-m$.
-
-### Solution 3.5-8
-
-By **Definition 3.5.1 (Rank of a Matrix)**, the row rank and column rank of $A$ are collectively called the rank of $A$. We prove that the rank of $A_{1}$ is at least $r+s-m$.
-
-Let $A_{2}$ be the submatrix formed by the remaining $m-s$ rows of $A$.
-
-Viewing $A$ as a row vector group, the rank of the row group of $A$ is $r$.
-
-The row group of $A$ $=$ the row group of $A_{1}$ $\cup$ the row group of $A_{2}$.
-
-By Upper Bound on the Rank of a Union of Vector Groups,
-
-$$
-\text{rank}\left(A\right)\le\text{rank}\left(A_{1}\right)+\text{rank}\left(A_{2}\right).
-$$
-
-Since $A_{2}$ has only $m-s$ rows, $\text{rank}\left(A_{2}\right)\le m-s$.
 
 Hence
 
 $$
-r\le\text{rank}\left(A_{1}\right)+\left(m-s\right).
-$$
-
-Rearranging,
-
-$$
-\text{rank}\left(A_{1}\right)\ge r-\left(m-s\right)=r+s-m.
+\text{rank}\left(A\right)+\text{rank}\left(B\right)\le n.
 $$
 
 $\blacksquare$
 
-## 3.5-13
+## 4.5-4
 
-Let $A$ be an $s\times n$ matrix, $B$ an $l\times m$ matrix, and $C$ an $s\times m$ matrix. Prove:
-
-$$
-\text{rank}\left(\begin{array}{cc}A & C\\0 & B\end{array}\right)\ge\text{rank}\left(A\right)+\text{rank}\left(B\right).
-$$
-
-### Solution 3.5-13
-
-By **Definition 3.5.1 (Rank of a Matrix)**, prove that the rank of the block matrix is at least the sum of the ranks of $A$ and $B$. Take bases of the column spaces of $A$ and $B$ to construct a linearly independent vector group.
-
-Let $\text{rank}\left(A\right)=r_{1}$ and $\text{rank}\left(B\right)=r_{2}$.
-
-Take a basis of the column space of $A$: $\alpha_{1},\cdots,\alpha_{r_{1}}$ ( $s$-dimensional vectors).
-
-Take a basis of the column space of $B$: $\beta_{1},\cdots,\beta_{r_{2}}$ ( $l$-dimensional vectors).
-
-Consider the following column vectors of the block matrix
+Prove: if an $n\times n$ matrix $A$ satisfies $A^{2}=I$ (then $A$ is called an involutory matrix), then
 
 $$
-M=\left(\begin{array}{cc}A & C\\0 & B\end{array}\right):
+\text{rank}\left(I+A\right)+\text{rank}\left(I-A\right)=n.
 $$
 
-$$
-\begin{bmatrix}\alpha_{1}\\0\end{bmatrix},\cdots,\begin{bmatrix}\alpha_{r_{1}}\\0\end{bmatrix},
-\begin{bmatrix}c_{1}\\\beta_{1}\end{bmatrix},\cdots,\begin{bmatrix}c_{r_{2}}\\\beta_{r_{2}}\end{bmatrix},
-$$
+### Solution to 4.5-4
 
-where $c_{i}$ are $s$-dimensional vectors suitably chosen from the columns of $C$ so that the lower half of the corresponding column of $M$ is $\beta_{i}$.
-
-Prove that these $r_{1}+r_{2}$ vectors are linearly independent: set
+Since $A^{2}=I$,
 
 $$
-k_{1}\begin{bmatrix}\alpha_{1}\\0\end{bmatrix}+\cdots+k_{r_{1}}\begin{bmatrix}\alpha_{r_{1}}\\0\end{bmatrix}
-+l_{1}\begin{bmatrix}c_{1}\\\beta_{1}\end{bmatrix}+\cdots+l_{r_{2}}\begin{bmatrix}c_{r_{2}}\\\beta_{r_{2}}\end{bmatrix}=0.
+\left(I+A\right)\left(I-A\right)=I-A^{2}=I-I=0.
 $$
 
-Lower half: $l_{1}\beta_{1}+\cdots+l_{r_{2}}\beta_{r_{2}}=0$. Since $\beta_{1},\cdots,\beta_{r_{2}}$ are linearly independent, $l_{1}=\cdots=l_{r_{2}}=0$.
+By the conclusion of **4.5-1**,
 
-Upper half: $k_{1}\alpha_{1}+\cdots+k_{r_{1}}\alpha_{r_{1}}=0$. Since $\alpha_{1},\cdots,\alpha_{r_{1}}$ are linearly independent, $k_{1}=\cdots=k_{r_{1}}=0$.
+$$
+\text{rank}\left(I+A\right)+\text{rank}\left(I-A\right)\le n.
+$$
 
-Hence these $r_{1}+r_{2}$ vectors are linearly independent.
+On the other hand,
+
+$$
+\left(I+A\right)+\left(I-A\right)=2I.
+$$
+
+By Subadditivity of Rank,
+
+$$
+\text{rank}\left(2I\right)\le\text{rank}\left(I+A\right)+\text{rank}\left(I-A\right).
+$$
+
+Since $\text{rank}\left(2I\right)=n$,
+
+$$
+n\le\text{rank}\left(I+A\right)+\text{rank}\left(I-A\right).
+$$
 
 Therefore
 
 $$
-\text{rank}\left(M\right)\ge r_{1}+r_{2}=\text{rank}\left(A\right)+\text{rank}\left(B\right).
+\text{rank}\left(I+A\right)+\text{rank}\left(I-A\right)=n.
 $$
 
 $\blacksquare$
+
+## 4.5-5
+
+Prove: if an $n\times n$ matrix $A$ satisfies $A^{2}=A$ (then $A$ is called an idempotent matrix), then
+
+$$
+\text{rank}\left(A\right)+\text{rank}\left(I-A\right)=n.
+$$
+
+### Solution to 4.5-5
+
+Since $A^{2}=A$,
+
+$$
+A\left(I-A\right)=A-A^{2}=A-A=0.
+$$
+
+By the conclusion of **4.5-1**,
+
+$$
+\text{rank}\left(A\right)+\text{rank}\left(I-A\right)\le n.
+$$
+
+On the other hand,
+
+$$
+A+\left(I-A\right)=I.
+$$
+
+By Subadditivity of Rank,
+
+$$
+\text{rank}\left(I\right)\le\text{rank}\left(A\right)+\text{rank}\left(I-A\right).
+$$
+
+Since $\text{rank}\left(I\right)=n$,
+
+$$
+n\le\text{rank}\left(A\right)+\text{rank}\left(I-A\right).
+$$
+
+Therefore
+
+$$
+\text{rank}\left(A\right)+\text{rank}\left(I-A\right)=n.
+$$
+
+$\blacksquare$
+
+## 4.5-6
+
+Let $A$ be an $s\times n$ matrix over the real number field, and $\beta$ any column vector in $\mathbb{R}^{s}$. Prove: the $n$-variable system $A^{\top}AX=A^{\top}\beta$ always has a solution.
+
+### Solution to 4.5-6
+
+By **Proposition 4.5.2 (Rank Identity over the Real Number Field)**, for a matrix over the real number field,
+
+$$
+\text{rank}\left(A^{\top}A\right)=\text{rank}\left(A\right).
+$$
+
+The augmented matrix is $\left(A^{\top}A,A^{\top}\beta\right)=A^{\top}\left(A,\beta\right)$.
+
+Therefore
+
+$$
+\text{rank}\left(A^{\top}A,A^{\top}\beta\right)=\text{rank}\left(A^{\top}\left(A,\beta\right)\right)\le\text{rank}\left(A^{\top}\right)=\text{rank}\left(A\right).
+$$
+
+On the other hand, $A^{\top}A$ is a submatrix of $\left(A^{\top}A,A^{\top}\beta\right)$, so
+
+$$
+\text{rank}\left(A^{\top}A\right)\le\text{rank}\left(A^{\top}A,A^{\top}\beta\right).
+$$
+
+Hence
+
+$$
+\text{rank}\left(A^{\top}A\right)\le\text{rank}\left(A^{\top}A,A^{\top}\beta\right)\le\text{rank}\left(A\right)=\text{rank}\left(A^{\top}A\right).
+$$
+
+Therefore
+
+$$
+\text{rank}\left(A^{\top}A\right)=\text{rank}\left(A^{\top}A,A^{\top}\beta\right).
+$$
+
+The coefficient matrix and the augmented matrix have the same rank, so the system has a solution. $\blacksquare$
+
+## 4.5-9
+
+Let $A$ be an $n\times n$ matrix ( $n\ge2$ ). Prove:
+
+$$
+\text{rank}\left(A^{*}\right)=
+\begin{cases}
+n, & \text{when }\text{rank}\left(A\right)=n;\\
+1, & \text{when }\text{rank}\left(A\right)=n-1;\\
+0, & \text{when }\text{rank}\left(A\right)< n-1.
+\end{cases}
+$$
+
+### Solution to 4.5-9
+
+By **Theorem 4.3.1 (Rank of a Matrix Product)**,
+
+$$
+\text{rank}\left(AB\right)\le\min\left\{\text{rank}\left(A\right),\text{rank}\left(B\right)\right\}.
+$$
+
+Consider three cases.
+
+**When $\text{rank}\left(A\right)=n$**: $\left|A\right|\ne0$.
+
+From $AA^{*}=\left|A\right|I$, $\left|A\right|\left|A^{*}\right|=\left|A\right|^{n}$.
+
+Hence $\left|A^{*}\right|=\left|A\right|^{n-1}\ne0$, so $\text{rank}\left(A^{*}\right)=n$.
+
+**When $\text{rank}\left(A\right)=n-1$**: $\left|A\right|=0$.
+
+Thus $AA^{*}=\left|A\right|I=0$.
+
+By **4.5-1**, $\text{rank}\left(A\right)+\text{rank}\left(A^{*}\right)\le n$.
+
+Namely $\left(n-1\right)+\text{rank}\left(A^{*}\right)\le n$, so $\text{rank}\left(A^{*}\right)\le1$.
+
+Since $\text{rank}\left(A\right)=n-1$, $A$ has a nonzero $\left(n-1\right)$-minor. This $\left(n-1\right)$-minor is some cofactor, so $A^{*}\ne0$, and hence $\text{rank}\left(A^{*}\right)\ge1$.
+
+Therefore $\text{rank}\left(A^{*}\right)=1$.
+
+**When $\text{rank}\left(A\right)< n-1$**: all $\left(n-1\right)$-minors of $A$ are zero.
+
+Hence all cofactors are zero, i.e. $A^{*}=0$.
+
+Therefore $\text{rank}\left(A^{*}\right)=0$.
+
+$\blacksquare$
+
+## 4.5-15
+
+Let $A,B,C,D$ all be $n\times n$ matrices, with $\left|A\right|\ne0$ and $AC=CA$. Prove:
+
+$$
+\left|\begin{array}{cc}A & B\\C & D\end{array}\right|=\left|AD-CB\right|.
+$$
+
+### Solution to 4.5-15
+
+Since $\left|A\right|\ne0$, $A$ is invertible.
+
+Perform an elementary block row operation: add $-CA^{-1}$ times the first block row to the second block row.
+
+$$
+\left|\begin{array}{cc}A & B\\C & D\end{array}\right|
+=
+\left|\begin{array}{cc}A & B\\0 & D-CA^{-1}B\end{array}\right|.
+$$
+
+This is a block upper triangular matrix. By Determinant of a Block Upper Triangular Matrix, its determinant equals the product of the determinants of the diagonal block submatrices:
+
+$$
+=\left|A\right|\cdot\left|D-CA^{-1}B\right|.
+$$
+
+Since $AC=CA$, $CA^{-1}=A^{-1}C$.
+
+Hence
+
+$$
+D-CA^{-1}B=D-A^{-1}CB.
+$$
+
+Therefore
+
+$$
+\left|D-CA^{-1}B\right|
+=\left|D-A^{-1}CB\right|
+=\left|A^{-1}\left(AD-CB\right)\right|
+=\left|A^{-1}\right|\cdot\left|AD-CB\right|
+=\frac{1}{\left|A\right|}\cdot\left|AD-CB\right|.
+$$
+
+Hence
+
+$$
+\left|A\right|\cdot\left|D-CA^{-1}B\right|
+=\left|A\right|\cdot\frac{1}{\left|A\right|}\cdot\left|AD-CB\right|
+=\left|AD-CB\right|.
+$$
+
+$\blacksquare$
+
+## 4.6-1(3)
+
+Determine whether the following matrix is orthogonal:
+
+$$
+A=\left[\begin{array}{rr}
+\sqrt{3}/2 & 1/2\\
+1/2 & -\sqrt{3}/2
+\end{array}\right].
+$$
+
+### Solution to 4.6-1(3)
+
+By **Definition 4.6.1 (Orthogonal Matrix)**, compute $A^{\top}A$:
+
+$$
+A^{\top}A=\left[\begin{array}{rr}
+\sqrt{3}/2 & 1/2\\
+1/2 & -\sqrt{3}/2
+\end{array}\right]\left[\begin{array}{rr}
+\sqrt{3}/2 & 1/2\\
+1/2 & -\sqrt{3}/2
+\end{array}\right].
+$$
+
+The $\left(1,1\right)$-entry:
+
+$$
+\left(\frac{\sqrt{3}}{2}\right)^{2}+\left(\frac{1}{2}\right)^{2}=\frac{3}{4}+\frac{1}{4}=1.
+$$
+
+The $\left(1,2\right)$-entry:
+
+$$
+\frac{\sqrt{3}}{2}\cdot\frac{1}{2}+\frac{1}{2}\cdot\left(-\frac{\sqrt{3}}{2}\right)=\frac{\sqrt{3}}{4}-\frac{\sqrt{3}}{4}=0.
+$$
+
+The $\left(2,1\right)$-entry:
+
+$$
+\frac{1}{2}\cdot\frac{\sqrt{3}}{2}+\left(-\frac{\sqrt{3}}{2}\right)\cdot\frac{1}{2}=\frac{\sqrt{3}}{4}-\frac{\sqrt{3}}{4}=0.
+$$
+
+The $\left(2,2\right)$-entry:
+
+$$
+\left(\frac{1}{2}\right)^{2}+\left(-\frac{\sqrt{3}}{2}\right)^{2}=\frac{1}{4}+\frac{3}{4}=1.
+$$
+
+Hence $A^{\top}A=I$, and by **Definition 4.6.1 (Orthogonal Matrix)**, $A$ is orthogonal. $\blacksquare$
+
+## 4.6-1(8)
+
+Determine whether the following matrix is orthogonal:
+
+$$
+A=\left[\begin{array}{rr}
+1 & 1\\
+1 & -1
+\end{array}\right].
+$$
+
+### Solution to 4.6-1(8)
+
+By **Definition 4.6.1 (Orthogonal Matrix)**, compute $A^{\top}A$:
+
+$$
+A^{\top}A=\left[\begin{array}{rr}
+1 & 1\\
+1 & -1
+\end{array}\right]\left[\begin{array}{rr}
+1 & 1\\
+1 & -1
+\end{array}\right]
+=\left[\begin{array}{rr}
+2 & 0\\
+0 & 2
+\end{array}\right].
+$$
+
+Clearly $A^{\top}A\ne I$, and by **Definition 4.6.1 (Orthogonal Matrix)**, $A$ is not orthogonal. $\blacksquare$
+
+## 4.6-3
+
+Prove: if $A$ is an $n\times n$ real symmetric matrix and $T$ is an $n\times n$ orthogonal matrix, then $T^{-1}AT$ is symmetric.
+
+### Solution to 4.6-3
+
+By **Definition 4.6.1 (Orthogonal Matrix)**, since $T$ is orthogonal, $T^{-1}=T^{\top}$.
+
+$$
+\left(T^{-1}AT\right)^{\top}=T^{\top}A^{\top}\left(T^{-1}\right)^{\top}.
+$$
+
+Since $T$ is orthogonal, $T^{-1}=T^{\top}$, and hence $\left(T^{-1}\right)^{\top}=\left(T^{\top}\right)^{\top}=T$.
+
+Therefore
+
+$$
+\left(T^{-1}AT\right)^{\top}=T^{\top}A^{\top}T.
+$$
+
+Since $A$ is symmetric, $A^{\top}=A$.
+
+Thus
+
+$$
+\left(T^{-1}AT\right)^{\top}=T^{\top}AT=T^{-1}AT.
+$$
+
+Therefore $T^{-1}AT$ is symmetric. $\blacksquare$

@@ -1,200 +1,409 @@
 # week19
 
-> **Definition 4.2.2 (Upper/Lower Triangular Matrix)**
+> **Theorem 5.6.1 (Necessary and Sufficient Condition for Diagonalizability)**
 > 
-> A square matrix whose entries below (above) the main diagonal are all zero is called an upper (lower) triangular matrix.
+> An $n\times n$ matrix $A$ over a number field $K$ is diagonalizable if and only if $A$ has $n$ linearly independent eigenvectors.
 
-> **Definition 4.2.3 (Elementary Matrix Unit)**
+> **Corollary 5.6.6 (Distinct Eigenvalues Imply Diagonalizability)**
 > 
-> A matrix with exactly one entry equal to $1$ and all other entries equal to $0$ is called a matrix unit. The matrix unit whose $\left(i,j\right)$-entry is $1$ is denoted $E_{ij}$.
-
-> **Definition 4.2.5 (Symmetric Matrix)**
-> 
-> A matrix $A$ satisfying $A^{\top}=A$ is called a symmetric matrix.
-
-> **Definition 4.2.6 (Skew-Symmetric Matrix)**
-> 
-> A matrix $A$ satisfying $A^{\top}=-A$ is called a skew-symmetric matrix.
-
-## 4.2-2
-
-Prove: the product of two $n\times n$ lower triangular matrices is still an $n\times n$ lower triangular matrix, and the diagonal entries of the product equal the products of the corresponding diagonal entries of the factors.
-
-### Solution 4.2-2
-
-By **Definition 4.2.2 (Upper/Lower Triangular Matrix)**, let $A=\left(a_{ij}\right),B=\left(b_{ij}\right)$ both be $n\times n$ lower triangular matrices, i.e. $a_{ij}=0,b_{ij}=0$ whenever $i< j$.
-
-Set $C=AB=\left(c_{ij}\right)$; then
+> If an $n\times n$ matrix $A$ over a number field $K$ has $n$ distinct eigenvalues, then $A$ is diagonalizable.
 
 $$
-c_{ij}=\sum_{k=1}^{n}a_{ik}b_{kj}.
+\beta_{i}=\alpha_{i}-\sum_{k=1}^{i-1}\frac{\left(\alpha_{i},\beta_{k}\right)}{\left(\beta_{k},\beta_{k}\right)}\beta_{k}.
+$$
+Then $\beta_{1},\beta_{2},\cdots,\beta_{m}$ is an orthogonal vector group equivalent to the original one.
+
+> **Theorem 5.7.1 (Eigenvalues of a Real Symmetric Matrix)**
+> 
+> Every root of the characteristic polynomial of a real symmetric matrix, over the complex number field, is a real number.
+
+> **Theorem 5.7.3 (A Real Symmetric Matrix Is Orthogonally Diagonalizable)**
+> 
+> For any $n\times n$ real symmetric matrix $A$, there exists an $n\times n$ orthogonal matrix $T$ such that $T^{-1}AT$ is a diagonal matrix.
+
+> **Definition 6.1.1 (Quadratic Form)**
+> 
+> A homogeneous quadratic polynomial in $n$ variables $x_{1},x_{2},\cdots,x_{n}$ with coefficients in a number field $K$ is called an $n$-variable quadratic form over $K$.
+
+> **Definition 6.1.2 (Canonical Form)**
+> 
+> The canonical form of a real quadratic form $X^{\top}AX$ is
+
+$$
+z_{1}^{2}+\cdots+z_{p}^{2}-z_{p+1}^{2}-\cdots-z_{r}^{2},
+$$
+where $p$ is the positive index of inertia and $r$ is the rank of the quadratic form.
+
+> **Theorem 6.1.3 (Canonical Form of a Quadratic Form)**
+> 
+> Every quadratic form over a number field $K$ is equivalent to a quadratic form containing only square terms.
+
+## 5.6-10
+
+Let $A=\left(a_{ij}\right)$ be an $n\times n$ upper triangular matrix over a number field $K$. Prove: if $a_{11}=a_{22}=\cdots=a_{nn}$ and at least one $a_{kl}\ne0$ ( $k< l$ ), then $A$ cannot be diagonalized.
+
+### Solution to 5.6-10
+
+Since $A$ is upper triangular, its eigenvalues are exactly the diagonal entries $a_{11},a_{22},\cdots,a_{nn}$.
+
+We are given
+
+$$
+a_{11}=a_{22}=\cdots=a_{nn}=\lambda_{0}.
 $$
 
-**Lower triangularity.** When $i< j$:
+That is, $\lambda_{0}$ is an $n$-fold eigenvalue of $A$ (algebraic multiplicity $n$).
 
-- if $k\le i< j$, then $k< j$, so $b_{kj}=0$;
-- if $k> i$, then $a_{ik}=0$.
-
-Hence every term is $0$, so $c_{ij}=0$ (when $i< j$). By **Definition 4.2.2 (Upper/Lower Triangular Matrix)**, $C$ is therefore a lower triangular matrix.
-
-**Diagonal entries.** When $i=j$:
-
-- if $k< i$, then $b_{ki}=0$;
-- if $k> i$, then $a_{ik}=0$.
-
-Hence only the term $k=i$ is nonzero:
+**Find the dimension of the eigenspace.**
 
 $$
-c_{ii}=a_{ii}b_{ii}.
+\lambda_{0}I-A=\left[\begin{array}{cccc}
+0 & -a_{12} & \cdots & -a_{1n}\\
+0 & 0 & \cdots & -a_{2n}\\
+\vdots & \vdots & \ddots & \vdots\\
+0 & 0 & \cdots & 0
+\end{array}\right].
+$$
+
+Since at least one $a_{kl}\ne0$ ( $k< l$ ), $\lambda_{0}I-A$ is not the zero matrix.
+
+Therefore $\operatorname{rank}\left(\lambda_{0}I-A\right)\ge1$.
+
+Hence the dimension of the eigenspace is
+
+$$
+n-\operatorname{rank}\left(\lambda_{0}I-A\right)\le n-1.
+$$
+
+That is, the geometric multiplicity $\le n-1< n=$ the algebraic multiplicity.
+
+Therefore $A$ cannot be diagonalized. $\blacksquare$
+
+## 5.7-1(1)
+
+For the following real symmetric matrix $A$, find an orthogonal matrix $T$ such that $T^{\top}AT$ is diagonal:
+
+$$
+A=\left[\begin{array}{rrr}
+0 & -2 & 2\\
+-2 & -3 & 4\\
+2 & 4 & -3
+\end{array}\right].
+$$
+
+### Solution to 5.7-1(1)
+
+By **Theorem 5.7.3 (A Real Symmetric Matrix Is Orthogonally Diagonalizable)**, there is an orthogonal matrix $T$ such that $T^{\top}AT$ is diagonal. Compute the characteristic polynomial:
+
+$$
+\left|\lambda I-A\right|=\left|\begin{array}{rrr}
+\lambda & 2 & -2\\
+2 & \lambda+3 & -4\\
+-2 & -4 & \lambda+3
+\end{array}\right|=\left(\lambda-1\right)^{2}\left(\lambda+8\right).
+$$
+
+Thus the eigenvalues are $\lambda_{1}=\lambda_{2}=1$ and $\lambda_{3}=-8$.
+
+**Find the eigenvectors for $\lambda=1$.**
+
+$$
+I-A=\left[\begin{array}{rrr}
+1 & 2 & -2\\
+2 & 4 & -4\\
+-2 & -4 & 4
+\end{array}\right]\rightarrow
+\left[\begin{array}{rrr}
+1 & 2 & -2\\
+0 & 0 & 0\\
+0 & 0 & 0
+\end{array}\right].
+$$
+
+A fundamental solution system: $\alpha_{1}=\left(-2,1,0\right)^{\top}$, $\alpha_{2}=\left(2,0,1\right)^{\top}$.
+
+By The Schmidt Orthogonalization Process:
+
+$$
+\beta_{1}=\alpha_{1}=\left(-2,1,0\right)^{\top}.
+$$
+
+$$
+\beta_{2}=\alpha_{2}-\frac{\left(\alpha_{2},\beta_{1}\right)}{\left(\beta_{1},\beta_{1}\right)}\beta_{1}
+=\left(2,0,1\right)^{\top}-\frac{-4}{5}\left(-2,1,0\right)^{\top}
+=\left(\frac{2}{5},\frac{4}{5},1\right)^{\top}.
+$$
+
+Normalize:
+
+$$
+\eta_{1}=\left(-\frac{2}{\sqrt{5}},\frac{1}{\sqrt{5}},0\right)^{\top}.
+$$
+
+$$
+\eta_{2}=\left(\frac{2}{3\sqrt{5}},\frac{4}{3\sqrt{5}},\frac{\sqrt{5}}{3}\right)^{\top}.
+$$
+
+**Find the eigenvectors for $\lambda=-8$.**
+
+$$
+-8I-A=\left[\begin{array}{rrr}
+-8 & 2 & -2\\
+2 & -5 & -4\\
+-2 & -4 & -5
+\end{array}\right]\rightarrow
+\left[\begin{array}{rrr}
+1 & 0 & 1/2\\
+0 & 1 & 1\\
+0 & 0 & 0
+\end{array}\right].
+$$
+
+A fundamental solution system: $\alpha_{3}=\left(-1,2,-4\right)^{\top}$.
+
+Normalize:
+
+$$
+\eta_{3}=\left(-\frac{1}{\sqrt{21}},\frac{2}{\sqrt{21}},-\frac{4}{\sqrt{21}}\right)^{\top}.
+$$
+
+Thus the orthogonal matrix is
+
+$$
+T=\left[\begin{array}{ccc}
+-2/\sqrt{5} & 2/\left(3\sqrt{5}\right) & -1/\sqrt{21}\\
+1/\sqrt{5} & 4/\left(3\sqrt{5}\right) & 2/\sqrt{21}\\
+0 & \sqrt{5}/3 & -4/\sqrt{21}
+\end{array}\right].
+$$
+
+By **Theorem 5.7.3 (A Real Symmetric Matrix Is Orthogonally Diagonalizable)**,
+
+$$
+T^{\top}AT=\operatorname{diag}\left\{1,1,-8\right\}.
 $$
 
 $\blacksquare$
 
-## 4.2-3
+## 5.7-1(3)
 
-Prove: a matrix that commutes with every $n\times n$ matrix must be an $n\times n$ scalar matrix.
-
-### Solution 4.2-3
-
-Let $A=\left(a_{ij}\right)$ commute with every $n\times n$ matrix.
-
-Take the matrix unit $E_{ij}$ of **Definition 4.2.3 (Elementary Matrix Unit)** (its $\left(i,j\right)$-entry is $1$ and all others are $0$). Then $AE_{ij}=E_{ij}A$.
-
-Column $j$ of $AE_{ij}$ equals column $i$ of $A$, and its other columns are $0$.
-
-Row $i$ of $E_{ij}A$ equals row $j$ of $A$, and its other rows are $0$.
-
-Comparing their $\left(i,j\right)$-entries:
-
-the $\left(i,j\right)$-entry of $AE_{ij}$ $=a_{ii}$;
-
-the $\left(i,j\right)$-entry of $E_{ij}A$ $=a_{jj}$.
-
-Hence $a_{ii}=a_{jj}$.
-
-This holds for all $i,j$, so all diagonal entries are equal:
+For the following real symmetric matrix $A$, find an orthogonal matrix $T$ such that $T^{\top}AT$ is diagonal:
 
 $$
-a_{11}=a_{22}=\cdots=a_{nn}=k.
+A=\left[\begin{array}{rrr}
+3 & -2 & 0\\
+-2 & 2 & -2\\
+0 & -2 & 1
+\end{array}\right].
 $$
 
-Now compare the $\left(k,j\right)$-entry (with $k\ne i$):
+### Solution to 5.7-1(3)
 
-the $\left(k,j\right)$-entry of $AE_{ij}$ $=a_{ki}$;
-
-the $\left(k,j\right)$-entry of $E_{ij}A$ $=0$ (because $k\ne i$).
-
-Hence $a_{ki}=0$ (when $k\ne i$).
-
-This holds for all $i$, so all off-diagonal entries of $A$ are $0$.
-
-Therefore $A=kI$, i.e. $A$ is a scalar matrix. $\blacksquare$
-
-## 4.2-8
-
-Prove: over a number field $K$, every $n\times n$ matrix can be written as the sum of a symmetric matrix and a skew-symmetric matrix, and this representation is unique.
-
-### Solution 4.2-8
-
-Let $A$ be any $n\times n$ matrix. Set
+Compute the characteristic polynomial:
 
 $$
-S=\frac{1}{2}\left(A+A^{\top}\right),
-K=\frac{1}{2}\left(A-A^{\top}\right).
+\left|\lambda I-A\right|=\left|\begin{array}{rrr}
+\lambda-3 & 2 & 0\\
+2 & \lambda-2 & 2\\
+0 & 2 & \lambda-1
+\end{array}\right|=\left(\lambda+1\right)\left(\lambda-2\right)\left(\lambda-5\right).
 $$
 
-Then $A=S+K$.
+Thus the eigenvalues are $\lambda_{1}=-1$, $\lambda_{2}=2$ and $\lambda_{3}=5$.
+
+**Find the eigenvectors for $\lambda=-1$.**
+
+A fundamental solution system: $\alpha_{1}=\left(1,2,2\right)^{\top}$.
+
+**Find the eigenvectors for $\lambda=2$.**
+
+A fundamental solution system: $\alpha_{2}=\left(2,1,-2\right)^{\top}$.
+
+**Find the eigenvectors for $\lambda=5$.**
+
+A fundamental solution system: $\alpha_{3}=\left(-2,2,-1\right)^{\top}$.
+
+Verify orthogonality: $\left(\alpha_{1},\alpha_{2}\right)=0$, $\left(\alpha_{1},\alpha_{3}\right)=0$, $\left(\alpha_{2},\alpha_{3}\right)=0$.
+
+Normalize:
 
 $$
-S^{\top}=\frac{1}{2}\left(A^{\top}+\left(A^{\top}\right)^{\top}\right)=\frac{1}{2}\left(A^{\top}+A\right)=S.
+\eta_{1}=\left(\frac{1}{3},\frac{2}{3},\frac{2}{3}\right)^{\top}.
 $$
 
-By **Definition 4.2.5 (Symmetric Matrix)**, $S$ is therefore symmetric.
-
 $$
-K^{\top}=\frac{1}{2}\left(A^{\top}-\left(A^{\top}\right)^{\top}\right)=\frac{1}{2}\left(A^{\top}-A\right)=-K.
+\eta_{2}=\left(\frac{2}{3},\frac{1}{3},-\frac{2}{3}\right)^{\top}.
 $$
 
-By **Definition 4.2.6 (Skew-Symmetric Matrix)**, $K$ is therefore skew-symmetric.
-
-**Uniqueness.** Suppose $A=S_{1}+K_{1}=S_{2}+K_{2}$, where $S_{1},S_{2}$ are symmetric and $K_{1},K_{2}$ are skew-symmetric.
-
-Then $S_{1}-S_{2}=K_{2}-K_{1}$.
-
-The left side $\left(S_{1}-S_{2}\right)^{\top}=S_{1}-S_{2}$ is symmetric.
-
-The right side
-
 $$
-\left(K_{2}-K_{1}\right)^{\top}=-K_{2}+K_{1}=-\left(K_{2}-K_{1}\right)
+\eta_{3}=\left(-\frac{2}{3},\frac{2}{3},-\frac{1}{3}\right)^{\top}.
 $$
 
-is skew-symmetric.
-
-A matrix that is both symmetric and skew-symmetric must be the zero matrix.
-
-Hence $S_{1}-S_{2}=0$ and $K_{2}-K_{1}=0$, i.e. $S_{1}=S_{2}$ and $K_{1}=K_{2}$.
-
-The representation is unique. $\blacksquare$
-
-## 4.2-9
-
-Prove: if $A$ is an $n\times n$ real symmetric matrix and $A^{2}=0$, then $A=0$.
-
-### Solution 4.2-9
-
-Let $A=\left(a_{ij}\right)$ be a real symmetric matrix with $A^{2}=0$.
-
-Consider the diagonal entries of $A^{2}$:
+Thus the orthogonal matrix is
 
 $$
-\left(A^{2}\right)_{ii}=\sum_{k=1}^{n}a_{ik}a_{ki}.
+T=\left[\begin{array}{rrr}
+1/3 & 2/3 & -2/3\\
+2/3 & 1/3 & 2/3\\
+2/3 & -2/3 & -1/3
+\end{array}\right].
 $$
 
-By **Definition 4.2.5 (Symmetric Matrix)**, $A$ is symmetric, so $a_{ki}=a_{ik}$.
-
-Hence
-
 $$
-\left(A^{2}\right)_{ii}=\sum_{k=1}^{n}a_{ik}^{2}.
+T^{\top}AT=\operatorname{diag}\left\{-1,2,5\right\}.
 $$
 
-Since $A^{2}=0$, $\left(A^{2}\right)_{ii}=0$, i.e.
+$\blacksquare$
 
-$$
-\sum_{k=1}^{n}a_{ik}^{2}=0.
-$$
+## 5.7-2
 
-Since the $a_{ik}$ are all real, $a_{ik}^{2}\ge0$.
+Prove: if $n\times n$ real symmetric matrices $A,B$ have the same characteristic polynomial, then $A$ and $B$ are similar.
 
-Therefore each $a_{ik}=0$, i.e. $A=0$. $\blacksquare$
+### Solution to 5.7-2
 
-## 4.2-10
+Since $A$ is real symmetric, by **Theorem 5.7.3 (A Real Symmetric Matrix Is Orthogonally Diagonalizable)**, $A$ is orthogonally similar to a diagonal matrix $D_{A}$, whose diagonal entries are all eigenvalues of $A$ (with multiplicity).
 
-Prove: the determinant of an odd-order skew-symmetric matrix over a number field $K$ is zero.
+Similarly, $B$ is orthogonally similar to a diagonal matrix $D_{B}$, whose diagonal entries are all eigenvalues of $B$ (with multiplicity).
 
-### Solution 4.2-10
+Since $A,B$ have the same characteristic polynomial, they have the same eigenvalues (with multiplicity).
 
-Let $A$ be an $n\times n$ skew-symmetric matrix with $n$ odd.
+Hence the diagonal entries of $D_{A}$ and $D_{B}$ agree (up to order).
 
-By **Definition 4.2.6 (Skew-Symmetric Matrix)**, $A^{\top}=-A$.
+By permuting the diagonal entries of $D_{B}$, we can make $D_{A}=D_{B}$.
 
-$$
-\left|A^{\top}\right|=\left|-A\right|.
-$$
-
-Since $\left|A^{\top}\right|=\left|A\right|$ and $\left|-A\right|=\left(-1\right)^{n}\left|A\right|$,
-
-$$
-\left|A\right|=\left(-1\right)^{n}\left|A\right|.
-$$
-
-Since $n$ is odd, $\left(-1\right)^{n}=-1$.
+Permuting the diagonal entries amounts to a similarity transformation by an orthogonal matrix $Q$: $Q^{\top}D_{B}Q=D_{A}$.
 
 Therefore
 
 $$
-\left|A\right|=-\left|A\right|\Rightarrow 2\left|A\right|=0\Rightarrow \left|A\right|=0.
+A\sim D_{A}=D_{B}\sim B.
 $$
 
-$\blacksquare$
+Hence $A$ and $B$ are similar. $\blacksquare$
+
+## 5.7-3
+
+Prove: if a real matrix $A$ is orthogonally similar to a diagonal matrix, then $A$ must be symmetric.
+
+### Solution to 5.7-3
+
+Suppose $A$ is orthogonally similar to a diagonal matrix $D$, i.e. there is an orthogonal matrix $T$ such that
+
+$$
+T^{\top}AT=D.
+$$
+
+Then
+
+$$
+A=TDT^{\top}.
+$$
+
+Since $D$ is diagonal, $D^{\top}=D$.
+
+Therefore
+
+$$
+A^{\top}=\left(TDT^{\top}\right)^{\top}=TD^{\top}T^{\top}=TDT^{\top}=A.
+$$
+
+Hence $A$ is symmetric. $\blacksquare$
+
+## 6.1-3(1)
+
+Make a nondegenerate linear substitution to reduce the following quadratic form over a number field $K$ to canonical form, and write down the substitution:
+
+$$
+f\left(x_{1},x_{2},x_{3}\right)=x_{1}^{2}+2x_{2}^{2}+2x_{1}x_{2}-2x_{1}x_{3}.
+$$
+
+### Solution to 6.1-3(1)
+
+By **Theorem 6.1.3 (Canonical Form of a Quadratic Form)**, complete the squares:
+
+$$
+f
+=x_{1}^{2}+2x_{1}x_{2}-2x_{1}x_{3}+2x_{2}^{2}=\left(x_{1}+x_{2}-x_{3}\right)^{2}-\left(x_{2}-x_{3}\right)^{2}+2x_{2}^{2}=\left(x_{1}+x_{2}-x_{3}\right)^{2}+x_{2}^{2}+2x_{2}x_{3}-x_{3}^{2}=\left(x_{1}+x_{2}-x_{3}\right)^{2}+\left(x_{2}+x_{3}\right)^{2}-2x_{3}^{2}.
+$$
+
+Set
+
+$$
+\begin{cases}
+y_{1}=x_{1}+x_{2}-x_{3},\\
+y_{2}=x_{2}+x_{3},\\
+y_{3}=x_{3}.
+\end{cases}
+$$
+
+Then
+
+$$
+\begin{cases}
+x_{1}=y_{1}-y_{2}+2y_{3},\\
+x_{2}=y_{2}-y_{3},\\
+x_{3}=y_{3}.
+\end{cases}
+$$
+
+Therefore
+
+$$
+f=y_{1}^{2}+y_{2}^{2}-2y_{3}^{2}.
+$$
+
+The nondegenerate linear substitution is $X=CY$, where
+
+$$
+C=\left[\begin{array}{rrr}
+1 & -1 & 2\\
+0 & 1 & -1\\
+0 & 0 & 1
+\end{array}\right].
+$$
+
+$f=y_{1}^{2}+y_{2}^{2}-2y_{3}^{2}$ is the canonical form. $\blacksquare$
+
+## 6.1-5
+
+Let $A$ be an $n\times n$ matrix over a number field $K$. Prove: $A$ is skew-symmetric if and only if $\alpha^{\top}A\alpha=0$ for every column vector $\alpha$ in $K^{n}$.
+
+### Solution to 6.1-5
+
+By **Definition 6.1.1 (Quadratic Form)**, $A$ is an $n\times n$ matrix over a number field $K$.
+
+**Necessity.** If $A$ is skew-symmetric, i.e. $A^{\top}=-A$.
+
+Then $\alpha^{\top}A\alpha$ is a scalar, and its transpose equals itself:
+
+$$
+\left(\alpha^{\top}A\alpha\right)^{\top}=\alpha^{\top}A^{\top}\alpha=\alpha^{\top}\left(-A\right)\alpha=-\alpha^{\top}A\alpha.
+$$
+
+But $\left(\alpha^{\top}A\alpha\right)^{\top}=\alpha^{\top}A\alpha$ (because it is a scalar).
+
+Therefore
+
+$$
+\alpha^{\top}A\alpha=-\alpha^{\top}A\alpha,
+$$
+
+i.e. $2\alpha^{\top}A\alpha=0$, and hence $\alpha^{\top}A\alpha=0$.
+
+**Sufficiency.** Suppose $\alpha^{\top}A\alpha=0$ for every column vector $\alpha$.
+
+We prove $A$ is skew-symmetric, i.e. $A^{\top}=-A$, i.e. $A+A^{\top}=0$.
+
+Since $\left(A+A^{\top}\right)$ is symmetric.
+
+For every column vector $\alpha$,
+
+$$
+\alpha^{\top}\left(A+A^{\top}\right)\alpha=\alpha^{\top}A\alpha+\alpha^{\top}A^{\top}\alpha=0+\left(\alpha^{\top}A\alpha\right)^{\top}=0+0=0.
+$$
+
+That is, for every column vector $\alpha$, $\alpha^{\top}\left(A+A^{\top}\right)\alpha=0$.
+
+Since $\left(A+A^{\top}\right)$ is symmetric and $\alpha^{\top}\left(A+A^{\top}\right)\alpha=0$ for every $\alpha$, by the property of symmetric matrices (if a symmetric matrix satisfies $\alpha^{\top}A\alpha=0$ for all $\alpha$, then $A=0$), we get $A+A^{\top}=0$.
+
+Therefore $A^{\top}=-A$, i.e. $A$ is skew-symmetric. $\blacksquare$

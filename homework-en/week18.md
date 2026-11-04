@@ -1,481 +1,357 @@
 # week18
 
-> **Definition 4.1.1 (Matrix Addition)**
+> **Definition 5.5.1 (Eigenvalue and Eigenvector)**
 > 
-> Let $A=\left(a_{ij}\right),B=\left(b_{ij}\right)$ both be $s\times n$ matrices over a number field $K$, and set $C=\left(a_{ij}+b_{ij}\right)_{s\times n}$. Then $C$ is called the sum of the matrices $A$ and $B$, denoted $C=A+B$.
+> Let $A$ be an $n\times n$ matrix over a number field $K$. If there is a nonzero column vector $\alpha$ in $K^{n}$ such that $A\alpha=\lambda_{0}\alpha$ with $\lambda_{0}\in K$, then $\lambda_{0}$ is called an eigenvalue of $A$, and $\alpha$ is called an eigenvector of $A$ belonging to the eigenvalue $\lambda_{0}$.
 
-> **Definition 4.1.2 (Scalar Multiplication of Matrices)**
+> **Theorem 5.6.1 (Necessary and Sufficient Condition for Diagonalizability)**
 > 
-> Let $k\in K$ and set $M=\left(ka_{ij}\right)_{s\times n}$. Then $M$ is called the scalar product of $k$ and the matrix $A$, denoted $M=kA$.
+> An $n\times n$ matrix $A$ over a number field $K$ is diagonalizable if and only if $A$ has $n$ linearly independent eigenvectors.
 
-> **Definition 4.1.3 (Matrix Multiplication)**
+> **Corollary 5.6.6 (Distinct Eigenvalues Imply Diagonalizability)**
 > 
-> Let $A=\left(a_{ij}\right)_{s\times n}$ and $B=\left(b_{ij}\right)_{n\times m}$, and set $C=\left(c_{ij}\right)_{s\times m}$ with $c_{ij}=\sum_{k=1}^{n}a_{ik}b_{kj}$. Then $C$ is called the product of $A$ and $B$, denoted $C=AB$.
+> If an $n\times n$ matrix $A$ over a number field $K$ has $n$ distinct eigenvalues, then $A$ is diagonalizable.
 
-## 4.1-1
+## 5.5-12(1)
 
-Let
+Find all eigenvalues and eigenvectors of the following matrix over the complex number field:
 
 $$
-A=\left[\begin{array}{ccc}
-\lambda & 0 & 0\\
-0 & \lambda & 0\\
-0 & 0 & \lambda
+P=\left[\begin{array}{ccc}
+0 & 1 & 0\\
+0 & 0 & 1\\
+1 & 0 & 0
+\end{array}\right].
+$$
+
+### Solution to 5.5-12(1)
+
+Compute the characteristic polynomial:
+
+$$
+\left|\lambda I-P\right|=\left|\begin{array}{rrr}
+\lambda & -1 & 0\\
+0 & \lambda & -1\\
+-1 & 0 & \lambda
+\end{array}\right|=\lambda^{3}-1.
+$$
+
+Thus the eigenvalues are $\lambda_{1}=1$, $\lambda_{2}=\omega$ and $\lambda_{3}=\omega^{2}$, where
+
+$$
+\omega=e^{2\pi i/3}=-\frac{1}{2}+\frac{\sqrt{3}}{2}i.
+$$
+
+**Find the eigenvectors for $\lambda=1$.**
+
+$$
+I-P=\left[\begin{array}{rrr}
+1 & -1 & 0\\
+0 & 1 & -1\\
+-1 & 0 & 1
+\end{array}\right]\rightarrow
+\left[\begin{array}{rrr}
+1 & -1 & 0\\
+0 & 1 & -1\\
+0 & 0 & 0
+\end{array}\right].
+$$
+
+Solving gives $x_{1}=x_{2}=x_{3}$.
+
+A fundamental solution system: $\alpha_{1}=\left(1,1,1\right)^{\top}$.
+
+**Find the eigenvectors for $\lambda=\omega$.**
+
+From the first row: $\omega x_{1}-x_{2}=0$, i.e. $x_{2}=\omega x_{1}$.
+
+From the second row: $\omega x_{2}-x_{3}=0$, i.e. $x_{3}=\omega x_{2}=\omega^{2}x_{1}$.
+
+A fundamental solution system: $\alpha_{2}=\left(1,\omega,\omega^{2}\right)^{\top}$.
+
+**Find the eigenvectors for $\lambda=\omega^{2}$.**
+
+Similarly, a fundamental solution system: $\alpha_{3}=\left(1,\omega^{2},\omega\right)^{\top}$.
+
+$\blacksquare$
+
+## 5.5-13
+
+Let $A,B$ be $s\times n$ and $n\times s$ matrices over a number field $K$, respectively. Prove: $AB$ and $BA$ have the same nonzero eigenvalues.
+
+### Solution to 5.5-13
+
+Let $\lambda\ne0$ be an eigenvalue of $AB$ and $\alpha$ an eigenvector of $AB$ belonging to $\lambda$, i.e.
+
+$$
+AB\alpha=\lambda\alpha.
+$$
+
+Set $\beta=B\alpha$.
+
+Then
+
+$$
+BA\beta=BA\left(B\alpha\right)=B\left(AB\alpha\right)=B\left(\lambda\alpha\right)=\lambda\left(B\alpha\right)=\lambda\beta.
+$$
+
+**Prove that $\beta\ne0$.**
+
+If $\beta=0$, then $B\alpha=0$.
+
+Then
+
+$$
+AB\alpha=A\left(0\right)=0.
+$$
+
+But $AB\alpha=\lambda\alpha$ and $\lambda\ne0$, so $\lambda\alpha=0$, and hence $\alpha=0$.
+
+This is a contradiction, since $\alpha$ is an eigenvector and $\alpha\ne0$.
+
+Therefore $\beta\ne0$.
+
+Hence $\beta$ is an eigenvector of $BA$ belonging to $\lambda$.
+
+Therefore $\lambda$ is an eigenvalue of $BA$.
+
+Symmetrically, every nonzero eigenvalue of $BA$ is an eigenvalue of $AB$.
+
+Thus $AB$ and $BA$ have the same nonzero eigenvalues. $\blacksquare$
+
+## 5.6-1
+
+Among the matrices in Exercises 5.5, problems 1 and 2, which are diagonalizable and which are not? For each diagonalizable matrix $A$, find an invertible matrix $P$ such that $P^{-1}AP$ is diagonal, and write down that diagonal matrix.
+
+### Solution to 5.6-1
+
+By **Theorem 5.6.1 (Necessary and Sufficient Condition for Diagonalizability)**, an $n\times n$ matrix $A$ over a number field $K$ is diagonalizable if and only if $A$ has $n$ linearly independent eigenvectors.
+
+**Exercise 5.5, problem 1(1)**: $A=\left[\begin{array}{rrr}2 & 2 & -2\\2 & 5 & -4\\-2 & -4 & 5\end{array}\right]$.
+
+Eigenvalues: $\lambda_{1}=1$, $\lambda_{2}=\lambda_{3}=10$.
+
+Find the eigenvectors for $\lambda=10$:
+
+$$
+10I-A=\left[\begin{array}{rrr}
+8 & -2 & 2\\
+-2 & 5 & 4\\
+2 & 4 & 5
+\end{array}\right]\rightarrow
+\left[\begin{array}{rrr}
+2 & 4 & 5\\
+0 & 9 & 9\\
+0 & 0 & 0
+\end{array}\right].
+$$
+
+Solving gives $x_{2}=-x_{3}$ and $x_{1}=\frac{1}{2}x_{3}$.
+
+A fundamental solution system: $\alpha_{1}=\left(1,-2,2\right)^{\top}$.
+
+Eigenvectors for the eigenvalue $\lambda=1$:
+
+$$
+I-A=\left[\begin{array}{rrr}
+-1 & -2 & 2\\
+-2 & -4 & 4\\
+2 & 4 & -4
+\end{array}\right]\rightarrow
+\left[\begin{array}{rrr}
+1 & 2 & -2\\
+0 & 0 & 0\\
+0 & 0 & 0
+\end{array}\right].
+$$
+
+Solving gives $x_{1}=-2x_{2}+2x_{3}$.
+
+A fundamental solution system: $\alpha_{2}=\left(-2,1,0\right)^{\top}$, $\alpha_{3}=\left(2,0,1\right)^{\top}$.
+
+The three eigenvectors are linearly independent, so $A$ is diagonalizable.
+
+$$
+P=\left[\begin{array}{rrr}
+1 & -2 & 2\\
+-2 & 1 & 0\\
+2 & 0 & 1
 \end{array}\right],
-B=\left[\begin{array}{ccc}
+P^{-1}AP=\left[\begin{array}{rrr}
+10 & 0 & 0\\
 0 & 1 & 0\\
-0 & 0 & 1\\
-0 & 0 & 0
-\end{array}\right].
-$$
-
-Find $A+B$.
-
-### Solution 4.1-1
-
-By **Definition 4.1.1 (Matrix Addition)**,
-
-$$
-A+B=\left[\begin{array}{ccc}
-\lambda & 1 & 0\\
-0 & \lambda & 1\\
-0 & 0 & \lambda
-\end{array}\right].
-$$
-
-$\blacksquare$
-
-## 4.1-3
-
-Let $I$ be the $n\times n$ identity matrix and $J$ be the $n\times n$ matrix all of whose entries are $1$. Let
-
-$$
-M=\left[\begin{array}{cccc}
-k & \lambda & \cdots & \lambda\\
-\lambda & k & \cdots & \lambda\\
-\vdots & \vdots & & \vdots\\
-\lambda & \lambda & \cdots & k
-\end{array}\right]_{n\times n}.
-$$
-
-Express $M$ in the form $xI+yJ$, where $x,y$ are undetermined coefficients.
-
-### Solution 4.1-3
-
-By **Definition 4.1.1 (Matrix Addition)** and **Definition 4.1.2 (Scalar Multiplication of Matrices)**, the diagonal entries of $xI+yJ$ are $x+y$ and the off-diagonal entries are $y$.
-
-Comparing with $M$, whose diagonal entries are $k$ and off-diagonal entries are $\lambda$, gives
-
-$$
-\begin{cases}
-x+y=k,\\
-y=\lambda.
-\end{cases}
-$$
-
-Solving gives $x=k-\lambda$, $y=\lambda$.
-
-By **Definition 4.1.1 (Matrix Addition)** and **Definition 4.1.2 (Scalar Multiplication of Matrices)**,
-
-$$
-M=\left(k-\lambda\right)I+\lambda J.
-$$
-
-$\blacksquare$
-
-## 4.1-4(1)
-
-Compute:
-
-$$
-\left[\begin{array}{rr}
-7 & -1\\
--2 & 5\\
-3 & -4
-\end{array}\right]\left[\begin{array}{rr}
-1 & 4\\
--5 & 2
-\end{array}\right].
-$$
-
-### Solution 4.1-4(1)
-
-By **Definition 4.1.3 (Matrix Multiplication)**, the $\left(i,j\right)$-entry of the product equals the inner product of row $i$ and column $j$:
-
-$$
-\left[\begin{array}{rr}
-7 & -1\\
--2 & 5\\
-3 & -4
-\end{array}\right]\left[\begin{array}{rr}
-1 & 4\\
--5 & 2
-\end{array}\right]
-=
-\left[\begin{array}{rr}
-7\times1+\left(-1\right)\times\left(-5\right) & 7\times4+\left(-1\right)\times2\\
-\left(-2\right)\times1+5\times\left(-5\right) & \left(-2\right)\times4+5\times2\\
-3\times1+\left(-4\right)\times\left(-5\right) & 3\times4+\left(-4\right)\times2
-\end{array}\right]
-=
-\left[\begin{array}{rr}
-12 & 26\\
--27 & 2\\
-23 & 4
-\end{array}\right].
-$$
-
-$\blacksquare$
-
-## 4.1-4(2)
-
-Compute:
-
-$$
-\left[\begin{array}{rr}
-0 & 2\\
-0 & 3
-\end{array}\right]\left[\begin{array}{rr}
-1 & 1\\
-0 & 0
-\end{array}\right].
-$$
-
-### Solution 4.1-4(2)
-
-By **Definition 4.1.3 (Matrix Multiplication)**, the $\left(i,j\right)$-entry of the product equals the inner product of row $i$ and column $j$:
-
-$$
-\left[\begin{array}{rr}
-0 & 2\\
-0 & 3
-\end{array}\right]\left[\begin{array}{rr}
-1 & 1\\
-0 & 0
-\end{array}\right]
-=
-\left[\begin{array}{rr}
-0\times1+2\times0 & 0\times1+2\times0\\
-0\times1+3\times0 & 0\times1+3\times0
-\end{array}\right]
-=
-\left[\begin{array}{rr}
-0 & 0\\
-0 & 0
-\end{array}\right].
-$$
-
-$\blacksquare$
-
-## 4.1-4(3)
-
-Compute:
-
-$$
-\left[\begin{array}{rr}
-1 & 1\\
-0 & 0
-\end{array}\right]\left[\begin{array}{rr}
-0 & 2\\
-0 & 3
-\end{array}\right].
-$$
-
-### Solution 4.1-4(3)
-
-By **Definition 4.1.3 (Matrix Multiplication)**, the $\left(i,j\right)$-entry of the product equals the inner product of row $i$ and column $j$:
-
-$$
-\left[\begin{array}{rr}
-1 & 1\\
-0 & 0
-\end{array}\right]\left[\begin{array}{rr}
-0 & 2\\
-0 & 3
-\end{array}\right]
-=
-\left[\begin{array}{rr}
-1\times0+1\times0 & 1\times2+1\times3\\
-0\times0+0\times0 & 0\times2+0\times3
-\end{array}\right]
-=
-\left[\begin{array}{rr}
-0 & 5\\
-0 & 0
-\end{array}\right].
-$$
-
-$\blacksquare$
-
-## 4.1-4(8)
-
-Compute:
-
-$$
-\left[\begin{array}{ccc}
-d_{1} & 0 & 0\\
-0 & d_{2} & 0\\
-0 & 0 & d_{3}
-\end{array}\right]\left[\begin{array}{ccc}
-a_{1} & a_{2} & a_{3}\\
-b_{1} & b_{2} & b_{3}\\
-c_{1} & c_{2} & c_{3}
-\end{array}\right].
-$$
-
-### Solution 4.1-4(8)
-
-By **Definition 4.1.3 (Matrix Multiplication)**, left-multiplying by a diagonal matrix amounts to multiplying the corresponding rows by the diagonal entries:
-
-$$
-=
-\left[\begin{array}{ccc}
-d_{1}a_{1} & d_{1}a_{2} & d_{1}a_{3}\\
-d_{2}b_{1} & d_{2}b_{2} & d_{2}b_{3}\\
-d_{3}c_{1} & d_{3}c_{2} & d_{3}c_{3}
-\end{array}\right].
-$$
-
-$\blacksquare$
-
-## 4.1-4(9)
-
-Compute:
-
-$$
-\left[\begin{array}{ccc}
-a_{1} & a_{2} & a_{3}\\
-b_{1} & b_{2} & b_{3}\\
-c_{1} & c_{2} & c_{3}
-\end{array}\right]\left[\begin{array}{ccc}
-d_{1} & 0 & 0\\
-0 & d_{2} & 0\\
-0 & 0 & d_{3}
-\end{array}\right].
-$$
-
-### Solution 4.1-4(9)
-
-By **Definition 4.1.3 (Matrix Multiplication)**, right-multiplying by a diagonal matrix amounts to multiplying the corresponding columns by the diagonal entries:
-
-$$
-=
-\left[\begin{array}{ccc}
-d_{1}a_{1} & d_{2}a_{2} & d_{3}a_{3}\\
-d_{1}b_{1} & d_{2}b_{2} & d_{3}b_{3}\\
-d_{1}c_{1} & d_{2}c_{2} & d_{3}c_{3}
-\end{array}\right].
-$$
-
-$\blacksquare$
-
-## 4.1-4(13)
-
-Compute:
-
-$$
-\left[\begin{array}{ccc}
-0 & 1 & 0\\
-1 & 0 & 0\\
-0 & 0 & 1
-\end{array}\right]\left[\begin{array}{cccc}
-a_{1} & a_{2} & a_{3} & a_{4}\\
-b_{1} & b_{2} & b_{3} & b_{4}\\
-c_{1} & c_{2} & c_{3} & c_{4}
-\end{array}\right].
-$$
-
-### Solution 4.1-4(13)
-
-By **Definition 4.1.3 (Matrix Multiplication)**, this is left-multiplication by the elementary matrix that swaps rows $1$ and $2$:
-
-$$
-=
-\left[\begin{array}{cccc}
-b_{1} & b_{2} & b_{3} & b_{4}\\
-a_{1} & a_{2} & a_{3} & a_{4}\\
-c_{1} & c_{2} & c_{3} & c_{4}
-\end{array}\right].
-$$
-
-$\blacksquare$
-
-## 4.1-4(14)
-
-Compute:
-
-$$
-\left[\begin{array}{ccc}
-a_{1} & a_{2} & a_{3}\\
-b_{1} & b_{2} & b_{3}\\
-c_{1} & c_{2} & c_{3}
-\end{array}\right]\left[\begin{array}{ccc}
-0 & 1 & 0\\
-1 & 0 & 0\\
 0 & 0 & 1
 \end{array}\right].
 $$
 
-### Solution 4.1-4(14)
+**Exercise 5.5, problem 1(2)**: $A=\left[\begin{array}{rrr}2 & 3 & 2\\1 & 8 & 2\\-2 & -14 & -3\end{array}\right]$.
 
-By **Definition 4.1.3 (Matrix Multiplication)**, this is right-multiplication by the elementary matrix that swaps columns $1$ and $2$:
+Eigenvalues: $\lambda_{1}=1$, $\lambda_{2}=\lambda_{3}=3$.
 
-$$
-=
-\left[\begin{array}{ccc}
-a_{2} & a_{1} & a_{3}\\
-b_{2} & b_{1} & b_{3}\\
-c_{2} & c_{1} & c_{3}
-\end{array}\right].
-$$
+The eigenspace for $\lambda=3$ has dimension $1$ (geometric multiplicity), while the algebraic multiplicity is $2$.
 
-$\blacksquare$
+Geometric multiplicity $< $ algebraic multiplicity, so $A$ is not diagonalizable.
 
-## 4.1-6
+**Exercise 5.5, problem 1(3)**: $A=\left[\begin{array}{rrr}6 & 2 & 4\\2 & 3 & 2\\4 & 2 & 6\end{array}\right]$.
 
-Compute:
+Eigenvalues: $\lambda_{1}=2$, $\lambda_{2}=11$.
 
-$$
-\left(x,y,1\right)\left[\begin{array}{ccc}
-a_{11} & a_{12} & a_{1}\\
-a_{12} & a_{22} & a_{2}\\
-a_{1} & a_{2} & a_{0}
-\end{array}\right]\left[\begin{array}{c}
-x\\
-y\\
-1
-\end{array}\right].
-$$
+There are two distinct eigenvalues, and the $3\times 3$ matrix has $3$ linearly independent eigenvectors, so it is diagonalizable.
 
-### Solution 4.1-6
+**Exercise 5.5, problem 1(4)**: $A=\left[\begin{array}{rrr}2 & -1 & 2\\5 & -3 & 3\\-1 & 0 & -2\end{array}\right]$.
 
-By **Definition 4.1.3 (Matrix Multiplication)**, first multiply the row vector on the left by the matrix:
+Eigenvalue: $\lambda=-1$ (triple root).
 
-$$
-\left(x,y,1\right)M
-=
-\left(a_{11}x+a_{12}y+a_{1},a_{12}x+a_{22}y+a_{2},a_{1}x+a_{2}y+a_{0}\right).
-$$
+Geometric multiplicity $< 3$, so it is not diagonalizable.
 
-Then multiply by the column vector:
+**Exercise 5.5, problem 1(5)**: $A=\left[\begin{array}{rrr}0 & 1/2 & 1/2\\1 & -1/2 & 1/2\\1 & -1/2 & 1/2\end{array}\right]$.
 
-$$
-=\left(a_{11}x+a_{12}y+a_{1}\right)x+\left(a_{12}x+a_{22}y+a_{2}\right)y+\left(a_{1}x+a_{2}y+a_{0}\right)=a_{11}x^{2}+2a_{12}xy+a_{22}y^{2}+2a_{1}x+2a_{2}y+a_{0}.
-$$
+Eigenvalues: $\lambda_{1}=0$, $\lambda_{2}=1$, $\lambda_{3}=-1$.
 
-$\blacksquare$
+Three distinct eigenvalues, so it is diagonalizable.
 
-## 4.1-7(5)
+**Exercise 5.5, problem 2(1)**: $A=\left[\begin{array}{rr}1 & -\sqrt{3}\\\sqrt{3} & 1\end{array}\right]$.
 
-Compute:
+Regarded as a real matrix, it has no real eigenvalue, so it is not diagonalizable.
 
-$$
-\left[\begin{array}{ccc}
-0 & 1 & 0\\
-0 & 0 & 1\\
-0 & 0 & 0
-\end{array}\right]^{n},\text{ where }n\text{ is a positive integer}.
-$$
+Regarded as a complex matrix, it has two distinct eigenvalues, so it is diagonalizable.
 
-### Solution 4.1-7(5)
+**Exercise 5.5, problem 2(2)**: $A=\left[\begin{array}{rrr}3 & 7 & -3\\-2 & -5 & 2\\-4 & -10 & 3\end{array}\right]$.
 
-By **Definition 4.1.3 (Matrix Multiplication)**, write
+Regarded as a real matrix, it has only $1$ real eigenvalue, so it is not diagonalizable.
+
+Regarded as a complex matrix, it has three distinct eigenvalues, so it is diagonalizable.
+
+All these judgments rest on whether the matrix has $n$ linearly independent eigenvectors. $\blacksquare$
+
+## 5.6-5
+
+Let $A$ be an $n\times n$ matrix over a number field $K$. Prove: if every nonzero column vector in $K^{n}$ is an eigenvector of $A$, then $A$ must be a scalar matrix.
+
+### Solution to 5.6-5
+
+Suppose $A$ is not a scalar matrix.
+
+Then $A$ has at least two distinct eigenvalues $\lambda_{1}\ne\lambda_{2}$.
+
+Let $\alpha$ be an eigenvector belonging to $\lambda_{1}$ and $\beta$ an eigenvector belonging to $\lambda_{2}$.
+
+Eigenvectors belonging to distinct eigenvalues are linearly independent.
+
+Hence $\alpha+\beta\ne0$.
+
+By the assumption, $\alpha+\beta$ is also an eigenvector of $A$.
+
+Suppose $\alpha+\beta$ belongs to the eigenvalue $\lambda_{3}$.
+
+Then
 
 $$
-H=\left[\begin{array}{ccc}0 & 1 & 0\\0 & 0 & 1\\0 & 0 & 0\end{array}\right].
+A\left(\alpha+\beta\right)=\lambda_{3}\left(\alpha+\beta\right).
 $$
 
-$$
-H^{2}=HH=\left[\begin{array}{ccc}
-0 & 0 & 1\\
-0 & 0 & 0\\
-0 & 0 & 0
-\end{array}\right].
-$$
+On the other hand,
 
 $$
-H^{3}=H^{2}H=\left[\begin{array}{ccc}
-0 & 0 & 0\\
-0 & 0 & 0\\
-0 & 0 & 0
-\end{array}\right].
+A\left(\alpha+\beta\right)=A\alpha+A\beta=\lambda_{1}\alpha+\lambda_{2}\beta.
 $$
 
-Therefore:
-
-- when $n=1$, $H^{n}=H=\left[\begin{array}{ccc}0 & 1 & 0\\0 & 0 & 1\\0 & 0 & 0\end{array}\right]$;
-- when $n=2$, $H^{n}=\left[\begin{array}{ccc}0 & 0 & 1\\0 & 0 & 0\\0 & 0 & 0\end{array}\right]$;
-- when $n\ge3$, $H^{n}=0$.
-
-$\blacksquare$
-
-## 4.1-7(6)
-
-Compute:
+Therefore
 
 $$
-\left[\begin{array}{ccc}
-\lambda & 1 & 0\\
-0 & \lambda & 1\\
-0 & 0 & \lambda
-\end{array}\right]^{n},\text{ where }n\text{ is a positive integer}.
+\lambda_{1}\alpha+\lambda_{2}\beta=\lambda_{3}\alpha+\lambda_{3}\beta.
 $$
 
-### Solution 4.1-7(6)
-
-By **Definition 4.1.3 (Matrix Multiplication)**, write $A=\lambda I+N$, where
+That is,
 
 $$
-N=\left[\begin{array}{ccc}0 & 1 & 0\\0 & 0 & 1\\0 & 0 & 0\end{array}\right].
+\left(\lambda_{1}-\lambda_{3}\right)\alpha+\left(\lambda_{2}-\lambda_{3}\right)\beta=0.
 $$
 
-Because $\lambda I$ and $N$ commute, by Matrix Binomial Theorem,
+Since $\alpha,\beta$ are linearly independent,
 
 $$
-A^{n}=\sum_{k=0}^{n}\binom{n}{k}\left(\lambda I\right)^{n-k}N^{k}.
+\lambda_{1}-\lambda_{3}=0,\quad\lambda_{2}-\lambda_{3}=0.
 $$
 
-Also $N^{0}=I$, $N^{1}=N$, $N^{2}=\left[\begin{array}{ccc}0 & 0 & 1\\0 & 0 & 0\\0 & 0 & 0\end{array}\right]$, $N^{3}=0$.
+Namely $\lambda_{1}=\lambda_{2}=\lambda_{3}$.
+
+This is a contradiction.
+
+Hence the assumption fails, and $A$ is a scalar matrix. $\blacksquare$
+
+## 5.6-7
+
+Prove: an $n\times n$ idempotent matrix $A$ over a number field $K$ is always diagonalizable, and its canonical form under similarity is $\operatorname{diag}\left\{I_{r},0\right\}$, where $r=\operatorname{rank}\left(A\right)$.
+
+### Solution to 5.6-7
+
+Since $A^{2}=A$, the eigenvalues of $A$ can only be $0$ or $1$.
+
+**Prove that $A$ is diagonalizable.**
+
+$\ker\left(A\right)=\left\{x\mid Ax=0\right\}$ is the eigenspace belonging to the eigenvalue $0$.
+
+$$
+\ker\left(I-A\right)=\left\{x\mid \left(I-A\right)x=0\right\}=\left\{x\mid Ax=x\right\}
+$$
+
+is the eigenspace belonging to the eigenvalue $1$.
+
+We prove
+
+$$
+K^{n}=\ker\left(A\right)\oplus\ker\left(I-A\right).
+$$
+
+For any $x\in K^{n}$,
+
+$$
+x=Ax+\left(I-A\right)x.
+$$
+
+Since $A\left(Ax\right)=A^{2}x=Ax$, $Ax\in\ker\left(I-A\right)$.
+
+Since
+
+$$
+A\left(\left(I-A\right)x\right)=\left(A-A^{2}\right)x=0,
+$$
+
+$\left(I-A\right)x\in\ker\left(A\right)$.
+
+Therefore
+
+$$
+K^{n}=\ker\left(A\right)+\ker\left(I-A\right).
+$$
+
+Moreover,
+
+$$
+\ker\left(A\right)\cap\ker\left(I-A\right)=\left\{0\right\}\ \left(\text{if }Ax=0\text{ and }Ax=x\text{, then }x=0\right).
+$$
 
 Hence
 
 $$
-A^{n}
-=\lambda^{n}I+n\lambda^{n-1}N+\binom{n}{2}\lambda^{n-2}N^{2}=\left[\begin{array}{ccc}
-\lambda^{n} & n\lambda^{n-1} & \frac{n\left(n-1\right)}{2}\lambda^{n-2}\\
-0 & \lambda^{n} & n\lambda^{n-1}\\
-0 & 0 & \lambda^{n}
-\end{array}\right].
+K^{n}=\ker\left(A\right)\oplus\ker\left(I-A\right).
 $$
 
-When $n=1$, the above also holds (note $\lambda^{0}=1$, and the third term is $0$). $\blacksquare$
+Thus $A$ has $n$ linearly independent eigenvectors, and is diagonalizable.
 
-## 4.1-10
-
-Prove: if $A=\frac{1}{2}\left(B+I\right)$, then $A^{2}=A$ if and only if $B^{2}=I$.
-
-### Solution 4.1-10
+**Find the canonical form under similarity.**
 
 $$
-A^{2}=\left(\frac{1}{2}\left(B+I\right)\right)^{2}=\frac{1}{4}\left(B+I\right)^{2}=\frac{1}{4}\left(B^{2}+2B+I\right).
+\dim\ker\left(A\right)=n-\operatorname{rank}\left(A\right).
 $$
 
-$A^{2}=A$ is equivalent to
-
 $$
-\frac{1}{4}\left(B^{2}+2B+I\right)=\frac{1}{2}\left(B+I\right).
+\dim\ker\left(I-A\right)=\operatorname{rank}\left(A\right)=r.
 $$
 
-Multiplying both sides by $4$:
+Hence $A$ has $r$ eigenvalues equal to $1$ and $n-r$ eigenvalues equal to $0$.
 
-$$
-B^{2}+2B+I=2B+2I.
-$$
+Therefore the canonical form of $A$ under similarity is $\operatorname{diag}\left\{I_{r},0\right\}$, where $r=\operatorname{rank}\left(A\right)$.
 
-Simplifying:
-
-$$
-B^{2}=I.
-$$
-
-Therefore $A^{2}=A$ if and only if $B^{2}=I$. $\blacksquare$
+$\blacksquare$

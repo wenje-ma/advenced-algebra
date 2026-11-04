@@ -1,286 +1,576 @@
 # week23
 
-$$
-\beta_{i}=\alpha_{i}-\sum_{k=1}^{i-1}\frac{\left(\alpha_{i},\beta_{k}\right)}{\left(\beta_{k},\beta_{k}\right)}\beta_{k}.
-$$
-
-Then $\beta_{1},\beta_{2},\cdots,\beta_{m}$ is an orthogonal vector group equivalent to the original one.
-
-> **Definition 4.6.1 (Orthogonal Matrix)**
+> **Definition 7.6.1 (Root of a Polynomial)**
 > 
-> A real square matrix $A$ satisfying $A^{\top}A=I$ is called an orthogonal matrix.
+> Let $K$ be a number field, and let $R$ be a commutative ring with identity that can be viewed as an extension ring of $K$. For a polynomial $f\left(x\right)$ in $K\left[x\right]$, if there is an element $c$ in $R$ such that $f\left(c\right)=0$, then $c$ is called a root of $f\left(x\right)$ in $R$.
 
-> **Definition 4.6.2 (Standard Inner Product)**
+> **Theorem 7.6.1 (Remainder Theorem)**
 > 
-> In $\mathbb{R}^{n}$, for any $\alpha=\left(a_{1},a_{2},\cdots,a_{n}\right)$ and $\beta=\left(b_{1},b_{2},\cdots,b_{n}\right)$, define
+> In $K\left[x\right]$, the remainder when $f\left(x\right)$ is divided by $x-a$ is $f\left(a\right)$.
 
-$$
-\left(\alpha,\beta\right)=a_{1}b_{1}+a_{2}b_{2}+\cdots+a_{n}b_{n},
-$$
-
-which is called the standard inner product on $\mathbb{R}^{n}$.
-
-> **Proposition 4.6.2 (An Orthogonal Vector Group Is Linearly Independent)**
+> **Corollary 7.6.2 (Factor Theorem)**
 > 
-> In the Euclidean space $\mathbb{R}^{n}$, an orthogonal vector group is always linearly independent.
+> In $K\left[x\right]$, $x-a$ divides $f\left(x\right)$ if and only if $f\left(a\right)=0$.
 
-## 4.6-1(3)
+> **Property 7.7.1 (Conjugate Pairs of Nonreal Roots)**
+> 
+> The nonreal roots of a real-coefficient polynomial occur in conjugate pairs with the same multiplicity.
 
-Determine whether the following matrix is orthogonal:
+> **Theorem 7.7.1 (Unique Factorization Theorem for Real Polynomials)**
+> 
+> Every real-coefficient polynomial of positive degree can be uniquely factored over $\mathbb{R}$ into a product of linear factors and quadratic factors with negative discriminant.
 
-$$
-A=\left[\begin{array}{rr}
-\sqrt{3}/2 & 1/2\\
-1/2 & -\sqrt{3}/2
-\end{array}\right].
-$$
+> **Definition 7.8.1 (Primitive Polynomial)**
+> 
+> A nonzero polynomial with integer coefficients is called primitive if the greatest common divisor of its coefficients is $1$.
 
-### Solution 4.6-1(3)
+> **Lemma 7.8.1 (Gauss Lemma)**
+> 
+> The product of two primitive polynomials is again primitive.
 
-By **Definition 4.6.1 (Orthogonal Matrix)**, compute $A^{\top}A$:
-
-$$
-A^{\top}A=\left[\begin{array}{rr}
-\sqrt{3}/2 & 1/2\\
-1/2 & -\sqrt{3}/2
-\end{array}\right]\left[\begin{array}{rr}
-\sqrt{3}/2 & 1/2\\
-1/2 & -\sqrt{3}/2
-\end{array}\right].
-$$
-
-The $\left(1,1\right)$-entry:
+> **Theorem 7.8.1 (Eisenstein Criterion)**
+> 
+> Let
 
 $$
-\left(\frac{\sqrt{3}}{2}\right)^{2}+\left(\frac{1}{2}\right)^{2}=\frac{3}{4}+\frac{1}{4}=1.
+f\left(x\right)=a_{n}x^{n}+\cdots+a_{1}x+a_{0}
 $$
+be a polynomial with integer coefficients of degree $n> 0$. If there exists a prime $p$ such that (1) $p\mid a_{i}$ for $i=0,1,\ldots,n-1$; (2) $p\nmid a_{n}$; (3) $p^{2}\nmid a_{0}$, then $f\left(x\right)$ is irreducible over $\mathbb{Q}$.
 
-The $\left(1,2\right)$-entry:
+## 7.6-1
 
-$$
-\frac{\sqrt{3}}{2}\cdot\frac{1}{2}+\frac{1}{2}\cdot\left(-\frac{\sqrt{3}}{2}\right)=\frac{\sqrt{3}}{4}-\frac{\sqrt{3}}{4}=0.
-$$
-
-The $\left(2,1\right)$-entry:
+Let
 
 $$
-\frac{1}{2}\cdot\frac{\sqrt{3}}{2}+\left(-\frac{\sqrt{3}}{2}\right)\cdot\frac{1}{2}=\frac{\sqrt{3}}{4}-\frac{\sqrt{3}}{4}=0.
+f\left(x\right)=x^{5}+7x^{4}+19x^{3}+26x^{2}+20x+8\in\mathbb{Q}\left[x\right].
 $$
 
-The $\left(2,2\right)$-entry:
+Determine whether $-2$ is a root of $f\left(x\right)$, and if so, its multiplicity.
+
+### Solution to 7.6-1
+
+By **Corollary 7.6.2 (Factor Theorem)**, $x-a$ divides $f\left(x\right)$ if and only if $f\left(a\right)=0$. Compute $f\left(-2\right)$:
 
 $$
-\left(\frac{1}{2}\right)^{2}+\left(-\frac{\sqrt{3}}{2}\right)^{2}=\frac{1}{4}+\frac{3}{4}=1.
+f\left(-2\right)
+=\left(-2\right)^{5}+7\left(-2\right)^{4}+19\left(-2\right)^{3}+26\left(-2\right)^{2}+20\left(-2\right)+8=-32+112-152+104-40+8=0.
 $$
 
-Hence $A^{\top}A=I$, and by **Definition 4.6.1 (Orthogonal Matrix)**, $A$ is orthogonal. $\blacksquare$
+Hence $-2$ is a root of $f\left(x\right)$.
 
-## 4.6-1(8)
+Use synthetic division to see how many times $x+2$ divides $f$.
 
-Determine whether the following matrix is orthogonal:
-
-$$
-A=\left[\begin{array}{rr}
-1 & 1\\
-1 & -1
-\end{array}\right].
-$$
-
-### Solution 4.6-1(8)
-
-By **Definition 4.6.1 (Orthogonal Matrix)**, compute $A^{\top}A$:
+**First division**:
 
 $$
-A^{\top}A=\left[\begin{array}{rr}
-1 & 1\\
-1 & -1
-\end{array}\right]\left[\begin{array}{rr}
-1 & 1\\
-1 & -1
-\end{array}\right]
-=\left[\begin{array}{rr}
-2 & 0\\
-0 & 2
-\end{array}\right].
+\begin{array}{r|rrrrrr}
+-2 & 1 & 7 & 19 & 26 & 20 & 8\\
+   &   & -2 & -10 & -18 & -16 & -8\\
+\hline
+   & 1 & 5 & 9 & 8 & 4 & 0
+\end{array}
 $$
 
-Clearly $A^{\top}A\ne I$, and by **Definition 4.6.1 (Orthogonal Matrix)**, $A$ is not orthogonal. $\blacksquare$
+Remainder $0$, quotient $x^{4}+5x^{3}+9x^{2}+8x+4$.
 
-## 4.6-3
-
-Prove: if $A$ is an $n\times n$ real symmetric matrix and $T$ is an $n\times n$ orthogonal matrix, then $T^{-1}AT$ is symmetric.
-
-### Solution 4.6-3
-
-By **Definition 4.6.1 (Orthogonal Matrix)**, since $T$ is orthogonal, $T^{-1}=T^{\top}$.
+**Second division**:
 
 $$
-\left(T^{-1}AT\right)^{\top}=T^{\top}A^{\top}\left(T^{-1}\right)^{\top}.
+\begin{array}{r|rrrrr}
+-2 & 1 & 5 & 9 & 8 & 4\\
+   &   & -2 & -6 & -6 & -4\\
+\hline
+   & 1 & 3 & 3 & 2 & 0
+\end{array}
 $$
 
-Since $T$ is orthogonal, $T^{-1}=T^{\top}$, and hence $\left(T^{-1}\right)^{\top}=\left(T^{\top}\right)^{\top}=T$.
+Remainder $0$, quotient $x^{3}+3x^{2}+3x+2$.
 
-Therefore
-
-$$
-\left(T^{-1}AT\right)^{\top}=T^{\top}A^{\top}T.
-$$
-
-Since $A$ is symmetric, $A^{\top}=A$.
-
-Thus
+**Third division**:
 
 $$
-\left(T^{-1}AT\right)^{\top}=T^{\top}AT=T^{-1}AT.
+\begin{array}{r|rrrr}
+-2 & 1 & 3 & 3 & 2\\
+   &   & -2 & -2 & -2\\
+\hline
+   & 1 & 1 & 1 & 0
+\end{array}
 $$
 
-Therefore $T^{-1}AT$ is symmetric. $\blacksquare$
+Remainder $0$, quotient $x^{2}+x+1$.
 
-## 4.6-5
-
-Prove: if an orthogonal matrix $A$ is upper triangular, then $A$ must be diagonal, and its diagonal entries are $1$ or $-1$.
-
-### Solution 4.6-5
-
-By **Definition 4.6.1 (Orthogonal Matrix)**, let $A$ be an $n\times n$ upper triangular matrix with $A^{\top}A=I$.
-
-Since $A$ is upper triangular, $A^{\top}$ is lower triangular.
-
-$A^{\top}A=I$ is a diagonal matrix.
-
-**Prove by induction that all off-diagonal entries of $A$ are zero.**
-
-When $i=1,j=2$, consider the $\left(1,2\right)$-entry of $A^{\top}A$:
+**Fourth division**:
 
 $$
-\sum_{k=1}^{n}\left(A^{\top}\right)_{1k}A_{k2}=\sum_{k=1}^{n}A_{k1}A_{k2}=0.
+\begin{array}{r|rrr}
+-2 & 1 & 1 & 1\\
+   &   & -2 & 2\\
+\hline
+   & 1 & -1 & 3
+\end{array}
 $$
 
-Since $A$ is upper triangular, $A_{k1}=0$ when $k> 1$. Thus the equation reduces to $A_{11}A_{12}=0$.
+Remainder $3\ne0$.
 
-Since $A$ is invertible, $A_{11}\ne0$, hence $A_{12}=0$.
+Hence $-2$ is a triple root of $f\left(x\right)$. $\blacksquare$
 
-Similarly one proves $A_{1j}=0$ ( $j> 1$ ).
+## 7.6-4
 
-Assume the off-diagonal entries of rows $1,\cdots,i-1$ have already been proved to be zero.
-
-Consider the $\left(i,j\right)$-entry of $A^{\top}A$ ( $i< j$ ):
+Let
 
 $$
-\sum_{k=1}^{i}A_{ki}A_{kj}=0.
+f\left(x\right)=x^{4}-5x^{3}+ax^{2}+bx+9\in\mathbb{Q}\left[x\right].
 $$
 
-By the induction hypothesis, $A_{ki}=0$ when $k< i$. Thus the equation reduces to $A_{ii}A_{ij}=0$.
+If $3$ is a double root of $f\left(x\right)$, find $a,b$.
 
-Since $A_{ii}\ne0$, $A_{ij}=0$.
+### Solution to 7.6-4
 
-The induction is complete. Therefore $A$ is diagonal.
+If $3$ is a double root of $f\left(x\right)$, then $f\left(3\right)=0$ and $f'\left(3\right)=0$.
 
-From $A^{\top}A=I$, $A_{ii}^{2}=1$, hence $A_{ii}=\pm1$. $\blacksquare$
-
-## 4.6-12
-
-In the Euclidean space $\mathbb{R}^{4}$, let
+Compute $f\left(3\right)$:
 
 $$
-\alpha_{1}=\begin{bmatrix}1\\1\\0\\0\end{bmatrix},
-\alpha_{2}=\begin{bmatrix}1\\0\\1\\0\end{bmatrix},
-\alpha_{3}=\begin{bmatrix}1\\0\\0\\-1\end{bmatrix}.
+f\left(3\right)
+=3^{4}-5\cdot3^{3}+a\cdot3^{2}+b\cdot3+9=81-135+9a+3b+9=-45+9a+3b.
 $$
 
-Find an orthonormal vector group equivalent to $\alpha_{1},\alpha_{2},\alpha_{3}$.
-
-### Solution 4.6-12
-
-By The Schmidt Orthogonalization Process.
-
-Set $\beta_{1}=\alpha_{1}=\left(1,1,0,0\right)^{\top}$.
+Set $f\left(3\right)=0$:
 
 $$
-\beta_{2}=\alpha_{2}-\frac{\left(\alpha_{2},\beta_{1}\right)}{\left(\beta_{1},\beta_{1}\right)}\beta_{1}.
+9a+3b=45\Rightarrow 3a+b=15. \tag{1}
 $$
 
-$\left(\alpha_{2},\beta_{1}\right)=1$, $\left(\beta_{1},\beta_{1}\right)=2$.
-
-Hence
+Compute the derivative:
 
 $$
-\beta_{2}=\left(1,0,1,0\right)^{\top}-\frac{1}{2}\left(1,1,0,0\right)^{\top}=\left(\frac{1}{2},-\frac{1}{2},1,0\right)^{\top}.
+f'\left(x\right)=4x^{3}-15x^{2}+2ax+b.
 $$
 
-$$
-\beta_{3}=\alpha_{3}-\frac{\left(\alpha_{3},\beta_{1}\right)}{\left(\beta_{1},\beta_{1}\right)}\beta_{1}-\frac{\left(\alpha_{3},\beta_{2}\right)}{\left(\beta_{2},\beta_{2}\right)}\beta_{2}.
-$$
-
-$\left(\alpha_{3},\beta_{1}\right)=1$, $\left(\alpha_{3},\beta_{2}\right)=\frac{1}{2}$, $\left(\beta_{2},\beta_{2}\right)=\frac{3}{2}$.
-
-Hence
+Compute $f'\left(3\right)$:
 
 $$
-\beta_{3}
-=\left(1,0,0,-1\right)^{\top}-\frac{1}{2}\left(1,1,0,0\right)^{\top}-\frac{1}{3}\left(\frac{1}{2},-\frac{1}{2},1,0\right)^{\top}=\left(\frac{1}{3},-\frac{1}{3},-\frac{1}{3},-1\right)^{\top}.
+f'\left(3\right)
+=4\cdot3^{3}-15\cdot3^{2}+2a\cdot3+b=108-135+6a+b=-27+6a+b.
 $$
 
-Verify orthogonality: $\left(\beta_{1},\beta_{2}\right)=0$, $\left(\beta_{1},\beta_{3}\right)=0$, $\left(\beta_{2},\beta_{3}\right)=0$.
-
-Normalize:
+Set $f'\left(3\right)=0$:
 
 $$
-\eta_{1}=\frac{\beta_{1}}{\left|\beta_{1}\right|}=\left(\frac{1}{\sqrt{2}},\frac{1}{\sqrt{2}},0,0\right)^{\top}.
+6a+b=27. \tag{2}
 $$
 
-$$
-\eta_{2}=\frac{\beta_{2}}{\left|\beta_{2}\right|}=\left(\frac{1}{\sqrt{6}},-\frac{1}{\sqrt{6}},\frac{2}{\sqrt{6}},0\right)^{\top}.
-$$
+Subtract $\left(1\right)$ from $\left(2\right)$:
 
 $$
-\eta_{3}=\frac{\beta_{3}}{\left|\beta_{3}\right|}=\left(\frac{1}{2\sqrt{3}},-\frac{1}{2\sqrt{3}},-\frac{1}{2\sqrt{3}},-\frac{\sqrt{3}}{2}\right)^{\top}.
+3a=12\Rightarrow a=4.
+$$
+
+Substitute into $\left(1\right)$:
+
+$$
+3\cdot4+b=15\Rightarrow b=3.
+$$
+
+Hence $a=4$, $b=3$. $\blacksquare$
+
+## 7.6-8
+
+Find the standard factorization of the complex-coefficient polynomial $x^{n}-1$.
+
+### Solution to 7.6-8
+
+The roots of $x^{n}-1=0$ satisfy $x^{n}=1$.
+
+The $n$-th roots of unity are:
+
+$$
+x_{k}=e^{2\pi i k/n}=\cos\frac{2\pi k}{n}+i\sin\frac{2\pi k}{n},\ k=0,1,\ldots,n-1.
+$$
+
+Therefore the standard factorization is:
+
+$$
+x^{n}-1=\prod_{k=0}^{n-1}\left(x-e^{2\pi i k/n}\right).
 $$
 
 $\blacksquare$
 
-## 4.6-14
+## 7.7-4
 
-Let $A$ be an $n\times n$ real invertible matrix. Prove: $A$ can be decomposed as
+Prove: if two $n\times n$ real matrices $A$ and $B$ are not similar over $\mathbb{R}$, then they are still not similar when viewed as complex matrices.
+
+### Solution to 7.7-4
+
+By **Property 7.7.1 (Conjugate Pairs of Nonreal Roots)**, nonreal roots of a real polynomial come in conjugate pairs. Use proof by contradiction.
+
+Assume $A$ and $B$ are similar over $\mathbb{C}$, i.e. there exists an invertible complex matrix $P$ such that
 
 $$
-A=TB,
+B=P^{-1}AP.
 $$
 
-where $T$ is orthogonal and $B$ is upper triangular with all diagonal entries positive; prove that this decomposition is unique.
+We show that $A$ and $B$ are also similar over $\mathbb{R}$.
 
-### Solution 4.6-14
+Write $P=P_{1}+iP_{2}$, where $P_{1},P_{2}$ are real matrices.
 
-**Existence.** Let the column group of $A$ be $\alpha_{1},\alpha_{2},\cdots,\alpha_{n}$.
+From $B=P^{-1}AP$,
 
-Since $A$ is invertible, $\alpha_{1},\alpha_{2},\cdots,\alpha_{n}$ are linearly independent.
+$$
+BP=PA.
+$$
 
-By The Schmidt Orthogonalization Process, apply it to $\alpha_{1},\alpha_{2},\cdots,\alpha_{n}$ to obtain an orthogonal group $\beta_{1},\beta_{2},\cdots,\beta_{n}$, where $\beta_{i}$ is a linear combination of $\alpha_{1},\cdots,\alpha_{i}$ and $\alpha_{i}$ is a linear combination of $\beta_{1},\cdots,\beta_{i}$.
+Substitute $P=P_{1}+iP_{2}$:
 
-Normalize $\beta_{1},\beta_{2},\cdots,\beta_{n}$ to obtain an orthonormal group $\eta_{1},\eta_{2},\cdots,\eta_{n}$.
+$$
+B\left(P_{1}+iP_{2}\right)=\left(P_{1}+iP_{2}\right)A.
+$$
 
-Set $T=\left(\eta_{1},\eta_{2},\cdots,\eta_{n}\right)$; then $T$ is orthogonal.
+Compare real and imaginary parts:
 
-Since each $\alpha_{i}$ is a linear combination of $\eta_{1},\cdots,\eta_{i}$, $A=TB$, where $B$ is upper triangular.
+$$
+BP_{1}=P_{1}A,
+$$
 
-The diagonal entries of $B$ are $\left|\beta_{1}\right|,\left|\beta_{2}\right|,\cdots,\left|\beta_{n}\right|$, all positive.
+$$
+BP_{2}=P_{2}A.
+$$
 
-**Uniqueness.** Suppose $A=T_{1}B_{1}=T_{2}B_{2}$, where $T_{1},T_{2}$ are orthogonal and $B_{1},B_{2}$ are upper triangular with positive diagonal entries.
+Therefore, for every real number $t$,
 
-Then $T_{2}^{-1}T_{1}=B_{2}B_{1}^{-1}$.
+$$
+B\left(P_{1}+tP_{2}\right)=\left(P_{1}+tP_{2}\right)A.
+$$
 
-The left side $T_{2}^{-1}T_{1}$ is orthogonal (a product of orthogonal matrices is orthogonal).
+Consider the polynomial $\det\left(P_{1}+xP_{2}\right)$ in $x$ with real coefficients.
 
-The right side $B_{2}B_{1}^{-1}$ is upper triangular (a product of upper triangular matrices is upper triangular).
+Since $P=P_{1}+iP_{2}$ is invertible, $\det\left(P\right)\ne0$, i.e. $\det\left(P_{1}+iP_{2}\right)\ne0$.
 
-By the conclusion of **4.6-5**, a matrix that is both orthogonal and upper triangular must be diagonal with diagonal entries $\pm1$.
+Hence $\det\left(P_{1}+xP_{2}\right)$ is not the zero polynomial and has only finitely many real roots.
 
-Hence $B_{2}B_{1}^{-1}$ is diagonal with diagonal entries $\pm1$.
+Therefore there exists a real number $t$ such that
 
-Since the diagonal entries of $B_{1},B_{2}$ are all positive, those of $B_{2}B_{1}^{-1}$ are positive.
+$$
+\det\left(P_{1}+tP_{2}\right)\ne0.
+$$
 
-Therefore each diagonal entry can only be $+1$, i.e. $B_{2}B_{1}^{-1}=I$.
+That is, $P_{1}+tP_{2}$ is invertible.
 
-Hence $B_{2}=B_{1}$, and consequently $T_{2}=T_{1}$.
+Set $Q=P_{1}+tP_{2}$, an invertible real matrix.
 
-The decomposition is unique. $\blacksquare$
+Then
+
+$$
+BQ=QA,
+$$
+
+i.e.
+
+$$
+B=Q^{-1}AQ.
+$$
+
+Hence $A$ and $B$ are similar as real matrices.
+
+This contradicts the assumption.
+
+Therefore, if $A$ and $B$ are not similar as real matrices, they are not similar as complex matrices either. $\blacksquare$
+
+## 7.8-2(4)
+
+Is $x^{4}-2x^{3}+2x-3$ irreducible over $\mathbb{Q}$?
+
+### Solution to 7.8-2(4)
+
+By **Theorem 7.8.1 (Eisenstein Criterion)**, first check for rational roots.
+
+Possible rational roots are $\pm1$, $\pm3$.
+
+$$
+f\left(1\right)=1-2+2-3=-2\ne0.
+$$
+
+$$
+f\left(-1\right)=1+2-2-3=-2\ne0.
+$$
+
+$$
+f\left(3\right)=81-54+6-3=30\ne0.
+$$
+
+$$
+f\left(-3\right)=81+54-6-3=126\ne0.
+$$
+
+Hence there is no rational root.
+
+Suppose it factors as a product of two integer-coefficient quadratics:
+
+$$
+x^{4}-2x^{3}+2x-3=\left(x^{2}+ax+b\right)\left(x^{2}+cx+d\right).
+$$
+
+Compare coefficients:
+
+$$
+a+c=-2, \tag{1}
+$$
+
+$$
+ac+b+d=0, \tag{2}
+$$
+
+$$
+ad+bc=2, \tag{3}
+$$
+
+$$
+bd=-3. \tag{4}
+$$
+
+From $\left(4\right)$, the integer solutions of $bd=-3$ are:
+
+$$
+\left(b,d\right)=\left(1,-3\right),\left(-1,3\right),\left(3,-1\right),\left(-3,1\right).
+$$
+
+Check each:
+
+- $b=1,d=-3$: from $\left(1\right)$, $c=-2-a$. Substitute into $\left(2\right)$:
+
+  $$
+  -2a-a^{2}+1-3=0\Rightarrow a^{2}+2a+2=0,
+  $$
+
+  no real roots.
+- $b=-1,d=3$: substitute into $\left(2\right)$:
+
+  $$
+  -2a-a^{2}-1+3=0\Rightarrow a^{2}+2a-2=0,
+  $$
+
+  no integer roots.
+- $b=3,d=-1$: substitute into $\left(2\right)$:
+
+  $$
+  -2a-a^{2}+3-1=0\Rightarrow a^{2}+2a-2=0,
+  $$
+
+  no integer roots.
+- $b=-3,d=1$: substitute into $\left(2\right)$:
+
+  $$
+  -2a-a^{2}-3+1=0\Rightarrow a^{2}+2a+2=0,
+  $$
+
+  no real roots.
+
+Hence it cannot be factored into two integer quadratics.
+
+Therefore $x^{4}-2x^{3}+2x-3$ is irreducible over $\mathbb{Q}$. $\blacksquare$
+
+## 7.8-2(5)
+
+Is $x^{4}+px^{2}+1$ (where $p$ is an odd prime) irreducible over $\mathbb{Q}$?
+
+### Solution to 7.8-2(5)
+
+First check for rational roots.
+
+Possible rational roots are $\pm1$.
+
+$$
+f\left(1\right)=1+p+1=p+2\ne0.
+$$
+
+$$
+f\left(-1\right)=1+p+1=p+2\ne0.
+$$
+
+Hence there is no rational root.
+
+Suppose it factors as a product of two integer quadratics:
+
+$$
+x^{4}+px^{2}+1=\left(x^{2}+ax+b\right)\left(x^{2}+cx+d\right).
+$$
+
+Compare coefficients:
+
+$$
+a+c=0, \tag{1}
+$$
+
+$$
+ac+b+d=p, \tag{2}
+$$
+
+$$
+ad+bc=0, \tag{3}
+$$
+
+$$
+bd=1. \tag{4}
+$$
+
+From $\left(1\right)$, $c=-a$.
+
+Substitute into $\left(3\right)$:
+
+$$
+ad+b\left(-a\right)=a\left(d-b\right)=0.
+$$
+
+Hence $a=0$ or $d=b$.
+
+**Case 1**: $a=0$.
+
+Then $c=0$.
+
+From $\left(2\right)$: $b+d=p$.
+
+From $\left(4\right)$: $bd=1$.
+
+Thus $b=d=1$ or $b=d=-1$.
+
+If $b=d=1$, then $b+d=2$, so $p=2$. But $p$ is odd, contradiction.
+
+If $b=d=-1$, then $b+d=-2$, so $p=-2$. But $p$ is a positive prime, contradiction.
+
+**Case 2**: $d=b$.
+
+From $\left(4\right)$: $b^{2}=1$, so $b=1$ or $b=-1$.
+
+If $b=1$, then $d=1$.
+
+From $\left(2\right)$:
+
+$$
+-a^{2}+2=p\Rightarrow a^{2}=2-p.
+$$
+
+Since $p$ is odd and $p\ge3$, $2-p\le-1< 0$, no real root.
+
+If $b=-1$, then $d=-1$.
+
+From $\left(2\right)$:
+
+$$
+-a^{2}-2=p\Rightarrow a^{2}=-p-2< 0,
+$$
+
+no real root.
+
+Hence it cannot be factored into two integer quadratics.
+
+Therefore $x^{4}+px^{2}+1$ is irreducible over $\mathbb{Q}$. $\blacksquare$
+
+## 7.8-2(7)
+
+Is $2x^{3}-x^{2}+x+1$ irreducible over $\mathbb{Q}$?
+
+### Solution to 7.8-2(7)
+
+A cubic is reducible over $\mathbb{Q}$ if and only if it has a rational root.
+
+Possible rational roots are $\pm1$, $\pm\frac{1}{2}$.
+
+$$
+f\left(1\right)=2-1+1+1=3\ne0.
+$$
+
+$$
+f\left(-1\right)=-2-1-1+1=-3\ne0.
+$$
+
+$$
+f\left(\frac{1}{2}\right)=2\cdot\frac{1}{8}-\frac{1}{4}+\frac{1}{2}+1=\frac{1}{4}-\frac{1}{4}+\frac{1}{2}+1=\frac{3}{2}\ne0.
+$$
+
+$$
+f\left(-\frac{1}{2}\right)=2\cdot\left(-\frac{1}{8}\right)-\frac{1}{4}+\left(-\frac{1}{2}\right)+1=-\frac{1}{4}-\frac{1}{4}-\frac{1}{2}+1=0.
+$$
+
+Hence $-\frac{1}{2}$ is a rational root.
+
+Therefore $f\left(x\right)$ is reducible over $\mathbb{Q}$. $\blacksquare$
+
+## 7.8-2(8)
+
+Is $x^{4}-5x^{2}+1$ irreducible over $\mathbb{Q}$?
+
+### Solution to 7.8-2(8)
+
+First check for rational roots.
+
+Possible rational roots are $\pm1$.
+
+$$
+f\left(1\right)=1-5+1=-3\ne0.
+$$
+
+$$
+f\left(-1\right)=1-5+1=-3\ne0.
+$$
+
+Hence there is no rational root.
+
+Suppose it factors as a product of two integer quadratics:
+
+$$
+x^{4}-5x^{2}+1=\left(x^{2}+ax+b\right)\left(x^{2}+cx+d\right).
+$$
+
+Compare coefficients:
+
+$$
+a+c=0, \tag{1}
+$$
+
+$$
+ac+b+d=-5, \tag{2}
+$$
+
+$$
+ad+bc=0, \tag{3}
+$$
+
+$$
+bd=1. \tag{4}
+$$
+
+From $\left(1\right)$, $c=-a$.
+
+Substitute into $\left(3\right)$:
+
+$$
+ad+b\left(-a\right)=a\left(d-b\right)=0.
+$$
+
+Hence $a=0$ or $d=b$.
+
+**Case 1**: $a=0$.
+
+Then $c=0$.
+
+From $\left(2\right)$: $b+d=-5$.
+
+From $\left(4\right)$: $bd=1$.
+
+Thus $b,d$ are roots of $t^{2}+5t+1=0$, not integers.
+
+**Case 2**: $d=b$.
+
+From $\left(4\right)$: $b^{2}=1$, so $b=1$ or $b=-1$.
+
+If $b=1$, then $d=1$.
+
+From $\left(2\right)$: $-a^{2}+2=-5\Rightarrow a^{2}=7$, not a perfect square.
+
+If $b=-1$, then $d=-1$.
+
+From $\left(2\right)$: $-a^{2}-2=-5\Rightarrow a^{2}=3$, not a perfect square.
+
+Hence it cannot be factored into two integer quadratics.
+
+Therefore $x^{4}-5x^{2}+1$ is irreducible over $\mathbb{Q}$. $\blacksquare$

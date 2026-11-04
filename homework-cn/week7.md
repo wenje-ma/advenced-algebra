@@ -1,392 +1,275 @@
 # week7
 
-> **定义 2.4.1 (余子式与代数余子式)**
-> 
-> $n$ 阶行列式 $\left|A\right|$ 中, 划去第 $i$ 行和第 $j$ 列, 剩下的元素按原来次序组成的 $n-1$ 阶行列式称为 $A$ 的 $\left(i,j\right)$ 元的余子式, 记作 $M_{ij}$. 令 $A_{ij}=\left(-1\right)^{i+j}M_{ij}$, 称 $A_{ij}$ 是 $A$ 的 $\left(i,j\right)$ 元的代数余子式.
-
-> **定理 2.4.1 (行列式按一行(列)展开)**
-> 
-> $n$ 阶行列式 $\left|A\right|$ 等于它的第 $i$ 行元素与自己的代数余子式的乘积之和:
-
-$$
-\left|A\right|=a_{i1}A_{i1}+a_{i2}A_{i2}+\cdots+a_{in}A_{in}.
-$$
-
-## 2.4-2
-
-计算下述 $n$ 阶行列式 $\left(n\ge2\right)$:
-
-$$
-\left|\begin{array}{cccccc}
-a_{1} & a_{2} & a_{3} & \cdots & a_{n-1} & a_{n}\\
-1 & -1 & 0 & \cdots & 0 & 0\\
-0 & 2 & -2 & \cdots & 0 & 0\\
-\vdots & \vdots & \vdots & & \vdots & \vdots\\
-0 & 0 & 0 & \cdots & n-1 & 1-n
-\end{array}\right|.
-$$
-
-### 解答 2.4-2
-
-从第 $n$ 列开始, 逐列把第 $k$ 列加到第 $k-1$ 列上 $\left(k=n,n-1,\cdots,2\right)$. 这一步用到行列式列变换的性质, 即把某一列的倍数加到另一列上, 行列式值不变.
-
-第 $n$ 列加到第 $n-1$ 列: 第 $n-1$ 列变成 $\left(a_{n-1}+a_{n},0,0,\cdots,0\right)$.
-
-第 $n-1$ 列加到第 $n-2$ 列: 第 $n-2$ 列变成
-
-$$
-\left(a_{n-2}+a_{n-1}+a_{n},0,0,\cdots,0\right).
-$$
-
-继续下去, 最终第 $1$ 列变成
-
-$$
-\left(a_{1}+a_{2}+\cdots+a_{n},0,0,\cdots,0\right).
-$$
-
-由**定理 2.4.1 (行列式按一行(列)展开)**, 按第 $1$ 列展开. 第 $1$ 列只有第一个元素非零, 其余全为 $0$, 故
-
-$$
-\left|A\right|=\left(a_{1}+a_{2}+\cdots+a_{n}\right)\cdot A_{11}.
-$$
-
-由**定义 2.4.1 (余子式与代数余子式)**,
-
-$$
-A_{11}=\left(-1\right)^{1+1}M_{11}=M_{11},
-$$
-
-其中 $M_{11}$ 是划去第 $1$ 行第 $1$ 列后的 $\left(n-1\right)$ 阶行列式:
-
-$$
-M_{11}=\left|\begin{array}{cccc}
--1 & 0 & \cdots & 0\\
-0 & -2 & \cdots & 0\\
-\vdots & \vdots & & \vdots\\
-0 & 0 & \cdots & 1-n
-\end{array}\right|.
-$$
-
-这是对角行列式, 对角元为 $-1,-2,\cdots,1-n$. 故
-
-$$
-M_{11}=\left(-1\right)\times\left(-2\right)\times\cdots\times\left(1-n\right)=\left(-1\right)^{n-1}\left(n-1\right)!.
-$$
-
-因此
-
-$$
-\left|A\right|=\left(\sum_{i=1}^{n}a_{i}\right)\times\left(-1\right)^{n-1}\left(n-1\right)!.
-$$
-
-$\blacksquare$
-
-## 2.4-4
-
-用数学归纳法证明: 对一切 $n\ge2$, 有
-
-$$
-\left|\begin{array}{cccccc}
-x & 0 & 0 & \cdots & 0 & a_{0}\\
--1 & x & 0 & \cdots & 0 & a_{1}\\
-0 & -1 & x & \cdots & 0 & a_{2}\\
-\vdots & \vdots & \vdots & & \vdots & \vdots\\
-0 & 0 & 0 & \cdots & x & a_{n-2}\\
-0 & 0 & 0 & \cdots & -1 & x+a_{n-1}
-\end{array}\right|=x^{n}+a_{n-1}x^{n-1}+\cdots+a_{1}x+a_{n}.
-$$
-
-### 解答 2.4-4
-
-**基例 $n=2$**:
-
-$$
-\left|\begin{array}{cc}x & a_{0}\\-1 & x+a_{1}\end{array}\right|=x\left(x+a_{1}\right)-\left(-1\right)a_{0}=x^{2}+a_{1}x+a_{0}.
-$$
-
-成立.
-
-**归纳步骤**: 假设对于 $n-1$ 阶结论成立.
-
-对于 $n$ 阶行列式, 由**定理 2.4.1 (行列式按一行(列)展开)**, 按第 $1$ 行展开:
-
-$$
-D_{n}=x\cdot M_{11}+\left(-1\right)^{1+n}a_{0}\cdot M_{1n}.
-$$
-
-由**定义 2.4.1 (余子式与代数余子式)**, $M_{11}$ 是去掉第 $1$ 行第 $1$ 列后的 $\left(n-1\right)$ 阶行列式, 由归纳假设,
-
-$$
-M_{11}=x^{n-1}+a_{n-1}x^{n-2}+\cdots+a_{2}x+a_{1}.
-$$
-
-由**定义 2.4.1 (余子式与代数余子式)**, $M_{1n}$ 是去掉第 $1$ 行第 $n$ 列后的 $\left(n-1\right)$ 阶行列式, 其对角元均为 $-1$, 是下三角行列式, 故
-
-$$
-M_{1n}=\left(-1\right)^{n-1}.
-$$
-
-代入得
-
-$$
-D_{n}=x\left(x^{n-1}+a_{n-1}x^{n-2}+\cdots+a_{2}x+a_{1}\right)+\left(-1\right)^{1+n}a_{0}\left(-1\right)^{n-1}=x^{n}+a_{n-1}x^{n-1}+\cdots+a_{1}x+\left(-1\right)^{2n}a_{0}=x^{n}+a_{n-1}x^{n-1}+\cdots+a_{1}x+a_{0}.
-$$
-
-由数学归纳法, 结论对一切 $n\ge 2$ 成立. $\blacksquare$
-
-## 2.4-8
-
-计算下述 $n$ 阶行列式 $\left(n\ge2\right)$:
-
-$$
-\left|\begin{array}{cccccc}
-1 & 2 & 2 & \cdots & 2 & 2\\
-2 & 2 & 2 & \cdots & 2 & 2\\
-2 & 2 & 3 & \cdots & 2 & 2\\
-\vdots & \vdots & \vdots & & \vdots & \vdots\\
-2 & 2 & 2 & \cdots & n-1 & 2\\
-2 & 2 & 2 & \cdots & 2 & n
-\end{array}\right|.
-$$
-
-### 解答 2.4-8
-
-把第 $2$ 行的 $-1$ 倍分别加到第 $1$ 行和第 $i$ 行 $\left(i=3,4,\cdots,n\right)$ 上:
-
-第 $1$ 行变成 $\left(-1,0,0,\cdots,0\right)$;
-
-第 $i$ 行 $\left(i\ge 3\right)$ 变成 $\left(0,0,\cdots,i-2,\cdots,0\right)$, 其中 $i-2$ 在第 $i$ 列.
-
-行列式变为
-
-$$
-\left|\begin{array}{cccccc}
--1 & 0 & 0 & \cdots & 0 & 0\\
-2 & 2 & 2 & \cdots & 2 & 2\\
-0 & 0 & 1 & \cdots & 0 & 0\\
-\vdots & \vdots & \vdots & & \vdots & \vdots\\
-0 & 0 & 0 & \cdots & n-2 & 0\\
-0 & 0 & 0 & \cdots & 0 & n-2
-\end{array}\right|.
-$$
-
-由**定理 2.4.1 (行列式按一行(列)展开)**, 按第 $1$ 行展开: $D=-1\cdot M_{11}$.
-
-由**定义 2.4.1 (余子式与代数余子式)**, $M_{11}$ 是去掉第 $1$ 行第 $1$ 列后的 $\left(n-1\right)$ 阶行列式. 按其第 $2$ 行(即原第 $3$ 行)展开, 该行只有第 $2$ 列为 $1$, 得
-
-$$
-M_{11}=1\cdot\left(-1\right)^{2+2}\cdot M'_{22}=M'_{22}.
-$$
-
-由**定义 2.4.1 (余子式与代数余子式)**, $M'_{22}$ 是去掉第 $2$ 行第 $2$ 列后的 $\left(n-2\right)$ 阶行列式, 按其第 $1$ 行展开, 第 $1$ 行只有第 $1$ 列的 $2$ 非零, 其余项因去掉对应列后某行全为 $0$ 而为 $0$, 故
-
-$$
-M'_{22}=2\cdot\left(n-2\right)!.
-$$
-
-因此
-
-$$
-D=-1\cdot2\cdot\left(n-2\right)!=-2\left(n-2\right)!.
-$$
-
-$\blacksquare$
-
-## 2.4-10
-
-计算下述 $n$ 阶行列式:
-
-$$
-\left|\begin{array}{ccccc}
-1 & 2 & 3 & \cdots & n\\
-2 & 3 & 4 & \cdots & 1\\
-3 & 4 & 5 & \cdots & 2\\
-\vdots & \vdots & \vdots & & \vdots\\
-n & 1 & 2 & \cdots & n-1
-\end{array}\right|.
-$$
-
-### 解答 2.4-10
-
-每行元素之和为
-
-$$
-1+2+\cdots+n=\frac{n\left(n+1\right)}{2}.
-$$
-
-把第 $2$ 列到第 $n$ 列都加到第 $1$ 列上, 第 $1$ 列全为 $\frac{n\left(n+1\right)}{2}$, 提出公因子:
-
-$$
-D=\frac{n\left(n+1\right)}{2}\cdot\left|\begin{array}{ccccc}
-1 & 2 & 3 & \cdots & n\\
-1 & 3 & 4 & \cdots & 1\\
-1 & 4 & 5 & \cdots & 2\\
-\vdots & \vdots & \vdots & & \vdots\\
-1 & 1 & 2 & \cdots & n-1
-\end{array}\right|.
-$$
-
-第 $i$ 行减第 $1$ 行 $\left(i=2,\cdots,n\right)$, 按第 $1$ 列展开.
-
-由$n$ 次本原单位根与循环矩阵的特征值, 设 $P$ 是 $n$ 阶循环移位矩阵, 则原矩阵
-
-$$
-C=1\cdot I+2\cdot P+\cdots+n\cdot P^{n-1}.
-$$
-
-$P$ 的特征值为 $\omega^{k}$ $\left(k=0,1,\cdots,n-1\right)$, 其中 $\omega$ 是 $n$ 次本原单位根.
-
-$C$ 的特征值为
-
-$$
-\lambda_{k}=1+2\omega^{k}+\cdots+n\omega^{\left(n-1\right)k}.
-$$
-
-当 $k=0$ 时,
-
-$$
-\lambda_{0}=\frac{n\left(n+1\right)}{2}.
-$$
-
-当 $k\ne0$ 时, 由 $\omega^{kn}=1$,
-
-$$
-\lambda_{k}=1+2\omega^{k}+\cdots+n\omega^{\left(n-1\right)k}=\frac{n}{\omega^{k}-1}.
-$$
-
-故
-
-$$
-D=\prod_{k=0}^{n-1}\lambda_{k}=\frac{n\left(n+1\right)}{2}\cdot\prod_{k=1}^{n-1}\frac{n}{\omega^{k}-1}=\frac{n\left(n+1\right)}{2}\cdot\frac{n^{n-1}}{\prod_{k=1}^{n-1}\left(\omega^{k}-1\right)}.
-$$
-
-由$n$ 次本原单位根与循环矩阵的特征值 中 $\prod_{k=1}^{n-1}\left(1-\omega^{k}\right)=n$, 得
-
-$$
-\prod_{k=1}^{n-1}\left(\omega^{k}-1\right)=\left(-1\right)^{n-1}n.
-$$
-
-注意到循环移位的方向, 综合得
-
-$$
-D=\left(-1\right)^{\frac{n\left(n-1\right)}{2}}\cdot\frac{n^{n-1}\left(n+1\right)}{2}.
-$$
-
-$\blacksquare$
-
-## 2.4-11
-
-设数域 $K$ 上 $n$ 级矩阵 $A=\left(a_{ij}\right)$, 它的 $\left(i,j\right)$ 元的代数余子式记作 $A_{ij}$. 把 $A$ 的每个元素都加上同一个数 $t$, 得到的矩阵记作 $A\left(t\right)=\left(a_{ij}+t\right)$. 证明:
-
-$$
-\left|A\left(t\right)\right|=\left|A\right|+t\sum_{i=1}^{n}\sum_{j=1}^{n}A_{ij}.
-$$
-
-### 解答 2.4-11
-
-将 $A\left(t\right)$ 的第 $1$ 列拆成两个列之和: 第 $1$ 列
-
-$$
-=\left(a_{11}+t,a_{21}+t,\cdots,a_{n1}+t\right)^{\top}=\left(a_{11},a_{21},\cdots,a_{n1}\right)^{\top}+\left(t,t,\cdots,t\right)^{\top}.
-$$
-
-由行列式对列的多重线性,
-
-$$
-\left|A\left(t\right)\right|=\left|A_{1}\left(t\right)\right|+\left|A_{2}\left(t\right)\right|,
-$$
-
-其中 $\left|A_{1}\left(t\right)\right|$ 是第 $1$ 列为原列, 其余列为 $a_{ij}+t$ 的行列式, $\left|A_{2}\left(t\right)\right|$ 是第 $1$ 列为全 $t$, 其余列为 $a_{ij}+t$ 的行列式.
-
-对 $\left|A_{1}\left(t\right)\right|$ 继续拆第 $2$ 列, 依此类推, 最后得到:
-
-$$
-\left|A\left(t\right)\right|=\left|A\right|+\sum_{j=1}^{n}t\cdot\widetilde{A}_{j},
-$$
-
-其中 $\widetilde{A}_{j}$ 是第 $j$ 列为全 $1$, 其余列为 $A$ 的列的行列式.
-
-由**定理 2.4.1 (行列式按一行(列)展开)**, 把 $\widetilde{A}_{j}$ 按第 $j$ 列展开, 第 $j$ 列全为 $1$, 故
-
-$$
-\widetilde{A}_{j}=\sum_{i=1}^{n}1\cdot A_{ij}=\sum_{i=1}^{n}A_{ij}.
-$$
-
-由**定义 2.4.1 (余子式与代数余子式)**, $A_{ij}$ 是 $\left(i,j\right)$ 元的代数余子式.
-
-因此
-
-$$
-\left|A\left(t\right)\right|=\left|A\right|+t\sum_{j=1}^{n}\sum_{i=1}^{n}A_{ij}.
-$$
-
-$\blacksquare$
-
-## 2.4-12
-
-用第 11 题给出的公式, 计算下列 $n$ 阶行列式:
-
-(1)
-
 $$
 \left|\begin{array}{cccc}
-1+x_{1}y_{1} & 1+x_{1}y_{2} & \cdots & 1+x_{1}y_{n}\\
-1+x_{2}y_{1} & 1+x_{2}y_{2} & \cdots & 1+x_{2}y_{n}\\
+1 & 1 & \cdots & 1\\
+a_{1} & a_{2} & \cdots & a_{r}\\
 \vdots & \vdots & & \vdots\\
-1+x_{n}y_{1} & 1+x_{n}y_{2} & \cdots & 1+x_{n}y_{n}
-\end{array}\right|.
+a_{1}^{r-1} & a_{2}^{r-1} & \cdots & a_{r}^{r-1}
+\end{array}\right|=\prod_{1\le i< j\le r}\left(a_{j}-a_{i}\right).
 $$
 
-(2)
+> **定义 3.2.1 (线性相关)**
+> 
+> $K^{n}$ 中向量组 $\alpha_{1},\cdots,\alpha_{s}$ 称为是线性相关的, 如果有 $K$ 中不全为零的数 $k_{1},\cdots,k_{s}$ 使得 $k_{1}\alpha_{1}+\cdots+k_{s}\alpha_{s}=0$.
+
+> **命题 3.2.1 (线性表出与线性相关的关系)**
+> 
+> 设向量组 $\alpha_{1},\cdots,\alpha_{s}$ 线性无关, 则向量 $\beta$ 可以由 $\alpha_{1},\cdots,\alpha_{s}$ 线性表出的充分必要条件是 $\alpha_{1},\cdots,\alpha_{s},\beta$ 线性相关.
+
+> **定义 3.2.2 (线性无关)**
+> 
+> $K^{n}$ 中向量组 $\alpha_{1},\cdots,\alpha_{s}$ 如果不是线性相关的, 则称为线性无关的. 即如果从 $k_{1}\alpha_{1}+\cdots+k_{s}\alpha_{s}=0$ 可以推出所有系数全为 $0$, 则称该向量组线性无关.
+
+## 3.2-2(1)
+
+判断下列向量组是线性相关还是线性无关. 如果线性相关, 试找出其中一个向量, 使得它可以由其余向量线性表出, 并且写出它的一种表达式.
 
 $$
-\left|\begin{array}{cccc}
-1+t & t & \cdots & t\\
-t & 2+t & \cdots & t\\
-\vdots & \vdots & & \vdots\\
-t & t & \cdots & n+t
-\end{array}\right|.
+\alpha_{1}=\begin{bmatrix}3\\1\\2\\-4\end{bmatrix},
+\alpha_{2}=\begin{bmatrix}1\\0\\5\\2\end{bmatrix},
+\alpha_{3}=\begin{bmatrix}-1\\2\\0\\3\end{bmatrix}.
 $$
 
-### 解答 2.4-12
+### 解答 3.2-2(1)
 
-**(1)** 把矩阵写成 $A=J+xy^{\top}$, 其中 $J$ 是全 $1$ 矩阵, $x=\left(x_{1},\cdots,x_{n}\right)^{\top}$, $y=\left(y_{1},\cdots,y_{n}\right)^{\top}$.
-
-$A$ 是两个秩 $1$ 矩阵之和, 故 $\text{rank}\left(A\right)\le2$.
-
-当 $n\ge3$ 时, 由矩阵秩的子式刻画, $\det\left(A\right)=0$.
-
-当 $n=1$ 时, $\det\left(A\right)=1+x_{1}y_{1}$.
-
-当 $n=2$ 时,
+由**定义 3.2.1 (线性相关)**和**定义 3.2.2 (线性无关)**, 考虑齐次线性方程组 $x_{1}\alpha_{1}+x_{2}\alpha_{2}+x_{3}\alpha_{3}=0$. 写出系数矩阵, 作初等行变换:
 
 $$
-\det\left(A\right)=\left(1+x_{1}y_{1}\right)\left(1+x_{2}y_{2}\right)-\left(1+x_{1}y_{2}\right)\left(1+x_{2}y_{1}\right)=x_{1}y_{1}+x_{2}y_{2}-x_{1}y_{2}-x_{2}y_{1}=\left(x_{1}-x_{2}\right)\left(y_{1}-y_{2}\right).
+\left[\begin{array}{rrr}
+3 & 1 & -1\\
+1 & 0 & 2\\
+2 & 5 & 0\\
+-4 & 2 & 3
+\end{array}\right]
+\xrightarrow{\text{行变换}}
+\left[\begin{array}{rrr}
+1 & 0 & 2\\
+0 & 1 & -7\\
+0 & 0 & 31\\
+0 & 0 & 0
+\end{array}\right].
 $$
 
-**(2)** 设 $A=\text{diag}\left(1,2,\cdots,n\right)$, 则所求行列式为 $\left|A\left(t\right)\right|$.
+阶梯形矩阵的非零行数目为 $3$, 等于未知量数目 $3$, 故齐次方程组只有零解.
 
-由第 11 题,
+由**定义 3.2.2 (线性无关)**, 因此 $\alpha_{1},\alpha_{2},\alpha_{3}$ 线性无关. $\blacksquare$
 
-$$
-\left|A\left(t\right)\right|=\left|A\right|+t\sum_{i,j}A_{ij}.
-$$
+## 3.2-2(2)
 
-$\left|A\right|=n!$.
-
-$A$ 是对角矩阵, 非对角元的余子式均为 $0$, 对角元的代数余子式 $A_{ii}=\frac{n!}{i}$.
-
-故
+判断下列向量组是线性相关还是线性无关. 如果线性相关, 试找出其中一个向量, 使得它可以由其余向量线性表出, 并且写出它的一种表达式.
 
 $$
-\sum_{i,j}A_{ij}=\sum_{i=1}^{n}\frac{n!}{i}=n!\sum_{i=1}^{n}\frac{1}{i}.
+\alpha_{1}=\begin{bmatrix}-2\\1\\0\\3\end{bmatrix},
+\alpha_{2}=\begin{bmatrix}1\\-3\\2\\4\end{bmatrix},
+\alpha_{3}=\begin{bmatrix}3\\0\\2\\-1\end{bmatrix},
+\alpha_{4}=\begin{bmatrix}2\\-2\\4\\6\end{bmatrix}.
 $$
 
-因此
+### 解答 3.2-2(2)
+
+由**定义 3.2.1 (线性相关)**和**定义 3.2.2 (线性无关)**, 考虑齐次线性方程组
 
 $$
-\left|A\left(t\right)\right|=n!+t\cdot n!\sum_{i=1}^{n}\frac{1}{i}
-=n!\left(1+t\sum_{i=1}^{n}\frac{1}{i}\right).
+x_{1}\alpha_{1}+x_{2}\alpha_{2}+x_{3}\alpha_{3}+x_{4}\alpha_{4}=0.
 $$
 
-$\blacksquare$
+写出系数矩阵, 作初等行变换:
+
+$$
+\left[\begin{array}{rrrr}
+-2 & 1 & 3 & 2\\
+1 & -3 & 0 & -2\\
+0 & 2 & 2 & 4\\
+3 & 4 & -1 & 6
+\end{array}\right]
+\xrightarrow{\text{行变换}}
+\left[\begin{array}{rrrr}
+1 & -3 & 0 & -2\\
+0 & -5 & 3 & -2\\
+0 & 0 & 16/5 & 16/5\\
+0 & 0 & 0 & 0
+\end{array}\right].
+$$
+
+阶梯形矩阵的非零行数目为 $3$, 小于未知量数目 $4$, 故齐次方程组有非零解.
+
+因此 $\alpha_{1},\alpha_{2},\alpha_{3},\alpha_{4}$ 线性相关.
+
+求解一般解:
+
+由第 $3$ 行: $x_{3}+x_{4}=0$, 故 $x_{3}=-x_{4}$.
+
+由第 $2$ 行: $-5x_{2}+3x_{3}-2x_{4}=0$, 代入 $x_{3}=-x_{4}$ 得 $x_{2}=-x_{4}$.
+
+由第 $1$ 行: $x_{1}-3x_{2}-2x_{4}=0$, 代入 $x_{2}=-x_{4}$ 得 $x_{1}=-x_{4}$.
+
+令 $x_{4}=1$, 得 $x_{1}=-1$, $x_{2}=-1$, $x_{3}=-1$.
+
+故 $-\alpha_{1}-\alpha_{2}-\alpha_{3}+\alpha_{4}=0$, 即
+
+$$
+\alpha_{4}=\alpha_{1}+\alpha_{2}+\alpha_{3}.
+$$
+
+验证:
+
+$$
+\alpha_{1}+\alpha_{2}+\alpha_{3}=\left(-2+1+3,1-3+0,0+2+2,3+4-1\right)^{\top}=\left(2,-2,4,6\right)^{\top}=\alpha_{4}.
+$$
+
+由**定义 3.2.1 (线性相关)**, 齐次方程组有非零解, 故 $\alpha_{1},\alpha_{2},\alpha_{3},\alpha_{4}$ 线性相关. $\blacksquare$
+
+## 3.2-6
+
+设向量组 $\alpha_{1},\alpha_{2},\alpha_{3},\alpha_{4}$ 线性无关, 判断向量组
+
+$$
+\alpha_{1}+\alpha_{2},\alpha_{2}+\alpha_{3},\alpha_{3}+\alpha_{4},\alpha_{4}+\alpha_{1}
+$$
+
+是否线性无关.
+
+### 解答 3.2-6
+
+由**定义 3.2.2 (线性无关)**, 判断向量组
+
+$$
+\alpha_{1}+\alpha_{2},\alpha_{2}+\alpha_{3},\alpha_{3}+\alpha_{4},\alpha_{4}+\alpha_{1}
+$$
+
+是否线性无关, 即判断齐次线性方程组
+
+$$
+k_{1}\left(\alpha_{1}+\alpha_{2}\right)+k_{2}\left(\alpha_{2}+\alpha_{3}\right)+k_{3}\left(\alpha_{3}+\alpha_{4}\right)+k_{4}\left(\alpha_{4}+\alpha_{1}\right)=0
+$$
+
+是否只有零解.
+
+设
+
+$$
+k_{1}\left(\alpha_{1}+\alpha_{2}\right)+k_{2}\left(\alpha_{2}+\alpha_{3}\right)+k_{3}\left(\alpha_{3}+\alpha_{4}\right)+k_{4}\left(\alpha_{4}+\alpha_{1}\right)=0.
+$$
+
+整理得
+
+$$
+\left(k_{1}+k_{4}\right)\alpha_{1}+\left(k_{1}+k_{2}\right)\alpha_{2}+\left(k_{2}+k_{3}\right)\alpha_{3}+\left(k_{3}+k_{4}\right)\alpha_{4}=0.
+$$
+
+因为 $\alpha_{1},\alpha_{2},\alpha_{3},\alpha_{4}$ 线性无关, 所以
+
+$$
+\begin{cases}
+k_{1}+k_{4}=0,\\
+k_{1}+k_{2}=0,\\
+k_{2}+k_{3}=0,\\
+k_{3}+k_{4}=0.
+\end{cases}
+$$
+
+解得 $k_{2}=-k_{1}$, $k_{3}=k_{1}$, $k_{4}=-k_{1}$, 其中 $k_{1}$ 自由.
+
+令 $k_{1}=1$, 得 $k_{2}=-1$, $k_{3}=1$, $k_{4}=-1$, 这是一组非零解.
+
+故向量组
+
+$$
+\alpha_{1}+\alpha_{2},\alpha_{2}+\alpha_{3},\alpha_{3}+\alpha_{4},\alpha_{4}+\alpha_{1}
+$$
+
+线性相关.
+
+具体地,
+
+$$
+\left(\alpha_{1}+\alpha_{2}\right)-\left(\alpha_{2}+\alpha_{3}\right)+\left(\alpha_{3}+\alpha_{4}\right)-\left(\alpha_{4}+\alpha_{1}\right)=0.
+$$
+
+存在不全为零的数 $1,-1,1,-1$ 使得上述等式成立, 故该向量组线性相关. $\blacksquare$
+
+## 3.2-7
+
+证明: 如果向量 $\beta$ 可以由向量组 $\alpha_{1},\cdots,\alpha_{s}$ 线性表出, 则表出方式唯一的充分必要条件是 $\alpha_{1},\cdots,\alpha_{s}$ 线性无关.
+
+### 解答 3.2-7
+
+由**定义 3.2.2 (线性无关)**和**定义 3.2.1 (线性相关)**, 证明表出方式唯一的充分必要条件是 $\alpha_{1},\cdots,\alpha_{s}$ 线性无关.
+
+**充分性**. 设 $\alpha_{1},\cdots,\alpha_{s}$ 线性无关. 假设有两种表出方式:
+
+$$
+\beta=k_{1}\alpha_{1}+\cdots+k_{s}\alpha_{s},
+\beta=l_{1}\alpha_{1}+\cdots+l_{s}\alpha_{s}.
+$$
+
+两式相减得
+
+$$
+\left(k_{1}-l_{1}\right)\alpha_{1}+\cdots+\left(k_{s}-l_{s}\right)\alpha_{s}=0.
+$$
+
+因为 $\alpha_{1},\cdots,\alpha_{s}$ 线性无关, 所以 $k_{i}-l_{i}=0$, 即 $k_{i}=l_{i}$. 表出方式唯一.
+
+**必要性**. 设表出方式唯一. 反证: 假设 $\alpha_{1},\cdots,\alpha_{s}$ 线性相关, 则存在不全为零的数 $c_{1},\cdots,c_{s}$ 使得 $c_{1}\alpha_{1}+\cdots+c_{s}\alpha_{s}=0$.
+
+设 $\beta=k_{1}\alpha_{1}+\cdots+k_{s}\alpha_{s}$, 则
+
+$$
+\beta=\left(k_{1}+c_{1}\right)\alpha_{1}+\cdots+\left(k_{s}+c_{s}\right)\alpha_{s}.
+$$
+
+因为 $c_{i}$ 不全为零, 所以
+
+$$
+\left(k_{1}+c_{1},\cdots,k_{s}+c_{s}\right)\ne\left(k_{1},\cdots,k_{s}\right),
+$$
+
+这与表出方式唯一矛盾.
+
+假设不成立, 故 $\alpha_{1},\cdots,\alpha_{s}$ 线性无关. $\blacksquare$
+
+## 3.2-9
+
+证明: 由非零向量组成的向量组 $\alpha_{1},\alpha_{2},\cdots,\alpha_{s}$ $\left(s\ge2\right)$ 线性无关的充分必要条件是: 每一个 $\alpha_{i}$ $\left(1< i\le s\right)$ 都不能用它前面的向量线性表出.
+
+### 解答 3.2-9
+
+由**定义 3.2.2 (线性无关)**和**定义 3.2.1 (线性相关)**, 证明由非零向量组成的向量组 $\alpha_{1},\alpha_{2},\cdots,\alpha_{s}$ $\left(s\ge2\right)$ 线性无关的充分必要条件是: 每一个 $\alpha_{i}$ $\left(1< i\le s\right)$ 都不能用它前面的向量线性表出.
+
+**必要性**. 设 $\alpha_{1},\cdots,\alpha_{s}$ 线性无关. 反证: 假设某个 $\alpha_{i}$ $\left(i> 1\right)$ 可以用前面的向量线性表出, 即
+
+$$
+\alpha_{i}=k_{1}\alpha_{1}+\cdots+k_{i-1}\alpha_{i-1}.
+$$
+
+则
+
+$$
+k_{1}\alpha_{1}+\cdots+k_{i-1}\alpha_{i-1}-\alpha_{i}+0\cdot\alpha_{i+1}+\cdots+0\cdot\alpha_{s}=0.
+$$
+
+其中系数 $-1\ne0$, 故 $\alpha_{1},\cdots,\alpha_{s}$ 线性相关, 矛盾.
+
+所以每一个 $\alpha_{i}$ $\left(i> 1\right)$ 都不能用它前面的向量线性表出.
+
+**充分性**. 设每一个 $\alpha_{i}$ $\left(i> 1\right)$ 都不能用它前面的向量线性表出. 反证: 假设 $\alpha_{1},\cdots,\alpha_{s}$ 线性相关, 则存在不全为零的数 $c_{1},\cdots,c_{s}$ 使得 $c_{1}\alpha_{1}+\cdots+c_{s}\alpha_{s}=0$.
+
+设 $c_{i}$ 是最后一个非零系数
+
+$$
+\left(c_{i}\ne0,c_{i+1}=\cdots=c_{s}=0\right).
+$$
+
+若 $i=1$, 则 $c_{1}\alpha_{1}=0$. 因为 $\alpha_{1}\ne0$, 所以 $c_{1}=0$, 矛盾. 故 $i> 1$.
+
+由 $c_{1}\alpha_{1}+\cdots+c_{i}\alpha_{i}=0$ 得
+
+$$
+\alpha_{i}=-\frac{c_{1}}{c_{i}}\alpha_{1}-\cdots-\frac{c_{i-1}}{c_{i}}\alpha_{i-1}.
+$$
+
+这说明 $\alpha_{i}$ 可以用前面的向量线性表出, 与已知条件矛盾.
+
+假设不成立, 故 $\alpha_{1},\cdots,\alpha_{s}$ 线性无关. $\blacksquare$

@@ -1,286 +1,576 @@
 # week23
 
-$$
-\beta_{i}=\alpha_{i}-\sum_{k=1}^{i-1}\frac{\left(\alpha_{i},\beta_{k}\right)}{\left(\beta_{k},\beta_{k}\right)}\beta_{k},
-$$
-
-则 $\beta_{1},\beta_{2},\cdots,\beta_{m}$ 是正交向量组, 且与原向量组等价.
-
-> **定义 4.6.1 (正交矩阵)**
+> **定义 7.6.1 (多项式的根)**
 > 
-> 实数域上的方阵 $A$ 如果满足 $A^{\top}A=I$, 则称 $A$ 是正交矩阵.
+> 设 $K$ 是一个数域, 设 $R$ 是一个有单位元的交换环, 且 $R$ 可看成是 $K$ 的一个扩环. 对于 $K\left[x\right]$ 中一个多项式 $f\left(x\right)$, 如果 $R$ 中有一个元素 $c$ 使得 $f\left(c\right)=0$, 则称 $c$ 是 $f\left(x\right)$ 在 $R$ 中的一个根.
 
-> **定义 4.6.2 (标准内积)**
+> **定理 7.6.1 (余数定理)**
 > 
-> 在 $\mathbb{R}^{n}$ 中, 任给 $\alpha=\left(a_{1},a_{2},\cdots,a_{n}\right)$, $\beta=\left(b_{1},b_{2},\cdots,b_{n}\right)$, 规定
+> 在 $K\left[x\right]$ 中, 用 $x-a$ 去除 $f\left(x\right)$ 所得的余式是 $f\left(a\right)$.
 
-$$
-\left(\alpha,\beta\right)=a_{1}b_{1}+a_{2}b_{2}+\cdots+a_{n}b_{n},
-$$
-
-称为 $\mathbb{R}^{n}$ 的标准内积.
-
-> **命题 4.6.2 (正交向量组线性无关)**
+> **推论 7.6.2 (因式定理)**
 > 
-> 欧几里得空间 $\mathbb{R}^{n}$ 中, 正交向量组一定是线性无关的.
+> 在 $K\left[x\right]$ 中, $x-a$ 整除 $f\left(x\right)$ 当且仅当 $f\left(a\right)=0$.
 
-## 4.6-1(3)
+> **性质 7.7.1 (虚根共轭成对)**
+> 
+> 实系数多项式的虚根共轭成对出现, 且重数相同.
 
-判断下列矩阵是否为正交矩阵:
+> **定理 7.7.1 (实系数多项式唯一因式分解定理)**
+> 
+> 每个次数大于零的实系数多项式在实数域上都可以唯一地分解成一次因式与判别式小于零的二次因式的乘积.
 
-$$
-A=\left[\begin{array}{rr}
-\sqrt{3}/2 & 1/2\\
-1/2 & -\sqrt{3}/2
-\end{array}\right].
-$$
+> **定义 7.8.1 (本原多项式)**
+> 
+> 一个非零整系数多项式如果它的各项系数的最大公因数是 $1$, 则称它为本原多项式.
 
-### 解答 4.6-1(3)
+> **引理 7.8.1 (高斯引理)**
+> 
+> 两个本原多项式的乘积还是本原多项式.
 
-由**定义 4.6.1 (正交矩阵)**, 计算 $A^{\top}A$:
-
-$$
-A^{\top}A=\left[\begin{array}{rr}
-\sqrt{3}/2 & 1/2\\
-1/2 & -\sqrt{3}/2
-\end{array}\right]\left[\begin{array}{rr}
-\sqrt{3}/2 & 1/2\\
-1/2 & -\sqrt{3}/2
-\end{array}\right].
-$$
-
-$\left(1,1\right)$ 元:
+> **定理 7.8.1 (艾森斯坦判别法)**
+> 
+> 设
 
 $$
-\left(\frac{\sqrt{3}}{2}\right)^{2}+\left(\frac{1}{2}\right)^{2}=\frac{3}{4}+\frac{1}{4}=1.
+f\left(x\right)=a_{n}x^{n}+\cdots+a_{1}x+a_{0}
 $$
+是一个次数 $n$ 大于零的整系数多项式, 如果存在一个素数 $p$, 使得 (1) $p\mid a_{i}$, $i=0,1,\ldots,n-1$; (2) $p\nmid a_{n}$; (3) $p^{2}\nmid a_{0}$, 则 $f\left(x\right)$ 在有理数域上是不可约的.
 
-$\left(1,2\right)$ 元:
+## 7.6-1
 
-$$
-\frac{\sqrt{3}}{2}\cdot\frac{1}{2}+\frac{1}{2}\cdot\left(-\frac{\sqrt{3}}{2}\right)=\frac{\sqrt{3}}{4}-\frac{\sqrt{3}}{4}=0.
-$$
-
-$\left(2,1\right)$ 元:
+设
 
 $$
-\frac{1}{2}\cdot\frac{\sqrt{3}}{2}+\left(-\frac{\sqrt{3}}{2}\right)\cdot\frac{1}{2}=\frac{\sqrt{3}}{4}-\frac{\sqrt{3}}{4}=0.
+f\left(x\right)=x^{5}+7x^{4}+19x^{3}+26x^{2}+20x+8\in\mathbb{Q}\left[x\right],
 $$
 
-$\left(2,2\right)$ 元:
+判断 $-2$ 是不是多项式 $f\left(x\right)$ 的根, 如果是的话, 它是几重根?
+
+### 解答 7.6-1
+
+由**推论 7.6.2 (因式定理)**, 在 $K\left[x\right]$ 中, $x-a$ 整除 $f\left(x\right)$ 当且仅当 $f\left(a\right)=0$. 计算 $f\left(-2\right)$:
 
 $$
-\left(\frac{1}{2}\right)^{2}+\left(-\frac{\sqrt{3}}{2}\right)^{2}=\frac{1}{4}+\frac{3}{4}=1.
+f\left(-2\right)
+=\left(-2\right)^{5}+7\left(-2\right)^{4}+19\left(-2\right)^{3}+26\left(-2\right)^{2}+20\left(-2\right)+8=-32+112-152+104-40+8=0.
 $$
 
-因此 $A^{\top}A=I$, 由**定义 4.6.1 (正交矩阵)**, 故 $A$ 是正交矩阵. $\blacksquare$
+所以 $-2$ 是 $f\left(x\right)$ 的根.
 
-## 4.6-1(8)
+用综合除法看 $x+2$ 能除几次.
 
-判断下列矩阵是否为正交矩阵:
-
-$$
-A=\left[\begin{array}{rr}
-1 & 1\\
-1 & -1
-\end{array}\right].
-$$
-
-### 解答 4.6-1(8)
-
-由**定义 4.6.1 (正交矩阵)**, 计算 $A^{\top}A$:
+**第一次**:
 
 $$
-A^{\top}A=\left[\begin{array}{rr}
-1 & 1\\
-1 & -1
-\end{array}\right]\left[\begin{array}{rr}
-1 & 1\\
-1 & -1
-\end{array}\right]
-=\left[\begin{array}{rr}
-2 & 0\\
-0 & 2
-\end{array}\right].
+\begin{array}{r|rrrrrr}
+-2 & 1 & 7 & 19 & 26 & 20 & 8\\
+   &   & -2 & -10 & -18 & -16 & -8\\
+\hline
+   & 1 & 5 & 9 & 8 & 4 & 0
+\end{array}
 $$
 
-显然 $A^{\top}A\ne I$, 由**定义 4.6.1 (正交矩阵)**, 故 $A$ 不是正交矩阵. $\blacksquare$
+余式为 $0$, 商式是 $x^{4}+5x^{3}+9x^{2}+8x+4$.
 
-## 4.6-3
-
-证明: 如果 $A$ 是实数域上 $n$ 级对称矩阵, $T$ 是 $n$ 级正交矩阵, 则 $T^{-1}AT$ 是对称矩阵.
-
-### 解答 4.6-3
-
-由**定义 4.6.1 (正交矩阵)**, 因为 $T$ 是正交矩阵, 故 $T^{-1}=T^{\top}$.
+**第二次**:
 
 $$
-\left(T^{-1}AT\right)^{\top}=T^{\top}A^{\top}\left(T^{-1}\right)^{\top}.
+\begin{array}{r|rrrrr}
+-2 & 1 & 5 & 9 & 8 & 4\\
+   &   & -2 & -6 & -6 & -4\\
+\hline
+   & 1 & 3 & 3 & 2 & 0
+\end{array}
 $$
 
-因为 $T$ 是正交矩阵, 故 $T^{-1}=T^{\top}$, 从而 $\left(T^{-1}\right)^{\top}=\left(T^{\top}\right)^{\top}=T$.
+余式为 $0$, 商式是 $x^{3}+3x^{2}+3x+2$.
 
-因此
-
-$$
-\left(T^{-1}AT\right)^{\top}=T^{\top}A^{\top}T.
-$$
-
-因为 $A$ 是对称矩阵, 故 $A^{\top}=A$.
-
-所以
+**第三次**:
 
 $$
-\left(T^{-1}AT\right)^{\top}=T^{\top}AT=T^{-1}AT.
+\begin{array}{r|rrrr}
+-2 & 1 & 3 & 3 & 2\\
+   &   & -2 & -2 & -2\\
+\hline
+   & 1 & 1 & 1 & 0
+\end{array}
 $$
 
-因此 $T^{-1}AT$ 是对称矩阵. $\blacksquare$
+余式为 $0$, 商式是 $x^{2}+x+1$.
 
-## 4.6-5
-
-证明: 如果正交矩阵 $A$ 是上三角矩阵, 则 $A$ 一定是对角矩阵, 并且其主对角元是 $1$ 或 $-1$.
-
-### 解答 4.6-5
-
-由**定义 4.6.1 (正交矩阵)**, 设 $A$ 是 $n$ 级上三角矩阵, 且 $A^{\top}A=I$.
-
-因为 $A$ 是上三角矩阵, 故 $A^{\top}$ 是下三角矩阵.
-
-$A^{\top}A=I$ 是对角矩阵.
-
-**归纳证明 $A$ 的非对角元都为零**.
-
-当 $i=1,j=2$ 时, 考虑 $A^{\top}A$ 的 $\left(1,2\right)$ 元:
+**第四次**:
 
 $$
-\sum_{k=1}^{n}\left(A^{\top}\right)_{1k}A_{k2}=\sum_{k=1}^{n}A_{k1}A_{k2}=0.
+\begin{array}{r|rrr}
+-2 & 1 & 1 & 1\\
+   &   & -2 & 2\\
+\hline
+   & 1 & -1 & 3
+\end{array}
 $$
 
-因为 $A$ 是上三角矩阵, 所以当 $k> 1$ 时 $A_{k1}=0$. 故上式化为 $A_{11}A_{12}=0$.
+余式为 $3\ne0$.
 
-因为 $A$ 可逆, 故 $A_{11}\ne0$, 从而 $A_{12}=0$.
+因此 $-2$ 是 $f\left(x\right)$ 的 $3$ 重根. $\blacksquare$
 
-同理可证 $A_{1j}=0$ ( $j> 1$ ).
+## 7.6-4
 
-假设第 $1,\cdots,i-1$ 行的非对角元都已证明为零.
-
-考虑 $A^{\top}A$ 的 $\left(i,j\right)$ 元 ( $i< j$ ):
+设
 
 $$
-\sum_{k=1}^{i}A_{ki}A_{kj}=0.
+f\left(x\right)=x^{4}-5x^{3}+ax^{2}+bx+9\in\mathbb{Q}\left[x\right],
 $$
 
-由归纳假设, 当 $k< i$ 时 $A_{ki}=0$. 故上式化为 $A_{ii}A_{ij}=0$.
+如果 $3$ 是 $f\left(x\right)$ 的二重根, 求 $a,b$.
 
-因为 $A_{ii}\ne0$, 故 $A_{ij}=0$.
+### 解答 7.6-4
 
-归纳完成. 因此 $A$ 是对角矩阵.
+如果 $3$ 是 $f\left(x\right)$ 的二重根, 则 $f\left(3\right)=0$ 且 $f'\left(3\right)=0$.
 
-$A^{\top}A=I$, 得 $A_{ii}^{2}=1$, 故 $A_{ii}=\pm1$. $\blacksquare$
-
-## 4.6-12
-
-在欧几里得空间 $\mathbb{R}^{4}$ 中, 设向量组
+计算 $f\left(3\right)$:
 
 $$
-\alpha_{1}=\begin{bmatrix}1\\1\\0\\0\end{bmatrix},
-\alpha_{2}=\begin{bmatrix}1\\0\\1\\0\end{bmatrix},
-\alpha_{3}=\begin{bmatrix}1\\0\\0\\-1\end{bmatrix}.
+f\left(3\right)
+=3^{4}-5\cdot3^{3}+a\cdot3^{2}+b\cdot3+9=81-135+9a+3b+9=-45+9a+3b.
 $$
 
-求与 $\alpha_{1},\alpha_{2},\alpha_{3}$ 等价的正交单位向量组.
-
-### 解答 4.6-12
-
-由施密特正交化方法.
-
-令 $\beta_{1}=\alpha_{1}=\left(1,1,0,0\right)^{\top}$.
+令 $f\left(3\right)=0$:
 
 $$
-\beta_{2}=\alpha_{2}-\frac{\left(\alpha_{2},\beta_{1}\right)}{\left(\beta_{1},\beta_{1}\right)}\beta_{1}.
+9a+3b=45\Rightarrow 3a+b=15. \tag{1}
 $$
 
-$\left(\alpha_{2},\beta_{1}\right)=1$, $\left(\beta_{1},\beta_{1}\right)=2$.
-
-故
+求导数:
 
 $$
-\beta_{2}=\left(1,0,1,0\right)^{\top}-\frac{1}{2}\left(1,1,0,0\right)^{\top}=\left(\frac{1}{2},-\frac{1}{2},1,0\right)^{\top}.
+f'\left(x\right)=4x^{3}-15x^{2}+2ax+b.
 $$
 
-$$
-\beta_{3}=\alpha_{3}-\frac{\left(\alpha_{3},\beta_{1}\right)}{\left(\beta_{1},\beta_{1}\right)}\beta_{1}-\frac{\left(\alpha_{3},\beta_{2}\right)}{\left(\beta_{2},\beta_{2}\right)}\beta_{2}.
-$$
-
-$\left(\alpha_{3},\beta_{1}\right)=1$, $\left(\alpha_{3},\beta_{2}\right)=\frac{1}{2}$, $\left(\beta_{2},\beta_{2}\right)=\frac{3}{2}$.
-
-故
+计算 $f'\left(3\right)$:
 
 $$
-\beta_{3}
-=\left(1,0,0,-1\right)^{\top}-\frac{1}{2}\left(1,1,0,0\right)^{\top}-\frac{1}{3}\left(\frac{1}{2},-\frac{1}{2},1,0\right)^{\top}=\left(\frac{1}{3},-\frac{1}{3},-\frac{1}{3},-1\right)^{\top}.
+f'\left(3\right)
+=4\cdot3^{3}-15\cdot3^{2}+2a\cdot3+b=108-135+6a+b=-27+6a+b.
 $$
 
-验证正交性: $\left(\beta_{1},\beta_{2}\right)=0$, $\left(\beta_{1},\beta_{3}\right)=0$, $\left(\beta_{2},\beta_{3}\right)=0$.
-
-单位化:
+令 $f'\left(3\right)=0$:
 
 $$
-\eta_{1}=\frac{\beta_{1}}{\left|\beta_{1}\right|}=\left(\frac{1}{\sqrt{2}},\frac{1}{\sqrt{2}},0,0\right)^{\top}.
+6a+b=27. \tag{2}
 $$
 
-$$
-\eta_{2}=\frac{\beta_{2}}{\left|\beta_{2}\right|}=\left(\frac{1}{\sqrt{6}},-\frac{1}{\sqrt{6}},\frac{2}{\sqrt{6}},0\right)^{\top}.
-$$
+$\left(2\right)-\left(1\right)$ 得:
 
 $$
-\eta_{3}=\frac{\beta_{3}}{\left|\beta_{3}\right|}=\left(\frac{1}{2\sqrt{3}},-\frac{1}{2\sqrt{3}},-\frac{1}{2\sqrt{3}},-\frac{\sqrt{3}}{2}\right)^{\top}.
+3a=12\Rightarrow a=4.
+$$
+
+代入 $\left(1\right)$:
+
+$$
+3\cdot4+b=15\Rightarrow b=3.
+$$
+
+因此 $a=4$, $b=3$. $\blacksquare$
+
+## 7.6-8
+
+求复系数多项式 $x^{n}-1$ 的标准分解式.
+
+### 解答 7.6-8
+
+$x^{n}-1=0$ 的根是 $x^{n}=1$.
+
+$1$ 的 $n$ 次方根为:
+
+$$
+x_{k}=e^{2\pi i k/n}=\cos\frac{2\pi k}{n}+i\sin\frac{2\pi k}{n},\ k=0,1,\ldots,n-1.
+$$
+
+因此标准分解式为:
+
+$$
+x^{n}-1=\prod_{k=0}^{n-1}\left(x-e^{2\pi i k/n}\right).
 $$
 
 $\blacksquare$
 
-## 4.6-14
+## 7.7-4
 
-设 $A$ 是实数域上的 $n$ 级可逆矩阵, 证明: $A$ 可以分解成
+证明: 如果 $n$ 级实矩阵 $A$ 与 $B$ 不相似, 则把它们看成复矩阵后仍然不相似.
+
+### 解答 7.7-4
+
+由**性质 7.7.1 (虚根共轭成对)**, 实系数多项式的虚根共轭成对出现. 用反证法.
+
+假设 $A$ 与 $B$ 作为复矩阵相似, 即存在可逆复矩阵 $P$ 使得
 
 $$
-A=TB,
+B=P^{-1}AP.
 $$
 
-其中 $T$ 是正交矩阵, $B$ 是上三角矩阵, 并且 $B$ 的主对角元都为正数; 证明这种分解是唯一的.
+我们需要证明 $A$ 与 $B$ 作为实矩阵也相似.
 
-### 解答 4.6-14
+设 $P=P_{1}+iP_{2}$, 其中 $P_{1},P_{2}$ 是实矩阵.
 
-**存在性**. 设 $A$ 的列向量组为 $\alpha_{1},\alpha_{2},\cdots,\alpha_{n}$.
+由 $B=P^{-1}AP$ 得
 
-因为 $A$ 可逆, 故 $\alpha_{1},\alpha_{2},\cdots,\alpha_{n}$ 线性无关.
+$$
+BP=PA.
+$$
 
-由施密特正交化方法, 对 $\alpha_{1},\alpha_{2},\cdots,\alpha_{n}$ 作施密特正交化, 得到正交向量组 $\beta_{1},\beta_{2},\cdots,\beta_{n}$, 其中 $\beta_{i}$ 是 $\alpha_{1},\cdots,\alpha_{i}$ 的线性组合, 且 $\alpha_{i}$ 是 $\beta_{1},\cdots,\beta_{i}$ 的线性组合.
+代入 $P=P_{1}+iP_{2}$:
 
-把 $\beta_{1},\beta_{2},\cdots,\beta_{n}$ 单位化, 得到正交单位向量组 $\eta_{1},\eta_{2},\cdots,\eta_{n}$.
+$$
+B\left(P_{1}+iP_{2}\right)=\left(P_{1}+iP_{2}\right)A.
+$$
 
-令 $T=\left(\eta_{1},\eta_{2},\cdots,\eta_{n}\right)$, 则 $T$ 是正交矩阵.
+比较实部和虚部:
 
-因为 $\alpha_{i}$ 是 $\eta_{1},\cdots,\eta_{i}$ 的线性组合, 所以 $A=TB$, 其中 $B$ 是上三角矩阵.
+$$
+BP_{1}=P_{1}A,
+$$
 
-$B$ 的主对角元为 $\left|\beta_{1}\right|,\left|\beta_{2}\right|,\cdots,\left|\beta_{n}\right|$, 都是正数.
+$$
+BP_{2}=P_{2}A.
+$$
 
-**唯一性**. 设 $A=T_{1}B_{1}=T_{2}B_{2}$, 其中 $T_{1},T_{2}$ 是正交矩阵, $B_{1},B_{2}$ 是主对角元为正数的上三角矩阵.
+因此对于任意实数 $t$, 都有
 
-则 $T_{2}^{-1}T_{1}=B_{2}B_{1}^{-1}$.
+$$
+B\left(P_{1}+tP_{2}\right)=\left(P_{1}+tP_{2}\right)A.
+$$
 
-左边 $T_{2}^{-1}T_{1}$ 是正交矩阵 (正交矩阵的乘积仍为正交矩阵).
+考虑多项式 $\det\left(P_{1}+xP_{2}\right)$, 这是一个关于 $x$ 的实系数多项式.
 
-右边 $B_{2}B_{1}^{-1}$ 是上三角矩阵 (上三角矩阵的乘积仍为上三角矩阵).
+因为 $P=P_{1}+iP_{2}$ 可逆, 所以 $\det\left(P\right)\ne0$, 即 $\det\left(P_{1}+iP_{2}\right)\ne0$.
 
-由**4.6-5**的结论, 既是正交矩阵又是上三角矩阵的矩阵一定是对角矩阵, 且主对角元为 $\pm1$.
+因此 $\det\left(P_{1}+xP_{2}\right)$ 不是零多项式, 它只有有限多个实根.
 
-故 $B_{2}B_{1}^{-1}$ 是对角矩阵, 主对角元为 $\pm1$.
+所以存在实数 $t$, 使得
 
-又因为 $B_{1},B_{2}$ 的主对角元都是正数, 故 $B_{2}B_{1}^{-1}$ 的主对角元为正数.
+$$
+\det\left(P_{1}+tP_{2}\right)\ne0.
+$$
 
-因此主对角元只能为 $+1$, 即 $B_{2}B_{1}^{-1}=I$.
+即 $P_{1}+tP_{2}$ 可逆.
 
-故 $B_{2}=B_{1}$, 从而 $T_{2}=T_{1}$.
+令 $Q=P_{1}+tP_{2}$, 这是一个可逆实矩阵.
 
-分解唯一. $\blacksquare$
+则
+
+$$
+BQ=QA,
+$$
+
+即
+
+$$
+B=Q^{-1}AQ.
+$$
+
+所以 $A$ 与 $B$ 作为实矩阵也相似.
+
+这与已知条件矛盾.
+
+因此如果 $A$ 与 $B$ 作为实矩阵不相似, 则作为复矩阵也不相似. $\blacksquare$
+
+## 7.8-2(4)
+
+$x^{4}-2x^{3}+2x-3$ 在有理数域上是否不可约?
+
+### 解答 7.8-2(4)
+
+由**定理 7.8.1 (艾森斯坦判别法)**, 先看有没有有理根.
+
+可能的有理根是 $\pm1$, $\pm3$.
+
+$$
+f\left(1\right)=1-2+2-3=-2\ne0.
+$$
+
+$$
+f\left(-1\right)=1+2-2-3=-2\ne0.
+$$
+
+$$
+f\left(3\right)=81-54+6-3=30\ne0.
+$$
+
+$$
+f\left(-3\right)=81+54-6-3=126\ne0.
+$$
+
+所以没有有理根.
+
+假设能分解成两个整系数二次多项式的乘积:
+
+$$
+x^{4}-2x^{3}+2x-3=\left(x^{2}+ax+b\right)\left(x^{2}+cx+d\right).
+$$
+
+比较系数:
+
+$$
+a+c=-2, \tag{1}
+$$
+
+$$
+ac+b+d=0, \tag{2}
+$$
+
+$$
+ad+bc=2, \tag{3}
+$$
+
+$$
+bd=-3. \tag{4}
+$$
+
+由 $\left(4\right)$, $bd=-3$ 的整数解有:
+
+$$
+\left(b,d\right)=\left(1,-3\right),\left(-1,3\right),\left(3,-1\right),\left(-3,1\right).
+$$
+
+逐一验证:
+
+- $b=1,d=-3$: 由 $\left(1\right)$, $c=-2-a$. 代入 $\left(2\right)$:
+
+  $$
+  -2a-a^{2}+1-3=0\Rightarrow a^{2}+2a+2=0,
+  $$
+
+  无实根.
+- $b=-1,d=3$: 代入 $\left(2\right)$:
+
+  $$
+  -2a-a^{2}-1+3=0\Rightarrow a^{2}+2a-2=0,
+  $$
+
+  无整数根.
+- $b=3,d=-1$: 代入 $\left(2\right)$:
+
+  $$
+  -2a-a^{2}+3-1=0\Rightarrow a^{2}+2a-2=0,
+  $$
+
+  无整数根.
+- $b=-3,d=1$: 代入 $\left(2\right)$:
+
+  $$
+  -2a-a^{2}-3+1=0\Rightarrow a^{2}+2a+2=0,
+  $$
+
+  无实根.
+
+因此不能分解成两个整系数二次多项式的乘积.
+
+所以 $x^{4}-2x^{3}+2x-3$ 在有理数域上不可约. $\blacksquare$
+
+## 7.8-2(5)
+
+$x^{4}+px^{2}+1$, $p$ 为奇素数, 在有理数域上是否不可约?
+
+### 解答 7.8-2(5)
+
+先看有没有有理根.
+
+可能的有理根是 $\pm1$.
+
+$$
+f\left(1\right)=1+p+1=p+2\ne0.
+$$
+
+$$
+f\left(-1\right)=1+p+1=p+2\ne0.
+$$
+
+所以没有有理根.
+
+假设能分解成两个整系数二次多项式的乘积:
+
+$$
+x^{4}+px^{2}+1=\left(x^{2}+ax+b\right)\left(x^{2}+cx+d\right).
+$$
+
+比较系数:
+
+$$
+a+c=0, \tag{1}
+$$
+
+$$
+ac+b+d=p, \tag{2}
+$$
+
+$$
+ad+bc=0, \tag{3}
+$$
+
+$$
+bd=1. \tag{4}
+$$
+
+由 $\left(1\right)$, $c=-a$.
+
+代入 $\left(3\right)$:
+
+$$
+ad+b\left(-a\right)=a\left(d-b\right)=0.
+$$
+
+所以 $a=0$ 或 $d=b$.
+
+**情况1**: $a=0$.
+
+则 $c=0$.
+
+由 $\left(2\right)$: $b+d=p$.
+
+由 $\left(4\right)$: $bd=1$.
+
+所以 $b=d=1$ 或 $b=d=-1$.
+
+若 $b=d=1$, 则 $b+d=2$, 故 $p=2$. 但 $p$ 是奇素数, 矛盾.
+
+若 $b=d=-1$, 则 $b+d=-2$, 故 $p=-2$. 但 $p$ 是正素数, 矛盾.
+
+**情况2**: $d=b$.
+
+由 $\left(4\right)$: $b^{2}=1$, 所以 $b=1$ 或 $b=-1$.
+
+若 $b=1$, 则 $d=1$.
+
+由 $\left(2\right)$:
+
+$$
+-a^{2}+2=p\Rightarrow a^{2}=2-p.
+$$
+
+因为 $p$ 是奇素数, $p\ge3$, 所以 $2-p\le-1< 0$, 无实根.
+
+若 $b=-1$, 则 $d=-1$.
+
+由 $\left(2\right)$:
+
+$$
+-a^{2}-2=p\Rightarrow a^{2}=-p-2< 0,
+$$
+
+无实根.
+
+因此不能分解成两个整系数二次多项式的乘积.
+
+所以 $x^{4}+px^{2}+1$ 在有理数域上不可约. $\blacksquare$
+
+## 7.8-2(7)
+
+$2x^{3}-x^{2}+x+1$ 在有理数域上是否不可约?
+
+### 解答 7.8-2(7)
+
+三次多项式在有理数域上可约当且仅当它有有理根.
+
+可能的有理根是 $\pm1$, $\pm\frac{1}{2}$.
+
+$$
+f\left(1\right)=2-1+1+1=3\ne0.
+$$
+
+$$
+f\left(-1\right)=-2-1-1+1=-3\ne0.
+$$
+
+$$
+f\left(\frac{1}{2}\right)=2\cdot\frac{1}{8}-\frac{1}{4}+\frac{1}{2}+1=\frac{1}{4}-\frac{1}{4}+\frac{1}{2}+1=\frac{3}{2}\ne0.
+$$
+
+$$
+f\left(-\frac{1}{2}\right)=2\cdot\left(-\frac{1}{8}\right)-\frac{1}{4}+\left(-\frac{1}{2}\right)+1=-\frac{1}{4}-\frac{1}{4}-\frac{1}{2}+1=0.
+$$
+
+所以 $-\frac{1}{2}$ 是 $f\left(x\right)$ 的有理根.
+
+因此 $f\left(x\right)$ 在有理数域上可约. $\blacksquare$
+
+## 7.8-2(8)
+
+$x^{4}-5x^{2}+1$ 在有理数域上是否不可约?
+
+### 解答 7.8-2(8)
+
+先看有没有有理根.
+
+可能的有理根是 $\pm1$.
+
+$$
+f\left(1\right)=1-5+1=-3\ne0.
+$$
+
+$$
+f\left(-1\right)=1-5+1=-3\ne0.
+$$
+
+所以没有有理根.
+
+假设能分解成两个整系数二次多项式的乘积:
+
+$$
+x^{4}-5x^{2}+1=\left(x^{2}+ax+b\right)\left(x^{2}+cx+d\right).
+$$
+
+比较系数:
+
+$$
+a+c=0, \tag{1}
+$$
+
+$$
+ac+b+d=-5, \tag{2}
+$$
+
+$$
+ad+bc=0, \tag{3}
+$$
+
+$$
+bd=1. \tag{4}
+$$
+
+由 $\left(1\right)$, $c=-a$.
+
+代入 $\left(3\right)$:
+
+$$
+ad+b\left(-a\right)=a\left(d-b\right)=0.
+$$
+
+所以 $a=0$ 或 $d=b$.
+
+**情况1**: $a=0$.
+
+则 $c=0$.
+
+由 $\left(2\right)$: $b+d=-5$.
+
+由 $\left(4\right)$: $bd=1$.
+
+所以 $b,d$ 是方程 $t^{2}+5t+1=0$ 的根, 不是整数.
+
+**情况2**: $d=b$.
+
+由 $\left(4\right)$: $b^{2}=1$, 所以 $b=1$ 或 $b=-1$.
+
+若 $b=1$, 则 $d=1$.
+
+由 $\left(2\right)$: $-a^{2}+2=-5\Rightarrow a^{2}=7$, 不是完全平方数.
+
+若 $b=-1$, 则 $d=-1$.
+
+由 $\left(2\right)$: $-a^{2}-2=-5\Rightarrow a^{2}=3$, 不是完全平方数.
+
+因此不能分解成两个整系数二次多项式的乘积.
+
+所以 $x^{4}-5x^{2}+1$ 在有理数域上不可约. $\blacksquare$

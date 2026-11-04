@@ -20,8 +20,6 @@ $$
 
 is solvable $\Leftrightarrow$ $\beta$ can be linearly represented by $\alpha_{1},\alpha_{2},\cdots,\alpha_{n}$ $\Leftrightarrow$ $\beta\in\left\langle\alpha_{1},\alpha_{2},\cdots,\alpha_{n}\right\rangle$.
 
----
-
 ## 3.1-3(1)
 
 In $K^{4}$, determine whether the vector $\beta$ can be linearly represented by the vector group $\alpha_{1},\alpha_{2},\alpha_{3}$. If so, write down one way of representing it.
@@ -58,8 +56,6 @@ $$
 Continuing the row operations, the last row becomes a contradictory row $0=80$, so the system has no solution.
 
 By **Proposition 3.1.1 (Relation Between Linear Representability and Solvability of a System)**, $\beta$ therefore cannot be linearly represented by $\alpha_{1},\alpha_{2},\alpha_{3}$. $\blacksquare$
-
----
 
 ## 3.1-3(3)
 
@@ -123,8 +119,6 @@ $$
 
 Hence $\beta=-\alpha_{1}-5\alpha_{2}$. By **Proposition 3.1.1 (Relation Between Linear Representability and Solvability of a System)**, the system is solvable, so $\beta$ can be linearly represented by $\alpha_{1},\alpha_{2},\alpha_{3}$. $\blacksquare$
 
----
-
 ## 3.1-5
 
 In $K^{4}$, let
@@ -173,8 +167,6 @@ $$
 $$
 
 The system has a unique solution, so $\alpha$ can be uniquely linearly represented by $\alpha_{1},\alpha_{2},\alpha_{3},\alpha_{4}$. $\blacksquare$
-
----
 
 ## 3.1-8
 

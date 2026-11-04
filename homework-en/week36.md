@@ -12,8 +12,6 @@
 > 
 > Every polynomial in $K\left[x\right]$ of positive degree can be uniquely factored into a product of finitely many irreducible polynomials over $K$.
 
----
-
 ## 7.4-2(2)
 
 Factor the following polynomial into irreducible factors over the complex number field, the real number field, and the rational number field, respectively:
@@ -82,8 +80,6 @@ $$
 
 All these factorizations are unique. $\blacksquare$
 
----
-
 ## 7.4-3
 
 Prove: in $K\left[x\right]$, $g^{2}\left(x\right)\mid f^{2}\left(x\right)$ if and only if $g\left(x\right)\mid f\left(x\right)$.
@@ -117,8 +113,6 @@ $$
 i.e. $g^{2}\mid f^{2}$.
 
 Thus $g^{2}\left(x\right)\mid f^{2}\left(x\right)$ if and only if $g\left(x\right)\mid f\left(x\right)$. $\blacksquare$
-
----
 
 ## 7.4-7
 

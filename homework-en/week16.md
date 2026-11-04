@@ -14,8 +14,6 @@ $$
 
 where $A$ is the coefficient matrix.
 
----
-
 ## 3.7-1(1)
 
 Find a fundamental system of solutions of the following homogeneous linear system over a number field $K$, and write down its solution set.
@@ -75,8 +73,6 @@ W=\left\{k_{1}\eta_{1}+k_{2}\eta_{2}\mid k_{1},k_{2}\in K\right\}.
 $$
 
 $\blacksquare$
-
----
 
 ## 3.7-1(2)
 
@@ -140,8 +136,6 @@ $$
 
 $\blacksquare$
 
----
-
 ## 3.7-4
 
 Prove: let the coefficient matrix of an $n$-variable homogeneous linear system have rank $r$ $\left(r< n\right)$, and let $\delta_{1},\delta_{2},\cdots,\delta_{m}$ be solution vectors of the system. Then
@@ -169,8 +163,6 @@ $$
 $$
 
 $\blacksquare$
-
----
 
 ## 3.7-5
 
@@ -209,8 +201,6 @@ Thus $\text{rank}\left(A\right)=n-1$.
 By **Theorem 3.7.1 (Dimension of the Solution Space)**, the solution space has dimension $n-\text{rank}\left(A\right)=1$.
 
 $\eta_{1}$ is a nonzero solution, and by itself forms a basis of the solution space, i.e. a fundamental system. $\blacksquare$
-
----
 
 ## 3.7-7
 

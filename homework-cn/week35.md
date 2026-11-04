@@ -16,8 +16,6 @@ $$
 > 
 > 在 $K\left[x\right]$ 中, 如果 $f\left(x\right)$ 与 $g\left(x\right)$ 的最大公因式是零次多项式, 则称 $f\left(x\right)$ 与 $g\left(x\right)$ 互素.
 
----
-
 ## 7.3-1(1)
 
 求 $f\left(x\right)$ 与 $g\left(x\right)$ 的最大公因式, 并且把 $\left(f\left(x\right),g\left(x\right)\right)$ 表示成 $f\left(x\right)$ 与 $g\left(x\right)$ 的倍式和:
@@ -103,8 +101,6 @@ $$
 
 $\blacksquare$
 
----
-
 ## 7.3-5
 
 证明: 在 $K\left[x\right]$ 中, 如果 $f\left(x\right),g\left(x\right)$ 不全为零, 并且
@@ -136,8 +132,6 @@ $$
 这说明 $u\left(x\right)$ 与 $v\left(x\right)$ 的一个倍式和等于 $1$.
 
 因此 $\left(u\left(x\right),v\left(x\right)\right)=1$. $\blacksquare$
-
----
 
 ## 7.3-7
 
@@ -172,8 +166,6 @@ $$
 所以 $d_{1}\sim d_{2}$.
 
 首项系数都是 $1$, 故 $d_{1}=d_{2}$. $\blacksquare$
-
----
 
 ## 7.3-9
 
@@ -216,8 +208,6 @@ $$
 但 $\deg u< \deg g$, 所以只能 $u=0$, 矛盾.
 
 因此 $f$ 与 $g$ 不互素. $\blacksquare$
-
----
 
 ## 7.3-11
 
@@ -278,8 +268,6 @@ $$
 $$
 
 $\blacksquare$
-
----
 
 ## 7.3-12
 

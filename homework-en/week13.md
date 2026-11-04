@@ -16,8 +16,6 @@ $$
 \dim\left\langle\alpha_{1},\alpha_{2},\cdots,\alpha_{s}\right\rangle=\text{rank}\left\{\alpha_{1},\alpha_{2},\cdots,\alpha_{s}\right\}.
 $$
 
----
-
 ## 3.4-2
 
 Prove that the vector group in $K^{n}$
@@ -78,8 +76,6 @@ The representation exists and is unique.
 
 By **Definition 3.4.1 (Basis)**, $\eta_{1},\eta_{2},\cdots,\eta_{n}$ is therefore a basis of $K^{n}$. $\blacksquare$
 
----
-
 ## 3.4-3(3)
 
 Determine whether the following vector group is a basis of $K^{3}$:
@@ -108,8 +104,6 @@ $$
 $$
 
 The determinant is $0$; by **Proposition 3.3.6 (Linear Independence iff Rank Equals the Number of Vectors)**, $\alpha_{1},\alpha_{2},\alpha_{3}$ are therefore linearly dependent, failing the "linearly independent" requirement of **Definition 3.4.1 (Basis)**, and are not a basis of $K^{3}$. $\blacksquare$
-
----
 
 ## 3.4-4
 

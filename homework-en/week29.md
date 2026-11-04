@@ -4,8 +4,6 @@
 > 
 > Let $A$ be an $n\times n$ matrix over a number field $K$. If there is a nonzero column vector $\alpha$ in $K^{n}$ such that $A\alpha=\lambda_{0}\alpha$ with $\lambda_{0}\in K$, then $\lambda_{0}$ is called an eigenvalue of $A$, and $\alpha$ is called an eigenvector of $A$ belonging to the eigenvalue $\lambda_{0}$.
 
----
-
 ## 5.5-1(2)
 
 Find all eigenvalues and eigenvectors of the following matrix $A$ over a number field $K$:
@@ -79,8 +77,6 @@ A fundamental solution system: $\alpha_{2}=\left(1,-1,2\right)^{\top}$.
 
 The eigenvectors for $\lambda_{1}=1$ are $k_{1}\alpha_{1}$ ( $k_{1}\ne0$ ), and those for $\lambda_{2}=\lambda_{3}=3$ are $k_{2}\alpha_{2}$ ( $k_{2}\ne0$ ). $\blacksquare$
 
----
-
 ## 5.5-2(2)
 
 Find all eigenvalues and eigenvectors of the following matrix $A$ over the complex number field. If $A$ is regarded as a matrix over the real number field, does it have eigenvalues? How many?
@@ -117,8 +113,6 @@ Thus the eigenvalues are $\lambda_{1}=1$, $\lambda_{2}=i$ and $\lambda_{3}=-i$.
 By **Definition 5.5.1 (Eigenvalue and Eigenvector)**, regarding $A$ as a real matrix, only $\lambda=1$ is a real eigenvalue, so it has $1$ eigenvalue.
 
 $\blacksquare$
-
----
 
 ## 5.5-10
 
@@ -194,8 +188,6 @@ Therefore $-1$ is an eigenvalue of $A$.
 
 $\blacksquare$
 
----
-
 ## 5.5-12(1)
 
 Find all eigenvalues and eigenvectors of the following matrix over the complex number field:
@@ -258,8 +250,6 @@ A fundamental solution system: $\alpha_{2}=\left(1,\omega,\omega^{2}\right)^{\to
 Similarly, a fundamental solution system: $\alpha_{3}=\left(1,\omega^{2},\omega\right)^{\top}$.
 
 $\blacksquare$
-
----
 
 ## 5.5-13
 

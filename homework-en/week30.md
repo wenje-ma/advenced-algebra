@@ -8,8 +8,6 @@
 > 
 > If an $n\times n$ matrix $A$ over a number field $K$ has $n$ distinct eigenvalues, then $A$ is diagonalizable.
 
----
-
 ## 5.6-1
 
 Among the matrices in Exercises 5.5, problems 1 and 2, which are diagonalizable and which are not? For each diagonalizable matrix $A$, find an invertible matrix $P$ such that $P^{-1}AP$ is diagonal, and write down that diagonal matrix.
@@ -115,8 +113,6 @@ Regarded as a complex matrix, it has three distinct eigenvalues, so it is diagon
 
 All these judgments rest on whether the matrix has $n$ linearly independent eigenvectors. $\blacksquare$
 
----
-
 ## 5.6-5
 
 Let $A$ be an $n\times n$ matrix over a number field $K$. Prove: if every nonzero column vector in $K^{n}$ is an eigenvector of $A$, then $A$ must be a scalar matrix.
@@ -172,8 +168,6 @@ Namely $\lambda_{1}=\lambda_{2}=\lambda_{3}$.
 This is a contradiction.
 
 Hence the assumption fails, and $A$ is a scalar matrix. $\blacksquare$
-
----
 
 ## 5.6-7
 
@@ -250,8 +244,6 @@ Hence $A$ has $r$ eigenvalues equal to $1$ and $n-r$ eigenvalues equal to $0$.
 Therefore the canonical form of $A$ under similarity is $\operatorname{diag}\left\{I_{r},0\right\}$, where $r=\operatorname{rank}\left(A\right)$.
 
 $\blacksquare$
-
----
 
 ## 5.6-10
 

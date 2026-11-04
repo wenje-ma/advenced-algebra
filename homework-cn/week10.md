@@ -20,8 +20,6 @@ $$
 
 有解 $\Leftrightarrow$ $\beta$ 可以由 $\alpha_{1},\alpha_{2},\cdots,\alpha_{n}$ 线性表出 $\Leftrightarrow$ $\beta\in\left\langle\alpha_{1},\alpha_{2},\cdots,\alpha_{n}\right\rangle$.
 
----
-
 ## 3.1-3(1)
 
 在 $K^{4}$ 中, 判断向量 $\beta$ 能否由向量组 $\alpha_{1},\alpha_{2},\alpha_{3}$ 线性表出. 若能, 写出它的一种表示方式.
@@ -58,8 +56,6 @@ $$
 继续作行变换, 最后一行出现矛盾行 $0=80$, 故方程组无解.
 
 由**命题 3.1.1 (线性表出与方程组有解的关系)**, 因此 $\beta$ 不能由 $\alpha_{1},\alpha_{2},\alpha_{3}$ 线性表出. $\blacksquare$
-
----
 
 ## 3.1-3(3)
 
@@ -123,8 +119,6 @@ $$
 
 故 $\beta=-\alpha_{1}-5\alpha_{2}$. 由**命题 3.1.1 (线性表出与方程组有解的关系)**, 方程组有解, 故 $\beta$ 可以由 $\alpha_{1},\alpha_{2},\alpha_{3}$ 线性表出. $\blacksquare$
 
----
-
 ## 3.1-5
 
 在 $K^{4}$ 中, 设
@@ -173,8 +167,6 @@ $$
 $$
 
 方程组有唯一解, 故 $\alpha$ 可以由 $\alpha_{1},\alpha_{2},\alpha_{3},\alpha_{4}$ 唯一线性表出. $\blacksquare$
-
----
 
 ## 3.1-8
 

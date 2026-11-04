@@ -12,8 +12,6 @@
 > 
 > Two $n\times n$ real symmetric matrices are congruent if and only if they have the same rank and the same positive index of inertia.
 
----
-
 ## 6.2-1
 
 Further reduce the canonical forms of all real quadratic forms in Exercise 6.1, problem 3, to their canonical form, and write down the nondegenerate linear substitutions.
@@ -56,8 +54,6 @@ Reduce to the canonical form.
 
 All these canonical forms are unique. $\blacksquare$
 
----
-
 ## 6.2-4
 
 Let $X^{\top}AX$ be an $n$-variable real quadratic form. Prove: if there are column vectors $\alpha_{1},\alpha_{2}$ in $\mathbb{R}^{n}$ such that $\alpha_{1}^{\top}A\alpha_{1}> 0$ and $\alpha_{2}^{\top}A\alpha_{2}< 0$, then there is a nonzero column vector $\alpha$ in $\mathbb{R}^{n}$ such that $\alpha^{\top}A\alpha=0$.
@@ -93,8 +89,6 @@ Then $\alpha\ne0$ (because if $\alpha=0$, then $\alpha_{1}=-t_{1}\alpha_{2}$, an
 And $\alpha^{\top}A\alpha=g\left(t_{1}\right)=0$.
 
 Therefore there is a nonzero column vector $\alpha$ in $\mathbb{R}^{n}$ such that $\alpha^{\top}A\alpha=0$. $\blacksquare$
-
----
 
 ## 6.2-6
 
@@ -169,8 +163,6 @@ The positive index of inertia is $1$ and the negative index is $1$, so the signa
 Therefore the rank is $2$ with signature $0$.
 
 $\blacksquare$
-
----
 
 ## 6.2-7
 

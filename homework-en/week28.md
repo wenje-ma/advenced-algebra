@@ -8,8 +8,6 @@
 > 
 > An $n\times n$ matrix $A$ over a number field $K$ is similar to a diagonal matrix if and only if there are $n$ linearly independent column vectors $\alpha_{1},\alpha_{2},\cdots,\alpha_{n}$ in $K^{n}$ and $n$ scalars $\lambda_{1},\lambda_{2},\cdots,\lambda_{n}$ in $K$ such that $A\alpha_{i}=\lambda_{i}\alpha_{i}$ ( $i=1,2,\cdots,n$ ).
 
----
-
 ## 5.4-3
 
 Prove: if $A_{1}\sim B_{1}$ and $A_{2}\sim B_{2}$, then
@@ -50,8 +48,6 @@ $$
 $$
 
 $\blacksquare$
-
----
 
 ## 5.4-8
 
@@ -103,8 +99,6 @@ $$
 
 $\blacksquare$
 
----
-
 ## 5.4-9
 
 Prove: if $n\times n$ matrices $A,B$ over a number field $K$ satisfy
@@ -154,8 +148,6 @@ $$
 This is a contradiction.
 
 Hence the assumption fails, and $A$ is not invertible. $\blacksquare$
-
----
 
 ## 5.4-12
 

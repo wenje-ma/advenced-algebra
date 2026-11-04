@@ -18,8 +18,6 @@ $$
 
 be a polynomial with integer coefficients of degree $n> 0$. If there exists a prime $p$ such that (1) $p\mid a_{i}$ for $i=0,1,\ldots,n-1$; (2) $p\nmid a_{n}$; (3) $p^{2}\nmid a_{0}$, then $f\left(x\right)$ is irreducible over $\mathbb{Q}$.
 
----
-
 ## 7.8-2(4)
 
 Is $x^{4}-2x^{3}+2x-3$ irreducible over $\mathbb{Q}$?
@@ -112,8 +110,6 @@ Check each:
 Hence it cannot be factored into two integer quadratics.
 
 Therefore $x^{4}-2x^{3}+2x-3$ is irreducible over $\mathbb{Q}$. $\blacksquare$
-
----
 
 ## 7.8-2(5)
 
@@ -211,8 +207,6 @@ Hence it cannot be factored into two integer quadratics.
 
 Therefore $x^{4}+px^{2}+1$ is irreducible over $\mathbb{Q}$. $\blacksquare$
 
----
-
 ## 7.8-2(7)
 
 Is $2x^{3}-x^{2}+x+1$ irreducible over $\mathbb{Q}$?
@@ -242,8 +236,6 @@ $$
 Hence $-\frac{1}{2}$ is a rational root.
 
 Therefore $f\left(x\right)$ is reducible over $\mathbb{Q}$. $\blacksquare$
-
----
 
 ## 7.8-2(8)
 
@@ -325,8 +317,6 @@ Hence it cannot be factored into two integer quadratics.
 
 Therefore $x^{4}-5x^{2}+1$ is irreducible over $\mathbb{Q}$. $\blacksquare$
 
----
-
 ## 7.8-5
 
 Let $f\left(x\right)$ be a monic polynomial with integer coefficients of positive degree. Prove: if $f\left(0\right)$ and $f\left(1\right)$ are both odd, then $f\left(x\right)$ has no rational root.
@@ -370,8 +360,6 @@ Since $f\left(1\right)$ is odd, $f\left(r\right)\equiv1\pmod2$, i.e. $f\left(r\r
 Contradiction.
 
 Therefore $f\left(x\right)$ has no rational root. $\blacksquare$
-
----
 
 ## 7.8-6
 

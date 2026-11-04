@@ -1,7 +1,5 @@
 # week1
 
----
-
 ## 1.1-1(4)
 
 Solve the following system of linear equations:
@@ -60,8 +58,6 @@ By The Gauss-Jordan Algorithm, the original system therefore has the unique solu
 $$
 \left(x_{1},x_{2},x_{3}\right)=\left(5,-2,1\right).\blacksquare
 $$
-
----
 
 ## 1.1-2
 
@@ -124,8 +120,6 @@ $$
 $$
 
 Then $x_{2}=10000$. Since an investment cannot be negative, $x_{1}=-5000< 0$ has no practical meaning. Hence it is not possible to make the amount invested in $A_{3}$ equal to the sum of the amounts invested in $A_{1}$ and $A_{2}$. $\blacksquare$
-
----
 
 ## 1.1-3(2)
 
@@ -203,8 +197,6 @@ x_{4}=c,
 $$
 
 where $c$ is an arbitrary constant. $\blacksquare$
-
----
 
 ## 1.1-3(3)
 

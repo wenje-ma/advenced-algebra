@@ -12,8 +12,6 @@
 > 
 > If a matrix $A$ is transformed by elementary row operations into a row-echelon matrix $J$, then the rank of $A$ equals the number of nonzero rows of $J$. If the pivot columns of $J$ are columns $j_{1},\cdots,j_{r}$, then columns $j_{1},\cdots,j_{r}$ of $A$ form a maximal linearly independent subset of the column group of $A$.
 
----
-
 ## 3.5-2(1)
 
 Find the rank of the following vector group and a maximal linearly independent subset:
@@ -48,8 +46,6 @@ $$
 By **Corollary 3.5.5 (Computing Rank by Elementary Row Operations)**, the echelon matrix has $3$ nonzero rows, so the rank is $3$.
 
 By **Corollary 3.5.5 (Computing Rank by Elementary Row Operations)**, the pivots are in columns $1,2,3$, so $\alpha_{1},\alpha_{2},\alpha_{3}$ are a maximal linearly independent subset. $\blacksquare$
-
----
 
 ## 3.5-3
 
@@ -97,8 +93,6 @@ $$
 $$
 
 $\blacksquare$
-
----
 
 ## 3.5-4
 
@@ -150,8 +144,6 @@ The echelon matrix has $3$ nonzero rows, so the rank is $3$.
 
 In summary: when $\lambda=3$, by **Corollary 3.5.5 (Computing Rank by Elementary Row Operations)**, the echelon matrix has $2$ nonzero rows, so the rank is $2$; when $\lambda\ne3$, the echelon matrix has $3$ nonzero rows, so the rank is $3$. $\blacksquare$
 
----
-
 ## 3.5-8
 
 Prove: if an $m\times n$ matrix $A$ has rank $r$, then the submatrix $A_{1}$ formed by any $s$ rows of $A$ has rank at least $r+s-m$.
@@ -187,8 +179,6 @@ $$
 $$
 
 $\blacksquare$
-
----
 
 ## 3.5-13
 

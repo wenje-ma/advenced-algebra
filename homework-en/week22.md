@@ -32,8 +32,6 @@ $$
 \text{rank}\left(A^{\top}A\right)=\text{rank}\left(AA^{\top}\right)=\text{rank}\left(A\right).
 $$
 
----
-
 ## 4.5-1
 
 Prove: let $A,B$ be $s\times n$ and $n\times m$ matrices, respectively. If $AB=0$, then $\text{rank}\left(A\right)+\text{rank}\left(B\right)\le n$.
@@ -61,8 +59,6 @@ $$
 $$
 
 $\blacksquare$
-
----
 
 ## 4.5-4
 
@@ -112,8 +108,6 @@ $$
 
 $\blacksquare$
 
----
-
 ## 4.5-5
 
 Prove: if an $n\times n$ matrix $A$ satisfies $A^{2}=A$ (then $A$ is called an idempotent matrix), then
@@ -162,8 +156,6 @@ $$
 
 $\blacksquare$
 
----
-
 ## 4.5-6
 
 Let $A$ be an $s\times n$ matrix over the real number field, and $\beta$ any column vector in $\mathbb{R}^{s}$. Prove: the $n$-variable system $A^{\top}AX=A^{\top}\beta$ always has a solution.
@@ -203,8 +195,6 @@ $$
 $$
 
 The coefficient matrix and the augmented matrix have the same rank, so the system has a solution. $\blacksquare$
-
----
 
 ## 4.5-9
 
@@ -254,8 +244,6 @@ Hence all cofactors are zero, i.e. $A^{*}=0$.
 Therefore $\text{rank}\left(A^{*}\right)=0$.
 
 $\blacksquare$
-
----
 
 ## 4.5-15
 

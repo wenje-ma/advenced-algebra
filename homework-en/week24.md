@@ -22,8 +22,6 @@ $$
 
 and $\mathcal{A}\left(k\alpha\right)=k\mathcal{A}\left(\alpha\right)$.
 
----
-
 ## 4.7-1
 
 Determine whether the following rules are mappings from $\mathbb{R}$ to itself, and whether they are injective or surjective:
@@ -94,8 +92,6 @@ It is not a mapping. Because for $x\le0$, $\ln x$ is not defined, so not every $
 
 $\blacksquare$
 
----
-
 ## 4.7-4
 
 Let $S$ be a finite set. Prove: if a mapping $f:S\to S$ is injective, then $f$ must be bijective.
@@ -111,8 +107,6 @@ Since $f\left(S\right)\subseteq S$ and $\left|f\left(S\right)\right|=n=\left|S\r
 That is, $f$ is surjective.
 
 Therefore $f$ is both injective and surjective, i.e. $f$ is bijective. $\blacksquare$
-
----
 
 ## 4.7-7
 

@@ -8,8 +8,6 @@
 > 
 > A homogeneous system of $n$ equations in $n$ variables has only the zero solution if and only if its coefficient determinant is nonzero. Consequently, such a homogeneous system has a nontrivial solution if and only if its coefficient determinant is zero.
 
----
-
 ## 2.5-4
 
 For which values of $a,b$ does the following homogeneous system have a nontrivial solution?
@@ -40,8 +38,6 @@ Setting it equal to $0$ gives $b\left(1-a\right)=0$, i.e. $b=0$ or $a=1$.
 
 Hence the homogeneous system has a nontrivial solution when $b=0$ or $a=1$. $\blacksquare$
 
----
-
 ## 2.5-5
 
 For which values of $a,b$ does the following linear system have a unique solution?
@@ -61,8 +57,6 @@ By **Theorem 2.5.1 (Cramer's Rule)**, a linear system has a unique solution if a
 From the previous problem, the coefficient determinant is $b\left(1-a\right)$.
 
 Hence the system has a unique solution when $b\ne 0$ and $a\ne 1$. $\blacksquare$
-
----
 
 ## 2.5-6
 
@@ -114,8 +108,6 @@ In summary:
 - Infinitely many solutions: $a=1$ and $b=\frac{1}{2}$.
 
 $\blacksquare$
-
----
 
 ## 2.5-7
 

@@ -12,8 +12,6 @@ $$
 f\left(x\right)=h\left(x\right)g\left(x\right)+r\left(x\right),\deg r\left(x\right)< \deg g\left(x\right).
 $$
 
----
-
 ## 7.2-3(2)
 
 用 $g\left(x\right)$ 除 $f\left(x\right)$, 求商式与余式:
@@ -78,8 +76,6 @@ $$
 
 $\blacksquare$
 
----
-
 ## 7.2-4
 
 设
@@ -121,8 +117,6 @@ a-1=0,\quad a_{0}=0.
 $$
 
 所以充分必要条件是 $a=1$, $a_{0}=0$. $\blacksquare$
-
----
 
 ## 7.2-5
 

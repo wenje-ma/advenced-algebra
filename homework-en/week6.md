@@ -20,8 +20,6 @@
 > 
 > The $n\times n$ determinant $\left|A\right|$ equals the sum of the products of the entries in its $i$-th row and their cofactors, and also the sum of the products of the entries in its $j$-th column and their cofactors, i.e. $\left|A\right|=\sum_{k=1}^{n}a_{ik}A_{ik}=\sum_{k=1}^{n}a_{kj}A_{kj}$, where $A_{kj}=\left(-1\right)^{k+j}M_{kj}$ is the cofactor.
 
----
-
 ## 2.3-1(2)
 
 Compute the following determinant:
@@ -98,8 +96,6 @@ $$
 
 $\blacksquare$
 
----
-
 ## 2.3-2(2)
 
 Compute the following $n\times n$ determinant:
@@ -139,8 +135,6 @@ $$
 
 $\blacksquare$
 
----
-
 ## 2.3-3(1)
 
 Prove that
@@ -168,8 +162,6 @@ By **Property 2.3.7 (Adding a Multiple of One Row to Another Leaves the Determin
 By **Property 2.3.2 (A Common Factor of a Row Can Be Pulled Out)**, a determinant whose column is all zeros has value $0$.
 
 Hence the original determinant $=0$. $\blacksquare$
-
----
 
 ## 2.3-4(1)
 
@@ -204,8 +196,6 @@ a_{1}-\sum_{j=2}^{n}a_{j}b_{j}.
 $$
 
 $\blacksquare$
-
----
 
 ## 2.3-4(2)
 

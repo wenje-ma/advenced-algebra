@@ -24,8 +24,6 @@ $$
 > 
 > Let $A,B$ both be $n\times n$ matrices. Then $\left|AB\right|=\left|A\right|\left|B\right|$.
 
----
-
 ## 4.3-2
 
 A matrix is called row (column) full-rank if its row (column) vector group is linearly independent. Prove: if an $s\times n$ matrix $A$ has rank $r$, then there exist an $s\times r$ column full-rank matrix $B$ and an $r\times n$ row full-rank matrix $C$ such that $A=BC$.
@@ -66,8 +64,6 @@ Thus $B$ is column full-rank.
 
 Therefore $A=BC$, where $B$ is an $s\times r$ column full-rank matrix and $C$ is an $r\times n$ row full-rank matrix. $\blacksquare$
 
----
-
 ## 4.3-6
 
 Prove: if $A$ is an $n\times n$ matrix over a number field $K$, $n$ is odd, and $AA^{\top}=I$ with $\left|A\right|=1$, then $\left|I-A\right|=0$.
@@ -105,8 +101,6 @@ $$
 $$
 
 Hence $2\left|I-A\right|=0$, i.e. $\left|I-A\right|=0$. $\blacksquare$
-
----
 
 ## 4.3-7
 
@@ -173,8 +167,6 @@ $$
 $$
 
 $\blacksquare$
-
----
 
 ## 4.3-12
 

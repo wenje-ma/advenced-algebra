@@ -4,8 +4,6 @@
 > 
 > A two-equation linear system in two variables has a unique solution if and only if its coefficient determinant is nonzero; in that case the unique solution is given by the Cramer formula, i.e. two fractions whose numerators are the $2\times2$ determinants obtained by replacing the $1$st and $2$nd columns of the coefficient determinant by the constant terms of the system.
 
----
-
 ## 2.1-1(1)
 
 Find the inversion number of the permutation $315462$ and determine its parity.
@@ -29,8 +27,6 @@ $$
 
 By Inversions, the Number of Inversions, and Even/Odd Permutations, $\tau=6$ is even, so $315462$ is an even permutation. $\blacksquare$
 
----
-
 ## 2.1-1(4)
 
 Find the inversion number of the permutation $7654321$ and determine its parity.
@@ -45,8 +41,6 @@ $$
 
 By Inversions, the Number of Inversions, and Even/Odd Permutations, $\tau=21$ is odd, so $7654321$ is an odd permutation. $\blacksquare$
 
----
-
 ## 2.1-1(7)
 
 Find the inversion number of the permutation $123456789$ and determine its parity.
@@ -60,8 +54,6 @@ $$
 $$
 
 By Inversions, the Number of Inversions, and Even/Odd Permutations, $\tau=0$ is even, so $123456789$ is an even permutation. $\blacksquare$
-
----
 
 ## 2.1-2
 
@@ -94,8 +86,6 @@ $$
 $$
 
 $\blacksquare$
-
----
 
 ## 2.1-8
 

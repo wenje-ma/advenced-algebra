@@ -12,8 +12,6 @@
 > 
 > Let $\sim$ be an equivalence relation on a set $S$. The set consisting of all equivalence classes is called the quotient set of $S$ with respect to $\sim$, denoted $S/\sim$.
 
----
-
 ## 5.1-1
 
 Define a binary relation on the plane $S$ (a set of points):
@@ -35,8 +33,6 @@ By **Definition 5.1.2 (Equivalence Relation)**, we verify reflexivity, symmetry 
 **Transitivity**: if $P\left(x_{1},y_{1}\right)\sim P\left(x_{2},y_{2}\right)$ and $P\left(x_{2},y_{2}\right)\sim P\left(x_{3},y_{3}\right)$, then $x_{1}=x_{2}$ and $x_{2}=x_{3}$, hence $x_{1}=x_{3}$, and so $P\left(x_{1},y_{1}\right)\sim P\left(x_{3},y_{3}\right)$.
 
 Therefore $\sim$ satisfies all conditions of **Definition 5.1.2 (Equivalence Relation)**, and hence is an equivalence relation on $S$. $\blacksquare$
-
----
 
 ## 5.1-4
 

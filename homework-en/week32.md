@@ -18,8 +18,6 @@ where $p$ is the positive index of inertia and $r$ is the rank of the quadratic 
 > 
 > Every quadratic form over a number field $K$ is equivalent to a quadratic form containing only square terms.
 
----
-
 ## 6.1-3(1)
 
 Make a nondegenerate linear substitution to reduce the following quadratic form over a number field $K$ to canonical form, and write down the substitution:
@@ -75,8 +73,6 @@ $$
 
 $f=y_{1}^{2}+y_{2}^{2}-2y_{3}^{2}$ is the canonical form. $\blacksquare$
 
----
-
 ## 6.1-5
 
 Let $A$ be an $n\times n$ matrix over a number field $K$. Prove: $A$ is skew-symmetric if and only if $\alpha^{\top}A\alpha=0$ for every column vector $\alpha$ in $K^{n}$.
@@ -120,8 +116,6 @@ That is, for every column vector $\alpha$, $\alpha^{\top}\left(A+A^{\top}\right)
 Since $\left(A+A^{\top}\right)$ is symmetric and $\alpha^{\top}\left(A+A^{\top}\right)\alpha=0$ for every $\alpha$, by the property of symmetric matrices (if a symmetric matrix satisfies $\alpha^{\top}A\alpha=0$ for all $\alpha$, then $A=0$), we get $A+A^{\top}=0$.
 
 Therefore $A^{\top}=-A$, i.e. $A$ is skew-symmetric. $\blacksquare$
-
----
 
 ## 6.1-8(1)
 
@@ -177,8 +171,6 @@ C=\left[\begin{array}{rrr}
 $$
 
 $\blacksquare$
-
----
 
 ## 6.1-11
 

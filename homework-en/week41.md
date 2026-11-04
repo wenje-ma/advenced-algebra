@@ -14,8 +14,6 @@ where $a_{i_{1}i_{2}\ldots i_{n}}\in K$ and $i_{1},i_{2},\ldots,i_{n}$ are nonne
 > 
 > In $K\left[x_{1},x_{2},\ldots,x_{n}\right]$, the leading term of the product of two nonzero polynomials equals the product of their leading terms. Hence the product of two nonzero polynomials is again nonzero, i.e. $K\left[x_{1},x_{2},\ldots,x_{n}\right]$ has no zero divisors.
 
----
-
 ## 7.9-3
 
 Let $f,g\in K\left[x_{1},\ldots,x_{n}\right]$ with $g\ne0$. Prove: if for every tuple $c_{1},\ldots,c_{n}\in K$ with $g\left(c_{1},\ldots,c_{n}\right)\ne0$ we have $f\left(c_{1},\ldots,c_{n}\right)=0$, then $f\left(x_{1},\ldots,x_{n}\right)=0$.
@@ -82,8 +80,6 @@ So $f\left(c_{1},\ldots,c_{n-1},x_{n}\right)$ has infinitely many roots.
 But $f\left(c_{1},\ldots,c_{n-1},x_{n}\right)$ is a nonzero univariate polynomial and has only finitely many roots. Contradiction.
 
 Therefore $f\left(x_{1},\ldots,x_{n}\right)=0$. $\blacksquare$
-
----
 
 ## 7.9-4(2)
 

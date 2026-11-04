@@ -12,8 +12,6 @@ $$
 f\left(x\right)=h\left(x\right)g\left(x\right)+r\left(x\right),\deg r\left(x\right)< \deg g\left(x\right).
 $$
 
----
-
 ## 7.2-3(2)
 
 Divide $f\left(x\right)$ by $g\left(x\right)$ and find the quotient and remainder:
@@ -78,8 +76,6 @@ $$
 
 $\blacksquare$
 
----
-
 ## 7.2-4
 
 Let
@@ -121,8 +117,6 @@ a-1=0,\quad a_{0}=0.
 $$
 
 Hence the necessary and sufficient condition is $a=1$, $a_{0}=0$. $\blacksquare$
-
----
 
 ## 7.2-5
 

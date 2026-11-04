@@ -16,8 +16,6 @@
 > 
 > A matrix $A$ satisfying $A^{\top}=-A$ is called a skew-symmetric matrix.
 
----
-
 ## 4.2-2
 
 Prove: the product of two $n\times n$ lower triangular matrices is still an $n\times n$ lower triangular matrix, and the diagonal entries of the product equal the products of the corresponding diagonal entries of the factors.
@@ -51,8 +49,6 @@ c_{ii}=a_{ii}b_{ii}.
 $$
 
 $\blacksquare$
-
----
 
 ## 4.2-3
 
@@ -93,8 +89,6 @@ Hence $a_{ki}=0$ (when $k\ne i$).
 This holds for all $i$, so all off-diagonal entries of $A$ are $0$.
 
 Therefore $A=kI$, i.e. $A$ is a scalar matrix. $\blacksquare$
-
----
 
 ## 4.2-8
 
@@ -143,8 +137,6 @@ Hence $S_{1}-S_{2}=0$ and $K_{2}-K_{1}=0$, i.e. $S_{1}=S_{2}$ and $K_{1}=K_{2}$.
 
 The representation is unique. $\blacksquare$
 
----
-
 ## 4.2-9
 
 Prove: if $A$ is an $n\times n$ real symmetric matrix and $A^{2}=0$, then $A=0$.
@@ -176,8 +168,6 @@ $$
 Since the $a_{ik}$ are all real, $a_{ik}^{2}\ge0$.
 
 Therefore each $a_{ik}=0$, i.e. $A=0$. $\blacksquare$
-
----
 
 ## 4.2-10
 

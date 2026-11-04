@@ -4,8 +4,6 @@
 > 
 > Let $K$ be a subset of the set of complex numbers. If $K$ satisfies: (1) $0,1\in K$; (2) it is closed under addition, subtraction, multiplication, and division (with nonzero divisor), then $K$ is called a number field.
 
----
-
 ## 1.3-1
 
 Let

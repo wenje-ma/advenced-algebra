@@ -14,8 +14,6 @@ Then $\beta_{1},\beta_{2},\cdots,\beta_{m}$ is an orthogonal vector group equiva
 > 
 > For any $n\times n$ real symmetric matrix $A$, there exists an $n\times n$ orthogonal matrix $T$ such that $T^{-1}AT$ is a diagonal matrix.
 
----
-
 ## 5.7-1(1)
 
 For the following real symmetric matrix $A$, find an orthogonal matrix $T$ such that $T^{\top}AT$ is diagonal:
@@ -122,8 +120,6 @@ $$
 
 $\blacksquare$
 
----
-
 ## 5.7-1(3)
 
 For the following real symmetric matrix $A$, find an orthogonal matrix $T$ such that $T^{\top}AT$ is diagonal:
@@ -194,8 +190,6 @@ $$
 
 $\blacksquare$
 
----
-
 ## 5.7-2
 
 Prove: if $n\times n$ real symmetric matrices $A,B$ have the same characteristic polynomial, then $A$ and $B$ are similar.
@@ -221,8 +215,6 @@ A\sim D_{A}=D_{B}\sim B.
 $$
 
 Hence $A$ and $B$ are similar. $\blacksquare$
-
----
 
 ## 5.7-3
 

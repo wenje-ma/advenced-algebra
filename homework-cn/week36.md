@@ -12,8 +12,6 @@
 > 
 > $K\left[x\right]$ 中每一个次数大于零的多项式都能唯一地分解成数域 $K$ 上有限多个不可约多项式的乘积.
 
----
-
 ## 7.4-2(2)
 
 分别在复数域, 实数域和有理数域上分解下列多项式为不可约因式的乘积:
@@ -82,8 +80,6 @@ $$
 
 以上分解都是唯一的. $\blacksquare$
 
----
-
 ## 7.4-3
 
 证明: 在 $K\left[x\right]$ 中, $g^{2}\left(x\right)\mid f^{2}\left(x\right)$ 当且仅当 $g\left(x\right)\mid f\left(x\right)$.
@@ -117,8 +113,6 @@ $$
 即 $g^{2}\mid f^{2}$.
 
 $g^{2}\left(x\right)\mid f^{2}\left(x\right)$ 当且仅当 $g\left(x\right)\mid f\left(x\right)$. $\blacksquare$
-
----
 
 ## 7.4-7
 

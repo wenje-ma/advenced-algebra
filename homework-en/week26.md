@@ -16,8 +16,6 @@ $$
 > 
 > Two $s\times n$ matrices $A$ and $B$ over a number field $K$ are equivalent if and only if they have the same rank.
 
----
-
 ## 5.2-1(1)
 
 Find the canonical form under equivalence of the following matrix:
@@ -78,8 +76,6 @@ $$
 
 $\blacksquare$
 
----
-
 ## 5.2-1(3)
 
 Find the canonical form under equivalence of the following matrix:
@@ -130,8 +126,6 @@ $$
 
 $\blacksquare$
 
----
-
 ## 5.2-4
 
 Prove: every matrix of rank $r$ ( $r> 0$ ) can be written as the sum of $r$ matrices of rank $1$.
@@ -171,8 +165,6 @@ $$
 $$
 
 Therefore $A$ can be written as the sum of $r$ matrices of rank $1$. $\blacksquare$
-
----
 
 ## 5.2-5
 

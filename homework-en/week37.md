@@ -8,8 +8,6 @@
 > 
 > Let $K$ be a number field. A polynomial $f\left(x\right)$ of positive degree in $K\left[x\right]$ has no multiple factors if and only if $f\left(x\right)$ is coprime to its derivative $f'\left(x\right)$.
 
----
-
 ## 7.5-2
 
 What conditions should $a,b$ satisfy for the following real-coefficient polynomial to have multiple factors:
@@ -57,8 +55,6 @@ b=0\text{ or } b=a^{2}.
 $$
 
 $\blacksquare$
-
----
 
 ## 7.5-6
 

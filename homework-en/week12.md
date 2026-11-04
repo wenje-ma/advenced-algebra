@@ -24,8 +24,6 @@
 > 
 > Equivalent vector groups have the same rank.
 
----
-
 ## 3.3-1
 
 Given the vector group
@@ -62,8 +60,6 @@ $$
 
 By **Definition 3.3.1 (Maximal Linearly Independent Subset)**, $\alpha_{1},\alpha_{2}$ are therefore a maximal linearly independent subset. By **Definition 3.3.3 (Rank of a Vector Group)**, the rank is $2$. $\blacksquare$
 
----
-
 ## 3.3-7
 
 Prove: if a vector group of rank $r$ can be linearly represented by $r$ of its own vectors, then these $r$ vectors form a maximal linearly independent subset of the group.
@@ -83,8 +79,6 @@ By **Proposition 3.3.6 (Linear Independence iff Rank Equals the Number of Vector
 Also, since (I) can be represented by $\alpha_{1},\cdots,\alpha_{r}$, adding any one remaining vector of (I) to $\alpha_{1},\cdots,\alpha_{r}$ gives a linearly dependent group (otherwise, by **Proposition 3.3.7 (Comparison of Ranks)**, the rank would exceed $r$).
 
 Hence $\alpha_{1},\cdots,\alpha_{r}$ is a maximal linearly independent subset of (I). $\blacksquare$
-
----
 
 ## 3.3-8
 
@@ -119,8 +113,6 @@ In $K^{n}$, $n$ linearly independent vectors form a basis of $K^{n}$.
 Hence every $\beta\in K^{n}$ can be represented by $\alpha_{1},\cdots,\alpha_{n}$, i.e. the system is solvable.
 
 $\blacksquare$
-
----
 
 ## 3.3-11
 

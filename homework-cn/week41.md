@@ -14,8 +14,6 @@ $$
 > 
 > 在 $K\left[x_{1},x_{2},\ldots,x_{n}\right]$ 中两个非零多项式的乘积的首项等于它们的首项的乘积. 从而两个非零多项式的乘积仍是非零多项式, 即 $K\left[x_{1},x_{2},\ldots,x_{n}\right]$ 是无零因子环.
 
----
-
 ## 7.9-3
 
 设 $f,g\in K\left[x_{1},\ldots,x_{n}\right]$, 且 $g\ne0$. 证明: 如果对于使 $g\left(c_{1},\ldots,c_{n}\right)\ne0$ 的任意一组元素 $c_{1},\ldots,c_{n}\in K$, 都有 $f\left(c_{1},\ldots,c_{n}\right)=0$, 则 $f\left(x_{1},\ldots,x_{n}\right)=0$.
@@ -82,8 +80,6 @@ $$
 但 $f\left(c_{1},\ldots,c_{n-1},x_{n}\right)$ 是一个非零一元多项式, 只有有限多个根. 矛盾.
 
 因此 $f\left(x_{1},\ldots,x_{n}\right)=0$. $\blacksquare$
-
----
 
 ## 7.9-4(2)
 

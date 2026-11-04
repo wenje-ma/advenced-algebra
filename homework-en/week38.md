@@ -12,8 +12,6 @@
 > 
 > In $K\left[x\right]$, $x-a$ divides $f\left(x\right)$ if and only if $f\left(a\right)=0$.
 
----
-
 ## 7.6-1
 
 Let
@@ -91,8 +89,6 @@ Remainder $3\ne0$.
 
 Hence $-2$ is a triple root of $f\left(x\right)$. $\blacksquare$
 
----
-
 ## 7.6-4
 
 Let
@@ -152,8 +148,6 @@ $$
 $$
 
 Hence $a=4$, $b=3$. $\blacksquare$
-
----
 
 ## 7.6-8
 

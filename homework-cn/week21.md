@@ -16,8 +16,6 @@ $$
 A^{-1}=\frac{1}{\left|A\right|}A^{*}.
 $$
 
----
-
 ## 4.4-4
 
 证明: 如果矩阵 $A$ 可逆, 则 $A^{*}$ 也可逆; 并且求 $\left(A^{*}\right)^{-1}$.
@@ -52,8 +50,6 @@ $$
 
 $\blacksquare$
 
----
-
 ## 4.4-5
 
 证明: 如果 $A^{3}=0$, 则 $I-A$ 可逆; 并且求 $\left(I-A\right)^{-1}$.
@@ -83,8 +79,6 @@ $$
 $$
 
 $\blacksquare$
-
----
 
 ## 4.4-9(4)
 
@@ -130,8 +124,6 @@ A^{-1}=\frac{1}{4}A=\left[\begin{array}{rrrr}
 $$
 
 $\blacksquare$
-
----
 
 ## 4.4-10(1)
 
@@ -216,8 +208,6 @@ X=\frac{1}{7}\left[\begin{array}{rr}
 $$
 
 $\blacksquare$
-
----
 
 ## 4.4-11
 

@@ -16,8 +16,6 @@ $$
 A^{-1}=\frac{1}{\left|A\right|}A^{*}.
 $$
 
----
-
 ## 4.4-4
 
 Prove: if $A$ is invertible, then $A^{*}$ is also invertible; and find $\left(A^{*}\right)^{-1}$.
@@ -52,8 +50,6 @@ $$
 
 $\blacksquare$
 
----
-
 ## 4.4-5
 
 Prove: if $A^{3}=0$, then $I-A$ is invertible; and find $\left(I-A\right)^{-1}$.
@@ -83,8 +79,6 @@ $$
 $$
 
 $\blacksquare$
-
----
 
 ## 4.4-9(4)
 
@@ -130,8 +124,6 @@ A^{-1}=\frac{1}{4}A=\left[\begin{array}{rrrr}
 $$
 
 $\blacksquare$
-
----
 
 ## 4.4-10(1)
 
@@ -216,8 +208,6 @@ X=\frac{1}{7}\left[\begin{array}{rr}
 $$
 
 $\blacksquare$
-
----
 
 ## 4.4-11
 

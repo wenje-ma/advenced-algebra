@@ -18,8 +18,6 @@ $$
 > 
 > In an $n\times n$ determinant $\left|A\right|$, fix $k$ rows; then the sum of the products of all $k$-minors formed by the entries in these $k$ rows and their own cofactors equals $\left|A\right|$.
 
----
-
 ## 2.6-3
 
 Compute the following determinant:
@@ -59,8 +57,6 @@ $$
 $$
 
 $\blacksquare$
-
----
 
 ## 2.6-4(1)
 

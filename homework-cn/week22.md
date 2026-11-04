@@ -32,8 +32,6 @@ $$
 \text{rank}\left(A^{\top}A\right)=\text{rank}\left(AA^{\top}\right)=\text{rank}\left(A\right).
 $$
 
----
-
 ## 4.5-1
 
 证明: 设 $A,B$ 分别是 $s\times n$, $n\times m$ 矩阵. 如果 $AB=0$, 则 $\text{rank}\left(A\right)+\text{rank}\left(B\right)\le n$.
@@ -61,8 +59,6 @@ $$
 $$
 
 $\blacksquare$
-
----
 
 ## 4.5-4
 
@@ -112,8 +108,6 @@ $$
 
 $\blacksquare$
 
----
-
 ## 4.5-5
 
 证明: 如果 $n$ 级矩阵 $A$ 满足 $A^{2}=A$ (此时称 $A$ 是幂等矩阵), 则
@@ -162,8 +156,6 @@ $$
 
 $\blacksquare$
 
----
-
 ## 4.5-6
 
 设 $A$ 是实数域上的 $s\times n$ 矩阵, $\beta$ 是 $\mathbb{R}^{s}$ 的任意一个列向量. 证明: $n$ 元线性方程组 $A^{\top}AX=A^{\top}\beta$ 一定有解.
@@ -203,8 +195,6 @@ $$
 $$
 
 系数矩阵与增广矩阵有相同的秩, 故该方程组有解. $\blacksquare$
-
----
 
 ## 4.5-9
 
@@ -254,8 +244,6 @@ $$
 因此 $\text{rank}\left(A^{*}\right)=0$.
 
 $\blacksquare$
-
----
 
 ## 4.5-15
 

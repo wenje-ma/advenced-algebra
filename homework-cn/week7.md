@@ -12,8 +12,6 @@ $$
 \left|A\right|=a_{i1}A_{i1}+a_{i2}A_{i2}+\cdots+a_{in}A_{in}.
 $$
 
----
-
 ## 2.4-2
 
 计算下述 $n$ 阶行列式 $\left(n\ge2\right)$:
@@ -83,8 +81,6 @@ $$
 
 $\blacksquare$
 
----
-
 ## 2.4-4
 
 用数学归纳法证明: 对一切 $n\ge2$, 有
@@ -137,8 +133,6 @@ D_{n}=x\left(x^{n-1}+a_{n-1}x^{n-2}+\cdots+a_{2}x+a_{1}\right)+\left(-1\right)^{
 $$
 
 由数学归纳法, 结论对一切 $n\ge 2$ 成立. $\blacksquare$
-
----
 
 ## 2.4-8
 
@@ -197,8 +191,6 @@ D=-1\cdot2\cdot\left(n-2\right)!=-2\left(n-2\right)!.
 $$
 
 $\blacksquare$
-
----
 
 ## 2.4-10
 
@@ -282,8 +274,6 @@ $$
 
 $\blacksquare$
 
----
-
 ## 2.4-11
 
 设数域 $K$ 上 $n$ 级矩阵 $A=\left(a_{ij}\right)$, 它的 $\left(i,j\right)$ 元的代数余子式记作 $A_{ij}$. 把 $A$ 的每个元素都加上同一个数 $t$, 得到的矩阵记作 $A\left(t\right)=\left(a_{ij}+t\right)$. 证明:
@@ -331,8 +321,6 @@ $$
 $$
 
 $\blacksquare$
-
----
 
 ## 2.4-12
 

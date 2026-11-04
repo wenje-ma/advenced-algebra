@@ -4,8 +4,6 @@
 > 
 > If an $n$-variable inhomogeneous linear system over a number field $K$ is solvable, then its solution set is $U=\gamma_{0}+W$, where $\gamma_{0}$ is a particular solution and $W$ is the solution space of the derived homogeneous system.
 
----
-
 ## 3.8-1(1)
 
 Find the solution set of the following inhomogeneous linear system over a number field $K$:
@@ -68,8 +66,6 @@ $$
 
 $\blacksquare$
 
----
-
 ## 3.8-2
 
 Prove: an inhomogeneous linear system of $n$ equations in $n$ variables has a unique solution if and only if its derived homogeneous system has only the zero solution.
@@ -93,8 +89,6 @@ The derived system $Ax=0$ has coefficient matrix of rank $n$ and $n$ unknowns, s
 $A$ is an $n\times n$ matrix with $\text{rank}\left(A\right)=n$, so $\left|A\right|\ne0$.
 
 The derived system having only the zero solution means the solution space $W=\left\{0\right\}$, so the inhomogeneous system's solution set $U=\gamma_{0}+W=\left\{\gamma_{0}\right\}$, i.e. it has a unique solution. $\blacksquare$
-
----
 
 ## 3.8-4
 

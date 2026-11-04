@@ -16,8 +16,6 @@ $$
 > 
 > In $K\left[x\right]$, if the greatest common divisor of $f\left(x\right)$ and $g\left(x\right)$ is a zero-degree polynomial, then $f\left(x\right)$ and $g\left(x\right)$ are said to be coprime.
 
----
-
 ## 7.3-1(1)
 
 Find the greatest common divisor of $f\left(x\right)$ and $g\left(x\right)$, and express $\left(f\left(x\right),g\left(x\right)\right)$ as a linear combination of $f\left(x\right)$ and $g\left(x\right)$:
@@ -103,8 +101,6 @@ $$
 
 $\blacksquare$
 
----
-
 ## 7.3-5
 
 Prove: in $K\left[x\right]$, if $f\left(x\right),g\left(x\right)$ are not both zero and
@@ -136,8 +132,6 @@ $$
 This shows that a linear combination of $u\left(x\right)$ and $v\left(x\right)$ equals $1$.
 
 Hence $\left(u\left(x\right),v\left(x\right)\right)=1$. $\blacksquare$
-
----
 
 ## 7.3-7
 
@@ -172,8 +166,6 @@ Hence $d_{1}\mid d_{2}$.
 Therefore $d_{1}\sim d_{2}$.
 
 Both are monic, so $d_{1}=d_{2}$. $\blacksquare$
-
----
 
 ## 7.3-9
 
@@ -216,8 +208,6 @@ Since $\left(f,g\right)=1$, we have $g\mid u$.
 But $\deg u< \deg g$, so $u=0$, a contradiction.
 
 Therefore $f$ and $g$ are not coprime. $\blacksquare$
-
----
 
 ## 7.3-11
 
@@ -278,8 +268,6 @@ $$
 $$
 
 $\blacksquare$
-
----
 
 ## 7.3-12
 

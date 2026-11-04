@@ -12,8 +12,6 @@ $$
 \left|A\right|=a_{i1}A_{i1}+a_{i2}A_{i2}+\cdots+a_{in}A_{in}.
 $$
 
----
-
 ## 2.4-2
 
 Compute the following $n\times n$ determinant $\left(n\ge2\right)$:
@@ -83,8 +81,6 @@ $$
 
 $\blacksquare$
 
----
-
 ## 2.4-4
 
 Prove by mathematical induction that, for all $n\ge2$,
@@ -137,8 +133,6 @@ D_{n}=x\left(x^{n-1}+a_{n-1}x^{n-2}+\cdots+a_{2}x+a_{1}\right)+\left(-1\right)^{
 $$
 
 By mathematical induction, the conclusion holds for all $n\ge 2$. $\blacksquare$
-
----
 
 ## 2.4-8
 
@@ -197,8 +191,6 @@ D=-1\cdot2\cdot\left(n-2\right)!=-2\left(n-2\right)!.
 $$
 
 $\blacksquare$
-
----
 
 ## 2.4-10
 
@@ -282,8 +274,6 @@ $$
 
 $\blacksquare$
 
----
-
 ## 2.4-11
 
 Let $A=\left(a_{ij}\right)$ be an $n\times n$ matrix over a number field $K$, and denote the cofactor of its $\left(i,j\right)$-entry by $A_{ij}$. Adding the same number $t$ to every entry of $A$, denote the resulting matrix by $A\left(t\right)=\left(a_{ij}+t\right)$. Prove that
@@ -331,8 +321,6 @@ $$
 $$
 
 $\blacksquare$
-
----
 
 ## 2.4-12
 

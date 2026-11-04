@@ -38,8 +38,6 @@ $$
 
 then $f$ is called a symmetric polynomial over $K$.
 
----
-
 ## 7.10-5
 
 In $K\left[x_{1},x_{2},x_{3}\right]$, use Newton's identities to express the power sums $S_{2},S_{3},S_{4}$ in terms of elementary symmetric polynomials.
@@ -111,8 +109,6 @@ S_{4}=\sigma_{1}^{4}-4\sigma_{1}^{2}\sigma_{2}+2\sigma_{2}^{2}+4\sigma_{1}\sigma
 $$
 
 $\blacksquare$
-
----
 
 ## 7.10-7
 

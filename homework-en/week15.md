@@ -23,8 +23,6 @@ is solvable if and only if its coefficient matrix and its augmented matrix have 
 > 
 > Suppose a linear system is solvable. If the rank of the coefficient matrix equals the number $n$ of unknowns, the system has a unique solution; if the rank is less than $n$, the system has infinitely many solutions.
 
----
-
 ## 3.6-2
 
 Determine whether the following linear system is solvable and how many solutions it has.
@@ -78,8 +76,6 @@ Thus $\text{rank}\left(\overline{A}\right)=s=\text{rank}\left(A\right)$.
 By **Theorem 3.6.1 (Solvability Criterion for a Linear System)**, the system is therefore solvable.
 
 Also, $\text{rank}\left(A\right)=s< n$ (the number of unknowns); by **Theorem 3.6.2 (Criterion for the Number of Solutions)**, the system therefore has infinitely many solutions. $\blacksquare$
-
----
 
 ## 3.6-4
 

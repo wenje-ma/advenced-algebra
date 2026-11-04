@@ -4,8 +4,6 @@
 > 
 > Reduce the augmented matrix of an $n$-variable linear system to a row echelon matrix by elementary row operations: (1) if the corresponding echelon system exhibits $0=d$ ($d\ne 0$), then the original system has no solution; (2) if $0=d$ does not appear, then there is a solution: when the number of nonzero rows of the echelon matrix equals the number $n$ of unknowns there is a unique solution, and when the number of nonzero rows is $r< n$ there are infinitely many solutions.
 
----
-
 ## 1.2-2
 
 For which value of $a$ does the following linear system have a unique solution? For which value of $a$ does this system have no solution?
@@ -47,8 +45,6 @@ By **Theorem 1.2.1 (Criterion for the Number of Solutions of a Linear System)**,
 By **Theorem 1.2.1 (Criterion for the Number of Solutions of a Linear System)**, when $-3a-2=0$, i.e. $a=-\frac{2}{3}$, the $3$rd row becomes $0=18$, exhibiting $0=d$ ($d\ne 0$), so the system has no solution.
 
 In summary, there is a unique solution when $a\ne-\frac{2}{3}$, and no solution when $a=-\frac{2}{3}$. $\blacksquare$
-
----
 
 ## 1.2-5
 
@@ -127,8 +123,6 @@ $$
 
 where $c_{1},c_{2},c_{3}$ are arbitrary constants. $\blacksquare$
 
----
-
 ## 1.2-6
 
 Does there exist a quadratic function $f\left(x\right)=ax^{2}+bx+c$ whose graph passes through the following $4$ points:
@@ -170,8 +164,6 @@ $$
 $$
 
 Hence the $3$rd equation is not satisfied. Therefore no such quadratic function exists. $\blacksquare$
-
----
 
 ## 1.2-8
 

@@ -8,8 +8,6 @@
 > 
 > Let $A$ be a nonzero $s\times n$ matrix over a number field $K$. Then the matrix equation $AXA=A$ always has a solution.
 
----
-
 ## 5.3-1
 
 Let $A$ be an $s\times n$ matrix over a number field $K$. Prove: if $A$ is row full-rank, then for every generalized inverse $A^{-}$ of $A$, $AA^{-}=I_{s}$.

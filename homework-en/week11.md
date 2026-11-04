@@ -21,8 +21,6 @@ $$
 > 
 > A vector group $\alpha_{1},\cdots,\alpha_{s}$ in $K^{n}$ is called linearly independent if it is not linearly dependent. That is, if from $k_{1}\alpha_{1}+\cdots+k_{s}\alpha_{s}=0$ one can deduce that all coefficients are $0$, then the vector group is linearly independent.
 
----
-
 ## 3.2-2(1)
 
 Determine whether the following vector groups are linearly dependent or linearly independent. If linearly dependent, find one vector that can be linearly represented by the others, and write down one such expression.
@@ -56,8 +54,6 @@ $$
 The number of nonzero rows of the echelon matrix is $3$, equal to the number of unknowns $3$, so the homogeneous system has only the zero solution.
 
 By **Definition 3.2.2 (Linear Independence)**, $\alpha_{1},\alpha_{2},\alpha_{3}$ are therefore linearly independent. $\blacksquare$
-
----
 
 ## 3.2-2(2)
 
@@ -123,8 +119,6 @@ $$
 $$
 
 By **Definition 3.2.1 (Linear Dependence)**, the homogeneous system has a nontrivial solution, so $\alpha_{1},\alpha_{2},\alpha_{3},\alpha_{4}$ are linearly dependent. $\blacksquare$
-
----
 
 ## 3.2-6
 
@@ -195,8 +189,6 @@ $$
 
 There exist numbers $1,-1,1,-1$, not all zero, making the above identity hold, so the vector group is linearly dependent. $\blacksquare$
 
----
-
 ## 3.2-7
 
 Prove: if the vector $\beta$ can be linearly represented by the vector group $\alpha_{1},\cdots,\alpha_{s}$, then this representation is unique if and only if $\alpha_{1},\cdots,\alpha_{s}$ is linearly independent.
@@ -237,8 +229,6 @@ $$
 which contradicts the uniqueness of the representation.
 
 The assumption is false, so $\alpha_{1},\cdots,\alpha_{s}$ is linearly independent. $\blacksquare$
-
----
 
 ## 3.2-9
 
@@ -283,8 +273,6 @@ $$
 This shows $\alpha_{i}$ can be represented by the preceding vectors, contradicting the hypothesis.
 
 The assumption is false, so $\alpha_{1},\cdots,\alpha_{s}$ is linearly independent. $\blacksquare$
-
----
 
 ## 3.2-11
 

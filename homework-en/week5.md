@@ -13,8 +13,6 @@ a_{n1} & a_{n2} & \cdots & a_{nn}
 \end{array}\right|=\sum_{j_{1}j_{2}\cdots j_{n}}\left(-1\right)^{\tau\left(j_{1}j_{2}\cdots j_{n}\right)}a_{1j_{1}}a_{2j_{2}}\cdots a_{nj_{n}}.
 $$
 
----
-
 ## 2.2-1(3)
 
 Compute the following determinant by the definition:
@@ -49,8 +47,6 @@ $$
 
 $\blacksquare$
 
----
-
 ## 2.2-1(4)
 
 Compute the following determinant by the definition:
@@ -84,8 +80,6 @@ $$
 $$
 
 $\blacksquare$
-
----
 
 ## 2.2-1(5)
 
@@ -129,8 +123,6 @@ $$
 
 $\blacksquare$
 
----
-
 ## 2.2-3
 
 Compute by the definition of the determinant:
@@ -154,8 +146,6 @@ By **Definition 2.2.1 ($n\times n$ Determinant)**, in rows $3,4,5$ only the entr
 Therefore there is no nonzero term satisfying the conditions, and the determinant equals $0$.
 
 $\blacksquare$
-
----
 
 ## 2.2-5
 

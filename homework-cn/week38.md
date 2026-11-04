@@ -12,8 +12,6 @@
 > 
 > 在 $K\left[x\right]$ 中, $x-a$ 整除 $f\left(x\right)$ 当且仅当 $f\left(a\right)=0$.
 
----
-
 ## 7.6-1
 
 设
@@ -91,8 +89,6 @@ $$
 
 因此 $-2$ 是 $f\left(x\right)$ 的 $3$ 重根. $\blacksquare$
 
----
-
 ## 7.6-4
 
 设
@@ -152,8 +148,6 @@ $$
 $$
 
 因此 $a=4$, $b=3$. $\blacksquare$
-
----
 
 ## 7.6-8
 

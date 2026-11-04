@@ -24,8 +24,6 @@ $$
 > 
 > 设 $A,B$ 都是 $n$ 级矩阵, 则 $\left|AB\right|=\left|A\right|\left|B\right|$.
 
----
-
 ## 4.3-2
 
 一个矩阵称为行 (列) 满秩矩阵, 如果它的行 (列) 向量组是线性无关的. 证明: 如果一个 $s\times n$ 矩阵 $A$ 的秩为 $r$, 则有 $s\times r$ 的列满秩矩阵 $B$ 和 $r\times n$ 的行满秩矩阵 $C$, 使得 $A=BC$.
@@ -66,8 +64,6 @@ $$
 
 因此 $A=BC$, 其中 $B$ 是 $s\times r$ 列满秩矩阵, $C$ 是 $r\times n$ 行满秩矩阵. $\blacksquare$
 
----
-
 ## 4.3-6
 
 证明: 如果 $A$ 是数域 $K$ 上 $n$ 级矩阵, $n$ 是奇数, 且满足 $AA^{\top}=I$, $\left|A\right|=1$, 则 $\left|I-A\right|=0$.
@@ -105,8 +101,6 @@ $$
 $$
 
 所以 $2\left|I-A\right|=0$, 即 $\left|I-A\right|=0$. $\blacksquare$
-
----
 
 ## 4.3-7
 
@@ -173,8 +167,6 @@ $$
 $$
 
 $\blacksquare$
-
----
 
 ## 4.3-12
 

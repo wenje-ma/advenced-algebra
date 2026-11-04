@@ -24,8 +24,6 @@ which is called the standard inner product on $\mathbb{R}^{n}$.
 > 
 > In the Euclidean space $\mathbb{R}^{n}$, an orthogonal vector group is always linearly independent.
 
----
-
 ## 4.6-1(3)
 
 Determine whether the following matrix is orthogonal:
@@ -77,8 +75,6 @@ $$
 
 Hence $A^{\top}A=I$, and by **Definition 4.6.1 (Orthogonal Matrix)**, $A$ is orthogonal. $\blacksquare$
 
----
-
 ## 4.6-1(8)
 
 Determine whether the following matrix is orthogonal:
@@ -110,8 +106,6 @@ $$
 
 Clearly $A^{\top}A\ne I$, and by **Definition 4.6.1 (Orthogonal Matrix)**, $A$ is not orthogonal. $\blacksquare$
 
----
-
 ## 4.6-3
 
 Prove: if $A$ is an $n\times n$ real symmetric matrix and $T$ is an $n\times n$ orthogonal matrix, then $T^{-1}AT$ is symmetric.
@@ -141,8 +135,6 @@ $$
 $$
 
 Therefore $T^{-1}AT$ is symmetric. $\blacksquare$
-
----
 
 ## 4.6-5
 
@@ -185,8 +177,6 @@ Since $A_{ii}\ne0$, $A_{ij}=0$.
 The induction is complete. Therefore $A$ is diagonal.
 
 From $A^{\top}A=I$, $A_{ii}^{2}=1$, hence $A_{ii}=\pm1$. $\blacksquare$
-
----
 
 ## 4.6-12
 
@@ -248,8 +238,6 @@ $$
 $$
 
 $\blacksquare$
-
----
 
 ## 4.6-14
 

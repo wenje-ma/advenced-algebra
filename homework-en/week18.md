@@ -12,8 +12,6 @@
 > 
 > Let $A=\left(a_{ij}\right)_{s\times n}$ and $B=\left(b_{ij}\right)_{n\times m}$, and set $C=\left(c_{ij}\right)_{s\times m}$ with $c_{ij}=\sum_{k=1}^{n}a_{ik}b_{kj}$. Then $C$ is called the product of $A$ and $B$, denoted $C=AB$.
 
----
-
 ## 4.1-1
 
 Let
@@ -46,8 +44,6 @@ A+B=\left[\begin{array}{ccc}
 $$
 
 $\blacksquare$
-
----
 
 ## 4.1-3
 
@@ -86,8 +82,6 @@ M=\left(k-\lambda\right)I+\lambda J.
 $$
 
 $\blacksquare$
-
----
 
 ## 4.1-4(1)
 
@@ -133,8 +127,6 @@ $$
 
 $\blacksquare$
 
----
-
 ## 4.1-4(2)
 
 Compute:
@@ -174,8 +166,6 @@ $$
 $$
 
 $\blacksquare$
-
----
 
 ## 4.1-4(3)
 
@@ -217,8 +207,6 @@ $$
 
 $\blacksquare$
 
----
-
 ## 4.1-4(8)
 
 Compute:
@@ -249,8 +237,6 @@ d_{3}c_{1} & d_{3}c_{2} & d_{3}c_{3}
 $$
 
 $\blacksquare$
-
----
 
 ## 4.1-4(9)
 
@@ -283,8 +269,6 @@ $$
 
 $\blacksquare$
 
----
-
 ## 4.1-4(13)
 
 Compute:
@@ -316,8 +300,6 @@ $$
 
 $\blacksquare$
 
----
-
 ## 4.1-4(14)
 
 Compute:
@@ -348,8 +330,6 @@ c_{2} & c_{1} & c_{3}
 $$
 
 $\blacksquare$
-
----
 
 ## 4.1-6
 
@@ -384,8 +364,6 @@ $$
 $$
 
 $\blacksquare$
-
----
 
 ## 4.1-7(5)
 
@@ -431,8 +409,6 @@ Therefore:
 
 $\blacksquare$
 
----
-
 ## 4.1-7(6)
 
 Compute:
@@ -473,8 +449,6 @@ A^{n}
 $$
 
 When $n=1$, the above also holds (note $\lambda^{0}=1$, and the third term is $0$). $\blacksquare$
-
----
 
 ## 4.1-10
 

@@ -2,11 +2,11 @@
 
 $$
 \left|\begin{array}{cccc}
-1 & 1 & \cdots & 1\\
-a_{1} & a_{2} & \cdots & a_{r}\\
-\vdots & \vdots & & \vdots\\
-a_{1}^{r-1} & a_{2}^{r-1} & \cdots & a_{r}^{r-1}
-\end{array}\right|=\prod_{1\le i< j\le r}\left(a_{j}-a_{i}\right).
+1&1&\cdots&1\\
+a_{1}&a_{2}&\cdots&a_{r}\\
+\vdots&\vdots&&\vdots\\
+a_{1}^{r-1}&a_{2}^{r-1}&\cdots&a_{r}^{r-1}
+\end{array}\right|=\prod_{1\le{i}<{}j\le{r}}\left(a_{j}-a_{i}\right).
 $$
 
 > **定义 3.2.1 (线性相关)**
@@ -37,17 +37,17 @@ $$
 
 $$
 \left[\begin{array}{rrr}
-3 & 1 & -1\\
-1 & 0 & 2\\
-2 & 5 & 0\\
--4 & 2 & 3
+3&1&-1\\
+1&0&2\\
+2&5&0\\
+-4&2&3
 \end{array}\right]
 \xrightarrow{\text{行变换}}
 \left[\begin{array}{rrr}
-1 & 0 & 2\\
-0 & 1 & -7\\
-0 & 0 & 31\\
-0 & 0 & 0
+1&0&2\\
+0&1&-7\\
+0&0&31\\
+0&0&0
 \end{array}\right].
 $$
 
@@ -78,17 +78,17 @@ $$
 
 $$
 \left[\begin{array}{rrrr}
--2 & 1 & 3 & 2\\
-1 & -3 & 0 & -2\\
-0 & 2 & 2 & 4\\
-3 & 4 & -1 & 6
+-2&1&3&2\\
+1&-3&0&-2\\
+0&2&2&4\\
+3&4&-1&6
 \end{array}\right]
 \xrightarrow{\text{行变换}}
 \left[\begin{array}{rrrr}
-1 & -3 & 0 & -2\\
-0 & -5 & 3 & -2\\
-0 & 0 & 16/5 & 16/5\\
-0 & 0 & 0 & 0
+1&-3&0&-2\\
+0&-5&3&-2\\
+0&0&16/5&16/5\\
+0&0&0&0
 \end{array}\right].
 $$
 
@@ -232,13 +232,13 @@ $$
 
 ## 3.2-9
 
-证明: 由非零向量组成的向量组 $\alpha_{1},\alpha_{2},\cdots,\alpha_{s}$ $\left(s\ge2\right)$ 线性无关的充分必要条件是: 每一个 $\alpha_{i}$ $\left(1< i\le s\right)$ 都不能用它前面的向量线性表出.
+证明: 由非零向量组成的向量组 $\alpha_{1},\alpha_{2},\cdots,\alpha_{s}$ $\left(s\ge2\right)$ 线性无关的充分必要条件是: 每一个 $\alpha_{i}$ $\left(1<{}i\le{s}\right)$ 都不能用它前面的向量线性表出.
 
 ### 解答 3.2-9
 
-由**定义 3.2.2 (线性无关)**和**定义 3.2.1 (线性相关)**, 证明由非零向量组成的向量组 $\alpha_{1},\alpha_{2},\cdots,\alpha_{s}$ $\left(s\ge2\right)$ 线性无关的充分必要条件是: 每一个 $\alpha_{i}$ $\left(1< i\le s\right)$ 都不能用它前面的向量线性表出.
+由**定义 3.2.2 (线性无关)**和**定义 3.2.1 (线性相关)**, 证明由非零向量组成的向量组 $\alpha_{1},\alpha_{2},\cdots,\alpha_{s}$ $\left(s\ge2\right)$ 线性无关的充分必要条件是: 每一个 $\alpha_{i}$ $\left(1<{}i\le{s}\right)$ 都不能用它前面的向量线性表出.
 
-必要性. 设 $\alpha_{1},\cdots,\alpha_{s}$ 线性无关. 反证: 假设某个 $\alpha_{i}$ $\left(i> 1\right)$ 可以用前面的向量线性表出, 即
+必要性. 设 $\alpha_{1},\cdots,\alpha_{s}$ 线性无关. 反证: 假设某个 $\alpha_{i}$ $\left(i>1\right)$ 可以用前面的向量线性表出, 即
 
 $$
 \alpha_{i}=k_{1}\alpha_{1}+\cdots+k_{i-1}\alpha_{i-1}.
@@ -252,9 +252,9 @@ $$
 
 其中系数 $-1\ne0$, 故 $\alpha_{1},\cdots,\alpha_{s}$ 线性相关, 矛盾.
 
-所以每一个 $\alpha_{i}$ $\left(i> 1\right)$ 都不能用它前面的向量线性表出.
+所以每一个 $\alpha_{i}$ $\left(i>1\right)$ 都不能用它前面的向量线性表出.
 
-充分性. 设每一个 $\alpha_{i}$ $\left(i> 1\right)$ 都不能用它前面的向量线性表出. 反证: 假设 $\alpha_{1},\cdots,\alpha_{s}$ 线性相关, 则存在不全为零的数 $c_{1},\cdots,c_{s}$ 使得 $c_{1}\alpha_{1}+\cdots+c_{s}\alpha_{s}=0$.
+充分性. 设每一个 $\alpha_{i}$ $\left(i>1\right)$ 都不能用它前面的向量线性表出. 反证: 假设 $\alpha_{1},\cdots,\alpha_{s}$ 线性相关, 则存在不全为零的数 $c_{1},\cdots,c_{s}$ 使得 $c_{1}\alpha_{1}+\cdots+c_{s}\alpha_{s}=0$.
 
 设 $c_{i}$ 是最后一个非零系数
 
@@ -262,7 +262,7 @@ $$
 \left(c_{i}\ne0,c_{i+1}=\cdots=c_{s}=0\right).
 $$
 
-若 $i=1$, 则 $c_{1}\alpha_{1}=0$. 因为 $\alpha_{1}\ne0$, 所以 $c_{1}=0$, 矛盾. 故 $i> 1$.
+若 $i=1$, 则 $c_{1}\alpha_{1}=0$. 因为 $\alpha_{1}\ne0$, 所以 $c_{1}=0$, 矛盾. 故 $i>1$.
 
 由 $c_{1}\alpha_{1}+\cdots+c_{i}\alpha_{i}=0$ 得
 

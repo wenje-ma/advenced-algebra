@@ -14,11 +14,11 @@
 
 $$
 \left|\begin{array}{cccc}
-1 & 1 & \cdots & 1\\
-a_{1} & a_{2} & \cdots & a_{s}\\
-\vdots & \vdots & & \vdots\\
-a_{1}^{s-1} & a_{2}^{s-1} & \cdots & a_{s}^{s-1}
-\end{array}\right|=\prod_{1\le i< j\le s}\left(a_{j}-a_{i}\right).
+1&1&\cdots&1\\
+a_{1}&a_{2}&\cdots&a_{s}\\
+\vdots&\vdots&&\vdots\\
+a_{1}^{s-1}&a_{2}^{s-1}&\cdots&a_{s}^{s-1}
+\end{array}\right|=\prod_{1\le{i}<{}j\le{s}}\left(a_{j}-a_{i}\right).
 $$
 
 > **定理 3.6.1 (线性方程组有解判别定理)**
@@ -51,17 +51,17 @@ $$
 
 $$
 \left[\begin{array}{rrrr}
--1 & 4 & 2 & 0\\
-5 & 1 & 0 & 3\\
-3 & -2 & -1 & 4\\
--2 & 9 & 4 & -5
+-1&4&2&0\\
+5&1&0&3\\
+3&-2&-1&4\\
+-2&9&4&-5
 \end{array}\right]
 \xrightarrow{\text{行变换}}
 \left[\begin{array}{rrrr}
-1 & -4 & -2 & 0\\
-0 & 1 & 0 & -5\\
-0 & 0 & 5 & 54\\
-0 & 0 & 0 & 0
+1&-4&-2&0\\
+0&1&0&-5\\
+0&0&5&54\\
+0&0&0&0
 \end{array}\right].
 $$
 
@@ -75,10 +75,10 @@ $$
 
 $$
 A=\left[\begin{array}{rrrr}
-1 & 3 & -2 & -7\\
-0 & -1 & -3 & 4\\
-5 & 2 & 0 & 1\\
-1 & 4 & 1 & -11
+1&3&-2&-7\\
+0&-1&-3&4\\
+5&2&0&1\\
+1&4&1&-11
 \end{array}\right].
 $$
 
@@ -88,17 +88,17 @@ $$
 
 $$
 \left[\begin{array}{rrrr}
-1 & 3 & -2 & -7\\
-0 & -1 & -3 & 4\\
-5 & 2 & 0 & 1\\
-1 & 4 & 1 & -11
+1&3&-2&-7\\
+0&-1&-3&4\\
+5&2&0&1\\
+1&4&1&-11
 \end{array}\right]
 \xrightarrow{\text{行变换}}
 \left[\begin{array}{rrrr}
-1 & 3 & -2 & -7\\
-0 & 1 & 3 & -4\\
-0 & 0 & 49 & -16\\
-0 & 0 & 0 & 0
+1&3&-2&-7\\
+0&1&3&-4\\
+0&0&49&-16\\
+0&0&0&0
 \end{array}\right].
 $$
 
@@ -122,9 +122,9 @@ $\blacksquare$
 
 $$
 \left[\begin{array}{rrrr}
-1 & \lambda & -1 & 2\\
-2 & -1 & \lambda & 5\\
-1 & 10 & -6 & 1
+1&\lambda&-1&2\\
+2&-1&\lambda&5\\
+1&10&-6&1
 \end{array}\right].
 $$
 
@@ -132,7 +132,7 @@ $$
 
 由**推论 3.5.5 (用初等行变换求秩)**, 作初等行变换求矩阵的秩:
 
-第 $2$ 行 $-$ 第 $1$ 行 $\times 2$: 第 $2$ 行 $=\left(0,-1-2\lambda,\lambda+2,1\right)$.
+第 $2$ 行 $-$ 第 $1$ 行 $\times2$: 第 $2$ 行 $=\left(0,-1-2\lambda,\lambda+2,1\right)$.
 
 第 $3$ 行 $-$ 第 $1$ 行: 第 $3$ 行 $=\left(0,10-\lambda,-5,-1\right)$.
 
@@ -140,9 +140,9 @@ $$
 
 $$
 \left[\begin{array}{rrrr}
-1 & \lambda & -1 & 2\\
-0 & -1-2\lambda & \lambda+2 & 1\\
-0 & 10-\lambda & -5 & -1
+1&\lambda&-1&2\\
+0&-1-2\lambda&\lambda+2&1\\
+0&10-\lambda&-5&-1
 \end{array}\right].
 $$
 
@@ -168,7 +168,7 @@ $$
 
 ## 3.5-8
 
-证明: 如果 $m\times n$ 矩阵 $A$ 的秩为 $r$, 则它的任何 $s$ 行组成的子矩阵 $A_{1}$ 的秩不小于 $r+s-m$.
+证明: 如果 $m\times{n}$ 矩阵 $A$ 的秩为 $r$, 则它的任何 $s$ 行组成的子矩阵 $A_{1}$ 的秩不小于 $r+s-m$.
 
 ### 解答 3.5-8
 
@@ -178,7 +178,7 @@ $$
 
 把 $A$ 看作行向量组, $A$ 的行向量组的秩为 $r$.
 
-$A$ 的行向量组 $=A_{1}$ 的行向量组 $\cup A_{2}$ 的行向量组.
+$A$ 的行向量组 $=A_{1}$ 的行向量组 $\cup{A}_{2}$ 的行向量组.
 
 由向量组之并的秩的上界,
 
@@ -186,7 +186,7 @@ $$
 \text{rank}\left(A\right)\le\text{rank}\left(A_{1}\right)+\text{rank}\left(A_{2}\right).
 $$
 
-又 $A_{2}$ 只有 $m-s$ 行, 故 $\text{rank}\left(A_{2}\right)\le m-s$.
+又 $A_{2}$ 只有 $m-s$ 行, 故 $\text{rank}\left(A_{2}\right)\le{m}-s$.
 
 因此
 
@@ -197,17 +197,17 @@ $$
 移项得
 
 $$
-\text{rank}\left(A_{1}\right)\ge r-\left(m-s\right)=r+s-m.
+\text{rank}\left(A_{1}\right)\ge{r}-\left(m-s\right)=r+s-m.
 $$
 
 $\blacksquare$
 
 ## 3.5-13
 
-设 $A$ 是 $s\times n$ 矩阵, $B$ 是 $l\times m$ 矩阵, $C$ 是 $s\times m$ 矩阵, 证明:
+设 $A$ 是 $s\times{n}$ 矩阵, $B$ 是 $l\times{m}$ 矩阵, $C$ 是 $s\times{m}$ 矩阵, 证明:
 
 $$
-\text{rank}\left(\begin{array}{cc}A & C\\0 & B\end{array}\right)\ge\text{rank}\left(A\right)+\text{rank}\left(B\right).
+\text{rank}\left(\begin{array}{cc}A&C\\0&B\end{array}\right)\ge\text{rank}\left(A\right)+\text{rank}\left(B\right).
 $$
 
 ### 解答 3.5-13
@@ -223,7 +223,7 @@ $$
 考虑分块矩阵
 
 $$
-M=\left(\begin{array}{cc}A & C\\0 & B\end{array}\right)
+M=\left(\begin{array}{cc}A&C\\0&B\end{array}\right)
 $$
 
 的以下列向量:
@@ -251,7 +251,7 @@ $$
 因此
 
 $$
-\text{rank}\left(M\right)\ge r_{1}+r_{2}=\text{rank}\left(A\right)+\text{rank}\left(B\right).
+\text{rank}\left(M\right)\ge{r}_{1}+r_{2}=\text{rank}\left(A\right)+\text{rank}\left(B\right).
 $$
 
 $\blacksquare$
@@ -269,43 +269,43 @@ x_{1}+a^{s}x_{2}+a^{2s}x_{3}+\cdots+a^{s\left(n-1\right)}x_{n}=b_{s},
 \end{cases}
 $$
 
-其中 $s< n$, $a\ne0$ 且当 $0< r< s$ 时, $a^{r}\ne1$.
+其中 $s<{}n$, $a\ne0$ 且当 $0<{}r<{}s$ 时, $a^{r}\ne1$.
 
 ### 解答 3.6-2
 
 由**定理 3.6.1 (线性方程组有解判别定理)**和**定理 3.6.2 (解的个数判别)**, 需比较系数矩阵与增广矩阵的秩.
 
-系数矩阵 $A$ 是 $s\times n$ 矩阵. 取 $A$ 的前 $s$ 列组成的 $s$ 阶子式:
+系数矩阵 $A$ 是 $s\times{n}$ 矩阵. 取 $A$ 的前 $s$ 列组成的 $s$ 阶子式:
 
 $$
 D=\left|\begin{array}{cccc}
-1 & a & a^{2} & \cdots & a^{s-1}\\
-1 & a^{2} & a^{4} & \cdots & a^{2\left(s-1\right)}\\
-\vdots & \vdots & \vdots & & \vdots\\
-1 & a^{s} & a^{2s} & \cdots & a^{s\left(s-1\right)}
+1&a&a^{2}&\cdots&a^{s-1}\\
+1&a^{2}&a^{4}&\cdots&a^{2\left(s-1\right)}\\
+\vdots&\vdots&\vdots&&\vdots\\
+1&a^{s}&a^{2s}&\cdots&a^{s\left(s-1\right)}
 \end{array}\right|.
 $$
 
 由范德蒙行列式的计算公式, 这是范德蒙行列式,
 
 $$
-D=\prod_{1\le i< j\le s}\left(a^{j}-a^{i}\right).
+D=\prod_{1\le{i}<{}j\le{s}}\left(a^{j}-a^{i}\right).
 $$
 
-因为 $a\ne 0$ 且当 $0< r< s$ 时 $a^{r}\ne 1$, 所以 $a,a^{2},\cdots,a^{s}$ 两两不同, 故 $D\ne 0$.
+因为 $a\ne0$ 且当 $0<{}r<{}s$ 时 $a^{r}\ne1$, 所以 $a,a^{2},\cdots,a^{s}$ 两两不同, 故 $D\ne0$.
 
-因此 $\text{rank}\left(A\right)\ge s$.
+因此 $\text{rank}\left(A\right)\ge{s}$.
 
-又 $A$ 只有 $s$ 行, 故 $\text{rank}\left(A\right)\le s$.
+又 $A$ 只有 $s$ 行, 故 $\text{rank}\left(A\right)\le{s}$.
 
 所以 $\text{rank}\left(A\right)=s$.
 
 增广矩阵 $\overline{A}$ 是 $A$ 加了一列, 故 $\text{rank}\left(\overline{A}\right)\ge\text{rank}\left(A\right)=s$.
 
-又 $\overline{A}$ 只有 $s$ 行, 故 $\text{rank}\left(\overline{A}\right)\le s$.
+又 $\overline{A}$ 只有 $s$ 行, 故 $\text{rank}\left(\overline{A}\right)\le{s}$.
 
 所以 $\text{rank}\left(\overline{A}\right)=s=\text{rank}\left(A\right)$.
 
 由**定理 3.6.1 (线性方程组有解判别定理)**, 因此方程组有解.
 
-又 $\text{rank}\left(A\right)=s< n$ (未知量数目), 由**定理 3.6.2 (解的个数判别)**, 故方程组有无穷多个解. $\blacksquare$
+又 $\text{rank}\left(A\right)=s<{}n$ (未知量数目), 由**定理 3.6.2 (解的个数判别)**, 故方程组有无穷多个解. $\blacksquare$

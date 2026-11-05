@@ -17,9 +17,9 @@
 > Let $K$ be a number field. Using $n$ symbols $x_{1},x_{2},\ldots,x_{n}$ not in $K$, form the expression
 
 $$
-\sum_{i_{1},i_{2},\ldots,i_{n}}a_{i_{1}i_{2}\ldots i_{n}}x_{1}^{i_{1}}x_{2}^{i_{2}}\cdots x_{n}^{i_{n}},
+\sum_{i_{1},i_{2},\ldots,i_{n}}a_{i_{1}i_{2}\ldots{i}_{n}}x_{1}^{i_{1}}x_{2}^{i_{2}}\cdots{x}_{n}^{i_{n}},
 $$
-where $a_{i_{1}i_{2}\ldots i_{n}}\in K$ and $i_{1},i_{2},\ldots,i_{n}$ are nonnegative integers. Only finitely many monomials have nonzero coefficients. Such an expression is called a polynomial in $n$ variables over $K$.
+where $a_{i_{1}i_{2}\ldots{i}_{n}}\in{K}$ and $i_{1},i_{2},\ldots,i_{n}$ are nonnegative integers. Only finitely many monomials have nonzero coefficients. Such an expression is called a polynomial in $n$ variables over $K$.
 
 > **Theorem 7.9.1 (Leading Term Theorem)**
 > 
@@ -35,21 +35,21 @@ $$
 \cdots\cdots
 $$
 $$
-\sigma_{n}=x_{1}x_{2}\cdots x_{n}.
+\sigma_{n}=x_{1}x_{2}\cdots{x}_{n}.
 $$
 $$
 S_{1}=\sigma_{1},
 $$
 $$
-S_{k}-\sigma_{1}S_{k-1}+\sigma_{2}S_{k-2}-\cdots+\left(-1\right)^{k-1}\sigma_{k-1}S_{1}+\left(-1\right)^{k}k\sigma_{k}=0,\quad 1\le k\le n,
+S_{k}-\sigma_{1}S_{k-1}+\sigma_{2}S_{k-2}-\cdots+\left(-1\right)^{k-1}\sigma_{k-1}S_{1}+\left(-1\right)^{k}k\sigma_{k}=0,\quad1\le{k}\le{n},
 $$
 $$
-S_{k}-\sigma_{1}S_{k-1}+\sigma_{2}S_{k-2}-\cdots+\left(-1\right)^{n}\sigma_{n}S_{k-n}=0,\quad k> n.
+S_{k}-\sigma_{1}S_{k-1}+\sigma_{2}S_{k-2}-\cdots+\left(-1\right)^{n}\sigma_{n}S_{k-n}=0,\quad{k}>{}n.
 $$
 
 > **Definition 7.10.1 (Symmetric Polynomial)**
 > 
-> Let $f\left(x_{1},x_{2},\ldots,x_{n}\right)$ be a polynomial over $K$. If for every permutation $j_{1}j_{2}\ldots j_{n}$ of $1,2,\ldots,n$,
+> Let $f\left(x_{1},x_{2},\ldots,x_{n}\right)$ be a polynomial over $K$. If for every permutation $j_{1}j_{2}\ldots{j}_{n}$ of $1,2,\ldots,n$,
 
 $$
 f\left(x_{j_{1}},x_{j_{2}},\ldots,x_{j_{n}}\right)=f\left(x_{1},x_{2},\ldots,x_{n}\right),
@@ -78,13 +78,13 @@ $$
 
 is odd.
 
-Suppose $f\left(x\right)$ has a rational root $r=\frac{p}{q}$, where $p,q$ are coprime integers, $q> 0$.
+Suppose $f\left(x\right)$ has a rational root $r=\frac{p}{q}$, where $p,q$ are coprime integers, $q>0$.
 
 Since the leading coefficient is $1$, $q=1$, i.e. $r$ is an integer.
 
-Moreover $r\mid a_{0}$, so $r$ is odd (since $a_{0}$ is odd).
+Moreover $r\mid{a}_{0}$, so $r$ is odd (since $a_{0}$ is odd).
 
-Consider $f\left(r\right)\bmod 2$.
+Consider $f\left(r\right)\bmod2$.
 
 Since $r$ is odd, $r\equiv1\pmod2$.
 
@@ -116,13 +116,13 @@ $f\left(x\right)$ is a cubic. A cubic is reducible over $\mathbb{Q}$ if and only
 
 Since the leading coefficient is $1$, any rational root is an integer dividing the constant term $c$.
 
-Suppose $f\left(x\right)$ has a rational root $r$; then $r$ is an integer and $r\mid c$.
+Suppose $f\left(x\right)$ has a rational root $r$; then $r$ is an integer and $r\mid{c}$.
 
 Since $\left(a+b\right)c$ is odd, $a+b$ is odd and $c$ is odd.
 
 Hence $r$ is odd.
 
-Consider $f\left(r\right)\bmod 2$.
+Consider $f\left(r\right)\bmod2$.
 
 Since $r$ is odd, $r\equiv1\pmod2$.
 
@@ -146,7 +146,7 @@ Therefore $f\left(x\right)$ is irreducible over $\mathbb{Q}$. $\blacksquare$
 
 ## 7.9-3
 
-Let $f,g\in K\left[x_{1},\ldots,x_{n}\right]$ with $g\ne0$. Prove: if for every tuple $c_{1},\ldots,c_{n}\in K$ with $g\left(c_{1},\ldots,c_{n}\right)\ne0$ we have $f\left(c_{1},\ldots,c_{n}\right)=0$, then $f\left(x_{1},\ldots,x_{n}\right)=0$.
+Let $f,g\in{K}\left[x_{1},\ldots,x_{n}\right]$ with $g\ne0$. Prove: if for every tuple $c_{1},\ldots,c_{n}\in{K}$ with $g\left(c_{1},\ldots,c_{n}\right)\ne0$ we have $f\left(c_{1},\ldots,c_{n}\right)=0$, then $f\left(x_{1},\ldots,x_{n}\right)=0$.
 
 ### Solution to 7.9-3
 
@@ -173,17 +173,17 @@ $$
 where
 
 $$
-u_{i}\left(x_{1},\ldots,x_{n-1}\right)\in K\left[x_{1},\ldots,x_{n-1}\right].
+u_{i}\left(x_{1},\ldots,x_{n-1}\right)\in{K}\left[x_{1},\ldots,x_{n-1}\right].
 $$
 
-By the induction hypothesis, there exist $c_{1},\ldots,c_{n-1}\in K$ such that:
+By the induction hypothesis, there exist $c_{1},\ldots,c_{n-1}\in{K}$ such that:
 
 1. $g\left(c_{1},\ldots,c_{n-1},x_{n}\right)$ is not the zero polynomial;
 2.
 
    $$
-   u_{0}\left(c_{1},\ldots,c_{n-1}\right),\ldots,u_{s}\left(c_{1},\ldots,c_{n-1}\right)
-   $$
+u_{0}\left(c_{1},\ldots,c_{n-1}\right),\ldots,u_{s}\left(c_{1},\ldots,c_{n-1}\right)
+$$
 
    are not all zero (if $f$ is not the zero polynomial).
 
@@ -213,7 +213,7 @@ Therefore $f\left(x_{1},\ldots,x_{n}\right)=0$. $\blacksquare$
 
 ## 7.9-4(2)
 
-A polynomial $f\in K\left[x_{1},\ldots,x_{n}\right]$ is called irreducible if its only divisors are constants and associates of $f$; otherwise it is reducible. Prove: in $K\left[x,y\right]$, the polynomial $x-y$ is irreducible.
+A polynomial $f\in{K}\left[x_{1},\ldots,x_{n}\right]$ is called irreducible if its only divisors are constants and associates of $f$; otherwise it is reducible. Prove: in $K\left[x,y\right]$, the polynomial $x-y$ is irreducible.
 
 ### Solution to 7.9-4(2)
 
@@ -227,12 +227,12 @@ Consider degrees.
 
 The degree of the left side $x-y$ is $1$.
 
-The degree of the right side $g\left(x,y\right)h\left(x,y\right)$ is $\deg g+\deg h$.
+The degree of the right side $g\left(x,y\right)h\left(x,y\right)$ is $\deg{g}+\deg{h}$.
 
-Since $\deg g> 0$ and $\deg h> 0$,
+Since $\deg{g}>0$ and $\deg{h}>0$,
 
 $$
-\deg g+\deg h\ge2.
+\deg{g}+\deg{h}\ge2.
 $$
 
 Contradiction.
@@ -290,7 +290,7 @@ $$
 
 $S_{4}$.
 
-By Newton's identities (since $n=3$, $k=4> n$):
+By Newton's identities (since $n=3$, $k=4>{}n$):
 
 $$
 S_{4}-\sigma_{1}S_{3}+\sigma_{2}S_{2}-\sigma_{3}S_{1}=0.
@@ -313,7 +313,7 @@ $\blacksquare$
 
 ## 7.10-7
 
-Let $f\left(x\right)\in K\left[x\right]$ be monic, $a\in K$, and $g\left(x\right)=\left(x-a\right)f\left(x\right)$. Prove: $D\left(g\right)=D\left(f\right)f\left(a\right)^{2}$.
+Let $f\left(x\right)\in{K}\left[x\right]$ be monic, $a\in{K}$, and $g\left(x\right)=\left(x-a\right)f\left(x\right)$. Prove: $D\left(g\right)=D\left(f\right)f\left(a\right)^{2}$.
 
 ### Solution to 7.10-7
 
@@ -336,18 +336,18 @@ Set $s_{0}=a$, $s_{1}=r_{1}$, $\ldots$, $s_{n}=r_{n}$.
 The discriminant is defined as:
 
 $$
-D\left(f\right)=\prod_{1\le i< j\le n}\left(r_{i}-r_{j}\right)^{2}.
+D\left(f\right)=\prod_{1\le{i}<{}j\le{n}}\left(r_{i}-r_{j}\right)^{2}.
 $$
 
 $$
-D\left(g\right)=\prod_{0\le i< j\le n}\left(s_{i}-s_{j}\right)^{2}.
+D\left(g\right)=\prod_{0\le{i}<{}j\le{n}}\left(s_{i}-s_{j}\right)^{2}.
 $$
 
 Therefore
 
 $$
 D\left(g\right)
-=\prod_{1\le i< j\le n}\left(r_{i}-r_{j}\right)^{2}\cdot\prod_{i=1}^{n}\left(a-r_{i}\right)^{2}=D\left(f\right)\cdot\prod_{i=1}^{n}\left(a-r_{i}\right)^{2}.
+=\prod_{1\le{i}<{}j\le{n}}\left(r_{i}-r_{j}\right)^{2}\cdot\prod_{i=1}^{n}\left(a-r_{i}\right)^{2}=D\left(f\right)\cdot\prod_{i=1}^{n}\left(a-r_{i}\right)^{2}.
 $$
 
 And
@@ -365,7 +365,7 @@ $$
 Therefore
 
 $$
-D\left(g\right)=D\left(f\right)\cdot f\left(a\right)^{2}.
+D\left(g\right)=D\left(f\right)\cdot{f}\left(a\right)^{2}.
 $$
 
 $\blacksquare$

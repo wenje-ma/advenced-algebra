@@ -35,7 +35,7 @@
 $$
 f\left(x\right)=a_{n}x^{n}+\cdots+a_{1}x+a_{0}
 $$
-是一个次数 $n$ 大于零的整系数多项式, 如果存在一个素数 $p$, 使得 (1) $p\mid a_{i}$, $i=0,1,\ldots,n-1$; (2) $p\nmid a_{n}$; (3) $p^{2}\nmid a_{0}$, 则 $f\left(x\right)$ 在有理数域上是不可约的.
+是一个次数 $n$ 大于零的整系数多项式, 如果存在一个素数 $p$, 使得 (1) $p\mid{a}_{i}$, $i=0,1,\ldots,n-1$; (2) $p\nmid{a}_{n}$; (3) $p^{2}\nmid{a}_{0}$, 则 $f\left(x\right)$ 在有理数域上是不可约的.
 
 ## 7.6-1
 
@@ -64,10 +64,10 @@ $$
 
 $$
 \begin{array}{r|rrrrrr}
--2 & 1 & 7 & 19 & 26 & 20 & 8\\
-   &   & -2 & -10 & -18 & -16 & -8\\
+-2&1&7&19&26&20&8\\
+&&-2&-10&-18&-16&-8\\
 \hline
-   & 1 & 5 & 9 & 8 & 4 & 0
+&1&5&9&8&4&0
 \end{array}
 $$
 
@@ -77,10 +77,10 @@ $$
 
 $$
 \begin{array}{r|rrrrr}
--2 & 1 & 5 & 9 & 8 & 4\\
-   &   & -2 & -6 & -6 & -4\\
+-2&1&5&9&8&4\\
+&&-2&-6&-6&-4\\
 \hline
-   & 1 & 3 & 3 & 2 & 0
+&1&3&3&2&0
 \end{array}
 $$
 
@@ -90,10 +90,10 @@ $$
 
 $$
 \begin{array}{r|rrrr}
--2 & 1 & 3 & 3 & 2\\
-   &   & -2 & -2 & -2\\
+-2&1&3&3&2\\
+&&-2&-2&-2\\
 \hline
-   & 1 & 1 & 1 & 0
+&1&1&1&0
 \end{array}
 $$
 
@@ -103,10 +103,10 @@ $$
 
 $$
 \begin{array}{r|rrr}
--2 & 1 & 1 & 1\\
-   &   & -2 & 2\\
+-2&1&1&1\\
+&&-2&2\\
 \hline
-   & 1 & -1 & 3
+&1&-1&3
 \end{array}
 $$
 
@@ -138,7 +138,7 @@ $$
 令 $f\left(3\right)=0$:
 
 $$
-9a+3b=45\Rightarrow 3a+b=15. \tag{1}
+9a+3b=45\Rightarrow3a+b=15.\tag{1}
 $$
 
 求导数:
@@ -157,19 +157,19 @@ $$
 令 $f'\left(3\right)=0$:
 
 $$
-6a+b=27. \tag{2}
+6a+b=27.\tag{2}
 $$
 
 $\left(2\right)-\left(1\right)$ 得:
 
 $$
-3a=12\Rightarrow a=4.
+3a=12\Rightarrow{a}=4.
 $$
 
 代入 $\left(1\right)$:
 
 $$
-3\cdot4+b=15\Rightarrow b=3.
+3\cdot4+b=15\Rightarrow{b}=3.
 $$
 
 因此 $a=4$, $b=3$. $\blacksquare$
@@ -185,13 +185,13 @@ $x^{n}-1=0$ 的根是 $x^{n}=1$.
 $1$ 的 $n$ 次方根为:
 
 $$
-x_{k}=e^{2\pi i k/n}=\cos\frac{2\pi k}{n}+i\sin\frac{2\pi k}{n},\ k=0,1,\ldots,n-1.
+x_{k}=e^{2\pi{i}k/n}=\cos\frac{2\pi{k}}{n}+i\sin\frac{2\pi{k}}{n},\,k=0,1,\ldots,n-1.
 $$
 
 因此标准分解式为:
 
 $$
-x^{n}-1=\prod_{k=0}^{n-1}\left(x-e^{2\pi i k/n}\right).
+x^{n}-1=\prod_{k=0}^{n-1}\left(x-e^{2\pi{i}k/n}\right).
 $$
 
 $\blacksquare$
@@ -313,19 +313,19 @@ $$
 比较系数:
 
 $$
-a+c=-2, \tag{1}
+a+c=-2,\tag{1}
 $$
 
 $$
-ac+b+d=0, \tag{2}
+ac+b+d=0,\tag{2}
 $$
 
 $$
-ad+bc=2, \tag{3}
+ad+bc=2,\tag{3}
 $$
 
 $$
-bd=-3. \tag{4}
+bd=-3.\tag{4}
 $$
 
 由 $\left(4\right)$, $bd=-3$ 的整数解有:
@@ -339,29 +339,29 @@ $$
 - $b=1,d=-3$: 由 $\left(1\right)$, $c=-2-a$. 代入 $\left(2\right)$:
 
   $$
-  -2a-a^{2}+1-3=0\Rightarrow a^{2}+2a+2=0,
-  $$
+-2a-a^{2}+1-3=0\Rightarrow{a}^{2}+2a+2=0,
+$$
 
   无实根.
 - $b=-1,d=3$: 代入 $\left(2\right)$:
 
   $$
-  -2a-a^{2}-1+3=0\Rightarrow a^{2}+2a-2=0,
-  $$
+-2a-a^{2}-1+3=0\Rightarrow{a}^{2}+2a-2=0,
+$$
 
   无整数根.
 - $b=3,d=-1$: 代入 $\left(2\right)$:
 
   $$
-  -2a-a^{2}+3-1=0\Rightarrow a^{2}+2a-2=0,
-  $$
+-2a-a^{2}+3-1=0\Rightarrow{a}^{2}+2a-2=0,
+$$
 
   无整数根.
 - $b=-3,d=1$: 代入 $\left(2\right)$:
 
   $$
-  -2a-a^{2}-3+1=0\Rightarrow a^{2}+2a+2=0,
-  $$
+-2a-a^{2}-3+1=0\Rightarrow{a}^{2}+2a+2=0,
+$$
 
   无实根.
 
@@ -398,19 +398,19 @@ $$
 比较系数:
 
 $$
-a+c=0, \tag{1}
+a+c=0,\tag{1}
 $$
 
 $$
-ac+b+d=p, \tag{2}
+ac+b+d=p,\tag{2}
 $$
 
 $$
-ad+bc=0, \tag{3}
+ad+bc=0,\tag{3}
 $$
 
 $$
-bd=1. \tag{4}
+bd=1.\tag{4}
 $$
 
 由 $\left(1\right)$, $c=-a$.
@@ -446,17 +446,17 @@ $$
 由 $\left(2\right)$:
 
 $$
--a^{2}+2=p\Rightarrow a^{2}=2-p.
+-a^{2}+2=p\Rightarrow{a}^{2}=2-p.
 $$
 
-因为 $p$ 是奇素数, $p\ge3$, 所以 $2-p\le-1< 0$, 无实根.
+因为 $p$ 是奇素数, $p\ge3$, 所以 $2-p\le-1<0$, 无实根.
 
 若 $b=-1$, 则 $d=-1$.
 
 由 $\left(2\right)$:
 
 $$
--a^{2}-2=p\Rightarrow a^{2}=-p-2< 0,
+-a^{2}-2=p\Rightarrow{a}^{2}=-p-2<0,
 $$
 
 无实根.
@@ -524,19 +524,19 @@ $$
 比较系数:
 
 $$
-a+c=0, \tag{1}
+a+c=0,\tag{1}
 $$
 
 $$
-ac+b+d=-5, \tag{2}
+ac+b+d=-5,\tag{2}
 $$
 
 $$
-ad+bc=0, \tag{3}
+ad+bc=0,\tag{3}
 $$
 
 $$
-bd=1. \tag{4}
+bd=1.\tag{4}
 $$
 
 由 $\left(1\right)$, $c=-a$.
@@ -565,11 +565,11 @@ $$
 
 若 $b=1$, 则 $d=1$.
 
-由 $\left(2\right)$: $-a^{2}+2=-5\Rightarrow a^{2}=7$, 不是完全平方数.
+由 $\left(2\right)$: $-a^{2}+2=-5\Rightarrow{a}^{2}=7$, 不是完全平方数.
 
 若 $b=-1$, 则 $d=-1$.
 
-由 $\left(2\right)$: $-a^{2}-2=-5\Rightarrow a^{2}=3$, 不是完全平方数.
+由 $\left(2\right)$: $-a^{2}-2=-5\Rightarrow{a}^{2}=3$, 不是完全平方数.
 
 因此不能分解成两个整系数二次多项式的乘积.
 

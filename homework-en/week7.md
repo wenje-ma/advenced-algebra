@@ -2,11 +2,11 @@
 
 $$
 \left|\begin{array}{cccc}
-1 & 1 & \cdots & 1\\
-a_{1} & a_{2} & \cdots & a_{r}\\
-\vdots & \vdots & & \vdots\\
-a_{1}^{r-1} & a_{2}^{r-1} & \cdots & a_{r}^{r-1}
-\end{array}\right|=\prod_{1\le i< j\le r}\left(a_{j}-a_{i}\right).
+1&1&\cdots&1\\
+a_{1}&a_{2}&\cdots&a_{r}\\
+\vdots&\vdots&&\vdots\\
+a_{1}^{r-1}&a_{2}^{r-1}&\cdots&a_{r}^{r-1}
+\end{array}\right|=\prod_{1\le{i}<{}j\le{r}}\left(a_{j}-a_{i}\right).
 $$
 
 > **Definition 3.2.1 (Linear Dependence)**
@@ -37,17 +37,17 @@ By **Definition 3.2.1 (Linear Dependence)** and **Definition 3.2.2 (Linear Indep
 
 $$
 \left[\begin{array}{rrr}
-3 & 1 & -1\\
-1 & 0 & 2\\
-2 & 5 & 0\\
--4 & 2 & 3
+3&1&-1\\
+1&0&2\\
+2&5&0\\
+-4&2&3
 \end{array}\right]
-\xrightarrow{\text{row ops}}
+\xrightarrow{\text{row~ops}}
 \left[\begin{array}{rrr}
-1 & 0 & 2\\
-0 & 1 & -7\\
-0 & 0 & 31\\
-0 & 0 & 0
+1&0&2\\
+0&1&-7\\
+0&0&31\\
+0&0&0
 \end{array}\right].
 $$
 
@@ -78,17 +78,17 @@ Write down the coefficient matrix and perform elementary row operations:
 
 $$
 \left[\begin{array}{rrrr}
--2 & 1 & 3 & 2\\
-1 & -3 & 0 & -2\\
-0 & 2 & 2 & 4\\
-3 & 4 & -1 & 6
+-2&1&3&2\\
+1&-3&0&-2\\
+0&2&2&4\\
+3&4&-1&6
 \end{array}\right]
-\xrightarrow{\text{row ops}}
+\xrightarrow{\text{row~ops}}
 \left[\begin{array}{rrrr}
-1 & -3 & 0 & -2\\
-0 & -5 & 3 & -2\\
-0 & 0 & 16/5 & 16/5\\
-0 & 0 & 0 & 0
+1&-3&0&-2\\
+0&-5&3&-2\\
+0&0&16/5&16/5\\
+0&0&0&0
 \end{array}\right].
 $$
 
@@ -232,13 +232,13 @@ The assumption is false, so $\alpha_{1},\cdots,\alpha_{s}$ is linearly independe
 
 ## 3.2-9
 
-Prove: a vector group $\alpha_{1},\alpha_{2},\cdots,\alpha_{s}$ $\left(s\ge2\right)$ consisting of nonzero vectors is linearly independent if and only if each $\alpha_{i}$ $\left(1< i\le s\right)$ cannot be linearly represented by the vectors preceding it.
+Prove: a vector group $\alpha_{1},\alpha_{2},\cdots,\alpha_{s}$ $\left(s\ge2\right)$ consisting of nonzero vectors is linearly independent if and only if each $\alpha_{i}$ $\left(1<{}i\le{s}\right)$ cannot be linearly represented by the vectors preceding it.
 
 ### Solution to 3.2-9
 
-By **Definition 3.2.2 (Linear Independence)** and **Definition 3.2.1 (Linear Dependence)**, prove that the vector group of nonzero vectors $\alpha_{1},\alpha_{2},\cdots,\alpha_{s}$ $\left(s\ge2\right)$ is linearly independent if and only if each $\alpha_{i}$ $\left(1< i\le s\right)$ cannot be linearly represented by the vectors preceding it.
+By **Definition 3.2.2 (Linear Independence)** and **Definition 3.2.1 (Linear Dependence)**, prove that the vector group of nonzero vectors $\alpha_{1},\alpha_{2},\cdots,\alpha_{s}$ $\left(s\ge2\right)$ is linearly independent if and only if each $\alpha_{i}$ $\left(1<{}i\le{s}\right)$ cannot be linearly represented by the vectors preceding it.
 
-Necessity. Suppose $\alpha_{1},\cdots,\alpha_{s}$ is linearly independent. By contradiction: suppose some $\alpha_{i}$ $\left(i> 1\right)$ can be represented by the preceding vectors, i.e.
+Necessity. Suppose $\alpha_{1},\cdots,\alpha_{s}$ is linearly independent. By contradiction: suppose some $\alpha_{i}$ $\left(i>1\right)$ can be represented by the preceding vectors, i.e.
 
 $$
 \alpha_{i}=k_{1}\alpha_{1}+\cdots+k_{i-1}\alpha_{i-1}.
@@ -252,9 +252,9 @@ $$
 
 Here the coefficient $-1\ne0$, so $\alpha_{1},\cdots,\alpha_{s}$ is linearly dependent, a contradiction.
 
-Hence each $\alpha_{i}$ $\left(i> 1\right)$ cannot be represented by the vectors preceding it.
+Hence each $\alpha_{i}$ $\left(i>1\right)$ cannot be represented by the vectors preceding it.
 
-Sufficiency. Suppose each $\alpha_{i}$ $\left(i> 1\right)$ cannot be represented by the preceding vectors. By contradiction: suppose $\alpha_{1},\cdots,\alpha_{s}$ is linearly dependent; then there exist numbers $c_{1},\cdots,c_{s}$, not all zero, such that $c_{1}\alpha_{1}+\cdots+c_{s}\alpha_{s}=0$.
+Sufficiency. Suppose each $\alpha_{i}$ $\left(i>1\right)$ cannot be represented by the preceding vectors. By contradiction: suppose $\alpha_{1},\cdots,\alpha_{s}$ is linearly dependent; then there exist numbers $c_{1},\cdots,c_{s}$, not all zero, such that $c_{1}\alpha_{1}+\cdots+c_{s}\alpha_{s}=0$.
 
 Let $c_{i}$ be the last nonzero coefficient:
 
@@ -262,7 +262,7 @@ $$
 \left(c_{i}\ne0,c_{i+1}=\cdots=c_{s}=0\right).
 $$
 
-If $i=1$, then $c_{1}\alpha_{1}=0$. Because $\alpha_{1}\ne0$, $c_{1}=0$, a contradiction. Hence $i> 1$.
+If $i=1$, then $c_{1}\alpha_{1}=0$. Because $\alpha_{1}\ne0$, $c_{1}=0$, a contradiction. Hence $i>1$.
 
 From $c_{1}\alpha_{1}+\cdots+c_{i}\alpha_{i}=0$ we get
 

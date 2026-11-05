@@ -2,7 +2,7 @@
 
 > **Theorem 4.3.1 (Rank of a Matrix Product)**
 > 
-> Let $A=\left(a_{ij}\right)_{s\times n}$ and $B=\left(b_{ij}\right)_{n\times m}$. Then
+> Let $A=\left(a_{ij}\right)_{s\times{n}}$ and $B=\left(b_{ij}\right)_{n\times{m}}$. Then
 
 > **Proposition 4.3.2 (Over $\mathbb{R}$, $A^{\top}Az=0$ Has the Same Solutions as $z=0$)**
 > 
@@ -10,7 +10,7 @@
 
 > **Theorem 4.3.3 (Determinant of a Product)**
 > 
-> Let $A,B$ both be $n\times n$ matrices. Then $\left|AB\right|=\left|A\right|\left|B\right|$.
+> Let $A,B$ both be $n\times{n}$ matrices. Then $\left|AB\right|=\left|A\right|\left|B\right|$.
 
 > **Definition 4.4.1 (Invertible Matrix)**
 > 
@@ -22,7 +22,7 @@
 
 > **Theorem 4.4.2 (Necessary and Sufficient Condition for Invertibility)**
 > 
-> An $n\times n$ matrix $A$ over a number field $K$ is invertible if and only if $\left|A\right|\ne0$. When $A$ is invertible,
+> An $n\times{n}$ matrix $A$ over a number field $K$ is invertible if and only if $\left|A\right|\ne0$. When $A$ is invertible,
 
 $$
 A^{-1}=\frac{1}{\left|A\right|}A^{*}.
@@ -30,7 +30,7 @@ $$
 
 ## 4.3-6
 
-Prove: if $A$ is an $n\times n$ matrix over a number field $K$, $n$ is odd, and $AA^{\top}=I$ with $\left|A\right|=1$, then $\left|I-A\right|=0$.
+Prove: if $A$ is an $n\times{n}$ matrix over a number field $K$, $n$ is odd, and $AA^{\top}=I$ with $\left|A\right|=1$, then $\left|I-A\right|=0$.
 
 ### Solution to 4.3-6
 
@@ -72,9 +72,9 @@ Let $s_{k}=x_{1}^{k}+x_{2}^{k}+x_{3}^{k}$ for $k=0,1,2,\cdots$; and let
 
 $$
 A=\left[\begin{array}{ccc}
-s_{0} & s_{1} & s_{2}\\
-s_{1} & s_{2} & s_{3}\\
-s_{2} & s_{3} & s_{4}
+s_{0}&s_{1}&s_{2}\\
+s_{1}&s_{2}&s_{3}\\
+s_{2}&s_{3}&s_{4}
 \end{array}\right].
 $$
 
@@ -90,9 +90,9 @@ By **Theorem 4.3.3 (Determinant of a Product)**, $\left|AB\right|=\left|A\right|
 
 $$
 B=\left[\begin{array}{ccc}
-1 & 1 & 1\\
-x_{1} & x_{2} & x_{3}\\
-x_{1}^{2} & x_{2}^{2} & x_{3}^{2}
+1&1&1\\
+x_{1}&x_{2}&x_{3}\\
+x_{1}^{2}&x_{2}^{2}&x_{3}^{2}
 \end{array}\right].
 $$
 
@@ -106,9 +106,9 @@ Therefore
 
 $$
 BB^{\top}=\left[\begin{array}{ccc}
-s_{0} & s_{1} & s_{2}\\
-s_{1} & s_{2} & s_{3}\\
-s_{2} & s_{3} & s_{4}
+s_{0}&s_{1}&s_{2}\\
+s_{1}&s_{2}&s_{3}\\
+s_{2}&s_{3}&s_{4}
 \end{array}\right]=A.
 $$
 
@@ -134,7 +134,7 @@ $\blacksquare$
 
 ## 4.3-12
 
-Prove: for any $s\times n$ matrix $A$ over the real number field,
+Prove: for any $s\times{n}$ matrix $A$ over the real number field,
 
 $$
 \text{rank}\left(A^{\top}AA^{\top}\right)=\text{rank}\left(A\right).
@@ -190,7 +190,7 @@ Prove: if $A$ is invertible, then $A^{*}$ is also invertible; and find $\left(A^
 
 ### Solution to 4.4-4
 
-By **Definition 4.4.1 (Invertible Matrix)** and **Definition 4.4.2 (Inverse Matrix)**, since $A$ is invertible, $\left|A\right|\ne 0$.
+By **Definition 4.4.1 (Invertible Matrix)** and **Definition 4.4.2 (Inverse Matrix)**, since $A$ is invertible, $\left|A\right|\ne0$.
 
 We know $AA^{*}=\left|A\right|I$.
 
@@ -200,7 +200,7 @@ $$
 \left|A\right|\left|A^{*}\right|=\left|A\right|^{n}.
 $$
 
-Since $\left|A\right|\ne 0$, $\left|A^{*}\right|=\left|A\right|^{n-1}\ne 0$.
+Since $\left|A\right|\ne0$, $\left|A^{*}\right|=\left|A\right|^{n-1}\ne0$.
 
 By **Theorem 4.4.2 (Necessary and Sufficient Condition for Invertibility)**, $A^{*}$ is therefore invertible.
 
@@ -254,10 +254,10 @@ Find the inverse of the following matrix:
 
 $$
 A=\left[\begin{array}{rrrr}
-1 & 1 & 1 & 1\\
-1 & 1 & -1 & -1\\
-1 & -1 & 1 & -1\\
-1 & -1 & -1 & 1
+1&1&1&1\\
+1&1&-1&-1\\
+1&-1&1&-1\\
+1&-1&-1&1
 \end{array}\right].
 $$
 
@@ -267,10 +267,10 @@ By **Definition 4.4.1 (Invertible Matrix)** and **Definition 4.4.2 (Inverse Matr
 
 $$
 A^{2}=AA=\left[\begin{array}{rrrr}
-4 & 0 & 0 & 0\\
-0 & 4 & 0 & 0\\
-0 & 0 & 4 & 0\\
-0 & 0 & 0 & 4
+4&0&0&0\\
+0&4&0&0\\
+0&0&4&0\\
+0&0&0&4
 \end{array}\right]=4I.
 $$
 
@@ -284,10 +284,10 @@ By **Definition 4.4.2 (Inverse Matrix)**,
 
 $$
 A^{-1}=\frac{1}{4}A=\left[\begin{array}{rrrr}
-1/4 & 1/4 & 1/4 & 1/4\\
-1/4 & 1/4 & -1/4 & -1/4\\
-1/4 & -1/4 & 1/4 & -1/4\\
-1/4 & -1/4 & -1/4 & 1/4
+1/4&1/4&1/4&1/4\\
+1/4&1/4&-1/4&-1/4\\
+1/4&-1/4&1/4&-1/4\\
+1/4&-1/4&-1/4&1/4
 \end{array}\right].
 $$
 
@@ -299,13 +299,13 @@ Solve the following matrix equation:
 
 $$
 \left[\begin{array}{rrr}
-1 & -2 & 0\\
-4 & -2 & -1\\
--3 & 1 & 2
+1&-2&0\\
+4&-2&-1\\
+-3&1&2
 \end{array}\right]X=\left[\begin{array}{rr}
--1 & 4\\
-2 & 5\\
-1 & -3
+-1&4\\
+2&5\\
+1&-3
 \end{array}\right].
 $$
 
@@ -314,8 +314,8 @@ $$
 By **Theorem 4.4.2 (Necessary and Sufficient Condition for Invertibility)**, first find $A^{-1}$. Write
 
 $$
-A=\left[\begin{array}{rrr}1 & -2 & 0\\4 & -2 & -1\\-3 & 1 & 2\end{array}\right],
-B=\left[\begin{array}{rr}-1 & 4\\2 & 5\\1 & -3\end{array}\right].
+A=\left[\begin{array}{rrr}1&-2&0\\4&-2&-1\\-3&1&2\end{array}\right],
+B=\left[\begin{array}{rr}-1&4\\2&5\\1&-3\end{array}\right].
 $$
 
 First find $A^{-1}$.
@@ -328,9 +328,9 @@ Adjugate matrix:
 
 $$
 A^{*}=\left[\begin{array}{rrr}
--3 & 4 & 2\\
--5 & 2 & 1\\
--2 & 5 & 6
+-3&4&2\\
+-5&2&1\\
+-2&5&6
 \end{array}\right].
 $$
 
@@ -350,18 +350,18 @@ Compute $A^{*}B$:
 
 $$
 A^{*}B=\left[\begin{array}{rrr}
--3 & 4 & 2\\
--5 & 2 & 1\\
--2 & 5 & 6
+-3&4&2\\
+-5&2&1\\
+-2&5&6
 \end{array}\right]\left[\begin{array}{rr}
--1 & 4\\
-2 & 5\\
-1 & -3
+-1&4\\
+2&5\\
+1&-3
 \end{array}\right]
 =\left[\begin{array}{rr}
-13 & 2\\
-10 & -13\\
-18 & -1
+13&2\\
+10&-13\\
+18&-1
 \end{array}\right].
 $$
 
@@ -369,9 +369,9 @@ By **Theorem 4.4.2 (Necessary and Sufficient Condition for Invertibility)**, $A^
 
 $$
 X=\frac{1}{7}\left[\begin{array}{rr}
-13 & 2\\
-10 & -13\\
-18 & -1
+13&2\\
+10&-13\\
+18&-1
 \end{array}\right].
 $$
 
@@ -383,7 +383,7 @@ Prove: the inverse of an invertible upper (lower) triangular matrix is still upp
 
 ### Solution to 4.4-11
 
-By **Definition 4.4.1 (Invertible Matrix)** and **Definition 4.4.2 (Inverse Matrix)**, let $A$ be an $n\times n$ upper triangular matrix that is invertible. Set $A^{-1}=B=\left(b_{ij}\right)$.
+By **Definition 4.4.1 (Invertible Matrix)** and **Definition 4.4.2 (Inverse Matrix)**, let $A$ be an $n\times{n}$ upper triangular matrix that is invertible. Set $A^{-1}=B=\left(b_{ij}\right)$.
 
 Since $AB=I$, for any $i,j$,
 
@@ -391,31 +391,31 @@ $$
 \sum_{k=1}^{n}a_{ik}b_{kj}=\delta_{ij}.
 $$
 
-Prove by induction that $b_{ij}=0$ when $i> j$.
+Prove by induction that $b_{ij}=0$ when $i>{}j$.
 
 Induct on rows $i=n,n-1,\cdots,2$ from bottom to top.
 
-When $i=n$, for any $j< n$:
+When $i=n$, for any $j<{}n$:
 
 $$
 \sum_{k=1}^{n}a_{nk}b_{kj}=0.
 $$
 
-Since $A$ is upper triangular, $a_{nk}=0$ when $k< n$.
+Since $A$ is upper triangular, $a_{nk}=0$ when $k<{}n$.
 
 Thus the equation reduces to $a_{nn}b_{nj}=0$.
 
-Since $A$ is invertible, $a_{nn}\ne0$, hence $b_{nj}=0$ (for all $j< n$).
+Since $A$ is invertible, $a_{nn}\ne0$, hence $b_{nj}=0$ (for all $j<{}n$).
 
-Assume the conclusion holds for all rows $i> m$ (i.e. $b_{ij}=0$ when $i> m$ and $i> j$).
+Assume the conclusion holds for all rows $i>{}m$ (i.e. $b_{ij}=0$ when $i>{}m$ and $i>{}j$).
 
-Consider row $m$, for any $j< m$:
+Consider row $m$, for any $j<{}m$:
 
 $$
 \sum_{k=1}^{n}a_{mk}b_{kj}=0.
 $$
 
-Since $A$ is upper triangular, $a_{mk}=0$ when $k> m$.
+Since $A$ is upper triangular, $a_{mk}=0$ when $k>{}m$.
 
 Thus the equation is
 
@@ -429,7 +429,7 @@ $$
 a_{mm}b_{mj}+a_{m,m-1}b_{m-1,j}+\cdots+a_{m1}b_{1,j}=0.
 $$
 
-By the induction hypothesis, terms with $k> m$ are already $0$. For terms with $k< m$, $a_{mk}=0$ (because $m> k$, and $A$ is upper triangular).
+By the induction hypothesis, terms with $k>{}m$ are already $0$. For terms with $k<{}m$, $a_{mk}=0$ (because $m>{}k$, and $A$ is upper triangular).
 
 Hence only $a_{mm}b_{mj}=0$ remains.
 

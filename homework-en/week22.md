@@ -2,11 +2,11 @@
 
 > **Definition 7.3.1 (Greatest Common Divisor)**
 > 
-> Let $f\left(x\right),g\left(x\right)\in K\left[x\right]$, and let $d\left(x\right)$ be a common divisor of $f\left(x\right)$ and $g\left(x\right)$. If every common divisor of $f\left(x\right)$ and $g\left(x\right)$ divides $d\left(x\right)$, then $d\left(x\right)$ is called a greatest common divisor of $f\left(x\right)$ and $g\left(x\right)$.
+> Let $f\left(x\right),g\left(x\right)\in{K}\left[x\right]$, and let $d\left(x\right)$ be a common divisor of $f\left(x\right)$ and $g\left(x\right)$. If every common divisor of $f\left(x\right)$ and $g\left(x\right)$ divides $d\left(x\right)$, then $d\left(x\right)$ is called a greatest common divisor of $f\left(x\right)$ and $g\left(x\right)$.
 
 > **Theorem 7.3.1 (Existence of the Greatest Common Divisor and Bezout Identity)**
 > 
-> For any two polynomials $f\left(x\right)$ and $g\left(x\right)$ in $K\left[x\right]$, there exists a greatest common divisor $d\left(x\right)$, and $d\left(x\right)$ can be expressed as a linear combination of $f\left(x\right)$ and $g\left(x\right)$, i.e. there exist $u\left(x\right),v\left(x\right)\in K\left[x\right]$ such that
+> For any two polynomials $f\left(x\right)$ and $g\left(x\right)$ in $K\left[x\right]$, there exists a greatest common divisor $d\left(x\right)$, and $d\left(x\right)$ can be expressed as a linear combination of $f\left(x\right)$ and $g\left(x\right)$, i.e. there exist $u\left(x\right),v\left(x\right)\in{K}\left[x\right]$ such that
 
 > **Definition 7.3.2 (Coprime)**
 > 
@@ -18,7 +18,7 @@
 
 > **Property 7.4.1 (Property of Irreducible Polynomials)**
 > 
-> In $K\left[x\right]$, if $p\left(x\right)$ is irreducible and $p\left(x\right)\mid f\left(x\right)g\left(x\right)$, then $p\left(x\right)\mid f\left(x\right)$ or $p\left(x\right)\mid g\left(x\right)$.
+> In $K\left[x\right]$, if $p\left(x\right)$ is irreducible and $p\left(x\right)\mid{f}\left(x\right)g\left(x\right)$, then $p\left(x\right)\mid{f}\left(x\right)$ or $p\left(x\right)\mid{g}\left(x\right)$.
 
 > **Theorem 7.4.1 (Unique Factorization Theorem)**
 > 
@@ -26,7 +26,7 @@
 
 > **Definition 7.5.1 (Multiple Factor)**
 > 
-> In $K\left[x\right]$, an irreducible polynomial $p\left(x\right)$ is called a $k$-fold factor of $f\left(x\right)$ if $p^{k}\left(x\right)\mid f\left(x\right)$ but $p^{k+1}\left(x\right)\nmid f\left(x\right)$.
+> In $K\left[x\right]$, an irreducible polynomial $p\left(x\right)$ is called a $k$-fold factor of $f\left(x\right)$ if $p^{k}\left(x\right)\mid{f}\left(x\right)$ but $p^{k+1}\left(x\right)\nmid{f}\left(x\right)$.
 
 > **Theorem 7.5.1 (Criterion for No Multiple Factors)**
 > 
@@ -34,10 +34,10 @@
 
 ## 7.3-12
 
-Let $A\in M_{n}\left(K\right)$,
+Let $A\in{M}_{n}\left(K\right)$,
 
 $$
-f\left(x\right),f_{1}\left(x\right),f_{2}\left(x\right)\in K\left[x\right],
+f\left(x\right),f_{1}\left(x\right),f_{2}\left(x\right)\in{K}\left[x\right],
 $$
 
 and write $f\left(x\right)=f_{1}\left(x\right)f_{2}\left(x\right)$. Prove: if $\left(f_{1}\left(x\right),f_{2}\left(x\right)\right)=1$, then every solution of $f\left(A\right)X=0$ can be uniquely expressed as the sum of a solution of $f_{1}\left(A\right)X=0$ and a solution of $f_{2}\left(A\right)X=0$.
@@ -53,22 +53,22 @@ Let $X$ be a solution of $f\left(A\right)X=0$, i.e. $f_{1}\left(A\right)f_{2}\le
 Set
 
 $$
-X_{1}=v\left(A\right)f_{2}\left(A\right)X,\quad X_{2}=u\left(A\right)f_{1}\left(A\right)X.
+X_{1}=v\left(A\right)f_{2}\left(A\right)X,\quad{X}_{2}=u\left(A\right)f_{1}\left(A\right)X.
 $$
 
 Then
 
 $$
-X_{1}+X_{2}=\left[v\left(A\right)f_{2}\left(A\right)+u\left(A\right)f_{1}\left(A\right)\right]X=1\cdot X=X.
+X_{1}+X_{2}=\left[v\left(A\right)f_{2}\left(A\right)+u\left(A\right)f_{1}\left(A\right)\right]X=1\cdot{X}=X.
 $$
 
-Verify $X_{1}\in\ker f_{1}\left(A\right)$:
+Verify $X_{1}\in\ker{f}_{1}\left(A\right)$:
 
 $$
 f_{1}\left(A\right)X_{1}=f_{1}\left(A\right)v\left(A\right)f_{2}\left(A\right)X=v\left(A\right)f_{1}\left(A\right)f_{2}\left(A\right)X=v\left(A\right)f\left(A\right)X=0.
 $$
 
-Verify $X_{2}\in\ker f_{2}\left(A\right)$:
+Verify $X_{2}\in\ker{f}_{2}\left(A\right)$:
 
 $$
 f_{2}\left(A\right)X_{2}=f_{2}\left(A\right)u\left(A\right)f_{1}\left(A\right)X=u\left(A\right)f_{1}\left(A\right)f_{2}\left(A\right)X=u\left(A\right)f\left(A\right)X=0.
@@ -76,7 +76,7 @@ $$
 
 Uniqueness.
 
-Suppose $X=X_{1}+X_{2}=Y_{1}+Y_{2}$, where $X_{1},Y_{1}\in\ker f_{1}\left(A\right)$ and $X_{2},Y_{2}\in\ker f_{2}\left(A\right)$.
+Suppose $X=X_{1}+X_{2}=Y_{1}+Y_{2}$, where $X_{1},Y_{1}\in\ker{f}_{1}\left(A\right)$ and $X_{2},Y_{2}\in\ker{f}_{2}\left(A\right)$.
 
 Then
 
@@ -84,7 +84,7 @@ $$
 X_{1}-Y_{1}=Y_{2}-X_{2}.
 $$
 
-The left side $\in\ker f_{1}\left(A\right)$, the right side $\in\ker f_{2}\left(A\right)$.
+The left side $\in\ker{f}_{1}\left(A\right)$, the right side $\in\ker{f}_{2}\left(A\right)$.
 
 Set $Z=X_{1}-Y_{1}=Y_{2}-X_{2}$.
 
@@ -121,7 +121,7 @@ The roots of $x^{4}+4=0$ satisfy $x^{4}=-4=4e^{i\pi}$.
 Hence
 
 $$
-x=4^{1/4}e^{i\left(\pi/4+k\pi/2\right)},\ k=0,1,2,3.
+x=4^{1/4}e^{i\left(\pi/4+k\pi/2\right)},\,k=0,1,2,3.
 $$
 
 $4^{1/4}=\sqrt{2}$.
@@ -129,7 +129,7 @@ $4^{1/4}=\sqrt{2}$.
 Thus the four roots are:
 
 $$
-x_{1}=1+i,\ x_{2}=-1+i,\ x_{3}=-1-i,\ x_{4}=1-i.
+x_{1}=1+i,\,x_{2}=-1+i,\,x_{3}=-1-i,\,x_{4}=1-i.
 $$
 
 Therefore
@@ -158,9 +158,9 @@ $$
 
 Over the rational number field.
 
-The discriminant of $x^{2}-2x+2$ is $\Delta=4-8=-4< 0$, so it is irreducible over $\mathbb{Q}$.
+The discriminant of $x^{2}-2x+2$ is $\Delta=4-8=-4<0$, so it is irreducible over $\mathbb{Q}$.
 
-The discriminant of $x^{2}+2x+2$ is $\Delta=4-8=-4< 0$, so it is irreducible over $\mathbb{Q}$.
+The discriminant of $x^{2}+2x+2$ is $\Delta=4-8=-4<0$, so it is irreducible over $\mathbb{Q}$.
 
 Hence over $\mathbb{Q}$,
 
@@ -172,27 +172,27 @@ All these factorizations are unique. $\blacksquare$
 
 ## 7.4-3
 
-Prove: in $K\left[x\right]$, $g^{2}\left(x\right)\mid f^{2}\left(x\right)$ if and only if $g\left(x\right)\mid f\left(x\right)$.
+Prove: in $K\left[x\right]$, $g^{2}\left(x\right)\mid{f}^{2}\left(x\right)$ if and only if $g\left(x\right)\mid{f}\left(x\right)$.
 
 ### Solution to 7.4-3
 
-By **Property 7.4.1 (Property of Irreducible Polynomials)**, if $p\left(x\right)$ is irreducible and $p\left(x\right)\mid f\left(x\right)g\left(x\right)$, then $p\left(x\right)\mid f\left(x\right)$ or $p\left(x\right)\mid g\left(x\right)$.
+By **Property 7.4.1 (Property of Irreducible Polynomials)**, if $p\left(x\right)$ is irreducible and $p\left(x\right)\mid{f}\left(x\right)g\left(x\right)$, then $p\left(x\right)\mid{f}\left(x\right)$ or $p\left(x\right)\mid{g}\left(x\right)$.
 
-Necessity. Suppose $g^{2}\mid f^{2}$; prove $g\mid f$.
+Necessity. Suppose $g^{2}\mid{f}^{2}$; prove $g\mid{f}$.
 
 Let $p$ be an irreducible factor of $g$ with multiplicity $k$.
 
-Then $p^{2k}\mid g^{2}\mid f^{2}$.
+Then $p^{2k}\mid{g}^{2}\mid{f}^{2}$.
 
-Hence the multiplicity $m$ of $p$ in the factorization of $f$ satisfies $2m\ge2k$, i.e. $m\ge k$.
+Hence the multiplicity $m$ of $p$ in the factorization of $f$ satisfies $2m\ge2k$, i.e. $m\ge{k}$.
 
-Therefore $p^{k}\mid f$.
+Therefore $p^{k}\mid{f}$.
 
-Applying the same argument to every irreducible factor of $g$, we get $g\mid f$.
+Applying the same argument to every irreducible factor of $g$, we get $g\mid{f}$.
 
-Sufficiency. Suppose $g\mid f$; prove $g^{2}\mid f^{2}$.
+Sufficiency. Suppose $g\mid{f}$; prove $g^{2}\mid{f}^{2}$.
 
-If $g\mid f$, there exists $h$ such that $f=gh$.
+If $g\mid{f}$, there exists $h$ such that $f=gh$.
 
 Hence
 
@@ -200,9 +200,9 @@ $$
 f^{2}=g^{2}h^{2},
 $$
 
-i.e. $g^{2}\mid f^{2}$.
+i.e. $g^{2}\mid{f}^{2}$.
 
-Thus $g^{2}\left(x\right)\mid f^{2}\left(x\right)$ if and only if $g\left(x\right)\mid f\left(x\right)$. $\blacksquare$
+Thus $g^{2}\left(x\right)\mid{f}^{2}\left(x\right)$ if and only if $g\left(x\right)\mid{f}\left(x\right)$. $\blacksquare$
 
 ## 7.4-7
 
@@ -237,7 +237,7 @@ $$
 The first three terms all contain $f$, so we can write:
 
 $$
-f\cdot\left(u_{1}u_{2}f+u_{1}v_{2}g_{2}+v_{1}u_{2}g_{1}\right)+v_{1}v_{2}\cdot g_{1}g_{2}=1.
+f\cdot\left(u_{1}u_{2}f+u_{1}v_{2}g_{2}+v_{1}u_{2}g_{1}\right)+v_{1}v_{2}\cdot{g}_{1}g_{2}=1.
 $$
 
 This shows that a linear combination of $f$ and $g_{1}g_{2}$ equals $1$.
@@ -264,7 +264,7 @@ $f$ has a multiple factor if and only if $\left(f,f'\right)\ne1$, i.e. $f$ and $
 
 The factors of $f'$ are $x$ and $x^{2}+a$.
 
-Case 1: $x\mid f$.
+Case 1: $x\mid{f}$.
 
 $f\left(0\right)=b=0$.
 
@@ -272,7 +272,7 @@ Hence when $b=0$, $x$ is a factor of $f$.
 
 Then $f=x^{2}\left(x^{2}+2a\right)$, and $x$ is a double factor of $f$ (unless $a=0$, in which case $x$ is a quadruple factor).
 
-Case 2: $x^{2}+a\mid f$.
+Case 2: $x^{2}+a\mid{f}$.
 
 Perform polynomial division:
 
@@ -280,14 +280,14 @@ $$
 f\left(x\right)=x^{4}+2ax^{2}+b=\left(x^{2}+a\right)^{2}+\left(b-a^{2}\right).
 $$
 
-Hence $x^{2}+a\mid f$ if and only if $b-a^{2}=0$, i.e. $b=a^{2}$.
+Hence $x^{2}+a\mid{f}$ if and only if $b-a^{2}=0$, i.e. $b=a^{2}$.
 
 Then $f=\left(x^{2}+a\right)^{2}$, and $x^{2}+a$ is a double factor of $f$.
 
 Combining the two cases, by **Theorem 7.5.1 (Criterion for No Multiple Factors)**, $f$ has a multiple factor if and only if
 
 $$
-b=0\text{ or } b=a^{2}.
+b=0\text{~or~}b=a^{2}.
 $$
 
 $\blacksquare$
@@ -429,13 +429,13 @@ f\left(x\right)=x^{5}-3x^{4}+2x^{3}+2x^{2}-3x+1.
 $$
 
 $$
-a-4=-3\Rightarrow a=1.
+a-4=-3\Rightarrow{a}=1.
 $$
 
 Verify the other coefficients:
 
 $$
--4a+6=-4+6=2,\quad 6a-4=6-4=2,\quad -4a+1=-4+1=-3,\quad a=1.
+-4a+6=-4+6=2,\quad6a-4=6-4=2,\quad-4a+1=-4+1=-3,\quad{a}=1.
 $$
 
 All match.

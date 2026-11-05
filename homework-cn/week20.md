@@ -26,14 +26,14 @@
 
 > **定义 7.2.1 (整除)**
 > 
-> 设 $f\left(x\right),g\left(x\right)\in K\left[x\right]$, 如果存在 $h\left(x\right)\in K\left[x\right]$, 使得 $f\left(x\right)=h\left(x\right)g\left(x\right)$, 则称 $g\left(x\right)$ 整除 $f\left(x\right)$, 记作 $g\left(x\right)\mid f\left(x\right)$.
+> 设 $f\left(x\right),g\left(x\right)\in{K}\left[x\right]$, 如果存在 $h\left(x\right)\in{K}\left[x\right]$, 使得 $f\left(x\right)=h\left(x\right)g\left(x\right)$, 则称 $g\left(x\right)$ 整除 $f\left(x\right)$, 记作 $g\left(x\right)\mid{f}\left(x\right)$.
 
 > **定理 7.2.1 (带余除法)**
 > 
 > 在 $K\left[x\right]$ 中, 对于任意两个多项式 $f\left(x\right),g\left(x\right)$, 其中 $g\left(x\right)\ne0$, 存在唯一的一对多项式 $h\left(x\right),r\left(x\right)$, 使得
 
 $$
-f\left(x\right)=h\left(x\right)g\left(x\right)+r\left(x\right),\deg r\left(x\right)< \deg g\left(x\right).
+f\left(x\right)=h\left(x\right)g\left(x\right)+r\left(x\right),\deg{r}\left(x\right)<\deg{g}\left(x\right).
 $$
 
 ## 6.1-8(1)
@@ -83,9 +83,9 @@ $$
 
 $$
 C=\left[\begin{array}{rrr}
-1 & 0 & 1\\
-0 & 1 & 1\\
-0 & 0 & 1
+1&0&1\\
+0&1&1\\
+0&0&1
 \end{array}\right].
 $$
 
@@ -129,7 +129,7 @@ $$
 \lambda_{1}\alpha^{\top}\alpha\ge\alpha^{\top}A\alpha\ge\lambda_{n}\alpha^{\top}\alpha.
 $$
 
-因为 $\alpha\ne0$, 故 $\alpha^{\top}\alpha> 0$.
+因为 $\alpha\ne0$, 故 $\alpha^{\top}\alpha>0$.
 
 两边除以 $\alpha^{\top}\alpha$:
 
@@ -183,7 +183,7 @@ $$
 
 ## 6.2-4
 
-设 $X^{\top}AX$ 是一个 $n$ 元实二次型, 证明: 如果 $\mathbb{R}^{n}$ 中有列向量 $\alpha_{1},\alpha_{2}$, 使得 $\alpha_{1}^{\top}A\alpha_{1}> 0$, $\alpha_{2}^{\top}A\alpha_{2}< 0$, 则 $\mathbb{R}^{n}$ 中有非零列向量 $\alpha$, 使得 $\alpha^{\top}A\alpha=0$.
+设 $X^{\top}AX$ 是一个 $n$ 元实二次型, 证明: 如果 $\mathbb{R}^{n}$ 中有列向量 $\alpha_{1},\alpha_{2}$, 使得 $\alpha_{1}^{\top}A\alpha_{1}>0$, $\alpha_{2}^{\top}A\alpha_{2}<0$, 则 $\mathbb{R}^{n}$ 中有非零列向量 $\alpha$, 使得 $\alpha^{\top}A\alpha=0$.
 
 ### 解答 6.2-4
 
@@ -201,17 +201,17 @@ $$
 
 这是关于 $t$ 的二次函数.
 
-已知 $g\left(0\right)=\alpha_{1}^{\top}A\alpha_{1}> 0$.
+已知 $g\left(0\right)=\alpha_{1}^{\top}A\alpha_{1}>0$.
 
-又因为 $\alpha_{2}^{\top}A\alpha_{2}< 0$, 所以当 $t\to\infty$ 时, $g\left(t\right)\to-\infty$.
+又因为 $\alpha_{2}^{\top}A\alpha_{2}<0$, 所以当 $t\to\infty$ 时, $g\left(t\right)\to-\infty$.
 
-因此存在 $t_{0}> 0$, 使得 $g\left(t_{0}\right)< 0$.
+因此存在 $t_{0}>0$, 使得 $g\left(t_{0}\right)<0$.
 
 由连续函数的介值定理, 存在 $t_{1}\in\left(0,t_{0}\right)$, 使得 $g\left(t_{1}\right)=0$.
 
 令 $\alpha=\alpha_{1}+t_{1}\alpha_{2}$.
 
-则 $\alpha\ne0$ (因为如果 $\alpha=0$, 则 $\alpha_{1}=-t_{1}\alpha_{2}$, 从而 $\alpha_{1}^{\top}A\alpha_{1}=t_{1}^{2}\alpha_{2}^{\top}A\alpha_{2}< 0$, 矛盾).
+则 $\alpha\ne0$ (因为如果 $\alpha=0$, 则 $\alpha_{1}=-t_{1}\alpha_{2}$, 从而 $\alpha_{1}^{\top}A\alpha_{1}=t_{1}^{2}\alpha_{2}^{\top}A\alpha_{2}<0$, 矛盾).
 
 且 $\alpha^{\top}A\alpha=g\left(t_{1}\right)=0$.
 
@@ -233,7 +233,7 @@ $$
 
 这是两个 $1$ 次齐次多项式的乘积.
 
-若秩等于 $1$, 则规范形为 $y_{1}^{2}=y_{1}\cdot y_{1}$.
+若秩等于 $1$, 则规范形为 $y_{1}^{2}=y_{1}\cdot{y}_{1}$.
 
 这也是两个 $1$ 次齐次多项式的乘积.
 
@@ -264,7 +264,7 @@ $$
 设 $\beta=k\alpha$. 则
 
 $$
-A=\frac{\alpha\cdot k\alpha^{\top}+k\alpha\cdot\alpha^{\top}}{2}=k\alpha\alpha^{\top}.
+A=\frac{\alpha\cdot{k}\alpha^{\top}+k\alpha\cdot\alpha^{\top}}{2}=k\alpha\alpha^{\top}.
 $$
 
 因此 $\operatorname{rank}\left(A\right)=1$.
@@ -342,7 +342,7 @@ $$
 用 $g\left(x\right)$ 除 $f\left(x\right)$, 求商式与余式:
 
 $$
-f\left(x\right)=x^{4}+x^{3}-2x+3,\quad g\left(x\right)=3x^{2}-x+2.
+f\left(x\right)=x^{4}+x^{3}-2x+3,\quad{g}\left(x\right)=3x^{2}-x+2.
 $$
 
 ### 解答 7.2-3(2)
@@ -356,7 +356,7 @@ $$
 商式首项: $x^{4}/3x^{2}=\frac{1}{3}x^{2}$.
 
 $$
-\frac{1}{3}x^{2}\cdot g\left(x\right)=x^{4}-\frac{1}{3}x^{3}+\frac{2}{3}x^{2}.
+\frac{1}{3}x^{2}\cdot{g}\left(x\right)=x^{4}-\frac{1}{3}x^{3}+\frac{2}{3}x^{2}.
 $$
 
 余式:
@@ -368,7 +368,7 @@ $$
 商式第二项: $\frac{4}{3}x^{3}/3x^{2}=\frac{4}{9}x$.
 
 $$
-\frac{4}{9}x\cdot g=\frac{4}{3}x^{3}-\frac{4}{9}x^{2}+\frac{8}{9}x.
+\frac{4}{9}x\cdot{g}=\frac{4}{3}x^{3}-\frac{4}{9}x^{2}+\frac{8}{9}x.
 $$
 
 余式:
@@ -380,7 +380,7 @@ $$
 商式第三项: $-\frac{2}{9}x^{2}/3x^{2}=-\frac{2}{27}$.
 
 $$
--\frac{2}{27}\cdot g=-\frac{2}{9}x^{2}+\frac{2}{27}x-\frac{4}{27}.
+-\frac{2}{27}\cdot{g}=-\frac{2}{9}x^{2}+\frac{2}{27}x-\frac{4}{27}.
 $$
 
 余式:
@@ -392,11 +392,11 @@ $$
 因此, 由**定理 7.2.1 (带余除法)**,
 
 $$
-\text{商式 }h\left(x\right)=\frac{1}{3}x^{2}+\frac{4}{9}x-\frac{2}{27}.
+\text{商式~}h\left(x\right)=\frac{1}{3}x^{2}+\frac{4}{9}x-\frac{2}{27}.
 $$
 
 $$
-\text{余式 }r\left(x\right)=-\frac{80}{27}x+\frac{85}{27}.
+\text{余式~}r\left(x\right)=-\frac{80}{27}x+\frac{85}{27}.
 $$
 
 $\blacksquare$

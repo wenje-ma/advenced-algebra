@@ -2,11 +2,11 @@
 
 > **定理 1.2.1 (线性方程组解的判别准则)**
 > 
-> 把 $n$ 元线性方程组的增广矩阵经过初等行变换化成阶梯形矩阵: (1) 若相应的阶梯形方程组出现 $0=d$($d\ne 0$), 则原方程组无解; (2) 若不出现 $0=d$, 则有解, 且当阶梯形矩阵的非零行数目等于未知量数目 $n$ 时有唯一解, 当非零行数目 $r< n$ 时有无穷多个解.
+> 把 $n$ 元线性方程组的增广矩阵经过初等行变换化成阶梯形矩阵: (1) 若相应的阶梯形方程组出现 $0=d$($d\ne0$), 则原方程组无解; (2) 若不出现 $0=d$, 则有解, 且当阶梯形矩阵的非零行数目等于未知量数目 $n$ 时有唯一解, 当非零行数目 $r<{}n$ 时有无穷多个解.
 
 > **定义 1.3.1 (数域)**
 > 
-> 设 $K$ 是复数集的一个子集, 如果 $K$ 满足: (1) $0,1\in K$; (2) 对加, 减, 乘, 除(除数不为 $0$) 四种运算封闭, 那么称 $K$ 是一个数域.
+> 设 $K$ 是复数集的一个子集, 如果 $K$ 满足: (1) $0,1\in{K}$; (2) 对加, 减, 乘, 除(除数不为 $0$) 四种运算封闭, 那么称 $K$ 是一个数域.
 
 > **命题 2.1.1 (二元一次方程组有唯一解的判别)**
 > 
@@ -18,11 +18,11 @@
 
 $$
 \left|\begin{array}{cccc}
-a_{11} & a_{12} & \cdots & a_{1n}\\
-a_{21} & a_{22} & \cdots & a_{2n}\\
-\vdots & \vdots & & \vdots\\
-a_{n1} & a_{n2} & \cdots & a_{nn}
-\end{array}\right|=\sum_{j_{1}j_{2}\cdots j_{n}}\left(-1\right)^{\tau\left(j_{1}j_{2}\cdots j_{n}\right)}a_{1j_{1}}a_{2j_{2}}\cdots a_{nj_{n}}.
+a_{11}&a_{12}&\cdots&a_{1n}\\
+a_{21}&a_{22}&\cdots&a_{2n}\\
+\vdots&\vdots&&\vdots\\
+a_{n1}&a_{n2}&\cdots&a_{nn}
+\end{array}\right|=\sum_{j_{1}j_{2}\cdots{j}_{n}}\left(-1\right)^{\tau\left(j_{1}j_{2}\cdots{j}_{n}\right)}a_{1j_{1}}a_{2j_{2}}\cdots{a}_{nj_{n}}.
 $$
 
 ## 1.2-6
@@ -62,7 +62,7 @@ $$
 代入第 $3$ 式验证:
 
 $$
-16\times\frac{1}{2}-4\times\left(-\frac{1}{2}\right)+2=8+2+2=12\ne 5.
+16\times\frac{1}{2}-4\times\left(-\frac{1}{2}\right)+2=8+2+2=12\ne5.
 $$
 
 故第 $3$ 式不满足. 因此不存在这样的二次函数. $\blacksquare$
@@ -78,7 +78,7 @@ $$
 由 $x_{1}=x_{2}+x_{3}$ 及 $x_{1}+x_{2}+x_{3}=10$, 得
 
 $$
-2x_{1}=10\Rightarrow x_{1}=5, x_{2}+x_{3}=5.
+2x_{1}=10\Rightarrow{x}_{1}=5,x_{2}+x_{3}=5.
 $$
 
 总利润
@@ -93,7 +93,7 @@ $$
 l=0.6+0.15\left(5-x_{3}\right)+0.22x_{3}=0.6+0.75-0.15x_{3}+0.22x_{3}=1.35+0.07x_{3}.
 $$
 
-由于投资额非负: $x_{2}\ge 0,x_{3}\ge 0$, 故 $0\le x_{3}\le 5$.
+由于投资额非负: $x_{2}\ge0,x_{3}\ge0$, 故 $0\le{x}_{3}\le5$.
 
 当 $x_{3}=0$ 时, $l$ 取最小值 $1.35$, 此时 $x_{1}=5,x_{2}=5,x_{3}=0$.
 
@@ -106,30 +106,30 @@ $$
 令
 
 $$
-\mathbb Q\left(i\right)=\left\{a+bi\mid a,b\in\mathbb Q\right\},
+\mathbb{Q}\left(i\right)=\left\{a+bi\mid{a},b\in\mathbb{Q}\right\},
 $$
 
-证明: $\mathbb Q\left(i\right)$ 是一个数域.
+证明: $\mathbb{Q}\left(i\right)$ 是一个数域.
 
 ### 解答 1.3-1
 
-由**定义 1.3.1 (数域)** 的要求, 需验证 $\mathbb Q\left(i\right)$ 满足 $0,1\in K$ 且对加, 减, 乘, 除四种运算封闭.
+由**定义 1.3.1 (数域)** 的要求, 需验证 $\mathbb{Q}\left(i\right)$ 满足 $0,1\in{K}$ 且对加, 减, 乘, 除四种运算封闭.
 
-验证 $0,1\in\mathbb Q\left(i\right)$. 由**定义 1.3.1 (数域)** 第 (1) 条, 显然 $0=0+0\cdot i\in\mathbb Q\left(i\right)$, $1=1+0\cdot i\in\mathbb Q\left(i\right)$.
+验证 $0,1\in\mathbb{Q}\left(i\right)$. 由**定义 1.3.1 (数域)** 第 (1) 条, 显然 $0=0+0\cdot{i}\in\mathbb{Q}\left(i\right)$, $1=1+0\cdot{i}\in\mathbb{Q}\left(i\right)$.
 
 验证对加法封闭. 由**定义 1.3.1 (数域)** 第 (2) 条, 任取
 
 $$
-\alpha=a+bi,\beta=c+di\in\mathbb Q\left(i\right),
+\alpha=a+bi,\beta=c+di\in\mathbb{Q}\left(i\right),
 $$
 
-其中 $a,b,c,d\in\mathbb Q$, 则
+其中 $a,b,c,d\in\mathbb{Q}$, 则
 
 $$
 \alpha+\beta=\left(a+c\right)+\left(b+d\right)i.
 $$
 
-由于有理数对加法封闭 (有理数域对四则运算的封闭性), $a+c\in\mathbb Q$, $b+d\in\mathbb Q$, 故 $\alpha+\beta\in\mathbb Q\left(i\right)$.
+由于有理数对加法封闭 (有理数域对四则运算的封闭性), $a+c\in\mathbb{Q}$, $b+d\in\mathbb{Q}$, 故 $\alpha+\beta\in\mathbb{Q}\left(i\right)$.
 
 验证对减法封闭. 由**定义 1.3.1 (数域)** 第 (2) 条, 同上,
 
@@ -137,7 +137,7 @@ $$
 \alpha-\beta=\left(a-c\right)+\left(b-d\right)i,
 $$
 
-且 $a-c\in\mathbb Q$, $b-d\in\mathbb Q$ (有理数域对四则运算的封闭性), 故 $\alpha-\beta\in\mathbb Q\left(i\right)$.
+且 $a-c\in\mathbb{Q}$, $b-d\in\mathbb{Q}$ (有理数域对四则运算的封闭性), 故 $\alpha-\beta\in\mathbb{Q}\left(i\right)$.
 
 验证对乘法封闭. 由**定义 1.3.1 (数域)** 第 (2) 条,
 
@@ -145,17 +145,17 @@ $$
 \alpha\beta=\left(a+bi\right)\left(c+di\right)=\left(ac-bd\right)+\left(ad+bc\right)i.
 $$
 
-由于有理数对加, 减, 乘封闭 (有理数域对四则运算的封闭性), $ac-bd\in\mathbb Q$, $ad+bc\in\mathbb Q$, 故 $\alpha\beta\in\mathbb Q\left(i\right)$.
+由于有理数对加, 减, 乘封闭 (有理数域对四则运算的封闭性), $ac-bd\in\mathbb{Q}$, $ad+bc\in\mathbb{Q}$, 故 $\alpha\beta\in\mathbb{Q}\left(i\right)$.
 
-验证对除法封闭. 由**定义 1.3.1 (数域)** 第 (2) 条, 设 $\beta=c+di\ne 0$, 则 $c^{2}+d^{2}\ne 0$, 且
+验证对除法封闭. 由**定义 1.3.1 (数域)** 第 (2) 条, 设 $\beta=c+di\ne0$, 则 $c^{2}+d^{2}\ne0$, 且
 
 $$
 \frac{\alpha}{\beta}=\frac{a+bi}{c+di}=\frac{\left(a+bi\right)\left(c-di\right)}{\left(c+di\right)\left(c-di\right)}=\frac{ac+bd}{c^{2}+d^{2}}+\frac{bc-ad}{c^{2}+d^{2}}i.
 $$
 
-由于有理数对加, 减, 乘, 除(除数不为 $0$) 封闭 (有理数域对四则运算的封闭性), $\frac{ac+bd}{c^{2}+d^{2}}\in\mathbb Q$, $\frac{bc-ad}{c^{2}+d^{2}}\in\mathbb Q$, 故 $\frac{\alpha}{\beta}\in\mathbb Q\left(i\right)$.
+由于有理数对加, 减, 乘, 除(除数不为 $0$) 封闭 (有理数域对四则运算的封闭性), $\frac{ac+bd}{c^{2}+d^{2}}\in\mathbb{Q}$, $\frac{bc-ad}{c^{2}+d^{2}}\in\mathbb{Q}$, 故 $\frac{\alpha}{\beta}\in\mathbb{Q}\left(i\right)$.
 
-综上, $\mathbb Q\left(i\right)$ 满足**定义 1.3.1 (数域)** 的全部条件, 故 $\mathbb Q\left(i\right)$ 是一个数域. $\blacksquare$
+综上, $\mathbb{Q}\left(i\right)$ 满足**定义 1.3.1 (数域)** 的全部条件, 故 $\mathbb{Q}\left(i\right)$ 是一个数域. $\blacksquare$
 
 ## 2.1-1(1)
 
@@ -212,7 +212,7 @@ $$
 
 求下列 $n$ 元排列的逆序数:
 
-(1) $\left(n-1\right)\left(n-2\right)\cdots 21n$;
+(1) $\left(n-1\right)\left(n-2\right)\cdots21n$;
 
 (2) $23\cdots\left(n-1\right)n1$.
 
@@ -220,7 +220,7 @@ $$
 
 由逆序, 逆序数与奇偶排列:
 
-(1) 排列 $\left(n-1\right)\left(n-2\right)\cdots 21n$ 中, 前 $n-1$ 个数是完全倒序, 最后一个数 $n$ 最大, 不产生逆序. 前 $n-1$ 个数的逆序数为
+(1) 排列 $\left(n-1\right)\left(n-2\right)\cdots21n$ 中, 前 $n-1$ 个数是完全倒序, 最后一个数 $n$ 最大, 不产生逆序. 前 $n-1$ 个数的逆序数为
 
 $$
 \left(n-2\right)+\left(n-3\right)+\cdots+1+0=\frac{\left(n-2\right)\left(n-1\right)}{2}.
@@ -257,9 +257,9 @@ $$
 
 $$
 \left|\begin{array}{rr}
-2 & -3\\
-5 & 4
-\end{array}\right|=2\times4-\left(-3\right)\times5=8+15=23\ne 0.
+2&-3\\
+5&4
+\end{array}\right|=2\times4-\left(-3\right)\times5=8+15=23\ne0.
 $$
 
 由**命题 2.1.1 (二元一次方程组有唯一解的判别)**, 方程组有唯一解.
@@ -267,11 +267,11 @@ $$
 由该命题给出的克拉默公式:
 
 $$
-x_{1}=\frac{\left|\begin{array}{rr}7 & -3\\6 & 4\end{array}\right|}{23}=\frac{7\times4-\left(-3\right)\times6}{23}=\frac{28+18}{23}=\frac{46}{23}=2,
+x_{1}=\frac{\left|\begin{array}{rr}7&-3\\6&4\end{array}\right|}{23}=\frac{7\times4-\left(-3\right)\times6}{23}=\frac{28+18}{23}=\frac{46}{23}=2,
 $$
 
 $$
-x_{2}=\frac{\left|\begin{array}{rr}2 & 7\\5 & 6\end{array}\right|}{23}=\frac{2\times6-7\times5}{23}=\frac{12-35}{23}=\frac{-23}{23}=-1.
+x_{2}=\frac{\left|\begin{array}{rr}2&7\\5&6\end{array}\right|}{23}=\frac{2\times6-7\times5}{23}=\frac{12-35}{23}=\frac{-23}{23}=-1.
 $$
 
 故唯一解为 $\left(x_{1},x_{2}\right)=\left(2,-1\right)$. $\blacksquare$
@@ -282,11 +282,11 @@ $$
 
 $$
 \left|\begin{array}{ccccc}
-0 & b_{1} & 0 & \cdots & 0\\
-0 & 0 & b_{2} & \cdots & 0\\
-\vdots & \vdots & \vdots & & \vdots\\
-0 & 0 & 0 & \cdots & b_{n-1}\\
-b_{n} & 0 & 0 & \cdots & 0
+0&b_{1}&0&\cdots&0\\
+0&0&b_{2}&\cdots&0\\
+\vdots&\vdots&\vdots&&\vdots\\
+0&0&0&\cdots&b_{n-1}\\
+b_{n}&0&0&\cdots&0
 \end{array}\right|.
 $$
 
@@ -294,7 +294,7 @@ $$
 
 由**定义 2.2.1 ($n$ 阶行列式)**, 行列式的每一项都是取自不同行, 不同列的 $n$ 个元素的乘积.
 
-由**定义 2.2.1 ($n$ 阶行列式)**, 逐行确定唯一可取的非零元素: 第 $1$ 行只有第 $2$ 列的 $b_{1}$ 非零, 第 $2$ 行只有第 $3$ 列的 $b_{2}$ 非零, $\cdots$, 第 $n-1$ 行只有第 $n$ 列的 $b_{n-1}$ 非零, 第 $n$ 行只有第 $1$ 列的 $b_{n}$ 非零. 因此唯一非零项为 $b_{1}b_{2}\cdots b_{n}$.
+由**定义 2.2.1 ($n$ 阶行列式)**, 逐行确定唯一可取的非零元素: 第 $1$ 行只有第 $2$ 列的 $b_{1}$ 非零, 第 $2$ 行只有第 $3$ 列的 $b_{2}$ 非零, $\cdots$, 第 $n-1$ 行只有第 $n$ 列的 $b_{n-1}$ 非零, 第 $n$ 行只有第 $1$ 列的 $b_{n}$ 非零. 因此唯一非零项为 $b_{1}b_{2}\cdots{b}_{n}$.
 
 由**定义 2.2.1 ($n$ 阶行列式)**, 该非零项的列指标排列为 $2,3,\cdots,n,1$, 其逆序数为
 
@@ -305,7 +305,7 @@ $$
 由**定义 2.2.1 ($n$ 阶行列式)** 中正负号的规定, 偶排列带正号, 奇排列带负号, 故行列式值为
 
 $$
-\left(-1\right)^{n-1}b_{1}b_{2}\cdots b_{n}.
+\left(-1\right)^{n-1}b_{1}b_{2}\cdots{b}_{n}.
 $$
 
 $\blacksquare$

@@ -18,7 +18,7 @@
 
 > **Theorem 4.7.1 (Dimension Formula for Kernel and Image)**
 > 
-> Let $\mathcal{A}:K^{n}\to K^{s}$ be a linear map. The sum of the dimension of the kernel (the solution space of the homogeneous system) and the dimension of the image equals the dimension of the domain:
+> Let $\mathcal{A}:K^{n}\to{K}^{s}$ be a linear map. The sum of the dimension of the kernel (the solution space of the homogeneous system) and the dimension of the image equals the dimension of the domain:
 
 $$
 \dim\left(\ker\mathcal{A}\right)+\dim\left(\operatorname{Im}\mathcal{A}\right)=\dim\left(K^{n}\right)=n.
@@ -26,7 +26,7 @@ $$
 
 > **Definition 4.7.5 (Linear Map)**
 > 
-> A mapping $\mathcal{A}$ from $K^{n}$ to $K^{s}$ is called a linear map if it preserves addition and scalar multiplication, i.e. for all $\alpha,\beta\in K^{n}$ and $k\in K$,
+> A mapping $\mathcal{A}$ from $K^{n}$ to $K^{s}$ is called a linear map if it preserves addition and scalar multiplication, i.e. for all $\alpha,\beta\in{K}^{n}$ and $k\in{K}$,
 
 $$
 \mathcal{A}\left(\alpha+\beta\right)=\mathcal{A}\left(\alpha\right)+\mathcal{A}\left(\beta\right),
@@ -39,7 +39,7 @@ Prove: if an orthogonal matrix $A$ is upper triangular, then $A$ must be diagona
 
 ### Solution to 4.6-5
 
-By **Definition 4.6.1 (Orthogonal Matrix)**, let $A$ be an $n\times n$ upper triangular matrix with $A^{\top}A=I$.
+By **Definition 4.6.1 (Orthogonal Matrix)**, let $A$ be an $n\times{n}$ upper triangular matrix with $A^{\top}A=I$.
 
 Since $A$ is upper triangular, $A^{\top}$ is lower triangular.
 
@@ -53,21 +53,21 @@ $$
 \sum_{k=1}^{n}\left(A^{\top}\right)_{1k}A_{k2}=\sum_{k=1}^{n}A_{k1}A_{k2}=0.
 $$
 
-Since $A$ is upper triangular, $A_{k1}=0$ when $k> 1$. Thus the equation reduces to $A_{11}A_{12}=0$.
+Since $A$ is upper triangular, $A_{k1}=0$ when $k>1$. Thus the equation reduces to $A_{11}A_{12}=0$.
 
 Since $A$ is invertible, $A_{11}\ne0$, hence $A_{12}=0$.
 
-Similarly one proves $A_{1j}=0$ ( $j> 1$ ).
+Similarly one proves $A_{1j}=0$ ( $j>1$ ).
 
 Assume the off-diagonal entries of rows $1,\cdots,i-1$ have already been proved to be zero.
 
-Consider the $\left(i,j\right)$-entry of $A^{\top}A$ ( $i< j$ ):
+Consider the $\left(i,j\right)$-entry of $A^{\top}A$ ( $i<{}j$ ):
 
 $$
 \sum_{k=1}^{i}A_{ki}A_{kj}=0.
 $$
 
-By the induction hypothesis, $A_{ki}=0$ when $k< i$. Thus the equation reduces to $A_{ii}A_{ij}=0$.
+By the induction hypothesis, $A_{ki}=0$ when $k<{}i$. Thus the equation reduces to $A_{ii}A_{ij}=0$.
 
 Since $A_{ii}\ne0$, $A_{ij}=0$.
 
@@ -138,7 +138,7 @@ $\blacksquare$
 
 ## 4.6-14
 
-Let $A$ be an $n\times n$ real invertible matrix. Prove: $A$ can be decomposed as
+Let $A$ be an $n\times{n}$ real invertible matrix. Prove: $A$ can be decomposed as
 
 $$
 A=TB,
@@ -186,13 +186,13 @@ The decomposition is unique. $\blacksquare$
 
 Determine whether the following rules are mappings from $\mathbb{R}$ to itself, and whether they are injective or surjective:
 
-(1) $x\mapsto x^{3}$;
+(1) $x\mapsto{x}^{3}$;
 
-(2) $x\mapsto x^{2}-x$;
+(2) $x\mapsto{x}^{2}-x$;
 
-(3) $x\mapsto 2^{x}$;
+(3) $x\mapsto2^{x}$;
 
-(4) $x\mapsto\ln x$.
+(4) $x\mapsto\ln{x}$.
 
 ### Solution to 4.7-1
 
@@ -205,7 +205,7 @@ It is a mapping. For every $x\in\mathbb{R}$, $x^{3}$ is defined and unique.
 Injective:
 
 $$
-f\left(x_{1}\right)=f\left(x_{2}\right)\Rightarrow x_{1}^{3}=x_{2}^{3}\Rightarrow x_{1}=x_{2}.
+f\left(x_{1}\right)=f\left(x_{2}\right)\Rightarrow{x}_{1}^{3}=x_{2}^{3}\Rightarrow{x}_{1}=x_{2}.
 $$
 
 Hence it is injective.
@@ -237,24 +237,24 @@ It is a mapping.
 Injective:
 
 $$
-f\left(x_{1}\right)=f\left(x_{2}\right)\Rightarrow 2^{x_{1}}=2^{x_{2}}\Rightarrow x_{1}=x_{2}.
+f\left(x_{1}\right)=f\left(x_{2}\right)\Rightarrow2^{x_{1}}=2^{x_{2}}\Rightarrow{x}_{1}=x_{2}.
 $$
 
 Hence it is injective.
 
-Surjective: $2^{x}> 0$. For example, $-1$ has no preimage. Hence it is not surjective.
+Surjective: $2^{x}>0$. For example, $-1$ has no preimage. Hence it is not surjective.
 
 Therefore it is injective but not surjective.
 
-(4) $f\left(x\right)=\ln x$.
+(4) $f\left(x\right)=\ln{x}$.
 
-It is not a mapping. Because for $x\le0$, $\ln x$ is not defined, so not every $x\in\mathbb{R}$ has a corresponding value.
+It is not a mapping. Because for $x\le0$, $\ln{x}$ is not defined, so not every $x\in\mathbb{R}$ has a corresponding value.
 
 $\blacksquare$
 
 ## 4.7-4
 
-Let $S$ be a finite set. Prove: if a mapping $f:S\to S$ is injective, then $f$ must be bijective.
+Let $S$ be a finite set. Prove: if a mapping $f:S\to{S}$ is injective, then $f$ must be bijective.
 
 ### Solution to 4.7-4
 
@@ -262,7 +262,7 @@ By **Definition 4.7.1 (Mapping)**, suppose $S$ has $n$ elements.
 
 Since $f$ is injective, distinct elements of $S$ have distinct images. Hence the number of elements in $f\left(S\right)$ equals $\left|S\right|=n$.
 
-Since $f\left(S\right)\subseteq S$ and $\left|f\left(S\right)\right|=n=\left|S\right|$, we have $f\left(S\right)=S$.
+Since $f\left(S\right)\subseteq{S}$ and $\left|f\left(S\right)\right|=n=\left|S\right|$, we have $f\left(S\right)=S$.
 
 That is, $f$ is surjective.
 
@@ -274,13 +274,13 @@ Let
 
 $$
 A=\left[\begin{array}{rrrr}
-1 & 0 & 2 & 1\\
--1 & 2 & 1 & 3\\
-1 & 2 & 5 & 5
+1&0&2&1\\
+-1&2&1&3\\
+1&2&5&5
 \end{array}\right].
 $$
 
-Define $\mathcal{A}\left(\alpha\right)=A\alpha$ for all $\alpha\in K^{4}$.
+Define $\mathcal{A}\left(\alpha\right)=A\alpha$ for all $\alpha\in{K}^{4}$.
 
 (1) Find the dimension and a basis of $\operatorname{Im}\mathcal{A}$;
 
@@ -296,21 +296,21 @@ Apply elementary row operations to $A$:
 
 $$
 A=\left[\begin{array}{rrrr}
-1 & 0 & 2 & 1\\
--1 & 2 & 1 & 3\\
-1 & 2 & 5 & 5
+1&0&2&1\\
+-1&2&1&3\\
+1&2&5&5
 \end{array}\right]
 \rightarrow
 \left[\begin{array}{rrrr}
-1 & 0 & 2 & 1\\
-0 & 2 & 3 & 4\\
-0 & 2 & 3 & 4
+1&0&2&1\\
+0&2&3&4\\
+0&2&3&4
 \end{array}\right]
 \rightarrow
 \left[\begin{array}{rrrr}
-1 & 0 & 2 & 1\\
-0 & 2 & 3 & 4\\
-0 & 0 & 0 & 0
+1&0&2&1\\
+0&2&3&4\\
+0&0&0&0
 \end{array}\right].
 $$
 
@@ -340,7 +340,7 @@ $$
 The free variables are $x_{3},x_{4}$.
 
 $$
-x_{1}=-2x_{3}-x_{4},\quad x_{2}=-\frac{3}{2}x_{3}-2x_{4}.
+x_{1}=-2x_{3}-x_{4},\quad{x}_{2}=-\frac{3}{2}x_{3}-2x_{4}.
 $$
 
 Set $x_{3}=1,x_{4}=0$:

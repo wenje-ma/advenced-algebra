@@ -2,7 +2,7 @@
 
 > **定义 7.2.1 (整除)**
 > 
-> 设 $f\left(x\right),g\left(x\right)\in K\left[x\right]$, 如果存在 $h\left(x\right)\in K\left[x\right]$, 使得 $f\left(x\right)=h\left(x\right)g\left(x\right)$, 则称 $g\left(x\right)$ 整除 $f\left(x\right)$, 记作 $g\left(x\right)\mid f\left(x\right)$.
+> 设 $f\left(x\right),g\left(x\right)\in{K}\left[x\right]$, 如果存在 $h\left(x\right)\in{K}\left[x\right]$, 使得 $f\left(x\right)=h\left(x\right)g\left(x\right)$, 则称 $g\left(x\right)$ 整除 $f\left(x\right)$, 记作 $g\left(x\right)\mid{f}\left(x\right)$.
 
 > **定理 7.2.1 (带余除法)**
 > 
@@ -10,11 +10,11 @@
 
 > **定义 7.3.1 (最大公因式)**
 > 
-> 设 $f\left(x\right),g\left(x\right)\in K\left[x\right]$, $d\left(x\right)$ 是 $f\left(x\right)$ 与 $g\left(x\right)$ 的一个公因式. 如果 $f\left(x\right)$ 与 $g\left(x\right)$ 的任一公因式都能整除 $d\left(x\right)$, 则称 $d\left(x\right)$ 是 $f\left(x\right)$ 与 $g\left(x\right)$ 的一个最大公因式.
+> 设 $f\left(x\right),g\left(x\right)\in{K}\left[x\right]$, $d\left(x\right)$ 是 $f\left(x\right)$ 与 $g\left(x\right)$ 的一个公因式. 如果 $f\left(x\right)$ 与 $g\left(x\right)$ 的任一公因式都能整除 $d\left(x\right)$, 则称 $d\left(x\right)$ 是 $f\left(x\right)$ 与 $g\left(x\right)$ 的一个最大公因式.
 
 > **定理 7.3.1 (最大公因式的存在性与倍式和)**
 > 
-> 对于 $K\left[x\right]$ 中任意两个多项式 $f\left(x\right)$ 与 $g\left(x\right)$, 存在它们的一个最大公因式 $d\left(x\right)$, 并且 $d\left(x\right)$ 可以表示成 $f\left(x\right)$ 与 $g\left(x\right)$ 的倍式和, 即有 $u\left(x\right),v\left(x\right)\in K\left[x\right]$, 使得
+> 对于 $K\left[x\right]$ 中任意两个多项式 $f\left(x\right)$ 与 $g\left(x\right)$, 存在它们的一个最大公因式 $d\left(x\right)$, 并且 $d\left(x\right)$ 可以表示成 $f\left(x\right)$ 与 $g\left(x\right)$ 的倍式和, 即有 $u\left(x\right),v\left(x\right)\in{K}\left[x\right]$, 使得
 
 $$
 d\left(x\right)=u\left(x\right)f\left(x\right)+v\left(x\right)g\left(x\right).
@@ -41,18 +41,18 @@ $g\left(x\right)=x^{2}-3x+1$, 求 $g\left(x\right)$ 整除 $f\left(x\right)$ 的
 商式首项: $x^{3}/x^{2}=x$.
 
 $$
-x\cdot g\left(x\right)=x^{3}-3x^{2}+x.
+x\cdot{g}\left(x\right)=x^{3}-3x^{2}+x.
 $$
 
 余式:
 
 $$
-f-x\cdot g=\left(a-1\right)x+a_{0}.
+f-x\cdot{g}=\left(a-1\right)x+a_{0}.
 $$
 
-余式次数 $< 2$, 停止.
+余式次数 $<2$, 停止.
 
-因此 $g\left(x\right)\mid f\left(x\right)$ 当且仅当余式为零, 即
+因此 $g\left(x\right)\mid{f}\left(x\right)$ 当且仅当余式为零, 即
 
 $$
 \left(a-1\right)x+a_{0}=0.
@@ -61,7 +61,7 @@ $$
 这对所有 $x$ 成立当且仅当
 
 $$
-a-1=0,\quad a_{0}=0.
+a-1=0,\quad{a}_{0}=0.
 $$
 
 所以充分必要条件是 $a=1$, $a_{0}=0$. $\blacksquare$
@@ -86,42 +86,42 @@ $g\left(x\right)=x-4$;
 
 $$
 \begin{array}{r|rrrrr}
-4 & 3 & 0 & -5 & 2 & -1\\
-  &   & 12 & 48 & 172 & 776\\
+4&3&0&-5&2&-1\\
+&&12&48&172&776\\
 \hline
-  & 3 & 12 & 43 & 174 & 775
+&3&12&43&174&775
 \end{array}
 $$
 
 因此
 
 $$
-\text{商式 }h\left(x\right)=3x^{3}+12x^{2}+43x+174.
+\text{商式~}h\left(x\right)=3x^{3}+12x^{2}+43x+174.
 $$
 
 $$
-\text{余式 }r\left(x\right)=775.
+\text{余式~}r\left(x\right)=775.
 $$
 
 (2) 综合除法:
 
 $$
 \begin{array}{r|rrrr}
--2 & 5 & 0 & -3 & 4\\
-   &   & -10 & 20 & -34\\
+-2&5&0&-3&4\\
+&&-10&20&-34\\
 \hline
-   & 5 & -10 & 17 & -30
+&5&-10&17&-30
 \end{array}
 $$
 
 因此
 
 $$
-\text{商式 }h\left(x\right)=5x^{2}-10x+17.
+\text{商式~}h\left(x\right)=5x^{2}-10x+17.
 $$
 
 $$
-\text{余式 }r\left(x\right)=-30.
+\text{余式~}r\left(x\right)=-30.
 $$
 
 $\blacksquare$
@@ -131,7 +131,7 @@ $\blacksquare$
 求 $f\left(x\right)$ 与 $g\left(x\right)$ 的最大公因式, 并且把 $\left(f\left(x\right),g\left(x\right)\right)$ 表示成 $f\left(x\right)$ 与 $g\left(x\right)$ 的倍式和:
 
 $$
-f\left(x\right)=x^{4}+3x^{3}-x^{2}-4x-3,\quad g\left(x\right)=3x^{3}+10x^{2}+2x-3.
+f\left(x\right)=x^{4}+3x^{3}-x^{2}-4x-3,\quad{g}\left(x\right)=3x^{3}+10x^{2}+2x-3.
 $$
 
 ### 解答 7.3-1(1)
@@ -206,7 +206,7 @@ $$
 因此, 由**定理 7.3.1 (最大公因式的存在性与倍式和)**,
 
 $$
-\left(f,g\right)=\frac{9x-15}{5}\cdot f\left(x\right)+\frac{-3x^{2}+6x}{5}\cdot g\left(x\right).
+\left(f,g\right)=\frac{9x-15}{5}\cdot{f}\left(x\right)+\frac{-3x^{2}+6x}{5}\cdot{g}\left(x\right).
 $$
 
 $\blacksquare$
@@ -245,7 +245,7 @@ $$
 
 ## 7.3-7
 
-设 $f\left(x\right),g\left(x\right)\in K\left[x\right]$, 并且 $a,b,c,d\in K$, 使得 $ad-bc\ne0$. 证明:
+设 $f\left(x\right),g\left(x\right)\in{K}\left[x\right]$, 并且 $a,b,c,d\in{K}$, 使得 $ad-bc\ne0$. 证明:
 
 $$
 \left(af+bg,cf+dg\right)=\left(f,g\right).
@@ -255,9 +255,9 @@ $$
 
 设 $d_{1}=\left(af+bg,cf+dg\right)$, $d_{2}=\left(f,g\right)$.
 
-因为 $d_{2}\mid f$ 且 $d_{2}\mid g$, 所以 $d_{2}\mid\left(af+bg\right)$ 且 $d_{2}\mid\left(cf+dg\right)$.
+因为 $d_{2}\mid{f}$ 且 $d_{2}\mid{g}$, 所以 $d_{2}\mid\left(af+bg\right)$ 且 $d_{2}\mid\left(cf+dg\right)$.
 
-因此 $d_{2}\mid d_{1}$.
+因此 $d_{2}\mid{d}_{1}$.
 
 反过来, 因为 $ad-bc\ne0$, 我们可以解出 $f,g$ 用 $af+bg,cf+dg$ 表示:
 
@@ -269,67 +269,67 @@ $$
 g=-\frac{c}{ad-bc}\left(af+bg\right)+\frac{a}{ad-bc}\left(cf+dg\right).
 $$
 
-因为 $d_{1}\mid\left(af+bg\right)$ 且 $d_{1}\mid\left(cf+dg\right)$, 所以 $d_{1}\mid f$ 且 $d_{1}\mid g$.
+因为 $d_{1}\mid\left(af+bg\right)$ 且 $d_{1}\mid\left(cf+dg\right)$, 所以 $d_{1}\mid{f}$ 且 $d_{1}\mid{g}$.
 
-因此 $d_{1}\mid d_{2}$.
+因此 $d_{1}\mid{d}_{2}$.
 
-所以 $d_{1}\sim d_{2}$.
+所以 $d_{1}\sim{d}_{2}$.
 
 首项系数都是 $1$, 故 $d_{1}=d_{2}$. $\blacksquare$
 
 ## 7.3-9
 
-证明: $K\left[x\right]$ 中两个非零多项式 $f\left(x\right)$ 与 $g\left(x\right)$ 不互素的充分必要条件是, 存在两个非零多项式 $u\left(x\right),v\left(x\right)$, 使 $u\left(x\right)f\left(x\right)=v\left(x\right)g\left(x\right)$, $\deg u\left(x\right)< \deg g\left(x\right)$, $\deg v\left(x\right)< \deg f\left(x\right)$.
+证明: $K\left[x\right]$ 中两个非零多项式 $f\left(x\right)$ 与 $g\left(x\right)$ 不互素的充分必要条件是, 存在两个非零多项式 $u\left(x\right),v\left(x\right)$, 使 $u\left(x\right)f\left(x\right)=v\left(x\right)g\left(x\right)$, $\deg{u}\left(x\right)<\deg{g}\left(x\right)$, $\deg{v}\left(x\right)<\deg{f}\left(x\right)$.
 
 ### 解答 7.3-9
 
-必要性. 若 $f$ 与 $g$ 不互素, 设 $d\left(x\right)=\left(f,g\right)$, $\deg d> 0$.
+必要性. 若 $f$ 与 $g$ 不互素, 设 $d\left(x\right)=\left(f,g\right)$, $\deg{d}>0$.
 
 令
 
 $$
-u\left(x\right)=\frac{g\left(x\right)}{d\left(x\right)},\quad v\left(x\right)=\frac{f\left(x\right)}{d\left(x\right)}.
+u\left(x\right)=\frac{g\left(x\right)}{d\left(x\right)},\quad{v}\left(x\right)=\frac{f\left(x\right)}{d\left(x\right)}.
 $$
 
 则
 
 $$
-u\left(x\right)f\left(x\right)=\frac{g\left(x\right)}{d\left(x\right)}\cdot f\left(x\right)=\frac{f\left(x\right)}{d\left(x\right)}\cdot g\left(x\right)=v\left(x\right)g\left(x\right).
+u\left(x\right)f\left(x\right)=\frac{g\left(x\right)}{d\left(x\right)}\cdot{f}\left(x\right)=\frac{f\left(x\right)}{d\left(x\right)}\cdot{g}\left(x\right)=v\left(x\right)g\left(x\right).
 $$
 
 且
 
 $$
-\deg u=\deg g-\deg d< \deg g.
+\deg{u}=\deg{g}-\deg{d}<\deg{g}.
 $$
 
 $$
-\deg v=\deg f-\deg d< \deg f.
+\deg{v}=\deg{f}-\deg{d}<\deg{f}.
 $$
 
-充分性. 若存在非零 $u,v$ 使得 $uf=vg$, 且 $\deg u< \deg g$, $\deg v< \deg f$.
+充分性. 若存在非零 $u,v$ 使得 $uf=vg$, 且 $\deg{u}<\deg{g}$, $\deg{v}<\deg{f}$.
 
 假设 $f$ 与 $g$ 互素, 即 $\left(f,g\right)=1$.
 
-由 $uf=vg$, 得 $g\mid uf$.
+由 $uf=vg$, 得 $g\mid{u}f$.
 
-因为 $\left(f,g\right)=1$, 所以 $g\mid u$.
+因为 $\left(f,g\right)=1$, 所以 $g\mid{u}$.
 
-但 $\deg u< \deg g$, 所以只能 $u=0$, 矛盾.
+但 $\deg{u}<\deg{g}$, 所以只能 $u=0$, 矛盾.
 
 因此 $f$ 与 $g$ 不互素. $\blacksquare$
 
 ## 7.3-11
 
-设 $A\in M_{n}\left(K\right)$, $f\left(x\right),g\left(x\right)\in K\left[x\right]$. 证明: 如果 $d\left(x\right)$ 是 $f\left(x\right)$ 与 $g\left(x\right)$ 的一个最大公因式, 则 $d\left(A\right)$ 的核等于 $f\left(A\right)$ 的核与 $g\left(A\right)$ 的核的交.
+设 $A\in{M}_{n}\left(K\right)$, $f\left(x\right),g\left(x\right)\in{K}\left[x\right]$. 证明: 如果 $d\left(x\right)$ 是 $f\left(x\right)$ 与 $g\left(x\right)$ 的一个最大公因式, 则 $d\left(A\right)$ 的核等于 $f\left(A\right)$ 的核与 $g\left(A\right)$ 的核的交.
 
 ### 解答 7.3-11
 
-因为 $d$ 是 $f$ 与 $g$ 的最大公因式, 所以 $d\mid f$ 且 $d\mid g$.
+因为 $d$ 是 $f$ 与 $g$ 的最大公因式, 所以 $d\mid{f}$ 且 $d\mid{g}$.
 
 即存在 $f_{1},g_{1}$ 使得 $f=df_{1}$, $g=dg_{1}$.
 
-设 $X\in\ker d\left(A\right)$, 即 $d\left(A\right)X=0$.
+设 $X\in\ker{d}\left(A\right)$, 即 $d\left(A\right)X=0$.
 
 则
 
@@ -337,7 +337,7 @@ $$
 f\left(A\right)X=f_{1}\left(A\right)d\left(A\right)X=0,
 $$
 
-即 $X\in\ker f\left(A\right)$.
+即 $X\in\ker{f}\left(A\right)$.
 
 同理,
 
@@ -345,15 +345,15 @@ $$
 g\left(A\right)X=g_{1}\left(A\right)d\left(A\right)X=0,
 $$
 
-即 $X\in\ker g\left(A\right)$.
+即 $X\in\ker{g}\left(A\right)$.
 
 因此
 
 $$
-\ker d\left(A\right)\subseteq\ker f\left(A\right)\cap\ker g\left(A\right).
+\ker{d}\left(A\right)\subseteq\ker{f}\left(A\right)\cap\ker{g}\left(A\right).
 $$
 
-反过来, 设 $X\in\ker f\left(A\right)\cap\ker g\left(A\right)$, 即 $f\left(A\right)X=0$ 且 $g\left(A\right)X=0$.
+反过来, 设 $X\in\ker{f}\left(A\right)\cap\ker{g}\left(A\right)$, 即 $f\left(A\right)X=0$ 且 $g\left(A\right)X=0$.
 
 因为 $d$ 是 $f$ 与 $g$ 的最大公因式, 所以存在 $u,v$ 使得 $uf+vg=d$.
 
@@ -363,18 +363,18 @@ $$
 d\left(A\right)X=u\left(A\right)f\left(A\right)X+v\left(A\right)g\left(A\right)X=0+0=0.
 $$
 
-即 $X\in\ker d\left(A\right)$.
+即 $X\in\ker{d}\left(A\right)$.
 
 因此
 
 $$
-\ker f\left(A\right)\cap\ker g\left(A\right)\subseteq\ker d\left(A\right).
+\ker{f}\left(A\right)\cap\ker{g}\left(A\right)\subseteq\ker{d}\left(A\right).
 $$
 
 所以
 
 $$
-\ker d\left(A\right)=\ker f\left(A\right)\cap\ker g\left(A\right).
+\ker{d}\left(A\right)=\ker{f}\left(A\right)\cap\ker{g}\left(A\right).
 $$
 
 $\blacksquare$

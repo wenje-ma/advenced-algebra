@@ -17,7 +17,7 @@
 > The dimension of the solution space $W$ of an $n$-variable homogeneous linear system over a number field $K$ is
 
 $$
-\dim W=n-\text{rank}\left(A\right),
+\dim{W}=n-\text{rank}\left(A\right),
 $$
 where $A$ is the coefficient matrix.
 
@@ -42,11 +42,11 @@ whose coefficient matrix $A$ has the same rank as the following matrix $B$:
 
 $$
 B=\left[\begin{array}{ccccc}
-a_{11} & a_{12} & \cdots & a_{1n} & b_{1}\\
-a_{21} & a_{22} & \cdots & a_{2n} & b_{2}\\
-\vdots & \vdots & & \vdots & \vdots\\
-a_{n1} & a_{n2} & \cdots & a_{nn} & b_{n}\\
-b_{1} & b_{2} & \cdots & b_{n} & 0
+a_{11}&a_{12}&\cdots&a_{1n}&b_{1}\\
+a_{21}&a_{22}&\cdots&a_{2n}&b_{2}\\
+\vdots&\vdots&&\vdots&\vdots\\
+a_{n1}&a_{n2}&\cdots&a_{nn}&b_{n}\\
+b_{1}&b_{2}&\cdots&b_{n}&0
 \end{array}\right].
 $$
 
@@ -93,17 +93,17 @@ By **Definition 3.7.1 (Fundamental System of Solutions)** and **Theorem 3.7.1 (D
 
 $$
 \left[\begin{array}{rrrr}
-1 & -3 & 1 & -2\\
--5 & 1 & -2 & 3\\
--1 & -11 & 2 & -5\\
-3 & 5 & 0 & 1
+1&-3&1&-2\\
+-5&1&-2&3\\
+-1&-11&2&-5\\
+3&5&0&1
 \end{array}\right]
-\xrightarrow{\text{row ops}}
+\xrightarrow{\text{row~ops}}
 \left[\begin{array}{rrrr}
-1 & -3 & 1 & -2\\
-0 & -14 & 3 & -7\\
-0 & 0 & 0 & 0\\
-0 & 0 & 0 & 0
+1&-3&1&-2\\
+0&-14&3&-7\\
+0&0&0&0\\
+0&0&0&0
 \end{array}\right].
 $$
 
@@ -129,7 +129,7 @@ By **Definition 3.7.1 (Fundamental System of Solutions)**, $\eta_{1},\eta_{2}$ a
 The solution set:
 
 $$
-W=\left\{k_{1}\eta_{1}+k_{2}\eta_{2}\mid k_{1},k_{2}\in K\right\}.
+W=\left\{k_{1}\eta_{1}+k_{2}\eta_{2}\mid{k}_{1},k_{2}\in{K}\right\}.
 $$
 
 $\blacksquare$
@@ -154,19 +154,19 @@ By **Definition 3.7.1 (Fundamental System of Solutions)** and **Theorem 3.7.1 (D
 
 $$
 \left[\begin{array}{rrrr}
-3 & -1 & 2 & 1\\
-1 & 3 & -1 & 2\\
--2 & 5 & 1 & -1\\
-3 & 10 & 1 & 4\\
--2 & 15 & -4 & 4
+3&-1&2&1\\
+1&3&-1&2\\
+-2&5&1&-1\\
+3&10&1&4\\
+-2&15&-4&4
 \end{array}\right]
-\xrightarrow{\text{row ops}}
+\xrightarrow{\text{row~ops}}
 \left[\begin{array}{rrrr}
-1 & 3 & -1 & 2\\
-0 & 1 & 4 & -2\\
-0 & 0 & -45 & 25\\
-0 & 0 & 0 & 0\\
-0 & 0 & 0 & 0
+1&3&-1&2\\
+0&1&4&-2\\
+0&0&-45&25\\
+0&0&0&0\\
+0&0&0&0
 \end{array}\right].
 $$
 
@@ -191,17 +191,17 @@ By **Definition 3.7.1 (Fundamental System of Solutions)**, $\eta_{1}$ is linearl
 The solution set:
 
 $$
-W=\left\{k\eta_{1}\mid k\in K\right\}.
+W=\left\{k\eta_{1}\mid{k}\in{K}\right\}.
 $$
 
 $\blacksquare$
 
 ## 3.7-4
 
-Prove: let the coefficient matrix of an $n$-variable homogeneous linear system have rank $r$ $\left(r< n\right)$, and let $\delta_{1},\delta_{2},\cdots,\delta_{m}$ be solution vectors of the system. Then
+Prove: let the coefficient matrix of an $n$-variable homogeneous linear system have rank $r$ $\left(r<{}n\right)$, and let $\delta_{1},\delta_{2},\cdots,\delta_{m}$ be solution vectors of the system. Then
 
 $$
-\text{rank}\left\{\delta_{1},\delta_{2},\cdots,\delta_{m}\right\}\le n-r.
+\text{rank}\left\{\delta_{1},\delta_{2},\cdots,\delta_{m}\right\}\le{n}-r.
 $$
 
 ### Solution to 3.7-4
@@ -209,17 +209,17 @@ $$
 By **Theorem 3.7.1 (Dimension of the Solution Space)**, the solution space $W$ of the homogeneous system has dimension
 
 $$
-\dim W=n-\text{rank}\left(A\right)=n-r.
+\dim{W}=n-\text{rank}\left(A\right)=n-r.
 $$
 
-$\delta_{1},\delta_{2},\cdots,\delta_{m}$ are all vectors in $W$, so $\left\langle\delta_{1},\delta_{2},\cdots,\delta_{m}\right\rangle\subseteq W$.
+$\delta_{1},\delta_{2},\cdots,\delta_{m}$ are all vectors in $W$, so $\left\langle\delta_{1},\delta_{2},\cdots,\delta_{m}\right\rangle\subseteq{W}$.
 
 Therefore
 
 $$
 \text{rank}\left\{\delta_{1},\delta_{2},\cdots,\delta_{m}\right\}
 =\dim\left\langle\delta_{1},\delta_{2},\cdots,\delta_{m}\right\rangle
-\le\dim W=n-r.
+\le\dim{W}=n-r.
 $$
 
 $\blacksquare$
@@ -246,15 +246,15 @@ $$
 
 When $i=k$, this is $\left|A\right|=0$ (by hypothesis).
 
-When $i\ne k$, this is the determinant obtained by replacing row $k$ of $A$ with row $i$; since two rows are identical, the determinant is $0$.
+When $i\ne{k}$, this is the determinant obtained by replacing row $k$ of $A$ with row $i$; since two rows are identical, the determinant is $0$.
 
 Hence for all $i$ the above is $0$, i.e. $A\eta_{1}=0$.
 
 Verify that $\eta_{1}\ne0$. Because $A_{kl}\ne0$, the $l$th component of $\eta_{1}$ is nonzero, so $\eta_{1}\ne0$.
 
-Verify that the solution space has dimension $1$. Since $\left|A\right|=0$, $\text{rank}\left(A\right)< n$.
+Verify that the solution space has dimension $1$. Since $\left|A\right|=0$, $\text{rank}\left(A\right)<{}n$.
 
-Also, since $A_{kl}\ne0$, $A$ has a nonzero $\left(n-1\right)$-minor (the minor after deleting row $k$ and column $l$), so $\text{rank}\left(A\right)\ge n-1$.
+Also, since $A_{kl}\ne0$, $A$ has a nonzero $\left(n-1\right)$-minor (the minor after deleting row $k$ and column $l$), so $\text{rank}\left(A\right)\ge{n}-1$.
 
 Thus $\text{rank}\left(A\right)=n-1$.
 
@@ -264,7 +264,7 @@ $\eta_{1}$ is a nonzero solution, and by itself forms a basis of the solution sp
 
 ## 3.7-7
 
-Let $A_{1}$ be the submatrix of the $s\times n$ matrix $A=\left(a_{ij}\right)$ formed by its first $s-1$ rows. Prove: if every solution of the homogeneous system with coefficient matrix $A_{1}$ is also a solution of the equation
+Let $A_{1}$ be the submatrix of the $s\times{n}$ matrix $A=\left(a_{ij}\right)$ formed by its first $s-1$ rows. Prove: if every solution of the homogeneous system with coefficient matrix $A_{1}$ is also a solution of the equation
 
 $$
 a_{s1}x_{1}+a_{s2}x_{2}+\cdots+a_{sn}x_{n}=0,
@@ -303,17 +303,17 @@ By **Theorem 3.8.1 (Solution Set Structure of an Inhomogeneous System)**, perfor
 
 $$
 \left[\begin{array}{rrrr\left|r}
-1 & -5 & 2 & -3 & 11\\
--3 & 1 & -4 & 2 & -5\\
--1 & -9 & 0 & -4 & 17\\
-5 & 3 & 6 & -1 & -1
+1&-5&2&-3&11\\
+-3&1&-4&2&-5\\
+-1&-9&0&-4&17\\
+5&3&6&-1&-1
 \end{array}\right]
-\xrightarrow{\text{row ops}}
+\xrightarrow{\text{row~ops}}
 \left[\begin{array}{rrrr\right|r}
-1 & -5 & 2 & -3 & 11\\
-0 & -14 & 2 & -7 & 28\\
-0 & 0 & 0 & 0 & 0\\
-0 & 0 & 0 & 0 & 0
+1&-5&2&-3&11\\
+0&-14&2&-7&28\\
+0&0&0&0&0\\
+0&0&0&0&0
 \end{array}\right].
 $$
 
@@ -341,7 +341,7 @@ Set $x_{3}=0,x_{4}=2$ to get $\eta_{2}=\left(1,-1,0,2\right)^{\top}$.
 By **Theorem 3.8.1 (Solution Set Structure of an Inhomogeneous System)**, the solution set is the particular solution $\gamma_{0}$ plus the solution space $W$ of the derived system:
 
 $$
-U=\left\{\gamma_{0}+k_{1}\eta_{1}+k_{2}\eta_{2}\mid k_{1},k_{2}\in K\right\}.
+U=\left\{\gamma_{0}+k_{1}\eta_{1}+k_{2}\eta_{2}\mid{k}_{1},k_{2}\in{K}\right\}.
 $$
 
 $\blacksquare$

@@ -2,7 +2,7 @@
 
 > **定义 5.4.1 (相似)**
 > 
-> 设 $A$ 与 $B$ 都是数域 $K$ 上 $n$ 级矩阵, 如果存在数域 $K$ 上的一个 $n$ 级可逆矩阵 $P$, 使得 $P^{-1}AP=B$, 则称 $A$ 与 $B$ 是相似的, 记作 $A\sim B$.
+> 设 $A$ 与 $B$ 都是数域 $K$ 上 $n$ 级矩阵, 如果存在数域 $K$ 上的一个 $n$ 级可逆矩阵 $P$, 使得 $P^{-1}AP=B$, 则称 $A$ 与 $B$ 是相似的, 记作 $A\sim{B}$.
 
 > **定理 5.4.2 (可对角化的充要条件)**
 > 
@@ -10,52 +10,52 @@
 
 > **定义 5.5.1 (特征值与特征向量)**
 > 
-> 设 $A$ 是数域 $K$ 上的 $n$ 级矩阵, 如果 $K^{n}$ 中有非零列向量 $\alpha$, 使得 $A\alpha=\lambda_{0}\alpha$, 且 $\lambda_{0}\in K$, 则称 $\lambda_{0}$ 是 $A$ 的一个特征值, 称 $\alpha$ 是 $A$ 的属于特征值 $\lambda_{0}$ 的一个特征向量.
+> 设 $A$ 是数域 $K$ 上的 $n$ 级矩阵, 如果 $K^{n}$ 中有非零列向量 $\alpha$, 使得 $A\alpha=\lambda_{0}\alpha$, 且 $\lambda_{0}\in{K}$, 则称 $\lambda_{0}$ 是 $A$ 的一个特征值, 称 $\alpha$ 是 $A$ 的属于特征值 $\lambda_{0}$ 的一个特征向量.
 
 ## 5.4-3
 
-证明: 如果 $A_{1}\sim B_{1}$, $A_{2}\sim B_{2}$, 则
+证明: 如果 $A_{1}\sim{B}_{1}$, $A_{2}\sim{B}_{2}$, 则
 
 $$
-\left[\begin{array}{cc}A_{1} & 0\\0 & A_{2}\end{array}\right]\sim\left[\begin{array}{cc}B_{1} & 0\\0 & B_{2}\end{array}\right].
+\left[\begin{array}{cc}A_{1}&0\\0&A_{2}\end{array}\right]\sim\left[\begin{array}{cc}B_{1}&0\\0&B_{2}\end{array}\right].
 $$
 
 ### 解答 5.4-3
 
-由**定义 5.4.1 (相似)**, 因为 $A_{1}\sim B_{1}$, 故存在可逆矩阵 $P_{1}$, 使得 $P_{1}^{-1}A_{1}P_{1}=B_{1}$.
+由**定义 5.4.1 (相似)**, 因为 $A_{1}\sim{B}_{1}$, 故存在可逆矩阵 $P_{1}$, 使得 $P_{1}^{-1}A_{1}P_{1}=B_{1}$.
 
 同理, 存在可逆矩阵 $P_{2}$, 使得 $P_{2}^{-1}A_{2}P_{2}=B_{2}$.
 
 令
 
 $$
-P=\left[\begin{array}{cc}P_{1} & 0\\0 & P_{2}\end{array}\right].
+P=\left[\begin{array}{cc}P_{1}&0\\0&P_{2}\end{array}\right].
 $$
 
 因为 $P_{1},P_{2}$ 可逆, 故 $P$ 可逆, 且
 
 $$
-P^{-1}=\left[\begin{array}{cc}P_{1}^{-1} & 0\\0 & P_{2}^{-1}\end{array}\right].
+P^{-1}=\left[\begin{array}{cc}P_{1}^{-1}&0\\0&P_{2}^{-1}\end{array}\right].
 $$
 
 计算:
 
 $$
-P^{-1}\left[\begin{array}{cc}A_{1} & 0\\0 & A_{2}\end{array}\right]P
-=\left[\begin{array}{cc}P_{1}^{-1} & 0\\0 & P_{2}^{-1}\end{array}\right]\left[\begin{array}{cc}A_{1} & 0\\0 & A_{2}\end{array}\right]\left[\begin{array}{cc}P_{1} & 0\\0 & P_{2}\end{array}\right]=\left[\begin{array}{cc}P_{1}^{-1}A_{1}P_{1} & 0\\0 & P_{2}^{-1}A_{2}P_{2}\end{array}\right]=\left[\begin{array}{cc}B_{1} & 0\\0 & B_{2}\end{array}\right].
+P^{-1}\left[\begin{array}{cc}A_{1}&0\\0&A_{2}\end{array}\right]P
+=\left[\begin{array}{cc}P_{1}^{-1}&0\\0&P_{2}^{-1}\end{array}\right]\left[\begin{array}{cc}A_{1}&0\\0&A_{2}\end{array}\right]\left[\begin{array}{cc}P_{1}&0\\0&P_{2}\end{array}\right]=\left[\begin{array}{cc}P_{1}^{-1}A_{1}P_{1}&0\\0&P_{2}^{-1}A_{2}P_{2}\end{array}\right]=\left[\begin{array}{cc}B_{1}&0\\0&B_{2}\end{array}\right].
 $$
 
 因此由**定义 5.4.1 (相似)**,
 
 $$
-\left[\begin{array}{cc}A_{1} & 0\\0 & A_{2}\end{array}\right]\sim\left[\begin{array}{cc}B_{1} & 0\\0 & B_{2}\end{array}\right].
+\left[\begin{array}{cc}A_{1}&0\\0&A_{2}\end{array}\right]\sim\left[\begin{array}{cc}B_{1}&0\\0&B_{2}\end{array}\right].
 $$
 
 $\blacksquare$
 
 ## 5.4-8
 
-证明: 如果 $A$ 可对角化, 则 $A\sim A^{\top}$.
+证明: 如果 $A$ 可对角化, 则 $A\sim{A}^{\top}$.
 
 ### 解答 5.4-8
 
@@ -92,13 +92,13 @@ $$
 因此
 
 $$
-A^{\top}\sim D.
+A^{\top}\sim{D}.
 $$
 
-又因为 $A\sim D$, 故由相似关系的对称性和传递性,
+又因为 $A\sim{D}$, 故由相似关系的对称性和传递性,
 
 $$
-A\sim A^{\top}.
+A\sim{A}^{\top}.
 $$
 
 $\blacksquare$
@@ -159,9 +159,9 @@ $$
 
 ### 解答 5.4-12
 
-设 $A$ 是幂零矩阵, 幂零指数为 $l$, 即 $A^{l}=0$, 且 $A^{k}\ne0$ ( $k< l$ ).
+设 $A$ 是幂零矩阵, 幂零指数为 $l$, 即 $A^{l}=0$, 且 $A^{k}\ne0$ ( $k<{}l$ ).
 
-设 $B\sim A$, 即存在可逆矩阵 $P$, 使得 $B=P^{-1}AP$.
+设 $B\sim{A}$, 即存在可逆矩阵 $P$, 使得 $B=P^{-1}AP$.
 
 证明 $B$ 是幂零矩阵.
 
@@ -187,7 +187,7 @@ $$
 A^{m}=0.
 $$
 
-因为 $A$ 的幂零指数为 $l$, 故 $m\ge l$.
+因为 $A$ 的幂零指数为 $l$, 故 $m\ge{l}$.
 
 另一方面, $A^{l}=0$, 故
 
@@ -195,7 +195,7 @@ $$
 B^{l}=P^{-1}A^{l}P=0.
 $$
 
-因为 $B$ 的幂零指数为 $m$, 故 $l\ge m$.
+因为 $B$ 的幂零指数为 $m$, 故 $l\ge{m}$.
 
 因此 $m=l$.
 
@@ -207,9 +207,9 @@ $$
 
 $$
 A=\left[\begin{array}{rrr}
-2 & 3 & 2\\
-1 & 8 & 2\\
--2 & -14 & -3
+2&3&2\\
+1&8&2\\
+-2&-14&-3
 \end{array}\right].
 $$
 
@@ -218,17 +218,17 @@ $$
 由**定义 5.5.1 (特征值与特征向量)**, 求特征多项式:
 
 $$
-\left|\lambda I-A\right|=\left|\begin{array}{rrr}
-\lambda-2 & -3 & -2\\
--1 & \lambda-8 & -2\\
-2 & 14 & \lambda+3
+\left|\lambda{I}-A\right|=\left|\begin{array}{rrr}
+\lambda-2&-3&-2\\
+-1&\lambda-8&-2\\
+2&14&\lambda+3
 \end{array}\right|.
 $$
 
 按第 $1$ 行展开:
 
 $$
-\left|\lambda I-A\right|
+\left|\lambda{I}-A\right|
 =\left(\lambda-2\right)\left[\left(\lambda-8\right)\left(\lambda+3\right)+28\right]+3\left[-\left(\lambda+3\right)+4\right]-2\left[-14-2\left(\lambda-8\right)\right]=\left(\lambda-2\right)\left(\lambda^{2}-5\lambda+4\right)+3\left(-\lambda+1\right)-2\left(2-2\lambda\right)=\left(\lambda-2\right)\left(\lambda-1\right)\left(\lambda-4\right)-3\lambda+3-4+4\lambda=\left(\lambda-1\right)\left[\left(\lambda-2\right)\left(\lambda-4\right)+1\right]=\left(\lambda-1\right)\left(\lambda^{2}-6\lambda+9\right)=\left(\lambda-1\right)\left(\lambda-3\right)^{2}.
 $$
 
@@ -238,14 +238,14 @@ $$
 
 $$
 I-A=\left[\begin{array}{rrr}
--1 & -3 & -2\\
--1 & -7 & -2\\
-2 & 14 & 4
+-1&-3&-2\\
+-1&-7&-2\\
+2&14&4
 \end{array}\right]\rightarrow
 \left[\begin{array}{rrr}
--1 & -3 & -2\\
-0 & -4 & 0\\
-0 & 0 & 0
+-1&-3&-2\\
+0&-4&0\\
+0&0&0
 \end{array}\right].
 $$
 
@@ -257,14 +257,14 @@ $$
 
 $$
 3I-A=\left[\begin{array}{rrr}
-1 & -3 & -2\\
--1 & -5 & -2\\
-2 & 14 & 6
+1&-3&-2\\
+-1&-5&-2\\
+2&14&6
 \end{array}\right]\rightarrow
 \left[\begin{array}{rrr}
-1 & -3 & -2\\
-0 & -8 & -4\\
-0 & 0 & 0
+1&-3&-2\\
+0&-8&-4\\
+0&0&0
 \end{array}\right].
 $$
 
@@ -280,9 +280,9 @@ $\lambda_{1}=1$ 的特征向量为 $k_{1}\alpha_{1}$ ( $k_{1}\ne0$ ), $\lambda_{
 
 $$
 A=\left[\begin{array}{rrr}
-3 & 7 & -3\\
--2 & -5 & 2\\
--4 & -10 & 3
+3&7&-3\\
+-2&-5&2\\
+-4&-10&3
 \end{array}\right].
 $$
 
@@ -291,17 +291,17 @@ $$
 由**定义 5.5.1 (特征值与特征向量)**, 求特征多项式:
 
 $$
-\left|\lambda I-A\right|=\left|\begin{array}{rrr}
-\lambda-3 & -7 & 3\\
-2 & \lambda+5 & -2\\
-4 & 10 & \lambda-3
+\left|\lambda{I}-A\right|=\left|\begin{array}{rrr}
+\lambda-3&-7&3\\
+2&\lambda+5&-2\\
+4&10&\lambda-3
 \end{array}\right|.
 $$
 
 按第 $1$ 行展开:
 
 $$
-\left|\lambda I-A\right|
+\left|\lambda{I}-A\right|
 =\left(\lambda-3\right)\left[\left(\lambda+5\right)\left(\lambda-3\right)+20\right]+7\left[2\left(\lambda-3\right)+8\right]+3\left[20-4\left(\lambda+5\right)\right]=\left(\lambda-3\right)\left(\lambda^{2}+2\lambda+5\right)+7\left(2\lambda+2\right)+3\left(-4\lambda\right)=\lambda^{3}-3\lambda^{2}+2\lambda^{2}-6\lambda+5\lambda-15+14\lambda+14-12\lambda=\lambda^{3}-\lambda^{2}+\lambda-1=\left(\lambda-1\right)\left(\lambda^{2}+1\right).
 $$
 

@@ -2,27 +2,27 @@
 
 > **Theorem 1.2.1 (Criterion for the Number of Solutions of a Linear System)**
 > 
-> Reduce the augmented matrix of an $n$-variable linear system to a row echelon matrix by elementary row operations: (1) if the corresponding echelon system exhibits $0=d$ ($d\ne 0$), then the original system has no solution; (2) if $0=d$ does not appear, then there is a solution: when the number of nonzero rows of the echelon matrix equals the number $n$ of unknowns there is a unique solution, and when the number of nonzero rows is $r< n$ there are infinitely many solutions.
+> Reduce the augmented matrix of an $n$-variable linear system to a row echelon matrix by elementary row operations: (1) if the corresponding echelon system exhibits $0=d$ ($d\ne0$), then the original system has no solution; (2) if $0=d$ does not appear, then there is a solution: when the number of nonzero rows of the echelon matrix equals the number $n$ of unknowns there is a unique solution, and when the number of nonzero rows is $r<{}n$ there are infinitely many solutions.
 
 > **Definition 1.3.1 (Number Field)**
 > 
-> Let $K$ be a subset of the set of complex numbers. If $K$ satisfies: (1) $0,1\in K$; (2) it is closed under addition, subtraction, multiplication, and division (with nonzero divisor), then $K$ is called a number field.
+> Let $K$ be a subset of the set of complex numbers. If $K$ satisfies: (1) $0,1\in{K}$; (2) it is closed under addition, subtraction, multiplication, and division (with nonzero divisor), then $K$ is called a number field.
 
 > **Proposition 2.1.1 (Criterion for a Unique Solution of a Two-Variable Linear System)**
 > 
 > A two-equation linear system in two variables has a unique solution if and only if its coefficient determinant is nonzero; in that case the unique solution is given by the Cramer formula, i.e. two fractions whose numerators are the $2\times2$ determinants obtained by replacing the $1$st and $2$nd columns of the coefficient determinant by the constant terms of the system.
 
-> **Definition 2.2.1 ($n\times n$ Determinant)**
+> **Definition 2.2.1 ($n\times{n}$ Determinant)**
 > 
-> An $n\times n$ determinant is an algebraic sum of $n!$ terms, each term being a product of $n$ entries from distinct rows and distinct columns; after these $n$ entries are arranged so that their row indices are in natural order, the term carries a plus sign when the permutation formed by the column indices is even and a minus sign when it is odd. Namely,
+> An $n\times{n}$ determinant is an algebraic sum of $n!$ terms, each term being a product of $n$ entries from distinct rows and distinct columns; after these $n$ entries are arranged so that their row indices are in natural order, the term carries a plus sign when the permutation formed by the column indices is even and a minus sign when it is odd. Namely,
 
 $$
 \left|\begin{array}{cccc}
-a_{11} & a_{12} & \cdots & a_{1n}\\
-a_{21} & a_{22} & \cdots & a_{2n}\\
-\vdots & \vdots & & \vdots\\
-a_{n1} & a_{n2} & \cdots & a_{nn}
-\end{array}\right|=\sum_{j_{1}j_{2}\cdots j_{n}}\left(-1\right)^{\tau\left(j_{1}j_{2}\cdots j_{n}\right)}a_{1j_{1}}a_{2j_{2}}\cdots a_{nj_{n}}.
+a_{11}&a_{12}&\cdots&a_{1n}\\
+a_{21}&a_{22}&\cdots&a_{2n}\\
+\vdots&\vdots&&\vdots\\
+a_{n1}&a_{n2}&\cdots&a_{nn}
+\end{array}\right|=\sum_{j_{1}j_{2}\cdots{j}_{n}}\left(-1\right)^{\tau\left(j_{1}j_{2}\cdots{j}_{n}\right)}a_{1j_{1}}a_{2j_{2}}\cdots{a}_{nj_{n}}.
 $$
 
 ## 1.2-6
@@ -62,7 +62,7 @@ which gives $a=\frac{1}{2},b=-\frac{1}{2}$.
 Substitute into the $3$rd equation to verify:
 
 $$
-16\times\frac{1}{2}-4\times\left(-\frac{1}{2}\right)+2=8+2+2=12\ne 5.
+16\times\frac{1}{2}-4\times\left(-\frac{1}{2}\right)+2=8+2+2=12\ne5.
 $$
 
 Hence the $3$rd equation is not satisfied. Therefore no such quadratic function exists. $\blacksquare$
@@ -78,7 +78,7 @@ Let the amounts invested in $A_{1},A_{2},A_{3}$ be $x_{1},x_{2},x_{3}$ (in thous
 From $x_{1}=x_{2}+x_{3}$ and $x_{1}+x_{2}+x_{3}=10$, we get
 
 $$
-2x_{1}=10\Rightarrow x_{1}=5, x_{2}+x_{3}=5.
+2x_{1}=10\Rightarrow{x}_{1}=5,x_{2}+x_{3}=5.
 $$
 
 The total profit is
@@ -93,7 +93,7 @@ $$
 l=0.6+0.15\left(5-x_{3}\right)+0.22x_{3}=0.6+0.75-0.15x_{3}+0.22x_{3}=1.35+0.07x_{3}.
 $$
 
-Since the investment amounts are nonnegative: $x_{2}\ge 0,x_{3}\ge 0$, we have $0\le x_{3}\le 5$.
+Since the investment amounts are nonnegative: $x_{2}\ge0,x_{3}\ge0$, we have $0\le{x}_{3}\le5$.
 
 When $x_{3}=0$, $l$ attains its minimum $1.35$, at which point $x_{1}=5,x_{2}=5,x_{3}=0$.
 
@@ -106,30 +106,30 @@ Hence the minimum total profit $l$ is $1.35$ thousand yuan (investing $5$ thousa
 Let
 
 $$
-\mathbb Q\left(i\right)=\left\{a+bi\mid a,b\in\mathbb Q\right\},
+\mathbb{Q}\left(i\right)=\left\{a+bi\mid{a},b\in\mathbb{Q}\right\},
 $$
 
-and prove that $\mathbb Q\left(i\right)$ is a number field.
+and prove that $\mathbb{Q}\left(i\right)$ is a number field.
 
 ### Solution to 1.3-1
 
-By the requirements of **Definition 1.3.1 (Number Field)**, we must verify that $\mathbb Q\left(i\right)$ satisfies $0,1\in K$ and is closed under addition, subtraction, multiplication, and division.
+By the requirements of **Definition 1.3.1 (Number Field)**, we must verify that $\mathbb{Q}\left(i\right)$ satisfies $0,1\in{K}$ and is closed under addition, subtraction, multiplication, and division.
 
-Verify $0,1\in\mathbb Q\left(i\right)$. By condition (1) of **Definition 1.3.1 (Number Field)**, clearly $0=0+0\cdot i\in\mathbb Q\left(i\right)$ and $1=1+0\cdot i\in\mathbb Q\left(i\right)$.
+Verify $0,1\in\mathbb{Q}\left(i\right)$. By condition (1) of **Definition 1.3.1 (Number Field)**, clearly $0=0+0\cdot{i}\in\mathbb{Q}\left(i\right)$ and $1=1+0\cdot{i}\in\mathbb{Q}\left(i\right)$.
 
 Verify closure under addition. By condition (2) of **Definition 1.3.1 (Number Field)**, take any
 
 $$
-\alpha=a+bi,\beta=c+di\in\mathbb Q\left(i\right),
+\alpha=a+bi,\beta=c+di\in\mathbb{Q}\left(i\right),
 $$
 
-where $a,b,c,d\in\mathbb Q$; then
+where $a,b,c,d\in\mathbb{Q}$; then
 
 $$
 \alpha+\beta=\left(a+c\right)+\left(b+d\right)i.
 $$
 
-Since the rationals are closed under addition (Closure of the Rational Field under the Four Arithmetic Operations), $a+c\in\mathbb Q$ and $b+d\in\mathbb Q$, so $\alpha+\beta\in\mathbb Q\left(i\right)$.
+Since the rationals are closed under addition (Closure of the Rational Field under the Four Arithmetic Operations), $a+c\in\mathbb{Q}$ and $b+d\in\mathbb{Q}$, so $\alpha+\beta\in\mathbb{Q}\left(i\right)$.
 
 Verify closure under subtraction. By condition (2) of **Definition 1.3.1 (Number Field)**, similarly,
 
@@ -137,7 +137,7 @@ $$
 \alpha-\beta=\left(a-c\right)+\left(b-d\right)i,
 $$
 
-and $a-c\in\mathbb Q$, $b-d\in\mathbb Q$ (Closure of the Rational Field under the Four Arithmetic Operations), so $\alpha-\beta\in\mathbb Q\left(i\right)$.
+and $a-c\in\mathbb{Q}$, $b-d\in\mathbb{Q}$ (Closure of the Rational Field under the Four Arithmetic Operations), so $\alpha-\beta\in\mathbb{Q}\left(i\right)$.
 
 Verify closure under multiplication. By condition (2) of **Definition 1.3.1 (Number Field)**,
 
@@ -145,17 +145,17 @@ $$
 \alpha\beta=\left(a+bi\right)\left(c+di\right)=\left(ac-bd\right)+\left(ad+bc\right)i.
 $$
 
-Since the rationals are closed under addition, subtraction, and multiplication (Closure of the Rational Field under the Four Arithmetic Operations), $ac-bd\in\mathbb Q$ and $ad+bc\in\mathbb Q$, so $\alpha\beta\in\mathbb Q\left(i\right)$.
+Since the rationals are closed under addition, subtraction, and multiplication (Closure of the Rational Field under the Four Arithmetic Operations), $ac-bd\in\mathbb{Q}$ and $ad+bc\in\mathbb{Q}$, so $\alpha\beta\in\mathbb{Q}\left(i\right)$.
 
-Verify closure under division. By condition (2) of **Definition 1.3.1 (Number Field)**, let $\beta=c+di\ne 0$; then $c^{2}+d^{2}\ne 0$, and
+Verify closure under division. By condition (2) of **Definition 1.3.1 (Number Field)**, let $\beta=c+di\ne0$; then $c^{2}+d^{2}\ne0$, and
 
 $$
 \frac{\alpha}{\beta}=\frac{a+bi}{c+di}=\frac{\left(a+bi\right)\left(c-di\right)}{\left(c+di\right)\left(c-di\right)}=\frac{ac+bd}{c^{2}+d^{2}}+\frac{bc-ad}{c^{2}+d^{2}}i.
 $$
 
-Since the rationals are closed under addition, subtraction, multiplication, and division (with nonzero divisor) (Closure of the Rational Field under the Four Arithmetic Operations), $\frac{ac+bd}{c^{2}+d^{2}}\in\mathbb Q$ and $\frac{bc-ad}{c^{2}+d^{2}}\in\mathbb Q$, so $\frac{\alpha}{\beta}\in\mathbb Q\left(i\right)$.
+Since the rationals are closed under addition, subtraction, multiplication, and division (with nonzero divisor) (Closure of the Rational Field under the Four Arithmetic Operations), $\frac{ac+bd}{c^{2}+d^{2}}\in\mathbb{Q}$ and $\frac{bc-ad}{c^{2}+d^{2}}\in\mathbb{Q}$, so $\frac{\alpha}{\beta}\in\mathbb{Q}\left(i\right)$.
 
-In summary, $\mathbb Q\left(i\right)$ satisfies all conditions of **Definition 1.3.1 (Number Field)**, so $\mathbb Q\left(i\right)$ is a number field. $\blacksquare$
+In summary, $\mathbb{Q}\left(i\right)$ satisfies all conditions of **Definition 1.3.1 (Number Field)**, so $\mathbb{Q}\left(i\right)$ is a number field. $\blacksquare$
 
 ## 2.1-1(1)
 
@@ -212,7 +212,7 @@ By Inversions, the Number of Inversions, and Even/Odd Permutations, $\tau=0$ is 
 
 Find the inversion number of the following $n$-permutations:
 
-(1) $\left(n-1\right)\left(n-2\right)\cdots 21n$;
+(1) $\left(n-1\right)\left(n-2\right)\cdots21n$;
 
 (2) $23\cdots\left(n-1\right)n1$.
 
@@ -220,7 +220,7 @@ Find the inversion number of the following $n$-permutations:
 
 By Inversions, the Number of Inversions, and Even/Odd Permutations:
 
-(1) In the permutation $\left(n-1\right)\left(n-2\right)\cdots 21n$, the first $n-1$ numbers are in fully reversed order, and the last number $n$ is the largest, producing no inversion. The inversion number of the first $n-1$ numbers is
+(1) In the permutation $\left(n-1\right)\left(n-2\right)\cdots21n$, the first $n-1$ numbers are in fully reversed order, and the last number $n$ is the largest, producing no inversion. The inversion number of the first $n-1$ numbers is
 
 $$
 \left(n-2\right)+\left(n-3\right)+\cdots+1+0=\frac{\left(n-2\right)\left(n-1\right)}{2}.
@@ -257,9 +257,9 @@ The coefficient determinant is
 
 $$
 \left|\begin{array}{rr}
-2 & -3\\
-5 & 4
-\end{array}\right|=2\times4-\left(-3\right)\times5=8+15=23\ne 0.
+2&-3\\
+5&4
+\end{array}\right|=2\times4-\left(-3\right)\times5=8+15=23\ne0.
 $$
 
 By **Proposition 2.1.1 (Criterion for a Unique Solution of a Two-Variable Linear System)**, the system has a unique solution.
@@ -267,11 +267,11 @@ By **Proposition 2.1.1 (Criterion for a Unique Solution of a Two-Variable Linear
 By the Cramer formula given in that proposition:
 
 $$
-x_{1}=\frac{\left|\begin{array}{rr}7 & -3\\6 & 4\end{array}\right|}{23}=\frac{7\times4-\left(-3\right)\times6}{23}=\frac{28+18}{23}=\frac{46}{23}=2,
+x_{1}=\frac{\left|\begin{array}{rr}7&-3\\6&4\end{array}\right|}{23}=\frac{7\times4-\left(-3\right)\times6}{23}=\frac{28+18}{23}=\frac{46}{23}=2,
 $$
 
 $$
-x_{2}=\frac{\left|\begin{array}{rr}2 & 7\\5 & 6\end{array}\right|}{23}=\frac{2\times6-7\times5}{23}=\frac{12-35}{23}=\frac{-23}{23}=-1.
+x_{2}=\frac{\left|\begin{array}{rr}2&7\\5&6\end{array}\right|}{23}=\frac{2\times6-7\times5}{23}=\frac{12-35}{23}=\frac{-23}{23}=-1.
 $$
 
 Hence the unique solution is $\left(x_{1},x_{2}\right)=\left(2,-1\right)$. $\blacksquare$
@@ -282,30 +282,30 @@ Compute the following determinant by the definition:
 
 $$
 \left|\begin{array}{ccccc}
-0 & b_{1} & 0 & \cdots & 0\\
-0 & 0 & b_{2} & \cdots & 0\\
-\vdots & \vdots & \vdots & & \vdots\\
-0 & 0 & 0 & \cdots & b_{n-1}\\
-b_{n} & 0 & 0 & \cdots & 0
+0&b_{1}&0&\cdots&0\\
+0&0&b_{2}&\cdots&0\\
+\vdots&\vdots&\vdots&&\vdots\\
+0&0&0&\cdots&b_{n-1}\\
+b_{n}&0&0&\cdots&0
 \end{array}\right|.
 $$
 
 ### Solution to 2.2-1(3)
 
-By **Definition 2.2.1 ($n\times n$ Determinant)**, each term of the determinant is a product of $n$ entries from distinct rows and distinct columns.
+By **Definition 2.2.1 ($n\times{n}$ Determinant)**, each term of the determinant is a product of $n$ entries from distinct rows and distinct columns.
 
-By **Definition 2.2.1 ($n\times n$ Determinant)**, determine the unique nonzero entry row by row: row $1$ has only $b_{1}$ in column $2$ nonzero, row $2$ has only $b_{2}$ in column $3$ nonzero, $\cdots$, row $n-1$ has only $b_{n-1}$ in column $n$ nonzero, and row $n$ has only $b_{n}$ in column $1$ nonzero. Hence the only nonzero term is $b_{1}b_{2}\cdots b_{n}$.
+By **Definition 2.2.1 ($n\times{n}$ Determinant)**, determine the unique nonzero entry row by row: row $1$ has only $b_{1}$ in column $2$ nonzero, row $2$ has only $b_{2}$ in column $3$ nonzero, $\cdots$, row $n-1$ has only $b_{n-1}$ in column $n$ nonzero, and row $n$ has only $b_{n}$ in column $1$ nonzero. Hence the only nonzero term is $b_{1}b_{2}\cdots{b}_{n}$.
 
-By **Definition 2.2.1 ($n\times n$ Determinant)**, the column-index permutation of this nonzero term is $2,3,\cdots,n,1$, whose inversion number is
+By **Definition 2.2.1 ($n\times{n}$ Determinant)**, the column-index permutation of this nonzero term is $2,3,\cdots,n,1$, whose inversion number is
 
 $$
 \tau\left(2,3,\cdots,n,1\right)=n-1.
 $$
 
-By the sign convention in **Definition 2.2.1 ($n\times n$ Determinant)**, even permutations carry a plus sign and odd permutations a minus sign, so the determinant equals
+By the sign convention in **Definition 2.2.1 ($n\times{n}$ Determinant)**, even permutations carry a plus sign and odd permutations a minus sign, so the determinant equals
 
 $$
-\left(-1\right)^{n-1}b_{1}b_{2}\cdots b_{n}.
+\left(-1\right)^{n-1}b_{1}b_{2}\cdots{b}_{n}.
 $$
 
 $\blacksquare$

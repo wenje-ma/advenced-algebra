@@ -22,18 +22,18 @@
 
 > **Corollary 6.2.4 (Necessary and Sufficient Condition for Congruence)**
 > 
-> Two $n\times n$ real symmetric matrices are congruent if and only if they have the same rank and the same positive index of inertia.
+> Two $n\times{n}$ real symmetric matrices are congruent if and only if they have the same rank and the same positive index of inertia.
 
 > **Definition 7.2.1 (Divisibility)**
 > 
-> Let $f\left(x\right),g\left(x\right)\in K\left[x\right]$. If there exists $h\left(x\right)\in K\left[x\right]$ such that $f\left(x\right)=h\left(x\right)g\left(x\right)$, then $g\left(x\right)$ divides $f\left(x\right)$, written $g\left(x\right)\mid f\left(x\right)$.
+> Let $f\left(x\right),g\left(x\right)\in{K}\left[x\right]$. If there exists $h\left(x\right)\in{K}\left[x\right]$ such that $f\left(x\right)=h\left(x\right)g\left(x\right)$, then $g\left(x\right)$ divides $f\left(x\right)$, written $g\left(x\right)\mid{f}\left(x\right)$.
 
 > **Theorem 7.2.1 (Division with Remainder)**
 > 
 > In $K\left[x\right]$, for any two polynomials $f\left(x\right),g\left(x\right)$ with $g\left(x\right)\ne0$, there exists a unique pair of polynomials $h\left(x\right),r\left(x\right)$ such that
 
 $$
-f\left(x\right)=h\left(x\right)g\left(x\right)+r\left(x\right),\deg r\left(x\right)< \deg g\left(x\right).
+f\left(x\right)=h\left(x\right)g\left(x\right)+r\left(x\right),\deg{r}\left(x\right)<\deg{g}\left(x\right).
 $$
 
 ## 6.1-8(1)
@@ -83,9 +83,9 @@ The nondegenerate linear substitution is $X=CY$, where
 
 $$
 C=\left[\begin{array}{rrr}
-1 & 0 & 1\\
-0 & 1 & 1\\
-0 & 0 & 1
+1&0&1\\
+0&1&1\\
+0&0&1
 \end{array}\right].
 $$
 
@@ -93,7 +93,7 @@ $\blacksquare$
 
 ## 6.1-11
 
-Let the eigenvalues of an $n\times n$ real symmetric matrix $A$ be ordered as $\lambda_{1}\ge\lambda_{2}\ge\cdots\ge\lambda_{n}$. Prove: for every nonzero column vector $\alpha$ in $\mathbb{R}^{n}$,
+Let the eigenvalues of an $n\times{n}$ real symmetric matrix $A$ be ordered as $\lambda_{1}\ge\lambda_{2}\ge\cdots\ge\lambda_{n}$. Prove: for every nonzero column vector $\alpha$ in $\mathbb{R}^{n}$,
 
 $$
 \lambda_{1}\ge\frac{\alpha^{\top}A\alpha}{\alpha^{\top}\alpha}\ge\lambda_{n}.
@@ -129,7 +129,7 @@ $$
 \lambda_{1}\alpha^{\top}\alpha\ge\alpha^{\top}A\alpha\ge\lambda_{n}\alpha^{\top}\alpha.
 $$
 
-Since $\alpha\ne0$, $\alpha^{\top}\alpha> 0$.
+Since $\alpha\ne0$, $\alpha^{\top}\alpha>0$.
 
 Divide by $\alpha^{\top}\alpha$:
 
@@ -183,7 +183,7 @@ All these canonical forms are unique. $\blacksquare$
 
 ## 6.2-4
 
-Let $X^{\top}AX$ be an $n$-variable real quadratic form. Prove: if there are column vectors $\alpha_{1},\alpha_{2}$ in $\mathbb{R}^{n}$ such that $\alpha_{1}^{\top}A\alpha_{1}> 0$ and $\alpha_{2}^{\top}A\alpha_{2}< 0$, then there is a nonzero column vector $\alpha$ in $\mathbb{R}^{n}$ such that $\alpha^{\top}A\alpha=0$.
+Let $X^{\top}AX$ be an $n$-variable real quadratic form. Prove: if there are column vectors $\alpha_{1},\alpha_{2}$ in $\mathbb{R}^{n}$ such that $\alpha_{1}^{\top}A\alpha_{1}>0$ and $\alpha_{2}^{\top}A\alpha_{2}<0$, then there is a nonzero column vector $\alpha$ in $\mathbb{R}^{n}$ such that $\alpha^{\top}A\alpha=0$.
 
 ### Solution to 6.2-4
 
@@ -201,17 +201,17 @@ $$
 
 This is a quadratic function in $t$.
 
-We are given $g\left(0\right)=\alpha_{1}^{\top}A\alpha_{1}> 0$.
+We are given $g\left(0\right)=\alpha_{1}^{\top}A\alpha_{1}>0$.
 
-Since $\alpha_{2}^{\top}A\alpha_{2}< 0$, as $t\to\infty$, $g\left(t\right)\to-\infty$.
+Since $\alpha_{2}^{\top}A\alpha_{2}<0$, as $t\to\infty$, $g\left(t\right)\to-\infty$.
 
-Hence there is $t_{0}> 0$ such that $g\left(t_{0}\right)< 0$.
+Hence there is $t_{0}>0$ such that $g\left(t_{0}\right)<0$.
 
 By the intermediate value theorem for continuous functions, there is $t_{1}\in\left(0,t_{0}\right)$ such that $g\left(t_{1}\right)=0$.
 
 Set $\alpha=\alpha_{1}+t_{1}\alpha_{2}$.
 
-Then $\alpha\ne0$ (because if $\alpha=0$, then $\alpha_{1}=-t_{1}\alpha_{2}$, and hence $\alpha_{1}^{\top}A\alpha_{1}=t_{1}^{2}\alpha_{2}^{\top}A\alpha_{2}< 0$, a contradiction).
+Then $\alpha\ne0$ (because if $\alpha=0$, then $\alpha_{1}=-t_{1}\alpha_{2}$, and hence $\alpha_{1}^{\top}A\alpha_{1}=t_{1}^{2}\alpha_{2}^{\top}A\alpha_{2}<0$, a contradiction).
 
 And $\alpha^{\top}A\alpha=g\left(t_{1}\right)=0$.
 
@@ -233,7 +233,7 @@ $$
 
 This is the product of two homogeneous linear polynomials.
 
-If the rank is $1$, the canonical form is $y_{1}^{2}=y_{1}\cdot y_{1}$.
+If the rank is $1$, the canonical form is $y_{1}^{2}=y_{1}\cdot{y}_{1}$.
 
 This is also the product of two homogeneous linear polynomials.
 
@@ -264,7 +264,7 @@ Case 1: $\alpha$ and $\beta$ are linearly dependent.
 Set $\beta=k\alpha$. Then
 
 $$
-A=\frac{\alpha\cdot k\alpha^{\top}+k\alpha\cdot\alpha^{\top}}{2}=k\alpha\alpha^{\top}.
+A=\frac{\alpha\cdot{k}\alpha^{\top}+k\alpha\cdot\alpha^{\top}}{2}=k\alpha\alpha^{\top}.
 $$
 
 Hence $\operatorname{rank}\left(A\right)=1$.
@@ -342,7 +342,7 @@ Therefore the canonical form of the complex quadratic form $X^{\top}AX$ is $z_{1
 Divide $f\left(x\right)$ by $g\left(x\right)$ and find the quotient and remainder:
 
 $$
-f\left(x\right)=x^{4}+x^{3}-2x+3,\quad g\left(x\right)=3x^{2}-x+2.
+f\left(x\right)=x^{4}+x^{3}-2x+3,\quad{g}\left(x\right)=3x^{2}-x+2.
 $$
 
 ### Solution to 7.2-3(2)
@@ -356,7 +356,7 @@ $$
 Leading term of the quotient: $x^{4}/3x^{2}=\frac{1}{3}x^{2}$.
 
 $$
-\frac{1}{3}x^{2}\cdot g\left(x\right)=x^{4}-\frac{1}{3}x^{3}+\frac{2}{3}x^{2}.
+\frac{1}{3}x^{2}\cdot{g}\left(x\right)=x^{4}-\frac{1}{3}x^{3}+\frac{2}{3}x^{2}.
 $$
 
 Remainder:
@@ -368,7 +368,7 @@ $$
 Second term of the quotient: $\frac{4}{3}x^{3}/3x^{2}=\frac{4}{9}x$.
 
 $$
-\frac{4}{9}x\cdot g=\frac{4}{3}x^{3}-\frac{4}{9}x^{2}+\frac{8}{9}x.
+\frac{4}{9}x\cdot{g}=\frac{4}{3}x^{3}-\frac{4}{9}x^{2}+\frac{8}{9}x.
 $$
 
 Remainder:
@@ -380,7 +380,7 @@ $$
 Third term of the quotient: $-\frac{2}{9}x^{2}/3x^{2}=-\frac{2}{27}$.
 
 $$
--\frac{2}{27}\cdot g=-\frac{2}{9}x^{2}+\frac{2}{27}x-\frac{4}{27}.
+-\frac{2}{27}\cdot{g}=-\frac{2}{9}x^{2}+\frac{2}{27}x-\frac{4}{27}.
 $$
 
 Remainder:
@@ -392,11 +392,11 @@ $$
 Therefore, by **Theorem 7.2.1 (Division with Remainder)**,
 
 $$
-\text{quotient }h\left(x\right)=\frac{1}{3}x^{2}+\frac{4}{9}x-\frac{2}{27}.
+\text{quotient~}h\left(x\right)=\frac{1}{3}x^{2}+\frac{4}{9}x-\frac{2}{27}.
 $$
 
 $$
-\text{remainder }r\left(x\right)=-\frac{80}{27}x+\frac{85}{27}.
+\text{remainder~}r\left(x\right)=-\frac{80}{27}x+\frac{85}{27}.
 $$
 
 $\blacksquare$

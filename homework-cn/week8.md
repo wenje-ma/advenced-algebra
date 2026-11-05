@@ -50,7 +50,7 @@ $$
 
 ## 3.2-11
 
-设 $a_{1},a_{2},\cdots,a_{r}$ 是两两不同的数, $r\le n$. 令
+设 $a_{1},a_{2},\cdots,a_{r}$ 是两两不同的数, $r\le{n}$. 令
 
 $$
 \alpha_{1}=\begin{bmatrix}1\\a_{1}\\a_{1}^{2}\\\vdots\\a_{1}^{n-1}\end{bmatrix},
@@ -91,11 +91,11 @@ $$
 
 $$
 \left|\begin{array}{cccc}
-1 & 1 & \cdots & 1\\
-a_{1} & a_{2} & \cdots & a_{r}\\
-\vdots & \vdots & & \vdots\\
-a_{1}^{r-1} & a_{2}^{r-1} & \cdots & a_{r}^{r-1}
-\end{array}\right|=\prod_{1\le i< j\le r}\left(a_{j}-a_{i}\right).
+1&1&\cdots&1\\
+a_{1}&a_{2}&\cdots&a_{r}\\
+\vdots&\vdots&&\vdots\\
+a_{1}^{r-1}&a_{2}^{r-1}&\cdots&a_{r}^{r-1}
+\end{array}\right|=\prod_{1\le{i}<{}j\le{r}}\left(a_{j}-a_{i}\right).
 $$
 
 因为 $a_{1},a_{2},\cdots,a_{r}$ 两两不同, 所以行列式不等于 $0$.
@@ -168,11 +168,11 @@ $$
 x_{1}\alpha_{1}+x_{2}\alpha_{2}+\cdots+x_{n}\alpha_{n}=\beta
 $$
 
-对任何 $\beta\in K^{n}$ 都有解的充分必要条件是它的系数行列式 $\left|A\right|\ne0$.
+对任何 $\beta\in{K}^{n}$ 都有解的充分必要条件是它的系数行列式 $\left|A\right|\ne0$.
 
 ### 解答 3.3-8
 
-必要性. 设对任何 $\beta\in K^{n}$ 都有解.
+必要性. 设对任何 $\beta\in{K}^{n}$ 都有解.
 
 取 $\beta=\varepsilon_{1},\varepsilon_{2},\cdots,\varepsilon_{n}$ (标准基), 则它们都可以由 $\alpha_{1},\cdots,\alpha_{n}$ 线性表出.
 
@@ -190,7 +190,7 @@ $$
 
 在 $K^{n}$ 中, $n$ 个线性无关的向量构成 $K^{n}$ 的一个基.
 
-因此任何 $\beta\in K^{n}$ 都可以由 $\alpha_{1},\cdots,\alpha_{n}$ 线性表出, 即方程组有解.
+因此任何 $\beta\in{K}^{n}$ 都可以由 $\alpha_{1},\cdots,\alpha_{n}$ 线性表出, 即方程组有解.
 
 $\blacksquare$
 
@@ -259,7 +259,7 @@ $$
 验证可线性表出. 任取
 
 $$
-\alpha=\left(a_{1},a_{2},\cdots,a_{n}\right)^{\top}\in K^{n},
+\alpha=\left(a_{1},a_{2},\cdots,a_{n}\right)^{\top}\in{K}^{n},
 $$
 
 设
@@ -298,9 +298,9 @@ $$
 
 $$
 \left|\begin{array}{rrr}
-1 & 0 & 2\\
-0 & 4 & -4\\
-1 & -1 & 3
+1&0&2\\
+0&4&-4\\
+1&-1&3
 \end{array}\right|
 =1\times\left(4\times3-\left(-4\right)\times\left(-1\right)\right)-0+2\times\left(0\times\left(-1\right)-4\times1\right)
 $$
@@ -321,7 +321,7 @@ $$
 
 因为 $U$ 中每一个向量都可以由 $\alpha_{1},\alpha_{2},\cdots,\alpha_{r}$ 线性表出, 所以 $U\subseteq\left\langle\alpha_{1},\alpha_{2},\cdots,\alpha_{r}\right\rangle$.
 
-又因为 $\alpha_{1},\alpha_{2},\cdots,\alpha_{r}\in U$, 且 $U$ 是子空间, 所以 $\left\langle\alpha_{1},\alpha_{2},\cdots,\alpha_{r}\right\rangle\subseteq U$.
+又因为 $\alpha_{1},\alpha_{2},\cdots,\alpha_{r}\in{U}$, 且 $U$ 是子空间, 所以 $\left\langle\alpha_{1},\alpha_{2},\cdots,\alpha_{r}\right\rangle\subseteq{U}$.
 
 因此 $U=\left\langle\alpha_{1},\alpha_{2},\cdots,\alpha_{r}\right\rangle$.
 
@@ -331,7 +331,7 @@ $$
 \dim\left\langle\alpha_{1},\alpha_{2},\cdots,\alpha_{r}\right\rangle=\text{rank}\left\{\alpha_{1},\alpha_{2},\cdots,\alpha_{r}\right\}.
 $$
 
-又 $\dim U=r$, 故
+又 $\dim{U}=r$, 故
 
 $$
 \text{rank}\left\{\alpha_{1},\alpha_{2},\cdots,\alpha_{r}\right\}=r.

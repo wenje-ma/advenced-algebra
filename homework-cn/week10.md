@@ -17,7 +17,7 @@
 > 数域 $K$ 上 $n$ 元齐次线性方程组的解空间 $W$ 的维数为:
 
 $$
-\dim W=n-\text{rank}\left(A\right)
+\dim{W}=n-\text{rank}\left(A\right)
 $$
 其中 $A$ 是系数矩阵.
 
@@ -42,11 +42,11 @@ $$
 
 $$
 B=\left[\begin{array}{ccccc}
-a_{11} & a_{12} & \cdots & a_{1n} & b_{1}\\
-a_{21} & a_{22} & \cdots & a_{2n} & b_{2}\\
-\vdots & \vdots & & \vdots & \vdots\\
-a_{n1} & a_{n2} & \cdots & a_{nn} & b_{n}\\
-b_{1} & b_{2} & \cdots & b_{n} & 0
+a_{11}&a_{12}&\cdots&a_{1n}&b_{1}\\
+a_{21}&a_{22}&\cdots&a_{2n}&b_{2}\\
+\vdots&\vdots&&\vdots&\vdots\\
+a_{n1}&a_{n2}&\cdots&a_{nn}&b_{n}\\
+b_{1}&b_{2}&\cdots&b_{n}&0
 \end{array}\right].
 $$
 
@@ -93,17 +93,17 @@ $$
 
 $$
 \left[\begin{array}{rrrr}
-1 & -3 & 1 & -2\\
--5 & 1 & -2 & 3\\
--1 & -11 & 2 & -5\\
-3 & 5 & 0 & 1
+1&-3&1&-2\\
+-5&1&-2&3\\
+-1&-11&2&-5\\
+3&5&0&1
 \end{array}\right]
 \xrightarrow{\text{行变换}}
 \left[\begin{array}{rrrr}
-1 & -3 & 1 & -2\\
-0 & -14 & 3 & -7\\
-0 & 0 & 0 & 0\\
-0 & 0 & 0 & 0
+1&-3&1&-2\\
+0&-14&3&-7\\
+0&0&0&0\\
+0&0&0&0
 \end{array}\right].
 $$
 
@@ -129,7 +129,7 @@ $$
 解集:
 
 $$
-W=\left\{k_{1}\eta_{1}+k_{2}\eta_{2}\mid k_{1},k_{2}\in K\right\}.
+W=\left\{k_{1}\eta_{1}+k_{2}\eta_{2}\mid{k}_{1},k_{2}\in{K}\right\}.
 $$
 
 $\blacksquare$
@@ -154,19 +154,19 @@ $$
 
 $$
 \left[\begin{array}{rrrr}
-3 & -1 & 2 & 1\\
-1 & 3 & -1 & 2\\
--2 & 5 & 1 & -1\\
-3 & 10 & 1 & 4\\
--2 & 15 & -4 & 4
+3&-1&2&1\\
+1&3&-1&2\\
+-2&5&1&-1\\
+3&10&1&4\\
+-2&15&-4&4
 \end{array}\right]
 \xrightarrow{\text{行变换}}
 \left[\begin{array}{rrrr}
-1 & 3 & -1 & 2\\
-0 & 1 & 4 & -2\\
-0 & 0 & -45 & 25\\
-0 & 0 & 0 & 0\\
-0 & 0 & 0 & 0
+1&3&-1&2\\
+0&1&4&-2\\
+0&0&-45&25\\
+0&0&0&0\\
+0&0&0&0
 \end{array}\right].
 $$
 
@@ -191,17 +191,17 @@ $$
 解集:
 
 $$
-W=\left\{k\eta_{1}\mid k\in K\right\}.
+W=\left\{k\eta_{1}\mid{k}\in{K}\right\}.
 $$
 
 $\blacksquare$
 
 ## 3.7-4
 
-证明: 设 $n$ 元齐次线性方程组的系数矩阵的秩为 $r$ $\left(r< n\right)$, 设 $\delta_{1},\delta_{2},\cdots,\delta_{m}$ 是方程组的解向量, 则
+证明: 设 $n$ 元齐次线性方程组的系数矩阵的秩为 $r$ $\left(r<{}n\right)$, 设 $\delta_{1},\delta_{2},\cdots,\delta_{m}$ 是方程组的解向量, 则
 
 $$
-\text{rank}\left\{\delta_{1},\delta_{2},\cdots,\delta_{m}\right\}\le n-r.
+\text{rank}\left\{\delta_{1},\delta_{2},\cdots,\delta_{m}\right\}\le{n}-r.
 $$
 
 ### 解答 3.7-4
@@ -209,17 +209,17 @@ $$
 由**定理 3.7.1 (解空间的维数)**, 齐次线性方程组的解空间 $W$ 的维数为
 
 $$
-\dim W=n-\text{rank}\left(A\right)=n-r.
+\dim{W}=n-\text{rank}\left(A\right)=n-r.
 $$
 
-$\delta_{1},\delta_{2},\cdots,\delta_{m}$ 都是 $W$ 中的向量, 故 $\left\langle\delta_{1},\delta_{2},\cdots,\delta_{m}\right\rangle\subseteq W$.
+$\delta_{1},\delta_{2},\cdots,\delta_{m}$ 都是 $W$ 中的向量, 故 $\left\langle\delta_{1},\delta_{2},\cdots,\delta_{m}\right\rangle\subseteq{W}$.
 
 因此
 
 $$
 \text{rank}\left\{\delta_{1},\delta_{2},\cdots,\delta_{m}\right\}
 =\dim\left\langle\delta_{1},\delta_{2},\cdots,\delta_{m}\right\rangle
-\le\dim W=n-r.
+\le\dim{W}=n-r.
 $$
 
 $\blacksquare$
@@ -246,15 +246,15 @@ $$
 
 当 $i=k$ 时, 这是 $\left|A\right|=0$ (题设).
 
-当 $i\ne k$ 时, 这是把 $A$ 的第 $k$ 行换成第 $i$ 行后的行列式, 由于有两行相同, 故行列式为 $0$.
+当 $i\ne{k}$ 时, 这是把 $A$ 的第 $k$ 行换成第 $i$ 行后的行列式, 由于有两行相同, 故行列式为 $0$.
 
 因此对所有 $i$, 上式都为 $0$, 即 $A\eta_{1}=0$.
 
 验证 $\eta_{1}\ne0$. 因为 $A_{kl}\ne0$, 所以 $\eta_{1}$ 的第 $l$ 个分量非零, 故 $\eta_{1}\ne0$.
 
-验证解空间维数为 $1$. 因为 $\left|A\right|=0$, 故 $\text{rank}\left(A\right)< n$.
+验证解空间维数为 $1$. 因为 $\left|A\right|=0$, 故 $\text{rank}\left(A\right)<{}n$.
 
-又因为 $A_{kl}\ne0$, 说明 $A$ 有一个 $n-1$ 阶子式非零 (划去第 $k$ 行第 $l$ 列后的子式), 故 $\text{rank}\left(A\right)\ge n-1$.
+又因为 $A_{kl}\ne0$, 说明 $A$ 有一个 $n-1$ 阶子式非零 (划去第 $k$ 行第 $l$ 列后的子式), 故 $\text{rank}\left(A\right)\ge{n}-1$.
 
 因此 $\text{rank}\left(A\right)=n-1$.
 
@@ -264,7 +264,7 @@ $\eta_{1}$ 是一个非零解, 它本身就构成解空间的一个基, 即基�
 
 ## 3.7-7
 
-设 $A_{1}$ 是 $s\times n$ 矩阵 $A=\left(a_{ij}\right)$ 的前 $s-1$ 行组成的子矩阵. 证明: 如果以 $A_{1}$ 为系数矩阵的齐次线性方程组的解都是方程
+设 $A_{1}$ 是 $s\times{n}$ 矩阵 $A=\left(a_{ij}\right)$ 的前 $s-1$ 行组成的子矩阵. 证明: 如果以 $A_{1}$ 为系数矩阵的齐次线性方程组的解都是方程
 
 $$
 a_{s1}x_{1}+a_{s2}x_{2}+\cdots+a_{sn}x_{n}=0
@@ -303,17 +303,17 @@ $$
 
 $$
 \left[\begin{array}{rrrr\left|r}
-1 & -5 & 2 & -3 & 11\\
--3 & 1 & -4 & 2 & -5\\
--1 & -9 & 0 & -4 & 17\\
-5 & 3 & 6 & -1 & -1
+1&-5&2&-3&11\\
+-3&1&-4&2&-5\\
+-1&-9&0&-4&17\\
+5&3&6&-1&-1
 \end{array}\right]
 \xrightarrow{\text{行变换}}
 \left[\begin{array}{rrrr\right|r}
-1 & -5 & 2 & -3 & 11\\
-0 & -14 & 2 & -7 & 28\\
-0 & 0 & 0 & 0 & 0\\
-0 & 0 & 0 & 0 & 0
+1&-5&2&-3&11\\
+0&-14&2&-7&28\\
+0&0&0&0&0\\
+0&0&0&0&0
 \end{array}\right].
 $$
 
@@ -341,7 +341,7 @@ $$
 由**定理 3.8.1 (非齐次方程组的解集结构)**, 解集为特解 $\gamma_{0}$ 加上导出组的解空间 $W$:
 
 $$
-U=\left\{\gamma_{0}+k_{1}\eta_{1}+k_{2}\eta_{2}\mid k_{1},k_{2}\in K\right\}.
+U=\left\{\gamma_{0}+k_{1}\eta_{1}+k_{2}\eta_{2}\mid{k}_{1},k_{2}\in{K}\right\}.
 $$
 
 $\blacksquare$

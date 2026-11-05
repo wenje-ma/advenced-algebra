@@ -50,7 +50,7 @@ $$
 
 ## 3.2-11
 
-Let $a_{1},a_{2},\cdots,a_{r}$ be pairwise distinct numbers with $r\le n$. Set
+Let $a_{1},a_{2},\cdots,a_{r}$ be pairwise distinct numbers with $r\le{n}$. Set
 
 $$
 \alpha_{1}=\begin{bmatrix}1\\a_{1}\\a_{1}^{2}\\\vdots\\a_{1}^{n-1}\end{bmatrix},
@@ -87,15 +87,15 @@ k_{1}a_{1}^{r-1}+k_{2}a_{2}^{r-1}+\cdots+k_{r}a_{r}^{r-1}=0.
 \end{cases}
 $$
 
-By Formula for the Vandermonde Determinant, its coefficient determinant is the $r\times r$ Vandermonde determinant:
+By Formula for the Vandermonde Determinant, its coefficient determinant is the $r\times{r}$ Vandermonde determinant:
 
 $$
 \left|\begin{array}{cccc}
-1 & 1 & \cdots & 1\\
-a_{1} & a_{2} & \cdots & a_{r}\\
-\vdots & \vdots & & \vdots\\
-a_{1}^{r-1} & a_{2}^{r-1} & \cdots & a_{r}^{r-1}
-\end{array}\right|=\prod_{1\le i< j\le r}\left(a_{j}-a_{i}\right).
+1&1&\cdots&1\\
+a_{1}&a_{2}&\cdots&a_{r}\\
+\vdots&\vdots&&\vdots\\
+a_{1}^{r-1}&a_{2}^{r-1}&\cdots&a_{r}^{r-1}
+\end{array}\right|=\prod_{1\le{i}<{}j\le{r}}\left(a_{j}-a_{i}\right).
 $$
 
 Because $a_{1},a_{2},\cdots,a_{r}$ are pairwise distinct, the determinant is nonzero.
@@ -168,11 +168,11 @@ $$
 x_{1}\alpha_{1}+x_{2}\alpha_{2}+\cdots+x_{n}\alpha_{n}=\beta
 $$
 
-is solvable for every $\beta\in K^{n}$ if and only if its coefficient determinant $\left|A\right|\ne0$.
+is solvable for every $\beta\in{K}^{n}$ if and only if its coefficient determinant $\left|A\right|\ne0$.
 
 ### Solution to 3.3-8
 
-Necessity. Suppose the system is solvable for every $\beta\in K^{n}$.
+Necessity. Suppose the system is solvable for every $\beta\in{K}^{n}$.
 
 Take $\beta=\varepsilon_{1},\varepsilon_{2},\cdots,\varepsilon_{n}$ (the standard basis); then they can all be represented by $\alpha_{1},\cdots,\alpha_{n}$.
 
@@ -190,7 +190,7 @@ Sufficiency. Suppose $\left|A\right|\ne0$; then $\alpha_{1},\cdots,\alpha_{n}$ a
 
 In $K^{n}$, $n$ linearly independent vectors form a basis of $K^{n}$.
 
-Hence every $\beta\in K^{n}$ can be represented by $\alpha_{1},\cdots,\alpha_{n}$, i.e. the system is solvable.
+Hence every $\beta\in{K}^{n}$ can be represented by $\alpha_{1},\cdots,\alpha_{n}$, i.e. the system is solvable.
 
 $\blacksquare$
 
@@ -259,7 +259,7 @@ Hence $\eta_{1},\eta_{2},\cdots,\eta_{n}$ are linearly independent.
 Verify representability. Take any
 
 $$
-\alpha=\left(a_{1},a_{2},\cdots,a_{n}\right)^{\top}\in K^{n},
+\alpha=\left(a_{1},a_{2},\cdots,a_{n}\right)^{\top}\in{K}^{n},
 $$
 
 and set
@@ -298,9 +298,9 @@ By the requirements of **Definition 3.4.1 (Basis)**, to determine whether three 
 
 $$
 \left|\begin{array}{rrr}
-1 & 0 & 2\\
-0 & 4 & -4\\
-1 & -1 & 3
+1&0&2\\
+0&4&-4\\
+1&-1&3
 \end{array}\right|
 =1\times\left(4\times3-\left(-4\right)\times\left(-1\right)\right)-0+2\times\left(0\times\left(-1\right)-4\times1\right)
 $$
@@ -321,7 +321,7 @@ By the requirements of **Definition 3.4.1 (Basis)**, it suffices to verify two c
 
 Because every vector in $U$ can be represented by $\alpha_{1},\alpha_{2},\cdots,\alpha_{r}$, we have $U\subseteq\left\langle\alpha_{1},\alpha_{2},\cdots,\alpha_{r}\right\rangle$.
 
-Also, since $\alpha_{1},\alpha_{2},\cdots,\alpha_{r}\in U$ and $U$ is a subspace, $\left\langle\alpha_{1},\alpha_{2},\cdots,\alpha_{r}\right\rangle\subseteq U$.
+Also, since $\alpha_{1},\alpha_{2},\cdots,\alpha_{r}\in{U}$ and $U$ is a subspace, $\left\langle\alpha_{1},\alpha_{2},\cdots,\alpha_{r}\right\rangle\subseteq{U}$.
 
 Hence $U=\left\langle\alpha_{1},\alpha_{2},\cdots,\alpha_{r}\right\rangle$.
 
@@ -331,7 +331,7 @@ $$
 \dim\left\langle\alpha_{1},\alpha_{2},\cdots,\alpha_{r}\right\rangle=\text{rank}\left\{\alpha_{1},\alpha_{2},\cdots,\alpha_{r}\right\}.
 $$
 
-Since $\dim U=r$,
+Since $\dim{U}=r$,
 
 $$
 \text{rank}\left\{\alpha_{1},\alpha_{2},\cdots,\alpha_{r}\right\}=r.

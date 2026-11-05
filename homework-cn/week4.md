@@ -34,9 +34,9 @@ $$
 
 $$
 \left|\begin{array}{ccc}
-a_{1}-b_{1} & b_{1}-c_{1} & c_{1}-a_{1}\\
-a_{2}-b_{2} & b_{2}-c_{2} & c_{2}-a_{2}\\
-a_{3}-b_{3} & b_{3}-c_{3} & c_{3}-a_{3}
+a_{1}-b_{1}&b_{1}-c_{1}&c_{1}-a_{1}\\
+a_{2}-b_{2}&b_{2}-c_{2}&c_{2}-a_{2}\\
+a_{3}-b_{3}&b_{3}-c_{3}&c_{3}-a_{3}
 \end{array}\right|=0.
 $$
 
@@ -62,10 +62,10 @@ $$
 
 $$
 \left|\begin{array}{cccc}
-a_{1} & a_{2} & \cdots & a_{n}\\
-b_{2} & 1 & \cdots & 0\\
-\vdots & \vdots & & \vdots\\
-b_{n} & 0 & \cdots & 1
+a_{1}&a_{2}&\cdots&a_{n}\\
+b_{2}&1&\cdots&0\\
+\vdots&\vdots&&\vdots\\
+b_{n}&0&\cdots&1
 \end{array}\right|.
 $$
 
@@ -75,10 +75,10 @@ $$
 
 $$
 \left|\begin{array}{cccc}
-a_{1}-\sum_{j=2}^{n}a_{j}b_{j} & 0 & \cdots & 0\\
-b_{2} & 1 & \cdots & 0\\
-\vdots & \vdots & & \vdots\\
-b_{n} & 0 & \cdots & 1
+a_{1}-\sum_{j=2}^{n}a_{j}b_{j}&0&\cdots&0\\
+b_{2}&1&\cdots&0\\
+\vdots&\vdots&&\vdots\\
+b_{n}&0&\cdots&1
 \end{array}\right|.
 $$
 
@@ -96,10 +96,10 @@ $\blacksquare$
 
 $$
 \left|\begin{array}{cccc}
-a_{1}+b_{1} & a_{1}+b_{2} & \cdots & a_{1}+b_{n}\\
-a_{2}+b_{1} & a_{2}+b_{2} & \cdots & a_{2}+b_{n}\\
-\vdots & \vdots & & \vdots\\
-a_{n}+b_{1} & a_{n}+b_{2} & \cdots & a_{n}+b_{n}
+a_{1}+b_{1}&a_{1}+b_{2}&\cdots&a_{1}+b_{n}\\
+a_{2}+b_{1}&a_{2}+b_{2}&\cdots&a_{2}+b_{n}\\
+\vdots&\vdots&&\vdots\\
+a_{n}+b_{1}&a_{n}+b_{2}&\cdots&a_{n}+b_{n}
 \end{array}\right|.
 $$
 
@@ -109,10 +109,10 @@ $$
 
 $$
 \left|\begin{array}{cccc}
-a_{1}+b_{1} & a_{1}+b_{2} & \cdots & a_{1}+b_{n}\\
-a_{2}-a_{1} & a_{2}-a_{1} & \cdots & a_{2}-a_{1}\\
-\vdots & \vdots & & \vdots\\
-a_{n}-a_{1} & a_{n}-a_{1} & \cdots & a_{n}-a_{1}
+a_{1}+b_{1}&a_{1}+b_{2}&\cdots&a_{1}+b_{n}\\
+a_{2}-a_{1}&a_{2}-a_{1}&\cdots&a_{2}-a_{1}\\
+\vdots&\vdots&&\vdots\\
+a_{n}-a_{1}&a_{n}-a_{1}&\cdots&a_{n}-a_{1}
 \end{array}\right|.
 $$
 
@@ -124,8 +124,8 @@ $$
 
 $$
 \left|\begin{array}{cc}
-a_{1}+b_{1} & a_{1}+b_{2}\\
-a_{2}-a_{1} & a_{2}-a_{1}
+a_{1}+b_{1}&a_{1}+b_{2}\\
+a_{2}-a_{1}&a_{2}-a_{1}
 \end{array}\right|.
 $$
 
@@ -133,8 +133,8 @@ $$
 
 $$
 \left(a_{2}-a_{1}\right)\times\left|\begin{array}{cc}
-a_{1}+b_{1} & a_{1}+b_{2}\\
-1 & 1
+a_{1}+b_{1}&a_{1}+b_{2}\\
+1&1
 \end{array}\right|.
 $$
 
@@ -142,8 +142,8 @@ $$
 
 $$
 \left(a_{2}-a_{1}\right)\times\left|\begin{array}{cc}
-b_{1}-b_{2} & a_{1}+b_{2}\\
-0 & 1
+b_{1}-b_{2}&a_{1}+b_{2}\\
+0&1
 \end{array}\right|.
 $$
 
@@ -158,9 +158,9 @@ $$
 $$
 \det\left(A\right)=
 \begin{cases}
-a_{1}+b_{1}, & n=1,\\
-\left(a_{1}-a_{2}\right)\left(b_{2}-b_{1}\right), & n=2,\\
-0, & n\ge3.
+a_{1}+b_{1},&n=1,\\
+\left(a_{1}-a_{2}\right)\left(b_{2}-b_{1}\right),&n=2,\\
+0,&n\ge3.
 \end{cases}
 $$
 
@@ -172,11 +172,11 @@ $\blacksquare$
 
 $$
 \left|\begin{array}{cccccc}
-a_{1} & a_{2} & a_{3} & \cdots & a_{n-1} & a_{n}\\
-1 & -1 & 0 & \cdots & 0 & 0\\
-0 & 2 & -2 & \cdots & 0 & 0\\
-\vdots & \vdots & \vdots & & \vdots & \vdots\\
-0 & 0 & 0 & \cdots & n-1 & 1-n
+a_{1}&a_{2}&a_{3}&\cdots&a_{n-1}&a_{n}\\
+1&-1&0&\cdots&0&0\\
+0&2&-2&\cdots&0&0\\
+\vdots&\vdots&\vdots&&\vdots&\vdots\\
+0&0&0&\cdots&n-1&1-n
 \end{array}\right|.
 $$
 
@@ -201,7 +201,7 @@ $$
 由**定理 2.4.1 (行列式按一行(列)展开)**, 按第 $1$ 列展开. 第 $1$ 列只有第一个元素非零, 其余全为 $0$, 故
 
 $$
-\left|A\right|=\left(a_{1}+a_{2}+\cdots+a_{n}\right)\cdot A_{11}.
+\left|A\right|=\left(a_{1}+a_{2}+\cdots+a_{n}\right)\cdot{A}_{11}.
 $$
 
 由**定义 2.4.1 (余子式与代数余子式)**,
@@ -214,10 +214,10 @@ $$
 
 $$
 M_{11}=\left|\begin{array}{cccc}
--1 & 0 & \cdots & 0\\
-0 & -2 & \cdots & 0\\
-\vdots & \vdots & & \vdots\\
-0 & 0 & \cdots & 1-n
+-1&0&\cdots&0\\
+0&-2&\cdots&0\\
+\vdots&\vdots&&\vdots\\
+0&0&\cdots&1-n
 \end{array}\right|.
 $$
 
@@ -241,12 +241,12 @@ $\blacksquare$
 
 $$
 \left|\begin{array}{cccccc}
-x & 0 & 0 & \cdots & 0 & a_{0}\\
--1 & x & 0 & \cdots & 0 & a_{1}\\
-0 & -1 & x & \cdots & 0 & a_{2}\\
-\vdots & \vdots & \vdots & & \vdots & \vdots\\
-0 & 0 & 0 & \cdots & x & a_{n-2}\\
-0 & 0 & 0 & \cdots & -1 & x+a_{n-1}
+x&0&0&\cdots&0&a_{0}\\
+-1&x&0&\cdots&0&a_{1}\\
+0&-1&x&\cdots&0&a_{2}\\
+\vdots&\vdots&\vdots&&\vdots&\vdots\\
+0&0&0&\cdots&x&a_{n-2}\\
+0&0&0&\cdots&-1&x+a_{n-1}
 \end{array}\right|=x^{n}+a_{n-1}x^{n-1}+\cdots+a_{1}x+a_{n}.
 $$
 
@@ -255,7 +255,7 @@ $$
 基例 $n=2$:
 
 $$
-\left|\begin{array}{cc}x & a_{0}\\-1 & x+a_{1}\end{array}\right|=x\left(x+a_{1}\right)-\left(-1\right)a_{0}=x^{2}+a_{1}x+a_{0}.
+\left|\begin{array}{cc}x&a_{0}\\-1&x+a_{1}\end{array}\right|=x\left(x+a_{1}\right)-\left(-1\right)a_{0}=x^{2}+a_{1}x+a_{0}.
 $$
 
 成立.
@@ -265,7 +265,7 @@ $$
 对于 $n$ 阶行列式, 由**定理 2.4.1 (行列式按一行(列)展开)**, 按第 $1$ 行展开:
 
 $$
-D_{n}=x\cdot M_{11}+\left(-1\right)^{1+n}a_{0}\cdot M_{1n}.
+D_{n}=x\cdot{M}_{11}+\left(-1\right)^{1+n}a_{0}\cdot{M}_{1n}.
 $$
 
 由**定义 2.4.1 (余子式与代数余子式)**, $M_{11}$ 是去掉第 $1$ 行第 $1$ 列后的 $\left(n-1\right)$ 阶行列式, 由归纳假设,
@@ -286,7 +286,7 @@ $$
 D_{n}=x\left(x^{n-1}+a_{n-1}x^{n-2}+\cdots+a_{2}x+a_{1}\right)+\left(-1\right)^{1+n}a_{0}\left(-1\right)^{n-1}=x^{n}+a_{n-1}x^{n-1}+\cdots+a_{1}x+\left(-1\right)^{2n}a_{0}=x^{n}+a_{n-1}x^{n-1}+\cdots+a_{1}x+a_{0}.
 $$
 
-由数学归纳法, 结论对一切 $n\ge 2$ 成立. $\blacksquare$
+由数学归纳法, 结论对一切 $n\ge2$ 成立. $\blacksquare$
 
 ## 2.4-8
 
@@ -294,12 +294,12 @@ $$
 
 $$
 \left|\begin{array}{cccccc}
-1 & 2 & 2 & \cdots & 2 & 2\\
-2 & 2 & 2 & \cdots & 2 & 2\\
-2 & 2 & 3 & \cdots & 2 & 2\\
-\vdots & \vdots & \vdots & & \vdots & \vdots\\
-2 & 2 & 2 & \cdots & n-1 & 2\\
-2 & 2 & 2 & \cdots & 2 & n
+1&2&2&\cdots&2&2\\
+2&2&2&\cdots&2&2\\
+2&2&3&\cdots&2&2\\
+\vdots&\vdots&\vdots&&\vdots&\vdots\\
+2&2&2&\cdots&n-1&2\\
+2&2&2&\cdots&2&n
 \end{array}\right|.
 $$
 
@@ -309,27 +309,27 @@ $$
 
 第 $1$ 行变成 $\left(-1,0,0,\cdots,0\right)$;
 
-第 $i$ 行 $\left(i\ge 3\right)$ 变成 $\left(0,0,\cdots,i-2,\cdots,0\right)$, 其中 $i-2$ 在第 $i$ 列.
+第 $i$ 行 $\left(i\ge3\right)$ 变成 $\left(0,0,\cdots,i-2,\cdots,0\right)$, 其中 $i-2$ 在第 $i$ 列.
 
 行列式变为
 
 $$
 \left|\begin{array}{cccccc}
--1 & 0 & 0 & \cdots & 0 & 0\\
-2 & 2 & 2 & \cdots & 2 & 2\\
-0 & 0 & 1 & \cdots & 0 & 0\\
-\vdots & \vdots & \vdots & & \vdots & \vdots\\
-0 & 0 & 0 & \cdots & n-2 & 0\\
-0 & 0 & 0 & \cdots & 0 & n-2
+-1&0&0&\cdots&0&0\\
+2&2&2&\cdots&2&2\\
+0&0&1&\cdots&0&0\\
+\vdots&\vdots&\vdots&&\vdots&\vdots\\
+0&0&0&\cdots&n-2&0\\
+0&0&0&\cdots&0&n-2
 \end{array}\right|.
 $$
 
-由**定理 2.4.1 (行列式按一行(列)展开)**, 按第 $1$ 行展开: $D=-1\cdot M_{11}$.
+由**定理 2.4.1 (行列式按一行(列)展开)**, 按第 $1$ 行展开: $D=-1\cdot{M}_{11}$.
 
 由**定义 2.4.1 (余子式与代数余子式)**, $M_{11}$ 是去掉第 $1$ 行第 $1$ 列后的 $\left(n-1\right)$ 阶行列式. 按其第 $2$ 行(即原第 $3$ 行)展开, 该行只有第 $2$ 列为 $1$, 得
 
 $$
-M_{11}=1\cdot\left(-1\right)^{2+2}\cdot M'_{22}=M'_{22}.
+M_{11}=1\cdot\left(-1\right)^{2+2}\cdot{M}'_{22}=M'_{22}.
 $$
 
 由**定义 2.4.1 (余子式与代数余子式)**, $M'_{22}$ 是去掉第 $2$ 行第 $2$ 列后的 $\left(n-2\right)$ 阶行列式, 按其第 $1$ 行展开, 第 $1$ 行只有第 $1$ 列的 $2$ 非零, 其余项因去掉对应列后某行全为 $0$ 而为 $0$, 故

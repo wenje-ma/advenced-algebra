@@ -4,7 +4,7 @@ $$
 \text{rank}\left(A+B\right)\le\text{rank}\left(A\right)+\text{rank}\left(B\right).
 $$
 $$
-\left|\begin{array}{cc}A & B\\0 & D\end{array}\right|=\left|A\right|\cdot\left|D\right|.
+\left|\begin{array}{cc}A&B\\0&D\end{array}\right|=\left|A\right|\cdot\left|D\right|.
 $$
 
 > **Theorem 3.7.1 (Dimension of the Solution Space of a Homogeneous System)**
@@ -12,12 +12,12 @@ $$
 > For an $n$-variable homogeneous system $Ax=0$ over a number field $K$, the solution space $W$ has dimension
 
 $$
-\dim W=n-\text{rank}\left(A\right).
+\dim{W}=n-\text{rank}\left(A\right).
 $$
 
 > **Theorem 4.3.1 (Rank of a Matrix Product)**
 > 
-> Let $A=\left(a_{ij}\right)_{s\times n}$ and $B=\left(b_{ij}\right)_{n\times m}$. Then
+> Let $A=\left(a_{ij}\right)_{s\times{n}}$ and $B=\left(b_{ij}\right)_{n\times{m}}$. Then
 
 $$
 \text{rank}\left(AB\right)\le\min\left\{\text{rank}\left(A\right),\text{rank}\left(B\right)\right\}.
@@ -25,7 +25,7 @@ $$
 
 > **Proposition 4.5.2 (Rank Identity over the Real Number Field)**
 > 
-> Let $A$ be an $s\times n$ matrix over the real number field. Then
+> Let $A$ be an $s\times{n}$ matrix over the real number field. Then
 
 $$
 \text{rank}\left(A^{\top}A\right)=\text{rank}\left(AA^{\top}\right)=\text{rank}\left(A\right).
@@ -55,7 +55,7 @@ which is called the standard inner product on $\mathbb{R}^{n}$.
 
 ## 4.5-1
 
-Prove: let $A,B$ be $s\times n$ and $n\times m$ matrices, respectively. If $AB=0$, then $\text{rank}\left(A\right)+\text{rank}\left(B\right)\le n$.
+Prove: let $A,B$ be $s\times{n}$ and $n\times{m}$ matrices, respectively. If $AB=0$, then $\text{rank}\left(A\right)+\text{rank}\left(B\right)\le{n}$.
 
 ### Solution to 4.5-1
 
@@ -70,20 +70,20 @@ Therefore the column space of $B$ is contained in the solution space $W$ of $Ax=
 By **Theorem 3.7.1 (Dimension of the Solution Space of a Homogeneous System)**,
 
 $$
-\text{rank}\left(B\right)=\dim\left\langle\beta_{1},\cdots,\beta_{m}\right\rangle\le\dim W=n-\text{rank}\left(A\right).
+\text{rank}\left(B\right)=\dim\left\langle\beta_{1},\cdots,\beta_{m}\right\rangle\le\dim{W}=n-\text{rank}\left(A\right).
 $$
 
 Hence
 
 $$
-\text{rank}\left(A\right)+\text{rank}\left(B\right)\le n.
+\text{rank}\left(A\right)+\text{rank}\left(B\right)\le{n}.
 $$
 
 $\blacksquare$
 
 ## 4.5-4
 
-Prove: if an $n\times n$ matrix $A$ satisfies $A^{2}=I$ (then $A$ is called an involutory matrix), then
+Prove: if an $n\times{n}$ matrix $A$ satisfies $A^{2}=I$ (then $A$ is called an involutory matrix), then
 
 $$
 \text{rank}\left(I+A\right)+\text{rank}\left(I-A\right)=n.
@@ -100,7 +100,7 @@ $$
 By the conclusion of 4.5-1,
 
 $$
-\text{rank}\left(I+A\right)+\text{rank}\left(I-A\right)\le n.
+\text{rank}\left(I+A\right)+\text{rank}\left(I-A\right)\le{n}.
 $$
 
 On the other hand,
@@ -131,7 +131,7 @@ $\blacksquare$
 
 ## 4.5-5
 
-Prove: if an $n\times n$ matrix $A$ satisfies $A^{2}=A$ (then $A$ is called an idempotent matrix), then
+Prove: if an $n\times{n}$ matrix $A$ satisfies $A^{2}=A$ (then $A$ is called an idempotent matrix), then
 
 $$
 \text{rank}\left(A\right)+\text{rank}\left(I-A\right)=n.
@@ -148,7 +148,7 @@ $$
 By the conclusion of 4.5-1,
 
 $$
-\text{rank}\left(A\right)+\text{rank}\left(I-A\right)\le n.
+\text{rank}\left(A\right)+\text{rank}\left(I-A\right)\le{n}.
 $$
 
 On the other hand,
@@ -179,7 +179,7 @@ $\blacksquare$
 
 ## 4.5-6
 
-Let $A$ be an $s\times n$ matrix over the real number field, and $\beta$ any column vector in $\mathbb{R}^{s}$. Prove: the $n$-variable system $A^{\top}AX=A^{\top}\beta$ always has a solution.
+Let $A$ be an $s\times{n}$ matrix over the real number field, and $\beta$ any column vector in $\mathbb{R}^{s}$. Prove: the $n$-variable system $A^{\top}AX=A^{\top}\beta$ always has a solution.
 
 ### Solution to 4.5-6
 
@@ -219,14 +219,14 @@ The coefficient matrix and the augmented matrix have the same rank, so the syste
 
 ## 4.5-9
 
-Let $A$ be an $n\times n$ matrix ( $n\ge2$ ). Prove:
+Let $A$ be an $n\times{n}$ matrix ( $n\ge2$ ). Prove:
 
 $$
 \text{rank}\left(A^{*}\right)=
 \begin{cases}
-n, & \text{when }\text{rank}\left(A\right)=n;\\
-1, & \text{when }\text{rank}\left(A\right)=n-1;\\
-0, & \text{when }\text{rank}\left(A\right)< n-1.
+n,&\text{when~}\text{rank}\left(A\right)=n;\\
+1,&\text{when~}\text{rank}\left(A\right)=n-1;\\
+0,&\text{when~}\text{rank}\left(A\right)<{}n-1.
 \end{cases}
 $$
 
@@ -250,15 +250,15 @@ When $\text{rank}\left(A\right)=n-1$: $\left|A\right|=0$.
 
 Thus $AA^{*}=\left|A\right|I=0$.
 
-By 4.5-1, $\text{rank}\left(A\right)+\text{rank}\left(A^{*}\right)\le n$.
+By 4.5-1, $\text{rank}\left(A\right)+\text{rank}\left(A^{*}\right)\le{n}$.
 
-Namely $\left(n-1\right)+\text{rank}\left(A^{*}\right)\le n$, so $\text{rank}\left(A^{*}\right)\le1$.
+Namely $\left(n-1\right)+\text{rank}\left(A^{*}\right)\le{n}$, so $\text{rank}\left(A^{*}\right)\le1$.
 
 Since $\text{rank}\left(A\right)=n-1$, $A$ has a nonzero $\left(n-1\right)$-minor. This $\left(n-1\right)$-minor is some cofactor, so $A^{*}\ne0$, and hence $\text{rank}\left(A^{*}\right)\ge1$.
 
 Therefore $\text{rank}\left(A^{*}\right)=1$.
 
-When $\text{rank}\left(A\right)< n-1$: all $\left(n-1\right)$-minors of $A$ are zero.
+When $\text{rank}\left(A\right)<{}n-1$: all $\left(n-1\right)$-minors of $A$ are zero.
 
 Hence all cofactors are zero, i.e. $A^{*}=0$.
 
@@ -268,10 +268,10 @@ $\blacksquare$
 
 ## 4.5-15
 
-Let $A,B,C,D$ all be $n\times n$ matrices, with $\left|A\right|\ne0$ and $AC=CA$. Prove:
+Let $A,B,C,D$ all be $n\times{n}$ matrices, with $\left|A\right|\ne0$ and $AC=CA$. Prove:
 
 $$
-\left|\begin{array}{cc}A & B\\C & D\end{array}\right|=\left|AD-CB\right|.
+\left|\begin{array}{cc}A&B\\C&D\end{array}\right|=\left|AD-CB\right|.
 $$
 
 ### Solution to 4.5-15
@@ -281,9 +281,9 @@ Since $\left|A\right|\ne0$, $A$ is invertible.
 Perform an elementary block row operation: add $-CA^{-1}$ times the first block row to the second block row.
 
 $$
-\left|\begin{array}{cc}A & B\\C & D\end{array}\right|
+\left|\begin{array}{cc}A&B\\C&D\end{array}\right|
 =
-\left|\begin{array}{cc}A & B\\0 & D-CA^{-1}B\end{array}\right|.
+\left|\begin{array}{cc}A&B\\0&D-CA^{-1}B\end{array}\right|.
 $$
 
 This is a block upper triangular matrix. By Determinant of a Block Upper Triangular Matrix, its determinant equals the product of the determinants of the diagonal block submatrices:
@@ -326,8 +326,8 @@ Determine whether the following matrix is orthogonal:
 
 $$
 A=\left[\begin{array}{rr}
-\sqrt{3}/2 & 1/2\\
-1/2 & -\sqrt{3}/2
+\sqrt{3}/2&1/2\\
+1/2&-\sqrt{3}/2
 \end{array}\right].
 $$
 
@@ -337,11 +337,11 @@ By **Definition 4.6.1 (Orthogonal Matrix)**, compute $A^{\top}A$:
 
 $$
 A^{\top}A=\left[\begin{array}{rr}
-\sqrt{3}/2 & 1/2\\
-1/2 & -\sqrt{3}/2
+\sqrt{3}/2&1/2\\
+1/2&-\sqrt{3}/2
 \end{array}\right]\left[\begin{array}{rr}
-\sqrt{3}/2 & 1/2\\
-1/2 & -\sqrt{3}/2
+\sqrt{3}/2&1/2\\
+1/2&-\sqrt{3}/2
 \end{array}\right].
 $$
 
@@ -377,8 +377,8 @@ Determine whether the following matrix is orthogonal:
 
 $$
 A=\left[\begin{array}{rr}
-1 & 1\\
-1 & -1
+1&1\\
+1&-1
 \end{array}\right].
 $$
 
@@ -388,23 +388,23 @@ By **Definition 4.6.1 (Orthogonal Matrix)**, compute $A^{\top}A$:
 
 $$
 A^{\top}A=\left[\begin{array}{rr}
-1 & 1\\
-1 & -1
+1&1\\
+1&-1
 \end{array}\right]\left[\begin{array}{rr}
-1 & 1\\
-1 & -1
+1&1\\
+1&-1
 \end{array}\right]
 =\left[\begin{array}{rr}
-2 & 0\\
-0 & 2
+2&0\\
+0&2
 \end{array}\right].
 $$
 
-Clearly $A^{\top}A\ne I$, and by **Definition 4.6.1 (Orthogonal Matrix)**, $A$ is not orthogonal. $\blacksquare$
+Clearly $A^{\top}A\ne{I}$, and by **Definition 4.6.1 (Orthogonal Matrix)**, $A$ is not orthogonal. $\blacksquare$
 
 ## 4.6-3
 
-Prove: if $A$ is an $n\times n$ real symmetric matrix and $T$ is an $n\times n$ orthogonal matrix, then $T^{-1}AT$ is symmetric.
+Prove: if $A$ is an $n\times{n}$ real symmetric matrix and $T$ is an $n\times{n}$ orthogonal matrix, then $T^{-1}AT$ is symmetric.
 
 ### Solution to 4.6-3
 

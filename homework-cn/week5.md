@@ -22,11 +22,11 @@
 
 $$
 \left|\begin{array}{ccccc}
-1 & 2 & 3 & \cdots & n\\
-2 & 3 & 4 & \cdots & 1\\
-3 & 4 & 5 & \cdots & 2\\
-\vdots & \vdots & \vdots & & \vdots\\
-n & 1 & 2 & \cdots & n-1
+1&2&3&\cdots&n\\
+2&3&4&\cdots&1\\
+3&4&5&\cdots&2\\
+\vdots&\vdots&\vdots&&\vdots\\
+n&1&2&\cdots&n-1
 \end{array}\right|.
 $$
 
@@ -42,11 +42,11 @@ $$
 
 $$
 D=\frac{n\left(n+1\right)}{2}\cdot\left|\begin{array}{ccccc}
-1 & 2 & 3 & \cdots & n\\
-1 & 3 & 4 & \cdots & 1\\
-1 & 4 & 5 & \cdots & 2\\
-\vdots & \vdots & \vdots & & \vdots\\
-1 & 1 & 2 & \cdots & n-1
+1&2&3&\cdots&n\\
+1&3&4&\cdots&1\\
+1&4&5&\cdots&2\\
+\vdots&\vdots&\vdots&&\vdots\\
+1&1&2&\cdots&n-1
 \end{array}\right|.
 $$
 
@@ -55,7 +55,7 @@ $$
 由$n$ 次本原单位根与循环矩阵的特征值, 设 $P$ 是 $n$ 阶循环移位矩阵, 则原矩阵
 
 $$
-C=1\cdot I+2\cdot P+\cdots+n\cdot P^{n-1}.
+C=1\cdot{I}+2\cdot{P}+\cdots+n\cdot{P}^{n-1}.
 $$
 
 $P$ 的特征值为 $\omega^{k}$ $\left(k=0,1,\cdots,n-1\right)$, 其中 $\omega$ 是 $n$ 次本原单位根.
@@ -133,7 +133,7 @@ $$
 由**定理 2.4.1 (行列式按一行(列)展开)**, 把 $\widetilde{A}_{j}$ 按第 $j$ 列展开, 第 $j$ 列全为 $1$, 故
 
 $$
-\widetilde{A}_{j}=\sum_{i=1}^{n}1\cdot A_{ij}=\sum_{i=1}^{n}A_{ij}.
+\widetilde{A}_{j}=\sum_{i=1}^{n}1\cdot{A}_{ij}=\sum_{i=1}^{n}A_{ij}.
 $$
 
 由**定义 2.4.1 (余子式与代数余子式)**, $A_{ij}$ 是 $\left(i,j\right)$ 元的代数余子式.
@@ -154,10 +154,10 @@ $\blacksquare$
 
 $$
 \left|\begin{array}{cccc}
-1+x_{1}y_{1} & 1+x_{1}y_{2} & \cdots & 1+x_{1}y_{n}\\
-1+x_{2}y_{1} & 1+x_{2}y_{2} & \cdots & 1+x_{2}y_{n}\\
-\vdots & \vdots & & \vdots\\
-1+x_{n}y_{1} & 1+x_{n}y_{2} & \cdots & 1+x_{n}y_{n}
+1+x_{1}y_{1}&1+x_{1}y_{2}&\cdots&1+x_{1}y_{n}\\
+1+x_{2}y_{1}&1+x_{2}y_{2}&\cdots&1+x_{2}y_{n}\\
+\vdots&\vdots&&\vdots\\
+1+x_{n}y_{1}&1+x_{n}y_{2}&\cdots&1+x_{n}y_{n}
 \end{array}\right|.
 $$
 
@@ -165,10 +165,10 @@ $$
 
 $$
 \left|\begin{array}{cccc}
-1+t & t & \cdots & t\\
-t & 2+t & \cdots & t\\
-\vdots & \vdots & & \vdots\\
-t & t & \cdots & n+t
+1+t&t&\cdots&t\\
+t&2+t&\cdots&t\\
+\vdots&\vdots&&\vdots\\
+t&t&\cdots&n+t
 \end{array}\right|.
 $$
 
@@ -209,7 +209,7 @@ $$
 因此
 
 $$
-\left|A\left(t\right)\right|=n!+t\cdot n!\sum_{i=1}^{n}\frac{1}{i}
+\left|A\left(t\right)\right|=n!+t\cdot{n}!\sum_{i=1}^{n}\frac{1}{i}
 =n!\left(1+t\sum_{i=1}^{n}\frac{1}{i}\right).
 $$
 
@@ -235,9 +235,9 @@ $$
 
 $$
 \left|\begin{array}{ccc}
-a & 1 & 1\\
-1 & b & 1\\
-1 & 2b & 1
+a&1&1\\
+1&b&1\\
+1&2b&1
 \end{array}\right|=a\left(b\cdot1-1\cdot2b\right)-1\left(1\cdot1-1\cdot1\right)+1\left(1\cdot2b-b\cdot1\right)=a\left(-b\right)-0+b=b\left(1-a\right).
 $$
 
@@ -263,7 +263,7 @@ $$
 
 由上题, 系数行列式为 $b\left(1-a\right)$.
 
-故当 $b\ne 0$ 且 $a\ne 1$ 时, 方程组有唯一解. $\blacksquare$
+故当 $b\ne0$ 且 $a\ne1$ 时, 方程组有唯一解. $\blacksquare$
 
 ## 2.5-6
 
@@ -285,9 +285,9 @@ x_{1}+x_{3}=2.
 \end{cases}
 $$
 
-后两个方程矛盾 ($1\ne 2$), 故方程组无解.
+后两个方程矛盾 ($1\ne2$), 故方程组无解.
 
-情况 2: $a=1$ 且 $b\ne 0$.
+情况 2: $a=1$ 且 $b\ne0$.
 
 方程组变为
 
@@ -303,7 +303,7 @@ $$
 
 第 $3$ 行减第 $1$ 行: $\left(2b-1\right)x_{2}=0$.
 
-若 $2b-1\ne 0$, 即 $b\ne\frac{1}{2}$, 则由第 $3$ 行得 $x_{2}=0$, 代入第 $2$ 行得 $0=-1$, 矛盾. 无解.
+若 $2b-1\ne0$, 即 $b\ne\frac{1}{2}$, 则由第 $3$ 行得 $x_{2}=0$, 代入第 $2$ 行得 $0=-1$, 矛盾. 无解.
 
 若 $2b-1=0$, 即 $b=\frac{1}{2}$, 则第 $3$ 行变为恒等式. 由第 $2$ 行得 $\left(\frac{1}{2}-1\right)x_{2}=-1$, 即 $x_{2}=2$. 代入第 $1$ 行得 $x_{1}+x_{3}=0$.
 
@@ -332,7 +332,7 @@ $$
 
 由**定理 2.5.1 (克拉默法则)**, 系数行列式仍为 $b\left(1-a\right)$.
 
-唯一解: $b\ne 0$ 且 $a\ne 1$.
+唯一解: $b\ne0$ 且 $a\ne1$.
 
 情况 1: $b=0$.
 
@@ -350,7 +350,7 @@ $$
 
 无论 $a$ 取何值, $x_{1}$ 自由, $x_{2}=1-\left(a-1\right)x_{1}$, $x_{3}=1-x_{1}$. 有无穷多解.
 
-情况 2: $a=1$ 且 $b\ne 0$.
+情况 2: $a=1$ 且 $b\ne0$.
 
 方程组变为
 
@@ -366,7 +366,7 @@ $$
 
 第 $3$ 行减第 $1$ 行: $\left(2b-1\right)x_{2}=-1$.
 
-若 $b\ne 1$ 且 $b\ne\frac{1}{2}$, 则
+若 $b\ne1$ 且 $b\ne\frac{1}{2}$, 则
 
 $$
 x_{2}=\frac{1}{1-b}=\frac{1}{1-2b}
@@ -378,12 +378,12 @@ $$
 
 若 $b=\frac{1}{2}$, 则第 $3$ 行减第 $1$ 行得 $0=-1$, 矛盾.
 
-故 $a=1$ 且 $b\ne 0$ 时, 无解.
+故 $a=1$ 且 $b\ne0$ 时, 无解.
 
 综上:
 
-- 唯一解: $b\ne 0$ 且 $a\ne 1$.
+- 唯一解: $b\ne0$ 且 $a\ne1$.
 - 无穷多解: $b=0$.
-- 无解: $a=1$ 且 $b\ne 0$.
+- 无解: $a=1$ 且 $b\ne0$.
 
 $\blacksquare$

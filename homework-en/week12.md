@@ -2,15 +2,15 @@
 
 > **Definition 4.1.1 (Matrix Addition)**
 > 
-> Let $A=\left(a_{ij}\right),B=\left(b_{ij}\right)$ both be $s\times n$ matrices over a number field $K$, and set $C=\left(a_{ij}+b_{ij}\right)_{s\times n}$. Then $C$ is called the sum of the matrices $A$ and $B$, denoted $C=A+B$.
+> Let $A=\left(a_{ij}\right),B=\left(b_{ij}\right)$ both be $s\times{n}$ matrices over a number field $K$, and set $C=\left(a_{ij}+b_{ij}\right)_{s\times{n}}$. Then $C$ is called the sum of the matrices $A$ and $B$, denoted $C=A+B$.
 
 > **Definition 4.1.2 (Scalar Multiplication of Matrices)**
 > 
-> Let $k\in K$ and set $M=\left(ka_{ij}\right)_{s\times n}$. Then $M$ is called the scalar product of $k$ and the matrix $A$, denoted $M=kA$.
+> Let $k\in{K}$ and set $M=\left(ka_{ij}\right)_{s\times{n}}$. Then $M$ is called the scalar product of $k$ and the matrix $A$, denoted $M=kA$.
 
 > **Definition 4.1.3 (Matrix Multiplication)**
 > 
-> Let $A=\left(a_{ij}\right)_{s\times n}$ and $B=\left(b_{ij}\right)_{n\times m}$, and set $C=\left(c_{ij}\right)_{s\times m}$ with $c_{ij}=\sum_{k=1}^{n}a_{ik}b_{kj}$. Then $C$ is called the product of $A$ and $B$, denoted $C=AB$.
+> Let $A=\left(a_{ij}\right)_{s\times{n}}$ and $B=\left(b_{ij}\right)_{n\times{m}}$, and set $C=\left(c_{ij}\right)_{s\times{m}}$ with $c_{ij}=\sum_{k=1}^{n}a_{ik}b_{kj}$. Then $C$ is called the product of $A$ and $B$, denoted $C=AB$.
 
 > **Definition 4.2.2 (Upper/Lower Triangular Matrix)**
 > 
@@ -30,15 +30,15 @@
 
 $$
 \left|\begin{array}{ccc}
-1 & 1 & 1\\
-x_{1} & x_{2} & x_{3}\\
-x_{1}^{2} & x_{2}^{2} & x_{3}^{2}
+1&1&1\\
+x_{1}&x_{2}&x_{3}\\
+x_{1}^{2}&x_{2}^{2}&x_{3}^{2}
 \end{array}\right|=\left(x_{2}-x_{1}\right)\left(x_{3}-x_{1}\right)\left(x_{3}-x_{2}\right).
 $$
 
 > **Theorem 4.3.1 (Rank of a Matrix Product)**
 > 
-> Let $A=\left(a_{ij}\right)_{s\times n}$ and $B=\left(b_{ij}\right)_{n\times m}$. Then
+> Let $A=\left(a_{ij}\right)_{s\times{n}}$ and $B=\left(b_{ij}\right)_{n\times{m}}$. Then
 
 $$
 \text{rank}\left(AB\right)\le\min\left\{\text{rank}\left(A\right),\text{rank}\left(B\right)\right\}.
@@ -50,7 +50,7 @@ $$
 
 > **Theorem 4.3.3 (Determinant of a Product)**
 > 
-> Let $A,B$ both be $n\times n$ matrices. Then $\left|AB\right|=\left|A\right|\left|B\right|$.
+> Let $A,B$ both be $n\times{n}$ matrices. Then $\left|AB\right|=\left|A\right|\left|B\right|$.
 
 ## 4.1-6
 
@@ -58,9 +58,9 @@ Compute:
 
 $$
 \left(x,y,1\right)\left[\begin{array}{ccc}
-a_{11} & a_{12} & a_{1}\\
-a_{12} & a_{22} & a_{2}\\
-a_{1} & a_{2} & a_{0}
+a_{11}&a_{12}&a_{1}\\
+a_{12}&a_{22}&a_{2}\\
+a_{1}&a_{2}&a_{0}
 \end{array}\right]\left[\begin{array}{c}
 x\\
 y\\
@@ -92,10 +92,10 @@ Compute:
 
 $$
 \left[\begin{array}{ccc}
-0 & 1 & 0\\
-0 & 0 & 1\\
-0 & 0 & 0
-\end{array}\right]^{n},\text{ where }n\text{ is a positive integer}.
+0&1&0\\
+0&0&1\\
+0&0&0
+\end{array}\right]^{n},\text{~where~}n\text{~is~a~positive~integer}.
 $$
 
 ### Solution to 4.1-7(5)
@@ -103,29 +103,29 @@ $$
 By **Definition 4.1.3 (Matrix Multiplication)**, write
 
 $$
-H=\left[\begin{array}{ccc}0 & 1 & 0\\0 & 0 & 1\\0 & 0 & 0\end{array}\right].
+H=\left[\begin{array}{ccc}0&1&0\\0&0&1\\0&0&0\end{array}\right].
 $$
 
 $$
 H^{2}=HH=\left[\begin{array}{ccc}
-0 & 0 & 1\\
-0 & 0 & 0\\
-0 & 0 & 0
+0&0&1\\
+0&0&0\\
+0&0&0
 \end{array}\right].
 $$
 
 $$
 H^{3}=H^{2}H=\left[\begin{array}{ccc}
-0 & 0 & 0\\
-0 & 0 & 0\\
-0 & 0 & 0
+0&0&0\\
+0&0&0\\
+0&0&0
 \end{array}\right].
 $$
 
 Therefore:
 
-- when $n=1$, $H^{n}=H=\left[\begin{array}{ccc}0 & 1 & 0\\0 & 0 & 1\\0 & 0 & 0\end{array}\right]$;
-- when $n=2$, $H^{n}=\left[\begin{array}{ccc}0 & 0 & 1\\0 & 0 & 0\\0 & 0 & 0\end{array}\right]$;
+- when $n=1$, $H^{n}=H=\left[\begin{array}{ccc}0&1&0\\0&0&1\\0&0&0\end{array}\right]$;
+- when $n=2$, $H^{n}=\left[\begin{array}{ccc}0&0&1\\0&0&0\\0&0&0\end{array}\right]$;
 - when $n\ge3$, $H^{n}=0$.
 
 $\blacksquare$
@@ -136,36 +136,36 @@ Compute:
 
 $$
 \left[\begin{array}{ccc}
-\lambda & 1 & 0\\
-0 & \lambda & 1\\
-0 & 0 & \lambda
-\end{array}\right]^{n},\text{ where }n\text{ is a positive integer}.
+\lambda&1&0\\
+0&\lambda&1\\
+0&0&\lambda
+\end{array}\right]^{n},\text{~where~}n\text{~is~a~positive~integer}.
 $$
 
 ### Solution to 4.1-7(6)
 
-By **Definition 4.1.3 (Matrix Multiplication)**, write $A=\lambda I+N$, where
+By **Definition 4.1.3 (Matrix Multiplication)**, write $A=\lambda{I}+N$, where
 
 $$
-N=\left[\begin{array}{ccc}0 & 1 & 0\\0 & 0 & 1\\0 & 0 & 0\end{array}\right].
+N=\left[\begin{array}{ccc}0&1&0\\0&0&1\\0&0&0\end{array}\right].
 $$
 
-Because $\lambda I$ and $N$ commute, by Matrix Binomial Theorem,
+Because $\lambda{I}$ and $N$ commute, by Matrix Binomial Theorem,
 
 $$
-A^{n}=\sum_{k=0}^{n}\binom{n}{k}\left(\lambda I\right)^{n-k}N^{k}.
+A^{n}=\sum_{k=0}^{n}\binom{n}{k}\left(\lambda{I}\right)^{n-k}N^{k}.
 $$
 
-Also $N^{0}=I$, $N^{1}=N$, $N^{2}=\left[\begin{array}{ccc}0 & 0 & 1\\0 & 0 & 0\\0 & 0 & 0\end{array}\right]$, $N^{3}=0$.
+Also $N^{0}=I$, $N^{1}=N$, $N^{2}=\left[\begin{array}{ccc}0&0&1\\0&0&0\\0&0&0\end{array}\right]$, $N^{3}=0$.
 
 Hence
 
 $$
 A^{n}
 =\lambda^{n}I+n\lambda^{n-1}N+\binom{n}{2}\lambda^{n-2}N^{2}=\left[\begin{array}{ccc}
-\lambda^{n} & n\lambda^{n-1} & \frac{n\left(n-1\right)}{2}\lambda^{n-2}\\
-0 & \lambda^{n} & n\lambda^{n-1}\\
-0 & 0 & \lambda^{n}
+\lambda^{n}&n\lambda^{n-1}&\frac{n\left(n-1\right)}{2}\lambda^{n-2}\\
+0&\lambda^{n}&n\lambda^{n-1}\\
+0&0&\lambda^{n}
 \end{array}\right].
 $$
 
@@ -203,11 +203,11 @@ Therefore $A^{2}=A$ if and only if $B^{2}=I$. $\blacksquare$
 
 ## 4.2-2
 
-Prove: the product of two $n\times n$ lower triangular matrices is still an $n\times n$ lower triangular matrix, and the diagonal entries of the product equal the products of the corresponding diagonal entries of the factors.
+Prove: the product of two $n\times{n}$ lower triangular matrices is still an $n\times{n}$ lower triangular matrix, and the diagonal entries of the product equal the products of the corresponding diagonal entries of the factors.
 
 ### Solution to 4.2-2
 
-By **Definition 4.2.2 (Upper/Lower Triangular Matrix)**, let $A=\left(a_{ij}\right),B=\left(b_{ij}\right)$ both be $n\times n$ lower triangular matrices, i.e. $a_{ij}=0,b_{ij}=0$ whenever $i< j$.
+By **Definition 4.2.2 (Upper/Lower Triangular Matrix)**, let $A=\left(a_{ij}\right),B=\left(b_{ij}\right)$ both be $n\times{n}$ lower triangular matrices, i.e. $a_{ij}=0,b_{ij}=0$ whenever $i<{}j$.
 
 Set $C=AB=\left(c_{ij}\right)$; then
 
@@ -215,17 +215,17 @@ $$
 c_{ij}=\sum_{k=1}^{n}a_{ik}b_{kj}.
 $$
 
-Lower triangularity. When $i< j$:
+Lower triangularity. When $i<{}j$:
 
-- if $k\le i< j$, then $k< j$, so $b_{kj}=0$;
-- if $k> i$, then $a_{ik}=0$.
+- if $k\le{i}<{}j$, then $k<{}j$, so $b_{kj}=0$;
+- if $k>{}i$, then $a_{ik}=0$.
 
-Hence every term is $0$, so $c_{ij}=0$ (when $i< j$). By **Definition 4.2.2 (Upper/Lower Triangular Matrix)**, $C$ is therefore a lower triangular matrix.
+Hence every term is $0$, so $c_{ij}=0$ (when $i<{}j$). By **Definition 4.2.2 (Upper/Lower Triangular Matrix)**, $C$ is therefore a lower triangular matrix.
 
 Diagonal entries. When $i=j$:
 
-- if $k< i$, then $b_{ki}=0$;
-- if $k> i$, then $a_{ik}=0$.
+- if $k<{}i$, then $b_{ki}=0$;
+- if $k>{}i$, then $a_{ik}=0$.
 
 Hence only the term $k=i$ is nonzero:
 
@@ -237,11 +237,11 @@ $\blacksquare$
 
 ## 4.2-3
 
-Prove: a matrix that commutes with every $n\times n$ matrix must be an $n\times n$ scalar matrix.
+Prove: a matrix that commutes with every $n\times{n}$ matrix must be an $n\times{n}$ scalar matrix.
 
 ### Solution to 4.2-3
 
-Let $A=\left(a_{ij}\right)$ commute with every $n\times n$ matrix.
+Let $A=\left(a_{ij}\right)$ commute with every $n\times{n}$ matrix.
 
 Take the matrix unit $E_{ij}$ of **Definition 4.2.3 (Elementary Matrix Unit)** (its $\left(i,j\right)$-entry is $1$ and all others are $0$). Then $AE_{ij}=E_{ij}A$.
 
@@ -263,13 +263,13 @@ $$
 a_{11}=a_{22}=\cdots=a_{nn}=k.
 $$
 
-Now compare the $\left(k,j\right)$-entry (with $k\ne i$):
+Now compare the $\left(k,j\right)$-entry (with $k\ne{i}$):
 
 the $\left(k,j\right)$-entry of $AE_{ij}$ $=a_{ki}$;
 
-the $\left(k,j\right)$-entry of $E_{ij}A$ $=0$ (because $k\ne i$).
+the $\left(k,j\right)$-entry of $E_{ij}A$ $=0$ (because $k\ne{i}$).
 
-Hence $a_{ki}=0$ (when $k\ne i$).
+Hence $a_{ki}=0$ (when $k\ne{i}$).
 
 This holds for all $i$, so all off-diagonal entries of $A$ are $0$.
 
@@ -277,11 +277,11 @@ Therefore $A=kI$, i.e. $A$ is a scalar matrix. $\blacksquare$
 
 ## 4.2-8
 
-Prove: over a number field $K$, every $n\times n$ matrix can be written as the sum of a symmetric matrix and a skew-symmetric matrix, and this representation is unique.
+Prove: over a number field $K$, every $n\times{n}$ matrix can be written as the sum of a symmetric matrix and a skew-symmetric matrix, and this representation is unique.
 
 ### Solution to 4.2-8
 
-Let $A$ be any $n\times n$ matrix. Set
+Let $A$ be any $n\times{n}$ matrix. Set
 
 $$
 S=\frac{1}{2}\left(A+A^{\top}\right),
@@ -324,7 +324,7 @@ The representation is unique. $\blacksquare$
 
 ## 4.2-9
 
-Prove: if $A$ is an $n\times n$ real symmetric matrix and $A^{2}=0$, then $A=0$.
+Prove: if $A$ is an $n\times{n}$ real symmetric matrix and $A^{2}=0$, then $A=0$.
 
 ### Solution to 4.2-9
 
@@ -360,7 +360,7 @@ Prove: the determinant of an odd-order skew-symmetric matrix over a number field
 
 ### Solution to 4.2-10
 
-Let $A$ be an $n\times n$ skew-symmetric matrix with $n$ odd.
+Let $A$ be an $n\times{n}$ skew-symmetric matrix with $n$ odd.
 
 By **Definition 4.2.6 (Skew-Symmetric Matrix)**, $A^{\top}=-A$.
 
@@ -379,14 +379,14 @@ Since $n$ is odd, $\left(-1\right)^{n}=-1$.
 Therefore
 
 $$
-\left|A\right|=-\left|A\right|\Rightarrow 2\left|A\right|=0\Rightarrow \left|A\right|=0.
+\left|A\right|=-\left|A\right|\Rightarrow2\left|A\right|=0\Rightarrow\left|A\right|=0.
 $$
 
 $\blacksquare$
 
 ## 4.3-2
 
-A matrix is called row (column) full-rank if its row (column) vector group is linearly independent. Prove: if an $s\times n$ matrix $A$ has rank $r$, then there exist an $s\times r$ column full-rank matrix $B$ and an $r\times n$ row full-rank matrix $C$ such that $A=BC$.
+A matrix is called row (column) full-rank if its row (column) vector group is linearly independent. Prove: if an $s\times{n}$ matrix $A$ has rank $r$, then there exist an $s\times{r}$ column full-rank matrix $B$ and an $r\times{n}$ row full-rank matrix $C$ such that $A=BC$.
 
 ### Solution to 4.3-2
 
@@ -400,15 +400,15 @@ $$
 J=\left[\begin{array}{c}C\\0\end{array}\right],
 $$
 
-where $C$ is an $r\times n$ matrix whose row vector group is linearly independent (because the nonzero rows of $J$ are linearly independent).
+where $C$ is an $r\times{n}$ matrix whose row vector group is linearly independent (because the nonzero rows of $J$ are linearly independent).
 
 Hence $C$ is row full-rank.
 
-Write $A=PJ$, where $P$ is an $s\times s$ invertible matrix.
+Write $A=PJ$, where $P$ is an $s\times{s}$ invertible matrix.
 
 Then $A=P\left[\begin{array}{c}C\\0\end{array}\right]$.
 
-Block $P$ by columns: $P=\left(P_{1},P_{2}\right)$, where $P_{1}$ is an $s\times r$ matrix.
+Block $P$ by columns: $P=\left(P_{1},P_{2}\right)$, where $P_{1}$ is an $s\times{r}$ matrix.
 
 Then
 
@@ -422,4 +422,4 @@ Since $P$ is invertible, its column group is linearly independent, and hence the
 
 Thus $B$ is column full-rank.
 
-Therefore $A=BC$, where $B$ is an $s\times r$ column full-rank matrix and $C$ is an $r\times n$ row full-rank matrix. $\blacksquare$
+Therefore $A=BC$, where $B$ is an $s\times{r}$ column full-rank matrix and $C$ is an $r\times{n}$ row full-rank matrix. $\blacksquare$

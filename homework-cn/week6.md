@@ -1,16 +1,16 @@
 # week6
 
 $$
-\left|\begin{array}{cc}A & 0\\C & B\end{array}\right|=\left|A\right|\left|B\right|.
+\left|\begin{array}{cc}A&0\\C&B\end{array}\right|=\left|A\right|\left|B\right|.
 $$
 $$
 \left|\begin{array}{cccc}
-1 & 1 & \cdots & 1\\
-a_{1} & a_{2} & \cdots & a_{n}\\
-a_{1}^{2} & a_{2}^{2} & \cdots & a_{n}^{2}\\
-\vdots & \vdots & & \vdots\\
-a_{1}^{n-1} & a_{2}^{n-1} & \cdots & a_{n}^{n-1}
-\end{array}\right|=\prod_{1\le i< j\le n}\left(a_{j}-a_{i}\right).
+1&1&\cdots&1\\
+a_{1}&a_{2}&\cdots&a_{n}\\
+a_{1}^{2}&a_{2}^{2}&\cdots&a_{n}^{2}\\
+\vdots&\vdots&&\vdots\\
+a_{1}^{n-1}&a_{2}^{n-1}&\cdots&a_{n}^{n-1}
+\end{array}\right|=\prod_{1\le{i}<{}j\le{n}}\left(a_{j}-a_{i}\right).
 $$
 
 > **定理 2.6.1 (拉普拉斯定理)**
@@ -41,22 +41,22 @@ $$
 
 $$
 \left|\begin{array}{cccccc}
-0 & \cdots & 0 & a_{11} & \cdots & a_{1k}\\
-\vdots & & \vdots & \vdots & & \vdots\\
-0 & \cdots & 0 & a_{k1} & \cdots & a_{kk}\\
-b_{11} & \cdots & b_{1r} & c_{11} & \cdots & c_{1k}\\
-\vdots & & \vdots & \vdots & & \vdots\\
-b_{r1} & \cdots & b_{rr} & c_{r1} & \cdots & c_{rk}
+0&\cdots&0&a_{11}&\cdots&a_{1k}\\
+\vdots&&\vdots&\vdots&&\vdots\\
+0&\cdots&0&a_{k1}&\cdots&a_{kk}\\
+b_{11}&\cdots&b_{1r}&c_{11}&\cdots&c_{1k}\\
+\vdots&&\vdots&\vdots&&\vdots\\
+b_{r1}&\cdots&b_{rr}&c_{r1}&\cdots&c_{rk}
 \end{array}\right|.
 $$
 
 ### 解答 2.6-3
 
-由**定理 2.6.1 (拉普拉斯定理)**, 按前 $k$ 行展开. 前 $k$ 行的所有 $k$ 阶子式中, 只有右上角的 $k$ 阶子式 $A=\left(a_{ij}\right)_{k\times k}$ 可能不为零 (因为前 $k$ 行的前 $r$ 列全为 $0$).
+由**定理 2.6.1 (拉普拉斯定理)**, 按前 $k$ 行展开. 前 $k$ 行的所有 $k$ 阶子式中, 只有右上角的 $k$ 阶子式 $A=\left(a_{ij}\right)_{k\times{k}}$ 可能不为零 (因为前 $k$ 行的前 $r$ 列全为 $0$).
 
 右上角的 $k$ 阶子式 $A$ 的代数余子式: 行指标为 $1,2,\cdots,k$, 列指标为 $r+1,r+2,\cdots,r+k$.
 
-由**定理 2.6.1 (拉普拉斯定理)**, 余子式是去掉前 $k$ 行和后 $k$ 列后的 $r$ 阶行列式, 即 $B=\left(b_{ij}\right)_{r\times r}$.
+由**定理 2.6.1 (拉普拉斯定理)**, 余子式是去掉前 $k$ 行和后 $k$ 列后的 $r$ 阶行列式, 即 $B=\left(b_{ij}\right)_{r\times{r}}$.
 
 代数余子式为
 
@@ -89,11 +89,11 @@ $$
 
 $$
 \left|A\right|=\left|\begin{array}{cccc}
-1 & 1 & \cdots & 1\\
-a_{1} & a_{2} & \cdots & a_{n}\\
-a_{1}^{2} & a_{2}^{2} & \cdots & a_{n}^{2}\\
-\vdots & \vdots & & \vdots\\
-a_{1}^{n-1} & a_{2}^{n-1} & \cdots & a_{n}^{n-1}
+1&1&\cdots&1\\
+a_{1}&a_{2}&\cdots&a_{n}\\
+a_{1}^{2}&a_{2}^{2}&\cdots&a_{n}^{2}\\
+\vdots&\vdots&&\vdots\\
+a_{1}^{n-1}&a_{2}^{n-1}&\cdots&a_{n}^{n-1}
 \end{array}\right|,
 $$
 
@@ -104,18 +104,18 @@ $$
 $$
 A\begin{bmatrix}1,2,\cdots,n-1\\2,3,\cdots,n\end{bmatrix}
 =\left|\begin{array}{cccc}
-1 & 1 & \cdots & 1\\
-a_{2} & a_{3} & \cdots & a_{n}\\
-a_{2}^{2} & a_{3}^{2} & \cdots & a_{n}^{2}\\
-\vdots & \vdots & & \vdots\\
-a_{2}^{n-2} & a_{3}^{n-2} & \cdots & a_{n}^{n-2}
+1&1&\cdots&1\\
+a_{2}&a_{3}&\cdots&a_{n}\\
+a_{2}^{2}&a_{3}^{2}&\cdots&a_{n}^{2}\\
+\vdots&\vdots&&\vdots\\
+a_{2}^{n-2}&a_{3}^{n-2}&\cdots&a_{n}^{n-2}
 \end{array}\right|.
 $$
 
 这是关于 $a_{2},a_{3},\cdots,a_{n}$ 的 $n-1$ 阶范德蒙行列式, 由范德蒙行列式的计算公式, 其值为
 
 $$
-\prod_{2\le i< j\le n}\left(a_{j}-a_{i}\right)=\prod_{2\le i< j\le n}\left(j-i\right).
+\prod_{2\le{i}<{}j\le{n}}\left(a_{j}-a_{i}\right)=\prod_{2\le{i}<{}j\le{n}}\left(j-i\right).
 $$
 
 令 $d=j-i$, 则 $d=1,2,\cdots,n-2$, 对于每个 $d$, 有 $n-1-d$ 对 $\left(i,j\right)$ 满足 $j-i=d$.
@@ -123,7 +123,7 @@ $$
 故
 
 $$
-\prod_{2\le i< j\le n}\left(j-i\right)=\prod_{d=1}^{n-2}d^{n-1-d}
+\prod_{2\le{i}<{}j\le{n}}\left(j-i\right)=\prod_{d=1}^{n-2}d^{n-1-d}
 =1^{n-2}\cdot2^{n-3}\cdot\cdots\cdot\left(n-2\right)^{1}.
 $$
 
@@ -148,17 +148,17 @@ $$
 
 $$
 \left[\begin{array}{rrr\left|r}
--1 & 2 & -4 & 8\\
-3 & 0 & 1 & 3\\
-0 & 7 & -2 & -1\\
--5 & -3 & 6 & -25
+-1&2&-4&8\\
+3&0&1&3\\
+0&7&-2&-1\\
+-5&-3&6&-25
 \end{array}\right]
 \xrightarrow{\substack{②+①\times3\\④-①\times5}}
 \left[\begin{array}{rrr\right|r}
--1 & 2 & -4 & 8\\
-0 & 6 & -11 & 27\\
-0 & 7 & -2 & -1\\
-0 & -13 & 26 & 15
+-1&2&-4&8\\
+0&6&-11&27\\
+0&7&-2&-1\\
+0&-13&26&15
 \end{array}\right].
 $$
 
@@ -185,17 +185,17 @@ $$
 
 $$
 \left[\begin{array}{rrr\left|r}
-3 & -1 & 3 & 2\\
--5 & 7 & 11 & -30\\
-2 & -3 & -5 & 13\\
--4 & 6 & 10 & -26
+3&-1&3&2\\
+-5&7&11&-30\\
+2&-3&-5&13\\
+-4&6&10&-26
 \end{array}\right]
 \xrightarrow{\substack{②+①\times5/3\\③-①\times2/3\\④+①\times4/3}}
 \left[\begin{array}{rrr\right|r}
-3 & -1 & 3 & 2\\
-0 & 16/3 & 16 & -80/3\\
-0 & -7/3 & -7 & 35/3\\
-0 & 14/3 & 14 & -70/3
+3&-1&3&2\\
+0&16/3&16&-80/3\\
+0&-7/3&-7&35/3\\
+0&14/3&14&-70/3
 \end{array}\right].
 $$
 
@@ -203,8 +203,8 @@ $$
 
 $$
 \left[\begin{array}{rrr|r}
-3 & -1 & 3 & 2\\
-0 & 16/3 & 16 & -80/3
+3&-1&3&2\\
+0&16/3&16&-80/3
 \end{array}\right].
 $$
 
@@ -279,10 +279,10 @@ $$
 
 ## 3.1-8
 
-设 $r< n$, 证明 $K^{n}$ 的下述子集 $W$ 是一个子空间:
+设 $r<{}n$, 证明 $K^{n}$ 的下述子集 $W$ 是一个子空间:
 
 $$
-W=\left\{\left(a_{1},a_{2},\cdots,a_{r},0,\cdots,0\right)\mid a_{i}\in K,i=1,2,\cdots,r\right\}.
+W=\left\{\left(a_{1},a_{2},\cdots,a_{r},0,\cdots,0\right)\mid{a}_{i}\in{K},i=1,2,\cdots,r\right\}.
 $$
 
 ### 解答 3.1-8
@@ -293,29 +293,29 @@ $$
 
 $$
 \alpha=\left(a_{1},\cdots,a_{r},0,\cdots,0\right),
-\beta=\left(b_{1},\cdots,b_{r},0,\cdots,0\right)\in W.
+\beta=\left(b_{1},\cdots,b_{r},0,\cdots,0\right)\in{W}.
 $$
 
 则
 
 $$
-\alpha+\beta=\left(a_{1}+b_{1},\cdots,a_{r}+b_{r},0,\cdots,0\right)\in W.
+\alpha+\beta=\left(a_{1}+b_{1},\cdots,a_{r}+b_{r},0,\cdots,0\right)\in{W}.
 $$
 
 验证数量乘法封闭. 任取
 
 $$
-\alpha=\left(a_{1},\cdots,a_{r},0,\cdots,0\right)\in W,
+\alpha=\left(a_{1},\cdots,a_{r},0,\cdots,0\right)\in{W},
 $$
 
-$k\in K$.
+$k\in{K}$.
 
 则
 
 $$
-k\alpha=\left(ka_{1},\cdots,ka_{r},0,\cdots,0\right)\in W.
+k\alpha=\left(ka_{1},\cdots,ka_{r},0,\cdots,0\right)\in{W}.
 $$
 
-$W$ 非空 (例如零向量 $\left(0,\cdots,0\right)\in W$).
+$W$ 非空 (例如零向量 $\left(0,\cdots,0\right)\in{W}$).
 
 由子空间的判别, $W$ 是 $K^{n}$ 的一个子空间. $\blacksquare$

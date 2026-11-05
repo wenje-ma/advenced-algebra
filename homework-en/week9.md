@@ -14,11 +14,11 @@
 
 $$
 \left|\begin{array}{cccc}
-1 & 1 & \cdots & 1\\
-a_{1} & a_{2} & \cdots & a_{s}\\
-\vdots & \vdots & & \vdots\\
-a_{1}^{s-1} & a_{2}^{s-1} & \cdots & a_{s}^{s-1}
-\end{array}\right|=\prod_{1\le i< j\le s}\left(a_{j}-a_{i}\right).
+1&1&\cdots&1\\
+a_{1}&a_{2}&\cdots&a_{s}\\
+\vdots&\vdots&&\vdots\\
+a_{1}^{s-1}&a_{2}^{s-1}&\cdots&a_{s}^{s-1}
+\end{array}\right|=\prod_{1\le{i}<{}j\le{s}}\left(a_{j}-a_{i}\right).
 $$
 
 > **Theorem 3.6.1 (Solvability Criterion for a Linear System)**
@@ -51,17 +51,17 @@ By **Corollary 3.5.5 (Computing Rank by Elementary Row Operations)**, arrange th
 
 $$
 \left[\begin{array}{rrrr}
--1 & 4 & 2 & 0\\
-5 & 1 & 0 & 3\\
-3 & -2 & -1 & 4\\
--2 & 9 & 4 & -5
+-1&4&2&0\\
+5&1&0&3\\
+3&-2&-1&4\\
+-2&9&4&-5
 \end{array}\right]
-\xrightarrow{\text{row ops}}
+\xrightarrow{\text{row~ops}}
 \left[\begin{array}{rrrr}
-1 & -4 & -2 & 0\\
-0 & 1 & 0 & -5\\
-0 & 0 & 5 & 54\\
-0 & 0 & 0 & 0
+1&-4&-2&0\\
+0&1&0&-5\\
+0&0&5&54\\
+0&0&0&0
 \end{array}\right].
 $$
 
@@ -75,10 +75,10 @@ Find a basis of the column space and the dimension of the row space of the follo
 
 $$
 A=\left[\begin{array}{rrrr}
-1 & 3 & -2 & -7\\
-0 & -1 & -3 & 4\\
-5 & 2 & 0 & 1\\
-1 & 4 & 1 & -11
+1&3&-2&-7\\
+0&-1&-3&4\\
+5&2&0&1\\
+1&4&1&-11
 \end{array}\right].
 $$
 
@@ -88,17 +88,17 @@ By **Corollary 3.5.5 (Computing Rank by Elementary Row Operations)**, perform el
 
 $$
 \left[\begin{array}{rrrr}
-1 & 3 & -2 & -7\\
-0 & -1 & -3 & 4\\
-5 & 2 & 0 & 1\\
-1 & 4 & 1 & -11
+1&3&-2&-7\\
+0&-1&-3&4\\
+5&2&0&1\\
+1&4&1&-11
 \end{array}\right]
-\xrightarrow{\text{row ops}}
+\xrightarrow{\text{row~ops}}
 \left[\begin{array}{rrrr}
-1 & 3 & -2 & -7\\
-0 & 1 & 3 & -4\\
-0 & 0 & 49 & -16\\
-0 & 0 & 0 & 0
+1&3&-2&-7\\
+0&1&3&-4\\
+0&0&49&-16\\
+0&0&0&0
 \end{array}\right].
 $$
 
@@ -122,9 +122,9 @@ For different values of $\lambda$, what are the ranks of the following matrix?
 
 $$
 \left[\begin{array}{rrrr}
-1 & \lambda & -1 & 2\\
-2 & -1 & \lambda & 5\\
-1 & 10 & -6 & 1
+1&\lambda&-1&2\\
+2&-1&\lambda&5\\
+1&10&-6&1
 \end{array}\right].
 $$
 
@@ -132,7 +132,7 @@ $$
 
 By **Corollary 3.5.5 (Computing Rank by Elementary Row Operations)**, perform elementary row operations to find the rank:
 
-Row $2$ $-$ row $1$ $\times 2$: row $2$ $=\left(0,-1-2\lambda,\lambda+2,1\right)$.
+Row $2$ $-$ row $1$ $\times2$: row $2$ $=\left(0,-1-2\lambda,\lambda+2,1\right)$.
 
 Row $3$ $-$ row $1$: row $3$ $=\left(0,10-\lambda,-5,-1\right)$.
 
@@ -140,9 +140,9 @@ The matrix becomes
 
 $$
 \left[\begin{array}{rrrr}
-1 & \lambda & -1 & 2\\
-0 & -1-2\lambda & \lambda+2 & 1\\
-0 & 10-\lambda & -5 & -1
+1&\lambda&-1&2\\
+0&-1-2\lambda&\lambda+2&1\\
+0&10-\lambda&-5&-1
 \end{array}\right].
 $$
 
@@ -168,7 +168,7 @@ In summary: when $\lambda=3$, by **Corollary 3.5.5 (Computing Rank by Elementary
 
 ## 3.5-8
 
-Prove: if an $m\times n$ matrix $A$ has rank $r$, then the submatrix $A_{1}$ formed by any $s$ rows of $A$ has rank at least $r+s-m$.
+Prove: if an $m\times{n}$ matrix $A$ has rank $r$, then the submatrix $A_{1}$ formed by any $s$ rows of $A$ has rank at least $r+s-m$.
 
 ### Solution to 3.5-8
 
@@ -186,7 +186,7 @@ $$
 \text{rank}\left(A\right)\le\text{rank}\left(A_{1}\right)+\text{rank}\left(A_{2}\right).
 $$
 
-Since $A_{2}$ has only $m-s$ rows, $\text{rank}\left(A_{2}\right)\le m-s$.
+Since $A_{2}$ has only $m-s$ rows, $\text{rank}\left(A_{2}\right)\le{m}-s$.
 
 Hence
 
@@ -197,17 +197,17 @@ $$
 Rearranging,
 
 $$
-\text{rank}\left(A_{1}\right)\ge r-\left(m-s\right)=r+s-m.
+\text{rank}\left(A_{1}\right)\ge{r}-\left(m-s\right)=r+s-m.
 $$
 
 $\blacksquare$
 
 ## 3.5-13
 
-Let $A$ be an $s\times n$ matrix, $B$ an $l\times m$ matrix, and $C$ an $s\times m$ matrix. Prove:
+Let $A$ be an $s\times{n}$ matrix, $B$ an $l\times{m}$ matrix, and $C$ an $s\times{m}$ matrix. Prove:
 
 $$
-\text{rank}\left(\begin{array}{cc}A & C\\0 & B\end{array}\right)\ge\text{rank}\left(A\right)+\text{rank}\left(B\right).
+\text{rank}\left(\begin{array}{cc}A&C\\0&B\end{array}\right)\ge\text{rank}\left(A\right)+\text{rank}\left(B\right).
 $$
 
 ### Solution to 3.5-13
@@ -223,7 +223,7 @@ Take a basis of the column space of $B$: $\beta_{1},\cdots,\beta_{r_{2}}$ ( $l$-
 Consider the following column vectors of the block matrix
 
 $$
-M=\left(\begin{array}{cc}A & C\\0 & B\end{array}\right):
+M=\left(\begin{array}{cc}A&C\\0&B\end{array}\right):
 $$
 
 $$
@@ -249,7 +249,7 @@ Hence these $r_{1}+r_{2}$ vectors are linearly independent.
 Therefore
 
 $$
-\text{rank}\left(M\right)\ge r_{1}+r_{2}=\text{rank}\left(A\right)+\text{rank}\left(B\right).
+\text{rank}\left(M\right)\ge{r}_{1}+r_{2}=\text{rank}\left(A\right)+\text{rank}\left(B\right).
 $$
 
 $\blacksquare$
@@ -267,43 +267,43 @@ x_{1}+a^{s}x_{2}+a^{2s}x_{3}+\cdots+a^{s\left(n-1\right)}x_{n}=b_{s},
 \end{cases}
 $$
 
-where $s< n$, $a\ne0$, and $a^{r}\ne1$ whenever $0< r< s$.
+where $s<{}n$, $a\ne0$, and $a^{r}\ne1$ whenever $0<{}r<{}s$.
 
 ### Solution to 3.6-2
 
 By **Theorem 3.6.1 (Solvability Criterion for a Linear System)** and **Theorem 3.6.2 (Criterion for the Number of Solutions)**, we compare the ranks of the coefficient matrix and the augmented matrix.
 
-The coefficient matrix $A$ is an $s\times n$ matrix. Take the $s\times s$ minor formed by the first $s$ columns of $A$:
+The coefficient matrix $A$ is an $s\times{n}$ matrix. Take the $s\times{s}$ minor formed by the first $s$ columns of $A$:
 
 $$
 D=\left|\begin{array}{cccc}
-1 & a & a^{2} & \cdots & a^{s-1}\\
-1 & a^{2} & a^{4} & \cdots & a^{2\left(s-1\right)}\\
-\vdots & \vdots & \vdots & & \vdots\\
-1 & a^{s} & a^{2s} & \cdots & a^{s\left(s-1\right)}
+1&a&a^{2}&\cdots&a^{s-1}\\
+1&a^{2}&a^{4}&\cdots&a^{2\left(s-1\right)}\\
+\vdots&\vdots&\vdots&&\vdots\\
+1&a^{s}&a^{2s}&\cdots&a^{s\left(s-1\right)}
 \end{array}\right|.
 $$
 
 By Formula for the Vandermonde Determinant, this is a Vandermonde determinant,
 
 $$
-D=\prod_{1\le i< j\le s}\left(a^{j}-a^{i}\right).
+D=\prod_{1\le{i}<{}j\le{s}}\left(a^{j}-a^{i}\right).
 $$
 
-Because $a\ne 0$ and $a^{r}\ne 1$ whenever $0< r< s$, the numbers $a,a^{2},\cdots,a^{s}$ are pairwise distinct, so $D\ne 0$.
+Because $a\ne0$ and $a^{r}\ne1$ whenever $0<{}r<{}s$, the numbers $a,a^{2},\cdots,a^{s}$ are pairwise distinct, so $D\ne0$.
 
-Hence $\text{rank}\left(A\right)\ge s$.
+Hence $\text{rank}\left(A\right)\ge{s}$.
 
-Also, $A$ has only $s$ rows, so $\text{rank}\left(A\right)\le s$.
+Also, $A$ has only $s$ rows, so $\text{rank}\left(A\right)\le{s}$.
 
 Thus $\text{rank}\left(A\right)=s$.
 
 The augmented matrix $\overline{A}$ is $A$ with one column added, so $\text{rank}\left(\overline{A}\right)\ge\text{rank}\left(A\right)=s$.
 
-Also, $\overline{A}$ has only $s$ rows, so $\text{rank}\left(\overline{A}\right)\le s$.
+Also, $\overline{A}$ has only $s$ rows, so $\text{rank}\left(\overline{A}\right)\le{s}$.
 
 Thus $\text{rank}\left(\overline{A}\right)=s=\text{rank}\left(A\right)$.
 
 By **Theorem 3.6.1 (Solvability Criterion for a Linear System)**, the system is therefore solvable.
 
-Also, $\text{rank}\left(A\right)=s< n$ (the number of unknowns); by **Theorem 3.6.2 (Criterion for the Number of Solutions)**, the system therefore has infinitely many solutions. $\blacksquare$
+Also, $\text{rank}\left(A\right)=s<{}n$ (the number of unknowns); by **Theorem 3.6.2 (Criterion for the Number of Solutions)**, the system therefore has infinitely many solutions. $\blacksquare$

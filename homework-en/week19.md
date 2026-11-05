@@ -2,11 +2,11 @@
 
 > **Theorem 5.6.1 (Necessary and Sufficient Condition for Diagonalizability)**
 > 
-> An $n\times n$ matrix $A$ over a number field $K$ is diagonalizable if and only if $A$ has $n$ linearly independent eigenvectors.
+> An $n\times{n}$ matrix $A$ over a number field $K$ is diagonalizable if and only if $A$ has $n$ linearly independent eigenvectors.
 
 > **Corollary 5.6.6 (Distinct Eigenvalues Imply Diagonalizability)**
 > 
-> If an $n\times n$ matrix $A$ over a number field $K$ has $n$ distinct eigenvalues, then $A$ is diagonalizable.
+> If an $n\times{n}$ matrix $A$ over a number field $K$ has $n$ distinct eigenvalues, then $A$ is diagonalizable.
 
 $$
 \beta_{i}=\alpha_{i}-\sum_{k=1}^{i-1}\frac{\left(\alpha_{i},\beta_{k}\right)}{\left(\beta_{k},\beta_{k}\right)}\beta_{k}.
@@ -19,7 +19,7 @@ Then $\beta_{1},\beta_{2},\cdots,\beta_{m}$ is an orthogonal vector group equiva
 
 > **Theorem 5.7.3 (A Real Symmetric Matrix Is Orthogonally Diagonalizable)**
 > 
-> For any $n\times n$ real symmetric matrix $A$, there exists an $n\times n$ orthogonal matrix $T$ such that $T^{-1}AT$ is a diagonal matrix.
+> For any $n\times{n}$ real symmetric matrix $A$, there exists an $n\times{n}$ orthogonal matrix $T$ such that $T^{-1}AT$ is a diagonal matrix.
 
 > **Definition 6.1.1 (Quadratic Form)**
 > 
@@ -40,7 +40,7 @@ where $p$ is the positive index of inertia and $r$ is the rank of the quadratic 
 
 ## 5.6-10
 
-Let $A=\left(a_{ij}\right)$ be an $n\times n$ upper triangular matrix over a number field $K$. Prove: if $a_{11}=a_{22}=\cdots=a_{nn}$ and at least one $a_{kl}\ne0$ ( $k< l$ ), then $A$ cannot be diagonalized.
+Let $A=\left(a_{ij}\right)$ be an $n\times{n}$ upper triangular matrix over a number field $K$. Prove: if $a_{11}=a_{22}=\cdots=a_{nn}$ and at least one $a_{kl}\ne0$ ( $k<{}l$ ), then $A$ cannot be diagonalized.
 
 ### Solution to 5.6-10
 
@@ -58,24 +58,24 @@ Find the dimension of the eigenspace.
 
 $$
 \lambda_{0}I-A=\left[\begin{array}{cccc}
-0 & -a_{12} & \cdots & -a_{1n}\\
-0 & 0 & \cdots & -a_{2n}\\
-\vdots & \vdots & \ddots & \vdots\\
-0 & 0 & \cdots & 0
+0&-a_{12}&\cdots&-a_{1n}\\
+0&0&\cdots&-a_{2n}\\
+\vdots&\vdots&\ddots&\vdots\\
+0&0&\cdots&0
 \end{array}\right].
 $$
 
-Since at least one $a_{kl}\ne0$ ( $k< l$ ), $\lambda_{0}I-A$ is not the zero matrix.
+Since at least one $a_{kl}\ne0$ ( $k<{}l$ ), $\lambda_{0}I-A$ is not the zero matrix.
 
 Therefore $\operatorname{rank}\left(\lambda_{0}I-A\right)\ge1$.
 
 Hence the dimension of the eigenspace is
 
 $$
-n-\operatorname{rank}\left(\lambda_{0}I-A\right)\le n-1.
+n-\operatorname{rank}\left(\lambda_{0}I-A\right)\le{n}-1.
 $$
 
-That is, the geometric multiplicity $\le n-1< n=$ the algebraic multiplicity.
+That is, the geometric multiplicity $\le{n}-1<{}n=$ the algebraic multiplicity.
 
 Therefore $A$ cannot be diagonalized. $\blacksquare$
 
@@ -85,9 +85,9 @@ For the following real symmetric matrix $A$, find an orthogonal matrix $T$ such 
 
 $$
 A=\left[\begin{array}{rrr}
-0 & -2 & 2\\
--2 & -3 & 4\\
-2 & 4 & -3
+0&-2&2\\
+-2&-3&4\\
+2&4&-3
 \end{array}\right].
 $$
 
@@ -96,10 +96,10 @@ $$
 By **Theorem 5.7.3 (A Real Symmetric Matrix Is Orthogonally Diagonalizable)**, there is an orthogonal matrix $T$ such that $T^{\top}AT$ is diagonal. Compute the characteristic polynomial:
 
 $$
-\left|\lambda I-A\right|=\left|\begin{array}{rrr}
-\lambda & 2 & -2\\
-2 & \lambda+3 & -4\\
--2 & -4 & \lambda+3
+\left|\lambda{I}-A\right|=\left|\begin{array}{rrr}
+\lambda&2&-2\\
+2&\lambda+3&-4\\
+-2&-4&\lambda+3
 \end{array}\right|=\left(\lambda-1\right)^{2}\left(\lambda+8\right).
 $$
 
@@ -109,14 +109,14 @@ Find the eigenvectors for $\lambda=1$.
 
 $$
 I-A=\left[\begin{array}{rrr}
-1 & 2 & -2\\
-2 & 4 & -4\\
--2 & -4 & 4
+1&2&-2\\
+2&4&-4\\
+-2&-4&4
 \end{array}\right]\rightarrow
 \left[\begin{array}{rrr}
-1 & 2 & -2\\
-0 & 0 & 0\\
-0 & 0 & 0
+1&2&-2\\
+0&0&0\\
+0&0&0
 \end{array}\right].
 $$
 
@@ -148,14 +148,14 @@ Find the eigenvectors for $\lambda=-8$.
 
 $$
 -8I-A=\left[\begin{array}{rrr}
--8 & 2 & -2\\
-2 & -5 & -4\\
--2 & -4 & -5
+-8&2&-2\\
+2&-5&-4\\
+-2&-4&-5
 \end{array}\right]\rightarrow
 \left[\begin{array}{rrr}
-1 & 0 & 1/2\\
-0 & 1 & 1\\
-0 & 0 & 0
+1&0&1/2\\
+0&1&1\\
+0&0&0
 \end{array}\right].
 $$
 
@@ -171,9 +171,9 @@ Thus the orthogonal matrix is
 
 $$
 T=\left[\begin{array}{ccc}
--2/\sqrt{5} & 2/\left(3\sqrt{5}\right) & -1/\sqrt{21}\\
-1/\sqrt{5} & 4/\left(3\sqrt{5}\right) & 2/\sqrt{21}\\
-0 & \sqrt{5}/3 & -4/\sqrt{21}
+-2/\sqrt{5}&2/\left(3\sqrt{5}\right)&-1/\sqrt{21}\\
+1/\sqrt{5}&4/\left(3\sqrt{5}\right)&2/\sqrt{21}\\
+0&\sqrt{5}/3&-4/\sqrt{21}
 \end{array}\right].
 $$
 
@@ -191,9 +191,9 @@ For the following real symmetric matrix $A$, find an orthogonal matrix $T$ such 
 
 $$
 A=\left[\begin{array}{rrr}
-3 & -2 & 0\\
--2 & 2 & -2\\
-0 & -2 & 1
+3&-2&0\\
+-2&2&-2\\
+0&-2&1
 \end{array}\right].
 $$
 
@@ -202,10 +202,10 @@ $$
 Compute the characteristic polynomial:
 
 $$
-\left|\lambda I-A\right|=\left|\begin{array}{rrr}
-\lambda-3 & 2 & 0\\
-2 & \lambda-2 & 2\\
-0 & 2 & \lambda-1
+\left|\lambda{I}-A\right|=\left|\begin{array}{rrr}
+\lambda-3&2&0\\
+2&\lambda-2&2\\
+0&2&\lambda-1
 \end{array}\right|=\left(\lambda+1\right)\left(\lambda-2\right)\left(\lambda-5\right).
 $$
 
@@ -243,9 +243,9 @@ Thus the orthogonal matrix is
 
 $$
 T=\left[\begin{array}{rrr}
-1/3 & 2/3 & -2/3\\
-2/3 & 1/3 & 2/3\\
-2/3 & -2/3 & -1/3
+1/3&2/3&-2/3\\
+2/3&1/3&2/3\\
+2/3&-2/3&-1/3
 \end{array}\right].
 $$
 
@@ -257,7 +257,7 @@ $\blacksquare$
 
 ## 5.7-2
 
-Prove: if $n\times n$ real symmetric matrices $A,B$ have the same characteristic polynomial, then $A$ and $B$ are similar.
+Prove: if $n\times{n}$ real symmetric matrices $A,B$ have the same characteristic polynomial, then $A$ and $B$ are similar.
 
 ### Solution to 5.7-2
 
@@ -276,7 +276,7 @@ Permuting the diagonal entries amounts to a similarity transformation by an orth
 Therefore
 
 $$
-A\sim D_{A}=D_{B}\sim B.
+A\sim{D}_{A}=D_{B}\sim{B}.
 $$
 
 Hence $A$ and $B$ are similar. $\blacksquare$
@@ -356,9 +356,9 @@ The nondegenerate linear substitution is $X=CY$, where
 
 $$
 C=\left[\begin{array}{rrr}
-1 & -1 & 2\\
-0 & 1 & -1\\
-0 & 0 & 1
+1&-1&2\\
+0&1&-1\\
+0&0&1
 \end{array}\right].
 $$
 
@@ -366,11 +366,11 @@ $f=y_{1}^{2}+y_{2}^{2}-2y_{3}^{2}$ is the canonical form. $\blacksquare$
 
 ## 6.1-5
 
-Let $A$ be an $n\times n$ matrix over a number field $K$. Prove: $A$ is skew-symmetric if and only if $\alpha^{\top}A\alpha=0$ for every column vector $\alpha$ in $K^{n}$.
+Let $A$ be an $n\times{n}$ matrix over a number field $K$. Prove: $A$ is skew-symmetric if and only if $\alpha^{\top}A\alpha=0$ for every column vector $\alpha$ in $K^{n}$.
 
 ### Solution to 6.1-5
 
-By **Definition 6.1.1 (Quadratic Form)**, $A$ is an $n\times n$ matrix over a number field $K$.
+By **Definition 6.1.1 (Quadratic Form)**, $A$ is an $n\times{n}$ matrix over a number field $K$.
 
 Necessity. If $A$ is skew-symmetric, i.e. $A^{\top}=-A$.
 

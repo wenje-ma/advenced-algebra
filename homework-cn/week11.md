@@ -6,15 +6,15 @@
 
 > **定义 4.1.1 (矩阵的加法)**
 > 
-> 设 $A=\left(a_{ij}\right),B=\left(b_{ij}\right)$ 都是数域 $K$ 上 $s\times n$ 矩阵, 令 $C=\left(a_{ij}+b_{ij}\right)_{s\times n}$, 则称 $C$ 是矩阵 $A$ 与 $B$ 的和, 记作 $C=A+B$.
+> 设 $A=\left(a_{ij}\right),B=\left(b_{ij}\right)$ 都是数域 $K$ 上 $s\times{n}$ 矩阵, 令 $C=\left(a_{ij}+b_{ij}\right)_{s\times{n}}$, 则称 $C$ 是矩阵 $A$ 与 $B$ 的和, 记作 $C=A+B$.
 
 > **定义 4.1.2 (矩阵的数量乘法)**
 > 
-> 设 $k\in K$, 令 $M=\left(ka_{ij}\right)_{s\times n}$, 则称 $M$ 是 $k$ 与矩阵 $A$ 的数量乘积, 记作 $M=kA$.
+> 设 $k\in{K}$, 令 $M=\left(ka_{ij}\right)_{s\times{n}}$, 则称 $M$ 是 $k$ 与矩阵 $A$ 的数量乘积, 记作 $M=kA$.
 
 > **定义 4.1.3 (矩阵的乘法)**
 > 
-> 设 $A=\left(a_{ij}\right)_{s\times n}$, $B=\left(b_{ij}\right)_{n\times m}$, 令 $C=\left(c_{ij}\right)_{s\times m}$, 其中 $c_{ij}=\sum_{k=1}^{n}a_{ik}b_{kj}$, 则称 $C$ 是 $A$ 与 $B$ 的乘积, 记作 $C=AB$.
+> 设 $A=\left(a_{ij}\right)_{s\times{n}}$, $B=\left(b_{ij}\right)_{n\times{m}}$, 令 $C=\left(c_{ij}\right)_{s\times{m}}$, 其中 $c_{ij}=\sum_{k=1}^{n}a_{ik}b_{kj}$, 则称 $C$ 是 $A$ 与 $B$ 的乘积, 记作 $C=AB$.
 
 ## 3.8-2
 
@@ -24,19 +24,19 @@
 
 由**定理 3.8.1 (非齐次方程组的解集结构)**, 非齐次方程组的解集 $U=\gamma_{0}+W$, 其中 $W$ 是导出组的解空间. 要证明非齐次方程组有唯一解当且仅当它的导出组只有零解.
 
-设非齐次线性方程组为 $Ax=\beta$, 其中 $A$ 是 $n\times n$ 矩阵; 导出组为 $Ax=0$.
+设非齐次线性方程组为 $Ax=\beta$, 其中 $A$ 是 $n\times{n}$ 矩阵; 导出组为 $Ax=0$.
 
 必要性. 设非齐次方程组有唯一解, 则
 
 $$
-\text{rank}\left(A\right)=\text{rank}\left(\overline{A}\right)=n\ \text{\left(系数矩阵的秩等于未知量数目\right)}.
+\text{rank}\left(A\right)=\text{rank}\left(\overline{A}\right)=n\,\text{\left(系数矩阵的秩等于未知量数目\right)}.
 $$
 
 导出组 $Ax=0$ 的系数矩阵秩为 $n$, 未知量数目为 $n$, 故只有零解.
 
 充分性. 设导出组只有零解, 则 $\text{rank}\left(A\right)=n$.
 
-$A$ 是 $n\times n$ 矩阵且 $\text{rank}\left(A\right)=n$, 故 $\left|A\right|\ne0$.
+$A$ 是 $n\times{n}$ 矩阵且 $\text{rank}\left(A\right)=n$, 故 $\left|A\right|\ne0$.
 
 导出组只有零解意味着解空间 $W=\left\{0\right\}$, 故非齐次方程组的解集 $U=\gamma_{0}+W=\left\{\gamma_{0}\right\}$, 即有唯一解. $\blacksquare$
 
@@ -64,9 +64,9 @@ $$
 
 由**定理 3.8.1 (非齐次方程组的解集结构)**, 非齐次方程组的解集 $U=\gamma_{0}+W$, 其中 $W$ 是导出组的解空间.
 
-任取 $\gamma\in U$, 则 $\gamma-\gamma_{0}\in W$.
+任取 $\gamma\in{U}$, 则 $\gamma-\gamma_{0}\in{W}$.
 
-因为 $\eta_{1},\eta_{2},\cdots,\eta_{t}$ 是 $W$ 的一个基, 所以存在 $k_{1},\cdots,k_{t}\in K$ 使得
+因为 $\eta_{1},\eta_{2},\cdots,\eta_{t}$ 是 $W$ 的一个基, 所以存在 $k_{1},\cdots,k_{t}\in{K}$ 使得
 
 $$
 \gamma-\gamma_{0}=k_{1}\eta_{1}+k_{2}\eta_{2}+\cdots+k_{t}\eta_{t}.
@@ -107,14 +107,14 @@ $\blacksquare$
 
 $$
 A=\left[\begin{array}{ccc}
-\lambda & 0 & 0\\
-0 & \lambda & 0\\
-0 & 0 & \lambda
+\lambda&0&0\\
+0&\lambda&0\\
+0&0&\lambda
 \end{array}\right],
 B=\left[\begin{array}{ccc}
-0 & 1 & 0\\
-0 & 0 & 1\\
-0 & 0 & 0
+0&1&0\\
+0&0&1\\
+0&0&0
 \end{array}\right].
 $$
 
@@ -126,9 +126,9 @@ $$
 
 $$
 A+B=\left[\begin{array}{ccc}
-\lambda & 1 & 0\\
-0 & \lambda & 1\\
-0 & 0 & \lambda
+\lambda&1&0\\
+0&\lambda&1\\
+0&0&\lambda
 \end{array}\right].
 $$
 
@@ -140,11 +140,11 @@ $\blacksquare$
 
 $$
 M=\left[\begin{array}{cccc}
-k & \lambda & \cdots & \lambda\\
-\lambda & k & \cdots & \lambda\\
-\vdots & \vdots & & \vdots\\
-\lambda & \lambda & \cdots & k
-\end{array}\right]_{n\times n}.
+k&\lambda&\cdots&\lambda\\
+\lambda&k&\cdots&\lambda\\
+\vdots&\vdots&&\vdots\\
+\lambda&\lambda&\cdots&k
+\end{array}\right]_{n\times{n}}.
 $$
 
 把 $M$ 表示成 $xI+yJ$ 的形式, 其中 $x,y$ 是待定系数.
@@ -167,7 +167,7 @@ $$
 由**定义 4.1.1 (矩阵的加法)**和**定义 4.1.2 (矩阵的数量乘法)**, 故
 
 $$
-M=\left(k-\lambda\right)I+\lambda J.
+M=\left(k-\lambda\right)I+\lambda{J}.
 $$
 
 $\blacksquare$
@@ -178,12 +178,12 @@ $\blacksquare$
 
 $$
 \left[\begin{array}{rr}
-7 & -1\\
--2 & 5\\
-3 & -4
+7&-1\\
+-2&5\\
+3&-4
 \end{array}\right]\left[\begin{array}{rr}
-1 & 4\\
--5 & 2
+1&4\\
+-5&2
 \end{array}\right].
 $$
 
@@ -193,24 +193,24 @@ $$
 
 $$
 \left[\begin{array}{rr}
-7 & -1\\
--2 & 5\\
-3 & -4
+7&-1\\
+-2&5\\
+3&-4
 \end{array}\right]\left[\begin{array}{rr}
-1 & 4\\
--5 & 2
+1&4\\
+-5&2
 \end{array}\right]
 =
 \left[\begin{array}{rr}
-7\times1+\left(-1\right)\times\left(-5\right) & 7\times4+\left(-1\right)\times2\\
-\left(-2\right)\times1+5\times\left(-5\right) & \left(-2\right)\times4+5\times2\\
-3\times1+\left(-4\right)\times\left(-5\right) & 3\times4+\left(-4\right)\times2
+7\times1+\left(-1\right)\times\left(-5\right)&7\times4+\left(-1\right)\times2\\
+\left(-2\right)\times1+5\times\left(-5\right)&\left(-2\right)\times4+5\times2\\
+3\times1+\left(-4\right)\times\left(-5\right)&3\times4+\left(-4\right)\times2
 \end{array}\right]
 =
 \left[\begin{array}{rr}
-12 & 26\\
--27 & 2\\
-23 & 4
+12&26\\
+-27&2\\
+23&4
 \end{array}\right].
 $$
 
@@ -222,11 +222,11 @@ $\blacksquare$
 
 $$
 \left[\begin{array}{rr}
-0 & 2\\
-0 & 3
+0&2\\
+0&3
 \end{array}\right]\left[\begin{array}{rr}
-1 & 1\\
-0 & 0
+1&1\\
+0&0
 \end{array}\right].
 $$
 
@@ -236,21 +236,21 @@ $$
 
 $$
 \left[\begin{array}{rr}
-0 & 2\\
-0 & 3
+0&2\\
+0&3
 \end{array}\right]\left[\begin{array}{rr}
-1 & 1\\
-0 & 0
+1&1\\
+0&0
 \end{array}\right]
 =
 \left[\begin{array}{rr}
-0\times1+2\times0 & 0\times1+2\times0\\
-0\times1+3\times0 & 0\times1+3\times0
+0\times1+2\times0&0\times1+2\times0\\
+0\times1+3\times0&0\times1+3\times0
 \end{array}\right]
 =
 \left[\begin{array}{rr}
-0 & 0\\
-0 & 0
+0&0\\
+0&0
 \end{array}\right].
 $$
 
@@ -262,11 +262,11 @@ $\blacksquare$
 
 $$
 \left[\begin{array}{rr}
-1 & 1\\
-0 & 0
+1&1\\
+0&0
 \end{array}\right]\left[\begin{array}{rr}
-0 & 2\\
-0 & 3
+0&2\\
+0&3
 \end{array}\right].
 $$
 
@@ -276,21 +276,21 @@ $$
 
 $$
 \left[\begin{array}{rr}
-1 & 1\\
-0 & 0
+1&1\\
+0&0
 \end{array}\right]\left[\begin{array}{rr}
-0 & 2\\
-0 & 3
+0&2\\
+0&3
 \end{array}\right]
 =
 \left[\begin{array}{rr}
-1\times0+1\times0 & 1\times2+1\times3\\
-0\times0+0\times0 & 0\times2+0\times3
+1\times0+1\times0&1\times2+1\times3\\
+0\times0+0\times0&0\times2+0\times3
 \end{array}\right]
 =
 \left[\begin{array}{rr}
-0 & 5\\
-0 & 0
+0&5\\
+0&0
 \end{array}\right].
 $$
 
@@ -302,13 +302,13 @@ $\blacksquare$
 
 $$
 \left[\begin{array}{ccc}
-d_{1} & 0 & 0\\
-0 & d_{2} & 0\\
-0 & 0 & d_{3}
+d_{1}&0&0\\
+0&d_{2}&0\\
+0&0&d_{3}
 \end{array}\right]\left[\begin{array}{ccc}
-a_{1} & a_{2} & a_{3}\\
-b_{1} & b_{2} & b_{3}\\
-c_{1} & c_{2} & c_{3}
+a_{1}&a_{2}&a_{3}\\
+b_{1}&b_{2}&b_{3}\\
+c_{1}&c_{2}&c_{3}
 \end{array}\right].
 $$
 
@@ -319,9 +319,9 @@ $$
 $$
 =
 \left[\begin{array}{ccc}
-d_{1}a_{1} & d_{1}a_{2} & d_{1}a_{3}\\
-d_{2}b_{1} & d_{2}b_{2} & d_{2}b_{3}\\
-d_{3}c_{1} & d_{3}c_{2} & d_{3}c_{3}
+d_{1}a_{1}&d_{1}a_{2}&d_{1}a_{3}\\
+d_{2}b_{1}&d_{2}b_{2}&d_{2}b_{3}\\
+d_{3}c_{1}&d_{3}c_{2}&d_{3}c_{3}
 \end{array}\right].
 $$
 
@@ -333,13 +333,13 @@ $\blacksquare$
 
 $$
 \left[\begin{array}{ccc}
-a_{1} & a_{2} & a_{3}\\
-b_{1} & b_{2} & b_{3}\\
-c_{1} & c_{2} & c_{3}
+a_{1}&a_{2}&a_{3}\\
+b_{1}&b_{2}&b_{3}\\
+c_{1}&c_{2}&c_{3}
 \end{array}\right]\left[\begin{array}{ccc}
-d_{1} & 0 & 0\\
-0 & d_{2} & 0\\
-0 & 0 & d_{3}
+d_{1}&0&0\\
+0&d_{2}&0\\
+0&0&d_{3}
 \end{array}\right].
 $$
 
@@ -350,9 +350,9 @@ $$
 $$
 =
 \left[\begin{array}{ccc}
-d_{1}a_{1} & d_{2}a_{2} & d_{3}a_{3}\\
-d_{1}b_{1} & d_{2}b_{2} & d_{3}b_{3}\\
-d_{1}c_{1} & d_{2}c_{2} & d_{3}c_{3}
+d_{1}a_{1}&d_{2}a_{2}&d_{3}a_{3}\\
+d_{1}b_{1}&d_{2}b_{2}&d_{3}b_{3}\\
+d_{1}c_{1}&d_{2}c_{2}&d_{3}c_{3}
 \end{array}\right].
 $$
 
@@ -364,13 +364,13 @@ $\blacksquare$
 
 $$
 \left[\begin{array}{ccc}
-0 & 1 & 0\\
-1 & 0 & 0\\
-0 & 0 & 1
+0&1&0\\
+1&0&0\\
+0&0&1
 \end{array}\right]\left[\begin{array}{cccc}
-a_{1} & a_{2} & a_{3} & a_{4}\\
-b_{1} & b_{2} & b_{3} & b_{4}\\
-c_{1} & c_{2} & c_{3} & c_{4}
+a_{1}&a_{2}&a_{3}&a_{4}\\
+b_{1}&b_{2}&b_{3}&b_{4}\\
+c_{1}&c_{2}&c_{3}&c_{4}
 \end{array}\right].
 $$
 
@@ -381,9 +381,9 @@ $$
 $$
 =
 \left[\begin{array}{cccc}
-b_{1} & b_{2} & b_{3} & b_{4}\\
-a_{1} & a_{2} & a_{3} & a_{4}\\
-c_{1} & c_{2} & c_{3} & c_{4}
+b_{1}&b_{2}&b_{3}&b_{4}\\
+a_{1}&a_{2}&a_{3}&a_{4}\\
+c_{1}&c_{2}&c_{3}&c_{4}
 \end{array}\right].
 $$
 
@@ -395,13 +395,13 @@ $\blacksquare$
 
 $$
 \left[\begin{array}{ccc}
-a_{1} & a_{2} & a_{3}\\
-b_{1} & b_{2} & b_{3}\\
-c_{1} & c_{2} & c_{3}
+a_{1}&a_{2}&a_{3}\\
+b_{1}&b_{2}&b_{3}\\
+c_{1}&c_{2}&c_{3}
 \end{array}\right]\left[\begin{array}{ccc}
-0 & 1 & 0\\
-1 & 0 & 0\\
-0 & 0 & 1
+0&1&0\\
+1&0&0\\
+0&0&1
 \end{array}\right].
 $$
 
@@ -412,9 +412,9 @@ $$
 $$
 =
 \left[\begin{array}{ccc}
-a_{2} & a_{1} & a_{3}\\
-b_{2} & b_{1} & b_{3}\\
-c_{2} & c_{1} & c_{3}
+a_{2}&a_{1}&a_{3}\\
+b_{2}&b_{1}&b_{3}\\
+c_{2}&c_{1}&c_{3}
 \end{array}\right].
 $$
 

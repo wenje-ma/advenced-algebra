@@ -2,11 +2,11 @@
 
 > **Theorem 2.4.1 (Expansion of a Determinant Along a Row (Column))**
 > 
-> The $n\times n$ determinant $\left|A\right|$ equals the sum of the products of the entries in its $i$-th row and their cofactors:
+> The $n\times{n}$ determinant $\left|A\right|$ equals the sum of the products of the entries in its $i$-th row and their cofactors:
 
 > **Definition 2.4.1 (Minors and Cofactors)**
 > 
-> In the $n\times n$ determinant $\left|A\right|$, deleting row $i$ and column $j$, the $\left(n-1\right)$-determinant formed by the remaining entries in their original order is called the minor of the $\left(i,j\right)$-entry of $A$, denoted $M_{ij}$. Setting $A_{ij}=\left(-1\right)^{i+j}M_{ij}$, $A_{ij}$ is called the cofactor of the $\left(i,j\right)$-entry of $A$.
+> In the $n\times{n}$ determinant $\left|A\right|$, deleting row $i$ and column $j$, the $\left(n-1\right)$-determinant formed by the remaining entries in their original order is called the minor of the $\left(i,j\right)$-entry of $A$, denoted $M_{ij}$. Setting $A_{ij}=\left(-1\right)^{i+j}M_{ij}$, $A_{ij}$ is called the cofactor of the $\left(i,j\right)$-entry of $A$.
 
 > **Theorem 2.5.1 (Cramer's Rule)**
 > 
@@ -18,15 +18,15 @@
 
 ## 2.4-10
 
-Compute the following $n\times n$ determinant:
+Compute the following $n\times{n}$ determinant:
 
 $$
 \left|\begin{array}{ccccc}
-1 & 2 & 3 & \cdots & n\\
-2 & 3 & 4 & \cdots & 1\\
-3 & 4 & 5 & \cdots & 2\\
-\vdots & \vdots & \vdots & & \vdots\\
-n & 1 & 2 & \cdots & n-1
+1&2&3&\cdots&n\\
+2&3&4&\cdots&1\\
+3&4&5&\cdots&2\\
+\vdots&\vdots&\vdots&&\vdots\\
+n&1&2&\cdots&n-1
 \end{array}\right|.
 $$
 
@@ -42,20 +42,20 @@ Add columns $2$ through $n$ to column $1$; column $1$ becomes all $\frac{n\left(
 
 $$
 D=\frac{n\left(n+1\right)}{2}\cdot\left|\begin{array}{ccccc}
-1 & 2 & 3 & \cdots & n\\
-1 & 3 & 4 & \cdots & 1\\
-1 & 4 & 5 & \cdots & 2\\
-\vdots & \vdots & \vdots & & \vdots\\
-1 & 1 & 2 & \cdots & n-1
+1&2&3&\cdots&n\\
+1&3&4&\cdots&1\\
+1&4&5&\cdots&2\\
+\vdots&\vdots&\vdots&&\vdots\\
+1&1&2&\cdots&n-1
 \end{array}\right|.
 $$
 
 Subtract row $1$ from row $i$ for $i=2,\cdots,n$, and expand along column $1$.
 
-By Primitive $n$-th Roots of Unity and Eigenvalues of Circulant Matrices, let $P$ be the $n\times n$ cyclic shift matrix; then the original matrix is
+By Primitive $n$-th Roots of Unity and Eigenvalues of Circulant Matrices, let $P$ be the $n\times{n}$ cyclic shift matrix; then the original matrix is
 
 $$
-C=1\cdot I+2\cdot P+\cdots+n\cdot P^{n-1}.
+C=1\cdot{I}+2\cdot{P}+\cdots+n\cdot{P}^{n-1}.
 $$
 
 The eigenvalues of $P$ are $\omega^{k}$ $\left(k=0,1,\cdots,n-1\right)$, where $\omega$ is a primitive $n$-th root of unity.
@@ -100,7 +100,7 @@ $\blacksquare$
 
 ## 2.4-11
 
-Let $A=\left(a_{ij}\right)$ be an $n\times n$ matrix over a number field $K$, and denote the cofactor of its $\left(i,j\right)$-entry by $A_{ij}$. Adding the same number $t$ to every entry of $A$, denote the resulting matrix by $A\left(t\right)=\left(a_{ij}+t\right)$. Prove that
+Let $A=\left(a_{ij}\right)$ be an $n\times{n}$ matrix over a number field $K$, and denote the cofactor of its $\left(i,j\right)$-entry by $A_{ij}$. Adding the same number $t$ to every entry of $A$, denote the resulting matrix by $A\left(t\right)=\left(a_{ij}+t\right)$. Prove that
 
 $$
 \left|A\left(t\right)\right|=\left|A\right|+t\sum_{i=1}^{n}\sum_{j=1}^{n}A_{ij}.
@@ -133,7 +133,7 @@ where $\widetilde{A}_{j}$ is the determinant with column $j$ all $1$ and the oth
 By **Theorem 2.4.1 (Expansion of a Determinant Along a Row (Column))**, expand $\widetilde{A}_{j}$ along column $j$; column $j$ is all $1$, so
 
 $$
-\widetilde{A}_{j}=\sum_{i=1}^{n}1\cdot A_{ij}=\sum_{i=1}^{n}A_{ij}.
+\widetilde{A}_{j}=\sum_{i=1}^{n}1\cdot{A}_{ij}=\sum_{i=1}^{n}A_{ij}.
 $$
 
 By **Definition 2.4.1 (Minors and Cofactors)**, $A_{ij}$ is the cofactor of the $\left(i,j\right)$-entry.
@@ -148,16 +148,16 @@ $\blacksquare$
 
 ## 2.4-12
 
-Using the formula given in Problem 11, compute the following $n\times n$ determinants:
+Using the formula given in Problem 11, compute the following $n\times{n}$ determinants:
 
 (1)
 
 $$
 \left|\begin{array}{cccc}
-1+x_{1}y_{1} & 1+x_{1}y_{2} & \cdots & 1+x_{1}y_{n}\\
-1+x_{2}y_{1} & 1+x_{2}y_{2} & \cdots & 1+x_{2}y_{n}\\
-\vdots & \vdots & & \vdots\\
-1+x_{n}y_{1} & 1+x_{n}y_{2} & \cdots & 1+x_{n}y_{n}
+1+x_{1}y_{1}&1+x_{1}y_{2}&\cdots&1+x_{1}y_{n}\\
+1+x_{2}y_{1}&1+x_{2}y_{2}&\cdots&1+x_{2}y_{n}\\
+\vdots&\vdots&&\vdots\\
+1+x_{n}y_{1}&1+x_{n}y_{2}&\cdots&1+x_{n}y_{n}
 \end{array}\right|.
 $$
 
@@ -165,10 +165,10 @@ $$
 
 $$
 \left|\begin{array}{cccc}
-1+t & t & \cdots & t\\
-t & 2+t & \cdots & t\\
-\vdots & \vdots & & \vdots\\
-t & t & \cdots & n+t
+1+t&t&\cdots&t\\
+t&2+t&\cdots&t\\
+\vdots&\vdots&&\vdots\\
+t&t&\cdots&n+t
 \end{array}\right|.
 $$
 
@@ -209,7 +209,7 @@ $$
 Therefore
 
 $$
-\left|A\left(t\right)\right|=n!+t\cdot n!\sum_{i=1}^{n}\frac{1}{i}
+\left|A\left(t\right)\right|=n!+t\cdot{n}!\sum_{i=1}^{n}\frac{1}{i}
 =n!\left(1+t\sum_{i=1}^{n}\frac{1}{i}\right).
 $$
 
@@ -235,9 +235,9 @@ The coefficient determinant is
 
 $$
 \left|\begin{array}{ccc}
-a & 1 & 1\\
-1 & b & 1\\
-1 & 2b & 1
+a&1&1\\
+1&b&1\\
+1&2b&1
 \end{array}\right|=a\left(b\cdot1-1\cdot2b\right)-1\left(1\cdot1-1\cdot1\right)+1\left(1\cdot2b-b\cdot1\right)=a\left(-b\right)-0+b=b\left(1-a\right).
 $$
 
@@ -263,7 +263,7 @@ By **Theorem 2.5.1 (Cramer's Rule)**, a linear system has a unique solution if a
 
 From the previous problem, the coefficient determinant is $b\left(1-a\right)$.
 
-Hence the system has a unique solution when $b\ne 0$ and $a\ne 1$. $\blacksquare$
+Hence the system has a unique solution when $b\ne0$ and $a\ne1$. $\blacksquare$
 
 ## 2.5-6
 
@@ -285,9 +285,9 @@ x_{1}+x_{3}=2.
 \end{cases}
 $$
 
-The last two equations are contradictory ($1\ne 2$), so the system has no solution.
+The last two equations are contradictory ($1\ne2$), so the system has no solution.
 
-Case 2: $a=1$ and $b\ne 0$.
+Case 2: $a=1$ and $b\ne0$.
 
 The system becomes
 
@@ -303,7 +303,7 @@ Subtract row $1$ from row $2$: $\left(b-1\right)x_{2}=-1$.
 
 Subtract row $1$ from row $3$: $\left(2b-1\right)x_{2}=0$.
 
-If $2b-1\ne 0$, i.e. $b\ne\frac{1}{2}$, then row $3$ gives $x_{2}=0$, and substituting into row $2$ gives $0=-1$, a contradiction. No solution.
+If $2b-1\ne0$, i.e. $b\ne\frac{1}{2}$, then row $3$ gives $x_{2}=0$, and substituting into row $2$ gives $0=-1$, a contradiction. No solution.
 
 If $2b-1=0$, i.e. $b=\frac{1}{2}$, then row $3$ becomes an identity. Row $2$ gives $\left(\frac{1}{2}-1\right)x_{2}=-1$, i.e. $x_{2}=2$. Substituting into row $1$ gives $x_{1}+x_{3}=0$.
 
@@ -332,7 +332,7 @@ $$
 
 By **Theorem 2.5.1 (Cramer's Rule)**, the coefficient determinant is still $b\left(1-a\right)$.
 
-Unique solution: $b\ne 0$ and $a\ne 1$.
+Unique solution: $b\ne0$ and $a\ne1$.
 
 Case 1: $b=0$.
 
@@ -350,7 +350,7 @@ The last two equations are identical. Substituting into row $1$: $ax_{1}+x_{2}+\
 
 Regardless of $a$, $x_{1}$ is free, with $x_{2}=1-\left(a-1\right)x_{1}$ and $x_{3}=1-x_{1}$. There are infinitely many solutions.
 
-Case 2: $a=1$ and $b\ne 0$.
+Case 2: $a=1$ and $b\ne0$.
 
 The system becomes
 
@@ -366,7 +366,7 @@ Subtract row $1$ from row $2$: $\left(b-1\right)x_{2}=-1$.
 
 Subtract row $1$ from row $3$: $\left(2b-1\right)x_{2}=-1$.
 
-If $b\ne 1$ and $b\ne\frac{1}{2}$, then
+If $b\ne1$ and $b\ne\frac{1}{2}$, then
 
 $$
 x_{2}=\frac{1}{1-b}=\frac{1}{1-2b},
@@ -378,12 +378,12 @@ If $b=1$, then subtracting row $1$ from row $2$ gives $0=-1$, a contradiction.
 
 If $b=\frac{1}{2}$, then subtracting row $1$ from row $3$ gives $0=-1$, a contradiction.
 
-Hence when $a=1$ and $b\ne 0$, there is no solution.
+Hence when $a=1$ and $b\ne0$, there is no solution.
 
 In summary:
 
-- Unique solution: $b\ne 0$ and $a\ne 1$.
+- Unique solution: $b\ne0$ and $a\ne1$.
 - Infinitely many solutions: $b=0$.
-- No solution: $a=1$ and $b\ne 0$.
+- No solution: $a=1$ and $b\ne0$.
 
 $\blacksquare$

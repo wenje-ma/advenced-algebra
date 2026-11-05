@@ -18,7 +18,7 @@
 
 > **Theorem 2.4.1 (Expansion of a Determinant Along a Row (Column))**
 > 
-> The $n\times n$ determinant $\left|A\right|$ equals the sum of the products of the entries in its $i$-th row and their cofactors:
+> The $n\times{n}$ determinant $\left|A\right|$ equals the sum of the products of the entries in its $i$-th row and their cofactors:
 
 $$
 \left|A\right|=a_{i1}A_{i1}+a_{i2}A_{i2}+\cdots+a_{in}A_{in}.
@@ -26,7 +26,7 @@ $$
 
 > **Definition 2.4.1 (Minors and Cofactors)**
 > 
-> In the $n\times n$ determinant $\left|A\right|$, deleting row $i$ and column $j$, the $\left(n-1\right)$-determinant formed by the remaining entries in their original order is called the minor of the $\left(i,j\right)$-entry of $A$, denoted $M_{ij}$. Setting $A_{ij}=\left(-1\right)^{i+j}M_{ij}$, $A_{ij}$ is called the cofactor of the $\left(i,j\right)$-entry of $A$.
+> In the $n\times{n}$ determinant $\left|A\right|$, deleting row $i$ and column $j$, the $\left(n-1\right)$-determinant formed by the remaining entries in their original order is called the minor of the $\left(i,j\right)$-entry of $A$, denoted $M_{ij}$. Setting $A_{ij}=\left(-1\right)^{i+j}M_{ij}$, $A_{ij}$ is called the cofactor of the $\left(i,j\right)$-entry of $A$.
 
 ## 2.3-3(1)
 
@@ -34,9 +34,9 @@ Prove that
 
 $$
 \left|\begin{array}{ccc}
-a_{1}-b_{1} & b_{1}-c_{1} & c_{1}-a_{1}\\
-a_{2}-b_{2} & b_{2}-c_{2} & c_{2}-a_{2}\\
-a_{3}-b_{3} & b_{3}-c_{3} & c_{3}-a_{3}
+a_{1}-b_{1}&b_{1}-c_{1}&c_{1}-a_{1}\\
+a_{2}-b_{2}&b_{2}-c_{2}&c_{2}-a_{2}\\
+a_{3}-b_{3}&b_{3}-c_{3}&c_{3}-a_{3}
 \end{array}\right|=0.
 $$
 
@@ -58,14 +58,14 @@ Hence the original determinant $=0$. $\blacksquare$
 
 ## 2.3-4(1)
 
-Compute the following $n\times n$ determinant:
+Compute the following $n\times{n}$ determinant:
 
 $$
 \left|\begin{array}{cccc}
-a_{1} & a_{2} & \cdots & a_{n}\\
-b_{2} & 1 & \cdots & 0\\
-\vdots & \vdots & & \vdots\\
-b_{n} & 0 & \cdots & 1
+a_{1}&a_{2}&\cdots&a_{n}\\
+b_{2}&1&\cdots&0\\
+\vdots&\vdots&&\vdots\\
+b_{n}&0&\cdots&1
 \end{array}\right|.
 $$
 
@@ -75,10 +75,10 @@ By **Property 2.3.7 (Adding a Multiple of One Row to Another Leaves the Determin
 
 $$
 \left|\begin{array}{cccc}
-a_{1}-\sum_{j=2}^{n}a_{j}b_{j} & 0 & \cdots & 0\\
-b_{2} & 1 & \cdots & 0\\
-\vdots & \vdots & & \vdots\\
-b_{n} & 0 & \cdots & 1
+a_{1}-\sum_{j=2}^{n}a_{j}b_{j}&0&\cdots&0\\
+b_{2}&1&\cdots&0\\
+\vdots&\vdots&&\vdots\\
+b_{n}&0&\cdots&1
 \end{array}\right|.
 $$
 
@@ -92,14 +92,14 @@ $\blacksquare$
 
 ## 2.3-4(2)
 
-Compute the following $n\times n$ determinant:
+Compute the following $n\times{n}$ determinant:
 
 $$
 \left|\begin{array}{cccc}
-a_{1}+b_{1} & a_{1}+b_{2} & \cdots & a_{1}+b_{n}\\
-a_{2}+b_{1} & a_{2}+b_{2} & \cdots & a_{2}+b_{n}\\
-\vdots & \vdots & & \vdots\\
-a_{n}+b_{1} & a_{n}+b_{2} & \cdots & a_{n}+b_{n}
+a_{1}+b_{1}&a_{1}+b_{2}&\cdots&a_{1}+b_{n}\\
+a_{2}+b_{1}&a_{2}+b_{2}&\cdots&a_{2}+b_{n}\\
+\vdots&\vdots&&\vdots\\
+a_{n}+b_{1}&a_{n}+b_{2}&\cdots&a_{n}+b_{n}
 \end{array}\right|.
 $$
 
@@ -109,10 +109,10 @@ By **Property 2.3.7 (Adding a Multiple of One Row to Another Leaves the Determin
 
 $$
 \left|\begin{array}{cccc}
-a_{1}+b_{1} & a_{1}+b_{2} & \cdots & a_{1}+b_{n}\\
-a_{2}-a_{1} & a_{2}-a_{1} & \cdots & a_{2}-a_{1}\\
-\vdots & \vdots & & \vdots\\
-a_{n}-a_{1} & a_{n}-a_{1} & \cdots & a_{n}-a_{1}
+a_{1}+b_{1}&a_{1}+b_{2}&\cdots&a_{1}+b_{n}\\
+a_{2}-a_{1}&a_{2}-a_{1}&\cdots&a_{2}-a_{1}\\
+\vdots&\vdots&&\vdots\\
+a_{n}-a_{1}&a_{n}-a_{1}&\cdots&a_{n}-a_{1}
 \end{array}\right|.
 $$
 
@@ -124,8 +124,8 @@ When $n=2$, by **Property 2.3.7 (Adding a Multiple of One Row to Another Leaves 
 
 $$
 \left|\begin{array}{cc}
-a_{1}+b_{1} & a_{1}+b_{2}\\
-a_{2}-a_{1} & a_{2}-a_{1}
+a_{1}+b_{1}&a_{1}+b_{2}\\
+a_{2}-a_{1}&a_{2}-a_{1}
 \end{array}\right|.
 $$
 
@@ -133,8 +133,8 @@ By **Property 2.3.2 (A Common Factor of a Row Can Be Pulled Out)**, row $2$ has 
 
 $$
 \left(a_{2}-a_{1}\right)\times\left|\begin{array}{cc}
-a_{1}+b_{1} & a_{1}+b_{2}\\
-1 & 1
+a_{1}+b_{1}&a_{1}+b_{2}\\
+1&1
 \end{array}\right|.
 $$
 
@@ -142,8 +142,8 @@ By **Property 2.3.7 (Adding a Multiple of One Row to Another Leaves the Determin
 
 $$
 \left(a_{2}-a_{1}\right)\times\left|\begin{array}{cc}
-b_{1}-b_{2} & a_{1}+b_{2}\\
-0 & 1
+b_{1}-b_{2}&a_{1}+b_{2}\\
+0&1
 \end{array}\right|.
 $$
 
@@ -158,9 +158,9 @@ In summary,
 $$
 \det\left(A\right)=
 \begin{cases}
-a_{1}+b_{1}, & n=1,\\
-\left(a_{1}-a_{2}\right)\left(b_{2}-b_{1}\right), & n=2,\\
-0, & n\ge3.
+a_{1}+b_{1},&n=1,\\
+\left(a_{1}-a_{2}\right)\left(b_{2}-b_{1}\right),&n=2,\\
+0,&n\ge3.
 \end{cases}
 $$
 
@@ -168,15 +168,15 @@ $\blacksquare$
 
 ## 2.4-2
 
-Compute the following $n\times n$ determinant $\left(n\ge2\right)$:
+Compute the following $n\times{n}$ determinant $\left(n\ge2\right)$:
 
 $$
 \left|\begin{array}{cccccc}
-a_{1} & a_{2} & a_{3} & \cdots & a_{n-1} & a_{n}\\
-1 & -1 & 0 & \cdots & 0 & 0\\
-0 & 2 & -2 & \cdots & 0 & 0\\
-\vdots & \vdots & \vdots & & \vdots & \vdots\\
-0 & 0 & 0 & \cdots & n-1 & 1-n
+a_{1}&a_{2}&a_{3}&\cdots&a_{n-1}&a_{n}\\
+1&-1&0&\cdots&0&0\\
+0&2&-2&\cdots&0&0\\
+\vdots&\vdots&\vdots&&\vdots&\vdots\\
+0&0&0&\cdots&n-1&1-n
 \end{array}\right|.
 $$
 
@@ -201,7 +201,7 @@ $$
 By **Theorem 2.4.1 (Expansion of a Determinant Along a Row (Column))**, expand along column $1$. Column $1$ has only its first entry nonzero and all others $0$, so
 
 $$
-\left|A\right|=\left(a_{1}+a_{2}+\cdots+a_{n}\right)\cdot A_{11}.
+\left|A\right|=\left(a_{1}+a_{2}+\cdots+a_{n}\right)\cdot{A}_{11}.
 $$
 
 By **Definition 2.4.1 (Minors and Cofactors)**,
@@ -214,10 +214,10 @@ where $M_{11}$ is the $\left(n-1\right)$-determinant after deleting row $1$ and 
 
 $$
 M_{11}=\left|\begin{array}{cccc}
--1 & 0 & \cdots & 0\\
-0 & -2 & \cdots & 0\\
-\vdots & \vdots & & \vdots\\
-0 & 0 & \cdots & 1-n
+-1&0&\cdots&0\\
+0&-2&\cdots&0\\
+\vdots&\vdots&&\vdots\\
+0&0&\cdots&1-n
 \end{array}\right|.
 $$
 
@@ -241,12 +241,12 @@ Prove by mathematical induction that, for all $n\ge2$,
 
 $$
 \left|\begin{array}{cccccc}
-x & 0 & 0 & \cdots & 0 & a_{0}\\
--1 & x & 0 & \cdots & 0 & a_{1}\\
-0 & -1 & x & \cdots & 0 & a_{2}\\
-\vdots & \vdots & \vdots & & \vdots & \vdots\\
-0 & 0 & 0 & \cdots & x & a_{n-2}\\
-0 & 0 & 0 & \cdots & -1 & x+a_{n-1}
+x&0&0&\cdots&0&a_{0}\\
+-1&x&0&\cdots&0&a_{1}\\
+0&-1&x&\cdots&0&a_{2}\\
+\vdots&\vdots&\vdots&&\vdots&\vdots\\
+0&0&0&\cdots&x&a_{n-2}\\
+0&0&0&\cdots&-1&x+a_{n-1}
 \end{array}\right|=x^{n}+a_{n-1}x^{n-1}+\cdots+a_{1}x+a_{n}.
 $$
 
@@ -255,17 +255,17 @@ $$
 Base case $n=2$:
 
 $$
-\left|\begin{array}{cc}x & a_{0}\\-1 & x+a_{1}\end{array}\right|=x\left(x+a_{1}\right)-\left(-1\right)a_{0}=x^{2}+a_{1}x+a_{0}.
+\left|\begin{array}{cc}x&a_{0}\\-1&x+a_{1}\end{array}\right|=x\left(x+a_{1}\right)-\left(-1\right)a_{0}=x^{2}+a_{1}x+a_{0}.
 $$
 
 It holds.
 
 Inductive step: assume the conclusion holds for order $n-1$.
 
-For the $n\times n$ determinant, by **Theorem 2.4.1 (Expansion of a Determinant Along a Row (Column))**, expand along row $1$:
+For the $n\times{n}$ determinant, by **Theorem 2.4.1 (Expansion of a Determinant Along a Row (Column))**, expand along row $1$:
 
 $$
-D_{n}=x\cdot M_{11}+\left(-1\right)^{1+n}a_{0}\cdot M_{1n}.
+D_{n}=x\cdot{M}_{11}+\left(-1\right)^{1+n}a_{0}\cdot{M}_{1n}.
 $$
 
 By **Definition 2.4.1 (Minors and Cofactors)**, $M_{11}$ is the $\left(n-1\right)$-determinant after deleting row $1$ and column $1$; by the induction hypothesis,
@@ -286,20 +286,20 @@ $$
 D_{n}=x\left(x^{n-1}+a_{n-1}x^{n-2}+\cdots+a_{2}x+a_{1}\right)+\left(-1\right)^{1+n}a_{0}\left(-1\right)^{n-1}=x^{n}+a_{n-1}x^{n-1}+\cdots+a_{1}x+\left(-1\right)^{2n}a_{0}=x^{n}+a_{n-1}x^{n-1}+\cdots+a_{1}x+a_{0}.
 $$
 
-By mathematical induction, the conclusion holds for all $n\ge 2$. $\blacksquare$
+By mathematical induction, the conclusion holds for all $n\ge2$. $\blacksquare$
 
 ## 2.4-8
 
-Compute the following $n\times n$ determinant $\left(n\ge2\right)$:
+Compute the following $n\times{n}$ determinant $\left(n\ge2\right)$:
 
 $$
 \left|\begin{array}{cccccc}
-1 & 2 & 2 & \cdots & 2 & 2\\
-2 & 2 & 2 & \cdots & 2 & 2\\
-2 & 2 & 3 & \cdots & 2 & 2\\
-\vdots & \vdots & \vdots & & \vdots & \vdots\\
-2 & 2 & 2 & \cdots & n-1 & 2\\
-2 & 2 & 2 & \cdots & 2 & n
+1&2&2&\cdots&2&2\\
+2&2&2&\cdots&2&2\\
+2&2&3&\cdots&2&2\\
+\vdots&\vdots&\vdots&&\vdots&\vdots\\
+2&2&2&\cdots&n-1&2\\
+2&2&2&\cdots&2&n
 \end{array}\right|.
 $$
 
@@ -309,27 +309,27 @@ Add $-1$ times row $2$ respectively to row $1$ and to row $i$ for $i=3,4,\cdots,
 
 row $1$ becomes $\left(-1,0,0,\cdots,0\right)$;
 
-row $i$ $\left(i\ge 3\right)$ becomes $\left(0,0,\cdots,i-2,\cdots,0\right)$, where $i-2$ lies in column $i$.
+row $i$ $\left(i\ge3\right)$ becomes $\left(0,0,\cdots,i-2,\cdots,0\right)$, where $i-2$ lies in column $i$.
 
 The determinant becomes
 
 $$
 \left|\begin{array}{cccccc}
--1 & 0 & 0 & \cdots & 0 & 0\\
-2 & 2 & 2 & \cdots & 2 & 2\\
-0 & 0 & 1 & \cdots & 0 & 0\\
-\vdots & \vdots & \vdots & & \vdots & \vdots\\
-0 & 0 & 0 & \cdots & n-2 & 0\\
-0 & 0 & 0 & \cdots & 0 & n-2
+-1&0&0&\cdots&0&0\\
+2&2&2&\cdots&2&2\\
+0&0&1&\cdots&0&0\\
+\vdots&\vdots&\vdots&&\vdots&\vdots\\
+0&0&0&\cdots&n-2&0\\
+0&0&0&\cdots&0&n-2
 \end{array}\right|.
 $$
 
-By **Theorem 2.4.1 (Expansion of a Determinant Along a Row (Column))**, expand along row $1$: $D=-1\cdot M_{11}$.
+By **Theorem 2.4.1 (Expansion of a Determinant Along a Row (Column))**, expand along row $1$: $D=-1\cdot{M}_{11}$.
 
 By **Definition 2.4.1 (Minors and Cofactors)**, $M_{11}$ is the $\left(n-1\right)$-determinant after deleting row $1$ and column $1$. Expanding along its row $2$ (the original row $3$), which has only entry $1$ in column $2$, gives
 
 $$
-M_{11}=1\cdot\left(-1\right)^{2+2}\cdot M'_{22}=M'_{22}.
+M_{11}=1\cdot\left(-1\right)^{2+2}\cdot{M}'_{22}=M'_{22}.
 $$
 
 By **Definition 2.4.1 (Minors and Cofactors)**, $M'_{22}$ is the $\left(n-2\right)$-determinant after deleting row $2$ and column $2$; expanding along its row $1$, which has only entry $2$ in column $1$ nonzero, all other terms vanish because after deleting the corresponding column some row becomes all zeros, so

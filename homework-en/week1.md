@@ -2,7 +2,7 @@
 
 > **Theorem 1.2.1 (Criterion for the Number of Solutions of a Linear System)**
 > 
-> Reduce the augmented matrix of an $n$-variable linear system to a row echelon matrix by elementary row operations: (1) if the corresponding echelon system exhibits $0=d$ ($d\ne 0$), then the original system has no solution; (2) if $0=d$ does not appear, then there is a solution: when the number of nonzero rows of the echelon matrix equals the number $n$ of unknowns there is a unique solution, and when the number of nonzero rows is $r< n$ there are infinitely many solutions.
+> Reduce the augmented matrix of an $n$-variable linear system to a row echelon matrix by elementary row operations: (1) if the corresponding echelon system exhibits $0=d$ ($d\ne0$), then the original system has no solution; (2) if $0=d$ does not appear, then there is a solution: when the number of nonzero rows of the echelon matrix equals the number $n$ of unknowns there is a unique solution, and when the number of nonzero rows is $r<{}n$ there are infinitely many solutions.
 
 ## 1.1-1(4)
 
@@ -23,10 +23,10 @@ By The Gauss-Jordan Algorithm, apply elementary row operations to the augmented 
 
 $$
 \left[\begin{array}{rrr|r}
-1 & 3 & -7 & -8\\
-2 & 5 & 4 & 4\\
--3 & -7 & -2 & -3\\
-1 & 4 & -12 & -15
+1&3&-7&-8\\
+2&5&4&4\\
+-3&-7&-2&-3\\
+1&4&-12&-15
 \end{array}\right].
 $$
 
@@ -34,10 +34,10 @@ By the (1)-th operation of Elementary Operations on a Linear System and Elementa
 
 $$
 \left[\begin{array}{rrr|r}
-1 & 3 & -7 & -8\\
-0 & -1 & 18 & 20\\
-0 & 2 & -23 & -27\\
-0 & 1 & -5 & -7
+1&3&-7&-8\\
+0&-1&18&20\\
+0&2&-23&-27\\
+0&1&-5&-7
 \end{array}\right].
 $$
 
@@ -100,7 +100,7 @@ $$
 Hence
 
 $$
-x_{1}=2x_{2}=\frac{40000}{27}, x_{3}=10000-3x_{2}=\frac{70000}{9}.
+x_{1}=2x_{2}=\frac{40000}{27},x_{3}=10000-3x_{2}=\frac{70000}{9}.
 $$
 
 i.e. one should invest $\frac{40000}{27}$ yuan, $\frac{20000}{27}$ yuan, and $\frac{70000}{9}$ yuan, respectively (approximately $1481.48$ yuan, $740.74$ yuan, and $7777.78$ yuan).
@@ -123,7 +123,7 @@ $$
 0.12x_{1}+0.15\left(5000-x_{1}\right)=900;0.12x_{1}+750-0.15x_{1}=900-0.03x_{1}=150;x_{1}=-5000.
 $$
 
-Then $x_{2}=10000$. Since an investment cannot be negative, $x_{1}=-5000< 0$ has no practical meaning. Hence it is not possible to make the amount invested in $A_{3}$ equal to the sum of the amounts invested in $A_{1}$ and $A_{2}$. $\blacksquare$
+Then $x_{2}=10000$. Since an investment cannot be negative, $x_{1}=-5000<0$ has no practical meaning. Hence it is not possible to make the amount invested in $A_{3}$ equal to the sum of the amounts invested in $A_{1}$ and $A_{2}$. $\blacksquare$
 
 ## 1.1-3(2)
 
@@ -143,9 +143,9 @@ By The Gauss-Jordan Algorithm, apply elementary row operations to the augmented 
 
 $$
 \left[\begin{array}{rrrr|r}
-2 & -3 & 1 & 5 & 6\\
--3 & 1 & 2 & -4 & 5\\
--1 & -2 & 3 & 1 & 11
+2&-3&1&5&6\\
+-3&1&2&-4&5\\
+-1&-2&3&1&11
 \end{array}\right].
 $$
 
@@ -153,9 +153,9 @@ By the (2)-th operation of Elementary Operations on a Linear System and Elementa
 
 $$
 \left[\begin{array}{rrrr|r}
--1 & -2 & 3 & 1 & 11\\
--3 & 1 & 2 & -4 & 5\\
-2 & -3 & 1 & 5 & 6
+-1&-2&3&1&11\\
+-3&1&2&-4&5\\
+2&-3&1&5&6
 \end{array}\right].
 $$
 
@@ -163,9 +163,9 @@ By the (1)-th operation of Elementary Operations on a Linear System and Elementa
 
 $$
 \left[\begin{array}{rrrr|r}
--1 & -2 & 3 & 1 & 11\\
-0 & -5 & -7 & -7 & -28\\
-0 & -7 & 7 & 7 & 28
+-1&-2&3&1&11\\
+0&-5&-7&-7&-28\\
+0&-7&7&7&28
 \end{array}\right].
 $$
 
@@ -221,10 +221,10 @@ By The Gauss-Jordan Algorithm, apply elementary row operations to the augmented 
 
 $$
 \left[\begin{array}{rrr|r}
-1 & -5 & -2 & 4\\
-2 & -3 & 1 & 7\\
--1 & 12 & 7 & -5\\
-1 & 16 & 13 & -1
+1&-5&-2&4\\
+2&-3&1&7\\
+-1&12&7&-5\\
+1&16&13&-1
 \end{array}\right].
 $$
 
@@ -232,10 +232,10 @@ By the (1)-th operation of Elementary Operations on a Linear System and Elementa
 
 $$
 \left[\begin{array}{rrr|r}
-1 & -5 & -2 & 4\\
-0 & 7 & 5 & -1\\
-0 & 7 & 5 & -1\\
-0 & 21 & 15 & -5
+1&-5&-2&4\\
+0&7&5&-1\\
+0&7&5&-1\\
+0&21&15&-5
 \end{array}\right].
 $$
 
@@ -249,7 +249,7 @@ $$
 
 which contradicts the $4$th row $21x_{2}+15x_{3}=-5$, yielding $0=-2$.
 
-By The Gauss-Jordan Algorithm, the corresponding echelon system exhibits the case $0=d$ ($d\ne 0$), so the original system has no solution. $\blacksquare$
+By The Gauss-Jordan Algorithm, the corresponding echelon system exhibits the case $0=d$ ($d\ne0$), so the original system has no solution. $\blacksquare$
 
 ## 1.2-2
 
@@ -269,27 +269,27 @@ By **Theorem 1.2.1 (Criterion for the Number of Solutions of a Linear System)**,
 
 $$
 \left[\begin{array}{rrr|r}
-1 & 1 & 1 & 3\\
-1 & 2 & -a & 9\\
-2 & -1 & 3 & 6
+1&1&1&3\\
+1&2&-a&9\\
+2&-1&3&6
 \end{array}\right]
 \xrightarrow{\left(2\right)-\left(1\right),\left(3\right)-2\left(1\right)}
 \left[\begin{array}{rrr|r}
-1 & 1 & 1 & 3\\
-0 & 1 & -a-1 & 6\\
-0 & -3 & 1 & 0
+1&1&1&3\\
+0&1&-a-1&6\\
+0&-3&1&0
 \end{array}\right]
 \xrightarrow{\left(3\right)+3\left(2\right)}
 \left[\begin{array}{rrr|r}
-1 & 1 & 1 & 3\\
-0 & 1 & -a-1 & 6\\
-0 & 0 & -3a-2 & 18
+1&1&1&3\\
+0&1&-a-1&6\\
+0&0&-3a-2&18
 \end{array}\right].
 $$
 
-By **Theorem 1.2.1 (Criterion for the Number of Solutions of a Linear System)**, when $-3a-2\ne 0$, i.e. $a\ne-\frac{2}{3}$, the echelon matrix has $3$ nonzero rows, equal to the number $3$ of unknowns, so the system has a unique solution.
+By **Theorem 1.2.1 (Criterion for the Number of Solutions of a Linear System)**, when $-3a-2\ne0$, i.e. $a\ne-\frac{2}{3}$, the echelon matrix has $3$ nonzero rows, equal to the number $3$ of unknowns, so the system has a unique solution.
 
-By **Theorem 1.2.1 (Criterion for the Number of Solutions of a Linear System)**, when $-3a-2=0$, i.e. $a=-\frac{2}{3}$, the $3$rd row becomes $0=18$, exhibiting $0=d$ ($d\ne 0$), so the system has no solution.
+By **Theorem 1.2.1 (Criterion for the Number of Solutions of a Linear System)**, when $-3a-2=0$, i.e. $a=-\frac{2}{3}$, the $3$rd row becomes $0=18$, exhibiting $0=d$ ($d\ne0$), so the system has no solution.
 
 In summary, there is a unique solution when $a\ne-\frac{2}{3}$, and no solution when $a=-\frac{2}{3}$. $\blacksquare$
 
@@ -312,17 +312,17 @@ By **Theorem 1.2.1 (Criterion for the Number of Solutions of a Linear System)**,
 
 $$
 \left[\begin{array}{rrrrr\left|r}
-1 & 1 & 1 & 1 & 1 & 1\\
-3 & 2 & 1 & 1 & -3 & c\\
-0 & 1 & 2 & 2 & 6 & 3\\
-5 & 4 & 3 & 3 & -1 & d
+1&1&1&1&1&1\\
+3&2&1&1&-3&c\\
+0&1&2&2&6&3\\
+5&4&3&3&-1&d
 \end{array}\right]
 \xrightarrow{\left(2\right)-3\left(1\right),\left(4\right)-5\left(1\right)}
 \left[\begin{array}{rrrrr\right|r}
-1 & 1 & 1 & 1 & 1 & 1\\
-0 & -1 & -2 & -2 & -6 & c-3\\
-0 & 1 & 2 & 2 & 6 & 3\\
-0 & -1 & -2 & -2 & -6 & d-5
+1&1&1&1&1&1\\
+0&-1&-2&-2&-6&c-3\\
+0&1&2&2&6&3\\
+0&-1&-2&-2&-6&d-5
 \end{array}\right].
 $$
 
@@ -330,17 +330,17 @@ By **Theorem 1.2.1 (Criterion for the Number of Solutions of a Linear System)**,
 
 $$
 \left[\begin{array}{rrrrr\left|r}
-1 & 1 & 1 & 1 & 1 & 1\\
-0 & 1 & 2 & 2 & 6 & 3-c\\
-0 & 1 & 2 & 2 & 6 & 3\\
-0 & -1 & -2 & -2 & -6 & d-5
+1&1&1&1&1&1\\
+0&1&2&2&6&3-c\\
+0&1&2&2&6&3\\
+0&-1&-2&-2&-6&d-5
 \end{array}\right]
 \xrightarrow{\left(3\right)-\left(2\right),\left(4\right)+\left(2\right)}
 \left[\begin{array}{rrrrr\right|r}
-1 & 1 & 1 & 1 & 1 & 1\\
-0 & 1 & 2 & 2 & 6 & 3-c\\
-0 & 0 & 0 & 0 & 0 & c\\
-0 & 0 & 0 & 0 & 0 & d-c-2
+1&1&1&1&1&1\\
+0&1&2&2&6&3-c\\
+0&0&0&0&0&c\\
+0&0&0&0&0&d-c-2
 \end{array}\right].
 $$
 

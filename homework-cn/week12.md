@@ -2,15 +2,15 @@
 
 > **定义 4.1.1 (矩阵的加法)**
 > 
-> 设 $A=\left(a_{ij}\right),B=\left(b_{ij}\right)$ 都是数域 $K$ 上 $s\times n$ 矩阵, 令 $C=\left(a_{ij}+b_{ij}\right)_{s\times n}$, 则称 $C$ 是矩阵 $A$ 与 $B$ 的和, 记作 $C=A+B$.
+> 设 $A=\left(a_{ij}\right),B=\left(b_{ij}\right)$ 都是数域 $K$ 上 $s\times{n}$ 矩阵, 令 $C=\left(a_{ij}+b_{ij}\right)_{s\times{n}}$, 则称 $C$ 是矩阵 $A$ 与 $B$ 的和, 记作 $C=A+B$.
 
 > **定义 4.1.2 (矩阵的数量乘法)**
 > 
-> 设 $k\in K$, 令 $M=\left(ka_{ij}\right)_{s\times n}$, 则称 $M$ 是 $k$ 与矩阵 $A$ 的数量乘积, 记作 $M=kA$.
+> 设 $k\in{K}$, 令 $M=\left(ka_{ij}\right)_{s\times{n}}$, 则称 $M$ 是 $k$ 与矩阵 $A$ 的数量乘积, 记作 $M=kA$.
 
 > **定义 4.1.3 (矩阵的乘法)**
 > 
-> 设 $A=\left(a_{ij}\right)_{s\times n}$, $B=\left(b_{ij}\right)_{n\times m}$, 令 $C=\left(c_{ij}\right)_{s\times m}$, 其中 $c_{ij}=\sum_{k=1}^{n}a_{ik}b_{kj}$, 则称 $C$ 是 $A$ 与 $B$ 的乘积, 记作 $C=AB$.
+> 设 $A=\left(a_{ij}\right)_{s\times{n}}$, $B=\left(b_{ij}\right)_{n\times{m}}$, 令 $C=\left(c_{ij}\right)_{s\times{m}}$, 其中 $c_{ij}=\sum_{k=1}^{n}a_{ik}b_{kj}$, 则称 $C$ 是 $A$ 与 $B$ 的乘积, 记作 $C=AB$.
 
 > **定义 4.2.2 (上/下三角矩阵)**
 > 
@@ -30,15 +30,15 @@
 
 $$
 \left|\begin{array}{ccc}
-1 & 1 & 1\\
-x_{1} & x_{2} & x_{3}\\
-x_{1}^{2} & x_{2}^{2} & x_{3}^{2}
+1&1&1\\
+x_{1}&x_{2}&x_{3}\\
+x_{1}^{2}&x_{2}^{2}&x_{3}^{2}
 \end{array}\right|=\left(x_{2}-x_{1}\right)\left(x_{3}-x_{1}\right)\left(x_{3}-x_{2}\right).
 $$
 
 > **定理 4.3.1 (矩阵乘积的秩)**
 > 
-> 设 $A=\left(a_{ij}\right)_{s\times n}$, $B=\left(b_{ij}\right)_{n\times m}$, 则
+> 设 $A=\left(a_{ij}\right)_{s\times{n}}$, $B=\left(b_{ij}\right)_{n\times{m}}$, 则
 
 $$
 \text{rank}\left(AB\right)\le\min\left\{\text{rank}\left(A\right),\text{rank}\left(B\right)\right\}.
@@ -58,9 +58,9 @@ $$
 
 $$
 \left(x,y,1\right)\left[\begin{array}{ccc}
-a_{11} & a_{12} & a_{1}\\
-a_{12} & a_{22} & a_{2}\\
-a_{1} & a_{2} & a_{0}
+a_{11}&a_{12}&a_{1}\\
+a_{12}&a_{22}&a_{2}\\
+a_{1}&a_{2}&a_{0}
 \end{array}\right]\left[\begin{array}{c}
 x\\
 y\\
@@ -92,10 +92,10 @@ $\blacksquare$
 
 $$
 \left[\begin{array}{ccc}
-0 & 1 & 0\\
-0 & 0 & 1\\
-0 & 0 & 0
-\end{array}\right]^{n},n\text{ 是正整数}.
+0&1&0\\
+0&0&1\\
+0&0&0
+\end{array}\right]^{n},n\text{~是正整数}.
 $$
 
 ### 解答 4.1-7(5)
@@ -103,29 +103,29 @@ $$
 由**定义 4.1.3 (矩阵的乘法)**, 记
 
 $$
-H=\left[\begin{array}{ccc}0 & 1 & 0\\0 & 0 & 1\\0 & 0 & 0\end{array}\right].
+H=\left[\begin{array}{ccc}0&1&0\\0&0&1\\0&0&0\end{array}\right].
 $$
 
 $$
 H^{2}=HH=\left[\begin{array}{ccc}
-0 & 0 & 1\\
-0 & 0 & 0\\
-0 & 0 & 0
+0&0&1\\
+0&0&0\\
+0&0&0
 \end{array}\right].
 $$
 
 $$
 H^{3}=H^{2}H=\left[\begin{array}{ccc}
-0 & 0 & 0\\
-0 & 0 & 0\\
-0 & 0 & 0
+0&0&0\\
+0&0&0\\
+0&0&0
 \end{array}\right].
 $$
 
 因此:
 
-- 当 $n=1$ 时, $H^{n}=H=\left[\begin{array}{ccc}0 & 1 & 0\\0 & 0 & 1\\0 & 0 & 0\end{array}\right]$.
-- 当 $n=2$ 时, $H^{n}=\left[\begin{array}{ccc}0 & 0 & 1\\0 & 0 & 0\\0 & 0 & 0\end{array}\right]$.
+- 当 $n=1$ 时, $H^{n}=H=\left[\begin{array}{ccc}0&1&0\\0&0&1\\0&0&0\end{array}\right]$.
+- 当 $n=2$ 时, $H^{n}=\left[\begin{array}{ccc}0&0&1\\0&0&0\\0&0&0\end{array}\right]$.
 - 当 $n\ge3$ 时, $H^{n}=0$.
 
 $\blacksquare$
@@ -136,36 +136,36 @@ $\blacksquare$
 
 $$
 \left[\begin{array}{ccc}
-\lambda & 1 & 0\\
-0 & \lambda & 1\\
-0 & 0 & \lambda
-\end{array}\right]^{n},n\text{ 是正整数}.
+\lambda&1&0\\
+0&\lambda&1\\
+0&0&\lambda
+\end{array}\right]^{n},n\text{~是正整数}.
 $$
 
 ### 解答 4.1-7(6)
 
-由**定义 4.1.3 (矩阵的乘法)**, 记 $A=\lambda I+N$, 其中
+由**定义 4.1.3 (矩阵的乘法)**, 记 $A=\lambda{I}+N$, 其中
 
 $$
-N=\left[\begin{array}{ccc}0 & 1 & 0\\0 & 0 & 1\\0 & 0 & 0\end{array}\right].
+N=\left[\begin{array}{ccc}0&1&0\\0&0&1\\0&0&0\end{array}\right].
 $$
 
-因为 $\lambda I$ 与 $N$ 可交换, 由矩阵二项式定理:
+因为 $\lambda{I}$ 与 $N$ 可交换, 由矩阵二项式定理:
 
 $$
-A^{n}=\sum_{k=0}^{n}\binom{n}{k}\left(\lambda I\right)^{n-k}N^{k}.
+A^{n}=\sum_{k=0}^{n}\binom{n}{k}\left(\lambda{I}\right)^{n-k}N^{k}.
 $$
 
-又 $N^{0}=I$, $N^{1}=N$, $N^{2}=\left[\begin{array}{ccc}0 & 0 & 1\\0 & 0 & 0\\0 & 0 & 0\end{array}\right]$, $N^{3}=0$.
+又 $N^{0}=I$, $N^{1}=N$, $N^{2}=\left[\begin{array}{ccc}0&0&1\\0&0&0\\0&0&0\end{array}\right]$, $N^{3}=0$.
 
 故
 
 $$
 A^{n}
 =\lambda^{n}I+n\lambda^{n-1}N+\binom{n}{2}\lambda^{n-2}N^{2}=\left[\begin{array}{ccc}
-\lambda^{n} & n\lambda^{n-1} & \frac{n\left(n-1\right)}{2}\lambda^{n-2}\\
-0 & \lambda^{n} & n\lambda^{n-1}\\
-0 & 0 & \lambda^{n}
+\lambda^{n}&n\lambda^{n-1}&\frac{n\left(n-1\right)}{2}\lambda^{n-2}\\
+0&\lambda^{n}&n\lambda^{n-1}\\
+0&0&\lambda^{n}
 \end{array}\right].
 $$
 
@@ -207,7 +207,7 @@ $$
 
 ### 解答 4.2-2
 
-由**定义 4.2.2 (上/下三角矩阵)**, 设 $A=\left(a_{ij}\right),B=\left(b_{ij}\right)$ 都是 $n$ 级下三角矩阵, 即当 $i< j$ 时, $a_{ij}=0,b_{ij}=0$.
+由**定义 4.2.2 (上/下三角矩阵)**, 设 $A=\left(a_{ij}\right),B=\left(b_{ij}\right)$ 都是 $n$ 级下三角矩阵, 即当 $i<{}j$ 时, $a_{ij}=0,b_{ij}=0$.
 
 设 $C=AB=\left(c_{ij}\right)$, 则
 
@@ -215,17 +215,17 @@ $$
 c_{ij}=\sum_{k=1}^{n}a_{ik}b_{kj}.
 $$
 
-下三角性. 当 $i< j$ 时:
+下三角性. 当 $i<{}j$ 时:
 
-- 若 $k\le i< j$, 则 $k< j$, 故 $b_{kj}=0$.
-- 若 $k> i$, 则 $a_{ik}=0$.
+- 若 $k\le{i}<{}j$, 则 $k<{}j$, 故 $b_{kj}=0$.
+- 若 $k>{}i$, 则 $a_{ik}=0$.
 
-因此所有项均为 $0$, 故 $c_{ij}=0$ (当 $i< j$). 由**定义 4.2.2 (上/下三角矩阵)**, 所以 $C$ 是下三角矩阵.
+因此所有项均为 $0$, 故 $c_{ij}=0$ (当 $i<{}j$). 由**定义 4.2.2 (上/下三角矩阵)**, 所以 $C$ 是下三角矩阵.
 
 主对角元. 当 $i=j$ 时:
 
-- 若 $k< i$, 则 $b_{ki}=0$.
-- 若 $k> i$, 则 $a_{ik}=0$.
+- 若 $k<{}i$, 则 $b_{ki}=0$.
+- 若 $k>{}i$, 则 $a_{ik}=0$.
 
 因此只有 $k=i$ 这一项非零:
 
@@ -263,13 +263,13 @@ $$
 a_{11}=a_{22}=\cdots=a_{nn}=k.
 $$
 
-再比较 $\left(k,j\right)$ 元 ( $k\ne i$ ):
+再比较 $\left(k,j\right)$ 元 ( $k\ne{i}$ ):
 
 $AE_{ij}$ 的 $\left(k,j\right)$ 元 $=a_{ki}$.
 
-$E_{ij}A$ 的 $\left(k,j\right)$ 元 $=0$ (因为 $k\ne i$).
+$E_{ij}A$ 的 $\left(k,j\right)$ 元 $=0$ (因为 $k\ne{i}$).
 
-因此 $a_{ki}=0$ (当 $k\ne i$).
+因此 $a_{ki}=0$ (当 $k\ne{i}$).
 
 这对所有 $i$ 都成立, 故 $A$ 的非对角元全为 $0$.
 
@@ -381,14 +381,14 @@ $$
 因此
 
 $$
-\left|A\right|=-\left|A\right|\Rightarrow 2\left|A\right|=0\Rightarrow \left|A\right|=0.
+\left|A\right|=-\left|A\right|\Rightarrow2\left|A\right|=0\Rightarrow\left|A\right|=0.
 $$
 
 $\blacksquare$
 
 ## 4.3-2
 
-一个矩阵称为行 (列) 满秩矩阵, 如果它的行 (列) 向量组是线性无关的. 证明: 如果一个 $s\times n$ 矩阵 $A$ 的秩为 $r$, 则有 $s\times r$ 的列满秩矩阵 $B$ 和 $r\times n$ 的行满秩矩阵 $C$, 使得 $A=BC$.
+一个矩阵称为行 (列) 满秩矩阵, 如果它的行 (列) 向量组是线性无关的. 证明: 如果一个 $s\times{n}$ 矩阵 $A$ 的秩为 $r$, 则有 $s\times{r}$ 的列满秩矩阵 $B$ 和 $r\times{n}$ 的行满秩矩阵 $C$, 使得 $A=BC$.
 
 ### 解答 4.3-2
 
@@ -402,15 +402,15 @@ $$
 J=\left[\begin{array}{c}C\\0\end{array}\right]
 $$
 
-其中 $C$ 是 $r\times n$ 矩阵, 且 $C$ 的行向量组线性无关 (因为 $J$ 的非零行线性无关).
+其中 $C$ 是 $r\times{n}$ 矩阵, 且 $C$ 的行向量组线性无关 (因为 $J$ 的非零行线性无关).
 
 故 $C$ 是行满秩矩阵.
 
-设 $A=PJ$, 其中 $P$ 是 $s\times s$ 可逆矩阵.
+设 $A=PJ$, 其中 $P$ 是 $s\times{s}$ 可逆矩阵.
 
 则 $A=P\left[\begin{array}{c}C\\0\end{array}\right]$.
 
-把 $P$ 按列分块: $P=\left(P_{1},P_{2}\right)$, 其中 $P_{1}$ 是 $s\times r$ 矩阵.
+把 $P$ 按列分块: $P=\left(P_{1},P_{2}\right)$, 其中 $P_{1}$ 是 $s\times{r}$ 矩阵.
 
 则
 
@@ -424,4 +424,4 @@ $$
 
 故 $B$ 是列满秩矩阵.
 
-因此 $A=BC$, 其中 $B$ 是 $s\times r$ 列满秩矩阵, $C$ 是 $r\times n$ 行满秩矩阵. $\blacksquare$
+因此 $A=BC$, 其中 $B$ 是 $s\times{r}$ 列满秩矩阵, $C$ 是 $r\times{n}$ 行满秩矩阵. $\blacksquare$

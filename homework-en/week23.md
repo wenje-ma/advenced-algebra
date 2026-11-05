@@ -35,7 +35,7 @@
 $$
 f\left(x\right)=a_{n}x^{n}+\cdots+a_{1}x+a_{0}
 $$
-be a polynomial with integer coefficients of degree $n> 0$. If there exists a prime $p$ such that (1) $p\mid a_{i}$ for $i=0,1,\ldots,n-1$; (2) $p\nmid a_{n}$; (3) $p^{2}\nmid a_{0}$, then $f\left(x\right)$ is irreducible over $\mathbb{Q}$.
+be a polynomial with integer coefficients of degree $n>0$. If there exists a prime $p$ such that (1) $p\mid{a}_{i}$ for $i=0,1,\ldots,n-1$; (2) $p\nmid{a}_{n}$; (3) $p^{2}\nmid{a}_{0}$, then $f\left(x\right)$ is irreducible over $\mathbb{Q}$.
 
 ## 7.6-1
 
@@ -64,10 +64,10 @@ First division:
 
 $$
 \begin{array}{r|rrrrrr}
--2 & 1 & 7 & 19 & 26 & 20 & 8\\
-   &   & -2 & -10 & -18 & -16 & -8\\
+-2&1&7&19&26&20&8\\
+&&-2&-10&-18&-16&-8\\
 \hline
-   & 1 & 5 & 9 & 8 & 4 & 0
+&1&5&9&8&4&0
 \end{array}
 $$
 
@@ -77,10 +77,10 @@ Second division:
 
 $$
 \begin{array}{r|rrrrr}
--2 & 1 & 5 & 9 & 8 & 4\\
-   &   & -2 & -6 & -6 & -4\\
+-2&1&5&9&8&4\\
+&&-2&-6&-6&-4\\
 \hline
-   & 1 & 3 & 3 & 2 & 0
+&1&3&3&2&0
 \end{array}
 $$
 
@@ -90,10 +90,10 @@ Third division:
 
 $$
 \begin{array}{r|rrrr}
--2 & 1 & 3 & 3 & 2\\
-   &   & -2 & -2 & -2\\
+-2&1&3&3&2\\
+&&-2&-2&-2\\
 \hline
-   & 1 & 1 & 1 & 0
+&1&1&1&0
 \end{array}
 $$
 
@@ -103,10 +103,10 @@ Fourth division:
 
 $$
 \begin{array}{r|rrr}
--2 & 1 & 1 & 1\\
-   &   & -2 & 2\\
+-2&1&1&1\\
+&&-2&2\\
 \hline
-   & 1 & -1 & 3
+&1&-1&3
 \end{array}
 $$
 
@@ -138,7 +138,7 @@ $$
 Set $f\left(3\right)=0$:
 
 $$
-9a+3b=45\Rightarrow 3a+b=15. \tag{1}
+9a+3b=45\Rightarrow3a+b=15.\tag{1}
 $$
 
 Compute the derivative:
@@ -157,19 +157,19 @@ $$
 Set $f'\left(3\right)=0$:
 
 $$
-6a+b=27. \tag{2}
+6a+b=27.\tag{2}
 $$
 
 Subtract $\left(1\right)$ from $\left(2\right)$:
 
 $$
-3a=12\Rightarrow a=4.
+3a=12\Rightarrow{a}=4.
 $$
 
 Substitute into $\left(1\right)$:
 
 $$
-3\cdot4+b=15\Rightarrow b=3.
+3\cdot4+b=15\Rightarrow{b}=3.
 $$
 
 Hence $a=4$, $b=3$. $\blacksquare$
@@ -185,20 +185,20 @@ The roots of $x^{n}-1=0$ satisfy $x^{n}=1$.
 The $n$-th roots of unity are:
 
 $$
-x_{k}=e^{2\pi i k/n}=\cos\frac{2\pi k}{n}+i\sin\frac{2\pi k}{n},\ k=0,1,\ldots,n-1.
+x_{k}=e^{2\pi{i}k/n}=\cos\frac{2\pi{k}}{n}+i\sin\frac{2\pi{k}}{n},\,k=0,1,\ldots,n-1.
 $$
 
 Therefore the standard factorization is:
 
 $$
-x^{n}-1=\prod_{k=0}^{n-1}\left(x-e^{2\pi i k/n}\right).
+x^{n}-1=\prod_{k=0}^{n-1}\left(x-e^{2\pi{i}k/n}\right).
 $$
 
 $\blacksquare$
 
 ## 7.7-4
 
-Prove: if two $n\times n$ real matrices $A$ and $B$ are not similar over $\mathbb{R}$, then they are still not similar when viewed as complex matrices.
+Prove: if two $n\times{n}$ real matrices $A$ and $B$ are not similar over $\mathbb{R}$, then they are still not similar when viewed as complex matrices.
 
 ### Solution to 7.7-4
 
@@ -313,19 +313,19 @@ $$
 Compare coefficients:
 
 $$
-a+c=-2, \tag{1}
+a+c=-2,\tag{1}
 $$
 
 $$
-ac+b+d=0, \tag{2}
+ac+b+d=0,\tag{2}
 $$
 
 $$
-ad+bc=2, \tag{3}
+ad+bc=2,\tag{3}
 $$
 
 $$
-bd=-3. \tag{4}
+bd=-3.\tag{4}
 $$
 
 From $\left(4\right)$, the integer solutions of $bd=-3$ are:
@@ -339,29 +339,29 @@ Check each:
 - $b=1,d=-3$: from $\left(1\right)$, $c=-2-a$. Substitute into $\left(2\right)$:
 
   $$
-  -2a-a^{2}+1-3=0\Rightarrow a^{2}+2a+2=0,
-  $$
+-2a-a^{2}+1-3=0\Rightarrow{a}^{2}+2a+2=0,
+$$
 
   no real roots.
 - $b=-1,d=3$: substitute into $\left(2\right)$:
 
   $$
-  -2a-a^{2}-1+3=0\Rightarrow a^{2}+2a-2=0,
-  $$
+-2a-a^{2}-1+3=0\Rightarrow{a}^{2}+2a-2=0,
+$$
 
   no integer roots.
 - $b=3,d=-1$: substitute into $\left(2\right)$:
 
   $$
-  -2a-a^{2}+3-1=0\Rightarrow a^{2}+2a-2=0,
-  $$
+-2a-a^{2}+3-1=0\Rightarrow{a}^{2}+2a-2=0,
+$$
 
   no integer roots.
 - $b=-3,d=1$: substitute into $\left(2\right)$:
 
   $$
-  -2a-a^{2}-3+1=0\Rightarrow a^{2}+2a+2=0,
-  $$
+-2a-a^{2}-3+1=0\Rightarrow{a}^{2}+2a+2=0,
+$$
 
   no real roots.
 
@@ -398,19 +398,19 @@ $$
 Compare coefficients:
 
 $$
-a+c=0, \tag{1}
+a+c=0,\tag{1}
 $$
 
 $$
-ac+b+d=p, \tag{2}
+ac+b+d=p,\tag{2}
 $$
 
 $$
-ad+bc=0, \tag{3}
+ad+bc=0,\tag{3}
 $$
 
 $$
-bd=1. \tag{4}
+bd=1.\tag{4}
 $$
 
 From $\left(1\right)$, $c=-a$.
@@ -446,17 +446,17 @@ If $b=1$, then $d=1$.
 From $\left(2\right)$:
 
 $$
--a^{2}+2=p\Rightarrow a^{2}=2-p.
+-a^{2}+2=p\Rightarrow{a}^{2}=2-p.
 $$
 
-Since $p$ is odd and $p\ge3$, $2-p\le-1< 0$, no real root.
+Since $p$ is odd and $p\ge3$, $2-p\le-1<0$, no real root.
 
 If $b=-1$, then $d=-1$.
 
 From $\left(2\right)$:
 
 $$
--a^{2}-2=p\Rightarrow a^{2}=-p-2< 0,
+-a^{2}-2=p\Rightarrow{a}^{2}=-p-2<0,
 $$
 
 no real root.
@@ -524,19 +524,19 @@ $$
 Compare coefficients:
 
 $$
-a+c=0, \tag{1}
+a+c=0,\tag{1}
 $$
 
 $$
-ac+b+d=-5, \tag{2}
+ac+b+d=-5,\tag{2}
 $$
 
 $$
-ad+bc=0, \tag{3}
+ad+bc=0,\tag{3}
 $$
 
 $$
-bd=1. \tag{4}
+bd=1.\tag{4}
 $$
 
 From $\left(1\right)$, $c=-a$.
@@ -565,11 +565,11 @@ From $\left(4\right)$: $b^{2}=1$, so $b=1$ or $b=-1$.
 
 If $b=1$, then $d=1$.
 
-From $\left(2\right)$: $-a^{2}+2=-5\Rightarrow a^{2}=7$, not a perfect square.
+From $\left(2\right)$: $-a^{2}+2=-5\Rightarrow{a}^{2}=7$, not a perfect square.
 
 If $b=-1$, then $d=-1$.
 
-From $\left(2\right)$: $-a^{2}-2=-5\Rightarrow a^{2}=3$, not a perfect square.
+From $\left(2\right)$: $-a^{2}-2=-5\Rightarrow{a}^{2}=3$, not a perfect square.
 
 Hence it cannot be factored into two integer quadratics.
 

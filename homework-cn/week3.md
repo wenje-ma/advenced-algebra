@@ -30,11 +30,11 @@
 
 $$
 \left|\begin{array}{ccccc}
-0 & \cdots & 0 & a_{1} & 0\\
-0 & \cdots & a_{2} & 0 & 0\\
-\vdots & & \vdots & \vdots & \vdots\\
-a_{n-1} & \cdots & 0 & 0 & 0\\
-0 & \cdots & 0 & 0 & a_{n}
+0&\cdots&0&a_{1}&0\\
+0&\cdots&a_{2}&0&0\\
+\vdots&&\vdots&\vdots&\vdots\\
+a_{n-1}&\cdots&0&0&0\\
+0&\cdots&0&0&a_{n}
 \end{array}\right|.
 $$
 
@@ -42,7 +42,7 @@ $$
 
 由**定义 2.2.1 ($n$ 阶行列式)**, 行列式的每一项都是取自不同行, 不同列的 $n$ 个元素的乘积.
 
-由**定义 2.2.1 ($n$ 阶行列式)**, 逐行确定唯一可取的非零元素: 第 $1$ 行只有第 $n-1$ 列的 $a_{1}$ 非零, 第 $2$ 行只有第 $n-2$ 列的 $a_{2}$ 非零, $\cdots$, 第 $n-1$ 行只有第 $1$ 列的 $a_{n-1}$ 非零, 第 $n$ 行只有第 $n$ 列的 $a_{n}$ 非零. 因此唯一非零项为 $a_{1}a_{2}\cdots a_{n}$.
+由**定义 2.2.1 ($n$ 阶行列式)**, 逐行确定唯一可取的非零元素: 第 $1$ 行只有第 $n-1$ 列的 $a_{1}$ 非零, 第 $2$ 行只有第 $n-2$ 列的 $a_{2}$ 非零, $\cdots$, 第 $n-1$ 行只有第 $1$ 列的 $a_{n-1}$ 非零, 第 $n$ 行只有第 $n$ 列的 $a_{n}$ 非零. 因此唯一非零项为 $a_{1}a_{2}\cdots{a}_{n}$.
 
 由**定义 2.2.1 ($n$ 阶行列式)**, 该非零项的列指标排列为 $n-1,n-2,\cdots,1,n$, 其逆序数为
 
@@ -53,7 +53,7 @@ $$
 由**定义 2.2.1 ($n$ 阶行列式)** 中正负号的规定, 故行列式值为
 
 $$
-\left(-1\right)^{\frac{\left(n-1\right)\left(n-2\right)}{2}}a_{1}a_{2}\cdots a_{n}.
+\left(-1\right)^{\frac{\left(n-1\right)\left(n-2\right)}{2}}a_{1}a_{2}\cdots{a}_{n}.
 $$
 
 $\blacksquare$
@@ -64,11 +64,11 @@ $\blacksquare$
 
 $$
 \left|\begin{array}{ccccc}
-0 & 0 & 0 & 1 & 0\\
-0 & 0 & 2 & 0 & 0\\
-0 & 3 & 8 & 0 & 0\\
-4 & 9 & 0 & 7 & 0\\
-6 & 0 & 0 & 0 & 5
+0&0&0&1&0\\
+0&0&2&0&0\\
+0&3&8&0&0\\
+4&9&0&7&0\\
+6&0&0&0&5
 \end{array}\right|.
 $$
 
@@ -106,11 +106,11 @@ $\blacksquare$
 
 $$
 \left|\begin{array}{ccccc}
-a_{1} & a_{2} & a_{3} & a_{4} & a_{5}\\
-b_{1} & b_{2} & b_{3} & b_{4} & b_{5}\\
-c_{1} & c_{2} & 0 & 0 & 0\\
-d_{1} & d_{2} & 0 & 0 & 0\\
-e_{1} & e_{2} & 0 & 0 & 0
+a_{1}&a_{2}&a_{3}&a_{4}&a_{5}\\
+b_{1}&b_{2}&b_{3}&b_{4}&b_{5}\\
+c_{1}&c_{2}&0&0&0\\
+d_{1}&d_{2}&0&0&0\\
+e_{1}&e_{2}&0&0&0
 \end{array}\right|.
 $$
 
@@ -130,10 +130,10 @@ $\blacksquare$
 
 $$
 \left|\begin{array}{rrrr}
-5x & x & 1 & x\\
-1 & x & 1 & -1\\
-3 & 2 & x & 1\\
-3 & 1 & 1 & x
+5x&x&1&x\\
+1&x&1&-1\\
+3&2&x&1\\
+3&1&1&x
 \end{array}\right|.
 $$
 
@@ -181,9 +181,9 @@ $\blacksquare$
 
 $$
 \left|\begin{array}{rrr}
--1 & 203 & 1/3\\
-3 & 298 & 1/2\\
-5 & 399 & 2/3
+-1&203&1/3\\
+3&298&1/2\\
+5&399&2/3
 \end{array}\right|.
 $$
 
@@ -193,21 +193,21 @@ $$
 
 $$
 \left|\begin{array}{rrr}
--1 & 203 & 1/3\\
-3 & 298 & 1/2\\
-5 & 399 & 2/3
+-1&203&1/3\\
+3&298&1/2\\
+5&399&2/3
 \end{array}\right|
 =
 \left|\begin{array}{rrr}
--1 & 200 & 1/3\\
-3 & 300 & 1/2\\
-5 & 400 & 2/3
+-1&200&1/3\\
+3&300&1/2\\
+5&400&2/3
 \end{array}\right|
 +
 \left|\begin{array}{rrr}
--1 & 3 & 1/3\\
-3 & -2 & 1/2\\
-5 & -1 & 2/3
+-1&3&1/3\\
+3&-2&1/2\\
+5&-1&2/3
 \end{array}\right|.
 $$
 
@@ -215,9 +215,9 @@ $$
 
 $$
 D_{1}=100\times\left|\begin{array}{rrr}
--1 & 2 & 1/3\\
-3 & 3 & 1/2\\
-5 & 4 & 2/3
+-1&2&1/3\\
+3&3&1/2\\
+5&4&2/3
 \end{array}\right|.
 $$
 
@@ -225,9 +225,9 @@ $$
 
 $$
 \left|\begin{array}{rrr}
--1 & 2 & 1/3\\
-3 & 3 & 1/2\\
-5 & 4 & 2/3
+-1&2&1/3\\
+3&3&1/2\\
+5&4&2/3
 \end{array}\right|=-1\times\left(3\times\frac{2}{3}-\frac{1}{2}\times4\right)-2\times\left(3\times\frac{2}{3}-\frac{1}{2}\times5\right)+\frac{1}{3}\times\left(3\times4-3\times5\right)=-1\times\left(2-2\right)-2\times\left(2-\frac{5}{2}\right)+\frac{1}{3}\times\left(12-15\right)=0-2\times\left(-\frac{1}{2}\right)+\frac{1}{3}\times\left(-3\right)=1-1=0.
 $$
 
@@ -237,9 +237,9 @@ $$
 
 $$
 D_{2}=\left|\begin{array}{rrr}
--1 & 3 & 1/3\\
-3 & -2 & 1/2\\
-5 & -1 & 2/3
+-1&3&1/3\\
+3&-2&1/2\\
+5&-1&2/3
 \end{array}\right|=-1\times\left(-2\times\frac{2}{3}-\frac{1}{2}\times\left(-1\right)\right)-3\times\left(3\times\frac{2}{3}-\frac{1}{2}\times5\right)+\frac{1}{3}\times\left(3\times\left(-1\right)-\left(-2\right)\times5\right)=-1\times\left(-\frac{4}{3}+\frac{1}{2}\right)-3\times\left(2-\frac{5}{2}\right)+\frac{1}{3}\times\left(-3+10\right)=-1\times\left(-\frac{5}{6}\right)-3\times\left(-\frac{1}{2}\right)+\frac{1}{3}\times7=\frac{5}{6}+\frac{3}{2}+\frac{7}{3}=\frac{5}{6}+\frac{9}{6}+\frac{14}{6}=\frac{28}{6}=\frac{14}{3}.
 $$
 
@@ -257,10 +257,10 @@ $\blacksquare$
 
 $$
 \left|\begin{array}{cccc}
-a_{1}-b & a_{2} & \cdots & a_{n}\\
-a_{1} & a_{2}-b & \cdots & a_{n}\\
-\vdots & \vdots & & \vdots\\
-a_{1} & a_{2} & \cdots & a_{n}-b
+a_{1}-b&a_{2}&\cdots&a_{n}\\
+a_{1}&a_{2}-b&\cdots&a_{n}\\
+\vdots&\vdots&&\vdots\\
+a_{1}&a_{2}&\cdots&a_{n}-b
 \end{array}\right|.
 $$
 
@@ -270,17 +270,17 @@ $$
 
 $$
 \left|\begin{array}{rrrrr}
--b & 0 & \cdots & 0 & b\\
-0 & -b & \cdots & 0 & b\\
-\vdots & \vdots & & \vdots & \vdots\\
-0 & 0 & \cdots & -b & b\\
-a_{1} & a_{2} & \cdots & a_{n-1} & a_{n}-b
+-b&0&\cdots&0&b\\
+0&-b&\cdots&0&b\\
+\vdots&\vdots&&\vdots&\vdots\\
+0&0&\cdots&-b&b\\
+a_{1}&a_{2}&\cdots&a_{n-1}&a_{n}-b
 \end{array}\right|.
 $$
 
 由**定理 2.4.1 (行列式按一行(列)展开)**, 按最后一列展开. 最后一列的元素为 $\left(b,b,\cdots,b,a_{n}-b\right)$.
 
-对于 $j< n$, 代数余子式 $A_{jn}=\left(-1\right)^{j+n}M_{jn}$, 其中 $M_{jn}$ 是去掉第 $j$ 行第 $n$ 列后的 $\left(n-1\right)$ 阶行列式. 该行列式中第 $j$ 行(原第 $j$ 行去掉第 $n$ 列后)只有第 $1$ 列为 $b_{j}$, 其余全为 $0$, 按此行展开后余子式为对角行列式, 可得 $M_{jn}=\left(-1\right)^{j-1}a_{j}\left(-b\right)^{n-2}$.
+对于 $j<{}n$, 代数余子式 $A_{jn}=\left(-1\right)^{j+n}M_{jn}$, 其中 $M_{jn}$ 是去掉第 $j$ 行第 $n$ 列后的 $\left(n-1\right)$ 阶行列式. 该行列式中第 $j$ 行(原第 $j$ 行去掉第 $n$ 列后)只有第 $1$ 列为 $b_{j}$, 其余全为 $0$, 按此行展开后余子式为对角行列式, 可得 $M_{jn}=\left(-1\right)^{j-1}a_{j}\left(-b\right)^{n-2}$.
 
 于是
 

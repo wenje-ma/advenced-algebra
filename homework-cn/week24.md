@@ -17,9 +17,9 @@
 > 设 $K$ 是一个数域, 用不属于 $K$ 的 $n$ 个符号 $x_{1},x_{2},\ldots,x_{n}$ 作表达式
 
 $$
-\sum_{i_{1},i_{2},\ldots,i_{n}}a_{i_{1}i_{2}\ldots i_{n}}x_{1}^{i_{1}}x_{2}^{i_{2}}\cdots x_{n}^{i_{n}},
+\sum_{i_{1},i_{2},\ldots,i_{n}}a_{i_{1}i_{2}\ldots{i}_{n}}x_{1}^{i_{1}}x_{2}^{i_{2}}\cdots{x}_{n}^{i_{n}},
 $$
-其中 $a_{i_{1}i_{2}\ldots i_{n}}\in K$, $i_{1},i_{2},\ldots,i_{n}$ 是非负整数. 只有有限多个单项式的系数不为 $0$. 这种表达式称为数域 $K$ 上的 $n$ 元多项式.
+其中 $a_{i_{1}i_{2}\ldots{i}_{n}}\in{K}$, $i_{1},i_{2},\ldots,i_{n}$ 是非负整数. 只有有限多个单项式的系数不为 $0$. 这种表达式称为数域 $K$ 上的 $n$ 元多项式.
 
 > **定理 7.9.1 (首项定理)**
 > 
@@ -35,21 +35,21 @@ $$
 \cdots\cdots
 $$
 $$
-\sigma_{n}=x_{1}x_{2}\cdots x_{n}.
+\sigma_{n}=x_{1}x_{2}\cdots{x}_{n}.
 $$
 $$
 S_{1}=\sigma_{1},
 $$
 $$
-S_{k}-\sigma_{1}S_{k-1}+\sigma_{2}S_{k-2}-\cdots+\left(-1\right)^{k-1}\sigma_{k-1}S_{1}+\left(-1\right)^{k}k\sigma_{k}=0,\quad 1\le k\le n,
+S_{k}-\sigma_{1}S_{k-1}+\sigma_{2}S_{k-2}-\cdots+\left(-1\right)^{k-1}\sigma_{k-1}S_{1}+\left(-1\right)^{k}k\sigma_{k}=0,\quad1\le{k}\le{n},
 $$
 $$
-S_{k}-\sigma_{1}S_{k-1}+\sigma_{2}S_{k-2}-\cdots+\left(-1\right)^{n}\sigma_{n}S_{k-n}=0,\quad k> n.
+S_{k}-\sigma_{1}S_{k-1}+\sigma_{2}S_{k-2}-\cdots+\left(-1\right)^{n}\sigma_{n}S_{k-n}=0,\quad{k}>{}n.
 $$
 
 > **定义 7.10.1 (对称多项式)**
 > 
-> 设 $f\left(x_{1},x_{2},\ldots,x_{n}\right)$ 是数域 $K$ 上的一个 $n$ 元多项式, 如果对于任意一个 $n$ 元排列 $j_{1}j_{2}\ldots j_{n}$, 都有
+> 设 $f\left(x_{1},x_{2},\ldots,x_{n}\right)$ 是数域 $K$ 上的一个 $n$ 元多项式, 如果对于任意一个 $n$ 元排列 $j_{1}j_{2}\ldots{j}_{n}$, 都有
 
 $$
 f\left(x_{j_{1}},x_{j_{2}},\ldots,x_{j_{n}}\right)=f\left(x_{1},x_{2},\ldots,x_{n}\right),
@@ -78,13 +78,13 @@ $$
 
 是奇数.
 
-假设 $f\left(x\right)$ 有有理根 $r=\frac{p}{q}$, 其中 $p,q$ 是互素的整数, $q> 0$.
+假设 $f\left(x\right)$ 有有理根 $r=\frac{p}{q}$, 其中 $p,q$ 是互素的整数, $q>0$.
 
 因为首项系数是 $1$, 所以 $q=1$, 即 $r$ 是整数.
 
-而且 $r\mid a_{0}$, 所以 $r$ 是奇数 (因为 $a_{0}$ 是奇数).
+而且 $r\mid{a}_{0}$, 所以 $r$ 是奇数 (因为 $a_{0}$ 是奇数).
 
-考虑 $f\left(r\right)\bmod 2$.
+考虑 $f\left(r\right)\bmod2$.
 
 因为 $r$ 是奇数, 所以 $r\equiv1\pmod2$.
 
@@ -116,13 +116,13 @@ $f\left(x\right)$ 是三次多项式. 三次多项式在有理数域上可约当
 
 因为首项系数是 $1$, 所以任何有理根都是整数根, 且整除常数项 $c$.
 
-假设 $f\left(x\right)$ 有有理根 $r$, 则 $r$ 是整数, 且 $r\mid c$.
+假设 $f\left(x\right)$ 有有理根 $r$, 则 $r$ 是整数, 且 $r\mid{c}$.
 
 因为 $\left(a+b\right)c$ 是奇数, 所以 $a+b$ 是奇数, $c$ 是奇数.
 
 因此 $r$ 是奇数.
 
-考虑 $f\left(r\right)\bmod 2$.
+考虑 $f\left(r\right)\bmod2$.
 
 因为 $r$ 是奇数, 所以 $r\equiv1\pmod2$.
 
@@ -146,7 +146,7 @@ $$
 
 ## 7.9-3
 
-设 $f,g\in K\left[x_{1},\ldots,x_{n}\right]$, 且 $g\ne0$. 证明: 如果对于使 $g\left(c_{1},\ldots,c_{n}\right)\ne0$ 的任意一组元素 $c_{1},\ldots,c_{n}\in K$, 都有 $f\left(c_{1},\ldots,c_{n}\right)=0$, 则 $f\left(x_{1},\ldots,x_{n}\right)=0$.
+设 $f,g\in{K}\left[x_{1},\ldots,x_{n}\right]$, 且 $g\ne0$. 证明: 如果对于使 $g\left(c_{1},\ldots,c_{n}\right)\ne0$ 的任意一组元素 $c_{1},\ldots,c_{n}\in{K}$, 都有 $f\left(c_{1},\ldots,c_{n}\right)=0$, 则 $f\left(x_{1},\ldots,x_{n}\right)=0$.
 
 ### 解答 7.9-3
 
@@ -173,17 +173,17 @@ $$
 其中
 
 $$
-u_{i}\left(x_{1},\ldots,x_{n-1}\right)\in K\left[x_{1},\ldots,x_{n-1}\right].
+u_{i}\left(x_{1},\ldots,x_{n-1}\right)\in{K}\left[x_{1},\ldots,x_{n-1}\right].
 $$
 
-由归纳假设, 存在 $c_{1},\ldots,c_{n-1}\in K$, 使得:
+由归纳假设, 存在 $c_{1},\ldots,c_{n-1}\in{K}$, 使得:
 
 1. $g\left(c_{1},\ldots,c_{n-1},x_{n}\right)$ 不是零多项式;
 2.
 
    $$
-   u_{0}\left(c_{1},\ldots,c_{n-1}\right),\ldots,u_{s}\left(c_{1},\ldots,c_{n-1}\right)
-   $$
+u_{0}\left(c_{1},\ldots,c_{n-1}\right),\ldots,u_{s}\left(c_{1},\ldots,c_{n-1}\right)
+$$
 
    不全为零 (如果 $f$ 不是零多项式的话).
 
@@ -213,7 +213,7 @@ $$
 
 ## 7.9-4(2)
 
-$f\in K\left[x_{1},\ldots,x_{n}\right]$ 称为不可约的, 如果 $f$ 的因式只有零次多项式以及 $f$ 的相伴元. 否则称为可约的. 证明: 在 $K\left[x,y\right]$ 中, 多项式 $x-y$ 是不可约的.
+$f\in{K}\left[x_{1},\ldots,x_{n}\right]$ 称为不可约的, 如果 $f$ 的因式只有零次多项式以及 $f$ 的相伴元. 否则称为可约的. 证明: 在 $K\left[x,y\right]$ 中, 多项式 $x-y$ 是不可约的.
 
 ### 解答 7.9-4(2)
 
@@ -227,12 +227,12 @@ $$
 
 左边 $x-y$ 的次数是 $1$.
 
-右边 $g\left(x,y\right)h\left(x,y\right)$ 的次数是 $\deg g+\deg h$.
+右边 $g\left(x,y\right)h\left(x,y\right)$ 的次数是 $\deg{g}+\deg{h}$.
 
-因为 $\deg g> 0$, $\deg h> 0$, 所以
+因为 $\deg{g}>0$, $\deg{h}>0$, 所以
 
 $$
-\deg g+\deg h\ge2.
+\deg{g}+\deg{h}\ge2.
 $$
 
 矛盾.
@@ -290,7 +290,7 @@ $$
 
 $S_{4}$.
 
-由牛顿公式 (因为 $n=3$, $k=4> n$):
+由牛顿公式 (因为 $n=3$, $k=4>{}n$):
 
 $$
 S_{4}-\sigma_{1}S_{3}+\sigma_{2}S_{2}-\sigma_{3}S_{1}=0.
@@ -313,7 +313,7 @@ $\blacksquare$
 
 ## 7.10-7
 
-设 $f\left(x\right)\in K\left[x\right]$, 并且 $f\left(x\right)$ 的首项系数为 $1$, $a\in K$, $g\left(x\right)=\left(x-a\right)f\left(x\right)$, 证明: $D\left(g\right)=D\left(f\right)f\left(a\right)^{2}$.
+设 $f\left(x\right)\in{K}\left[x\right]$, 并且 $f\left(x\right)$ 的首项系数为 $1$, $a\in{K}$, $g\left(x\right)=\left(x-a\right)f\left(x\right)$, 证明: $D\left(g\right)=D\left(f\right)f\left(a\right)^{2}$.
 
 ### 解答 7.10-7
 
@@ -336,18 +336,18 @@ $$
 判别式定义为:
 
 $$
-D\left(f\right)=\prod_{1\le i< j\le n}\left(r_{i}-r_{j}\right)^{2}.
+D\left(f\right)=\prod_{1\le{i}<{}j\le{n}}\left(r_{i}-r_{j}\right)^{2}.
 $$
 
 $$
-D\left(g\right)=\prod_{0\le i< j\le n}\left(s_{i}-s_{j}\right)^{2}.
+D\left(g\right)=\prod_{0\le{i}<{}j\le{n}}\left(s_{i}-s_{j}\right)^{2}.
 $$
 
 因此
 
 $$
 D\left(g\right)
-=\prod_{1\le i< j\le n}\left(r_{i}-r_{j}\right)^{2}\cdot\prod_{i=1}^{n}\left(a-r_{i}\right)^{2}=D\left(f\right)\cdot\prod_{i=1}^{n}\left(a-r_{i}\right)^{2}.
+=\prod_{1\le{i}<{}j\le{n}}\left(r_{i}-r_{j}\right)^{2}\cdot\prod_{i=1}^{n}\left(a-r_{i}\right)^{2}=D\left(f\right)\cdot\prod_{i=1}^{n}\left(a-r_{i}\right)^{2}.
 $$
 
 而
@@ -365,7 +365,7 @@ $$
 因此
 
 $$
-D\left(g\right)=D\left(f\right)\cdot f\left(a\right)^{2}.
+D\left(g\right)=D\left(f\right)\cdot{f}\left(a\right)^{2}.
 $$
 
 $\blacksquare$

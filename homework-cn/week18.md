@@ -2,7 +2,7 @@
 
 > **定义 5.5.1 (特征值与特征向量)**
 > 
-> 设 $A$ 是数域 $K$ 上的 $n$ 级矩阵, 如果 $K^{n}$ 中有非零列向量 $\alpha$, 使得 $A\alpha=\lambda_{0}\alpha$, 且 $\lambda_{0}\in K$, 则称 $\lambda_{0}$ 是 $A$ 的一个特征值, 称 $\alpha$ 是 $A$ 的属于特征值 $\lambda_{0}$ 的一个特征向量.
+> 设 $A$ 是数域 $K$ 上的 $n$ 级矩阵, 如果 $K^{n}$ 中有非零列向量 $\alpha$, 使得 $A\alpha=\lambda_{0}\alpha$, 且 $\lambda_{0}\in{K}$, 则称 $\lambda_{0}$ 是 $A$ 的一个特征值, 称 $\alpha$ 是 $A$ 的属于特征值 $\lambda_{0}$ 的一个特征向量.
 
 > **定理 5.6.1 (可对角化的充要条件)**
 > 
@@ -18,9 +18,9 @@
 
 $$
 P=\left[\begin{array}{ccc}
-0 & 1 & 0\\
-0 & 0 & 1\\
-1 & 0 & 0
+0&1&0\\
+0&0&1\\
+1&0&0
 \end{array}\right].
 $$
 
@@ -29,31 +29,31 @@ $$
 求特征多项式:
 
 $$
-\left|\lambda I-P\right|=\left|\begin{array}{rrr}
-\lambda & -1 & 0\\
-0 & \lambda & -1\\
--1 & 0 & \lambda
+\left|\lambda{I}-P\right|=\left|\begin{array}{rrr}
+\lambda&-1&0\\
+0&\lambda&-1\\
+-1&0&\lambda
 \end{array}\right|=\lambda^{3}-1.
 $$
 
 因此特征值为 $\lambda_{1}=1$, $\lambda_{2}=\omega$, $\lambda_{3}=\omega^{2}$, 其中
 
 $$
-\omega=e^{2\pi i/3}=-\frac{1}{2}+\frac{\sqrt{3}}{2}i.
+\omega=e^{2\pi{i}/3}=-\frac{1}{2}+\frac{\sqrt{3}}{2}i.
 $$
 
 求 $\lambda=1$ 的特征向量.
 
 $$
 I-P=\left[\begin{array}{rrr}
-1 & -1 & 0\\
-0 & 1 & -1\\
--1 & 0 & 1
+1&-1&0\\
+0&1&-1\\
+-1&0&1
 \end{array}\right]\rightarrow
 \left[\begin{array}{rrr}
-1 & -1 & 0\\
-0 & 1 & -1\\
-0 & 0 & 0
+1&-1&0\\
+0&1&-1\\
+0&0&0
 \end{array}\right].
 $$
 
@@ -63,9 +63,9 @@ $$
 
 求 $\lambda=\omega$ 的特征向量.
 
-由第 $1$ 行: $\omega x_{1}-x_{2}=0$, 即 $x_{2}=\omega x_{1}$.
+由第 $1$ 行: $\omega{x}_{1}-x_{2}=0$, 即 $x_{2}=\omega{x}_{1}$.
 
-由第 $2$ 行: $\omega x_{2}-x_{3}=0$, 即 $x_{3}=\omega x_{2}=\omega^{2}x_{1}$.
+由第 $2$ 行: $\omega{x}_{2}-x_{3}=0$, 即 $x_{3}=\omega{x}_{2}=\omega^{2}x_{1}$.
 
 基础解系: $\alpha_{2}=\left(1,\omega,\omega^{2}\right)^{\top}$.
 
@@ -77,7 +77,7 @@ $\blacksquare$
 
 ## 5.5-13
 
-设 $A,B$ 分别是数域 $K$ 上 $s\times n$, $n\times s$ 矩阵, 证明: $AB$ 与 $BA$ 有相同的非零特征值.
+设 $A,B$ 分别是数域 $K$ 上 $s\times{n}$, $n\times{s}$ 矩阵, 证明: $AB$ 与 $BA$ 有相同的非零特征值.
 
 ### 解答 5.5-13
 
@@ -127,7 +127,7 @@ $$
 
 由**定理 5.6.1 (可对角化的充要条件)**, 数域 $K$ 上 $n$ 级矩阵 $A$ 可对角化的充分必要条件是 $A$ 有 $n$ 个线性无关的特征向量.
 
-**习题 5.5 第 1 题(1)**: $A=\left[\begin{array}{rrr}2 & 2 & -2\\2 & 5 & -4\\-2 & -4 & 5\end{array}\right]$.
+**习题 5.5 第 1 题(1)**: $A=\left[\begin{array}{rrr}2&2&-2\\2&5&-4\\-2&-4&5\end{array}\right]$.
 
 特征值: $\lambda_{1}=1$, $\lambda_{2}=\lambda_{3}=10$.
 
@@ -135,14 +135,14 @@ $$
 
 $$
 10I-A=\left[\begin{array}{rrr}
-8 & -2 & 2\\
--2 & 5 & 4\\
-2 & 4 & 5
+8&-2&2\\
+-2&5&4\\
+2&4&5
 \end{array}\right]\rightarrow
 \left[\begin{array}{rrr}
-2 & 4 & 5\\
-0 & 9 & 9\\
-0 & 0 & 0
+2&4&5\\
+0&9&9\\
+0&0&0
 \end{array}\right].
 $$
 
@@ -154,14 +154,14 @@ $$
 
 $$
 I-A=\left[\begin{array}{rrr}
--1 & -2 & 2\\
--2 & -4 & 4\\
-2 & 4 & -4
+-1&-2&2\\
+-2&-4&4\\
+2&4&-4
 \end{array}\right]\rightarrow
 \left[\begin{array}{rrr}
-1 & 2 & -2\\
-0 & 0 & 0\\
-0 & 0 & 0
+1&2&-2\\
+0&0&0\\
+0&0&0
 \end{array}\right].
 $$
 
@@ -173,50 +173,50 @@ $$
 
 $$
 P=\left[\begin{array}{rrr}
-1 & -2 & 2\\
--2 & 1 & 0\\
-2 & 0 & 1
+1&-2&2\\
+-2&1&0\\
+2&0&1
 \end{array}\right],
 P^{-1}AP=\left[\begin{array}{rrr}
-10 & 0 & 0\\
-0 & 1 & 0\\
-0 & 0 & 1
+10&0&0\\
+0&1&0\\
+0&0&1
 \end{array}\right].
 $$
 
-**习题 5.5 第 1 题(2)**: $A=\left[\begin{array}{rrr}2 & 3 & 2\\1 & 8 & 2\\-2 & -14 & -3\end{array}\right]$.
+**习题 5.5 第 1 题(2)**: $A=\left[\begin{array}{rrr}2&3&2\\1&8&2\\-2&-14&-3\end{array}\right]$.
 
 特征值: $\lambda_{1}=1$, $\lambda_{2}=\lambda_{3}=3$.
 
 $\lambda=3$ 的特征子空间维数为 $1$ (几何重数), 而代数重数为 $2$.
 
-几何重数 $< $ 代数重数, 故 $A$ 不可对角化.
+几何重数 $<$ 代数重数, 故 $A$ 不可对角化.
 
-**习题 5.5 第 1 题(3)**: $A=\left[\begin{array}{rrr}6 & 2 & 4\\2 & 3 & 2\\4 & 2 & 6\end{array}\right]$.
+**习题 5.5 第 1 题(3)**: $A=\left[\begin{array}{rrr}6&2&4\\2&3&2\\4&2&6\end{array}\right]$.
 
 特征值: $\lambda_{1}=2$, $\lambda_{2}=11$.
 
 有两个不同的特征值, 且 $3$ 级矩阵有 $3$ 个线性无关的特征向量, 故可对角化.
 
-**习题 5.5 第 1 题(4)**: $A=\left[\begin{array}{rrr}2 & -1 & 2\\5 & -3 & 3\\-1 & 0 & -2\end{array}\right]$.
+**习题 5.5 第 1 题(4)**: $A=\left[\begin{array}{rrr}2&-1&2\\5&-3&3\\-1&0&-2\end{array}\right]$.
 
 特征值: $\lambda=-1$ (三重根).
 
-几何重数 $< 3$, 故不可对角化.
+几何重数 $<3$, 故不可对角化.
 
-**习题 5.5 第 1 题(5)**: $A=\left[\begin{array}{rrr}0 & 1/2 & 1/2\\1 & -1/2 & 1/2\\1 & -1/2 & 1/2\end{array}\right]$.
+**习题 5.5 第 1 题(5)**: $A=\left[\begin{array}{rrr}0&1/2&1/2\\1&-1/2&1/2\\1&-1/2&1/2\end{array}\right]$.
 
 特征值: $\lambda_{1}=0$, $\lambda_{2}=1$, $\lambda_{3}=-1$.
 
 三个不同的特征值, 故可对角化.
 
-**习题 5.5 第 2 题(1)**: $A=\left[\begin{array}{rr}1 & -\sqrt{3}\\\sqrt{3} & 1\end{array}\right]$.
+**习题 5.5 第 2 题(1)**: $A=\left[\begin{array}{rr}1&-\sqrt{3}\\\sqrt{3}&1\end{array}\right]$.
 
 看成实数域上的矩阵, 没有实特征值, 故不可对角化.
 
 看成复数域上的矩阵, 有两个不同的特征值, 故可对角化.
 
-**习题 5.5 第 2 题(2)**: $A=\left[\begin{array}{rrr}3 & 7 & -3\\-2 & -5 & 2\\-4 & -10 & 3\end{array}\right]$.
+**习题 5.5 第 2 题(2)**: $A=\left[\begin{array}{rrr}3&7&-3\\-2&-5&2\\-4&-10&3\end{array}\right]$.
 
 看成实数域上的矩阵, 只有 $1$ 个实特征值, 故不可对角化.
 
@@ -290,10 +290,10 @@ $$
 
 证明 $A$ 可对角化.
 
-$\ker\left(A\right)=\left\{x\mid Ax=0\right\}$ 是属于特征值 $0$ 的特征子空间.
+$\ker\left(A\right)=\left\{x\mid{A}x=0\right\}$ 是属于特征值 $0$ 的特征子空间.
 
 $$
-\ker\left(I-A\right)=\left\{x\mid \left(I-A\right)x=0\right\}=\left\{x\mid Ax=x\right\}
+\ker\left(I-A\right)=\left\{x\mid\left(I-A\right)x=0\right\}=\left\{x\mid{A}x=x\right\}
 $$
 
 是属于特征值 $1$ 的特征子空间.
@@ -304,7 +304,7 @@ $$
 K^{n}=\ker\left(A\right)\oplus\ker\left(I-A\right).
 $$
 
-对任意 $x\in K^{n}$,
+对任意 $x\in{K}^{n}$,
 
 $$
 x=Ax+\left(I-A\right)x.
@@ -329,7 +329,7 @@ $$
 又因为
 
 $$
-\ker\left(A\right)\cap\ker\left(I-A\right)=\left\{0\right\}\ \left(\text{若 }Ax=0\text{ 且 }Ax=x\text{, 则 }x=0\right).
+\ker\left(A\right)\cap\ker\left(I-A\right)=\left\{0\right\}\,\left(\text{若~}Ax=0\text{~且~}Ax=x\text{,~则~}x=0\right).
 $$
 
 故

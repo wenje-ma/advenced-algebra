@@ -2,15 +2,15 @@
 
 > **Definition 5.5.1 (Eigenvalue and Eigenvector)**
 > 
-> Let $A$ be an $n\times n$ matrix over a number field $K$. If there is a nonzero column vector $\alpha$ in $K^{n}$ such that $A\alpha=\lambda_{0}\alpha$ with $\lambda_{0}\in K$, then $\lambda_{0}$ is called an eigenvalue of $A$, and $\alpha$ is called an eigenvector of $A$ belonging to the eigenvalue $\lambda_{0}$.
+> Let $A$ be an $n\times{n}$ matrix over a number field $K$. If there is a nonzero column vector $\alpha$ in $K^{n}$ such that $A\alpha=\lambda_{0}\alpha$ with $\lambda_{0}\in{K}$, then $\lambda_{0}$ is called an eigenvalue of $A$, and $\alpha$ is called an eigenvector of $A$ belonging to the eigenvalue $\lambda_{0}$.
 
 > **Theorem 5.6.1 (Necessary and Sufficient Condition for Diagonalizability)**
 > 
-> An $n\times n$ matrix $A$ over a number field $K$ is diagonalizable if and only if $A$ has $n$ linearly independent eigenvectors.
+> An $n\times{n}$ matrix $A$ over a number field $K$ is diagonalizable if and only if $A$ has $n$ linearly independent eigenvectors.
 
 > **Corollary 5.6.6 (Distinct Eigenvalues Imply Diagonalizability)**
 > 
-> If an $n\times n$ matrix $A$ over a number field $K$ has $n$ distinct eigenvalues, then $A$ is diagonalizable.
+> If an $n\times{n}$ matrix $A$ over a number field $K$ has $n$ distinct eigenvalues, then $A$ is diagonalizable.
 
 ## 5.5-12(1)
 
@@ -18,9 +18,9 @@ Find all eigenvalues and eigenvectors of the following matrix over the complex n
 
 $$
 P=\left[\begin{array}{ccc}
-0 & 1 & 0\\
-0 & 0 & 1\\
-1 & 0 & 0
+0&1&0\\
+0&0&1\\
+1&0&0
 \end{array}\right].
 $$
 
@@ -29,31 +29,31 @@ $$
 Compute the characteristic polynomial:
 
 $$
-\left|\lambda I-P\right|=\left|\begin{array}{rrr}
-\lambda & -1 & 0\\
-0 & \lambda & -1\\
--1 & 0 & \lambda
+\left|\lambda{I}-P\right|=\left|\begin{array}{rrr}
+\lambda&-1&0\\
+0&\lambda&-1\\
+-1&0&\lambda
 \end{array}\right|=\lambda^{3}-1.
 $$
 
 Thus the eigenvalues are $\lambda_{1}=1$, $\lambda_{2}=\omega$ and $\lambda_{3}=\omega^{2}$, where
 
 $$
-\omega=e^{2\pi i/3}=-\frac{1}{2}+\frac{\sqrt{3}}{2}i.
+\omega=e^{2\pi{i}/3}=-\frac{1}{2}+\frac{\sqrt{3}}{2}i.
 $$
 
 Find the eigenvectors for $\lambda=1$.
 
 $$
 I-P=\left[\begin{array}{rrr}
-1 & -1 & 0\\
-0 & 1 & -1\\
--1 & 0 & 1
+1&-1&0\\
+0&1&-1\\
+-1&0&1
 \end{array}\right]\rightarrow
 \left[\begin{array}{rrr}
-1 & -1 & 0\\
-0 & 1 & -1\\
-0 & 0 & 0
+1&-1&0\\
+0&1&-1\\
+0&0&0
 \end{array}\right].
 $$
 
@@ -63,9 +63,9 @@ A fundamental solution system: $\alpha_{1}=\left(1,1,1\right)^{\top}$.
 
 Find the eigenvectors for $\lambda=\omega$.
 
-From the first row: $\omega x_{1}-x_{2}=0$, i.e. $x_{2}=\omega x_{1}$.
+From the first row: $\omega{x}_{1}-x_{2}=0$, i.e. $x_{2}=\omega{x}_{1}$.
 
-From the second row: $\omega x_{2}-x_{3}=0$, i.e. $x_{3}=\omega x_{2}=\omega^{2}x_{1}$.
+From the second row: $\omega{x}_{2}-x_{3}=0$, i.e. $x_{3}=\omega{x}_{2}=\omega^{2}x_{1}$.
 
 A fundamental solution system: $\alpha_{2}=\left(1,\omega,\omega^{2}\right)^{\top}$.
 
@@ -77,7 +77,7 @@ $\blacksquare$
 
 ## 5.5-13
 
-Let $A,B$ be $s\times n$ and $n\times s$ matrices over a number field $K$, respectively. Prove: $AB$ and $BA$ have the same nonzero eigenvalues.
+Let $A,B$ be $s\times{n}$ and $n\times{s}$ matrices over a number field $K$, respectively. Prove: $AB$ and $BA$ have the same nonzero eigenvalues.
 
 ### Solution to 5.5-13
 
@@ -125,9 +125,9 @@ Among the matrices in Exercises 5.5, problems 1 and 2, which are diagonalizable 
 
 ### Solution to 5.6-1
 
-By **Theorem 5.6.1 (Necessary and Sufficient Condition for Diagonalizability)**, an $n\times n$ matrix $A$ over a number field $K$ is diagonalizable if and only if $A$ has $n$ linearly independent eigenvectors.
+By **Theorem 5.6.1 (Necessary and Sufficient Condition for Diagonalizability)**, an $n\times{n}$ matrix $A$ over a number field $K$ is diagonalizable if and only if $A$ has $n$ linearly independent eigenvectors.
 
-**Exercise 5.5, problem 1(1)**: $A=\left[\begin{array}{rrr}2 & 2 & -2\\2 & 5 & -4\\-2 & -4 & 5\end{array}\right]$.
+**Exercise 5.5, problem 1(1)**: $A=\left[\begin{array}{rrr}2&2&-2\\2&5&-4\\-2&-4&5\end{array}\right]$.
 
 Eigenvalues: $\lambda_{1}=1$, $\lambda_{2}=\lambda_{3}=10$.
 
@@ -135,14 +135,14 @@ Find the eigenvectors for $\lambda=10$:
 
 $$
 10I-A=\left[\begin{array}{rrr}
-8 & -2 & 2\\
--2 & 5 & 4\\
-2 & 4 & 5
+8&-2&2\\
+-2&5&4\\
+2&4&5
 \end{array}\right]\rightarrow
 \left[\begin{array}{rrr}
-2 & 4 & 5\\
-0 & 9 & 9\\
-0 & 0 & 0
+2&4&5\\
+0&9&9\\
+0&0&0
 \end{array}\right].
 $$
 
@@ -154,14 +154,14 @@ Eigenvectors for the eigenvalue $\lambda=1$:
 
 $$
 I-A=\left[\begin{array}{rrr}
--1 & -2 & 2\\
--2 & -4 & 4\\
-2 & 4 & -4
+-1&-2&2\\
+-2&-4&4\\
+2&4&-4
 \end{array}\right]\rightarrow
 \left[\begin{array}{rrr}
-1 & 2 & -2\\
-0 & 0 & 0\\
-0 & 0 & 0
+1&2&-2\\
+0&0&0\\
+0&0&0
 \end{array}\right].
 $$
 
@@ -173,50 +173,50 @@ The three eigenvectors are linearly independent, so $A$ is diagonalizable.
 
 $$
 P=\left[\begin{array}{rrr}
-1 & -2 & 2\\
--2 & 1 & 0\\
-2 & 0 & 1
+1&-2&2\\
+-2&1&0\\
+2&0&1
 \end{array}\right],
 P^{-1}AP=\left[\begin{array}{rrr}
-10 & 0 & 0\\
-0 & 1 & 0\\
-0 & 0 & 1
+10&0&0\\
+0&1&0\\
+0&0&1
 \end{array}\right].
 $$
 
-**Exercise 5.5, problem 1(2)**: $A=\left[\begin{array}{rrr}2 & 3 & 2\\1 & 8 & 2\\-2 & -14 & -3\end{array}\right]$.
+**Exercise 5.5, problem 1(2)**: $A=\left[\begin{array}{rrr}2&3&2\\1&8&2\\-2&-14&-3\end{array}\right]$.
 
 Eigenvalues: $\lambda_{1}=1$, $\lambda_{2}=\lambda_{3}=3$.
 
 The eigenspace for $\lambda=3$ has dimension $1$ (geometric multiplicity), while the algebraic multiplicity is $2$.
 
-Geometric multiplicity $< $ algebraic multiplicity, so $A$ is not diagonalizable.
+Geometric multiplicity $<$ algebraic multiplicity, so $A$ is not diagonalizable.
 
-**Exercise 5.5, problem 1(3)**: $A=\left[\begin{array}{rrr}6 & 2 & 4\\2 & 3 & 2\\4 & 2 & 6\end{array}\right]$.
+**Exercise 5.5, problem 1(3)**: $A=\left[\begin{array}{rrr}6&2&4\\2&3&2\\4&2&6\end{array}\right]$.
 
 Eigenvalues: $\lambda_{1}=2$, $\lambda_{2}=11$.
 
-There are two distinct eigenvalues, and the $3\times 3$ matrix has $3$ linearly independent eigenvectors, so it is diagonalizable.
+There are two distinct eigenvalues, and the $3\times3$ matrix has $3$ linearly independent eigenvectors, so it is diagonalizable.
 
-**Exercise 5.5, problem 1(4)**: $A=\left[\begin{array}{rrr}2 & -1 & 2\\5 & -3 & 3\\-1 & 0 & -2\end{array}\right]$.
+**Exercise 5.5, problem 1(4)**: $A=\left[\begin{array}{rrr}2&-1&2\\5&-3&3\\-1&0&-2\end{array}\right]$.
 
 Eigenvalue: $\lambda=-1$ (triple root).
 
-Geometric multiplicity $< 3$, so it is not diagonalizable.
+Geometric multiplicity $<3$, so it is not diagonalizable.
 
-**Exercise 5.5, problem 1(5)**: $A=\left[\begin{array}{rrr}0 & 1/2 & 1/2\\1 & -1/2 & 1/2\\1 & -1/2 & 1/2\end{array}\right]$.
+**Exercise 5.5, problem 1(5)**: $A=\left[\begin{array}{rrr}0&1/2&1/2\\1&-1/2&1/2\\1&-1/2&1/2\end{array}\right]$.
 
 Eigenvalues: $\lambda_{1}=0$, $\lambda_{2}=1$, $\lambda_{3}=-1$.
 
 Three distinct eigenvalues, so it is diagonalizable.
 
-**Exercise 5.5, problem 2(1)**: $A=\left[\begin{array}{rr}1 & -\sqrt{3}\\\sqrt{3} & 1\end{array}\right]$.
+**Exercise 5.5, problem 2(1)**: $A=\left[\begin{array}{rr}1&-\sqrt{3}\\\sqrt{3}&1\end{array}\right]$.
 
 Regarded as a real matrix, it has no real eigenvalue, so it is not diagonalizable.
 
 Regarded as a complex matrix, it has two distinct eigenvalues, so it is diagonalizable.
 
-**Exercise 5.5, problem 2(2)**: $A=\left[\begin{array}{rrr}3 & 7 & -3\\-2 & -5 & 2\\-4 & -10 & 3\end{array}\right]$.
+**Exercise 5.5, problem 2(2)**: $A=\left[\begin{array}{rrr}3&7&-3\\-2&-5&2\\-4&-10&3\end{array}\right]$.
 
 Regarded as a real matrix, it has only $1$ real eigenvalue, so it is not diagonalizable.
 
@@ -226,7 +226,7 @@ All these judgments rest on whether the matrix has $n$ linearly independent eige
 
 ## 5.6-5
 
-Let $A$ be an $n\times n$ matrix over a number field $K$. Prove: if every nonzero column vector in $K^{n}$ is an eigenvector of $A$, then $A$ must be a scalar matrix.
+Let $A$ be an $n\times{n}$ matrix over a number field $K$. Prove: if every nonzero column vector in $K^{n}$ is an eigenvector of $A$, then $A$ must be a scalar matrix.
 
 ### Solution to 5.6-5
 
@@ -282,7 +282,7 @@ Hence the assumption fails, and $A$ is a scalar matrix. $\blacksquare$
 
 ## 5.6-7
 
-Prove: an $n\times n$ idempotent matrix $A$ over a number field $K$ is always diagonalizable, and its canonical form under similarity is $\operatorname{diag}\left\{I_{r},0\right\}$, where $r=\operatorname{rank}\left(A\right)$.
+Prove: an $n\times{n}$ idempotent matrix $A$ over a number field $K$ is always diagonalizable, and its canonical form under similarity is $\operatorname{diag}\left\{I_{r},0\right\}$, where $r=\operatorname{rank}\left(A\right)$.
 
 ### Solution to 5.6-7
 
@@ -290,10 +290,10 @@ Since $A^{2}=A$, the eigenvalues of $A$ can only be $0$ or $1$.
 
 Prove that $A$ is diagonalizable.
 
-$\ker\left(A\right)=\left\{x\mid Ax=0\right\}$ is the eigenspace belonging to the eigenvalue $0$.
+$\ker\left(A\right)=\left\{x\mid{A}x=0\right\}$ is the eigenspace belonging to the eigenvalue $0$.
 
 $$
-\ker\left(I-A\right)=\left\{x\mid \left(I-A\right)x=0\right\}=\left\{x\mid Ax=x\right\}
+\ker\left(I-A\right)=\left\{x\mid\left(I-A\right)x=0\right\}=\left\{x\mid{A}x=x\right\}
 $$
 
 is the eigenspace belonging to the eigenvalue $1$.
@@ -304,7 +304,7 @@ $$
 K^{n}=\ker\left(A\right)\oplus\ker\left(I-A\right).
 $$
 
-For any $x\in K^{n}$,
+For any $x\in{K}^{n}$,
 
 $$
 x=Ax+\left(I-A\right)x.
@@ -329,7 +329,7 @@ $$
 Moreover,
 
 $$
-\ker\left(A\right)\cap\ker\left(I-A\right)=\left\{0\right\}\ \left(\text{if }Ax=0\text{ and }Ax=x\text{, then }x=0\right).
+\ker\left(A\right)\cap\ker\left(I-A\right)=\left\{0\right\}\,\left(\text{if~}Ax=0\text{~and~}Ax=x\text{,~then~}x=0\right).
 $$
 
 Hence

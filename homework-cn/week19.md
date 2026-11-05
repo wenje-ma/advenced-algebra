@@ -40,7 +40,7 @@ $$
 
 ## 5.6-10
 
-设 $A=\left(a_{ij}\right)$ 是数域 $K$ 上一个 $n$ 级上三角矩阵, 证明: 如果 $a_{11}=a_{22}=\cdots=a_{nn}$, 并且至少有一个 $a_{kl}\ne0$ ( $k< l$ ), 则 $A$ 一定不能对角化.
+设 $A=\left(a_{ij}\right)$ 是数域 $K$ 上一个 $n$ 级上三角矩阵, 证明: 如果 $a_{11}=a_{22}=\cdots=a_{nn}$, 并且至少有一个 $a_{kl}\ne0$ ( $k<{}l$ ), 则 $A$ 一定不能对角化.
 
 ### 解答 5.6-10
 
@@ -58,24 +58,24 @@ $$
 
 $$
 \lambda_{0}I-A=\left[\begin{array}{cccc}
-0 & -a_{12} & \cdots & -a_{1n}\\
-0 & 0 & \cdots & -a_{2n}\\
-\vdots & \vdots & \ddots & \vdots\\
-0 & 0 & \cdots & 0
+0&-a_{12}&\cdots&-a_{1n}\\
+0&0&\cdots&-a_{2n}\\
+\vdots&\vdots&\ddots&\vdots\\
+0&0&\cdots&0
 \end{array}\right].
 $$
 
-因为至少有一个 $a_{kl}\ne0$ ( $k< l$ ), 故 $\lambda_{0}I-A$ 不是零矩阵.
+因为至少有一个 $a_{kl}\ne0$ ( $k<{}l$ ), 故 $\lambda_{0}I-A$ 不是零矩阵.
 
 因此 $\operatorname{rank}\left(\lambda_{0}I-A\right)\ge1$.
 
 故特征子空间的维数为
 
 $$
-n-\operatorname{rank}\left(\lambda_{0}I-A\right)\le n-1.
+n-\operatorname{rank}\left(\lambda_{0}I-A\right)\le{n}-1.
 $$
 
-即几何重数 $\le n-1< n=$ 代数重数.
+即几何重数 $\le{n}-1<{}n=$ 代数重数.
 
 因此 $A$ 不能对角化. $\blacksquare$
 
@@ -85,9 +85,9 @@ $$
 
 $$
 A=\left[\begin{array}{rrr}
-0 & -2 & 2\\
--2 & -3 & 4\\
-2 & 4 & -3
+0&-2&2\\
+-2&-3&4\\
+2&4&-3
 \end{array}\right].
 $$
 
@@ -96,10 +96,10 @@ $$
 由**定理 5.7.3 (实对称矩阵可正交对角化)**, 一定存在正交矩阵 $T$, 使 $T^{\top}AT$ 为对角矩阵. 求特征多项式:
 
 $$
-\left|\lambda I-A\right|=\left|\begin{array}{rrr}
-\lambda & 2 & -2\\
-2 & \lambda+3 & -4\\
--2 & -4 & \lambda+3
+\left|\lambda{I}-A\right|=\left|\begin{array}{rrr}
+\lambda&2&-2\\
+2&\lambda+3&-4\\
+-2&-4&\lambda+3
 \end{array}\right|=\left(\lambda-1\right)^{2}\left(\lambda+8\right).
 $$
 
@@ -109,14 +109,14 @@ $$
 
 $$
 I-A=\left[\begin{array}{rrr}
-1 & 2 & -2\\
-2 & 4 & -4\\
--2 & -4 & 4
+1&2&-2\\
+2&4&-4\\
+-2&-4&4
 \end{array}\right]\rightarrow
 \left[\begin{array}{rrr}
-1 & 2 & -2\\
-0 & 0 & 0\\
-0 & 0 & 0
+1&2&-2\\
+0&0&0\\
+0&0&0
 \end{array}\right].
 $$
 
@@ -148,14 +148,14 @@ $$
 
 $$
 -8I-A=\left[\begin{array}{rrr}
--8 & 2 & -2\\
-2 & -5 & -4\\
--2 & -4 & -5
+-8&2&-2\\
+2&-5&-4\\
+-2&-4&-5
 \end{array}\right]\rightarrow
 \left[\begin{array}{rrr}
-1 & 0 & 1/2\\
-0 & 1 & 1\\
-0 & 0 & 0
+1&0&1/2\\
+0&1&1\\
+0&0&0
 \end{array}\right].
 $$
 
@@ -171,9 +171,9 @@ $$
 
 $$
 T=\left[\begin{array}{ccc}
--2/\sqrt{5} & 2/\left(3\sqrt{5}\right) & -1/\sqrt{21}\\
-1/\sqrt{5} & 4/\left(3\sqrt{5}\right) & 2/\sqrt{21}\\
-0 & \sqrt{5}/3 & -4/\sqrt{21}
+-2/\sqrt{5}&2/\left(3\sqrt{5}\right)&-1/\sqrt{21}\\
+1/\sqrt{5}&4/\left(3\sqrt{5}\right)&2/\sqrt{21}\\
+0&\sqrt{5}/3&-4/\sqrt{21}
 \end{array}\right].
 $$
 
@@ -191,9 +191,9 @@ $\blacksquare$
 
 $$
 A=\left[\begin{array}{rrr}
-3 & -2 & 0\\
--2 & 2 & -2\\
-0 & -2 & 1
+3&-2&0\\
+-2&2&-2\\
+0&-2&1
 \end{array}\right].
 $$
 
@@ -202,10 +202,10 @@ $$
 求特征多项式:
 
 $$
-\left|\lambda I-A\right|=\left|\begin{array}{rrr}
-\lambda-3 & 2 & 0\\
-2 & \lambda-2 & 2\\
-0 & 2 & \lambda-1
+\left|\lambda{I}-A\right|=\left|\begin{array}{rrr}
+\lambda-3&2&0\\
+2&\lambda-2&2\\
+0&2&\lambda-1
 \end{array}\right|=\left(\lambda+1\right)\left(\lambda-2\right)\left(\lambda-5\right).
 $$
 
@@ -243,9 +243,9 @@ $$
 
 $$
 T=\left[\begin{array}{rrr}
-1/3 & 2/3 & -2/3\\
-2/3 & 1/3 & 2/3\\
-2/3 & -2/3 & -1/3
+1/3&2/3&-2/3\\
+2/3&1/3&2/3\\
+2/3&-2/3&-1/3
 \end{array}\right].
 $$
 
@@ -276,7 +276,7 @@ $\blacksquare$
 因此
 
 $$
-A\sim D_{A}=D_{B}\sim B.
+A\sim{D}_{A}=D_{B}\sim{B}.
 $$
 
 所以 $A$ 与 $B$ 相似. $\blacksquare$
@@ -356,9 +356,9 @@ $$
 
 $$
 C=\left[\begin{array}{rrr}
-1 & -1 & 2\\
-0 & 1 & -1\\
-0 & 0 & 1
+1&-1&2\\
+0&1&-1\\
+0&0&1
 \end{array}\right].
 $$
 

@@ -215,14 +215,14 @@ $$
 c_{ij}=\sum_{k=1}^{n}a_{ik}b_{kj}.
 $$
 
-**Lower triangularity.** When $i< j$:
+Lower triangularity. When $i< j$:
 
 - if $k\le i< j$, then $k< j$, so $b_{kj}=0$;
 - if $k> i$, then $a_{ik}=0$.
 
 Hence every term is $0$, so $c_{ij}=0$ (when $i< j$). By **Definition 4.2.2 (Upper/Lower Triangular Matrix)**, $C$ is therefore a lower triangular matrix.
 
-**Diagonal entries.** When $i=j$:
+Diagonal entries. When $i=j$:
 
 - if $k< i$, then $b_{ki}=0$;
 - if $k> i$, then $a_{ik}=0$.
@@ -302,7 +302,7 @@ $$
 
 By **Definition 4.2.6 (Skew-Symmetric Matrix)**, $K$ is therefore skew-symmetric.
 
-**Uniqueness.** Suppose $A=S_{1}+K_{1}=S_{2}+K_{2}$, where $S_{1},S_{2}$ are symmetric and $K_{1},K_{2}$ are skew-symmetric.
+Uniqueness. Suppose $A=S_{1}+K_{1}=S_{2}+K_{2}$, where $S_{1},S_{2}$ are symmetric and $K_{1},K_{2}$ are skew-symmetric.
 
 Then $S_{1}-S_{2}=K_{2}-K_{1}$.
 

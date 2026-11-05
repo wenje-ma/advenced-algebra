@@ -42,7 +42,7 @@ $$
 \omega=e^{2\pi i/3}=-\frac{1}{2}+\frac{\sqrt{3}}{2}i.
 $$
 
-**求 $\lambda=1$ 的特征向量**.
+求 $\lambda=1$ 的特征向量.
 
 $$
 I-P=\left[\begin{array}{rrr}
@@ -61,7 +61,7 @@ $$
 
 基础解系: $\alpha_{1}=\left(1,1,1\right)^{\top}$.
 
-**求 $\lambda=\omega$ 的特征向量**.
+求 $\lambda=\omega$ 的特征向量.
 
 由第 $1$ 行: $\omega x_{1}-x_{2}=0$, 即 $x_{2}=\omega x_{1}$.
 
@@ -69,7 +69,7 @@ $$
 
 基础解系: $\alpha_{2}=\left(1,\omega,\omega^{2}\right)^{\top}$.
 
-**求 $\lambda=\omega^{2}$ 的特征向量**.
+求 $\lambda=\omega^{2}$ 的特征向量.
 
 同理, 基础解系: $\alpha_{3}=\left(1,\omega^{2},\omega\right)^{\top}$.
 
@@ -95,7 +95,7 @@ $$
 BA\beta=BA\left(B\alpha\right)=B\left(AB\alpha\right)=B\left(\lambda\alpha\right)=\lambda\left(B\alpha\right)=\lambda\beta.
 $$
 
-**证明 $\beta\ne0$**.
+证明 $\beta\ne0$.
 
 如果 $\beta=0$, 则 $B\alpha=0$.
 
@@ -288,7 +288,7 @@ $$
 
 因为 $A^{2}=A$, 故 $A$ 的特征值只能是 $0$ 或 $1$.
 
-**证明 $A$ 可对角化**.
+证明 $A$ 可对角化.
 
 $\ker\left(A\right)=\left\{x\mid Ax=0\right\}$ 是属于特征值 $0$ 的特征子空间.
 
@@ -340,7 +340,7 @@ $$
 
 因此 $A$ 有 $n$ 个线性无关的特征向量, 即可对角化.
 
-**求相似标准形**.
+求相似标准形.
 
 $$
 \dim\ker\left(A\right)=n-\operatorname{rank}\left(A\right).

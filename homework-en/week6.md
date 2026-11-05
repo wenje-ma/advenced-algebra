@@ -289,7 +289,7 @@ $$
 
 By Criterion for a Subspace, it suffices to verify that $W$ is nonempty and closed under addition and scalar multiplication.
 
-**Verify closure under addition.** Take any
+Verify closure under addition. Take any
 
 $$
 \alpha=\left(a_{1},\cdots,a_{r},0,\cdots,0\right),
@@ -302,7 +302,7 @@ $$
 \alpha+\beta=\left(a_{1}+b_{1},\cdots,a_{r}+b_{r},0,\cdots,0\right)\in W.
 $$
 
-**Verify closure under scalar multiplication.** Take any
+Verify closure under scalar multiplication. Take any
 
 $$
 \alpha=\left(a_{1},\cdots,a_{r},0,\cdots,0\right)\in W

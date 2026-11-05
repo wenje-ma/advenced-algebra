@@ -174,7 +174,7 @@ $$
 
 ### Solution to 2.4-12
 
-**(1)** Write the matrix as $A=J+xy^{\top}$, where $J$ is the all-ones matrix, $x=\left(x_{1},\cdots,x_{n}\right)^{\top}$, and $y=\left(y_{1},\cdots,y_{n}\right)^{\top}$.
+(1) Write the matrix as $A=J+xy^{\top}$, where $J$ is the all-ones matrix, $x=\left(x_{1},\cdots,x_{n}\right)^{\top}$, and $y=\left(y_{1},\cdots,y_{n}\right)^{\top}$.
 
 $A$ is the sum of two rank-$1$ matrices, so $\text{rank}\left(A\right)\le2$.
 
@@ -188,7 +188,7 @@ $$
 \det\left(A\right)=\left(1+x_{1}y_{1}\right)\left(1+x_{2}y_{2}\right)-\left(1+x_{1}y_{2}\right)\left(1+x_{2}y_{1}\right)=x_{1}y_{1}+x_{2}y_{2}-x_{1}y_{2}-x_{2}y_{1}=\left(x_{1}-x_{2}\right)\left(y_{1}-y_{2}\right).
 $$
 
-**(2)** Let $A=\text{diag}\left(1,2,\cdots,n\right)$; then the desired determinant is $\left|A\left(t\right)\right|$.
+(2) Let $A=\text{diag}\left(1,2,\cdots,n\right)$; then the desired determinant is $\left|A\left(t\right)\right|$.
 
 By Problem 11,
 
@@ -273,7 +273,7 @@ For the linear system in Problem 5, for which values of $a,b$ does the system ha
 
 By **Theorem 2.5.1 (Cramer's Rule)**, when the coefficient determinant is zero, the system has no solution or infinitely many solutions.
 
-**Case 1: $b=0$**.
+Case 1: $b=0$.
 
 The system becomes
 
@@ -287,7 +287,7 @@ $$
 
 The last two equations are contradictory ($1\ne 2$), so the system has no solution.
 
-**Case 2: $a=1$ and $b\ne 0$**.
+Case 2: $a=1$ and $b\ne 0$.
 
 The system becomes
 
@@ -332,9 +332,9 @@ $$
 
 By **Theorem 2.5.1 (Cramer's Rule)**, the coefficient determinant is still $b\left(1-a\right)$.
 
-**Unique solution**: $b\ne 0$ and $a\ne 1$.
+Unique solution: $b\ne 0$ and $a\ne 1$.
 
-**Case 1: $b=0$**.
+Case 1: $b=0$.
 
 The system becomes
 
@@ -350,7 +350,7 @@ The last two equations are identical. Substituting into row $1$: $ax_{1}+x_{2}+\
 
 Regardless of $a$, $x_{1}$ is free, with $x_{2}=1-\left(a-1\right)x_{1}$ and $x_{3}=1-x_{1}$. There are infinitely many solutions.
 
-**Case 2: $a=1$ and $b\ne 0$**.
+Case 2: $a=1$ and $b\ne 0$.
 
 The system becomes
 

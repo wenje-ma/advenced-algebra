@@ -152,13 +152,13 @@ $$
 =\left(0,9-3\lambda,\lambda-3,0\right)=\left(0,3\left(3-\lambda\right),-\left(3-\lambda\right),0\right).
 $$
 
-**当 $\lambda=3$ 时**:
+当 $\lambda=3$ 时:
 
 第 $2$ 行 $=\left(0,0,0,0\right)$, 第 $3$ 行 $=\left(0,7,-5,-1\right)$.
 
 阶梯形矩阵有 $2$ 个非零行, 故秩为 $2$.
 
-**当 $\lambda\ne3$ 时**:
+当 $\lambda\ne3$ 时:
 
 第 $2$ 行非零. 第 $3$ 行 $-$ 第 $2$ 行 $\times\frac{10-\lambda}{3\left(3-\lambda\right)}$, 第 $3$ 行的第 $4$ 列仍为 $-1\ne0$, 故第 $3$ 行非零.
 

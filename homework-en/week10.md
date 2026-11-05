@@ -238,7 +238,7 @@ is a fundamental system of solutions of this homogeneous system.
 
 By **Definition 3.7.1 (Fundamental System of Solutions)** and **Theorem 3.7.1 (Dimension of the Solution Space)**, to prove that $\eta_{1}$ is a fundamental system we verify three conditions: $\eta_{1}$ is a solution, $\eta_{1}\ne0$, and the solution space has dimension $1$.
 
-**Verify that $\eta_{1}$ is a solution.** For each $i=1,2,\cdots,n$, compute
+Verify that $\eta_{1}$ is a solution. For each $i=1,2,\cdots,n$, compute
 
 $$
 a_{i1}A_{k1}+a_{i2}A_{k2}+\cdots+a_{in}A_{kn}.
@@ -250,9 +250,9 @@ When $i\ne k$, this is the determinant obtained by replacing row $k$ of $A$ with
 
 Hence for all $i$ the above is $0$, i.e. $A\eta_{1}=0$.
 
-**Verify that $\eta_{1}\ne0$.** Because $A_{kl}\ne0$, the $l$th component of $\eta_{1}$ is nonzero, so $\eta_{1}\ne0$.
+Verify that $\eta_{1}\ne0$. Because $A_{kl}\ne0$, the $l$th component of $\eta_{1}$ is nonzero, so $\eta_{1}\ne0$.
 
-**Verify that the solution space has dimension $1$.** Since $\left|A\right|=0$, $\text{rank}\left(A\right)< n$.
+Verify that the solution space has dimension $1$. Since $\left|A\right|=0$, $\text{rank}\left(A\right)< n$.
 
 Also, since $A_{kl}\ne0$, $A$ has a nonzero $\left(n-1\right)$-minor (the minor after deleting row $k$ and column $l$), so $\text{rank}\left(A\right)\ge n-1$.
 

@@ -50,11 +50,11 @@ $$
 
 由**定义 5.1.2 (等价关系)**, 需验证反身性, 对称性和传递性.
 
-**反身性**: 对任意 $P\left(x,y\right)\in S$, 显然 $x=x$, 故 $P\sim P$.
+反身性: 对任意 $P\left(x,y\right)\in S$, 显然 $x=x$, 故 $P\sim P$.
 
-**对称性**: 若 $P\left(x_{1},y_{1}\right)\sim P\left(x_{2},y_{2}\right)$, 则 $x_{1}=x_{2}$, 从而 $x_{2}=x_{1}$, 故 $P\left(x_{2},y_{2}\right)\sim P\left(x_{1},y_{1}\right)$.
+对称性: 若 $P\left(x_{1},y_{1}\right)\sim P\left(x_{2},y_{2}\right)$, 则 $x_{1}=x_{2}$, 从而 $x_{2}=x_{1}$, 故 $P\left(x_{2},y_{2}\right)\sim P\left(x_{1},y_{1}\right)$.
 
-**传递性**: 若 $P\left(x_{1},y_{1}\right)\sim P\left(x_{2},y_{2}\right)$ 且 $P\left(x_{2},y_{2}\right)\sim P\left(x_{3},y_{3}\right)$, 则 $x_{1}=x_{2}$ 且 $x_{2}=x_{3}$, 从而 $x_{1}=x_{3}$, 故 $P\left(x_{1},y_{1}\right)\sim P\left(x_{3},y_{3}\right)$.
+传递性: 若 $P\left(x_{1},y_{1}\right)\sim P\left(x_{2},y_{2}\right)$ 且 $P\left(x_{2},y_{2}\right)\sim P\left(x_{3},y_{3}\right)$, 则 $x_{1}=x_{2}$ 且 $x_{2}=x_{3}$, 从而 $x_{1}=x_{3}$, 故 $P\left(x_{1},y_{1}\right)\sim P\left(x_{3},y_{3}\right)$.
 
 因此 $\sim$ 满足**定义 5.1.2 (等价关系)**的全部条件, 故 $\sim$ 是 $S$ 上的等价关系. $\blacksquare$
 
@@ -254,7 +254,7 @@ $$
 M=\left[\begin{array}{cc}A & 0\\I_{n} & B\end{array}\right].
 $$
 
-**求 $\operatorname{rank}\left(M\right)$ 的上界**.
+求 $\operatorname{rank}\left(M\right)$ 的上界.
 
 作分块矩阵的初等列变换: 用 $-B$ 右乘第 $1$ 块列, 加到第 $2$ 块列上.
 
@@ -277,7 +277,7 @@ $$
 \operatorname{rank}\left(M\right)=\operatorname{rank}\left(I_{n}\right)+\operatorname{rank}\left(-AB\right)=n+\operatorname{rank}\left(AB\right).
 $$
 
-**求 $\operatorname{rank}\left(M\right)$ 的下界**.
+求 $\operatorname{rank}\left(M\right)$ 的下界.
 
 设 $\operatorname{rank}\left(A\right)=r_{1}$, $\operatorname{rank}\left(B\right)=r_{2}$.
 
@@ -361,7 +361,7 @@ $$
 
 即 $B$ 是幂等矩阵.
 
-**求 $B$ 的秩**.
+求 $B$ 的秩.
 
 因为 $A$ 行满秩, $\operatorname{rank}\left(A\right)=s$.
 

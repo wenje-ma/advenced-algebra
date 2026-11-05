@@ -42,7 +42,7 @@ $$
 \omega=e^{2\pi i/3}=-\frac{1}{2}+\frac{\sqrt{3}}{2}i.
 $$
 
-**Find the eigenvectors for $\lambda=1$.**
+Find the eigenvectors for $\lambda=1$.
 
 $$
 I-P=\left[\begin{array}{rrr}
@@ -61,7 +61,7 @@ Solving gives $x_{1}=x_{2}=x_{3}$.
 
 A fundamental solution system: $\alpha_{1}=\left(1,1,1\right)^{\top}$.
 
-**Find the eigenvectors for $\lambda=\omega$.**
+Find the eigenvectors for $\lambda=\omega$.
 
 From the first row: $\omega x_{1}-x_{2}=0$, i.e. $x_{2}=\omega x_{1}$.
 
@@ -69,7 +69,7 @@ From the second row: $\omega x_{2}-x_{3}=0$, i.e. $x_{3}=\omega x_{2}=\omega^{2}
 
 A fundamental solution system: $\alpha_{2}=\left(1,\omega,\omega^{2}\right)^{\top}$.
 
-**Find the eigenvectors for $\lambda=\omega^{2}$.**
+Find the eigenvectors for $\lambda=\omega^{2}$.
 
 Similarly, a fundamental solution system: $\alpha_{3}=\left(1,\omega^{2},\omega\right)^{\top}$.
 
@@ -95,7 +95,7 @@ $$
 BA\beta=BA\left(B\alpha\right)=B\left(AB\alpha\right)=B\left(\lambda\alpha\right)=\lambda\left(B\alpha\right)=\lambda\beta.
 $$
 
-**Prove that $\beta\ne0$.**
+Prove that $\beta\ne0$.
 
 If $\beta=0$, then $B\alpha=0$.
 
@@ -288,7 +288,7 @@ Prove: an $n\times n$ idempotent matrix $A$ over a number field $K$ is always di
 
 Since $A^{2}=A$, the eigenvalues of $A$ can only be $0$ or $1$.
 
-**Prove that $A$ is diagonalizable.**
+Prove that $A$ is diagonalizable.
 
 $\ker\left(A\right)=\left\{x\mid Ax=0\right\}$ is the eigenspace belonging to the eigenvalue $0$.
 
@@ -340,7 +340,7 @@ $$
 
 Thus $A$ has $n$ linearly independent eigenvectors, and is diagonalizable.
 
-**Find the canonical form under similarity.**
+Find the canonical form under similarity.
 
 $$
 \dim\ker\left(A\right)=n-\operatorname{rank}\left(A\right).

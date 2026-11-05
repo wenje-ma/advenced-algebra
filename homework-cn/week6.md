@@ -289,7 +289,7 @@ $$
 
 由子空间的判别, 只需验证 $W$ 非空且对加法和数量乘法封闭.
 
-**验证加法封闭**. 任取
+验证加法封闭. 任取
 
 $$
 \alpha=\left(a_{1},\cdots,a_{r},0,\cdots,0\right),
@@ -302,7 +302,7 @@ $$
 \alpha+\beta=\left(a_{1}+b_{1},\cdots,a_{r}+b_{r},0,\cdots,0\right)\in W.
 $$
 
-**验证数量乘法封闭**. 任取
+验证数量乘法封闭. 任取
 
 $$
 \alpha=\left(a_{1},\cdots,a_{r},0,\cdots,0\right)\in W,

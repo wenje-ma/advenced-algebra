@@ -152,13 +152,13 @@ $$
 =\left(0,9-3\lambda,\lambda-3,0\right)=\left(0,3\left(3-\lambda\right),-\left(3-\lambda\right),0\right).
 $$
 
-**When $\lambda=3$**:
+When $\lambda=3$:
 
 row $2$ $=\left(0,0,0,0\right)$, row $3$ $=\left(0,7,-5,-1\right)$.
 
 The echelon matrix has $2$ nonzero rows, so the rank is $2$.
 
-**When $\lambda\ne3$**:
+When $\lambda\ne3$:
 
 row $2$ is nonzero. Row $3$ $-$ row $2$ $\times\frac{10-\lambda}{3\left(3-\lambda\right)}$: the $4$th column of row $3$ is still $-1\ne0$, so row $3$ is nonzero.
 

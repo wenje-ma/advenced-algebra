@@ -60,7 +60,7 @@ Hence $-2$ is a root of $f\left(x\right)$.
 
 Use synthetic division to see how many times $x+2$ divides $f$.
 
-**First division**:
+First division:
 
 $$
 \begin{array}{r|rrrrrr}
@@ -73,7 +73,7 @@ $$
 
 Remainder $0$, quotient $x^{4}+5x^{3}+9x^{2}+8x+4$.
 
-**Second division**:
+Second division:
 
 $$
 \begin{array}{r|rrrrr}
@@ -86,7 +86,7 @@ $$
 
 Remainder $0$, quotient $x^{3}+3x^{2}+3x+2$.
 
-**Third division**:
+Third division:
 
 $$
 \begin{array}{r|rrrr}
@@ -99,7 +99,7 @@ $$
 
 Remainder $0$, quotient $x^{2}+x+1$.
 
-**Fourth division**:
+Fourth division:
 
 $$
 \begin{array}{r|rrr}
@@ -423,7 +423,7 @@ $$
 
 Hence $a=0$ or $d=b$.
 
-**Case 1**: $a=0$.
+Case 1: $a=0$.
 
 Then $c=0$.
 
@@ -437,7 +437,7 @@ If $b=d=1$, then $b+d=2$, so $p=2$. But $p$ is odd, contradiction.
 
 If $b=d=-1$, then $b+d=-2$, so $p=-2$. But $p$ is a positive prime, contradiction.
 
-**Case 2**: $d=b$.
+Case 2: $d=b$.
 
 From $\left(4\right)$: $b^{2}=1$, so $b=1$ or $b=-1$.
 
@@ -549,7 +549,7 @@ $$
 
 Hence $a=0$ or $d=b$.
 
-**Case 1**: $a=0$.
+Case 1: $a=0$.
 
 Then $c=0$.
 
@@ -559,7 +559,7 @@ From $\left(4\right)$: $bd=1$.
 
 Thus $b,d$ are roots of $t^{2}+5t+1=0$, not integers.
 
-**Case 2**: $d=b$.
+Case 2: $d=b$.
 
 From $\left(4\right)$: $b^{2}=1$, so $b=1$ or $b=-1$.
 

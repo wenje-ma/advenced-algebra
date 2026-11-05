@@ -197,7 +197,7 @@ Prove: if the vector $\beta$ can be linearly represented by the vector group $\a
 
 By **Definition 3.2.2 (Linear Independence)** and **Definition 3.2.1 (Linear Dependence)**, prove that the representation is unique if and only if $\alpha_{1},\cdots,\alpha_{s}$ is linearly independent.
 
-**Sufficiency.** Suppose $\alpha_{1},\cdots,\alpha_{s}$ is linearly independent. Assume there are two representations:
+Sufficiency. Suppose $\alpha_{1},\cdots,\alpha_{s}$ is linearly independent. Assume there are two representations:
 
 $$
 \beta=k_{1}\alpha_{1}+\cdots+k_{s}\alpha_{s},
@@ -212,7 +212,7 @@ $$
 
 Because $\alpha_{1},\cdots,\alpha_{s}$ is linearly independent, $k_{i}-l_{i}=0$, i.e. $k_{i}=l_{i}$. The representation is unique.
 
-**Necessity.** Suppose the representation is unique. By contradiction: assume $\alpha_{1},\cdots,\alpha_{s}$ is linearly dependent; then there exist numbers $c_{1},\cdots,c_{s}$, not all zero, such that $c_{1}\alpha_{1}+\cdots+c_{s}\alpha_{s}=0$.
+Necessity. Suppose the representation is unique. By contradiction: assume $\alpha_{1},\cdots,\alpha_{s}$ is linearly dependent; then there exist numbers $c_{1},\cdots,c_{s}$, not all zero, such that $c_{1}\alpha_{1}+\cdots+c_{s}\alpha_{s}=0$.
 
 Let $\beta=k_{1}\alpha_{1}+\cdots+k_{s}\alpha_{s}$; then
 
@@ -238,7 +238,7 @@ Prove: a vector group $\alpha_{1},\alpha_{2},\cdots,\alpha_{s}$ $\left(s\ge2\rig
 
 By **Definition 3.2.2 (Linear Independence)** and **Definition 3.2.1 (Linear Dependence)**, prove that the vector group of nonzero vectors $\alpha_{1},\alpha_{2},\cdots,\alpha_{s}$ $\left(s\ge2\right)$ is linearly independent if and only if each $\alpha_{i}$ $\left(1< i\le s\right)$ cannot be linearly represented by the vectors preceding it.
 
-**Necessity.** Suppose $\alpha_{1},\cdots,\alpha_{s}$ is linearly independent. By contradiction: suppose some $\alpha_{i}$ $\left(i> 1\right)$ can be represented by the preceding vectors, i.e.
+Necessity. Suppose $\alpha_{1},\cdots,\alpha_{s}$ is linearly independent. By contradiction: suppose some $\alpha_{i}$ $\left(i> 1\right)$ can be represented by the preceding vectors, i.e.
 
 $$
 \alpha_{i}=k_{1}\alpha_{1}+\cdots+k_{i-1}\alpha_{i-1}.
@@ -254,7 +254,7 @@ Here the coefficient $-1\ne0$, so $\alpha_{1},\cdots,\alpha_{s}$ is linearly dep
 
 Hence each $\alpha_{i}$ $\left(i> 1\right)$ cannot be represented by the vectors preceding it.
 
-**Sufficiency.** Suppose each $\alpha_{i}$ $\left(i> 1\right)$ cannot be represented by the preceding vectors. By contradiction: suppose $\alpha_{1},\cdots,\alpha_{s}$ is linearly dependent; then there exist numbers $c_{1},\cdots,c_{s}$, not all zero, such that $c_{1}\alpha_{1}+\cdots+c_{s}\alpha_{s}=0$.
+Sufficiency. Suppose each $\alpha_{i}$ $\left(i> 1\right)$ cannot be represented by the preceding vectors. By contradiction: suppose $\alpha_{1},\cdots,\alpha_{s}$ is linearly dependent; then there exist numbers $c_{1},\cdots,c_{s}$, not all zero, such that $c_{1}\alpha_{1}+\cdots+c_{s}\alpha_{s}=0$.
 
 Let $c_{i}$ be the last nonzero coefficient:
 

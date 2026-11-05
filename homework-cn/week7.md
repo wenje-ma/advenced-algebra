@@ -197,7 +197,7 @@ $$
 
 由**定义 3.2.2 (线性无关)**和**定义 3.2.1 (线性相关)**, 证明表出方式唯一的充分必要条件是 $\alpha_{1},\cdots,\alpha_{s}$ 线性无关.
 
-**充分性**. 设 $\alpha_{1},\cdots,\alpha_{s}$ 线性无关. 假设有两种表出方式:
+充分性. 设 $\alpha_{1},\cdots,\alpha_{s}$ 线性无关. 假设有两种表出方式:
 
 $$
 \beta=k_{1}\alpha_{1}+\cdots+k_{s}\alpha_{s},
@@ -212,7 +212,7 @@ $$
 
 因为 $\alpha_{1},\cdots,\alpha_{s}$ 线性无关, 所以 $k_{i}-l_{i}=0$, 即 $k_{i}=l_{i}$. 表出方式唯一.
 
-**必要性**. 设表出方式唯一. 反证: 假设 $\alpha_{1},\cdots,\alpha_{s}$ 线性相关, 则存在不全为零的数 $c_{1},\cdots,c_{s}$ 使得 $c_{1}\alpha_{1}+\cdots+c_{s}\alpha_{s}=0$.
+必要性. 设表出方式唯一. 反证: 假设 $\alpha_{1},\cdots,\alpha_{s}$ 线性相关, 则存在不全为零的数 $c_{1},\cdots,c_{s}$ 使得 $c_{1}\alpha_{1}+\cdots+c_{s}\alpha_{s}=0$.
 
 设 $\beta=k_{1}\alpha_{1}+\cdots+k_{s}\alpha_{s}$, 则
 
@@ -238,7 +238,7 @@ $$
 
 由**定义 3.2.2 (线性无关)**和**定义 3.2.1 (线性相关)**, 证明由非零向量组成的向量组 $\alpha_{1},\alpha_{2},\cdots,\alpha_{s}$ $\left(s\ge2\right)$ 线性无关的充分必要条件是: 每一个 $\alpha_{i}$ $\left(1< i\le s\right)$ 都不能用它前面的向量线性表出.
 
-**必要性**. 设 $\alpha_{1},\cdots,\alpha_{s}$ 线性无关. 反证: 假设某个 $\alpha_{i}$ $\left(i> 1\right)$ 可以用前面的向量线性表出, 即
+必要性. 设 $\alpha_{1},\cdots,\alpha_{s}$ 线性无关. 反证: 假设某个 $\alpha_{i}$ $\left(i> 1\right)$ 可以用前面的向量线性表出, 即
 
 $$
 \alpha_{i}=k_{1}\alpha_{1}+\cdots+k_{i-1}\alpha_{i-1}.
@@ -254,7 +254,7 @@ $$
 
 所以每一个 $\alpha_{i}$ $\left(i> 1\right)$ 都不能用它前面的向量线性表出.
 
-**充分性**. 设每一个 $\alpha_{i}$ $\left(i> 1\right)$ 都不能用它前面的向量线性表出. 反证: 假设 $\alpha_{1},\cdots,\alpha_{s}$ 线性相关, 则存在不全为零的数 $c_{1},\cdots,c_{s}$ 使得 $c_{1}\alpha_{1}+\cdots+c_{s}\alpha_{s}=0$.
+充分性. 设每一个 $\alpha_{i}$ $\left(i> 1\right)$ 都不能用它前面的向量线性表出. 反证: 假设 $\alpha_{1},\cdots,\alpha_{s}$ 线性相关, 则存在不全为零的数 $c_{1},\cdots,c_{s}$ 使得 $c_{1}\alpha_{1}+\cdots+c_{s}\alpha_{s}=0$.
 
 设 $c_{i}$ 是最后一个非零系数
 

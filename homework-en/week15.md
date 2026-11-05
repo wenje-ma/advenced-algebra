@@ -45,7 +45,7 @@ Since $A$ is upper triangular, $A^{\top}$ is lower triangular.
 
 $A^{\top}A=I$ is a diagonal matrix.
 
-**Prove by induction that all off-diagonal entries of $A$ are zero.**
+Prove by induction that all off-diagonal entries of $A$ are zero.
 
 When $i=1,j=2$, consider the $\left(1,2\right)$-entry of $A^{\top}A$:
 
@@ -148,7 +148,7 @@ where $T$ is orthogonal and $B$ is upper triangular with all diagonal entries po
 
 ### Solution to 4.6-14
 
-**Existence.** Let the column group of $A$ be $\alpha_{1},\alpha_{2},\cdots,\alpha_{n}$.
+Existence. Let the column group of $A$ be $\alpha_{1},\alpha_{2},\cdots,\alpha_{n}$.
 
 Since $A$ is invertible, $\alpha_{1},\alpha_{2},\cdots,\alpha_{n}$ are linearly independent.
 
@@ -162,7 +162,7 @@ Since each $\alpha_{i}$ is a linear combination of $\eta_{1},\cdots,\eta_{i}$, $
 
 The diagonal entries of $B$ are $\left|\beta_{1}\right|,\left|\beta_{2}\right|,\cdots,\left|\beta_{n}\right|$, all positive.
 
-**Uniqueness.** Suppose $A=T_{1}B_{1}=T_{2}B_{2}$, where $T_{1},T_{2}$ are orthogonal and $B_{1},B_{2}$ are upper triangular with positive diagonal entries.
+Uniqueness. Suppose $A=T_{1}B_{1}=T_{2}B_{2}$, where $T_{1},T_{2}$ are orthogonal and $B_{1},B_{2}$ are upper triangular with positive diagonal entries.
 
 Then $T_{2}^{-1}T_{1}=B_{2}B_{1}^{-1}$.
 
@@ -170,7 +170,7 @@ The left side $T_{2}^{-1}T_{1}$ is orthogonal (a product of orthogonal matrices 
 
 The right side $B_{2}B_{1}^{-1}$ is upper triangular (a product of upper triangular matrices is upper triangular).
 
-By the conclusion of **4.6-5**, a matrix that is both orthogonal and upper triangular must be diagonal with diagonal entries $\pm1$.
+By the conclusion of 4.6-5, a matrix that is both orthogonal and upper triangular must be diagonal with diagonal entries $\pm1$.
 
 Hence $B_{2}B_{1}^{-1}$ is diagonal with diagonal entries $\pm1$.
 
@@ -198,7 +198,7 @@ Determine whether the following rules are mappings from $\mathbb{R}$ to itself, 
 
 By **Definition 4.7.1 (Mapping)**, determine whether each rule is a mapping from $\mathbb{R}$ to itself, and whether it is injective or surjective.
 
-**(1)** $f\left(x\right)=x^{3}$.
+(1) $f\left(x\right)=x^{3}$.
 
 It is a mapping. For every $x\in\mathbb{R}$, $x^{3}$ is defined and unique.
 
@@ -214,7 +214,7 @@ Surjective: for every $y\in\mathbb{R}$, there is $x=\sqrt\left[3\right]{y}$ such
 
 Therefore it is both injective and surjective (bijective).
 
-**(2)** $f\left(x\right)=x^{2}-x$.
+(2) $f\left(x\right)=x^{2}-x$.
 
 It is a mapping.
 
@@ -230,7 +230,7 @@ For example, $-1$ has no preimage. Hence it is not surjective.
 
 Therefore it is neither injective nor surjective.
 
-**(3)** $f\left(x\right)=2^{x}$.
+(3) $f\left(x\right)=2^{x}$.
 
 It is a mapping.
 
@@ -246,7 +246,7 @@ Surjective: $2^{x}> 0$. For example, $-1$ has no preimage. Hence it is not surje
 
 Therefore it is injective but not surjective.
 
-**(4)** $f\left(x\right)=\ln x$.
+(4) $f\left(x\right)=\ln x$.
 
 It is not a mapping. Because for $x\le0$, $\ln x$ is not defined, so not every $x\in\mathbb{R}$ has a corresponding value.
 
@@ -290,7 +290,7 @@ Define $\mathcal{A}\left(\alpha\right)=A\alpha$ for all $\alpha\in K^{4}$.
 
 By **Definition 4.7.5 (Linear Map)** and **Theorem 4.7.1 (Dimension Formula for Kernel and Image)**, $\mathcal{A}\left(\alpha\right)=A\alpha$ is a linear map.
 
-**(1)** $\operatorname{Im}\mathcal{A}$ is the column space of $A$.
+(1) $\operatorname{Im}\mathcal{A}$ is the column space of $A$.
 
 Apply elementary row operations to $A$:
 
@@ -326,7 +326,7 @@ $$
 \dim\left(\operatorname{Im}\mathcal{A}\right)=\operatorname{rank}\left(A\right)=2.
 $$
 
-**(2)** $\ker\mathcal{A}$ is the solution space of $Ax=0$.
+(2) $\ker\mathcal{A}$ is the solution space of $Ax=0$.
 
 From the row echelon form, the equivalent system is
 

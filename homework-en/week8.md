@@ -172,7 +172,7 @@ is solvable for every $\beta\in K^{n}$ if and only if its coefficient determinan
 
 ### Solution to 3.3-8
 
-**Necessity.** Suppose the system is solvable for every $\beta\in K^{n}$.
+Necessity. Suppose the system is solvable for every $\beta\in K^{n}$.
 
 Take $\beta=\varepsilon_{1},\varepsilon_{2},\cdots,\varepsilon_{n}$ (the standard basis); then they can all be represented by $\alpha_{1},\cdots,\alpha_{n}$.
 
@@ -186,7 +186,7 @@ $$
 
 By **Proposition 3.3.6 (Linear Independence iff Rank Equals the Number of Vectors)**, $n$ vectors in $K^{n}$ having rank $n$ shows they are linearly independent, so the determinant of the matrix they form is $\left|A\right|\ne0$.
 
-**Sufficiency.** Suppose $\left|A\right|\ne0$; then $\alpha_{1},\cdots,\alpha_{n}$ are linearly independent.
+Sufficiency. Suppose $\left|A\right|\ne0$; then $\alpha_{1},\cdots,\alpha_{n}$ are linearly independent.
 
 In $K^{n}$, $n$ linearly independent vectors form a basis of $K^{n}$.
 
@@ -200,13 +200,13 @@ Prove: two vector groups are equivalent if and only if they have the same rank a
 
 ### Solution to 3.3-11
 
-**Necessity.** Suppose the two vector groups (I) and (II) are equivalent.
+Necessity. Suppose the two vector groups (I) and (II) are equivalent.
 
 By **Corollary 3.3.8 (Equivalent Vector Groups Have the Same Rank)**, equivalent groups have the same rank.
 
 Moreover, equivalence means they can represent each other, so one group can be represented by the other.
 
-**Sufficiency.** Suppose (I) and (II) have the same rank and (I) can be represented by (II).
+Sufficiency. Suppose (I) and (II) have the same rank and (I) can be represented by (II).
 
 Let a maximal linearly independent subset of (I) be $\alpha_{1},\cdots,\alpha_{r}$, and a maximal linearly independent subset of (II) be $\beta_{1},\cdots,\beta_{r}$.
 
@@ -238,7 +238,7 @@ is a basis of $K^{n}$.
 
 By the requirements of **Definition 3.4.1 (Basis)**, it suffices to verify two conditions: linear independence, and that it can linearly represent every vector in $K^{n}$.
 
-**Verify linear independence.** Set
+Verify linear independence. Set
 
 $$
 k_{1}\eta_{1}+k_{2}\eta_{2}+\cdots+k_{n}\eta_{n}=0.
@@ -256,7 +256,7 @@ Continuing, the $i$th component gives $k_{i}=0$.
 
 Hence $\eta_{1},\eta_{2},\cdots,\eta_{n}$ are linearly independent.
 
-**Verify representability.** Take any
+Verify representability. Take any
 
 $$
 \alpha=\left(a_{1},a_{2},\cdots,a_{n}\right)^{\top}\in K^{n},

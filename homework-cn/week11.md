@@ -26,7 +26,7 @@
 
 设非齐次线性方程组为 $Ax=\beta$, 其中 $A$ 是 $n\times n$ 矩阵; 导出组为 $Ax=0$.
 
-**必要性**. 设非齐次方程组有唯一解, 则
+必要性. 设非齐次方程组有唯一解, 则
 
 $$
 \text{rank}\left(A\right)=\text{rank}\left(\overline{A}\right)=n\ \text{\left(系数矩阵的秩等于未知量数目\right)}.
@@ -34,7 +34,7 @@ $$
 
 导出组 $Ax=0$ 的系数矩阵秩为 $n$, 未知量数目为 $n$, 故只有零解.
 
-**充分性**. 设导出组只有零解, 则 $\text{rank}\left(A\right)=n$.
+充分性. 设导出组只有零解, 则 $\text{rank}\left(A\right)=n$.
 
 $A$ 是 $n\times n$ 矩阵且 $\text{rank}\left(A\right)=n$, 故 $\left|A\right|\ne0$.
 

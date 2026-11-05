@@ -44,7 +44,7 @@ $$
 
 ### 解答 7.3-12
 
-**存在性**.
+存在性.
 
 因为 $\left(f_{1},f_{2}\right)=1$, 所以存在 $u,v$ 使得 $uf_{1}+vf_{2}=1$.
 
@@ -74,7 +74,7 @@ $$
 f_{2}\left(A\right)X_{2}=f_{2}\left(A\right)u\left(A\right)f_{1}\left(A\right)X=u\left(A\right)f_{1}\left(A\right)f_{2}\left(A\right)X=u\left(A\right)f\left(A\right)X=0.
 $$
 
-**唯一性**.
+唯一性.
 
 设 $X=X_{1}+X_{2}=Y_{1}+Y_{2}$, 其中 $X_{1},Y_{1}\in\ker f_{1}\left(A\right)$, $X_{2},Y_{2}\in\ker f_{2}\left(A\right)$.
 
@@ -114,7 +114,7 @@ $$
 
 由**定理 7.4.1 (唯一因式分解定理)**, $K\left[x\right]$ 中每一个次数大于零的多项式都能唯一地分解成数域 $K$ 上有限多个不可约多项式的乘积.
 
-**复数域**.
+复数域.
 
 $x^{4}+4=0$ 的根是 $x^{4}=-4=4e^{i\pi}$.
 
@@ -138,7 +138,7 @@ $$
 x^{4}+4=\left(x-1-i\right)\left(x+1-i\right)\left(x+1+i\right)\left(x-1+i\right).
 $$
 
-**实数域**.
+实数域.
 
 把共轭的根配对:
 
@@ -156,7 +156,7 @@ $$
 x^{4}+4=\left(x^{2}-2x+2\right)\left(x^{2}+2x+2\right).
 $$
 
-**有理数域**.
+有理数域.
 
 $x^{2}-2x+2$ 的判别式 $\Delta=4-8=-4< 0$, 在有理数域上不可约.
 
@@ -178,7 +178,7 @@ $$
 
 由**性质 7.4.1 (不可约多项式的性质)**, 在 $K\left[x\right]$ 中, 如果 $p\left(x\right)$ 不可约, 且 $p\left(x\right)\mid f\left(x\right)g\left(x\right)$, 则 $p\left(x\right)\mid f\left(x\right)$ 或 $p\left(x\right)\mid g\left(x\right)$.
 
-**必要性**. 若 $g^{2}\mid f^{2}$, 证明 $g\mid f$.
+必要性. 若 $g^{2}\mid f^{2}$, 证明 $g\mid f$.
 
 设 $p$ 是 $g$ 的一个不可约因式, 重数为 $k$.
 
@@ -190,7 +190,7 @@ $$
 
 对 $g$ 的所有不可约因式都作此推理, 得 $g\mid f$.
 
-**充分性**. 若 $g\mid f$, 证明 $g^{2}\mid f^{2}$.
+充分性. 若 $g\mid f$, 证明 $g^{2}\mid f^{2}$.
 
 若 $g\mid f$, 则存在 $h$ 使得 $f=gh$.
 
@@ -264,7 +264,7 @@ $f$ 有重因式的充分必要条件是 $\left(f,f'\right)\ne1$, 即 $f$ 与 $f
 
 $f'$ 的因式是 $x$ 和 $x^{2}+a$.
 
-**情况1**: $x\mid f$.
+情况1: $x\mid f$.
 
 $f\left(0\right)=b=0$.
 
@@ -272,7 +272,7 @@ $f\left(0\right)=b=0$.
 
 此时 $f=x^{2}\left(x^{2}+2a\right)$, $x$ 是 $f$ 的 $2$ 重因式 (除非 $a=0$, 此时 $x$ 是 $4$ 重因式).
 
-**情况2**: $x^{2}+a\mid f$.
+情况2: $x^{2}+a\mid f$.
 
 作多项式除法:
 
@@ -310,7 +310,7 @@ $$
 
 用辗转相除法求 $\left(f,f'\right)$.
 
-**第一步**: $f$ 除以 $f'$.
+第一步: $f$ 除以 $f'$.
 
 商式首项: $\frac{1}{5}x$.
 
@@ -324,7 +324,7 @@ $$
 r_{1}\left(x\right)=x^{4}-\frac{4}{3}x^{3}-2x^{2}+4x-\frac{5}{3}.
 $$
 
-**第二步**: $f'$ 除以 $r_{1}$.
+第二步: $f'$ 除以 $r_{1}$.
 
 商式首项: $5$.
 
@@ -338,7 +338,7 @@ $$
 r_{2}\left(x\right)=x^{3}-3x^{2}+3x-1=\left(x-1\right)^{3}.
 $$
 
-**第三步**: $r_{1}$ 除以 $r_{2}$.
+第三步: $r_{1}$ 除以 $r_{2}$.
 
 商式首项: $x$.
 
@@ -364,7 +364,7 @@ $$
 g\left(x\right)=\frac{f\left(x\right)}{\left(f\left(x\right),f'\left(x\right)\right)}=\frac{f\left(x\right)}{\left(x-1\right)^{3}}.
 $$
 
-**求标准分解式**.
+求标准分解式.
 
 计算 $f\left(1\right)$:
 

@@ -115,9 +115,9 @@ and prove that $\mathbb Q\left(i\right)$ is a number field.
 
 By the requirements of **Definition 1.3.1 (Number Field)**, we must verify that $\mathbb Q\left(i\right)$ satisfies $0,1\in K$ and is closed under addition, subtraction, multiplication, and division.
 
-**Verify $0,1\in\mathbb Q\left(i\right)$**. By condition (1) of **Definition 1.3.1 (Number Field)**, clearly $0=0+0\cdot i\in\mathbb Q\left(i\right)$ and $1=1+0\cdot i\in\mathbb Q\left(i\right)$.
+Verify $0,1\in\mathbb Q\left(i\right)$. By condition (1) of **Definition 1.3.1 (Number Field)**, clearly $0=0+0\cdot i\in\mathbb Q\left(i\right)$ and $1=1+0\cdot i\in\mathbb Q\left(i\right)$.
 
-**Verify closure under addition**. By condition (2) of **Definition 1.3.1 (Number Field)**, take any
+Verify closure under addition. By condition (2) of **Definition 1.3.1 (Number Field)**, take any
 
 $$
 \alpha=a+bi,\beta=c+di\in\mathbb Q\left(i\right),
@@ -131,7 +131,7 @@ $$
 
 Since the rationals are closed under addition (Closure of the Rational Field under the Four Arithmetic Operations), $a+c\in\mathbb Q$ and $b+d\in\mathbb Q$, so $\alpha+\beta\in\mathbb Q\left(i\right)$.
 
-**Verify closure under subtraction**. By condition (2) of **Definition 1.3.1 (Number Field)**, similarly,
+Verify closure under subtraction. By condition (2) of **Definition 1.3.1 (Number Field)**, similarly,
 
 $$
 \alpha-\beta=\left(a-c\right)+\left(b-d\right)i,
@@ -139,7 +139,7 @@ $$
 
 and $a-c\in\mathbb Q$, $b-d\in\mathbb Q$ (Closure of the Rational Field under the Four Arithmetic Operations), so $\alpha-\beta\in\mathbb Q\left(i\right)$.
 
-**Verify closure under multiplication**. By condition (2) of **Definition 1.3.1 (Number Field)**,
+Verify closure under multiplication. By condition (2) of **Definition 1.3.1 (Number Field)**,
 
 $$
 \alpha\beta=\left(a+bi\right)\left(c+di\right)=\left(ac-bd\right)+\left(ad+bc\right)i.
@@ -147,7 +147,7 @@ $$
 
 Since the rationals are closed under addition, subtraction, and multiplication (Closure of the Rational Field under the Four Arithmetic Operations), $ac-bd\in\mathbb Q$ and $ad+bc\in\mathbb Q$, so $\alpha\beta\in\mathbb Q\left(i\right)$.
 
-**Verify closure under division**. By condition (2) of **Definition 1.3.1 (Number Field)**, let $\beta=c+di\ne 0$; then $c^{2}+d^{2}\ne 0$, and
+Verify closure under division. By condition (2) of **Definition 1.3.1 (Number Field)**, let $\beta=c+di\ne 0$; then $c^{2}+d^{2}\ne 0$, and
 
 $$
 \frac{\alpha}{\beta}=\frac{a+bi}{c+di}=\frac{\left(a+bi\right)\left(c-di\right)}{\left(c+di\right)\left(c-di\right)}=\frac{ac+bd}{c^{2}+d^{2}}+\frac{bc-ad}{c^{2}+d^{2}}i.

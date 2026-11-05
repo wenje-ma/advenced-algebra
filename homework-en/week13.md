@@ -391,7 +391,7 @@ $$
 \sum_{k=1}^{n}a_{ik}b_{kj}=\delta_{ij}.
 $$
 
-**Prove by induction that $b_{ij}=0$ when $i> j$.**
+Prove by induction that $b_{ij}=0$ when $i> j$.
 
 Induct on rows $i=n,n-1,\cdots,2$ from bottom to top.
 

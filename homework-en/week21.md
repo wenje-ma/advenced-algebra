@@ -82,7 +82,7 @@ $g\left(x\right)=x-4$;
 
 ### Solution to 7.2-5
 
-**(1)** Synthetic division:
+(1) Synthetic division:
 
 $$
 \begin{array}{r|rrrrr}
@@ -103,7 +103,7 @@ $$
 \text{remainder }r\left(x\right)=775.
 $$
 
-**(2)** Synthetic division:
+(2) Synthetic division:
 
 $$
 \begin{array}{r|rrrr}
@@ -138,7 +138,7 @@ $$
 
 By **Theorem 7.3.1 (Existence of the Greatest Common Divisor and Bezout Identity)**, there is a greatest common divisor $d\left(x\right)$, and it can be expressed as a linear combination. Use the Euclidean algorithm.
 
-**Step 1**: Divide $f$ by $g$.
+Step 1: Divide $f$ by $g$.
 
 Leading term of the quotient: $\frac{1}{3}x$.
 
@@ -152,7 +152,7 @@ $$
 r_{1}\left(x\right)=x^{3}+5x^{2}+9x+9.
 $$
 
-**Step 2**: Divide $g$ by $r_{1}$.
+Step 2: Divide $g$ by $r_{1}$.
 
 Leading term of the quotient: $3$.
 
@@ -162,7 +162,7 @@ $$
 
 Multiply by $-\frac{1}{5}$ and set $r_{2}\left(x\right)=x^{2}+5x+6$.
 
-**Step 3**: Divide $r_{1}$ by $r_{2}$.
+Step 3: Divide $r_{1}$ by $r_{2}$.
 
 Leading term of the quotient: $x$.
 
@@ -170,7 +170,7 @@ $$
 r_{1}-xr_{2}=3x+9=3\left(x+3\right).
 $$
 
-**Step 4**: Divide $r_{2}$ by $x+3$.
+Step 4: Divide $r_{2}$ by $x+3$.
 
 $$
 r_{2}=x^{2}+5x+6=\left(x+2\right)\left(x+3\right).
@@ -283,7 +283,7 @@ Prove: two nonzero polynomials $f\left(x\right)$ and $g\left(x\right)$ in $K\lef
 
 ### Solution to 7.3-9
 
-**Necessity.** If $f$ and $g$ are not coprime, set $d\left(x\right)=\left(f,g\right)$ with $\deg d> 0$.
+Necessity. If $f$ and $g$ are not coprime, set $d\left(x\right)=\left(f,g\right)$ with $\deg d> 0$.
 
 Set
 
@@ -307,7 +307,7 @@ $$
 \deg v=\deg f-\deg d< \deg f.
 $$
 
-**Sufficiency.** Suppose there exist nonzero $u,v$ such that $uf=vg$, with $\deg u< \deg g$ and $\deg v< \deg f$.
+Sufficiency. Suppose there exist nonzero $u,v$ such that $uf=vg$, with $\deg u< \deg g$ and $\deg v< \deg f$.
 
 Assume $f$ and $g$ are coprime, i.e. $\left(f,g\right)=1$.
 

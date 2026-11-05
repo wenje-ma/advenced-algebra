@@ -44,7 +44,7 @@ and write $f\left(x\right)=f_{1}\left(x\right)f_{2}\left(x\right)$. Prove: if $\
 
 ### Solution to 7.3-12
 
-**Existence.**
+Existence.
 
 Since $\left(f_{1},f_{2}\right)=1$, there exist $u,v$ such that $uf_{1}+vf_{2}=1$.
 
@@ -74,7 +74,7 @@ $$
 f_{2}\left(A\right)X_{2}=f_{2}\left(A\right)u\left(A\right)f_{1}\left(A\right)X=u\left(A\right)f_{1}\left(A\right)f_{2}\left(A\right)X=u\left(A\right)f\left(A\right)X=0.
 $$
 
-**Uniqueness.**
+Uniqueness.
 
 Suppose $X=X_{1}+X_{2}=Y_{1}+Y_{2}$, where $X_{1},Y_{1}\in\ker f_{1}\left(A\right)$ and $X_{2},Y_{2}\in\ker f_{2}\left(A\right)$.
 
@@ -114,7 +114,7 @@ $$
 
 By **Theorem 7.4.1 (Unique Factorization Theorem)**, every polynomial in $K\left[x\right]$ of positive degree can be uniquely factored into irreducible factors.
 
-**Over the complex number field.**
+Over the complex number field.
 
 The roots of $x^{4}+4=0$ satisfy $x^{4}=-4=4e^{i\pi}$.
 
@@ -138,7 +138,7 @@ $$
 x^{4}+4=\left(x-1-i\right)\left(x+1-i\right)\left(x+1+i\right)\left(x-1+i\right).
 $$
 
-**Over the real number field.**
+Over the real number field.
 
 Pair the conjugate roots:
 
@@ -156,7 +156,7 @@ $$
 x^{4}+4=\left(x^{2}-2x+2\right)\left(x^{2}+2x+2\right).
 $$
 
-**Over the rational number field.**
+Over the rational number field.
 
 The discriminant of $x^{2}-2x+2$ is $\Delta=4-8=-4< 0$, so it is irreducible over $\mathbb{Q}$.
 
@@ -178,7 +178,7 @@ Prove: in $K\left[x\right]$, $g^{2}\left(x\right)\mid f^{2}\left(x\right)$ if an
 
 By **Property 7.4.1 (Property of Irreducible Polynomials)**, if $p\left(x\right)$ is irreducible and $p\left(x\right)\mid f\left(x\right)g\left(x\right)$, then $p\left(x\right)\mid f\left(x\right)$ or $p\left(x\right)\mid g\left(x\right)$.
 
-**Necessity.** Suppose $g^{2}\mid f^{2}$; prove $g\mid f$.
+Necessity. Suppose $g^{2}\mid f^{2}$; prove $g\mid f$.
 
 Let $p$ be an irreducible factor of $g$ with multiplicity $k$.
 
@@ -190,7 +190,7 @@ Therefore $p^{k}\mid f$.
 
 Applying the same argument to every irreducible factor of $g$, we get $g\mid f$.
 
-**Sufficiency.** Suppose $g\mid f$; prove $g^{2}\mid f^{2}$.
+Sufficiency. Suppose $g\mid f$; prove $g^{2}\mid f^{2}$.
 
 If $g\mid f$, there exists $h$ such that $f=gh$.
 
@@ -264,7 +264,7 @@ $f$ has a multiple factor if and only if $\left(f,f'\right)\ne1$, i.e. $f$ and $
 
 The factors of $f'$ are $x$ and $x^{2}+a$.
 
-**Case 1**: $x\mid f$.
+Case 1: $x\mid f$.
 
 $f\left(0\right)=b=0$.
 
@@ -272,7 +272,7 @@ Hence when $b=0$, $x$ is a factor of $f$.
 
 Then $f=x^{2}\left(x^{2}+2a\right)$, and $x$ is a double factor of $f$ (unless $a=0$, in which case $x$ is a quadruple factor).
 
-**Case 2**: $x^{2}+a\mid f$.
+Case 2: $x^{2}+a\mid f$.
 
 Perform polynomial division:
 
@@ -310,7 +310,7 @@ $$
 
 Use the Euclidean algorithm to find $\left(f,f'\right)$.
 
-**Step 1**: Divide $f$ by $f'$.
+Step 1: Divide $f$ by $f'$.
 
 Leading term of the quotient: $\frac{1}{5}x$.
 
@@ -324,7 +324,7 @@ $$
 r_{1}\left(x\right)=x^{4}-\frac{4}{3}x^{3}-2x^{2}+4x-\frac{5}{3}.
 $$
 
-**Step 2**: Divide $f'$ by $r_{1}$.
+Step 2: Divide $f'$ by $r_{1}$.
 
 Leading term of the quotient: $5$.
 
@@ -338,7 +338,7 @@ $$
 r_{2}\left(x\right)=x^{3}-3x^{2}+3x-1=\left(x-1\right)^{3}.
 $$
 
-**Step 3**: Divide $r_{1}$ by $r_{2}$.
+Step 3: Divide $r_{1}$ by $r_{2}$.
 
 Leading term of the quotient: $x$.
 
@@ -364,7 +364,7 @@ $$
 g\left(x\right)=\frac{f\left(x\right)}{\left(f\left(x\right),f'\left(x\right)\right)}=\frac{f\left(x\right)}{\left(x-1\right)^{3}}.
 $$
 
-**Find the standard factorization.**
+Find the standard factorization.
 
 Compute $f\left(1\right)$:
 

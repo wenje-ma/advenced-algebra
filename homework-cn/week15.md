@@ -45,7 +45,7 @@ $\mathcal{A}\left(k\alpha\right)=k\mathcal{A}\left(\alpha\right)$, 则称 $\math
 
 $A^{\top}A=I$ 是对角矩阵.
 
-**归纳证明 $A$ 的非对角元都为零**.
+归纳证明 $A$ 的非对角元都为零.
 
 当 $i=1,j=2$ 时, 考虑 $A^{\top}A$ 的 $\left(1,2\right)$ 元:
 
@@ -148,7 +148,7 @@ $$
 
 ### 解答 4.6-14
 
-**存在性**. 设 $A$ 的列向量组为 $\alpha_{1},\alpha_{2},\cdots,\alpha_{n}$.
+存在性. 设 $A$ 的列向量组为 $\alpha_{1},\alpha_{2},\cdots,\alpha_{n}$.
 
 因为 $A$ 可逆, 故 $\alpha_{1},\alpha_{2},\cdots,\alpha_{n}$ 线性无关.
 
@@ -162,7 +162,7 @@ $$
 
 $B$ 的主对角元为 $\left|\beta_{1}\right|,\left|\beta_{2}\right|,\cdots,\left|\beta_{n}\right|$, 都是正数.
 
-**唯一性**. 设 $A=T_{1}B_{1}=T_{2}B_{2}$, 其中 $T_{1},T_{2}$ 是正交矩阵, $B_{1},B_{2}$ 是主对角元为正数的上三角矩阵.
+唯一性. 设 $A=T_{1}B_{1}=T_{2}B_{2}$, 其中 $T_{1},T_{2}$ 是正交矩阵, $B_{1},B_{2}$ 是主对角元为正数的上三角矩阵.
 
 则 $T_{2}^{-1}T_{1}=B_{2}B_{1}^{-1}$.
 
@@ -170,7 +170,7 @@ $B$ 的主对角元为 $\left|\beta_{1}\right|,\left|\beta_{2}\right|,\cdots,\le
 
 右边 $B_{2}B_{1}^{-1}$ 是上三角矩阵 (上三角矩阵的乘积仍为上三角矩阵).
 
-由**4.6-5**的结论, 既是正交矩阵又是上三角矩阵的矩阵一定是对角矩阵, 且主对角元为 $\pm1$.
+由4.6-5的结论, 既是正交矩阵又是上三角矩阵的矩阵一定是对角矩阵, 且主对角元为 $\pm1$.
 
 故 $B_{2}B_{1}^{-1}$ 是对角矩阵, 主对角元为 $\pm1$.
 
@@ -198,7 +198,7 @@ $B$ 的主对角元为 $\left|\beta_{1}\right|,\left|\beta_{2}\right|,\cdots,\le
 
 由**定义 4.7.1 (映射)**, 判别下列对应法则是否为 $\mathbb{R}$ 到自身的映射, 是否为单射, 是否为满射.
 
-**(1)** $f\left(x\right)=x^{3}$.
+(1) $f\left(x\right)=x^{3}$.
 
 是映射. 对任意 $x\in\mathbb{R}$, $x^{3}$ 都有定义且唯一.
 
@@ -214,7 +214,7 @@ $$
 
 因此既是单射又是满射 (双射).
 
-**(2)** $f\left(x\right)=x^{2}-x$.
+(2) $f\left(x\right)=x^{2}-x$.
 
 是映射.
 
@@ -230,7 +230,7 @@ $$
 
 因此既不是单射也不是满射.
 
-**(3)** $f\left(x\right)=2^{x}$.
+(3) $f\left(x\right)=2^{x}$.
 
 是映射.
 
@@ -246,7 +246,7 @@ $$
 
 因此是单射但不是满射.
 
-**(4)** $f\left(x\right)=\ln x$.
+(4) $f\left(x\right)=\ln x$.
 
 不是映射. 因为对 $x\le0$, $\ln x$ 没有定义, 不是对所有 $x\in\mathbb{R}$ 都有对应.
 
@@ -290,7 +290,7 @@ $$
 
 由**定义 4.7.5 (线性映射)**和**定理 4.7.1 (核与象的维数公式)**, $\mathcal{A}\left(\alpha\right)=A\alpha$ 是线性映射.
 
-**(1)** $\operatorname{Im}\mathcal{A}$ 等于 $A$ 的列空间.
+(1) $\operatorname{Im}\mathcal{A}$ 等于 $A$ 的列空间.
 
 对 $A$ 作初等行变换:
 
@@ -326,7 +326,7 @@ $$
 \dim\left(\operatorname{Im}\mathcal{A}\right)=\operatorname{rank}\left(A\right)=2.
 $$
 
-**(2)** $\ker\mathcal{A}$ 是 $Ax=0$ 的解空间.
+(2) $\ker\mathcal{A}$ 是 $Ax=0$ 的解空间.
 
 由行阶梯形得同解方程组:
 

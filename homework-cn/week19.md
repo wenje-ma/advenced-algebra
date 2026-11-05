@@ -54,7 +54,7 @@ $$
 
 即 $\lambda_{0}$ 是 $A$ 的 $n$ 重特征值 (代数重数为 $n$ ).
 
-**求特征子空间的维数**.
+求特征子空间的维数.
 
 $$
 \lambda_{0}I-A=\left[\begin{array}{cccc}
@@ -105,7 +105,7 @@ $$
 
 因此特征值为 $\lambda_{1}=\lambda_{2}=1$, $\lambda_{3}=-8$.
 
-**求 $\lambda=1$ 的特征向量**.
+求 $\lambda=1$ 的特征向量.
 
 $$
 I-A=\left[\begin{array}{rrr}
@@ -144,7 +144,7 @@ $$
 \eta_{2}=\left(\frac{2}{3\sqrt{5}},\frac{4}{3\sqrt{5}},\frac{\sqrt{5}}{3}\right)^{\top}.
 $$
 
-**求 $\lambda=-8$ 的特征向量**.
+求 $\lambda=-8$ 的特征向量.
 
 $$
 -8I-A=\left[\begin{array}{rrr}
@@ -211,15 +211,15 @@ $$
 
 因此特征值为 $\lambda_{1}=-1$, $\lambda_{2}=2$, $\lambda_{3}=5$.
 
-**求 $\lambda=-1$ 的特征向量**.
+求 $\lambda=-1$ 的特征向量.
 
 基础解系: $\alpha_{1}=\left(1,2,2\right)^{\top}$.
 
-**求 $\lambda=2$ 的特征向量**.
+求 $\lambda=2$ 的特征向量.
 
 基础解系: $\alpha_{2}=\left(2,1,-2\right)^{\top}$.
 
-**求 $\lambda=5$ 的特征向量**.
+求 $\lambda=5$ 的特征向量.
 
 基础解系: $\alpha_{3}=\left(-2,2,-1\right)^{\top}$.
 
@@ -372,7 +372,7 @@ $f=y_{1}^{2}+y_{2}^{2}-2y_{3}^{2}$ 是标准形. $\blacksquare$
 
 由**定义 6.1.1 (二次型)**, $A$ 是数域 $K$ 上的 $n$ 级矩阵.
 
-**必要性**. 若 $A$ 是斜对称矩阵, 即 $A^{\top}=-A$.
+必要性. 若 $A$ 是斜对称矩阵, 即 $A^{\top}=-A$.
 
 则 $\alpha^{\top}A\alpha$ 是一个数, 其转置等于自身:
 
@@ -390,7 +390,7 @@ $$
 
 即 $2\alpha^{\top}A\alpha=0$, 故 $\alpha^{\top}A\alpha=0$.
 
-**充分性**. 若对于任一列向量 $\alpha$, $\alpha^{\top}A\alpha=0$.
+充分性. 若对于任一列向量 $\alpha$, $\alpha^{\top}A\alpha=0$.
 
 要证明 $A$ 是斜对称矩阵, 即 $A^{\top}=-A$, 即 $A+A^{\top}=0$.
 

@@ -50,11 +50,11 @@ Prove: $\sim$ is an equivalence relation on $S$.
 
 By **Definition 5.1.2 (Equivalence Relation)**, we verify reflexivity, symmetry and transitivity.
 
-**Reflexivity**: for any $P\left(x,y\right)\in S$, clearly $x=x$, so $P\sim P$.
+Reflexivity: for any $P\left(x,y\right)\in S$, clearly $x=x$, so $P\sim P$.
 
-**Symmetry**: if $P\left(x_{1},y_{1}\right)\sim P\left(x_{2},y_{2}\right)$, then $x_{1}=x_{2}$, hence $x_{2}=x_{1}$, and so $P\left(x_{2},y_{2}\right)\sim P\left(x_{1},y_{1}\right)$.
+Symmetry: if $P\left(x_{1},y_{1}\right)\sim P\left(x_{2},y_{2}\right)$, then $x_{1}=x_{2}$, hence $x_{2}=x_{1}$, and so $P\left(x_{2},y_{2}\right)\sim P\left(x_{1},y_{1}\right)$.
 
-**Transitivity**: if $P\left(x_{1},y_{1}\right)\sim P\left(x_{2},y_{2}\right)$ and $P\left(x_{2},y_{2}\right)\sim P\left(x_{3},y_{3}\right)$, then $x_{1}=x_{2}$ and $x_{2}=x_{3}$, hence $x_{1}=x_{3}$, and so $P\left(x_{1},y_{1}\right)\sim P\left(x_{3},y_{3}\right)$.
+Transitivity: if $P\left(x_{1},y_{1}\right)\sim P\left(x_{2},y_{2}\right)$ and $P\left(x_{2},y_{2}\right)\sim P\left(x_{3},y_{3}\right)$, then $x_{1}=x_{2}$ and $x_{2}=x_{3}$, hence $x_{1}=x_{3}$, and so $P\left(x_{1},y_{1}\right)\sim P\left(x_{3},y_{3}\right)$.
 
 Therefore $\sim$ satisfies all conditions of **Definition 5.1.2 (Equivalence Relation)**, and hence is an equivalence relation on $S$. $\blacksquare$
 
@@ -254,7 +254,7 @@ $$
 M=\left[\begin{array}{cc}A & 0\\I_{n} & B\end{array}\right].
 $$
 
-**Find an upper bound for $\operatorname{rank}\left(M\right)$.**
+Find an upper bound for $\operatorname{rank}\left(M\right)$.
 
 Perform an elementary block column operation: add $-B$ times the first block column to the second block column.
 
@@ -277,7 +277,7 @@ $$
 \operatorname{rank}\left(M\right)=\operatorname{rank}\left(I_{n}\right)+\operatorname{rank}\left(-AB\right)=n+\operatorname{rank}\left(AB\right).
 $$
 
-**Find a lower bound for $\operatorname{rank}\left(M\right)$.**
+Find a lower bound for $\operatorname{rank}\left(M\right)$.
 
 Let $\operatorname{rank}\left(A\right)=r_{1}$ and $\operatorname{rank}\left(B\right)=r_{2}$.
 
@@ -361,7 +361,7 @@ $$
 
 i.e. $B$ is idempotent.
 
-**Find the rank of $B$.**
+Find the rank of $B$.
 
 Since $A$ is row full-rank, $\operatorname{rank}\left(A\right)=s$.
 

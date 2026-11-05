@@ -163,7 +163,7 @@ Let $A$ be nilpotent with nilpotent index $l$, i.e. $A^{l}=0$ and $A^{k}\ne0$ fo
 
 Let $B\sim A$, i.e. there is an invertible matrix $P$ such that $B=P^{-1}AP$.
 
-**Prove that $B$ is nilpotent.**
+Prove that $B$ is nilpotent.
 
 $$
 B^{l}=\left(P^{-1}AP\right)^{l}=P^{-1}A^{l}P=P^{-1}0P=0.
@@ -171,7 +171,7 @@ $$
 
 Therefore $B$ is nilpotent.
 
-**Prove that the nilpotent index of $B$ equals $l$.**
+Prove that the nilpotent index of $B$ equals $l$.
 
 Let the nilpotent index of $B$ be $m$, i.e. $B^{m}=0$.
 
@@ -234,7 +234,7 @@ $$
 
 Thus the eigenvalues are $\lambda_{1}=1$ and $\lambda_{2}=\lambda_{3}=3$.
 
-**Find the eigenvectors for $\lambda=1$.**
+Find the eigenvectors for $\lambda=1$.
 
 $$
 I-A=\left[\begin{array}{rrr}
@@ -253,7 +253,7 @@ Solving gives $x_{2}=0$ and $x_{1}=-2x_{3}$.
 
 A fundamental solution system: $\alpha_{1}=\left(-2,0,1\right)^{\top}$.
 
-**Find the eigenvectors for $\lambda=3$.**
+Find the eigenvectors for $\lambda=3$.
 
 $$
 3I-A=\left[\begin{array}{rrr}
@@ -323,7 +323,7 @@ Let $A$ be an $n\times n$ orthogonal matrix. Prove:
 
 ### Solution to 5.5-10
 
-**(1)** Let $\lambda$ be an eigenvalue of $A$ and $\alpha$ an eigenvector of $A$ belonging to $\lambda$, i.e. $A\alpha=\lambda\alpha$.
+(1) Let $\lambda$ be an eigenvalue of $A$ and $\alpha$ an eigenvector of $A$ belonging to $\lambda$, i.e. $A\alpha=\lambda\alpha$.
 
 Taking the conjugate transpose on both sides: $\alpha^{\top}A^{\top}=\overline{\lambda}\alpha^{\top}$.
 
@@ -355,7 +355,7 @@ Hence $\left|\lambda\right|=1$.
 
 If $\lambda$ is a real eigenvalue, then $\lambda=\pm1$.
 
-**(2)** $A$ is an $n\times n$ orthogonal matrix and $n$ is odd.
+(2) $A$ is an $n\times n$ orthogonal matrix and $n$ is odd.
 
 Complex eigenvalues occur in conjugate pairs, so the number of complex eigenvalues is even.
 
@@ -379,7 +379,7 @@ Since $k+m$ is odd (the number of real eigenvalues) and $m$ is even, $k$ is odd,
 
 Therefore $1$ is an eigenvalue of $A$.
 
-**(3)** $\left|A\right|=\left(-1\right)^{m}=-1$, so $m$ is odd, i.e. $m\ge1$.
+(3) $\left|A\right|=\left(-1\right)^{m}=-1$, so $m$ is odd, i.e. $m\ge1$.
 
 Therefore $-1$ is an eigenvalue of $A$.
 

@@ -223,7 +223,7 @@ Prove: an $n$-variable real quadratic form can be factored into the product of t
 
 ### Solution to 6.2-6
 
-**Sufficiency.**
+Sufficiency.
 
 If the rank is $2$ with signature $0$, the canonical form is
 
@@ -237,7 +237,7 @@ If the rank is $1$, the canonical form is $y_{1}^{2}=y_{1}\cdot y_{1}$.
 
 This is also the product of two homogeneous linear polynomials.
 
-**Necessity.**
+Necessity.
 
 Suppose
 
@@ -259,7 +259,7 @@ $$
 A=\frac{\alpha\beta^{\top}+\beta\alpha^{\top}}{2}.
 $$
 
-**Case 1**: $\alpha$ and $\beta$ are linearly dependent.
+Case 1: $\alpha$ and $\beta$ are linearly dependent.
 
 Set $\beta=k\alpha$. Then
 
@@ -269,7 +269,7 @@ $$
 
 Hence $\operatorname{rank}\left(A\right)=1$.
 
-**Case 2**: $\alpha$ and $\beta$ are linearly independent.
+Case 2: $\alpha$ and $\beta$ are linearly independent.
 
 Set
 

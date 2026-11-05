@@ -97,7 +97,7 @@ $$
 \left(I+A\right)\left(I-A\right)=I-A^{2}=I-I=0.
 $$
 
-By the conclusion of **4.5-1**,
+By the conclusion of 4.5-1,
 
 $$
 \text{rank}\left(I+A\right)+\text{rank}\left(I-A\right)\le n.
@@ -145,7 +145,7 @@ $$
 A\left(I-A\right)=A-A^{2}=A-A=0.
 $$
 
-By the conclusion of **4.5-1**,
+By the conclusion of 4.5-1,
 
 $$
 \text{rank}\left(A\right)+\text{rank}\left(I-A\right)\le n.
@@ -240,17 +240,17 @@ $$
 
 Consider three cases.
 
-**When $\text{rank}\left(A\right)=n$**: $\left|A\right|\ne0$.
+When $\text{rank}\left(A\right)=n$: $\left|A\right|\ne0$.
 
 From $AA^{*}=\left|A\right|I$, $\left|A\right|\left|A^{*}\right|=\left|A\right|^{n}$.
 
 Hence $\left|A^{*}\right|=\left|A\right|^{n-1}\ne0$, so $\text{rank}\left(A^{*}\right)=n$.
 
-**When $\text{rank}\left(A\right)=n-1$**: $\left|A\right|=0$.
+When $\text{rank}\left(A\right)=n-1$: $\left|A\right|=0$.
 
 Thus $AA^{*}=\left|A\right|I=0$.
 
-By **4.5-1**, $\text{rank}\left(A\right)+\text{rank}\left(A^{*}\right)\le n$.
+By 4.5-1, $\text{rank}\left(A\right)+\text{rank}\left(A^{*}\right)\le n$.
 
 Namely $\left(n-1\right)+\text{rank}\left(A^{*}\right)\le n$, so $\text{rank}\left(A^{*}\right)\le1$.
 
@@ -258,7 +258,7 @@ Since $\text{rank}\left(A\right)=n-1$, $A$ has a nonzero $\left(n-1\right)$-mino
 
 Therefore $\text{rank}\left(A^{*}\right)=1$.
 
-**When $\text{rank}\left(A\right)< n-1$**: all $\left(n-1\right)$-minors of $A$ are zero.
+When $\text{rank}\left(A\right)< n-1$: all $\left(n-1\right)$-minors of $A$ are zero.
 
 Hence all cofactors are zero, i.e. $A^{*}=0$.
 

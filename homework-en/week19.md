@@ -54,7 +54,7 @@ $$
 
 That is, $\lambda_{0}$ is an $n$-fold eigenvalue of $A$ (algebraic multiplicity $n$).
 
-**Find the dimension of the eigenspace.**
+Find the dimension of the eigenspace.
 
 $$
 \lambda_{0}I-A=\left[\begin{array}{cccc}
@@ -105,7 +105,7 @@ $$
 
 Thus the eigenvalues are $\lambda_{1}=\lambda_{2}=1$ and $\lambda_{3}=-8$.
 
-**Find the eigenvectors for $\lambda=1$.**
+Find the eigenvectors for $\lambda=1$.
 
 $$
 I-A=\left[\begin{array}{rrr}
@@ -144,7 +144,7 @@ $$
 \eta_{2}=\left(\frac{2}{3\sqrt{5}},\frac{4}{3\sqrt{5}},\frac{\sqrt{5}}{3}\right)^{\top}.
 $$
 
-**Find the eigenvectors for $\lambda=-8$.**
+Find the eigenvectors for $\lambda=-8$.
 
 $$
 -8I-A=\left[\begin{array}{rrr}
@@ -211,15 +211,15 @@ $$
 
 Thus the eigenvalues are $\lambda_{1}=-1$, $\lambda_{2}=2$ and $\lambda_{3}=5$.
 
-**Find the eigenvectors for $\lambda=-1$.**
+Find the eigenvectors for $\lambda=-1$.
 
 A fundamental solution system: $\alpha_{1}=\left(1,2,2\right)^{\top}$.
 
-**Find the eigenvectors for $\lambda=2$.**
+Find the eigenvectors for $\lambda=2$.
 
 A fundamental solution system: $\alpha_{2}=\left(2,1,-2\right)^{\top}$.
 
-**Find the eigenvectors for $\lambda=5$.**
+Find the eigenvectors for $\lambda=5$.
 
 A fundamental solution system: $\alpha_{3}=\left(-2,2,-1\right)^{\top}$.
 
@@ -372,7 +372,7 @@ Let $A$ be an $n\times n$ matrix over a number field $K$. Prove: $A$ is skew-sym
 
 By **Definition 6.1.1 (Quadratic Form)**, $A$ is an $n\times n$ matrix over a number field $K$.
 
-**Necessity.** If $A$ is skew-symmetric, i.e. $A^{\top}=-A$.
+Necessity. If $A$ is skew-symmetric, i.e. $A^{\top}=-A$.
 
 Then $\alpha^{\top}A\alpha$ is a scalar, and its transpose equals itself:
 
@@ -390,7 +390,7 @@ $$
 
 i.e. $2\alpha^{\top}A\alpha=0$, and hence $\alpha^{\top}A\alpha=0$.
 
-**Sufficiency.** Suppose $\alpha^{\top}A\alpha=0$ for every column vector $\alpha$.
+Sufficiency. Suppose $\alpha^{\top}A\alpha=0$ for every column vector $\alpha$.
 
 We prove $A$ is skew-symmetric, i.e. $A^{\top}=-A$, i.e. $A+A^{\top}=0$.
 

@@ -252,7 +252,7 @@ $$
 
 ### Solution to 2.4-4
 
-**Base case $n=2$**:
+Base case $n=2$:
 
 $$
 \left|\begin{array}{cc}x & a_{0}\\-1 & x+a_{1}\end{array}\right|=x\left(x+a_{1}\right)-\left(-1\right)a_{0}=x^{2}+a_{1}x+a_{0}.
@@ -260,7 +260,7 @@ $$
 
 It holds.
 
-**Inductive step**: assume the conclusion holds for order $n-1$.
+Inductive step: assume the conclusion holds for order $n-1$.
 
 For the $n\times n$ determinant, by **Theorem 2.4.1 (Expansion of a Determinant Along a Row (Column))**, expand along row $1$:
 

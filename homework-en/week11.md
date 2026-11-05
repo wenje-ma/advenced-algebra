@@ -26,7 +26,7 @@ By **Theorem 3.8.1 (Solution Set Structure of an Inhomogeneous System)**, the so
 
 Let the inhomogeneous system be $Ax=\beta$, where $A$ is an $n\times n$ matrix; the derived system is $Ax=0$.
 
-**Necessity.** Suppose the inhomogeneous system has a unique solution; then
+Necessity. Suppose the inhomogeneous system has a unique solution; then
 
 $$
 \text{rank}\left(A\right)=\text{rank}\left(\overline{A}\right)=n\ \text{\left(the rank of the coefficient matrix equals the number of unknowns\right)}.
@@ -34,7 +34,7 @@ $$
 
 The derived system $Ax=0$ has coefficient matrix of rank $n$ and $n$ unknowns, so it has only the zero solution.
 
-**Sufficiency.** Suppose the derived system has only the zero solution; then $\text{rank}\left(A\right)=n$.
+Sufficiency. Suppose the derived system has only the zero solution; then $\text{rank}\left(A\right)=n$.
 
 $A$ is an $n\times n$ matrix with $\text{rank}\left(A\right)=n$, so $\left|A\right|\ne0$.
 

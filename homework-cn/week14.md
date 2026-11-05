@@ -97,7 +97,7 @@ $$
 \left(I+A\right)\left(I-A\right)=I-A^{2}=I-I=0.
 $$
 
-由**4.5-1**的结论,
+由4.5-1的结论,
 
 $$
 \text{rank}\left(I+A\right)+\text{rank}\left(I-A\right)\le n.
@@ -145,7 +145,7 @@ $$
 A\left(I-A\right)=A-A^{2}=A-A=0.
 $$
 
-由**4.5-1**的结论,
+由4.5-1的结论,
 
 $$
 \text{rank}\left(A\right)+\text{rank}\left(I-A\right)\le n.
@@ -240,17 +240,17 @@ $$
 
 分三种情况讨论.
 
-**当 $\text{rank}\left(A\right)=n$ 时**: $\left|A\right|\ne0$.
+当 $\text{rank}\left(A\right)=n$ 时: $\left|A\right|\ne0$.
 
 由 $AA^{*}=\left|A\right|I$, 得 $\left|A\right|\left|A^{*}\right|=\left|A\right|^{n}$.
 
 故 $\left|A^{*}\right|=\left|A\right|^{n-1}\ne0$, 因此 $\text{rank}\left(A^{*}\right)=n$.
 
-**当 $\text{rank}\left(A\right)=n-1$ 时**: $\left|A\right|=0$.
+当 $\text{rank}\left(A\right)=n-1$ 时: $\left|A\right|=0$.
 
 故 $AA^{*}=\left|A\right|I=0$.
 
-由**4.5-1**, $\text{rank}\left(A\right)+\text{rank}\left(A^{*}\right)\le n$.
+由4.5-1, $\text{rank}\left(A\right)+\text{rank}\left(A^{*}\right)\le n$.
 
 即 $\left(n-1\right)+\text{rank}\left(A^{*}\right)\le n$, 故 $\text{rank}\left(A^{*}\right)\le1$.
 
@@ -258,7 +258,7 @@ $$
 
 因此 $\text{rank}\left(A^{*}\right)=1$.
 
-**当 $\text{rank}\left(A\right)< n-1$ 时**: $A$ 的所有 $n-1$ 阶子式都为零.
+当 $\text{rank}\left(A\right)< n-1$ 时: $A$ 的所有 $n-1$ 阶子式都为零.
 
 故所有代数余子式都为零, 即 $A^{*}=0$.
 

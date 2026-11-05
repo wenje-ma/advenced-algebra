@@ -152,13 +152,13 @@ Let $f,g\in K\left[x_{1},\ldots,x_{n}\right]$ with $g\ne0$. Prove: if for every 
 
 By **Theorem 7.9.1 (Leading Term Theorem)**, the product of two nonzero polynomials in $K\left[x_{1},x_{2},\ldots,x_{n}\right]$ is nonzero. Use induction on $n$.
 
-**Base case $n=1$**.
+Base case $n=1$.
 
 $f\left(x\right)$ is a polynomial in $K\left[x\right]$. If $f\left(x\right)=0$ for infinitely many $x$, then $f\left(x\right)=0$.
 
 This is because the number of roots of a nonzero polynomial does not exceed its degree.
 
-**Inductive step**.
+Inductive step.
 
 Assume the claim holds for polynomials in $n-1$ variables.
 
@@ -259,7 +259,7 @@ $$
 \sigma_{3}=x_{1}x_{2}x_{3}.
 $$
 
-**$S_{2}$**.
+$S_{2}$.
 
 By Newton's identities:
 
@@ -273,7 +273,7 @@ $$
 S_{2}=\sigma_{1}S_{1}-2\sigma_{2}=\sigma_{1}^{2}-2\sigma_{2}.
 $$
 
-**$S_{3}$**.
+$S_{3}$.
 
 By Newton's identities:
 
@@ -288,7 +288,7 @@ S_{3}
 =\sigma_{1}S_{2}-\sigma_{2}S_{1}+3\sigma_{3}=\sigma_{1}\left(\sigma_{1}^{2}-2\sigma_{2}\right)-\sigma_{2}\sigma_{1}+3\sigma_{3}=\sigma_{1}^{3}-3\sigma_{1}\sigma_{2}+3\sigma_{3}.
 $$
 
-**$S_{4}$**.
+$S_{4}$.
 
 By Newton's identities (since $n=3$, $k=4> n$):
 

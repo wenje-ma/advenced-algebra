@@ -141,7 +141,7 @@ $$
 
 By **Definition 2.2.1 ($n\times n$ Determinant)**, each term of the determinant is a product of $n$ entries from distinct rows and distinct columns, and the sign of a term is determined by the inversion number of its column-index permutation.
 
-**The term containing $x^{4}$.** To obtain $x^{4}$, all $4$ entries must contain $x$. The positions containing $x$ are
+The term containing $x^{4}$. To obtain $x^{4}$, all $4$ entries must contain $x$. The positions containing $x$ are
 
 $$
 \left(1,1\right)=5x,\left(1,2\right)=x,\left(1,4\right)=x,\left(2,2\right)=x,\left(3,3\right)=x,\left(4,4\right)=x.
@@ -151,7 +151,7 @@ Each of rows $2,3,4$ has only one position containing $x$, namely $\left(2,2\rig
 
 Hence the term containing $x^{4}$ is $5x^{4}$.
 
-**The term containing $x^{3}$.** To obtain $x^{3}$, one needs $3$ entries containing $x$ and $1$ entry not containing $x$. Enumerate all valid combinations:
+The term containing $x^{3}$. To obtain $x^{3}$, one needs $3$ entries containing $x$ and $1$ entry not containing $x$. Enumerate all valid combinations:
 
 (1) Take
 

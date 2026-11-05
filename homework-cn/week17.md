@@ -163,7 +163,7 @@ $$
 
 设 $B\sim A$, 即存在可逆矩阵 $P$, 使得 $B=P^{-1}AP$.
 
-**证明 $B$ 是幂零矩阵**.
+证明 $B$ 是幂零矩阵.
 
 $$
 B^{l}=\left(P^{-1}AP\right)^{l}=P^{-1}A^{l}P=P^{-1}0P=0.
@@ -171,7 +171,7 @@ $$
 
 因此 $B$ 是幂零矩阵.
 
-**证明 $B$ 的幂零指数等于 $l$**.
+证明 $B$ 的幂零指数等于 $l$.
 
 设 $B$ 的幂零指数为 $m$, 即 $B^{m}=0$.
 
@@ -234,7 +234,7 @@ $$
 
 因此特征值为 $\lambda_{1}=1$, $\lambda_{2}=\lambda_{3}=3$.
 
-**求 $\lambda=1$ 的特征向量**.
+求 $\lambda=1$ 的特征向量.
 
 $$
 I-A=\left[\begin{array}{rrr}
@@ -253,7 +253,7 @@ $$
 
 基础解系: $\alpha_{1}=\left(-2,0,1\right)^{\top}$.
 
-**求 $\lambda=3$ 的特征向量**.
+求 $\lambda=3$ 的特征向量.
 
 $$
 3I-A=\left[\begin{array}{rrr}
@@ -323,7 +323,7 @@ $\blacksquare$
 
 ### 解答 5.5-10
 
-**(1)** 设 $\lambda$ 是 $A$ 的一个特征值, $\alpha$ 是 $A$ 的属于 $\lambda$ 的特征向量, 即 $A\alpha=\lambda\alpha$.
+(1) 设 $\lambda$ 是 $A$ 的一个特征值, $\alpha$ 是 $A$ 的属于 $\lambda$ 的特征向量, 即 $A\alpha=\lambda\alpha$.
 
 两边取共轭转置: $\alpha^{\top}A^{\top}=\overline{\lambda}\alpha^{\top}$.
 
@@ -355,7 +355,7 @@ $$
 
 若 $\lambda$ 是实数特征值, 则 $\lambda=\pm1$.
 
-**(2)** $A$ 是 $n$ 级正交矩阵, $n$ 是奇数.
+(2) $A$ 是 $n$ 级正交矩阵, $n$ 是奇数.
 
 复特征值共轭成对出现, 故复特征值的个数是偶数.
 
@@ -379,7 +379,7 @@ $$
 
 因此 $1$ 是 $A$ 的一个特征值.
 
-**(3)** $\left|A\right|=\left(-1\right)^{m}=-1$, 故 $m$ 是奇数, 即 $m\ge1$.
+(3) $\left|A\right|=\left(-1\right)^{m}=-1$, 故 $m$ 是奇数, 即 $m\ge1$.
 
 因此 $-1$ 是 $A$ 的一个特征值.
 

@@ -185,7 +185,7 @@ The roots of $x^{n}-1=0$ satisfy $x^{n}=1$.
 The $n$-th roots of unity are:
 
 $$
-x_{k}=e^{2\pi{i}k/n}=\cos\frac{2\pi{k}}{n}+i\sin\frac{2\pi{k}}{n},\,k=0,1,\ldots,n-1.
+x_{k}=e^{2\pi{i}k/n}=\cos\frac{2\pi{k}}{n}+i\sin\frac{2\pi{k}}{n},k=0,1,\ldots,n-1.
 $$
 
 Therefore the standard factorization is:

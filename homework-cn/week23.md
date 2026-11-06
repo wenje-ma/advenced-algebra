@@ -185,7 +185,7 @@ $x^{n}-1=0$ 的根是 $x^{n}=1$.
 $1$ 的 $n$ 次方根为:
 
 $$
-x_{k}=e^{2\pi{i}k/n}=\cos\frac{2\pi{k}}{n}+i\sin\frac{2\pi{k}}{n},\,k=0,1,\ldots,n-1.
+x_{k}=e^{2\pi{i}k/n}=\cos\frac{2\pi{k}}{n}+i\sin\frac{2\pi{k}}{n},k=0,1,\ldots,n-1.
 $$
 
 因此标准分解式为:

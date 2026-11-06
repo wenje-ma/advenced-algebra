@@ -29,7 +29,7 @@
 必要性. 设非齐次方程组有唯一解, 则
 
 $$
-\text{rank}\left(A\right)=\text{rank}\left(\overline{A}\right)=n\,\text{\left(系数矩阵的秩等于未知量数目\right)}.
+\text{rank}\left(A\right)=\text{rank}\left(\overline{A}\right)=n\;\text{\left(系数矩阵的秩等于未知量数目\right)}.
 $$
 
 导出组 $Ax=0$ 的系数矩阵秩为 $n$, 未知量数目为 $n$, 故只有零解.

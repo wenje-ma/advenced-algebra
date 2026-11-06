@@ -121,7 +121,7 @@ The roots of $x^{4}+4=0$ satisfy $x^{4}=-4=4e^{i\pi}$.
 Hence
 
 $$
-x=4^{1/4}e^{i\left(\pi/4+k\pi/2\right)},\,k=0,1,2,3.
+x=4^{1/4}e^{i\left(\pi/4+k\pi/2\right)},k=0,1,2,3.
 $$
 
 $4^{1/4}=\sqrt{2}$.
@@ -129,7 +129,7 @@ $4^{1/4}=\sqrt{2}$.
 Thus the four roots are:
 
 $$
-x_{1}=1+i,\,x_{2}=-1+i,\,x_{3}=-1-i,\,x_{4}=1-i.
+x_{1}=1+i,x_{2}=-1+i,x_{3}=-1-i,x_{4}=1-i.
 $$
 
 Therefore

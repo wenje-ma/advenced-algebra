@@ -210,7 +210,7 @@ $$
 
 故是单射.
 
-满射: 对任意 $y\in\mathbb{R}$, 存在 $x=\sqrt\left[3\right]{y}$ 使得 $f\left(x\right)=y$. 故是满射.
+满射: 对任意 $y\in\mathbb{R}$, 存在 $x=\sqrt[3]{y}$ 使得 $f\left(x\right)=y$. 故是满射.
 
 因此既是单射又是满射 (双射).
 
@@ -300,13 +300,13 @@ A=\left[\begin{array}{rrrr}
 -1&2&1&3\\
 1&2&5&5
 \end{array}\right]
-\rightarrow
+arrow
 \left[\begin{array}{rrrr}
 1&0&2&1\\
 0&2&3&4\\
 0&2&3&4
 \end{array}\right]
-\rightarrow
+arrow
 \left[\begin{array}{rrrr}
 1&0&2&1\\
 0&2&3&4\\

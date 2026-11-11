@@ -210,7 +210,7 @@ $$
 
 Hence it is injective.
 
-Surjective: for every $y\in\mathbb{R}$, there is $x=\sqrt\left[3\right]{y}$ such that $f\left(x\right)=y$. Hence it is surjective.
+Surjective: for every $y\in\mathbb{R}$, there is $x=\sqrt[3]{y}$ such that $f\left(x\right)=y$. Hence it is surjective.
 
 Therefore it is both injective and surjective (bijective).
 
@@ -300,13 +300,13 @@ A=\left[\begin{array}{rrrr}
 -1&2&1&3\\
 1&2&5&5
 \end{array}\right]
-\rightarrow
+arrow
 \left[\begin{array}{rrrr}
 1&0&2&1\\
 0&2&3&4\\
 0&2&3&4
 \end{array}\right]
-\rightarrow
+arrow
 \left[\begin{array}{rrrr}
 1&0&2&1\\
 0&2&3&4\\

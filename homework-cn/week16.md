@@ -110,19 +110,19 @@ A=\left[\begin{array}{rrr}
 -2&3&-11\\
 4&-5&17
 \end{array}\right]
-\rightarrow
+arrow
 \left[\begin{array}{rrr}
 1&-1&3\\
 0&1&-5\\
 0&-1&5
 \end{array}\right]
-\rightarrow
+arrow
 \left[\begin{array}{rrr}
 1&-1&3\\
 0&1&-5\\
 0&0&0
 \end{array}\right]
-\rightarrow
+arrow
 \left[\begin{array}{rrr}
 1&0&-2\\
 0&1&-5\\
@@ -133,7 +133,7 @@ $$
 再作初等列变换: 第 $3$ 列 $+2\times$ 第 $1$ 列, 第 $3$ 列 $+5\times$ 第 $2$ 列.
 
 $$
-A\rightarrow\left[\begin{array}{rrr}
+Aarrow\left[\begin{array}{rrr}
 1&0&0\\
 0&1&0\\
 0&0&0
@@ -170,19 +170,19 @@ A=\left[\begin{array}{rr}
 -3&-6\\
 2&-4
 \end{array}\right]
-\rightarrow
+arrow
 \left[\begin{array}{rr}
 1&-2\\
 0&-12\\
 0&0
 \end{array}\right]
-\rightarrow
+arrow
 \left[\begin{array}{rr}
 1&-2\\
 0&1\\
 0&0
 \end{array}\right]
-\rightarrow
+arrow
 \left[\begin{array}{rr}
 1&0\\
 0&1\\
@@ -260,14 +260,14 @@ $$
 
 $$
 M=\left[\begin{array}{cc}A&0\\I_{n}&B\end{array}\right]
-\rightarrow
+arrow
 \left[\begin{array}{cc}A&-AB\\I_{n}&0\end{array}\right].
 $$
 
 再作分块矩阵的初等行变换: 交换第 $1$ 块行和第 $2$ 块行.
 
 $$
-\rightarrow
+arrow
 \left[\begin{array}{cc}I_{n}&0\\A&-AB\end{array}\right].
 $$
 

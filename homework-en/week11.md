@@ -29,7 +29,7 @@ Let the inhomogeneous system be $Ax=\beta$, where $A$ is an $n\times{n}$ matrix;
 Necessity. Suppose the inhomogeneous system has a unique solution; then
 
 $$
-\text{rank}\left(A\right)=\text{rank}\left(\overline{A}\right)=n\;\text{\left(the~rank~of~the~coefficient~matrix~equals~the~number~of~unknowns\right)}.
+\text{rank}\left(A\right)=\text{rank}\left(\overline{A}\right)=n\;\text{(the~rank~of~the~coefficient~matrix~equals~the~number~of~unknowns)}.
 $$
 
 The derived system $Ax=0$ has coefficient matrix of rank $n$ and $n$ unknowns, so it has only the zero solution.

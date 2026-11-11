@@ -112,7 +112,7 @@ I-A=\left[\begin{array}{rrr}
 1&2&-2\\
 2&4&-4\\
 -2&-4&4
-\end{array}\right]\rightarrow
+\end{array}\right]arrow
 \left[\begin{array}{rrr}
 1&2&-2\\
 0&0&0\\
@@ -151,7 +151,7 @@ $$
 -8&2&-2\\
 2&-5&-4\\
 -2&-4&-5
-\end{array}\right]\rightarrow
+\end{array}\right]arrow
 \left[\begin{array}{rrr}
 1&0&1/2\\
 0&1&1\\

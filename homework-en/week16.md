@@ -110,19 +110,19 @@ A=\left[\begin{array}{rrr}
 -2&3&-11\\
 4&-5&17
 \end{array}\right]
-\rightarrow
+arrow
 \left[\begin{array}{rrr}
 1&-1&3\\
 0&1&-5\\
 0&-1&5
 \end{array}\right]
-\rightarrow
+arrow
 \left[\begin{array}{rrr}
 1&-1&3\\
 0&1&-5\\
 0&0&0
 \end{array}\right]
-\rightarrow
+arrow
 \left[\begin{array}{rrr}
 1&0&-2\\
 0&1&-5\\
@@ -133,7 +133,7 @@ $$
 Now apply elementary column operations: column $3$ $+2\times$ column $1$, column $3$ $+5\times$ column $2$.
 
 $$
-A\rightarrow\left[\begin{array}{rrr}
+Aarrow\left[\begin{array}{rrr}
 1&0&0\\
 0&1&0\\
 0&0&0
@@ -170,19 +170,19 @@ A=\left[\begin{array}{rr}
 -3&-6\\
 2&-4
 \end{array}\right]
-\rightarrow
+arrow
 \left[\begin{array}{rr}
 1&-2\\
 0&-12\\
 0&0
 \end{array}\right]
-\rightarrow
+arrow
 \left[\begin{array}{rr}
 1&-2\\
 0&1\\
 0&0
 \end{array}\right]
-\rightarrow
+arrow
 \left[\begin{array}{rr}
 1&0\\
 0&1\\
@@ -260,14 +260,14 @@ Perform an elementary block column operation: add $-B$ times the first block col
 
 $$
 M=\left[\begin{array}{cc}A&0\\I_{n}&B\end{array}\right]
-\rightarrow
+arrow
 \left[\begin{array}{cc}A&-AB\\I_{n}&0\end{array}\right].
 $$
 
 Now perform an elementary block row operation: swap the first and second block rows.
 
 $$
-\rightarrow
+arrow
 \left[\begin{array}{cc}I_{n}&0\\A&-AB\end{array}\right].
 $$
 

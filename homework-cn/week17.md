@@ -241,7 +241,7 @@ I-A=\left[\begin{array}{rrr}
 -1&-3&-2\\
 -1&-7&-2\\
 2&14&4
-\end{array}\right]\rightarrow
+\end{array}\right]arrow
 \left[\begin{array}{rrr}
 -1&-3&-2\\
 0&-4&0\\
@@ -260,7 +260,7 @@ $$
 1&-3&-2\\
 -1&-5&-2\\
 2&14&6
-\end{array}\right]\rightarrow
+\end{array}\right]arrow
 \left[\begin{array}{rrr}
 1&-3&-2\\
 0&-8&-4\\

@@ -179,7 +179,9 @@ Reduce to the canonical form.
 
 Reduce to the canonical form.
 
-All these canonical forms are unique. $\blacksquare$
+All these canonical forms are unique.
+
+$\blacksquare$
 
 ## 6.2-4
 
@@ -215,7 +217,9 @@ Then $\alpha\ne0$ (because if $\alpha=0$, then $\alpha_{1}=-t_{1}\alpha_{2}$, an
 
 And $\alpha^{\top}A\alpha=g\left(t_{1}\right)=0$.
 
-Therefore there is a nonzero column vector $\alpha$ in $\mathbb{R}^{n}$ such that $\alpha^{\top}A\alpha=0$. $\blacksquare$
+Therefore there is a nonzero column vector $\alpha$ in $\mathbb{R}^{n}$ such that $\alpha^{\top}A\alpha=0$.
+
+$\blacksquare$
 
 ## 6.2-6
 
@@ -335,7 +339,9 @@ $$
 X^{\top}AX=Z^{\top}P^{\top}APZ=Z^{\top}\operatorname{diag}\left\{I_{r},0\right\}Z=z_{1}^{2}+z_{2}^{2}+\cdots+z_{r}^{2}.
 $$
 
-Therefore the canonical form of the complex quadratic form $X^{\top}AX$ is $z_{1}^{2}+z_{2}^{2}+\cdots+z_{r}^{2}$, where $r$ is its rank. $\blacksquare$
+Therefore the canonical form of the complex quadratic form $X^{\top}AX$ is $z_{1}^{2}+z_{2}^{2}+\cdots+z_{r}^{2}$, where $r$ is its rank.
+
+$\blacksquare$
 
 ## 7.2-3(2)
 

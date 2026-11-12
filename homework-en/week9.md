@@ -67,7 +67,9 @@ $$
 
 By **Corollary 3.5.5 (Computing Rank by Elementary Row Operations)**, the echelon matrix has $3$ nonzero rows, so the rank is $3$.
 
-By **Corollary 3.5.5 (Computing Rank by Elementary Row Operations)**, the pivots are in columns $1,2,3$, so $\alpha_{1},\alpha_{2},\alpha_{3}$ are a maximal linearly independent subset. $\blacksquare$
+By **Corollary 3.5.5 (Computing Rank by Elementary Row Operations)**, the pivots are in columns $1,2,3$, so $\alpha_{1},\alpha_{2},\alpha_{3}$ are a maximal linearly independent subset.
+
+$\blacksquare$
 
 ## 3.5-3
 
@@ -164,7 +166,9 @@ row $2$ is nonzero. Row $3$ $-$ row $2$ $\times\frac{10-\lambda}{3\left(3-\lambd
 
 The echelon matrix has $3$ nonzero rows, so the rank is $3$.
 
-In summary: when $\lambda=3$, by **Corollary 3.5.5 (Computing Rank by Elementary Row Operations)**, the echelon matrix has $2$ nonzero rows, so the rank is $2$; when $\lambda\ne3$, the echelon matrix has $3$ nonzero rows, so the rank is $3$. $\blacksquare$
+In summary: when $\lambda=3$, by **Corollary 3.5.5 (Computing Rank by Elementary Row Operations)**, the echelon matrix has $2$ nonzero rows, so the rank is $2$; when $\lambda\ne3$, the echelon matrix has $3$ nonzero rows, so the rank is $3$.
+
+$\blacksquare$
 
 ## 3.5-8
 
@@ -306,4 +310,6 @@ Thus $\text{rank}\left(\overline{A}\right)=s=\text{rank}\left(A\right)$.
 
 By **Theorem 3.6.1 (Solvability Criterion for a Linear System)**, the system is therefore solvable.
 
-Also, $\text{rank}\left(A\right)=s<{}n$ (the number of unknowns); by **Theorem 3.6.2 (Criterion for the Number of Solutions)**, the system therefore has infinitely many solutions. $\blacksquare$
+Also, $\text{rank}\left(A\right)=s<{}n$ (the number of unknowns); by **Theorem 3.6.2 (Criterion for the Number of Solutions)**, the system therefore has infinitely many solutions.
+
+$\blacksquare$

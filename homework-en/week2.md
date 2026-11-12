@@ -65,7 +65,9 @@ $$
 16\times\frac{1}{2}-4\times\left(-\frac{1}{2}\right)+2=8+2+2=12\ne5.
 $$
 
-Hence the $3$rd equation is not satisfied. Therefore no such quadratic function exists. $\blacksquare$
+Hence the $3$rd equation is not satisfied. Therefore no such quadratic function exists.
+
+$\blacksquare$
 
 ## 1.2-8
 
@@ -99,7 +101,9 @@ When $x_{3}=0$, $l$ attains its minimum $1.35$, at which point $x_{1}=5,x_{2}=5,
 
 When $x_{3}=5$, $l$ attains its maximum $1.35+0.07\times5=1.7$, at which point $x_{1}=5,x_{2}=0,x_{3}=5$.
 
-Hence the minimum total profit $l$ is $1.35$ thousand yuan (investing $5$ thousand in $A_{1}$, $5$ thousand in $A_{2}$, and $0$ in $A_{3}$), and the maximum is $1.7$ thousand yuan (investing $5$ thousand in $A_{1}$, $0$ in $A_{2}$, and $5$ thousand in $A_{3}$). $\blacksquare$
+Hence the minimum total profit $l$ is $1.35$ thousand yuan (investing $5$ thousand in $A_{1}$, $5$ thousand in $A_{2}$, and $0$ in $A_{3}$), and the maximum is $1.7$ thousand yuan (investing $5$ thousand in $A_{1}$, $0$ in $A_{2}$, and $5$ thousand in $A_{3}$).
+
+$\blacksquare$
 
 ## 1.3-1
 
@@ -155,7 +159,9 @@ $$
 
 Since the rationals are closed under addition, subtraction, multiplication, and division (with nonzero divisor) (Closure of the Rational Field under the Four Arithmetic Operations), $\frac{ac+bd}{c^{2}+d^{2}}\in\mathbb{Q}$ and $\frac{bc-ad}{c^{2}+d^{2}}\in\mathbb{Q}$, so $\frac{\alpha}{\beta}\in\mathbb{Q}\left(i\right)$.
 
-In summary, $\mathbb{Q}\left(i\right)$ satisfies all conditions of **Definition 1.3.1 (Number Field)**, so $\mathbb{Q}\left(i\right)$ is a number field. $\blacksquare$
+In summary, $\mathbb{Q}\left(i\right)$ satisfies all conditions of **Definition 1.3.1 (Number Field)**, so $\mathbb{Q}\left(i\right)$ is a number field.
+
+$\blacksquare$
 
 ## 2.1-1(1)
 
@@ -178,7 +184,9 @@ $$
 \tau\left(315462\right)=2+0+2+1+1+0=6.
 $$
 
-By Inversions, the Number of Inversions, and Even/Odd Permutations, $\tau=6$ is even, so $315462$ is an even permutation. $\blacksquare$
+By Inversions, the Number of Inversions, and Even/Odd Permutations, $\tau=6$ is even, so $315462$ is an even permutation.
+
+$\blacksquare$
 
 ## 2.1-1(4)
 
@@ -192,7 +200,9 @@ $$
 \tau\left(7654321\right)=6+5+4+3+2+1+0=21.
 $$
 
-By Inversions, the Number of Inversions, and Even/Odd Permutations, $\tau=21$ is odd, so $7654321$ is an odd permutation. $\blacksquare$
+By Inversions, the Number of Inversions, and Even/Odd Permutations, $\tau=21$ is odd, so $7654321$ is an odd permutation.
+
+$\blacksquare$
 
 ## 2.1-1(7)
 
@@ -206,7 +216,9 @@ $$
 \tau\left(123456789\right)=0.
 $$
 
-By Inversions, the Number of Inversions, and Even/Odd Permutations, $\tau=0$ is even, so $123456789$ is an even permutation. $\blacksquare$
+By Inversions, the Number of Inversions, and Even/Odd Permutations, $\tau=0$ is even, so $123456789$ is an even permutation.
+
+$\blacksquare$
 
 ## 2.1-2
 
@@ -274,7 +286,9 @@ $$
 x_{2}=\frac{\left|\begin{array}{rr}2&7\\5&6\end{array}\right|}{23}=\frac{2\times6-7\times5}{23}=\frac{12-35}{23}=\frac{-23}{23}=-1.
 $$
 
-Hence the unique solution is $\left(x_{1},x_{2}\right)=\left(2,-1\right)$. $\blacksquare$
+Hence the unique solution is $\left(x_{1},x_{2}\right)=\left(2,-1\right)$.
+
+$\blacksquare$
 
 ## 2.2-1(3)
 

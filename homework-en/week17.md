@@ -151,7 +151,9 @@ $$
 
 This is a contradiction.
 
-Hence the assumption fails, and $A$ is not invertible. $\blacksquare$
+Hence the assumption fails, and $A$ is not invertible.
+
+$\blacksquare$
 
 ## 5.4-12
 
@@ -199,7 +201,9 @@ Since the nilpotent index of $B$ is $m$, $l\ge{m}$.
 
 Therefore $m=l$.
 
-Thus a matrix similar to a nilpotent matrix is also nilpotent, and their nilpotent indices are equal. $\blacksquare$
+Thus a matrix similar to a nilpotent matrix is also nilpotent, and their nilpotent indices are equal.
+
+$\blacksquare$
 
 ## 5.5-1(2)
 
@@ -272,7 +276,9 @@ Solving gives $x_{2}=-\frac{1}{2}x_{3}$ and $x_{1}=\frac{1}{2}x_{3}$.
 
 A fundamental solution system: $\alpha_{2}=\left(1,-1,2\right)^{\top}$.
 
-The eigenvectors for $\lambda_{1}=1$ are $k_{1}\alpha_{1}$ ( $k_{1}\ne0$ ), and those for $\lambda_{2}=\lambda_{3}=3$ are $k_{2}\alpha_{2}$ ( $k_{2}\ne0$ ). $\blacksquare$
+The eigenvectors for $\lambda_{1}=1$ are $k_{1}\alpha_{1}$ ( $k_{1}\ne0$ ), and those for $\lambda_{2}=\lambda_{3}=3$ are $k_{2}\alpha_{2}$ ( $k_{2}\ne0$ ).
+
+$\blacksquare$
 
 ## 5.5-2(2)
 

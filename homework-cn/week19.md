@@ -77,7 +77,9 @@ $$
 
 即几何重数 $\le{n}-1<{}n=$ 代数重数.
 
-因此 $A$ 不能对角化. $\blacksquare$
+因此 $A$ 不能对角化.
+
+$\blacksquare$
 
 ## 5.7-1(1)
 
@@ -279,7 +281,9 @@ $$
 A\sim{D}_{A}=D_{B}\sim{B}.
 $$
 
-所以 $A$ 与 $B$ 相似. $\blacksquare$
+所以 $A$ 与 $B$ 相似.
+
+$\blacksquare$
 
 ## 5.7-3
 
@@ -307,7 +311,9 @@ $$
 A^{\top}=\left(TDT^{\top}\right)^{\top}=TD^{\top}T^{\top}=TDT^{\top}=A.
 $$
 
-所以 $A$ 是对称矩阵. $\blacksquare$
+所以 $A$ 是对称矩阵.
+
+$\blacksquare$
 
 ## 6.1-3(1)
 
@@ -362,7 +368,9 @@ C=\left[\begin{array}{rrr}
 \end{array}\right].
 $$
 
-$f=y_{1}^{2}+y_{2}^{2}-2y_{3}^{2}$ 是标准形. $\blacksquare$
+$f=y_{1}^{2}+y_{2}^{2}-2y_{3}^{2}$ 是标准形.
+
+$\blacksquare$
 
 ## 6.1-5
 
@@ -408,4 +416,6 @@ $$
 
 由对称矩阵的性质 (对称矩阵如果对任意 $\alpha$ 都有 $\alpha^{\top}A\alpha=0$, 则 $A=0$ ), 可知 $A+A^{\top}=0$.
 
-因此 $A^{\top}=-A$, 即 $A$ 是斜对称矩阵. $\blacksquare$
+因此 $A^{\top}=-A$, 即 $A$ 是斜对称矩阵.
+
+$\blacksquare$

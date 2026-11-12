@@ -179,7 +179,9 @@ $$
 
 化成规范形即可.
 
-以上规范形都是唯一的. $\blacksquare$
+以上规范形都是唯一的.
+
+$\blacksquare$
 
 ## 6.2-4
 
@@ -215,7 +217,9 @@ $$
 
 且 $\alpha^{\top}A\alpha=g\left(t_{1}\right)=0$.
 
-因此 $\mathbb{R}^{n}$ 中有非零列向量 $\alpha$, 使得 $\alpha^{\top}A\alpha=0$. $\blacksquare$
+因此 $\mathbb{R}^{n}$ 中有非零列向量 $\alpha$, 使得 $\alpha^{\top}A\alpha=0$.
+
+$\blacksquare$
 
 ## 6.2-6
 
@@ -335,7 +339,9 @@ $$
 X^{\top}AX=Z^{\top}P^{\top}APZ=Z^{\top}\operatorname{diag}\left\{I_{r},0\right\}Z=z_{1}^{2}+z_{2}^{2}+\cdots+z_{r}^{2}.
 $$
 
-因此复二次型 $X^{\top}AX$ 的规范形为 $z_{1}^{2}+z_{2}^{2}+\cdots+z_{r}^{2}$, 其中 $r$ 是二次型的秩. $\blacksquare$
+因此复二次型 $X^{\top}AX$ 的规范形为 $z_{1}^{2}+z_{2}^{2}+\cdots+z_{r}^{2}$, 其中 $r$ 是二次型的秩.
+
+$\blacksquare$
 
 ## 7.2-3(2)
 

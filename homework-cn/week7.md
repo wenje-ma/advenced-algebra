@@ -53,7 +53,9 @@ $$
 
 阶梯形矩阵的非零行数目为 $3$, 等于未知量数目 $3$, 故齐次方程组只有零解.
 
-由**定义 3.2.2 (线性无关)**, 因此 $\alpha_{1},\alpha_{2},\alpha_{3}$ 线性无关. $\blacksquare$
+由**定义 3.2.2 (线性无关)**, 因此 $\alpha_{1},\alpha_{2},\alpha_{3}$ 线性无关.
+
+$\blacksquare$
 
 ## 3.2-2(2)
 
@@ -118,7 +120,9 @@ $$
 \alpha_{1}+\alpha_{2}+\alpha_{3}=\left(-2+1+3,1-3+0,0+2+2,3+4-1\right)^{\top}=\left(2,-2,4,6\right)^{\top}=\alpha_{4}.
 $$
 
-由**定义 3.2.1 (线性相关)**, 齐次方程组有非零解, 故 $\alpha_{1},\alpha_{2},\alpha_{3},\alpha_{4}$ 线性相关. $\blacksquare$
+由**定义 3.2.1 (线性相关)**, 齐次方程组有非零解, 故 $\alpha_{1},\alpha_{2},\alpha_{3},\alpha_{4}$ 线性相关.
+
+$\blacksquare$
 
 ## 3.2-6
 
@@ -187,7 +191,9 @@ $$
 \left(\alpha_{1}+\alpha_{2}\right)-\left(\alpha_{2}+\alpha_{3}\right)+\left(\alpha_{3}+\alpha_{4}\right)-\left(\alpha_{4}+\alpha_{1}\right)=0.
 $$
 
-存在不全为零的数 $1,-1,1,-1$ 使得上述等式成立, 故该向量组线性相关. $\blacksquare$
+存在不全为零的数 $1,-1,1,-1$ 使得上述等式成立, 故该向量组线性相关.
+
+$\blacksquare$
 
 ## 3.2-7
 
@@ -228,7 +234,9 @@ $$
 
 这与表出方式唯一矛盾.
 
-假设不成立, 故 $\alpha_{1},\cdots,\alpha_{s}$ 线性无关. $\blacksquare$
+假设不成立, 故 $\alpha_{1},\cdots,\alpha_{s}$ 线性无关.
+
+$\blacksquare$
 
 ## 3.2-9
 
@@ -272,4 +280,6 @@ $$
 
 这说明 $\alpha_{i}$ 可以用前面的向量线性表出, 与已知条件矛盾.
 
-假设不成立, 故 $\alpha_{1},\cdots,\alpha_{s}$ 线性无关. $\blacksquare$
+假设不成立, 故 $\alpha_{1},\cdots,\alpha_{s}$ 线性无关.
+
+$\blacksquare$

@@ -73,7 +73,9 @@ $$
 
 归纳完成. 因此 $A$ 是对角矩阵.
 
-$A^{\top}A=I$, 得 $A_{ii}^{2}=1$, 故 $A_{ii}=\pm1$. $\blacksquare$
+$A^{\top}A=I$, 得 $A_{ii}^{2}=1$, 故 $A_{ii}=\pm1$.
+
+$\blacksquare$
 
 ## 4.6-12
 
@@ -180,7 +182,9 @@ $B$ 的主对角元为 $\left|\beta_{1}\right|,\left|\beta_{2}\right|,\cdots,\le
 
 故 $B_{2}=B_{1}$, 从而 $T_{2}=T_{1}$.
 
-分解唯一. $\blacksquare$
+分解唯一.
+
+$\blacksquare$
 
 ## 4.7-1
 
@@ -266,7 +270,9 @@ $f$ 是单射, 故 $S$ 中不同元素的象也不同. 因此 $f\left(S\right)$ 
 
 即 $f$ 是满射.
 
-因此 $f$ 既是单射又是满射, 即 $f$ 是双射. $\blacksquare$
+因此 $f$ 既是单射又是满射, 即 $f$ 是双射.
+
+$\blacksquare$
 
 ## 4.7-7
 

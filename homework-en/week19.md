@@ -77,7 +77,9 @@ $$
 
 That is, the geometric multiplicity $\le{n}-1<{}n=$ the algebraic multiplicity.
 
-Therefore $A$ cannot be diagonalized. $\blacksquare$
+Therefore $A$ cannot be diagonalized.
+
+$\blacksquare$
 
 ## 5.7-1(1)
 
@@ -279,7 +281,9 @@ $$
 A\sim{D}_{A}=D_{B}\sim{B}.
 $$
 
-Hence $A$ and $B$ are similar. $\blacksquare$
+Hence $A$ and $B$ are similar.
+
+$\blacksquare$
 
 ## 5.7-3
 
@@ -307,7 +311,9 @@ $$
 A^{\top}=\left(TDT^{\top}\right)^{\top}=TD^{\top}T^{\top}=TDT^{\top}=A.
 $$
 
-Hence $A$ is symmetric. $\blacksquare$
+Hence $A$ is symmetric.
+
+$\blacksquare$
 
 ## 6.1-3(1)
 
@@ -362,7 +368,9 @@ C=\left[\begin{array}{rrr}
 \end{array}\right].
 $$
 
-$f=y_{1}^{2}+y_{2}^{2}-2y_{3}^{2}$ is the canonical form. $\blacksquare$
+$f=y_{1}^{2}+y_{2}^{2}-2y_{3}^{2}$ is the canonical form.
+
+$\blacksquare$
 
 ## 6.1-5
 
@@ -406,4 +414,6 @@ That is, for every column vector $\alpha$, $\alpha^{\top}\left(A+A^{\top}\right)
 
 Since $\left(A+A^{\top}\right)$ is symmetric and $\alpha^{\top}\left(A+A^{\top}\right)\alpha=0$ for every $\alpha$, by the property of symmetric matrices (if a symmetric matrix satisfies $\alpha^{\top}A\alpha=0$ for all $\alpha$, then $A=0$), we get $A+A^{\top}=0$.
 
-Therefore $A^{\top}=-A$, i.e. $A$ is skew-symmetric. $\blacksquare$
+Therefore $A^{\top}=-A$, i.e. $A$ is skew-symmetric.
+
+$\blacksquare$

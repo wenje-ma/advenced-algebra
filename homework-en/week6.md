@@ -164,7 +164,9 @@ $$
 
 Continuing the row operations, the last row becomes a contradictory row $0=80$, so the system has no solution.
 
-By **Proposition 3.1.1 (Relation Between Linear Representability and Solvability of a System)**, $\beta$ therefore cannot be linearly represented by $\alpha_{1},\alpha_{2},\alpha_{3}$. $\blacksquare$
+By **Proposition 3.1.1 (Relation Between Linear Representability and Solvability of a System)**, $\beta$ therefore cannot be linearly represented by $\alpha_{1},\alpha_{2},\alpha_{3}$.
+
+$\blacksquare$
 
 ## 3.1-3(3)
 
@@ -226,7 +228,9 @@ $$
 -\alpha_{1}-5\alpha_{2}=\begin{bmatrix}-3+5\\5-35\\-2+15\\4-30\end{bmatrix}=\begin{bmatrix}2\\-30\\13\\-26\end{bmatrix}=\beta.
 $$
 
-Hence $\beta=-\alpha_{1}-5\alpha_{2}$. By **Proposition 3.1.1 (Relation Between Linear Representability and Solvability of a System)**, the system is solvable, so $\beta$ can be linearly represented by $\alpha_{1},\alpha_{2},\alpha_{3}$. $\blacksquare$
+Hence $\beta=-\alpha_{1}-5\alpha_{2}$. By **Proposition 3.1.1 (Relation Between Linear Representability and Solvability of a System)**, the system is solvable, so $\beta$ can be linearly represented by $\alpha_{1},\alpha_{2},\alpha_{3}$.
+
+$\blacksquare$
 
 ## 3.1-5
 
@@ -275,7 +279,9 @@ $$
 \alpha=\left(a_{1}-a_{2}\right)\alpha_{1}+\left(a_{2}-a_{3}\right)\alpha_{2}+\left(a_{3}-a_{4}\right)\alpha_{3}+a_{4}\alpha_{4}.
 $$
 
-The system has a unique solution, so $\alpha$ can be uniquely linearly represented by $\alpha_{1},\alpha_{2},\alpha_{3},\alpha_{4}$. $\blacksquare$
+The system has a unique solution, so $\alpha$ can be uniquely linearly represented by $\alpha_{1},\alpha_{2},\alpha_{3},\alpha_{4}$.
+
+$\blacksquare$
 
 ## 3.1-8
 
@@ -318,4 +324,6 @@ $$
 
 $W$ is nonempty (e.g. the zero vector $\left(0,\cdots,0\right)\in{W}$).
 
-By Criterion for a Subspace, $W$ is a subspace of $K^{n}$. $\blacksquare$
+By Criterion for a Subspace, $W$ is a subspace of $K^{n}$.
+
+$\blacksquare$

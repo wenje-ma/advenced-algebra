@@ -102,7 +102,9 @@ Because $a_{1},a_{2},\cdots,a_{r}$ are pairwise distinct, the determinant is non
 
 Hence the homogeneous system has only the zero solution: $k_{1}=k_{2}=\cdots=k_{r}=0$.
 
-Therefore $\alpha_{1},\alpha_{2},\cdots,\alpha_{r}$ are linearly independent. $\blacksquare$
+Therefore $\alpha_{1},\alpha_{2},\cdots,\alpha_{r}$ are linearly independent.
+
+$\blacksquare$
 
 ## 3.3-1
 
@@ -138,7 +140,9 @@ $$
 \alpha_{3}=\frac{17}{6}\alpha_{1}-\frac{4}{3}\alpha_{2}.
 $$
 
-By **Definition 3.3.1 (Maximal Linearly Independent Subset)**, $\alpha_{1},\alpha_{2}$ are therefore a maximal linearly independent subset. By **Definition 3.3.3 (Rank of a Vector Group)**, the rank is $2$. $\blacksquare$
+By **Definition 3.3.1 (Maximal Linearly Independent Subset)**, $\alpha_{1},\alpha_{2}$ are therefore a maximal linearly independent subset. By **Definition 3.3.3 (Rank of a Vector Group)**, the rank is $2$.
+
+$\blacksquare$
 
 ## 3.3-7
 
@@ -158,7 +162,9 @@ By **Proposition 3.3.6 (Linear Independence iff Rank Equals the Number of Vector
 
 Also, since (I) can be represented by $\alpha_{1},\cdots,\alpha_{r}$, adding any one remaining vector of (I) to $\alpha_{1},\cdots,\alpha_{r}$ gives a linearly dependent group (otherwise, by **Proposition 3.3.7 (Comparison of Ranks)**, the rank would exceed $r$).
 
-Hence $\alpha_{1},\cdots,\alpha_{r}$ is a maximal linearly independent subset of (I). $\blacksquare$
+Hence $\alpha_{1},\cdots,\alpha_{r}$ is a maximal linearly independent subset of (I).
+
+$\blacksquare$
 
 ## 3.3-8
 
@@ -280,7 +286,9 @@ Continuing, $x_{i}=a_{i}-a_{i-1}$ $\left(i=2,\cdots,n\right)$.
 
 The representation exists and is unique.
 
-By **Definition 3.4.1 (Basis)**, $\eta_{1},\eta_{2},\cdots,\eta_{n}$ is therefore a basis of $K^{n}$. $\blacksquare$
+By **Definition 3.4.1 (Basis)**, $\eta_{1},\eta_{2},\cdots,\eta_{n}$ is therefore a basis of $K^{n}$.
+
+$\blacksquare$
 
 ## 3.4-3(3)
 
@@ -309,7 +317,9 @@ $$
 =1\times\left(12-4\right)+2\times\left(-4\right)=8-8=0.
 $$
 
-The determinant is $0$; by **Proposition 3.3.6 (Linear Independence iff Rank Equals the Number of Vectors)**, $\alpha_{1},\alpha_{2},\alpha_{3}$ are therefore linearly dependent, failing the "linearly independent" requirement of **Definition 3.4.1 (Basis)**, and are not a basis of $K^{3}$. $\blacksquare$
+The determinant is $0$; by **Proposition 3.3.6 (Linear Independence iff Rank Equals the Number of Vectors)**, $\alpha_{1},\alpha_{2},\alpha_{3}$ are therefore linearly dependent, failing the "linearly independent" requirement of **Definition 3.4.1 (Basis)**, and are not a basis of $K^{3}$.
+
+$\blacksquare$
 
 ## 3.4-4
 
@@ -341,4 +351,6 @@ By **Proposition 3.3.6 (Linear Independence iff Rank Equals the Number of Vector
 
 Thus $\alpha_{1},\alpha_{2},\cdots,\alpha_{r}$ are linearly independent, and every vector in $U$ can be represented by them.
 
-By **Definition 3.4.1 (Basis)**, $\alpha_{1},\alpha_{2},\cdots,\alpha_{r}$ is a basis of $U$. $\blacksquare$
+By **Definition 3.4.1 (Basis)**, $\alpha_{1},\alpha_{2},\cdots,\alpha_{r}$ is a basis of $U$.
+
+$\blacksquare$

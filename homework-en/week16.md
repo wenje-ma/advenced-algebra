@@ -56,7 +56,9 @@ Symmetry: if $P\left(x_{1},y_{1}\right)\sim{P}\left(x_{2},y_{2}\right)$, then $x
 
 Transitivity: if $P\left(x_{1},y_{1}\right)\sim{P}\left(x_{2},y_{2}\right)$ and $P\left(x_{2},y_{2}\right)\sim{P}\left(x_{3},y_{3}\right)$, then $x_{1}=x_{2}$ and $x_{2}=x_{3}$, hence $x_{1}=x_{3}$, and so $P\left(x_{1},y_{1}\right)\sim{P}\left(x_{3},y_{3}\right)$.
 
-Therefore $\sim$ satisfies all conditions of **Definition 5.1.2 (Equivalence Relation)**, and hence is an equivalence relation on $S$. $\blacksquare$
+Therefore $\sim$ satisfies all conditions of **Definition 5.1.2 (Equivalence Relation)**, and hence is an equivalence relation on $S$.
+
+$\blacksquare$
 
 ## 5.1-4
 
@@ -236,7 +238,9 @@ $$
 \operatorname{rank}\left(A_{i}\right)=\operatorname{rank}\left(E_{ii}\right)=1.
 $$
 
-Therefore $A$ can be written as the sum of $r$ matrices of rank $1$. $\blacksquare$
+Therefore $A$ can be written as the sum of $r$ matrices of rank $1$.
+
+$\blacksquare$
 
 ## 5.2-5
 

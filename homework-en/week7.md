@@ -53,7 +53,9 @@ $$
 
 The number of nonzero rows of the echelon matrix is $3$, equal to the number of unknowns $3$, so the homogeneous system has only the zero solution.
 
-By **Definition 3.2.2 (Linear Independence)**, $\alpha_{1},\alpha_{2},\alpha_{3}$ are therefore linearly independent. $\blacksquare$
+By **Definition 3.2.2 (Linear Independence)**, $\alpha_{1},\alpha_{2},\alpha_{3}$ are therefore linearly independent.
+
+$\blacksquare$
 
 ## 3.2-2(2)
 
@@ -118,7 +120,9 @@ $$
 \alpha_{1}+\alpha_{2}+\alpha_{3}=\left(-2+1+3,1-3+0,0+2+2,3+4-1\right)^{\top}=\left(2,-2,4,6\right)^{\top}=\alpha_{4}.
 $$
 
-By **Definition 3.2.1 (Linear Dependence)**, the homogeneous system has a nontrivial solution, so $\alpha_{1},\alpha_{2},\alpha_{3},\alpha_{4}$ are linearly dependent. $\blacksquare$
+By **Definition 3.2.1 (Linear Dependence)**, the homogeneous system has a nontrivial solution, so $\alpha_{1},\alpha_{2},\alpha_{3},\alpha_{4}$ are linearly dependent.
+
+$\blacksquare$
 
 ## 3.2-6
 
@@ -187,7 +191,9 @@ $$
 \left(\alpha_{1}+\alpha_{2}\right)-\left(\alpha_{2}+\alpha_{3}\right)+\left(\alpha_{3}+\alpha_{4}\right)-\left(\alpha_{4}+\alpha_{1}\right)=0.
 $$
 
-There exist numbers $1,-1,1,-1$, not all zero, making the above identity hold, so the vector group is linearly dependent. $\blacksquare$
+There exist numbers $1,-1,1,-1$, not all zero, making the above identity hold, so the vector group is linearly dependent.
+
+$\blacksquare$
 
 ## 3.2-7
 
@@ -228,7 +234,9 @@ $$
 
 which contradicts the uniqueness of the representation.
 
-The assumption is false, so $\alpha_{1},\cdots,\alpha_{s}$ is linearly independent. $\blacksquare$
+The assumption is false, so $\alpha_{1},\cdots,\alpha_{s}$ is linearly independent.
+
+$\blacksquare$
 
 ## 3.2-9
 
@@ -272,4 +280,6 @@ $$
 
 This shows $\alpha_{i}$ can be represented by the preceding vectors, contradicting the hypothesis.
 
-The assumption is false, so $\alpha_{1},\cdots,\alpha_{s}$ is linearly independent. $\blacksquare$
+The assumption is false, so $\alpha_{1},\cdots,\alpha_{s}$ is linearly independent.
+
+$\blacksquare$

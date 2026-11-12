@@ -169,7 +169,9 @@ A^{n}
 \end{array}\right].
 $$
 
-When $n=1$, the above also holds (note $\lambda^{0}=1$, and the third term is $0$). $\blacksquare$
+When $n=1$, the above also holds (note $\lambda^{0}=1$, and the third term is $0$).
+
+$\blacksquare$
 
 ## 4.1-10
 
@@ -199,7 +201,9 @@ $$
 B^{2}=I.
 $$
 
-Therefore $A^{2}=A$ if and only if $B^{2}=I$. $\blacksquare$
+Therefore $A^{2}=A$ if and only if $B^{2}=I$.
+
+$\blacksquare$
 
 ## 4.2-2
 
@@ -218,14 +222,14 @@ $$
 Lower triangularity. When $i<{}j$:
 
 - if $k\le{i}<{}j$, then $k<{}j$, so $b_{kj}=0$;
-- if $k>{}i$, then $a_{ik}=0$.
+- if $k>i$, then $a_{ik}=0$.
 
 Hence every term is $0$, so $c_{ij}=0$ (when $i<{}j$). By **Definition 4.2.2 (Upper/Lower Triangular Matrix)**, $C$ is therefore a lower triangular matrix.
 
 Diagonal entries. When $i=j$:
 
 - if $k<{}i$, then $b_{ki}=0$;
-- if $k>{}i$, then $a_{ik}=0$.
+- if $k>i$, then $a_{ik}=0$.
 
 Hence only the term $k=i$ is nonzero:
 
@@ -273,7 +277,9 @@ Hence $a_{ki}=0$ (when $k\ne{i}$).
 
 This holds for all $i$, so all off-diagonal entries of $A$ are $0$.
 
-Therefore $A=kI$, i.e. $A$ is a scalar matrix. $\blacksquare$
+Therefore $A=kI$, i.e. $A$ is a scalar matrix.
+
+$\blacksquare$
 
 ## 4.2-8
 
@@ -320,7 +326,9 @@ A matrix that is both symmetric and skew-symmetric must be the zero matrix.
 
 Hence $S_{1}-S_{2}=0$ and $K_{2}-K_{1}=0$, i.e. $S_{1}=S_{2}$ and $K_{1}=K_{2}$.
 
-The representation is unique. $\blacksquare$
+The representation is unique.
+
+$\blacksquare$
 
 ## 4.2-9
 
@@ -352,7 +360,9 @@ $$
 
 Since the $a_{ik}$ are all real, $a_{ik}^{2}\ge0$.
 
-Therefore each $a_{ik}=0$, i.e. $A=0$. $\blacksquare$
+Therefore each $a_{ik}=0$, i.e. $A=0$.
+
+$\blacksquare$
 
 ## 4.2-10
 
@@ -422,4 +432,6 @@ Since $P$ is invertible, its column group is linearly independent, and hence the
 
 Thus $B$ is column full-rank.
 
-Therefore $A=BC$, where $B$ is an $s\times{r}$ column full-rank matrix and $C$ is an $r\times{n}$ row full-rank matrix. $\blacksquare$
+Therefore $A=BC$, where $B$ is an $s\times{r}$ column full-rank matrix and $C$ is an $r\times{n}$ row full-rank matrix.
+
+$\blacksquare$

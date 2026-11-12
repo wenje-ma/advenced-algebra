@@ -215,7 +215,9 @@ $$
 \text{rank}\left(A^{\top}A\right)=\text{rank}\left(A^{\top}A,A^{\top}\beta\right).
 $$
 
-The coefficient matrix and the augmented matrix have the same rank, so the system has a solution. $\blacksquare$
+The coefficient matrix and the augmented matrix have the same rank, so the system has a solution.
+
+$\blacksquare$
 
 ## 4.5-9
 
@@ -369,7 +371,9 @@ $$
 \left(\frac{1}{2}\right)^{2}+\left(-\frac{\sqrt{3}}{2}\right)^{2}=\frac{1}{4}+\frac{3}{4}=1.
 $$
 
-Hence $A^{\top}A=I$, and by **Definition 4.6.1 (Orthogonal Matrix)**, $A$ is orthogonal. $\blacksquare$
+Hence $A^{\top}A=I$, and by **Definition 4.6.1 (Orthogonal Matrix)**, $A$ is orthogonal.
+
+$\blacksquare$
 
 ## 4.6-1(8)
 
@@ -400,7 +404,9 @@ A^{\top}A=\left[\begin{array}{rr}
 \end{array}\right].
 $$
 
-Clearly $A^{\top}A\ne{I}$, and by **Definition 4.6.1 (Orthogonal Matrix)**, $A$ is not orthogonal. $\blacksquare$
+Clearly $A^{\top}A\ne{I}$, and by **Definition 4.6.1 (Orthogonal Matrix)**, $A$ is not orthogonal.
+
+$\blacksquare$
 
 ## 4.6-3
 
@@ -430,4 +436,6 @@ $$
 \left(T^{-1}AT\right)^{\top}=T^{\top}AT=T^{-1}AT.
 $$
 
-Therefore $T^{-1}AT$ is symmetric. $\blacksquare$
+Therefore $T^{-1}AT$ is symmetric.
+
+$\blacksquare$

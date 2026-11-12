@@ -38,7 +38,9 @@ $$
 
 $A$ 是 $n\times{n}$ 矩阵且 $\text{rank}\left(A\right)=n$, 故 $\left|A\right|\ne0$.
 
-导出组只有零解意味着解空间 $W=\left\{0\right\}$, 故非齐次方程组的解集 $U=\gamma_{0}+W=\left\{\gamma_{0}\right\}$, 即有唯一解. $\blacksquare$
+导出组只有零解意味着解空间 $W=\left\{0\right\}$, 故非齐次方程组的解集 $U=\gamma_{0}+W=\left\{\gamma_{0}\right\}$, 即有唯一解.
+
+$\blacksquare$
 
 ## 3.8-4
 

@@ -38,7 +38,9 @@ Sufficiency. Suppose the derived system has only the zero solution; then $\text{
 
 $A$ is an $n\times{n}$ matrix with $\text{rank}\left(A\right)=n$, so $\left|A\right|\ne0$.
 
-The derived system having only the zero solution means the solution space $W=\left\{0\right\}$, so the inhomogeneous system's solution set $U=\gamma_{0}+W=\left\{\gamma_{0}\right\}$, i.e. it has a unique solution. $\blacksquare$
+The derived system having only the zero solution means the solution space $W=\left\{0\right\}$, so the inhomogeneous system's solution set $U=\gamma_{0}+W=\left\{\gamma_{0}\right\}$, i.e. it has a unique solution.
+
+$\blacksquare$
 
 ## 3.8-4
 

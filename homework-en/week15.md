@@ -73,7 +73,9 @@ Since $A_{ii}\ne0$, $A_{ij}=0$.
 
 The induction is complete. Therefore $A$ is diagonal.
 
-From $A^{\top}A=I$, $A_{ii}^{2}=1$, hence $A_{ii}=\pm1$. $\blacksquare$
+From $A^{\top}A=I$, $A_{ii}^{2}=1$, hence $A_{ii}=\pm1$.
+
+$\blacksquare$
 
 ## 4.6-12
 
@@ -180,7 +182,9 @@ Therefore each diagonal entry can only be $+1$, i.e. $B_{2}B_{1}^{-1}=I$.
 
 Hence $B_{2}=B_{1}$, and consequently $T_{2}=T_{1}$.
 
-The decomposition is unique. $\blacksquare$
+The decomposition is unique.
+
+$\blacksquare$
 
 ## 4.7-1
 
@@ -266,7 +270,9 @@ Since $f\left(S\right)\subseteq{S}$ and $\left|f\left(S\right)\right|=n=\left|S\
 
 That is, $f$ is surjective.
 
-Therefore $f$ is both injective and surjective, i.e. $f$ is bijective. $\blacksquare$
+Therefore $f$ is both injective and surjective, i.e. $f$ is bijective.
+
+$\blacksquare$
 
 ## 4.7-7
 

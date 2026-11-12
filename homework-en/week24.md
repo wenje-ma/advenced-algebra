@@ -44,7 +44,7 @@ $$
 S_{k}-\sigma_{1}S_{k-1}+\sigma_{2}S_{k-2}-\cdots+\left(-1\right)^{k-1}\sigma_{k-1}S_{1}+\left(-1\right)^{k}k\sigma_{k}=0,\quad1\le{k}\le{n},
 $$
 $$
-S_{k}-\sigma_{1}S_{k-1}+\sigma_{2}S_{k-2}-\cdots+\left(-1\right)^{n}\sigma_{n}S_{k-n}=0,\quad{k}>{}n.
+S_{k}-\sigma_{1}S_{k-1}+\sigma_{2}S_{k-2}-\cdots+\left(-1\right)^{n}\sigma_{n}S_{k-n}=0,\quad{k}>n.
 $$
 
 > **Definition 7.10.1 (Symmetric Polynomial)**
@@ -98,7 +98,9 @@ Since $f\left(1\right)$ is odd, $f\left(r\right)\equiv1\pmod2$, i.e. $f\left(r\r
 
 Contradiction.
 
-Therefore $f\left(x\right)$ has no rational root. $\blacksquare$
+Therefore $f\left(x\right)$ has no rational root.
+
+$\blacksquare$
 
 ## 7.8-6
 
@@ -142,7 +144,9 @@ Contradiction.
 
 Hence $f\left(x\right)$ has no rational root.
 
-Therefore $f\left(x\right)$ is irreducible over $\mathbb{Q}$. $\blacksquare$
+Therefore $f\left(x\right)$ is irreducible over $\mathbb{Q}$.
+
+$\blacksquare$
 
 ## 7.9-3
 
@@ -209,7 +213,9 @@ So $f\left(c_{1},\ldots,c_{n-1},x_{n}\right)$ has infinitely many roots.
 
 But $f\left(c_{1},\ldots,c_{n-1},x_{n}\right)$ is a nonzero univariate polynomial and has only finitely many roots. Contradiction.
 
-Therefore $f\left(x_{1},\ldots,x_{n}\right)=0$. $\blacksquare$
+Therefore $f\left(x_{1},\ldots,x_{n}\right)=0$.
+
+$\blacksquare$
 
 ## 7.9-4(2)
 
@@ -237,7 +243,9 @@ $$
 
 Contradiction.
 
-Therefore $x-y$ is irreducible. $\blacksquare$
+Therefore $x-y$ is irreducible.
+
+$\blacksquare$
 
 ## 7.10-5
 
@@ -290,7 +298,7 @@ $$
 
 $S_{4}$.
 
-By Newton's identities (since $n=3$, $k=4>{}n$):
+By Newton's identities (since $n=3$, $k=4>n$):
 
 $$
 S_{4}-\sigma_{1}S_{3}+\sigma_{2}S_{2}-\sigma_{3}S_{1}=0.

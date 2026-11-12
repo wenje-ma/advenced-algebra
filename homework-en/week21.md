@@ -64,7 +64,9 @@ $$
 a-1=0,\quad{a}_{0}=0.
 $$
 
-Hence the necessary and sufficient condition is $a=1$, $a_{0}=0$. $\blacksquare$
+Hence the necessary and sufficient condition is $a=1$, $a_{0}=0$.
+
+$\blacksquare$
 
 ## 7.2-5
 
@@ -241,7 +243,9 @@ $$
 
 This shows that a linear combination of $u\left(x\right)$ and $v\left(x\right)$ equals $1$.
 
-Hence $\left(u\left(x\right),v\left(x\right)\right)=1$. $\blacksquare$
+Hence $\left(u\left(x\right),v\left(x\right)\right)=1$.
+
+$\blacksquare$
 
 ## 7.3-7
 
@@ -275,7 +279,9 @@ Hence $d_{1}\mid{d}_{2}$.
 
 Therefore $d_{1}\sim{d}_{2}$.
 
-Both are monic, so $d_{1}=d_{2}$. $\blacksquare$
+Both are monic, so $d_{1}=d_{2}$.
+
+$\blacksquare$
 
 ## 7.3-9
 
@@ -317,7 +323,9 @@ Since $\left(f,g\right)=1$, we have $g\mid{u}$.
 
 But $\deg{u}<\deg{g}$, so $u=0$, a contradiction.
 
-Therefore $f$ and $g$ are not coprime. $\blacksquare$
+Therefore $f$ and $g$ are not coprime.
+
+$\blacksquare$
 
 ## 7.3-11
 

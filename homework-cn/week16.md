@@ -56,7 +56,9 @@ $$
 
 传递性: 若 $P\left(x_{1},y_{1}\right)\sim{P}\left(x_{2},y_{2}\right)$ 且 $P\left(x_{2},y_{2}\right)\sim{P}\left(x_{3},y_{3}\right)$, 则 $x_{1}=x_{2}$ 且 $x_{2}=x_{3}$, 从而 $x_{1}=x_{3}$, 故 $P\left(x_{1},y_{1}\right)\sim{P}\left(x_{3},y_{3}\right)$.
 
-因此 $\sim$ 满足**定义 5.1.2 (等价关系)**的全部条件, 故 $\sim$ 是 $S$ 上的等价关系. $\blacksquare$
+因此 $\sim$ 满足**定义 5.1.2 (等价关系)**的全部条件, 故 $\sim$ 是 $S$ 上的等价关系.
+
+$\blacksquare$
 
 ## 5.1-4
 
@@ -236,7 +238,9 @@ $$
 \operatorname{rank}\left(A_{i}\right)=\operatorname{rank}\left(E_{ii}\right)=1.
 $$
 
-因此 $A$ 可以表示成 $r$ 个秩为 $1$ 的矩阵之和. $\blacksquare$
+因此 $A$ 可以表示成 $r$ 个秩为 $1$ 的矩阵之和.
+
+$\blacksquare$
 
 ## 5.2-5
 

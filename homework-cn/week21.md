@@ -64,7 +64,9 @@ $$
 a-1=0,\quad{a}_{0}=0.
 $$
 
-所以充分必要条件是 $a=1$, $a_{0}=0$. $\blacksquare$
+所以充分必要条件是 $a=1$, $a_{0}=0$.
+
+$\blacksquare$
 
 ## 7.2-5
 
@@ -241,7 +243,9 @@ $$
 
 这说明 $u\left(x\right)$ 与 $v\left(x\right)$ 的一个倍式和等于 $1$.
 
-因此 $\left(u\left(x\right),v\left(x\right)\right)=1$. $\blacksquare$
+因此 $\left(u\left(x\right),v\left(x\right)\right)=1$.
+
+$\blacksquare$
 
 ## 7.3-7
 
@@ -275,7 +279,9 @@ $$
 
 所以 $d_{1}\sim{d}_{2}$.
 
-首项系数都是 $1$, 故 $d_{1}=d_{2}$. $\blacksquare$
+首项系数都是 $1$, 故 $d_{1}=d_{2}$.
+
+$\blacksquare$
 
 ## 7.3-9
 
@@ -317,7 +323,9 @@ $$
 
 但 $\deg{u}<\deg{g}$, 所以只能 $u=0$, 矛盾.
 
-因此 $f$ 与 $g$ 不互素. $\blacksquare$
+因此 $f$ 与 $g$ 不互素.
+
+$\blacksquare$
 
 ## 7.3-11
 

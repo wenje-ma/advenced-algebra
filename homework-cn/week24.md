@@ -44,7 +44,7 @@ $$
 S_{k}-\sigma_{1}S_{k-1}+\sigma_{2}S_{k-2}-\cdots+\left(-1\right)^{k-1}\sigma_{k-1}S_{1}+\left(-1\right)^{k}k\sigma_{k}=0,\quad1\le{k}\le{n},
 $$
 $$
-S_{k}-\sigma_{1}S_{k-1}+\sigma_{2}S_{k-2}-\cdots+\left(-1\right)^{n}\sigma_{n}S_{k-n}=0,\quad{k}>{}n.
+S_{k}-\sigma_{1}S_{k-1}+\sigma_{2}S_{k-2}-\cdots+\left(-1\right)^{n}\sigma_{n}S_{k-n}=0,\quad{k}>n.
 $$
 
 > **定义 7.10.1 (对称多项式)**
@@ -98,7 +98,9 @@ $$
 
 矛盾.
 
-因此 $f\left(x\right)$ 没有有理根. $\blacksquare$
+因此 $f\left(x\right)$ 没有有理根.
+
+$\blacksquare$
 
 ## 7.8-6
 
@@ -142,7 +144,9 @@ $$
 
 因此 $f\left(x\right)$ 没有有理根.
 
-所以 $f\left(x\right)$ 在有理数域上不可约. $\blacksquare$
+所以 $f\left(x\right)$ 在有理数域上不可约.
+
+$\blacksquare$
 
 ## 7.9-3
 
@@ -209,7 +213,9 @@ $$
 
 但 $f\left(c_{1},\ldots,c_{n-1},x_{n}\right)$ 是一个非零一元多项式, 只有有限多个根. 矛盾.
 
-因此 $f\left(x_{1},\ldots,x_{n}\right)=0$. $\blacksquare$
+因此 $f\left(x_{1},\ldots,x_{n}\right)=0$.
+
+$\blacksquare$
 
 ## 7.9-4(2)
 
@@ -237,7 +243,9 @@ $$
 
 矛盾.
 
-因此 $x-y$ 不可约. $\blacksquare$
+因此 $x-y$ 不可约.
+
+$\blacksquare$
 
 ## 7.10-5
 
@@ -290,7 +298,7 @@ $$
 
 $S_{4}$.
 
-由牛顿公式 (因为 $n=3$, $k=4>{}n$):
+由牛顿公式 (因为 $n=3$, $k=4>n$):
 
 $$
 S_{4}-\sigma_{1}S_{3}+\sigma_{2}S_{2}-\sigma_{3}S_{1}=0.

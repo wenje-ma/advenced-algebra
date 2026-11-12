@@ -164,7 +164,9 @@ $$
 
 继续作行变换, 最后一行出现矛盾行 $0=80$, 故方程组无解.
 
-由**命题 3.1.1 (线性表出与方程组有解的关系)**, 因此 $\beta$ 不能由 $\alpha_{1},\alpha_{2},\alpha_{3}$ 线性表出. $\blacksquare$
+由**命题 3.1.1 (线性表出与方程组有解的关系)**, 因此 $\beta$ 不能由 $\alpha_{1},\alpha_{2},\alpha_{3}$ 线性表出.
+
+$\blacksquare$
 
 ## 3.1-3(3)
 
@@ -226,7 +228,9 @@ $$
 -\alpha_{1}-5\alpha_{2}=\begin{bmatrix}-3+5\\5-35\\-2+15\\4-30\end{bmatrix}=\begin{bmatrix}2\\-30\\13\\-26\end{bmatrix}=\beta.
 $$
 
-故 $\beta=-\alpha_{1}-5\alpha_{2}$. 由**命题 3.1.1 (线性表出与方程组有解的关系)**, 方程组有解, 故 $\beta$ 可以由 $\alpha_{1},\alpha_{2},\alpha_{3}$ 线性表出. $\blacksquare$
+故 $\beta=-\alpha_{1}-5\alpha_{2}$. 由**命题 3.1.1 (线性表出与方程组有解的关系)**, 方程组有解, 故 $\beta$ 可以由 $\alpha_{1},\alpha_{2},\alpha_{3}$ 线性表出.
+
+$\blacksquare$
 
 ## 3.1-5
 
@@ -275,7 +279,9 @@ $$
 \alpha=\left(a_{1}-a_{2}\right)\alpha_{1}+\left(a_{2}-a_{3}\right)\alpha_{2}+\left(a_{3}-a_{4}\right)\alpha_{3}+a_{4}\alpha_{4}.
 $$
 
-方程组有唯一解, 故 $\alpha$ 可以由 $\alpha_{1},\alpha_{2},\alpha_{3},\alpha_{4}$ 唯一线性表出. $\blacksquare$
+方程组有唯一解, 故 $\alpha$ 可以由 $\alpha_{1},\alpha_{2},\alpha_{3},\alpha_{4}$ 唯一线性表出.
+
+$\blacksquare$
 
 ## 3.1-8
 
@@ -318,4 +324,6 @@ $$
 
 $W$ 非空 (例如零向量 $\left(0,\cdots,0\right)\in{W}$).
 
-由子空间的判别, $W$ 是 $K^{n}$ 的一个子空间. $\blacksquare$
+由子空间的判别, $W$ 是 $K^{n}$ 的一个子空间.
+
+$\blacksquare$

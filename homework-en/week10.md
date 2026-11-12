@@ -72,7 +72,9 @@ $$
 
 Thus $\text{rank}\left(\overline{A}\right)=\text{rank}\left(A\right)$.
 
-By **Theorem 3.6.1 (Solvability Criterion for a Linear System)**, the system is solvable. $\blacksquare$
+By **Theorem 3.6.1 (Solvability Criterion for a Linear System)**, the system is solvable.
+
+$\blacksquare$
 
 ## 3.7-1(1)
 
@@ -260,7 +262,9 @@ Thus $\text{rank}\left(A\right)=n-1$.
 
 By **Theorem 3.7.1 (Dimension of the Solution Space)**, the solution space has dimension $n-\text{rank}\left(A\right)=1$.
 
-$\eta_{1}$ is a nonzero solution, and by itself forms a basis of the solution space, i.e. a fundamental system. $\blacksquare$
+$\eta_{1}$ is a nonzero solution, and by itself forms a basis of the solution space, i.e. a fundamental system.
+
+$\blacksquare$
 
 ## 3.7-7
 
@@ -282,7 +286,9 @@ That is, the row vector of the $s$th row $\gamma_{s}=\left(a_{s1},\cdots,a_{sn}\
 
 Hence $\gamma_{s}\in\left(W_{1}\right)^{\perp}=V_{1}$.
 
-Therefore $\gamma_{s}$ can be linearly represented by the row vectors of $A_{1}$, i.e. the $s$th row of $A$ can be linearly represented by the first $s-1$ rows of $A$. $\blacksquare$
+Therefore $\gamma_{s}$ can be linearly represented by the row vectors of $A_{1}$, i.e. the $s$th row of $A$ can be linearly represented by the first $s-1$ rows of $A$.
+
+$\blacksquare$
 
 ## 3.8-1(1)
 

@@ -54,7 +54,9 @@ $$
 
 由**性质 2.3.2 (一行的公因子可以提出去)**, 某一列全为 $0$ 的行列式值为 $0$.
 
-故原行列式 $=0$. $\blacksquare$
+故原行列式 $=0$.
+
+$\blacksquare$
 
 ## 2.3-4(1)
 
@@ -286,7 +288,9 @@ $$
 D_{n}=x\left(x^{n-1}+a_{n-1}x^{n-2}+\cdots+a_{2}x+a_{1}\right)+\left(-1\right)^{1+n}a_{0}\left(-1\right)^{n-1}=x^{n}+a_{n-1}x^{n-1}+\cdots+a_{1}x+\left(-1\right)^{2n}a_{0}=x^{n}+a_{n-1}x^{n-1}+\cdots+a_{1}x+a_{0}.
 $$
 
-由数学归纳法, 结论对一切 $n\ge2$ 成立. $\blacksquare$
+由数学归纳法, 结论对一切 $n\ge2$ 成立.
+
+$\blacksquare$
 
 ## 2.4-8
 

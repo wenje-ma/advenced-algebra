@@ -100,7 +100,9 @@ $$
 
 所以 $X_{1}=Y_{1}$, $X_{2}=Y_{2}$.
 
-分解唯一. $\blacksquare$
+分解唯一.
+
+$\blacksquare$
 
 ## 7.4-2(2)
 
@@ -168,7 +170,9 @@ $$
 x^{4}+4=\left(x^{2}-2x+2\right)\left(x^{2}+2x+2\right).
 $$
 
-以上分解都是唯一的. $\blacksquare$
+以上分解都是唯一的.
+
+$\blacksquare$
 
 ## 7.4-3
 
@@ -202,7 +206,9 @@ $$
 
 即 $g^{2}\mid{f}^{2}$.
 
-$g^{2}\left(x\right)\mid{f}^{2}\left(x\right)$ 当且仅当 $g\left(x\right)\mid{f}\left(x\right)$. $\blacksquare$
+$g^{2}\left(x\right)\mid{f}^{2}\left(x\right)$ 当且仅当 $g\left(x\right)\mid{f}\left(x\right)$.
+
+$\blacksquare$
 
 ## 7.4-7
 
@@ -242,7 +248,9 @@ $$
 
 这说明 $f$ 与 $g_{1}g_{2}$ 的一个倍式和等于 $1$.
 
-因此 $\left(f,g_{1}g_{2}\right)=1$. $\blacksquare$
+因此 $\left(f,g_{1}g_{2}\right)=1$.
+
+$\blacksquare$
 
 ## 7.5-2
 

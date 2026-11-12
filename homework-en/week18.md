@@ -117,7 +117,9 @@ Therefore $\lambda$ is an eigenvalue of $BA$.
 
 Symmetrically, every nonzero eigenvalue of $BA$ is an eigenvalue of $AB$.
 
-Thus $AB$ and $BA$ have the same nonzero eigenvalues. $\blacksquare$
+Thus $AB$ and $BA$ have the same nonzero eigenvalues.
+
+$\blacksquare$
 
 ## 5.6-1
 
@@ -222,7 +224,9 @@ Regarded as a real matrix, it has only $1$ real eigenvalue, so it is not diagona
 
 Regarded as a complex matrix, it has three distinct eigenvalues, so it is diagonalizable.
 
-All these judgments rest on whether the matrix has $n$ linearly independent eigenvectors. $\blacksquare$
+All these judgments rest on whether the matrix has $n$ linearly independent eigenvectors.
+
+$\blacksquare$
 
 ## 5.6-5
 
@@ -278,7 +282,9 @@ Namely $\lambda_{1}=\lambda_{2}=\lambda_{3}$.
 
 This is a contradiction.
 
-Hence the assumption fails, and $A$ is a scalar matrix. $\blacksquare$
+Hence the assumption fails, and $A$ is a scalar matrix.
+
+$\blacksquare$
 
 ## 5.6-7
 

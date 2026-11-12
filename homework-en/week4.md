@@ -54,7 +54,9 @@ By **Property 2.3.7 (Adding a Multiple of One Row to Another Leaves the Determin
 
 By **Property 2.3.2 (A Common Factor of a Row Can Be Pulled Out)**, a determinant whose column is all zeros has value $0$.
 
-Hence the original determinant $=0$. $\blacksquare$
+Hence the original determinant $=0$.
+
+$\blacksquare$
 
 ## 2.3-4(1)
 
@@ -286,7 +288,9 @@ $$
 D_{n}=x\left(x^{n-1}+a_{n-1}x^{n-2}+\cdots+a_{2}x+a_{1}\right)+\left(-1\right)^{1+n}a_{0}\left(-1\right)^{n-1}=x^{n}+a_{n-1}x^{n-1}+\cdots+a_{1}x+\left(-1\right)^{2n}a_{0}=x^{n}+a_{n-1}x^{n-1}+\cdots+a_{1}x+a_{0}.
 $$
 
-By mathematical induction, the conclusion holds for all $n\ge2$. $\blacksquare$
+By mathematical induction, the conclusion holds for all $n\ge2$.
+
+$\blacksquare$
 
 ## 2.4-8
 

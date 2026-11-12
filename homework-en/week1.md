@@ -123,7 +123,9 @@ $$
 0.12x_{1}+0.15\left(5000-x_{1}\right)=900;0.12x_{1}+750-0.15x_{1}=900-0.03x_{1}=150;x_{1}=-5000.
 $$
 
-Then $x_{2}=10000$. Since an investment cannot be negative, $x_{1}=-5000<0$ has no practical meaning. Hence it is not possible to make the amount invested in $A_{3}$ equal to the sum of the amounts invested in $A_{1}$ and $A_{2}$. $\blacksquare$
+Then $x_{2}=10000$. Since an investment cannot be negative, $x_{1}=-5000<0$ has no practical meaning. Hence it is not possible to make the amount invested in $A_{3}$ equal to the sum of the amounts invested in $A_{1}$ and $A_{2}$.
+
+$\blacksquare$
 
 ## 1.1-3(2)
 
@@ -200,7 +202,9 @@ x_{4}=c,
 \end{cases}
 $$
 
-where $c$ is an arbitrary constant. $\blacksquare$
+where $c$ is an arbitrary constant.
+
+$\blacksquare$
 
 ## 1.1-3(3)
 
@@ -249,7 +253,9 @@ $$
 
 which contradicts the $4$th row $21x_{2}+15x_{3}=-5$, yielding $0=-2$.
 
-By The Gauss-Jordan Algorithm, the corresponding echelon system exhibits the case $0=d$ ($d\ne0$), so the original system has no solution. $\blacksquare$
+By The Gauss-Jordan Algorithm, the corresponding echelon system exhibits the case $0=d$ ($d\ne0$), so the original system has no solution.
+
+$\blacksquare$
 
 ## 1.2-2
 
@@ -291,7 +297,9 @@ By **Theorem 1.2.1 (Criterion for the Number of Solutions of a Linear System)**,
 
 By **Theorem 1.2.1 (Criterion for the Number of Solutions of a Linear System)**, when $-3a-2=0$, i.e. $a=-\frac{2}{3}$, the $3$rd row becomes $0=18$, exhibiting $0=d$ ($d\ne0$), so the system has no solution.
 
-In summary, there is a unique solution when $a\ne-\frac{2}{3}$, and no solution when $a=-\frac{2}{3}$. $\blacksquare$
+In summary, there is a unique solution when $a\ne-\frac{2}{3}$, and no solution when $a=-\frac{2}{3}$.
+
+$\blacksquare$
 
 ## 1.2-5
 
@@ -368,4 +376,6 @@ x_{5}=c_{3},
 \end{cases}
 $$
 
-where $c_{1},c_{2},c_{3}$ are arbitrary constants. $\blacksquare$
+where $c_{1},c_{2},c_{3}$ are arbitrary constants.
+
+$\blacksquare$

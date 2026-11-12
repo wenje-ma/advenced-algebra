@@ -112,7 +112,9 @@ $$
 
 Remainder $3\ne0$.
 
-Hence $-2$ is a triple root of $f\left(x\right)$. $\blacksquare$
+Hence $-2$ is a triple root of $f\left(x\right)$.
+
+$\blacksquare$
 
 ## 7.6-4
 
@@ -172,7 +174,9 @@ $$
 3\cdot4+b=15\Rightarrow{b}=3.
 $$
 
-Hence $a=4$, $b=3$. $\blacksquare$
+Hence $a=4$, $b=3$.
+
+$\blacksquare$
 
 ## 7.6-8
 
@@ -274,7 +278,9 @@ Hence $A$ and $B$ are similar as real matrices.
 
 This contradicts the assumption.
 
-Therefore, if $A$ and $B$ are not similar as real matrices, they are not similar as complex matrices either. $\blacksquare$
+Therefore, if $A$ and $B$ are not similar as real matrices, they are not similar as complex matrices either.
+
+$\blacksquare$
 
 ## 7.8-2(4)
 
@@ -367,7 +373,9 @@ $$
 
 Hence it cannot be factored into two integer quadratics.
 
-Therefore $x^{4}-2x^{3}+2x-3$ is irreducible over $\mathbb{Q}$. $\blacksquare$
+Therefore $x^{4}-2x^{3}+2x-3$ is irreducible over $\mathbb{Q}$.
+
+$\blacksquare$
 
 ## 7.8-2(5)
 
@@ -463,7 +471,9 @@ no real root.
 
 Hence it cannot be factored into two integer quadratics.
 
-Therefore $x^{4}+px^{2}+1$ is irreducible over $\mathbb{Q}$. $\blacksquare$
+Therefore $x^{4}+px^{2}+1$ is irreducible over $\mathbb{Q}$.
+
+$\blacksquare$
 
 ## 7.8-2(7)
 
@@ -493,7 +503,9 @@ $$
 
 Hence $-\frac{1}{2}$ is a rational root.
 
-Therefore $f\left(x\right)$ is reducible over $\mathbb{Q}$. $\blacksquare$
+Therefore $f\left(x\right)$ is reducible over $\mathbb{Q}$.
+
+$\blacksquare$
 
 ## 7.8-2(8)
 
@@ -573,4 +585,6 @@ From $\left(2\right)$: $-a^{2}-2=-5\Rightarrow{a}^{2}=3$, not a perfect square.
 
 Hence it cannot be factored into two integer quadratics.
 
-Therefore $x^{4}-5x^{2}+1$ is irreducible over $\mathbb{Q}$. $\blacksquare$
+Therefore $x^{4}-5x^{2}+1$ is irreducible over $\mathbb{Q}$.
+
+$\blacksquare$

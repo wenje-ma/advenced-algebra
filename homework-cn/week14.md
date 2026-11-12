@@ -215,7 +215,9 @@ $$
 \text{rank}\left(A^{\top}A\right)=\text{rank}\left(A^{\top}A,A^{\top}\beta\right).
 $$
 
-系数矩阵与增广矩阵有相同的秩, 故该方程组有解. $\blacksquare$
+系数矩阵与增广矩阵有相同的秩, 故该方程组有解.
+
+$\blacksquare$
 
 ## 4.5-9
 
@@ -369,7 +371,9 @@ $$
 \left(\frac{1}{2}\right)^{2}+\left(-\frac{\sqrt{3}}{2}\right)^{2}=\frac{1}{4}+\frac{3}{4}=1.
 $$
 
-因此 $A^{\top}A=I$, 由**定义 4.6.1 (正交矩阵)**, 故 $A$ 是正交矩阵. $\blacksquare$
+因此 $A^{\top}A=I$, 由**定义 4.6.1 (正交矩阵)**, 故 $A$ 是正交矩阵.
+
+$\blacksquare$
 
 ## 4.6-1(8)
 
@@ -400,7 +404,9 @@ A^{\top}A=\left[\begin{array}{rr}
 \end{array}\right].
 $$
 
-显然 $A^{\top}A\ne{I}$, 由**定义 4.6.1 (正交矩阵)**, 故 $A$ 不是正交矩阵. $\blacksquare$
+显然 $A^{\top}A\ne{I}$, 由**定义 4.6.1 (正交矩阵)**, 故 $A$ 不是正交矩阵.
+
+$\blacksquare$
 
 ## 4.6-3
 
@@ -430,4 +436,6 @@ $$
 \left(T^{-1}AT\right)^{\top}=T^{\top}AT=T^{-1}AT.
 $$
 
-因此 $T^{-1}AT$ 是对称矩阵. $\blacksquare$
+因此 $T^{-1}AT$ 是对称矩阵.
+
+$\blacksquare$

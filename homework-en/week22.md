@@ -100,7 +100,9 @@ $$
 
 Hence $X_{1}=Y_{1}$ and $X_{2}=Y_{2}$.
 
-The decomposition is unique. $\blacksquare$
+The decomposition is unique.
+
+$\blacksquare$
 
 ## 7.4-2(2)
 
@@ -168,7 +170,9 @@ $$
 x^{4}+4=\left(x^{2}-2x+2\right)\left(x^{2}+2x+2\right).
 $$
 
-All these factorizations are unique. $\blacksquare$
+All these factorizations are unique.
+
+$\blacksquare$
 
 ## 7.4-3
 
@@ -202,7 +206,9 @@ $$
 
 i.e. $g^{2}\mid{f}^{2}$.
 
-Thus $g^{2}\left(x\right)\mid{f}^{2}\left(x\right)$ if and only if $g\left(x\right)\mid{f}\left(x\right)$. $\blacksquare$
+Thus $g^{2}\left(x\right)\mid{f}^{2}\left(x\right)$ if and only if $g\left(x\right)\mid{f}\left(x\right)$.
+
+$\blacksquare$
 
 ## 7.4-7
 
@@ -242,7 +248,9 @@ $$
 
 This shows that a linear combination of $f$ and $g_{1}g_{2}$ equals $1$.
 
-Hence $\left(f,g_{1}g_{2}\right)=1$. $\blacksquare$
+Hence $\left(f,g_{1}g_{2}\right)=1$.
+
+$\blacksquare$
 
 ## 7.5-2
 

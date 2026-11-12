@@ -64,7 +64,9 @@ $$
 \left|I-A\right|=1\times\left(-1\right)\times\left|I-A\right|=-\left|I-A\right|.
 $$
 
-Hence $2\left|I-A\right|=0$, i.e. $\left|I-A\right|=0$. $\blacksquare$
+Hence $2\left|I-A\right|=0$, i.e. $\left|I-A\right|=0$.
+
+$\blacksquare$
 
 ## 4.3-7
 
@@ -391,7 +393,7 @@ $$
 \sum_{k=1}^{n}a_{ik}b_{kj}=\delta_{ij}.
 $$
 
-Prove by induction that $b_{ij}=0$ when $i>{}j$.
+Prove by induction that $b_{ij}=0$ when $i>j$.
 
 Induct on rows $i=n,n-1,\cdots,2$ from bottom to top.
 
@@ -407,7 +409,7 @@ Thus the equation reduces to $a_{nn}b_{nj}=0$.
 
 Since $A$ is invertible, $a_{nn}\ne0$, hence $b_{nj}=0$ (for all $j<{}n$).
 
-Assume the conclusion holds for all rows $i>{}m$ (i.e. $b_{ij}=0$ when $i>{}m$ and $i>{}j$).
+Assume the conclusion holds for all rows $i>m$ (i.e. $b_{ij}=0$ when $i>m$ and $i>j$).
 
 Consider row $m$, for any $j<{}m$:
 
@@ -415,7 +417,7 @@ $$
 \sum_{k=1}^{n}a_{mk}b_{kj}=0.
 $$
 
-Since $A$ is upper triangular, $a_{mk}=0$ when $k>{}m$.
+Since $A$ is upper triangular, $a_{mk}=0$ when $k>m$.
 
 Thus the equation is
 
@@ -429,7 +431,7 @@ $$
 a_{mm}b_{mj}+a_{m,m-1}b_{m-1,j}+\cdots+a_{m1}b_{1,j}=0.
 $$
 
-By the induction hypothesis, terms with $k>{}m$ are already $0$. For terms with $k<{}m$, $a_{mk}=0$ (because $m>{}k$, and $A$ is upper triangular).
+By the induction hypothesis, terms with $k>m$ are already $0$. For terms with $k<{}m$, $a_{mk}=0$ (because $m>k$, and $A$ is upper triangular).
 
 Hence only $a_{mm}b_{mj}=0$ remains.
 
@@ -437,4 +439,6 @@ Since $a_{mm}\ne0$, $b_{mj}=0$.
 
 The induction is complete. Therefore $B$ is upper triangular.
 
-The inverse of an invertible upper (lower) triangular matrix is still upper (lower) triangular. The lower triangular case is proved analogously. $\blacksquare$
+The inverse of an invertible upper (lower) triangular matrix is still upper (lower) triangular. The lower triangular case is proved analogously.
+
+$\blacksquare$

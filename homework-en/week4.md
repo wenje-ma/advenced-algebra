@@ -16,6 +16,10 @@
 > 
 > Adding a multiple of one row to another row leaves the value of the determinant unchanged.
 
+> **Definition 2.4.1 (Minors and Cofactors)**
+> 
+> In the $n\times{n}$ determinant $\left|A\right|$, deleting row $i$ and column $j$, the $\left(n-1\right)$-determinant formed by the remaining entries in their original order is called the minor of the $\left(i,j\right)$-entry of $A$, denoted $M_{ij}$. Setting $A_{ij}=\left(-1\right)^{i+j}M_{ij}$, $A_{ij}$ is called the cofactor of the $\left(i,j\right)$-entry of $A$.
+
 > **Theorem 2.4.1 (Expansion of a Determinant Along a Row (Column))**
 > 
 > The $n\times{n}$ determinant $\left|A\right|$ equals the sum of the products of the entries in its $i$-th row and their cofactors:
@@ -23,10 +27,6 @@
 $$
 \left|A\right|=a_{i1}A_{i1}+a_{i2}A_{i2}+\cdots+a_{in}A_{in}.
 $$
-
-> **Definition 2.4.1 (Minors and Cofactors)**
-> 
-> In the $n\times{n}$ determinant $\left|A\right|$, deleting row $i$ and column $j$, the $\left(n-1\right)$-determinant formed by the remaining entries in their original order is called the minor of the $\left(i,j\right)$-entry of $A$, denoted $M_{ij}$. Setting $A_{ij}=\left(-1\right)^{i+j}M_{ij}$, $A_{ij}$ is called the cofactor of the $\left(i,j\right)$-entry of $A$.
 
 ## 2.3-3(1)
 

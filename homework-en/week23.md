@@ -12,13 +12,13 @@
 > 
 > In $K\left[x\right]$, $x-a$ divides $f\left(x\right)$ if and only if $f\left(a\right)=0$.
 
-> **Property 7.7.1 (Conjugate Pairs of Nonreal Roots)**
-> 
-> The nonreal roots of a real-coefficient polynomial occur in conjugate pairs with the same multiplicity.
-
 > **Theorem 7.7.1 (Unique Factorization Theorem for Real Polynomials)**
 > 
 > Every real-coefficient polynomial of positive degree can be uniquely factored over $\mathbb{R}$ into a product of linear factors and quadratic factors with negative discriminant.
+
+> **Property 7.7.1 (Conjugate Pairs of Nonreal Roots)**
+> 
+> The nonreal roots of a real-coefficient polynomial occur in conjugate pairs with the same multiplicity.
 
 > **Definition 7.8.1 (Primitive Polynomial)**
 > 

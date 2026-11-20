@@ -22,7 +22,7 @@
 
 > **定义 5.3.1 (广义逆)**
 > 
-> 设 $A$ 是数域 $K$ 上 $s\times{n}$ 矩阵. 如果矩阵 $G$ 满足 $AGA=A$, 则称 $G$ 是 $A$ 的一个广义逆, 记作 $A^{-}$. ## 5.1-1 在平面 $S$ (点集) 上定义一个二元关系: $$ P\left(x_{1},y_{1}\right)\sim{P}\left(x_{2},y_{2}\right)\overset{def}{\Leftrightarrow}x_{1}=x_{2}. $$ 证明: $\sim$ 是 $S$ 上的一个等价关系. 按**定义 5.1.1 (二元关系)**, **定义 5.1.2 (等价关系)**, 需验证反身性, 对称性和传递性. 反身性: 对任意 $P\left(x,y\right)\in{S}$, 显然 $x=x$, 故 $P\sim{P}$. 对称性: 若 $P\left(x_{1},y_{1}\right)\sim{P}\left(x_{2},y_{2}\right)$, 则 $x_{1}=x_{2}$, 从而 $x_{2}=x_{1}$, 故 $P\left(x_{2},y_{2}\right)\sim{P}\left(x_{1},y_{1}\right)$. 传递性: 若 $P\left(x_{1},y_{1}\right)\sim{P}\left(x_{2},y_{2}\right)$ 且 $P\left(x_{2},y_{2}\right)\sim{P}\left(x_{3},y_{3}\right)$, 则 $x_{1}=x_{2}$ 且 $x_{2}=x_{3}$, 从而 $x_{1}=x_{3}$, 故 $P\left(x_{1},y_{1}\right)\sim{P}\left(x_{3},y_{3}\right)$. 因此 $\sim$ 满足**定义 5.1.2 (等价关系)**的全部条件, 故 $\sim$ 是 $S$ 上的等价关系. $\blacksquare$
+> 设 $A$ 是数域 $K$ 上 $s\times{n}$ 矩阵. 如果矩阵 $G$ 满足 $AGA=A$, 则称 $G$ 是 $A$ 的一个广义逆, 记作 $A^{-}$. ## 5.1-1 在平面 $S$ (点集) 上定义一个二元关系: $$P\left(x_{1},y_{1}\right)\sim{P}\left(x_{2},y_{2}\right)\overset{def}{\Leftrightarrow}x_{1}=x_{2}.$$ 证明: $\sim$ 是 $S$ 上的一个等价关系. 按**定义 5.1.1 (二元关系)**, **定义 5.1.2 (等价关系)**, 需验证反身性, 对称性和传递性. 反身性: 对任意 $P\left(x,y\right)\in{S}$, 显然 $x=x$, 故 $P\sim{P}$. 对称性: 若 $P\left(x_{1},y_{1}\right)\sim{P}\left(x_{2},y_{2}\right)$, 则 $x_{1}=x_{2}$, 从而 $x_{2}=x_{1}$, 故 $P\left(x_{2},y_{2}\right)\sim{P}\left(x_{1},y_{1}\right)$. 传递性: 若 $P\left(x_{1},y_{1}\right)\sim{P}\left(x_{2},y_{2}\right)$ 且 $P\left(x_{2},y_{2}\right)\sim{P}\left(x_{3},y_{3}\right)$, 则 $x_{1}=x_{2}$ 且 $x_{2}=x_{3}$, 从而 $x_{1}=x_{3}$, 故 $P\left(x_{1},y_{1}\right)\sim{P}\left(x_{3},y_{3}\right)$. 因此 $\sim$ 满足**定义 5.1.2 (等价关系)**的全部条件, 故 $\sim$ 是 $S$ 上的等价关系. $\blacksquare$
 
 ## 5.2-1(3)
 
@@ -343,7 +343,7 @@ $$
 上式化为
 
 $$
-Q^{-1}A^{\top}Q=D. $
+Q^{-1}A^{\top}Q=D.$
 $
 因此
 $$
@@ -351,7 +351,7 @@ $$
 A^{\top}\sim{D}.
 
 $$
-又因为 $A\sim{D}$, 故由相似关系的对称性和传递性,
+又因为$A\sim{D}$,故由相似关系的对称性和传递性,
 $$
 
 A\sim{A}^{\top}.
@@ -359,18 +359,18 @@ A\sim{A}^{\top}.
 $$
 $\blacksquare$
 
-## 5.4-9
-证明: 如果数域 $K$ 上的 $n$ 级矩阵 $A,B$ 满足
+##5.4-9
+证明:如果数域$K$上的$n$级矩阵$A,B$满足
 $$
 
 AB-BA=A,
 
 $$
-则 $A$ 不
+则$A$不
 可逆.
-### 解答 5.4-9
-由相似矩阵的不变量, 相似的矩阵有相等的迹. 假设 $A$ 可逆.
-由 $AB-BA=A$, 两边左乘 $A^{-1}$:
+###解答5.4-9
+由相似矩阵的不变量,相似的矩阵有相等的迹.假设$A$可逆.
+由$AB-BA=A$,两边左乘$A^{-1}$:
 $$
 
 A^{-1}AB-A^{-1}BA=A^{-1}A.
@@ -383,14 +383,14 @@ B-A^{-1}BA=I.
 
 $$
 令
-$C=A^{-1}BA$. 则 $B-C=I$.
+$C=A^{-1}BA$.则$B-C=I$.
 两边取迹:
 $$
 
 \operatorname{tr}\left(B-C\right)=\operatorname{tr}\left(I\right)=n.
 
 $$
-另一方面, 由相似矩阵的不变量,
+另一方面,由相似矩阵的不变量,
 $$
 
 \operatorname{tr}\left(C\right)=\operatorname{tr}\left(A^{-1}BA\right)=\operatorname{tr}\left(BAA^{-1}\right)=\operatorname{tr}\left(B\right).

@@ -14,7 +14,7 @@
 
 > **定义 4.6.1 (正交矩阵)**
 > 
-> 实数域上的方阵 $A$ 如果满足 $A^{\top}A=I$, 则称 $A$ 是正交矩阵. ## 4.5-1 证明: 设 $A,B$ 分别是 $s\times{n}$, $n\times{m}$ 矩阵. 如果 $AB=0$, 则 $\text{rank}\left(A\right)+\text{rank}\left(B\right)\le{n}$. 设 $B$ 的列向量组为 $\beta_{1},\beta_{2},\cdots,\beta_{m}$. $AB=0$ 意味着 $A\beta_{j}=0$ ( $j=1,2,\cdots,m$ ). 所以每个 $\beta_{j}$ 都是齐次线性方程组 $Ax=0$ 的解. 因此 $B$ 的列空间 $\subseteq{A}x=0$ 的解空间 $W$. 由**定理 3.7.1 (齐次线性方程组解空间的维数)**, $$ \text{rank}\left(B\right)=\dim\left\langle\beta_{1},\cdots,\beta_{m}\right\rangle\le\dim{W}=n-\text{rank}\left(A\right). $$ 因此 $$ \text{rank}\left(A\right)+\text{rank}\left(B\right)\le{n}. $$ $\blacksquare$
+> 实数域上的方阵 $A$ 如果满足 $A^{\top}A=I$, 则称 $A$ 是正交矩阵. ## 4.5-1 证明: 设 $A,B$ 分别是 $s\times{n}$, $n\times{m}$ 矩阵. 如果 $AB=0$, 则 $\text{rank}\left(A\right)+\text{rank}\left(B\right)\le{n}$. 设 $B$ 的列向量组为 $\beta_{1},\beta_{2},\cdots,\beta_{m}$. $AB=0$ 意味着 $A\beta_{j}=0$ ( $j=1,2,\cdots,m$ ). 所以每个 $\beta_{j}$ 都是齐次线性方程组 $Ax=0$ 的解. 因此 $B$ 的列空间 $\subseteq{A}x=0$ 的解空间 $W$. 由**定理 3.7.1 (齐次线性方程组解空间的维数)**, $$\text{rank}\left(B\right)=\dim\left\langle\beta_{1},\cdots,\beta_{m}\right\rangle\le\dim{W}=n-\text{rank}\left(A\right).$$ 因此 $$\text{rank}\left(A\right)+\text{rank}\left(B\right)\le{n}.$$ $\blacksquare$
 
 ## 4.5-15
 

@@ -286,7 +286,7 @@ $$
 $$
 \begin{cases}
 x+y=k,\\
-y=\lambda. \end{case
+y=\lambda.\end{case
 s}
 $$
 

@@ -22,7 +22,7 @@
 
 > **定理 4.3.1 (矩阵乘积的秩)**
 > 
-> 设 $A=\left(a_{ij}\right)_{s\times{n}}$, $B=\left(b_{ij}\right)_{n\times{m}}$, 则 $\text{rank}\left(AB\right)\le\min\left\{\text{rank}\left(A\right),\text{rank}\left(B\right)\right\}$. ## 4.1-6 计算: $$ \left(x,y,1\right)\left[\begin{array}{ccc} a_{11}&a_{12}&a_{1}\\ a_{12}&a_{22}&a_{2}\\ a_{1}&a_{2}&a_{0} \end{array}\right]\left[\begin{array}{c} x\\ y\\ 1 \end{array}\right]. $$ 由**定义 4.1.3 (矩阵的乘法)**, 先算左边的行向量乘矩阵: $$ \left(x,y,1\right)M = \left(a_{11}x+a_{12}y+a_{1},a_{12}x+a_{22}y+a_{2},a_{1}x+a_{2}y+a_{0}\right). $$ 再乘列向量: $$ =\left(a_{11}x+a_{12}y+a_{1}\right)x+\left(a_{12}x+a_{22}y+a_{2}\right)y+\left(a_{1}x+a_{2}y+a_{0}\right)=a_{11}x^{2}+2a_{12}xy+a_{22}y^{2}+2a_{1}x+2a_{2}y+a_{0}. $$ $\blacksquare$
+> 设 $A=\left(a_{ij}\right)_{s\times{n}}$, $B=\left(b_{ij}\right)_{n\times{m}}$, 则 $\text{rank}\left(AB\right)\le\min\left\{\text{rank}\left(A\right),\text{rank}\left(B\right)\right\}$. ## 4.1-6 计算: $$\left(x,y,1\right)\left[\begin{array}{ccc}a_{11}&a_{12}&a_{1}\\a_{12}&a_{22}&a_{2}\\a_{1}&a_{2}&a_{0}\end{array}\right]\left[\begin{array}{c}x\\y\\1\end{array}\right].$$ 由**定义 4.1.3 (矩阵的乘法)**, 先算左边的行向量乘矩阵: $$\left(x,y,1\right)M=\left(a_{11}x+a_{12}y+a_{1},a_{12}x+a_{22}y+a_{2},a_{1}x+a_{2}y+a_{0}\right).$$ 再乘列向量: $$=\left(a_{11}x+a_{12}y+a_{1}\right)x+\left(a_{12}x+a_{22}y+a_{2}\right)y+\left(a_{1}x+a_{2}y+a_{0}\right)=a_{11}x^{2}+2a_{12}xy+a_{22}y^{2}+2a_{1}x+2a_{2}y+a_{0}.$$ $\blacksquare$
 
 ## 4.1-7(6)
 

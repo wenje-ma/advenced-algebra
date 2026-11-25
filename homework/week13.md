@@ -2,7 +2,7 @@
 
 > **定理 4.3.1 (矩阵乘积的秩)**
 > 
-> 设 $A=\left(a_{ij}\right)_{s\times{n}}$, $B=\left(b_{ij}\right)_{n\times{m}}$, 则
+> 设 $A=\left(a_{ij}\right)_{s\times{}n}$, $B=\left(b_{ij}\right)_{n\times{}m}$, 则
 
 > **命题 4.3.2 (实矩阵 $A^{\top}Az=0$ 与 $z=0$ 同解)**
 > 
@@ -132,7 +132,7 @@ $\blacksquare$
 
 ## 4.3-12
 
-证明: 对于实数域上任一 $s\times{n}$ 矩阵 $A$, 都有
+证明: 对于实数域上任一 $s\times{}n$ 矩阵 $A$, 都有
 
 $$
 \text{rank}\left(A^{\top}AA^{\top}\right)=\text{rank}\left(A\right).

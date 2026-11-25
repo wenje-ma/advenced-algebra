@@ -2,7 +2,7 @@
 
 > **定义 4.1.3 (矩阵的乘法)**
 > 
-> 设 $A=\left(a_{ij}\right)_{s\times{n}}$, $B=\left(b_{ij}\right)_{n\times{m}}$, 令 $C=\left(c_{ij}\right)_{s\times{m}}$, 其中 $c_{ij}=\sum_{k=1}^{n}a_{ik}b_{kj}$, 则称 $C$ 是 $A$ 与 $B$ 的乘积, 记作 $C=AB$.
+> 设 $A=\left(a_{ij}\right)_{s\times{}n}$, $B=\left(b_{ij}\right)_{n\times{}m}$, 令 $C=\left(c_{ij}\right)_{s\times{}m}$, 其中 $c_{ij}=\sum_{k=1}^{n}a_{ik}b_{kj}$, 则称 $C$ 是 $A$ 与 $B$ 的乘积, 记作 $C=AB$.
 
 > **定义 4.2.2 (上/下三角矩阵)**
 > 
@@ -22,7 +22,7 @@
 
 > **定理 4.3.1 (矩阵乘积的秩)**
 > 
-> 设 $A=\left(a_{ij}\right)_{s\times{n}}$, $B=\left(b_{ij}\right)_{n\times{m}}$, 则 $\text{rank}\left(AB\right)\le\min\left\{\text{rank}\left(A\right),\text{rank}\left(B\right)\right\}$. ## 4.1-6 计算: $$\left(x,y,1\right)\left[\begin{array}{ccc}a_{11}&a_{12}&a_{1}\\a_{12}&a_{22}&a_{2}\\a_{1}&a_{2}&a_{0}\end{array}\right]\left[\begin{array}{c}x\\y\\1\end{array}\right].$$ 由**定义 4.1.3 (矩阵的乘法)**, 先算左边的行向量乘矩阵: $$\left(x,y,1\right)M=\left(a_{11}x+a_{12}y+a_{1},a_{12}x+a_{22}y+a_{2},a_{1}x+a_{2}y+a_{0}\right).$$ 再乘列向量: $$=\left(a_{11}x+a_{12}y+a_{1}\right)x+\left(a_{12}x+a_{22}y+a_{2}\right)y+\left(a_{1}x+a_{2}y+a_{0}\right)=a_{11}x^{2}+2a_{12}xy+a_{22}y^{2}+2a_{1}x+2a_{2}y+a_{0}.$$ $\blacksquare$
+> 设 $A=\left(a_{ij}\right)_{s\times{}n}$, $B=\left(b_{ij}\right)_{n\times{}m}$, 则 $\text{rank}\left(AB\right)\le\min\left\{\text{rank}\left(A\right),\text{rank}\left(B\right)\right\}$. ## 4.1-6 计算: $$\left(x,y,1\right)\left[\begin{array}{ccc}a_{11}&a_{12}&a_{1}\\a_{12}&a_{22}&a_{2}\\a_{1}&a_{2}&a_{0}\end{array}\right]\left[\begin{array}{c}x\\y\\1\end{array}\right].$$ 由**定义 4.1.3 (矩阵的乘法)**, 先算左边的行向量乘矩阵: $$\left(x,y,1\right)M=\left(a_{11}x+a_{12}y+a_{1},a_{12}x+a_{22}y+a_{2},a_{1}x+a_{2}y+a_{0}\right).$$ 再乘列向量: $$=\left(a_{11}x+a_{12}y+a_{1}\right)x+\left(a_{12}x+a_{22}y+a_{2}\right)y+\left(a_{1}x+a_{2}y+a_{0}\right)=a_{11}x^{2}+2a_{12}xy+a_{22}y^{2}+2a_{1}x+2a_{2}y+a_{0}.$$ $\blacksquare$
 
 ## 4.1-7(6)
 
@@ -38,16 +38,16 @@ $$
 
 ### 解答 4.1-7(6)
 
-由**定义 4.1.3 (矩阵的乘法)**, 记 $A=\lambda{I}+N$, 其中
+由**定义 4.1.3 (矩阵的乘法)**, 记 $A=\lambda{}I+N$, 其中
 
 $$
 N=\left[\begin{array}{ccc}0&1&0\\0&0&1\\0&0&0\end{array}\right].
 $$
 
-因为 $\lambda{I}$ 与 $N$ 可交换, 由矩阵二项式定理:
+因为 $\lambda{}I$ 与 $N$ 可交换, 由矩阵二项式定理:
 
 $$
-A^{n}=\sum_{k=0}^{n}\binom{n}{k}\left(\lambda{I}\right)^{n-k}N^{k}.
+A^{n}=\sum_{k=0}^{n}\binom{n}{k}\left(\lambda{}I\right)^{n-k}N^{k}.
 $$
 
 又 $N^{0}=I$, $N^{1}=N$, $N^{2}=\left[\begin{array}{ccc}0&0&1\\0&0&0\\0&0&0\end{array}\right]$, $N^{3}=0$.
@@ -115,7 +115,7 @@ $$
 
 下三角性. 当 $i<{}j$ 时:
 
-- 若 $k\le{i}<{}j$, 则 $k<{}j$, 故 $b_{kj}=0$.
+- 若 $k\le{}i<{}j$, 则 $k<{}j$, 故 $b_{kj}=0$.
 - 若 $k>i$, 则 $a_{ik}=0$.
 
 因此所有项均为 $0$, 故 $c_{ij}=0$ (当 $i<{}j$). 由**定义 4.2.2 (上/下三角矩阵)**, 所以 $C$ 是下三角矩阵.
@@ -161,13 +161,13 @@ $$
 a_{11}=a_{22}=\cdots=a_{nn}=k.
 $$
 
-再比较 $\left(k,j\right)$ 元 ( $k\ne{i}$ ):
+再比较 $\left(k,j\right)$ 元 ( $k\ne{}i$ ):
 
 $AE_{ij}$ 的 $\left(k,j\right)$ 元 $=a_{ki}$.
 
-$E_{ij}A$ 的 $\left(k,j\right)$ 元 $=0$ (因为 $k\ne{i}$).
+$E_{ij}A$ 的 $\left(k,j\right)$ 元 $=0$ (因为 $k\ne{}i$).
 
-因此 $a_{ki}=0$ (当 $k\ne{i}$).
+因此 $a_{ki}=0$ (当 $k\ne{}i$).
 
 这对所有 $i$ 都成立, 故 $A$ 的非对角元全为 $0$.
 
@@ -292,7 +292,7 @@ $\blacksquare$
 
 ## 4.3-2
 
-一个矩阵称为行 (列) 满秩矩阵, 如果它的行 (列) 向量组是线性无关的. 证明: 如果一个 $s\times{n}$ 矩阵 $A$ 的秩为 $r$, 则有 $s\times{r}$ 的列满秩矩阵 $B$ 和 $r\times{n}$ 的行满秩矩阵 $C$, 使得 $A=BC$.
+一个矩阵称为行 (列) 满秩矩阵, 如果它的行 (列) 向量组是线性无关的. 证明: 如果一个 $s\times{}n$ 矩阵 $A$ 的秩为 $r$, 则有 $s\times{}r$ 的列满秩矩阵 $B$ 和 $r\times{}n$ 的行满秩矩阵 $C$, 使得 $A=BC$.
 
 ### 解答 4.3-2
 
@@ -306,15 +306,15 @@ $$
 J=\left[\begin{array}{c}C\\0\end{array}\right]
 $$
 
-其中 $C$ 是 $r\times{n}$ 矩阵, 且 $C$ 的行向量组线性无关 (因为 $J$ 的非零行线性无关).
+其中 $C$ 是 $r\times{}n$ 矩阵, 且 $C$ 的行向量组线性无关 (因为 $J$ 的非零行线性无关).
 
 故 $C$ 是行满秩矩阵.
 
-设 $A=PJ$, 其中 $P$ 是 $s\times{s}$ 可逆矩阵.
+设 $A=PJ$, 其中 $P$ 是 $s\times{}s$ 可逆矩阵.
 
 则 $A=P\left[\begin{array}{c}C\\0\end{array}\right]$.
 
-把 $P$ 按列分块: $P=\left(P_{1},P_{2}\right)$, 其中 $P_{1}$ 是 $s\times{r}$ 矩阵.
+把 $P$ 按列分块: $P=\left(P_{1},P_{2}\right)$, 其中 $P_{1}$ 是 $s\times{}r$ 矩阵.
 
 则
 
@@ -328,6 +328,6 @@ $$
 
 故 $B$ 是列满秩矩阵.
 
-因此 $A=BC$, 其中 $B$ 是 $s\times{r}$ 列满秩矩阵, $C$ 是 $r\times{n}$ 行满秩矩阵.
+因此 $A=BC$, 其中 $B$ 是 $s\times{}r$ 列满秩矩阵, $C$ 是 $r\times{}n$ 行满秩矩阵.
 
 $\blacksquare$

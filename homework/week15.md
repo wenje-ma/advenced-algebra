@@ -2,19 +2,19 @@
 
 > **定理 3.7.1 (齐次线性方程组解空间的维数)**
 > 
-> 数域 $K$ 上 $n$ 元齐次线性方程组 $Ax=0$ 的解空间 $W$ 的维数为 $\dim{W}=n-\text{rank}\left(A\right)$.
+> 数域 $K$ 上 $n$ 元齐次线性方程组 $Ax=0$ 的解空间 $W$ 的维数为 $\dim{}W=n-\text{rank}\left(A\right)$.
 
 > **定理 4.3.1 (矩阵乘积的秩)**
 > 
-> 设 $A=\left(a_{ij}\right)_{s\times{n}}$, $B=\left(b_{ij}\right)_{n\times{m}}$, 则 $\text{rank}\left(AB\right)\le\min\left\{\text{rank}\left(A\right),\text{rank}\left(B\right)\right\}$.
+> 设 $A=\left(a_{ij}\right)_{s\times{}n}$, $B=\left(b_{ij}\right)_{n\times{}m}$, 则 $\text{rank}\left(AB\right)\le\min\left\{\text{rank}\left(A\right),\text{rank}\left(B\right)\right\}$.
 
 > **命题 4.5.2 (实数域上秩的等式)**
 > 
-> 设 $A$ 是实数域上 $s\times{n}$ 矩阵, 则 $\text{rank}\left(A^{\top}A\right)=\text{rank}\left(AA^{\top}\right)=\text{rank}\left(A\right)$. $\beta_{i}=\alpha_{i}-\sum_{k=1}^{i-1}\frac{\left(\alpha_{i},\beta_{k}\right)}{\left(\beta_{k},\beta_{k}\right)}\beta_{k}$, 则 $\beta_{1},\beta_{2},\cdots,\beta_{m}$ 是正交向量组, 且与原向量组等价.
+> 设 $A$ 是实数域上 $s\times{}n$ 矩阵, 则 $\text{rank}\left(A^{\top}A\right)=\text{rank}\left(AA^{\top}\right)=\text{rank}\left(A\right)$. $\beta_{i}=\alpha_{i}-\sum_{k=1}^{i-1}\frac{\left(\alpha_{i},\beta_{k}\right)}{\left(\beta_{k},\beta_{k}\right)}\beta_{k}$, 则 $\beta_{1},\beta_{2},\cdots,\beta_{m}$ 是正交向量组, 且与原向量组等价.
 
 > **定义 4.6.1 (正交矩阵)**
 > 
-> 实数域上的方阵 $A$ 如果满足 $A^{\top}A=I$, 则称 $A$ 是正交矩阵. ## 4.5-1 证明: 设 $A,B$ 分别是 $s\times{n}$, $n\times{m}$ 矩阵. 如果 $AB=0$, 则 $\text{rank}\left(A\right)+\text{rank}\left(B\right)\le{n}$. 设 $B$ 的列向量组为 $\beta_{1},\beta_{2},\cdots,\beta_{m}$. $AB=0$ 意味着 $A\beta_{j}=0$ ( $j=1,2,\cdots,m$ ). 所以每个 $\beta_{j}$ 都是齐次线性方程组 $Ax=0$ 的解. 因此 $B$ 的列空间 $\subseteq{A}x=0$ 的解空间 $W$. 由**定理 3.7.1 (齐次线性方程组解空间的维数)**, $$\text{rank}\left(B\right)=\dim\left\langle\beta_{1},\cdots,\beta_{m}\right\rangle\le\dim{W}=n-\text{rank}\left(A\right).$$ 因此 $$\text{rank}\left(A\right)+\text{rank}\left(B\right)\le{n}.$$ $\blacksquare$
+> 实数域上的方阵 $A$ 如果满足 $A^{\top}A=I$, 则称 $A$ 是正交矩阵. ## 4.5-1 证明: 设 $A,B$ 分别是 $s\times{}n$, $n\times{}m$ 矩阵. 如果 $AB=0$, 则 $\text{rank}\left(A\right)+\text{rank}\left(B\right)\le{}n$. 设 $B$ 的列向量组为 $\beta_{1},\beta_{2},\cdots,\beta_{m}$. $AB=0$ 意味着 $A\beta_{j}=0$ ( $j=1,2,\cdots,m$ ). 所以每个 $\beta_{j}$ 都是齐次线性方程组 $Ax=0$ 的解. 因此 $B$ 的列空间 $\subseteq{}Ax=0$ 的解空间 $W$. 由**定理 3.7.1 (齐次线性方程组解空间的维数)**, $$\text{rank}\left(B\right)=\dim\left\langle\beta_{1},\cdots,\beta_{m}\right\rangle\le\dim{}W=n-\text{rank}\left(A\right).$$ 因此 $$\text{rank}\left(A\right)+\text{rank}\left(B\right)\le{}n.$$ $\blacksquare$
 
 ## 4.5-15
 
@@ -152,7 +152,7 @@ A^{\top}A=\left[\begin{array}{rr}
 \end{array}\right].
 $$
 
-显然 $A^{\top}A\ne{I}$, 由**定义 4.6.1 (正交矩阵)**, 故 $A$ 不是正交矩阵.
+显然 $A^{\top}A\ne{}I$, 由**定义 4.6.1 (正交矩阵)**, 故 $A$ 不是正交矩阵.
 
 $\blacksquare$
 

@@ -105,7 +105,7 @@ $$
 验证可线性表出. 任取
 
 $$
-\alpha=\left(a_{1},a_{2},\cdots,a_{n}\right)^{\top}\in{K}^{n},
+\alpha=\left(a_{1},a_{2},\cdots,a_{n}\right)^{\top}\in{}K^{n},
 $$
 
 设
@@ -171,7 +171,7 @@ $\blacksquare$
 
 因为 $U$ 中每一个向量都可以由 $\alpha_{1},\alpha_{2},\cdots,\alpha_{r}$ 线性表出, 所以 $U\subseteq\left\langle\alpha_{1},\alpha_{2},\cdots,\alpha_{r}\right\rangle$.
 
-又因为 $\alpha_{1},\alpha_{2},\cdots,\alpha_{r}\in{U}$, 且 $U$ 是子空间, 所以 $\left\langle\alpha_{1},\alpha_{2},\cdots,\alpha_{r}\right\rangle\subseteq{U}$.
+又因为 $\alpha_{1},\alpha_{2},\cdots,\alpha_{r}\in{}U$, 且 $U$ 是子空间, 所以 $\left\langle\alpha_{1},\alpha_{2},\cdots,\alpha_{r}\right\rangle\subseteq{}U$.
 
 因此 $U=\left\langle\alpha_{1},\alpha_{2},\cdots,\alpha_{r}\right\rangle$.
 
@@ -181,7 +181,7 @@ $$
 \dim\left\langle\alpha_{1},\alpha_{2},\cdots,\alpha_{r}\right\rangle=\text{rank}\left\{\alpha_{1},\alpha_{2},\cdots,\alpha_{r}\right\}.
 $$
 
-又 $\dim{U}=r$, 故
+又 $\dim{}U=r$, 故
 
 $$
 \text{rank}\left\{\alpha_{1},\alpha_{2},\cdots,\alpha_{r}\right\}=r.

@@ -2,7 +2,7 @@
 
 > **定义 1.3.1 (数域)**
 > 
-> 设 $K$ 是复数集的一个子集, 如果 $K$ 满足: (1) $0,1\in{K}$; (2) 对加, 减, 乘, 除(除数不为 $0$) 四种运算封闭, 那么称 $K$ 是一个数域.
+> 设 $K$ 是复数集的一个子集, 如果 $K$ 满足: (1) $0,1\in{}K$; (2) 对加, 减, 乘, 除(除数不为 $0$) 四种运算封闭, 那么称 $K$ 是一个数域.
 
 > **命题 2.1.1 (二元一次方程组有唯一解的判别)**
 > 
@@ -10,7 +10,7 @@
 
 > **定义 2.2.1 ($n$ 阶行列式)**
 > 
-> $n$ 阶行列式是 $n!$ 项的代数和, 其中每一项都是位于不同行, 不同列的 $n$ 个元素的乘积, 把这 $n$ 个元素按照行指标成自然序排好位置, 当列指标所成排列是偶排列时, 该项带正号; 奇排列时, 该项带负号. 即 $\left|\begin{array}{cccc}a_{11}&a_{12}&\cdots&a_{1n}\\a_{21}&a_{22}&\cdots&a_{2n}\\\vdots&\vdots&&\vdots\\a_{n1}&a_{n2}&\cdots&a_{nn}\end{array}\right|=\sum_{j_{1}j_{2}\cdots{j}_{n}}\left(-1\right)^{\tau\left(j_{1}j_{2}\cdots{j}_{n}\right)}a_{1j_{1}}a_{2j_{2}}\cdots{a}_{nj_{n}}$.
+> $n$ 阶行列式是 $n!$ 项的代数和, 其中每一项都是位于不同行, 不同列的 $n$ 个元素的乘积, 把这 $n$ 个元素按照行指标成自然序排好位置, 当列指标所成排列是偶排列时, 该项带正号; 奇排列时, 该项带负号. 即 $\left|\begin{array}{cccc}a_{11}&a_{12}&\cdots&a_{1n}\\a_{21}&a_{22}&\cdots&a_{2n}\\\vdots&\vdots&&\vdots\\a_{n1}&a_{n2}&\cdots&a_{nn}\end{array}\right|=\sum_{j_{1}j_{2}\cdots{}j_{n}}\left(-1\right)^{\tau\left(j_{1}j_{2}\cdots{}j_{n}\right)}a_{1j_{1}}a_{2j_{2}}\cdots{}a_{nj_{n}}$.
 
 ## 1.2-8
 
@@ -23,7 +23,7 @@
 由 $x_{1}=x_{2}+x_{3}$ 及 $x_{1}+x_{2}+x_{3}=10$, 得
 
 $$
-2x_{1}=10\Rightarrow{x}_{1}=5,x_{2}+x_{3}=5.
+2x_{1}=10\Rightarrow{}x_{1}=5,x_{2}+x_{3}=5.
 $$
 
 总利润
@@ -38,7 +38,7 @@ $$
 l=0.6+0.15\left(5-x_{3}\right)+0.22x_{3}=0.6+0.75-0.15x_{3}+0.22x_{3}=1.35+0.07x_{3}.
 $$
 
-由于投资额非负: $x_{2}\ge0,x_{3}\ge0$, 故 $0\le{x}_{3}\le5$.
+由于投资额非负: $x_{2}\ge0,x_{3}\ge0$, 故 $0\le{}x_{3}\le5$.
 
 当 $x_{3}=0$ 时, $l$ 取最小值 $1.35$, 此时 $x_{1}=5,x_{2}=5,x_{3}=0$.
 
@@ -53,16 +53,16 @@ $\blacksquare$
 令
 
 $$
-\mathbb{Q}\left(i\right)=\left\{a+bi\mid{a},b\in\mathbb{Q}\right\},
+\mathbb{Q}\left(i\right)=\left\{a+bi\mid{}a,b\in\mathbb{Q}\right\},
 $$
 
 证明: $\mathbb{Q}\left(i\right)$ 是一个数域.
 
 ### 解答 1.3-1
 
-由**定义 1.3.1 (数域)** 的要求, 需验证 $\mathbb{Q}\left(i\right)$ 满足 $0,1\in{K}$ 且对加, 减, 乘, 除四种运算封闭.
+由**定义 1.3.1 (数域)** 的要求, 需验证 $\mathbb{Q}\left(i\right)$ 满足 $0,1\in{}K$ 且对加, 减, 乘, 除四种运算封闭.
 
-验证 $0,1\in\mathbb{Q}\left(i\right)$. 由**定义 1.3.1 (数域)** 第 (1) 条, 显然 $0=0+0\cdot{i}\in\mathbb{Q}\left(i\right)$, $1=1+0\cdot{i}\in\mathbb{Q}\left(i\right)$.
+验证 $0,1\in\mathbb{Q}\left(i\right)$. 由**定义 1.3.1 (数域)** 第 (1) 条, 显然 $0=0+0\cdot{}i\in\mathbb{Q}\left(i\right)$, $1=1+0\cdot{}i\in\mathbb{Q}\left(i\right)$.
 
 验证对加法封闭. 由**定义 1.3.1 (数域)** 第 (2) 条, 任取
 

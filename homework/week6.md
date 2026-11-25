@@ -48,7 +48,7 @@ $$
 这是关于 $a_{2},a_{3},\cdots,a_{n}$ 的 $n-1$ 阶范德蒙行列式, 由范德蒙行列式的计算公式, 其值为
 
 $$
-\prod_{2\le{i}<{}j\le{n}}\left(a_{j}-a_{i}\right)=\prod_{2\le{i}<{}j\le{n}}\left(j-i\right).
+\prod_{2\le{}i<{}j\le{}n}\left(a_{j}-a_{i}\right)=\prod_{2\le{}i<{}j\le{}n}\left(j-i\right).
 $$
 
 令 $d=j-i$, 则 $d=1,2,\cdots,n-2$, 对于每个 $d$, 有 $n-1-d$ 对 $\left(i,j\right)$ 满足 $j-i=d$.
@@ -56,7 +56,7 @@ $$
 故
 
 $$
-\prod_{2\le{i}<{}j\le{n}}\left(j-i\right)=\prod_{d=1}^{n-2}d^{n-1-d}
+\prod_{2\le{}i<{}j\le{}n}\left(j-i\right)=\prod_{d=1}^{n-2}d^{n-1-d}
 =1^{n-2}\cdot2^{n-3}\cdot\cdots\cdot\left(n-2\right)^{1}.
 $$
 
@@ -221,7 +221,7 @@ $\blacksquare$
 设 $r<{}n$, 证明 $K^{n}$ 的下述子集 $W$ 是一个子空间:
 
 $$
-W=\left\{\left(a_{1},a_{2},\cdots,a_{r},0,\cdots,0\right)\mid{a}_{i}\in{K},i=1,2,\cdots,r\right\}.
+W=\left\{\left(a_{1},a_{2},\cdots,a_{r},0,\cdots,0\right)\mid{}a_{i}\in{}K,i=1,2,\cdots,r\right\}.
 $$
 
 ### 解答 3.1-8
@@ -232,30 +232,30 @@ $$
 
 $$
 \alpha=\left(a_{1},\cdots,a_{r},0,\cdots,0\right),
-\beta=\left(b_{1},\cdots,b_{r},0,\cdots,0\right)\in{W}.
+\beta=\left(b_{1},\cdots,b_{r},0,\cdots,0\right)\in{}W.
 $$
 
 则
 
 $$
-\alpha+\beta=\left(a_{1}+b_{1},\cdots,a_{r}+b_{r},0,\cdots,0\right)\in{W}.
+\alpha+\beta=\left(a_{1}+b_{1},\cdots,a_{r}+b_{r},0,\cdots,0\right)\in{}W.
 $$
 
 验证数量乘法封闭. 任取
 
 $$
-\alpha=\left(a_{1},\cdots,a_{r},0,\cdots,0\right)\in{W},
+\alpha=\left(a_{1},\cdots,a_{r},0,\cdots,0\right)\in{}W,
 $$
 
-$k\in{K}$.
+$k\in{}K$.
 
 则
 
 $$
-k\alpha=\left(ka_{1},\cdots,ka_{r},0,\cdots,0\right)\in{W}.
+k\alpha=\left(ka_{1},\cdots,ka_{r},0,\cdots,0\right)\in{}W.
 $$
 
-$W$ 非空 (例如零向量 $\left(0,\cdots,0\right)\in{W}$).
+$W$ 非空 (例如零向量 $\left(0,\cdots,0\right)\in{}W$).
 
 由子空间的判别, $W$ 是 $K^{n}$ 的一个子空间.
 

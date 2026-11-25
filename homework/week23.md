@@ -6,7 +6,7 @@
 
 > **定理 7.8.5 (艾森斯坦判别法)**
 > 
-> 设 $f\left(x\right)=a_{n}x^{n}+\cdots+a_{1}x+a_{0}$ 是一个次数 $n$ 大于零的整系数多项式, 如果存在一个素数 $p$, 使得 (1) $p\mid{a}_{i}$, $i=0,1,\ldots,n-1$; (2) $p\nmid{a}_{n}$; (3) $p^{2}\nmid{a}_{0}$, 则 $f\left(x\right)$ 在有理数域上是不可约的.
+> 设 $f\left(x\right)=a_{n}x^{n}+\cdots+a_{1}x+a_{0}$ 是一个次数 $n$ 大于零的整系数多项式, 如果存在一个素数 $p$, 使得 (1) $p\mid{}a_{i}$, $i=0,1,\ldots,n-1$; (2) $p\nmid{}a_{n}$; (3) $p^{2}\nmid{}a_{0}$, 则 $f\left(x\right)$ 在有理数域上是不可约的.
 
 ## 7.6-1
 
@@ -136,13 +136,13 @@ $$
 $\left(2\right)-\left(1\right)$ 得:
 
 $$
-3a=12\Rightarrow{a}=4.
+3a=12\Rightarrow{}a=4.
 $$
 
 代入 $\left(1\right)$:
 
 $$
-3\cdot4+b=15\Rightarrow{b}=3.
+3\cdot4+b=15\Rightarrow{}b=3.
 $$
 
 因此 $a=4$, $b=3$.
@@ -160,13 +160,13 @@ $x^{n}-1=0$ 的根是 $x^{n}=1$.
 $1$ 的 $n$ 次方根为:
 
 $$
-x_{k}=e^{2\pi{i}k/n}=\cos\frac{2\pi{k}}{n}+i\sin\frac{2\pi{k}}{n},k=0,1,\ldots,n-1.
+x_{k}=e^{2\pi{}ik/n}=\cos\frac{2\pi{}k}{n}+i\sin\frac{2\pi{}k}{n},k=0,1,\ldots,n-1.
 $$
 
 因此标准分解式为:
 
 $$
-x^{n}-1=\prod_{k=0}^{n-1}\left(x-e^{2\pi{i}k/n}\right).
+x^{n}-1=\prod_{k=0}^{n-1}\left(x-e^{2\pi{}ik/n}\right).
 $$
 
 $\blacksquare$
@@ -316,28 +316,28 @@ $$
 - $b=1,d=-3$: 由 $\left(1\right)$, $c=-2-a$. 代入 $\left(2\right)$:
 
   $$
--2a-a^{2}+1-3=0\Rightarrow{a}^{2}+2a+2=0,
+-2a-a^{2}+1-3=0\Rightarrow{}a^{2}+2a+2=0,
 $$
 
   无实根.
 - $b=-1,d=3$: 代入 $\left(2\right)$:
 
   $$
--2a-a^{2}-1+3=0\Rightarrow{a}^{2}+2a-2=0,
+-2a-a^{2}-1+3=0\Rightarrow{}a^{2}+2a-2=0,
 $$
 
   无整数根.
 - $b=3,d=-1$: 代入 $\left(2\right)$:
 
   $$
--2a-a^{2}+3-1=0\Rightarrow{a}^{2}+2a-2=0,
+-2a-a^{2}+3-1=0\Rightarrow{}a^{2}+2a-2=0,
 $$
 
   无整数根.
 - $b=-3,d=1$: 代入 $\left(2\right)$:
 
   $$
--2a-a^{2}-3+1=0\Rightarrow{a}^{2}+2a+2=0,
+-2a-a^{2}-3+1=0\Rightarrow{}a^{2}+2a+2=0,
 $$
 
   无实根.
@@ -425,7 +425,7 @@ $$
 由 $\left(2\right)$:
 
 $$
--a^{2}+2=p\Rightarrow{a}^{2}=2-p.
+-a^{2}+2=p\Rightarrow{}a^{2}=2-p.
 $$
 
 因为 $p$ 是奇素数, $p\ge3$, 所以 $2-p\le-1<0$, 无实根.
@@ -435,7 +435,7 @@ $$
 由 $\left(2\right)$:
 
 $$
--a^{2}-2=p\Rightarrow{a}^{2}=-p-2<0,
+-a^{2}-2=p\Rightarrow{}a^{2}=-p-2<0,
 $$
 
 无实根.

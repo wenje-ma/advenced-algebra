@@ -2,11 +2,11 @@
 
 > **定义 5.1.1 (二元关系)**
 > 
-> 设 $S$ 是一个非空集合, 我们把 $S\times{S}$ 的一个子集 $W$ 叫做 $S$ 上的一个二元关系. 如果 $\left(a,b\right)\in{W}$, 则称 $a$ 与 $b$ 有 $W$ 关系.
+> 设 $S$ 是一个非空集合, 我们把 $S\times{}S$ 的一个子集 $W$ 叫做 $S$ 上的一个二元关系. 如果 $\left(a,b\right)\in{}W$, 则称 $a$ 与 $b$ 有 $W$ 关系.
 
 > **定义 5.1.2 (等价关系)**
 > 
-> 集合 $S$ 上的一个二元关系 $\sim$ 如果具有下述性质: $\forall{a},b,c\in{S}$, 有 $1^{\circ}a\sim{a}$ (反身性); $2^{\circ}a\sim{b}\Rightarrow{b}\sim{a}$ (对称性); $3^{\circ}a\sim{b}$ 且 $b\sim{c}\Rightarrow{a}\sim{c}$ (传递性), 则称 $\sim$ 是 $S$ 上的一个等价关系.
+> 集合 $S$ 上的一个二元关系 $\sim$ 如果具有下述性质: $\forall{}a,b,c\in{}S$, 有 $1^{\circ}a\sim{}a$ (反身性); $2^{\circ}a\sim{}b\Rightarrow{}b\sim{}a$ (对称性); $3^{\circ}a\sim{}b$ 且 $b\sim{}c\Rightarrow{}a\sim{}c$ (传递性), 则称 $\sim$ 是 $S$ 上的一个等价关系.
 
 > **定义 5.1.4 (商集)**
 > 
@@ -18,11 +18,11 @@
 
 > **定理 5.2.1 (相抵标准形)**
 > 
-> 设数域 $K$ 上 $s\times{n}$ 矩阵 $A$ 的秩为 $r$. 如果 $r>0$, 则 $A$ 相抵于下述形式的矩阵: $\left[\begin{array}{cc}I_{r}&0\\0&0\end{array}\right]$.
+> 设数域 $K$ 上 $s\times{}n$ 矩阵 $A$ 的秩为 $r$. 如果 $r>0$, 则 $A$ 相抵于下述形式的矩阵: $\left[\begin{array}{cc}I_{r}&0\\0&0\end{array}\right]$.
 
 > **定义 5.3.1 (广义逆)**
 > 
-> 设 $A$ 是数域 $K$ 上 $s\times{n}$ 矩阵. 如果矩阵 $G$ 满足 $AGA=A$, 则称 $G$ 是 $A$ 的一个广义逆, 记作 $A^{-}$. ## 5.1-1 在平面 $S$ (点集) 上定义一个二元关系: $$P\left(x_{1},y_{1}\right)\sim{P}\left(x_{2},y_{2}\right)\overset{def}{\Leftrightarrow}x_{1}=x_{2}.$$ 证明: $\sim$ 是 $S$ 上的一个等价关系. 按**定义 5.1.1 (二元关系)**, **定义 5.1.2 (等价关系)**, 需验证反身性, 对称性和传递性. 反身性: 对任意 $P\left(x,y\right)\in{S}$, 显然 $x=x$, 故 $P\sim{P}$. 对称性: 若 $P\left(x_{1},y_{1}\right)\sim{P}\left(x_{2},y_{2}\right)$, 则 $x_{1}=x_{2}$, 从而 $x_{2}=x_{1}$, 故 $P\left(x_{2},y_{2}\right)\sim{P}\left(x_{1},y_{1}\right)$. 传递性: 若 $P\left(x_{1},y_{1}\right)\sim{P}\left(x_{2},y_{2}\right)$ 且 $P\left(x_{2},y_{2}\right)\sim{P}\left(x_{3},y_{3}\right)$, 则 $x_{1}=x_{2}$ 且 $x_{2}=x_{3}$, 从而 $x_{1}=x_{3}$, 故 $P\left(x_{1},y_{1}\right)\sim{P}\left(x_{3},y_{3}\right)$. 因此 $\sim$ 满足**定义 5.1.2 (等价关系)**的全部条件, 故 $\sim$ 是 $S$ 上的等价关系. $\blacksquare$
+> 设 $A$ 是数域 $K$ 上 $s\times{}n$ 矩阵. 如果矩阵 $G$ 满足 $AGA=A$, 则称 $G$ 是 $A$ 的一个广义逆, 记作 $A^{-}$. ## 5.1-1 在平面 $S$ (点集) 上定义一个二元关系: $$P\left(x_{1},y_{1}\right)\sim{}P\left(x_{2},y_{2}\right)\overset{def}{\Leftrightarrow}x_{1}=x_{2}.$$ 证明: $\sim$ 是 $S$ 上的一个等价关系. 按**定义 5.1.1 (二元关系)**, **定义 5.1.2 (等价关系)**, 需验证反身性, 对称性和传递性. 反身性: 对任意 $P\left(x,y\right)\in{}S$, 显然 $x=x$, 故 $P\sim{}P$. 对称性: 若 $P\left(x_{1},y_{1}\right)\sim{}P\left(x_{2},y_{2}\right)$, 则 $x_{1}=x_{2}$, 从而 $x_{2}=x_{1}$, 故 $P\left(x_{2},y_{2}\right)\sim{}P\left(x_{1},y_{1}\right)$. 传递性: 若 $P\left(x_{1},y_{1}\right)\sim{}P\left(x_{2},y_{2}\right)$ 且 $P\left(x_{2},y_{2}\right)\sim{}P\left(x_{3},y_{3}\right)$, 则 $x_{1}=x_{2}$ 且 $x_{2}=x_{3}$, 从而 $x_{1}=x_{3}$, 故 $P\left(x_{1},y_{1}\right)\sim{}P\left(x_{3},y_{3}\right)$. 因此 $\sim$ 满足**定义 5.1.2 (等价关系)**的全部条件, 故 $\sim$ 是 $S$ 上的等价关系. $\blacksquare$
 
 ## 5.2-1(3)
 
@@ -80,7 +80,7 @@ $\blacksquare$
 
 ### 解答 5.2-4
 
-由**定理 5.2.1 (相抵标准形)**, 设 $A$ 是 $s\times{n}$ 矩阵, $\operatorname{rank}\left(A\right)=r>0$. 由**定义 5.2.1 (相抵)**标准形定理, 存在 $s$ 级可逆矩阵 $P$ 和 $n$ 级可逆矩阵 $Q$, 使得
+由**定理 5.2.1 (相抵标准形)**, 设 $A$ 是 $s\times{}n$ 矩阵, $\operatorname{rank}\left(A\right)=r>0$. 由**定义 5.2.1 (相抵)**标准形定理, 存在 $s$ 级可逆矩阵 $P$ 和 $n$ 级可逆矩阵 $Q$, 使得
 
 $$
 A=P\left[\begin{array}{cc}I_{r}&0\\0&0\end{array}\right]Q.
@@ -116,7 +116,7 @@ $\blacksquare$
 
 ## 5.2-5
 
-设 $A,B$ 分别是 $s\times{n}$, $n\times{m}$ 矩阵, 证明西尔维斯特秩不等式:
+设 $A,B$ 分别是 $s\times{}n$, $n\times{}m$ 矩阵, 证明西尔维斯特秩不等式:
 
 $$
 \operatorname{rank}\left(AB\right)\ge\operatorname{rank}\left(A\right)+\operatorname{rank}\left(B\right)-n.
@@ -209,13 +209,13 @@ $\blacksquare$
 
 ## 5.3-1
 
-设 $A$ 是数域 $K$ 上 $s\times{n}$ 矩阵. 证明: 如果 $A$ 行满秩, 则对于 $A$ 的任意一个广义逆 $A^{-}$, 都有 $AA^{-}=I_{s}$.
+设 $A$ 是数域 $K$ 上 $s\times{}n$ 矩阵. 证明: 如果 $A$ 行满秩, 则对于 $A$ 的任意一个广义逆 $A^{-}$, 都有 $AA^{-}=I_{s}$.
 
 ### 解答 5.3-1
 
 由**定义 5.3.1 (广义逆)**, $A^{-}$ 是 $A$ 的广义逆, 即 $AA^{-}A=A$. 设 $A$ 行满秩, 即 $\operatorname{rank}\left(A\right)=s$.
 
-令 $B=AA^{-}$. 则 $B$ 是 $s\times{s}$ 矩阵.
+令 $B=AA^{-}$. 则 $B$ 是 $s\times{}s$ 矩阵.
 
 由 $AA^{-}A=A$, 两边右乘 $A^{-}$:
 
@@ -253,7 +253,7 @@ $$
 \operatorname{rank}\left(B\right)=\operatorname{rank}\left(AA^{-}\right)=\operatorname{rank}\left(A\right)=s.
 $$
 
-所以 $B$ 是 $s\times{s}$ 矩阵, 且 $\operatorname{rank}\left(B\right)=s$, 即 $B$ 可逆.
+所以 $B$ 是 $s\times{}s$ 矩阵, 且 $\operatorname{rank}\left(B\right)=s$, 即 $B$ 可逆.
 
 由 $BB=B$, 两边左乘 $B^{-1}$:
 
@@ -271,7 +271,7 @@ $\blacksquare$
 
 ## 5.4-3
 
-证明: 如果 $A_{1}\sim{B}_{1}$, $A_{2}\sim{B}_{2}$, 则
+证明: 如果 $A_{1}\sim{}B_{1}$, $A_{2}\sim{}B_{2}$, 则
 
 $$
 \left[\begin{array}{cc}A_{1}&0\\0&A_{2}\end{array}\right]\sim\left[\begin{array}{cc}B_{1}&0\\0&B_{2}\end{array}\right].
@@ -279,7 +279,7 @@ $$
 
 ### 解答 5.4-3
 
-由**定义 5.4.1 (相似)**, 因为 $A_{1}\sim{B}_{1}$, 故存在可逆矩阵 $P_{1}$, 使得 $P_{1}^{-1}A_{1}P_{1}=B_{1}$.
+由**定义 5.4.1 (相似)**, 因为 $A_{1}\sim{}B_{1}$, 故存在可逆矩阵 $P_{1}$, 使得 $P_{1}^{-1}A_{1}P_{1}=B_{1}$.
 
 同理, 存在可逆矩阵 $P_{2}$, 使得 $P_{2}^{-1}A_{2}P_{2}=B_{2}$.
 
@@ -312,7 +312,7 @@ $\blacksquare$
 
 ## 5.4-8
 
-证明: 如果 $A$ 可对角化, 则 $A\sim{A}^{\top}$.
+证明: 如果 $A$ 可对角化, 则 $A\sim{}A^{\top}$.
 
 ### 解答 5.4-8
 
@@ -351,7 +351,7 @@ $$
 A^{\top}\sim{D}.
 
 $$
-又因为$A\sim{D}$,故由相似关系的对称性和传递性,
+又因为$A\sim{}D$,故由相似关系的对称性和传递性,
 $$
 
 A\sim{A}^{\top}.

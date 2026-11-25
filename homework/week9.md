@@ -10,7 +10,7 @@
 
 > **定理 3.7.1 (解空间的维数)**
 > 
-> 数域 $K$ 上 $n$ 元齐次线性方程组的解空间 $W$ 的维数为: $\dim{W}=n-\text{rank}\left(A\right)$ 其中 $A$ 是系数矩阵.
+> 数域 $K$ 上 $n$ 元齐次线性方程组的解空间 $W$ 的维数为: $\dim{}W=n-\text{rank}\left(A\right)$ 其中 $A$ 是系数矩阵.
 
 > **定理 3.8.1 (非齐次方程组的解集结构)**
 > 
@@ -18,7 +18,7 @@
 
 ## 3.5-8
 
-证明: 如果 $m\times{n}$ 矩阵 $A$ 的秩为 $r$, 则它的任何 $s$ 行组成的子矩阵 $A_{1}$ 的秩不小于 $r+s-m$.
+证明: 如果 $m\times{}n$ 矩阵 $A$ 的秩为 $r$, 则它的任何 $s$ 行组成的子矩阵 $A_{1}$ 的秩不小于 $r+s-m$.
 
 ### 解答 3.5-8
 
@@ -28,7 +28,7 @@
 
 把 $A$ 看作行向量组, $A$ 的行向量组的秩为 $r$.
 
-$A$ 的行向量组 $=A_{1}$ 的行向量组 $\cup{A}_{2}$ 的行向量组.
+$A$ 的行向量组 $=A_{1}$ 的行向量组 $\cup{}A_{2}$ 的行向量组.
 
 由向量组之并的秩的上界,
 
@@ -36,7 +36,7 @@ $$
 \text{rank}\left(A\right)\le\text{rank}\left(A_{1}\right)+\text{rank}\left(A_{2}\right).
 $$
 
-又 $A_{2}$ 只有 $m-s$ 行, 故 $\text{rank}\left(A_{2}\right)\le{m}-s$.
+又 $A_{2}$ 只有 $m-s$ 行, 故 $\text{rank}\left(A_{2}\right)\le{}m-s$.
 
 因此
 
@@ -47,14 +47,14 @@ $$
 移项得
 
 $$
-\text{rank}\left(A_{1}\right)\ge{r}-\left(m-s\right)=r+s-m.
+\text{rank}\left(A_{1}\right)\ge{}r-\left(m-s\right)=r+s-m.
 $$
 
 $\blacksquare$
 
 ## 3.5-13
 
-设 $A$ 是 $s\times{n}$ 矩阵, $B$ 是 $l\times{m}$ 矩阵, $C$ 是 $s\times{m}$ 矩阵, 证明:
+设 $A$ 是 $s\times{}n$ 矩阵, $B$ 是 $l\times{}m$ 矩阵, $C$ 是 $s\times{}m$ 矩阵, 证明:
 
 $$
 \text{rank}\left(\begin{array}{cc}A&C\\0&B\end{array}\right)\ge\text{rank}\left(A\right)+\text{rank}\left(B\right).
@@ -101,7 +101,7 @@ $$
 因此
 
 $$
-\text{rank}\left(M\right)\ge{r}_{1}+r_{2}=\text{rank}\left(A\right)+\text{rank}\left(B\right).
+\text{rank}\left(M\right)\ge{}r_{1}+r_{2}=\text{rank}\left(A\right)+\text{rank}\left(B\right).
 $$
 
 $\blacksquare$
@@ -125,7 +125,7 @@ $$
 
 由**定理 3.6.1 (线性方程组有解判别定理)**和**定理 3.6.2 (解的个数判别)**, 需比较系数矩阵与增广矩阵的秩.
 
-系数矩阵 $A$ 是 $s\times{n}$ 矩阵. 取 $A$ 的前 $s$ 列组成的 $s$ 阶子式:
+系数矩阵 $A$ 是 $s\times{}n$ 矩阵. 取 $A$ 的前 $s$ 列组成的 $s$ 阶子式:
 
 $$
 D=\left|\begin{array}{cccc}
@@ -139,20 +139,20 @@ $$
 由**范德蒙行列式**的计算公式, 这是范德蒙行列式,
 
 $$
-D=\prod_{1\le{i}<{}j\le{s}}\left(a^{j}-a^{i}\right).
+D=\prod_{1\le{}i<{}j\le{}s}\left(a^{j}-a^{i}\right).
 $$
 
 因为 $a\ne0$ 且当 $0<{}r<{}s$ 时 $a^{r}\ne1$, 所以 $a,a^{2},\cdots,a^{s}$ 两两不同, 故 $D\ne0$.
 
-因此 $\text{rank}\left(A\right)\ge{s}$.
+因此 $\text{rank}\left(A\right)\ge{}s$.
 
-又 $A$ 只有 $s$ 行, 故 $\text{rank}\left(A\right)\le{s}$.
+又 $A$ 只有 $s$ 行, 故 $\text{rank}\left(A\right)\le{}s$.
 
 所以 $\text{rank}\left(A\right)=s$.
 
 增广矩阵 $\overline{A}$ 是 $A$ 加了一列, 故 $\text{rank}\left(\overline{A}\right)\ge\text{rank}\left(A\right)=s$.
 
-又 $\overline{A}$ 只有 $s$ 行, 故 $\text{rank}\left(\overline{A}\right)\le{s}$.
+又 $\overline{A}$ 只有 $s$ 行, 故 $\text{rank}\left(\overline{A}\right)\le{}s$.
 
 所以 $\text{rank}\left(\overline{A}\right)=s=\text{rank}\left(A\right)$.
 
@@ -268,7 +268,7 @@ $$
 解集:
 
 $$
-W=\left\{k_{1}\eta_{1}+k_{2}\eta_{2}\mid{k}_{1},k_{2}\in{K}\right\}.
+W=\left\{k_{1}\eta_{1}+k_{2}\eta_{2}\mid{}k_{1},k_{2}\in{}K\right\}.
 $$
 
 $\blacksquare$
@@ -330,7 +330,7 @@ $$
 解集:
 
 $$
-W=\left\{k\eta_{1}\mid{k}\in{K}\right\}.
+W=\left\{k\eta_{1}\mid{}k\in{}K\right\}.
 $$
 
 $\blacksquare$
@@ -340,7 +340,7 @@ $\blacksquare$
 证明: 设 $n$ 元齐次线性方程组的系数矩阵的秩为 $r$ $\left(r<{}n\right)$, 设 $\delta_{1},\delta_{2},\cdots,\delta_{m}$ 是方程组的解向量, 则
 
 $$
-\text{rank}\left\{\delta_{1},\delta_{2},\cdots,\delta_{m}\right\}\le{n}-r.
+\text{rank}\left\{\delta_{1},\delta_{2},\cdots,\delta_{m}\right\}\le{}n-r.
 $$
 
 ### 解答 3.7-4
@@ -348,17 +348,17 @@ $$
 由**定理 3.7.1 (解空间的维数)**, 齐次线性方程组的解空间 $W$ 的维数为
 
 $$
-\dim{W}=n-\text{rank}\left(A\right)=n-r.
+\dim{}W=n-\text{rank}\left(A\right)=n-r.
 $$
 
-$\delta_{1},\delta_{2},\cdots,\delta_{m}$ 都是 $W$ 中的向量, 故 $\left\langle\delta_{1},\delta_{2},\cdots,\delta_{m}\right\rangle\subseteq{W}$.
+$\delta_{1},\delta_{2},\cdots,\delta_{m}$ 都是 $W$ 中的向量, 故 $\left\langle\delta_{1},\delta_{2},\cdots,\delta_{m}\right\rangle\subseteq{}W$.
 
 因此
 
 $$
 \text{rank}\left\{\delta_{1},\delta_{2},\cdots,\delta_{m}\right\}
 =\dim\left\langle\delta_{1},\delta_{2},\cdots,\delta_{m}\right\rangle
-\le\dim{W}=n-r.
+\le\dim{}W=n-r.
 $$
 
 $\blacksquare$

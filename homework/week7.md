@@ -156,11 +156,11 @@ $\blacksquare$
 
 ## 3.2-9
 
-证明: 由非零向量组成的向量组 $\alpha_{1},\alpha_{2},\cdots,\alpha_{s}$ $\left(s\ge2\right)$ 线性无关的充分必要条件是: 每一个 $\alpha_{i}$ $\left(1<{}i\le{s}\right)$ 都不能用它前面的向量线性表出.
+证明: 由非零向量组成的向量组 $\alpha_{1},\alpha_{2},\cdots,\alpha_{s}$ $\left(s\ge2\right)$ 线性无关的充分必要条件是: 每一个 $\alpha_{i}$ $\left(1<{}i\le{}s\right)$ 都不能用它前面的向量线性表出.
 
 ### 解答 3.2-9
 
-由**定义 3.2.2 (线性无关)**和**定义 3.2.1 (线性相关)**, 证明由非零向量组成的向量组 $\alpha_{1},\alpha_{2},\cdots,\alpha_{s}$ $\left(s\ge2\right)$ 线性无关的充分必要条件是: 每一个 $\alpha_{i}$ $\left(1<{}i\le{s}\right)$ 都不能用它前面的向量线性表出.
+由**定义 3.2.2 (线性无关)**和**定义 3.2.1 (线性相关)**, 证明由非零向量组成的向量组 $\alpha_{1},\alpha_{2},\cdots,\alpha_{s}$ $\left(s\ge2\right)$ 线性无关的充分必要条件是: 每一个 $\alpha_{i}$ $\left(1<{}i\le{}s\right)$ 都不能用它前面的向量线性表出.
 
 必要性. 设 $\alpha_{1},\cdots,\alpha_{s}$ 线性无关. 反证: 假设某个 $\alpha_{i}$ $\left(i>1\right)$ 可以用前面的向量线性表出, 即
 
@@ -202,7 +202,7 @@ $\blacksquare$
 
 ## 3.2-11
 
-设 $a_{1},a_{2},\cdots,a_{r}$ 是两两不同的数, $r\le{n}$. 令
+设 $a_{1},a_{2},\cdots,a_{r}$ 是两两不同的数, $r\le{}n$. 令
 
 $$
 \alpha_{1}=\begin{bmatrix}1\\a_{1}\\a_{1}^{2}\\\vdots\\a_{1}^{n-1}\end{bmatrix},
@@ -247,7 +247,7 @@ $$
 a_{1}&a_{2}&\cdots&a_{r}\\
 \vdots&\vdots&&\vdots\\
 a_{1}^{r-1}&a_{2}^{r-1}&\cdots&a_{r}^{r-1}
-\end{array}\right|=\prod_{1\le{i}<{}j\le{r}}\left(a_{j}-a_{i}\right).
+\end{array}\right|=\prod_{1\le{}i<{}j\le{}r}\left(a_{j}-a_{i}\right).
 $$
 
 因为 $a_{1},a_{2},\cdots,a_{r}$ 两两不同, 所以行列式不等于 $0$.
@@ -326,11 +326,11 @@ $$
 x_{1}\alpha_{1}+x_{2}\alpha_{2}+\cdots+x_{n}\alpha_{n}=\beta
 $$
 
-对任何 $\beta\in{K}^{n}$ 都有解的充分必要条件是它的系数行列式 $\left|A\right|\ne0$.
+对任何 $\beta\in{}K^{n}$ 都有解的充分必要条件是它的系数行列式 $\left|A\right|\ne0$.
 
 ### 解答 3.3-8
 
-必要性. 设对任何 $\beta\in{K}^{n}$ 都有解.
+必要性. 设对任何 $\beta\in{}K^{n}$ 都有解.
 
 取 $\beta=\varepsilon_{1},\varepsilon_{2},\cdots,\varepsilon_{n}$ (标准基), 则它们都可以由 $\alpha_{1},\cdots,\alpha_{n}$ 线性表出.
 
@@ -348,6 +348,6 @@ $$
 
 在 $K^{n}$ 中, $n$ 个线性无关的向量构成 $K^{n}$ 的一个基.
 
-因此任何 $\beta\in{K}^{n}$ 都可以由 $\alpha_{1},\cdots,\alpha_{n}$ 线性表出, 即方程组有解.
+因此任何 $\beta\in{}K^{n}$ 都可以由 $\alpha_{1},\cdots,\alpha_{n}$ 线性表出, 即方程组有解.
 
 $\blacksquare$

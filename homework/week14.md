@@ -2,19 +2,19 @@
 
 > **定理 3.7.1 (齐次线性方程组解空间的维数)**
 > 
-> 数域 $K$ 上 $n$ 元齐次线性方程组 $Ax=0$ 的解空间 $W$ 的维数为 $\dim{W}=n-\text{rank}\left(A\right)$.
+> 数域 $K$ 上 $n$ 元齐次线性方程组 $Ax=0$ 的解空间 $W$ 的维数为 $\dim{}W=n-\text{rank}\left(A\right)$.
 
 > **定理 4.3.1 (矩阵乘积的秩)**
 > 
-> 设 $A=\left(a_{ij}\right)_{s\times{n}}$, $B=\left(b_{ij}\right)_{n\times{m}}$, 则 $\text{rank}\left(AB\right)\le\min\left\{\text{rank}\left(A\right),\text{rank}\left(B\right)\right\}$.
+> 设 $A=\left(a_{ij}\right)_{s\times{}n}$, $B=\left(b_{ij}\right)_{n\times{}m}$, 则 $\text{rank}\left(AB\right)\le\min\left\{\text{rank}\left(A\right),\text{rank}\left(B\right)\right\}$.
 
 > **命题 4.5.2 (实数域上秩的等式)**
 > 
-> 设 $A$ 是实数域上 $s\times{n}$ 矩阵, 则 $\text{rank}\left(A^{\top}A\right)=\text{rank}\left(AA^{\top}\right)=\text{rank}\left(A\right)$. $\beta_{i}=\alpha_{i}-\sum_{k=1}^{i-1}\frac{\left(\alpha_{i},\beta_{k}\right)}{\left(\beta_{k},\beta_{k}\right)}\beta_{k}$, 则 $\beta_{1},\beta_{2},\cdots,\beta_{m}$ 是正交向量组, 且与原向量组等价.
+> 设 $A$ 是实数域上 $s\times{}n$ 矩阵, 则 $\text{rank}\left(A^{\top}A\right)=\text{rank}\left(AA^{\top}\right)=\text{rank}\left(A\right)$. $\beta_{i}=\alpha_{i}-\sum_{k=1}^{i-1}\frac{\left(\alpha_{i},\beta_{k}\right)}{\left(\beta_{k},\beta_{k}\right)}\beta_{k}$, 则 $\beta_{1},\beta_{2},\cdots,\beta_{m}$ 是正交向量组, 且与原向量组等价.
 
 > **定义 4.6.1 (正交矩阵)**
 > 
-> 实数域上的方阵 $A$ 如果满足 $A^{\top}A=I$, 则称 $A$ 是正交矩阵. ## 4.5-1 证明: 设 $A,B$ 分别是 $s\times{n}$, $n\times{m}$ 矩阵. 如果 $AB=0$, 则 $\text{rank}\left(A\right)+\text{rank}\left(B\right)\le{n}$. 设 $B$ 的列向量组为 $\beta_{1},\beta_{2},\cdots,\beta_{m}$. $AB=0$ 意味着 $A\beta_{j}=0$ ( $j=1,2,\cdots,m$ ). 所以每个 $\beta_{j}$ 都是齐次线性方程组 $Ax=0$ 的解. 因此 $B$ 的列空间 $\subseteq{A}x=0$ 的解空间 $W$. 由**定理 3.7.1 (齐次线性方程组解空间的维数)**, $$\text{rank}\left(B\right)=\dim\left\langle\beta_{1},\cdots,\beta_{m}\right\rangle\le\dim{W}=n-\text{rank}\left(A\right).$$ 因此 $$\text{rank}\left(A\right)+\text{rank}\left(B\right)\le{n}.$$ $\blacksquare$
+> 实数域上的方阵 $A$ 如果满足 $A^{\top}A=I$, 则称 $A$ 是正交矩阵. ## 4.5-1 证明: 设 $A,B$ 分别是 $s\times{}n$, $n\times{}m$ 矩阵. 如果 $AB=0$, 则 $\text{rank}\left(A\right)+\text{rank}\left(B\right)\le{}n$. 设 $B$ 的列向量组为 $\beta_{1},\beta_{2},\cdots,\beta_{m}$. $AB=0$ 意味着 $A\beta_{j}=0$ ( $j=1,2,\cdots,m$ ). 所以每个 $\beta_{j}$ 都是齐次线性方程组 $Ax=0$ 的解. 因此 $B$ 的列空间 $\subseteq{}Ax=0$ 的解空间 $W$. 由**定理 3.7.1 (齐次线性方程组解空间的维数)**, $$\text{rank}\left(B\right)=\dim\left\langle\beta_{1},\cdots,\beta_{m}\right\rangle\le\dim{}W=n-\text{rank}\left(A\right).$$ 因此 $$\text{rank}\left(A\right)+\text{rank}\left(B\right)\le{}n.$$ $\blacksquare$
 
 ## 4.4-10(1)
 
@@ -183,7 +183,7 @@ $$
 由4.5-1的结论,
 
 $$
-\text{rank}\left(I+A\right)+\text{rank}\left(I-A\right)\le{n}.
+\text{rank}\left(I+A\right)+\text{rank}\left(I-A\right)\le{}n.
 $$
 
 另一方面,
@@ -231,7 +231,7 @@ $$
 由4.5-1的结论,
 
 $$
-\text{rank}\left(A\right)+\text{rank}\left(I-A\right)\le{n}.
+\text{rank}\left(A\right)+\text{rank}\left(I-A\right)\le{}n.
 $$
 
 另一方面,
@@ -262,7 +262,7 @@ $\blacksquare$
 
 ## 4.5-6
 
-设 $A$ 是实数域上的 $s\times{n}$ 矩阵, $\beta$ 是 $\mathbb{R}^{s}$ 的任意一个列向量. 证明: $n$ 元线性方程组 $A^{\top}AX=A^{\top}\beta$ 一定有解.
+设 $A$ 是实数域上的 $s\times{}n$ 矩阵, $\beta$ 是 $\mathbb{R}^{s}$ 的任意一个列向量. 证明: $n$ 元线性方程组 $A^{\top}AX=A^{\top}\beta$ 一定有解.
 
 ### 解答 4.5-6
 
@@ -335,9 +335,9 @@ $$
 
 故 $AA^{*}=\left|A\right|I=0$.
 
-由4.5-1, $\text{rank}\left(A\right)+\text{rank}\left(A^{*}\right)\le{n}$.
+由4.5-1, $\text{rank}\left(A\right)+\text{rank}\left(A^{*}\right)\le{}n$.
 
-即 $\left(n-1\right)+\text{rank}\left(A^{*}\right)\le{n}$, 故 $\text{rank}\left(A^{*}\right)\le1$.
+即 $\left(n-1\right)+\text{rank}\left(A^{*}\right)\le{}n$, 故 $\text{rank}\left(A^{*}\right)\le1$.
 
 又因为 $\text{rank}\left(A\right)=n-1$, 所以 $A$ 有一个 $n-1$ 阶子式非零. 这个 $n-1$ 阶子式就是某个代数余子式, 故 $A^{*}\ne0$, 从而 $\text{rank}\left(A^{*}\right)\ge1$.
 

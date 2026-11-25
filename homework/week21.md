@@ -2,15 +2,15 @@
 
 > **定义 7.2.1 (整除)**
 > 
-> 设 $f\left(x\right),g\left(x\right)\in{K}\left[x\right]$, 如果存在 $h\left(x\right)\in{K}\left[x\right]$, 使得 $f\left(x\right)=h\left(x\right)g\left(x\right)$, 则称 $g\left(x\right)$ 整除 $f\left(x\right)$, 记作 $g\left(x\right)\mid{f}\left(x\right)$.
+> 设 $f\left(x\right),g\left(x\right)\in{}K\left[x\right]$, 如果存在 $h\left(x\right)\in{}K\left[x\right]$, 使得 $f\left(x\right)=h\left(x\right)g\left(x\right)$, 则称 $g\left(x\right)$ 整除 $f\left(x\right)$, 记作 $g\left(x\right)\mid{}f\left(x\right)$.
 
 > **定义 7.3.1 (最大公因式)**
 > 
-> 设 $f\left(x\right),g\left(x\right)\in{K}\left[x\right]$, $d\left(x\right)$ 是 $f\left(x\right)$ 与 $g\left(x\right)$ 的一个公因式. 如果 $f\left(x\right)$ 与 $g\left(x\right)$ 的任一公因式都能整除 $d\left(x\right)$, 则称 $d\left(x\right)$ 是 $f\left(x\right)$ 与 $g\left(x\right)$ 的一个最大公因式.
+> 设 $f\left(x\right),g\left(x\right)\in{}K\left[x\right]$, $d\left(x\right)$ 是 $f\left(x\right)$ 与 $g\left(x\right)$ 的一个公因式. 如果 $f\left(x\right)$ 与 $g\left(x\right)$ 的任一公因式都能整除 $d\left(x\right)$, 则称 $d\left(x\right)$ 是 $f\left(x\right)$ 与 $g\left(x\right)$ 的一个最大公因式.
 
 > **定理 7.3.1 (最大公因式的存在性与倍式和)**
 > 
-> 对于 $K\left[x\right]$ 中任意两个多项式 $f\left(x\right)$ 与 $g\left(x\right)$, 存在它们的一个最大公因式 $d\left(x\right)$, 并且 $d\left(x\right)$ 可以表示成 $f\left(x\right)$ 与 $g\left(x\right)$ 的倍式和, 即有 $u\left(x\right),v\left(x\right)\in{K}\left[x\right]$, 使得 $d\left(x\right)=u\left(x\right)f\left(x\right)+v\left(x\right)g\left(x\right)$.
+> 对于 $K\left[x\right]$ 中任意两个多项式 $f\left(x\right)$ 与 $g\left(x\right)$, 存在它们的一个最大公因式 $d\left(x\right)$, 并且 $d\left(x\right)$ 可以表示成 $f\left(x\right)$ 与 $g\left(x\right)$ 的倍式和, 即有 $u\left(x\right),v\left(x\right)\in{}K\left[x\right]$, 使得 $d\left(x\right)=u\left(x\right)f\left(x\right)+v\left(x\right)g\left(x\right)$.
 
 > **定义 7.3.2 (互素)**
 > 
@@ -21,7 +21,7 @@
 用 $g\left(x\right)$ 除 $f\left(x\right)$, 求商式与余式:
 
 $$
-f\left(x\right)=x^{4}+x^{3}-2x+3,\quad{g}\left(x\right)=3x^{2}-x+2.
+f\left(x\right)=x^{4}+x^{3}-2x+3,\quad{}g\left(x\right)=3x^{2}-x+2.
 $$
 
 ### 解答 7.2-3(2)
@@ -35,7 +35,7 @@ $$
 商式首项: $x^{4}/3x^{2}=\frac{1}{3}x^{2}$.
 
 $$
-\frac{1}{3}x^{2}\cdot{g}\left(x\right)=x^{4}-\frac{1}{3}x^{3}+\frac{2}{3}x^{2}.
+\frac{1}{3}x^{2}\cdot{}g\left(x\right)=x^{4}-\frac{1}{3}x^{3}+\frac{2}{3}x^{2}.
 $$
 
 余式:
@@ -47,7 +47,7 @@ $$
 商式第二项: $\frac{4}{3}x^{3}/3x^{2}=\frac{4}{9}x$.
 
 $$
-\frac{4}{9}x\cdot{g}=\frac{4}{3}x^{3}-\frac{4}{9}x^{2}+\frac{8}{9}x.
+\frac{4}{9}x\cdot{}g=\frac{4}{3}x^{3}-\frac{4}{9}x^{2}+\frac{8}{9}x.
 $$
 
 余式:
@@ -59,7 +59,7 @@ $$
 商式第三项: $-\frac{2}{9}x^{2}/3x^{2}=-\frac{2}{27}$.
 
 $$
--\frac{2}{27}\cdot{g}=-\frac{2}{9}x^{2}+\frac{2}{27}x-\frac{4}{27}.
+-\frac{2}{27}\cdot{}g=-\frac{2}{9}x^{2}+\frac{2}{27}x-\frac{4}{27}.
 $$
 
 余式:
@@ -97,18 +97,18 @@ $g\left(x\right)=x^{2}-3x+1$, 求 $g\left(x\right)$ 整除 $f\left(x\right)$ 的
 商式首项: $x^{3}/x^{2}=x$.
 
 $$
-x\cdot{g}\left(x\right)=x^{3}-3x^{2}+x.
+x\cdot{}g\left(x\right)=x^{3}-3x^{2}+x.
 $$
 
 余式:
 
 $$
-f-x\cdot{g}=\left(a-1\right)x+a_{0}.
+f-x\cdot{}g=\left(a-1\right)x+a_{0}.
 $$
 
 余式次数 $<2$, 停止.
 
-因此 $g\left(x\right)\mid{f}\left(x\right)$ 当且仅当余式为零, 即
+因此 $g\left(x\right)\mid{}f\left(x\right)$ 当且仅当余式为零, 即
 
 $$
 \left(a-1\right)x+a_{0}=0.
@@ -117,7 +117,7 @@ $$
 这对所有 $x$ 成立当且仅当
 
 $$
-a-1=0,\quad{a}_{0}=0.
+a-1=0,\quad{}a_{0}=0.
 $$
 
 所以充分必要条件是 $a=1$, $a_{0}=0$.
@@ -189,7 +189,7 @@ $\blacksquare$
 求 $f\left(x\right)$ 与 $g\left(x\right)$ 的最大公因式, 并且把 $\left(f\left(x\right),g\left(x\right)\right)$ 表示成 $f\left(x\right)$ 与 $g\left(x\right)$ 的倍式和:
 
 $$
-f\left(x\right)=x^{4}+3x^{3}-x^{2}-4x-3,\quad{g}\left(x\right)=3x^{3}+10x^{2}+2x-3.
+f\left(x\right)=x^{4}+3x^{3}-x^{2}-4x-3,\quad{}g\left(x\right)=3x^{3}+10x^{2}+2x-3.
 $$
 
 ### 解答 7.3-1(1)
@@ -264,7 +264,7 @@ $$
 因此, 由**定理 7.3.1 (最大公因式的存在性与倍式和)**,
 
 $$
-\left(f,g\right)=\frac{9x-15}{5}\cdot{f}\left(x\right)+\frac{-3x^{2}+6x}{5}\cdot{g}\left(x\right).
+\left(f,g\right)=\frac{9x-15}{5}\cdot{}f\left(x\right)+\frac{-3x^{2}+6x}{5}\cdot{}g\left(x\right).
 $$
 
 $\blacksquare$
@@ -305,7 +305,7 @@ $\blacksquare$
 
 ## 7.3-7
 
-设 $f\left(x\right),g\left(x\right)\in{K}\left[x\right]$, 并且 $a,b,c,d\in{K}$, 使得 $ad-bc\ne0$. 证明:
+设 $f\left(x\right),g\left(x\right)\in{}K\left[x\right]$, 并且 $a,b,c,d\in{}K$, 使得 $ad-bc\ne0$. 证明:
 
 $$
 \left(af+bg,cf+dg\right)=\left(f,g\right).
@@ -315,9 +315,9 @@ $$
 
 按**定义 7.3.2 (互素)**, 设 $d_{1}=\left(af+bg,cf+dg\right)$, $d_{2}=\left(f,g\right)$.
 
-因为 $d_{2}\mid{f}$ 且 $d_{2}\mid{g}$, 所以 $d_{2}\mid\left(af+bg\right)$ 且 $d_{2}\mid\left(cf+dg\right)$.
+因为 $d_{2}\mid{}f$ 且 $d_{2}\mid{}g$, 所以 $d_{2}\mid\left(af+bg\right)$ 且 $d_{2}\mid\left(cf+dg\right)$.
 
-因此 $d_{2}\mid{d}_{1}$.
+因此 $d_{2}\mid{}d_{1}$.
 
 反过来, 因为 $ad-bc\ne0$, 我们可以解出 $f,g$ 用 $af+bg,cf+dg$ 表示:
 
@@ -329,11 +329,11 @@ $$
 g=-\frac{c}{ad-bc}\left(af+bg\right)+\frac{a}{ad-bc}\left(cf+dg\right).
 $$
 
-因为 $d_{1}\mid\left(af+bg\right)$ 且 $d_{1}\mid\left(cf+dg\right)$, 所以 $d_{1}\mid{f}$ 且 $d_{1}\mid{g}$.
+因为 $d_{1}\mid\left(af+bg\right)$ 且 $d_{1}\mid\left(cf+dg\right)$, 所以 $d_{1}\mid{}f$ 且 $d_{1}\mid{}g$.
 
-因此 $d_{1}\mid{d}_{2}$.
+因此 $d_{1}\mid{}d_{2}$.
 
-所以 $d_{1}\sim{d}_{2}$.
+所以 $d_{1}\sim{}d_{2}$.
 
 首项系数都是 $1$, 故 $d_{1}=d_{2}$.
 
@@ -341,43 +341,43 @@ $\blacksquare$
 
 ## 7.3-9
 
-证明: $K\left[x\right]$ 中两个非零多项式 $f\left(x\right)$ 与 $g\left(x\right)$ 不互素的充分必要条件是, 存在两个非零多项式 $u\left(x\right),v\left(x\right)$, 使 $u\left(x\right)f\left(x\right)=v\left(x\right)g\left(x\right)$, $\deg{u}\left(x\right)<\deg{g}\left(x\right)$, $\deg{v}\left(x\right)<\deg{f}\left(x\right)$.
+证明: $K\left[x\right]$ 中两个非零多项式 $f\left(x\right)$ 与 $g\left(x\right)$ 不互素的充分必要条件是, 存在两个非零多项式 $u\left(x\right),v\left(x\right)$, 使 $u\left(x\right)f\left(x\right)=v\left(x\right)g\left(x\right)$, $\deg{}u\left(x\right)<\deg{}g\left(x\right)$, $\deg{}v\left(x\right)<\deg{}f\left(x\right)$.
 
 ### 解答 7.3-9
 
-必要性. 若 $f$ 与 $g$ 不互素, 设 $d\left(x\right)=\left(f,g\right)$, $\deg{d}>0$.
+必要性. 若 $f$ 与 $g$ 不互素, 设 $d\left(x\right)=\left(f,g\right)$, $\deg{}d>0$.
 
 令
 
 $$
-u\left(x\right)=\frac{g\left(x\right)}{d\left(x\right)},\quad{v}\left(x\right)=\frac{f\left(x\right)}{d\left(x\right)}.
+u\left(x\right)=\frac{g\left(x\right)}{d\left(x\right)},\quad{}v\left(x\right)=\frac{f\left(x\right)}{d\left(x\right)}.
 $$
 
 则
 
 $$
-u\left(x\right)f\left(x\right)=\frac{g\left(x\right)}{d\left(x\right)}\cdot{f}\left(x\right)=\frac{f\left(x\right)}{d\left(x\right)}\cdot{g}\left(x\right)=v\left(x\right)g\left(x\right).
+u\left(x\right)f\left(x\right)=\frac{g\left(x\right)}{d\left(x\right)}\cdot{}f\left(x\right)=\frac{f\left(x\right)}{d\left(x\right)}\cdot{}g\left(x\right)=v\left(x\right)g\left(x\right).
 $$
 
 且
 
 $$
-\deg{u}=\deg{g}-\deg{d}<\deg{g}.
+\deg{}u=\deg{}g-\deg{}d<\deg{}g.
 $$
 
 $$
-\deg{v}=\deg{f}-\deg{d}<\deg{f}.
+\deg{}v=\deg{}f-\deg{}d<\deg{}f.
 $$
 
-充分性. 若存在非零 $u,v$ 使得 $uf=vg$, 且 $\deg{u}<\deg{g}$, $\deg{v}<\deg{f}$.
+充分性. 若存在非零 $u,v$ 使得 $uf=vg$, 且 $\deg{}u<\deg{}g$, $\deg{}v<\deg{}f$.
 
 假设 $f$ 与 $g$ 互素, 即 $\left(f,g\right)=1$.
 
-由 $uf=vg$, 得 $g\mid{u}f$.
+由 $uf=vg$, 得 $g\mid{}uf$.
 
-因为 $\left(f,g\right)=1$, 所以 $g\mid{u}$.
+因为 $\left(f,g\right)=1$, 所以 $g\mid{}u$.
 
-但 $\deg{u}<\deg{g}$, 所以只能 $u=0$, 矛盾.
+但 $\deg{}u<\deg{}g$, 所以只能 $u=0$, 矛盾.
 
 因此 $f$ 与 $g$ 不互素.
 

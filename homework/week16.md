@@ -10,11 +10,11 @@
 
 > **定理 4.7.1 (核与象的维数公式)**
 > 
-> 设 $\mathcal{A}:K^{n}\to{K}^{s}$ 是线性映射, 则核 (即齐次线性方程组的解空间) 的维数与象的维数之和等于定义域的维数, 即 $\dim\left(\ker\mathcal{A}\right)+\dim\left(\operatorname{Im}\mathcal{A}\right)=\dim\left(K^{n}\right)=n$.
+> 设 $\mathcal{A}:K^{n}\to{}K^{s}$ 是线性映射, 则核 (即齐次线性方程组的解空间) 的维数与象的维数之和等于定义域的维数, 即 $\dim\left(\ker\mathcal{A}\right)+\dim\left(\operatorname{Im}\mathcal{A}\right)=\dim\left(K^{n}\right)=n$.
 
 > **定义 4.7.5 (线性映射)**
 > 
-> $K^{n}$ 到 $K^{s}$ 的一个映射 $\mathcal{A}$ 如果保持加法和数量乘法, 即 $\forall\alpha,\beta\in{K}^{n},k\in{K}$, 有 $\mathcal{A}\left(\alpha+\beta\right)=\mathcal{A}\left(\alpha\right)+\mathcal{A}\left(\beta\right)$, $\mathcal{A}\left(k\alpha\right)=k\mathcal{A}\left(\alpha\right)$, 则称 $\mathcal{A}$ 是 $K^{n}$ 到 $K^{s}$ 的一个线性映射.
+> $K^{n}$ 到 $K^{s}$ 的一个映射 $\mathcal{A}$ 如果保持加法和数量乘法, 即 $\forall\alpha,\beta\in{}K^{n},k\in{}K$, 有 $\mathcal{A}\left(\alpha+\beta\right)=\mathcal{A}\left(\alpha\right)+\mathcal{A}\left(\beta\right)$, $\mathcal{A}\left(k\alpha\right)=k\mathcal{A}\left(\alpha\right)$, 则称 $\mathcal{A}$ 是 $K^{n}$ 到 $K^{s}$ 的一个线性映射.
 
 ## 4.6-14
 
@@ -68,13 +68,13 @@ $\blacksquare$
 
 判别下列对应法则是否为 $\mathbb{R}$ 到自身的映射, 是否为单射, 是否为满射:
 
-(1) $x\mapsto{x}^{3}$;
+(1) $x\mapsto{}x^{3}$;
 
-(2) $x\mapsto{x}^{2}-x$;
+(2) $x\mapsto{}x^{2}-x$;
 
 (3) $x\mapsto2^{x}$;
 
-(4) $x\mapsto\ln{x}$.
+(4) $x\mapsto\ln{}x$.
 
 ### 解答 4.7-1
 
@@ -87,7 +87,7 @@ $\blacksquare$
 单射:
 
 $$
-f\left(x_{1}\right)=f\left(x_{2}\right)\Rightarrow{x}_{1}^{3}=x_{2}^{3}\Rightarrow{x}_{1}=x_{2}.
+f\left(x_{1}\right)=f\left(x_{2}\right)\Rightarrow{}x_{1}^{3}=x_{2}^{3}\Rightarrow{}x_{1}=x_{2}.
 $$
 
 故是单射.
@@ -119,7 +119,7 @@ $$
 单射:
 
 $$
-f\left(x_{1}\right)=f\left(x_{2}\right)\Rightarrow2^{x_{1}}=2^{x_{2}}\Rightarrow{x}_{1}=x_{2}.
+f\left(x_{1}\right)=f\left(x_{2}\right)\Rightarrow2^{x_{1}}=2^{x_{2}}\Rightarrow{}x_{1}=x_{2}.
 $$
 
 故是单射.
@@ -128,15 +128,15 @@ $$
 
 因此是单射但不是满射.
 
-(4) $f\left(x\right)=\ln{x}$.
+(4) $f\left(x\right)=\ln{}x$.
 
-不是映射. 因为对 $x\le0$, $\ln{x}$ 没有定义, 不是对所有 $x\in\mathbb{R}$ 都有对应.
+不是映射. 因为对 $x\le0$, $\ln{}x$ 没有定义, 不是对所有 $x\in\mathbb{R}$ 都有对应.
 
 $\blacksquare$
 
 ## 4.7-4
 
-设 $S$ 是一个有限集合. 证明: 如果映射 $f:S\to{S}$ 是单射, 则 $f$ 一定是双射.
+设 $S$ 是一个有限集合. 证明: 如果映射 $f:S\to{}S$ 是单射, 则 $f$ 一定是双射.
 
 ### 解答 4.7-4
 
@@ -144,7 +144,7 @@ $\blacksquare$
 
 $f$ 是单射, 故 $S$ 中不同元素的象也不同. 因此 $f\left(S\right)$ 的元素个数等于 $\left|S\right|=n$.
 
-又因为 $f\left(S\right)\subseteq{S}$, 且 $\left|f\left(S\right)\right|=n=\left|S\right|$, 所以 $f\left(S\right)=S$.
+又因为 $f\left(S\right)\subseteq{}S$, 且 $\left|f\left(S\right)\right|=n=\left|S\right|$, 所以 $f\left(S\right)=S$.
 
 即 $f$ 是满射.
 
@@ -164,7 +164,7 @@ A=\left[\begin{array}{rrrr}
 \end{array}\right].
 $$
 
-令 $\mathcal{A}\left(\alpha\right)=A\alpha$, $\forall\alpha\in{K}^{4}$.
+令 $\mathcal{A}\left(\alpha\right)=A\alpha$, $\forall\alpha\in{}K^{4}$.
 
 (1) 求 $\operatorname{Im}\mathcal{A}$ 的维数和一个基;
 
@@ -224,7 +224,7 @@ $$
 自由未知量为 $x_{3},x_{4}$.
 
 $$
-x_{1}=-2x_{3}-x_{4},\quad{x}_{2}=-\frac{3}{2}x_{3}-2x_{4}.
+x_{1}=-2x_{3}-x_{4},\quad{}x_{2}=-\frac{3}{2}x_{3}-2x_{4}.
 $$
 
 令 $x_{3}=1,x_{4}=0$:
@@ -259,20 +259,20 @@ $\blacksquare$
 
 ### 解答 5.1-4
 
-由**定义 5.1.4 (商集)**, 模 $3$ 同余: $a\sim{b}\overset{def}{\Leftrightarrow}a$ 与 $b$ 被 $3$ 除所得余数相同.
+由**定义 5.1.4 (商集)**, 模 $3$ 同余: $a\sim{}b\overset{def}{\Leftrightarrow}a$ 与 $b$ 被 $3$ 除所得余数相同.
 
 共有 $3$ 个等价类:
 
 $$
-\left[0\right]=\left\{\cdots,-6,-3,0,3,6,\cdots\right\}=\left\{3k\mid{k}\in\mathbb{Z}\right\}.
+\left[0\right]=\left\{\cdots,-6,-3,0,3,6,\cdots\right\}=\left\{3k\mid{}k\in\mathbb{Z}\right\}.
 $$
 
 $$
-\left[1\right]=\left\{\cdots,-5,-2,1,4,7,\cdots\right\}=\left\{3k+1\mid{k}\in\mathbb{Z}\right\}.
+\left[1\right]=\left\{\cdots,-5,-2,1,4,7,\cdots\right\}=\left\{3k+1\mid{}k\in\mathbb{Z}\right\}.
 $$
 
 $$
-\left[2\right]=\left\{\cdots,-4,-1,2,5,8,\cdots\right\}=\left\{3k+2\mid{k}\in\mathbb{Z}\right\}.
+\left[2\right]=\left\{\cdots,-4,-1,2,5,8,\cdots\right\}=\left\{3k+2\mid{}k\in\mathbb{Z}\right\}.
 $$
 
 因此

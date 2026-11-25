@@ -6,15 +6,15 @@
 
 > **定义 4.1.1 (矩阵的加法)**
 > 
-> 设 $A=\left(a_{ij}\right),B=\left(b_{ij}\right)$ 都是数域 $K$ 上 $s\times{n}$ 矩阵, 令 $C=\left(a_{ij}+b_{ij}\right)_{s\times{n}}$, 则称 $C$ 是矩阵 $A$ 与 $B$ 的和, 记作 $C=A+B$.
+> 设 $A=\left(a_{ij}\right),B=\left(b_{ij}\right)$ 都是数域 $K$ 上 $s\times{}n$ 矩阵, 令 $C=\left(a_{ij}+b_{ij}\right)_{s\times{}n}$, 则称 $C$ 是矩阵 $A$ 与 $B$ 的和, 记作 $C=A+B$.
 
 > **定义 4.1.2 (矩阵的数量乘法)**
 > 
-> 设 $k\in{K}$, 令 $M=\left(ka_{ij}\right)_{s\times{n}}$, 则称 $M$ 是 $k$ 与矩阵 $A$ 的数量乘积, 记作 $M=kA$.
+> 设 $k\in{}K$, 令 $M=\left(ka_{ij}\right)_{s\times{}n}$, 则称 $M$ 是 $k$ 与矩阵 $A$ 的数量乘积, 记作 $M=kA$.
 
 > **定义 4.1.3 (矩阵的乘法)**
 > 
-> 设 $A=\left(a_{ij}\right)_{s\times{n}}$, $B=\left(b_{ij}\right)_{n\times{m}}$, 令 $C=\left(c_{ij}\right)_{s\times{m}}$, 其中 $c_{ij}=\sum_{k=1}^{n}a_{ik}b_{kj}$, 则称 $C$ 是 $A$ 与 $B$ 的乘积, 记作 $C=AB$.
+> 设 $A=\left(a_{ij}\right)_{s\times{}n}$, $B=\left(b_{ij}\right)_{n\times{}m}$, 令 $C=\left(c_{ij}\right)_{s\times{}m}$, 其中 $c_{ij}=\sum_{k=1}^{n}a_{ik}b_{kj}$, 则称 $C$ 是 $A$ 与 $B$ 的乘积, 记作 $C=AB$.
 
 ## 4.1-4(1)
 

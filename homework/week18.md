@@ -2,7 +2,7 @@
 
 > **定义 5.4.1 (相似)**
 > 
-> 设 $A$ 与 $B$ 都是数域 $K$ 上 $n$ 级矩阵, 如果存在数域 $K$ 上的一个 $n$ 级可逆矩阵 $P$, 使得 $P^{-1}AP=B$, 则称 $A$ 与 $B$ 是相似的, 记作 $A\sim{B}$.
+> 设 $A$ 与 $B$ 都是数域 $K$ 上 $n$ 级矩阵, 如果存在数域 $K$ 上的一个 $n$ 级可逆矩阵 $P$, 使得 $P^{-1}AP=B$, 则称 $A$ 与 $B$ 是相似的, 记作 $A\sim{}B$.
 
 > **定理 5.4.2 (可对角化的充要条件)**
 > 
@@ -10,13 +10,13 @@
 
 > **定义 5.5.1 (特征值与特征向量)**
 > 
-> 设 $A$ 是数域 $K$ 上的 $n$ 级矩阵, 如果 $K^{n}$ 中有非零列向量 $\alpha$, 使得 $A\alpha=\lambda_{0}\alpha$, 且 $\lambda_{0}\in{K}$, 则称 $\lambda_{0}$ 是 $A$ 的一个特征值, 称 $\alpha$ 是 $A$ 的属于特征值 $\lambda_{0}$ 的一个特征向量.
+> 设 $A$ 是数域 $K$ 上的 $n$ 级矩阵, 如果 $K^{n}$ 中有非零列向量 $\alpha$, 使得 $A\alpha=\lambda_{0}\alpha$, 且 $\lambda_{0}\in{}K$, 则称 $\lambda_{0}$ 是 $A$ 的一个特征值, 称 $\alpha$ 是 $A$ 的属于特征值 $\lambda_{0}$ 的一个特征向量.
 
 ## 5.4-12
 方阵 $A$ 称为幂零矩阵, 如果 $A$ 的某个正整数次幂等于零矩阵, 使 $A^{l}=0$ 成立的最小正整数 $l$ 称为 $A$ 的幂零指数. 证明: 与幂零矩阵相似的矩阵仍是幂零矩阵, 并且它们的幂零指数相等.
 ### 解答 5.4-12
 设 $A$ 是幂零矩阵, 幂零指数为 $l$, 即 $A^{l}=0$, 且 $A^{k}\ne0$ ( $k<{}l$ ).
-设 $B\sim{A}$, 即存在可逆矩阵 $P$, 使得 $B=P^{-1}AP$.
+设 $B\sim{}A$, 即存在可逆矩阵 $P$, 使得 $B=P^{-1}AP$.
 证明 $B$ 是幂零矩阵.
 $$
 
@@ -39,14 +39,14 @@ A^{m}=0.
 
 $$
 因为 $A$
-的幂零指数为 $l$, 故 $m\ge{l}$.
+的幂零指数为 $l$, 故 $m\ge{}l$.
 另一方面, $A^{l}=0$, 故
 $$
 
 B^{l}=P^{-1}A^{l}P=0.
 
 $$
-因为 $B$ 的幂零指数为 $m$, 故 $l\ge{m}$.
+因为 $B$ 的幂零指数为 $m$, 故 $l\ge{}m$.
 因此 $m=l$.
 所以与幂零矩阵相似的矩阵仍是幂零矩阵, 且幂零指数相等.
 $\blacksquare$
@@ -66,7 +66,7 @@ $$
 由**定义 5.5.1 (特征值与特征向量)**, 求特征多项式:
 $$
 
-\left|\lambda{I}-A\right|=\left|\begin{array}{rrr}
+\left|\lambda{}I-A\right|=\left|\begin{array}{rrr}
 \lambda-2&-3&-2\\
 -1&\lambda-8&-2\\
 2&14&\lambda+3
@@ -76,7 +76,7 @@ $$
 按第 $1$ 行展开:
 $$
 
-\left|\lambda{I}-A\right|
+\left|\lambda{}I-A\right|
 =\left(\lambda-2\right)\left[\left(\lambda-8\right)\left(\lambda+3\right)+28\right]+3\left[-\left(\lambda+3\right)+4\right]-2\left[-14-2\left(\lambda-8\right)\right]=\left(\lambda-2\right)\left(\lambda^{2}-5\lambda+4\right)+3\left(-\lambda+1\right)-2\left(2-2\lambda\right)=\left(\lambda-2\right)\left(\lambda-1\right)\left(\lambda-4\right)-3\lambda+3-4+4\lambda=\left(\lambda-1\right)\left[\left(\lambda-2\right)\left(\lambda-4\right)+1\right]=\left(\lambda-1\right)\left(\lambda^{2}-6\lambda+9\right)=\left(\lambda-1\right)\left(\lambda-3\right)^{2}.
 
 $$
@@ -133,7 +133,7 @@ $$
 由**定义 5.5.1 (特征值与特征向量)**, 求特征多项式:
 $$
 
-\left|\lambda{I}-A\right|=\left|\begin{array}{rrr}
+\left|\lambda{}I-A\right|=\left|\begin{array}{rrr}
 \lambda-3&-7&3\\
 2&\lambda+5&-2\\
 4&10&\lambda-3
@@ -143,7 +143,7 @@ $$
 按第 $1$ 行展开:
 $$
 
-\left|\lambda{I}-A\right|
+\left|\lambda{}I-A\right|
 =\left(\lambda-3\right)\left[\left(\lambda+5\right)\left(\lambda-3\right)+20\right]+7\left[2\left(\lambda-3\right)+8\right]+3\left[20-4\left(\lambda+5\right)\right]=\left(\lambda-3\right)\left(\lambda^{2}+2\lambda+5\right)+7\left(2\lambda+2\right)+3\left(-4\lambda\right)=\lambda^{3}-3\lambda^{2}+2\lambda^{2}-6\lambda+5\lambda-15+14\lambda+14-12\lambda=\lambda^{3}-\lambda^{2}+\lambda-1=\left(\lambda-1\right)\left(\lambda^{2}+1\right).
 
 $$
@@ -203,7 +203,7 @@ $\blacksquare$
 
 ## 5.5-13
 
-设 $A,B$ 分别是数域 $K$ 上 $s\times{n}$, $n\times{s}$ 矩阵, 证明: $AB$ 与 $BA$ 有相同的非零特征值.
+设 $A,B$ 分别是数域 $K$ 上 $s\times{}n$, $n\times{}s$ 矩阵, 证明: $AB$ 与 $BA$ 有相同的非零特征值.
 
 ### 解答 5.5-13
 

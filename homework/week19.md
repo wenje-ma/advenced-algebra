@@ -26,10 +26,10 @@
 
 证明 $A$ 可对角化.
 
-$\ker\left(A\right)=\left\{x\mid{A}x=0\right\}$ 是属于特征值 $0$ 的特征子空间.
+$\ker\left(A\right)=\left\{x\mid{}Ax=0\right\}$ 是属于特征值 $0$ 的特征子空间.
 
 $$
-\ker\left(I-A\right)=\left\{x\mid\left(I-A\right)x=0\right\}=\left\{x\mid{A}x=x\right\}
+\ker\left(I-A\right)=\left\{x\mid\left(I-A\right)x=0\right\}=\left\{x\mid{}Ax=x\right\}
 $$
 
 是属于特征值 $1$ 的特征子空间.
@@ -40,7 +40,7 @@ $$
 K^{n}=\ker\left(A\right)\oplus\ker\left(I-A\right).
 $$
 
-对任意 $x\in{K}^{n}$,
+对任意 $x\in{}K^{n}$,
 
 $$
 x=Ax+\left(I-A\right)x.
@@ -126,10 +126,10 @@ $$
 故特征子空间的维数为
 
 $$
-n-\operatorname{rank}\left(\lambda_{0}I-A\right)\le{n}-1.
+n-\operatorname{rank}\left(\lambda_{0}I-A\right)\le{}n-1.
 $$
 
-即几何重数 $\le{n}-1<{}n=$ 代数重数.
+即几何重数 $\le{}n-1<{}n=$ 代数重数.
 
 因此 $A$ 不能对角化.
 
@@ -152,7 +152,7 @@ $$
 由**定理 5.7.3 (实对称矩阵可正交对角化)**, 一定存在正交矩阵 $T$, 使 $T^{\top}AT$ 为对角矩阵. 求特征多项式:
 
 $$
-\left|\lambda{I}-A\right|=\left|\begin{array}{rrr}
+\left|\lambda{}I-A\right|=\left|\begin{array}{rrr}
 \lambda&2&-2\\
 2&\lambda+3&-4\\
 -2&-4&\lambda+3
@@ -258,7 +258,7 @@ $$
 求特征多项式:
 
 $$
-\left|\lambda{I}-A\right|=\left|\begin{array}{rrr}
+\left|\lambda{}I-A\right|=\left|\begin{array}{rrr}
 \lambda-3&2&0\\
 2&\lambda-2&2\\
 0&2&\lambda-1
@@ -332,7 +332,7 @@ $\blacksquare$
 因此
 
 $$
-A\sim{D}_{A}=D_{B}\sim{B}.
+A\sim{}D_{A}=D_{B}\sim{}B.
 $$
 
 所以 $A$ 与 $B$ 相似.

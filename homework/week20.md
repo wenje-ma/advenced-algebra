@@ -22,7 +22,7 @@
 
 > **定理 7.2.1 (带余除法)**
 > 
-> 在 $K\left[x\right]$ 中, 对于任意两个多项式 $f\left(x\right),g\left(x\right)$, 其中 $g\left(x\right)\ne0$, 存在唯一的一对多项式 $h\left(x\right),r\left(x\right)$, 使得 $f\left(x\right)=h\left(x\right)g\left(x\right)+r\left(x\right),\deg{r}\left(x\right)<\deg{g}\left(x\right)$.
+> 在 $K\left[x\right]$ 中, 对于任意两个多项式 $f\left(x\right),g\left(x\right)$, 其中 $g\left(x\right)\ne0$, 存在唯一的一对多项式 $h\left(x\right),r\left(x\right)$, 使得 $f\left(x\right)=h\left(x\right)g\left(x\right)+r\left(x\right),\deg{}r\left(x\right)<\deg{}g\left(x\right)$.
 
 ## 6.1-5
 
@@ -273,7 +273,7 @@ $$
 
 这是两个 $1$ 次齐次多项式的乘积.
 
-若秩等于 $1$, 则规范形为 $y_{1}^{2}=y_{1}\cdot{y}_{1}$.
+若秩等于 $1$, 则规范形为 $y_{1}^{2}=y_{1}\cdot{}y_{1}$.
 
 这也是两个 $1$ 次齐次多项式的乘积.
 
@@ -304,7 +304,7 @@ $$
 设 $\beta=k\alpha$. 则
 
 $$
-A=\frac{\alpha\cdot{k}\alpha^{\top}+k\alpha\cdot\alpha^{\top}}{2}=k\alpha\alpha^{\top}.
+A=\frac{\alpha\cdot{}k\alpha^{\top}+k\alpha\cdot\alpha^{\top}}{2}=k\alpha\alpha^{\top}.
 $$
 
 因此 $\operatorname{rank}\left(A\right)=1$.

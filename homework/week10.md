@@ -6,15 +6,15 @@
 
 > **定义 4.1.1 (矩阵的加法)**
 > 
-> 设 $A=\left(a_{ij}\right),B=\left(b_{ij}\right)$ 都是数域 $K$ 上 $s\times{n}$ 矩阵, 令 $C=\left(a_{ij}+b_{ij}\right)_{s\times{n}}$, 则称 $C$ 是矩阵 $A$ 与 $B$ 的和, 记作 $C=A+B$.
+> 设 $A=\left(a_{ij}\right),B=\left(b_{ij}\right)$ 都是数域 $K$ 上 $s\times{}n$ 矩阵, 令 $C=\left(a_{ij}+b_{ij}\right)_{s\times{}n}$, 则称 $C$ 是矩阵 $A$ 与 $B$ 的和, 记作 $C=A+B$.
 
 > **定义 4.1.2 (矩阵的数量乘法)**
 > 
-> 设 $k\in{K}$, 令 $M=\left(ka_{ij}\right)_{s\times{n}}$, 则称 $M$ 是 $k$ 与矩阵 $A$ 的数量乘积, 记作 $M=kA$.
+> 设 $k\in{}K$, 令 $M=\left(ka_{ij}\right)_{s\times{}n}$, 则称 $M$ 是 $k$ 与矩阵 $A$ 的数量乘积, 记作 $M=kA$.
 
 > **定义 4.1.3 (矩阵的乘法)**
 > 
-> 设 $A=\left(a_{ij}\right)_{s\times{n}}$, $B=\left(b_{ij}\right)_{n\times{m}}$, 令 $C=\left(c_{ij}\right)_{s\times{m}}$, 其中 $c_{ij}=\sum_{k=1}^{n}a_{ik}b_{kj}$, 则称 $C$ 是 $A$ 与 $B$ 的乘积, 记作 $C=AB$.
+> 设 $A=\left(a_{ij}\right)_{s\times{}n}$, $B=\left(b_{ij}\right)_{n\times{}m}$, 令 $C=\left(c_{ij}\right)_{s\times{}m}$, 其中 $c_{ij}=\sum_{k=1}^{n}a_{ik}b_{kj}$, 则称 $C$ 是 $A$ 与 $B$ 的乘积, 记作 $C=AB$.
 
 ## 3.7-5
 
@@ -38,7 +38,7 @@ $$
 
 当 $i=k$ 时, 这是 $\left|A\right|=0$ (题设).
 
-当 $i\ne{k}$ 时, 这是把 $A$ 的第 $k$ 行换成第 $i$ 行后的行列式, 由于有两行相同, 故行列式为 $0$.
+当 $i\ne{}k$ 时, 这是把 $A$ 的第 $k$ 行换成第 $i$ 行后的行列式, 由于有两行相同, 故行列式为 $0$.
 
 因此对所有 $i$, 上式都为 $0$, 即 $A\eta_{1}=0$.
 
@@ -46,7 +46,7 @@ $$
 
 验证解空间维数为 $1$. 因为 $\left|A\right|=0$, 故 $\text{rank}\left(A\right)<{}n$.
 
-又因为 $A_{kl}\ne0$, 说明 $A$ 有一个 $n-1$ 阶子式非零 (划去第 $k$ 行第 $l$ 列后的子式), 故 $\text{rank}\left(A\right)\ge{n}-1$.
+又因为 $A_{kl}\ne0$, 说明 $A$ 有一个 $n-1$ 阶子式非零 (划去第 $k$ 行第 $l$ 列后的子式), 故 $\text{rank}\left(A\right)\ge{}n-1$.
 
 因此 $\text{rank}\left(A\right)=n-1$.
 
@@ -58,7 +58,7 @@ $\blacksquare$
 
 ## 3.7-7
 
-设 $A_{1}$ 是 $s\times{n}$ 矩阵 $A=\left(a_{ij}\right)$ 的前 $s-1$ 行组成的子矩阵. 证明: 如果以 $A_{1}$ 为系数矩阵的齐次线性方程组的解都是方程
+设 $A_{1}$ 是 $s\times{}n$ 矩阵 $A=\left(a_{ij}\right)$ 的前 $s-1$ 行组成的子矩阵. 证明: 如果以 $A_{1}$ 为系数矩阵的齐次线性方程组的解都是方程
 
 $$
 a_{s1}x_{1}+a_{s2}x_{2}+\cdots+a_{sn}x_{n}=0
@@ -137,7 +137,7 @@ $$
 由**定理 3.8.1 (非齐次方程组的解集结构)**, 解集为特解 $\gamma_{0}$ 加上导出组的解空间 $W$:
 
 $$
-U=\left\{\gamma_{0}+k_{1}\eta_{1}+k_{2}\eta_{2}\mid{k}_{1},k_{2}\in{K}\right\}.
+U=\left\{\gamma_{0}+k_{1}\eta_{1}+k_{2}\eta_{2}\mid{}k_{1},k_{2}\in{}K\right\}.
 $$
 
 $\blacksquare$
@@ -150,7 +150,7 @@ $\blacksquare$
 
 由**定理 3.8.1 (非齐次方程组的解集结构)**, 非齐次方程组的解集 $U=\gamma_{0}+W$, 其中 $W$ 是导出组的解空间. 要证明非齐次方程组有唯一解当且仅当它的导出组只有零解.
 
-设非齐次线性方程组为 $Ax=\beta$, 其中 $A$ 是 $n\times{n}$ 矩阵; 导出组为 $Ax=0$.
+设非齐次线性方程组为 $Ax=\beta$, 其中 $A$ 是 $n\times{}n$ 矩阵; 导出组为 $Ax=0$.
 
 必要性. 设非齐次方程组有唯一解, 则
 
@@ -162,7 +162,7 @@ $$
 
 充分性. 设导出组只有零解, 则 $\text{rank}\left(A\right)=n$.
 
-$A$ 是 $n\times{n}$ 矩阵且 $\text{rank}\left(A\right)=n$, 故 $\left|A\right|\ne0$.
+$A$ 是 $n\times{}n$ 矩阵且 $\text{rank}\left(A\right)=n$, 故 $\left|A\right|\ne0$.
 
 导出组只有零解意味着解空间 $W=\left\{0\right\}$, 故非齐次方程组的解集 $U=\gamma_{0}+W=\left\{\gamma_{0}\right\}$, 即有唯一解.
 
@@ -192,9 +192,9 @@ $$
 
 由**定理 3.8.1 (非齐次方程组的解集结构)**, 非齐次方程组的解集 $U=\gamma_{0}+W$, 其中 $W$ 是导出组的解空间.
 
-任取 $\gamma\in{U}$, 则 $\gamma-\gamma_{0}\in{W}$.
+任取 $\gamma\in{}U$, 则 $\gamma-\gamma_{0}\in{}W$.
 
-因为 $\eta_{1},\eta_{2},\cdots,\eta_{t}$ 是 $W$ 的一个基, 所以存在 $k_{1},\cdots,k_{t}\in{K}$ 使得
+因为 $\eta_{1},\eta_{2},\cdots,\eta_{t}$ 是 $W$ 的一个基, 所以存在 $k_{1},\cdots,k_{t}\in{}K$ 使得
 
 $$
 \gamma-\gamma_{0}=k_{1}\eta_{1}+k_{2}\eta_{2}+\cdots+k_{t}\eta_{t}.
@@ -272,7 +272,7 @@ k&\lambda&\cdots&\lambda\\
 \lambda&k&\cdots&\lambda\\
 \vdots&\vdots&&\vdots\\
 \lambda&\lambda&\cdots&k
-\end{array}\right]_{n\times{n}}.
+\end{array}\right]_{n\times{}n}.
 $$
 
 把 $M$ 表示成 $xI+yJ$ 的形式, 其中 $x,y$ 是待定系数.
@@ -295,7 +295,7 @@ $$
 由**定义 4.1.1 (矩阵的加法)**和**定义 4.1.2 (矩阵的数量乘法)**, 故
 
 $$
-M=\left(k-\lambda\right)I+\lambda{J}.
+M=\left(k-\lambda\right)I+\lambda{}J.
 $$
 
 $\blacksquare$
